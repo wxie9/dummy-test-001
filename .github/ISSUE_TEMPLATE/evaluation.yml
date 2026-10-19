@@ -1,0 +1,39 @@
+name: LLM 评测
+description: 固定模型、测试集、prompt、计分协议和比较条件
+title: "[评测] "
+body:
+  - type: input
+    id: owner
+    attributes:
+      label: 负责人
+      description: 填已登记的成员代号；需要在 GitHub 侧另行指派 Assignee。
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: 评测目标与基线
+      description: 关联 E-ID/训练 TR-ID，说明比较什么，以及采用的指标与判断标准。
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: 模型、checkpoint 与数据
+      description: C-ID/M-ID、精确 revision、数据版本与 split、条目清单和校验和。
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: 评测协议与配置
+      description: B-ID@版本、prompt/chat template、解码参数、计分与工具版本；未定项明确列出。
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 交付物与完成标准
+      description: EV-ID 日志、原始预测/逐条分数、有效与失败条目统计、汇总报告、复核安排和目标时间。
+    validations:
+      required: true

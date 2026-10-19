@@ -1,0 +1,39 @@
+name: 文献调研
+description: 明确检索问题、范围、负责人和文献交付物
+title: "[文献] "
+body:
+  - type: input
+    id: owner
+    attributes:
+      label: 负责人
+      description: 填已登记的成员代号；需要在 GitHub 侧另行指派 Assignee。
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: 调研问题
+      description: 希望回答什么？已存在的 Q-ID、H-ID 和笔记路径也写在这里。
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 范围与检索计划
+      description: 数据库、关键词、时间范围、纳入排除标准和起始文献；未知项注明待确认。
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 交付物与完成标准
+      description: 计划新增的检索记录、文献笔记和综合报告路径，以及何时算完成。
+    validations:
+      required: true
+  - type: textarea
+    id: handoff
+    attributes:
+      label: 依赖、时间与交接
+      description: 依赖材料、目标时间、协作人及评审安排；阶段性更新请链接仓库记录和 PR。
+    validations:
+      required: false
