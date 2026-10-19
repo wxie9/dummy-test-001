@@ -11,4 +11,4 @@
 - [x] 固定 lychee 版本与 Action SHA，验证临时坏路径、坏锚点与合法链接。
 - [x] 创建 `.github/workflows/repository-checks.yml`，两个 job 无路径过滤、只读权限、全历史 checkout；大文件 job 同时运行回归测试。
 - [x] 更新 README、CONTRIBUTING、团队指南及 `docs/repository-checks.md`，提供本地命令、失败修复与检查范围。
-- [ ] 独立评审并创建 PR，确认实际 Actions 成功；配置并读回 main 保护；正常合并并验证 main CI。
+- [x] 独立评审并创建 PR，确认实际 Actions 成功；配置并读回 main 保护；正常合并并验证 main CI。

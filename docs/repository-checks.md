@@ -47,3 +47,9 @@ gh api repos/wxie9/dummy-test-001/branches/main/protection
 ```
 
 更改 workflow 的 job 名称时，须同步更新线上必需检查，避免 PR 永久等待一个不存在的检查。首次安装先确认 PR 上两个 job 实际成功，再启用保护并正常合并。
+
+## 本次启用验证
+
+2026-10-19 已在 [PR #3](https://github.com/wxie9/dummy-test-001/pull/3) 的实际 Actions 中确认两项检查成功，并通过 API 读回确认 main 的 PR 要求、两个 App 绑定检查、strict、管理员约束、讨论解决以及禁止强推/删除均已生效。保护更新仅使用 `checks` 字段，不同时发送旧 `contexts` 字段。
+
+本地 12 项真实临时 Git 仓库测试通过；临时链接正反例确认合法路径/锚点可通过，失效路径、锚点、引用式链接和图片被拒绝，代码示例被忽略。未运行训练或模型评测。
