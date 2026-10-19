@@ -89,6 +89,8 @@ git push -u origin HEAD
 
 打开 GitHub 上这个分支的 **Compare & pull request**，目标选 `main`。按 [PR 模板](../.github/pull_request_template.md) 写清改动、文件路径、关联 Issue、实际检查和待确认项，请一位同伴评审。任务完成用 `Closes #编号`，仍在继续用 `Refs #编号`。收到意见后在同一分支修改、提交、push，PR 会随之更新。
 
+等待 `Documentation links` 和 `Large files` 两项检查通过后再合并；分支落后 main 时先同步最新改动，重新等待检查。main 已要求 PR 合并，不能直接 push。链接或大文件检查失败时，按 [自动检查说明](repository-checks.md) 修复。
+
 只改文字也可在 GitHub 网页编辑/新增文件，选择**新建分支并创建 PR**；参考资料和笔记不要只留在 Issue 评论中。
 
 ## 提交前记住三件事
