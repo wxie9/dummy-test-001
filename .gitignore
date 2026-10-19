@@ -22,12 +22,10 @@ __pycache__/
 .ruff_cache/
 .mypy_cache/
 .ipynb_checkpoints/
-.Rhistory
-.RData
-.Ruserdata
-.snakemake/
-.nextflow/
-.nextflow.log*
+.cache/
+wandb/
+tensorboard/
+*.tfevents.*
 
 # 大型数据与运行产物；元数据、小型测试数据另行提交
 /data/raw/
@@ -37,6 +35,7 @@ __pycache__/
 /data/private/
 /data/local/
 /models/
+/checkpoints/
 /artifacts/
 /outputs/
 /results/

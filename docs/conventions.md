@@ -2,42 +2,46 @@
 
 ## 稳定 ID
 
-格式：`前缀-YYYYMMDD-MEMBER-NNN`。日期为创建记录时的日期，采用 Asia/Shanghai；实际采集或执行日期另填。成员代号见 [成员表](../metadata/members.tsv)，三位序号从 `001` 开始。同一成员、日期、前缀内递增；创建前在仓库搜索完整 ID。
+格式：`前缀-YYYYMMDD-MEMBER-NNN`。日期为创建记录时的日期，采用 Asia/Shanghai；实际运行时间另填。成员代号见 [成员表](../metadata/members.tsv)，为 2–8 位大写字母或数字。同一成员、日期、前缀内的三位序号从 `001` 递增；创建前搜索完整 ID。超过 999 时延伸为四位序号。
 
-| 对象 | 前缀 | 保存位置与文件名 |
+| 对象 | 前缀 | 位置 |
 | --- | --- | --- |
 | 研究问题 | Q | `research/questions/<ID>.md` |
 | 假设 | H | `research/hypotheses/<ID>.md` |
 | 决策 | DEC | `research/decisions/<ID>.md` |
 | 文献检索 | L | `literature/searches/<ID>.md` |
-| 实验方案 | P | `protocols/<ID>/v1.0.0.md` |
-| 样本 | S | `metadata/samples.tsv` 中的一行 |
-| 湿实验 | E | `experiments/wet/<ID>/record.md` |
-| 计算运行 | R | `experiments/computational/<ID>/record.md` |
-| 数据集 | D | `metadata/datasets.tsv` 中的一个版本 |
+| 实验计划 | E | `experiments/plans/<ID>.md` |
+| 训练运行 | TR | `experiments/training/<ID>/record.md` |
+| 评测运行 | EV | `experiments/evaluation/<ID>/record.md` |
+| 评测协议 | B | `benchmarks/<ID>/v1.0.0.md` |
+| 数据集 | D | `metadata/datasets.tsv` |
+| 基础/外部模型 | M | `metadata/models.tsv` |
+| 训练 checkpoint | C | `metadata/checkpoints.tsv` |
 
-例如 `E-20261019-AA-001` 仅为格式示例，AA 是虚构成员代号，不代表已执行实验。ID 不承载处理条件或实验结果，分配后不改名、不复用。序号超过 999 时延伸为四位数字。
+`TR-20261019-AA-001` 仅是格式示例，AA 是虚构代号，不代表已有训练。ID 不承载模型名称、处理条件或结果，分配后不改名、不复用。一次实验计划可以关联多次 TR 和 EV 运行，重跑分配新运行 ID。
 
-## 文献与方案版本
+## 文献、协议与数据版本
 
-文献笔记保存为 `literature/notes/<citation-key>.md`。引用键建议为 `FirstAuthorYearKeyword`，仅使用 ASCII 字母、数字、连字符或下划线；创建前按 DOI/PMID 检查是否已有记录。已被引用的键保持稳定；重复条目合并时记录旧键映射。BibTeX 使用同一引用键。
+文献笔记放 `literature/notes/<citation-key>.md`。引用键建议 `FirstAuthorYearKeyword`，仅用 ASCII 字母、数字、连字符或下划线；创建前按 DOI/稳定原文标识检查重复。已被引用的键保持稳定，BibTeX 与笔记使用相同键。
 
-方案通过 `P-…@1.0.0` 引用。新版本另建文件，不覆盖已被实验引用的版本。主版本表示影响研究设计或可比性的变动；次版本表示兼容性扩展；修订版本表示不改变执行含义的勘误。每个版本记清变动原因。
+评测协议用 `B-…@1.0.0` 引用。新版本另建文件，不覆盖已被运行引用的版本。影响结果可比性的调整递增主版本；兼容性扩展递增次版本；不改变计分含义的勘误递增修订版本。变更说明写清分数能否直接比较。
 
-数据集通过 `D-…@v1` 引用。同一版本不可替换内容；变动创建新版本与校验和。原始文件新批次可用新 ID 或新版本，但在登记中说明与旧数据的关系。
+数据集用 `D-…@v1:train`、`D-…@v1:validation` 或 `D-…@v1:test` 引用，自定义 split 明确含义。数据集表以 `(dataset_id, version, split)` 唯一。相同版本和 split 的内容不替换，筛选、去重或分割变化产生新版本与校验和。
 
-## 记录状态与结果
+模型 M-ID 对应不可变的来源 revision；优先记录完整 commit hash，不能仅用会变动的 `main` 或模型名称。C-ID 对应某次训练的固定 step 产物，适配器同时关联基础模型 M-ID。相同文件替换内容时新建 C-ID。
 
-记录状态：`draft`（草稿）、`planned`（待执行）、`in-progress`（进行中）、`completed`（记录已整理完成）、`cancelled`（取消）。文献笔记使用 `draft` / `completed`，检索记录可使用全部状态。`completed` 不代表结果成功或结论成立。
+## 状态与结果
 
-实验/运行结果单独填写：`not-evaluated`、`supports`、`does-not-support`、`inconclusive`、`failed`。无显著差异需结合设计与不确定性解释，不能自动等同于假设被否定。假设证据状态另使用模板中的 `untested`、`supported`、`not-supported`、`mixed`。
+状态：`draft`、`planned`、`in-progress`、`completed`、`cancelled`。文献笔记使用 draft/completed。completed 表示本次记录已整理完成，失败运行也可以 completed。
 
-模板中的“待填写”需要填写或改为“待确认：原因”；`not-evaluated` 是尚未评估的真实状态。未做的分析写“未执行”，不适用的字段写“不适用：原因”。正式记录不保留无解释的空字段。
+结果另填：`not-evaluated`、`supports`、`does-not-support`、`inconclusive`、`failed`。运行结束不自动意味着能力提升；单独的训练 loss 下降不能替代目标评测。假设证据状态使用模板中的 untested/supported/not-supported/mixed。
 
-## 计算运行与更正
+“待填写”替换为实际信息，或“待确认：原因”；未执行写“未执行”，不适用注明原因。没有执行时，不填成功退出码、训练消耗或评测分数。
 
-运行前用 `git rev-parse HEAD`、`git status --short` 确认代码版本与工作区状态。优先提交代码和配置后执行；存在未提交修改时，保存包含改动与未跟踪输入的完整快照，并记录定位和校验和。不要只保存无法包含未跟踪文件的 diff 就声称可复现。
+## 执行时代码与更正
 
-运行记录随后提交。其 commit 与执行时的代码 commit 不同是正常情况。相同参数的重跑也新建 `R-…` 编号并关联上次运行。
+运行前用 `git rev-parse HEAD` 和 `git status --short` 确认代码 commit 与工作区状态。优先提交代码和配置后执行；若 dirty，保存包含未跟踪代码/配置的完整快照并登记 URI 和 SHA-256。单独 diff 不包含未跟踪文件，不能据此声称代码已完整归档。
 
-每次更正追加日期、作者、原内容、改动和依据。新增结果标明获取时间。失败记录保留错误信息、已完成步骤和后续处理，避免只保存成功实验。
+日志稍后提交是正常情况，其提交 hash 不替代运行时 commit。保存实际生效配置和命令行覆盖；恢复训练关联源 checkpoint、step、优化器/调度器/RNG 状态与数据游标，并新建 TR-ID。
+
+更正追加日期、作者、原内容、改动和依据。评测条件、失败条目处理或判断标准事后变化时标明时间与影响，避免只保存最终较好的分数。

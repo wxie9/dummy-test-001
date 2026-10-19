@@ -1,5 +1,5 @@
-# 可复用代码
+# LLM 训练与评测代码
 
-保存可被多次分析调用的实现；按功能组织，避免把完整实验逐份复制为独立代码。具体语言和包结构随首个分析任务确定，目前没有默认入口或安装命令。
+保存 Python 实现，按需组织 `data/`、`training/`、`evaluation/` 和公共组件，避免逐份复制完整训练代码。具体训练框架、包结构和依赖随首个任务确定，目前没有默认入口或安装命令。
 
-记录输入、输出和异常情况；新增计算逻辑时在 [tests/](../tests/README.md) 加入适当验证。一次具体执行的参数、环境和结果放到 [计算运行记录](../experiments/computational/README.md)。
+记录输入、输出和异常情况；新增数据处理、训练或计分逻辑时在 [tests/](../tests/README.md) 加入适当验证。启动入口放 [scripts/](../scripts/README.md)，配置放 [configs/](../configs/README.md)，具体执行保存到 [实验记录](../experiments/README.md)。

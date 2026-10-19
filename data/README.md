@@ -1,6 +1,6 @@
 # 数据入口
 
-Git 保存 [元数据表](../metadata/README.md)、数据说明和后续采用的数据版本指针。原始数据和大型派生数据保存在外部存储。
+Git 保存 [元数据表](../metadata/README.md)、数据说明和后续采用的数据版本指针。训练语料、tokenized 缓存和大型评测数据保存在外部存储。训练、验证和测试 split 明确区分，筛选与去重产生新版本并登记。
 
 本地按需创建的 `raw/`、`interim/`、`processed/`、`external/`、`private/` 和 `local/` 已被 Git 忽略。小型可共享测试数据放在 `tests/fixtures/`，不放进忽略目录。
 

@@ -8,9 +8,10 @@
 | [文献笔记](literature-note.md) | `literature/notes/<citation-key>.md` |
 | [研究问题](research-question.md) | `research/questions/<Q-ID>.md` |
 | [研究假设](hypothesis.md) | `research/hypotheses/<H-ID>.md` |
-| [方案](protocol.md) | `protocols/<P-ID>/v1.0.0.md` |
-| [湿实验记录](wet-experiment.md) | `experiments/wet/<E-ID>/record.md` |
-| [计算运行记录](computational-run.md) | `experiments/computational/<R-ID>/record.md` |
+| [实验计划](experiment-plan.md) | `experiments/plans/<E-ID>.md` |
+| [训练运行](training-run.md) | `experiments/training/<TR-ID>/record.md` |
+| [评测协议](evaluation-protocol.md) | `benchmarks/<B-ID>/v1.0.0.md` |
+| [评测运行](evaluation-run.md) | `experiments/evaluation/<EV-ID>/record.md` |
 | [决策](decision.md) | `research/decisions/<DEC-ID>.md` |
 | [周报](weekly-report.md) | `reports/weekly/YYYY-MM-DD-MEMBER.md` |
 

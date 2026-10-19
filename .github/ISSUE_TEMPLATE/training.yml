@@ -1,0 +1,39 @@
+name: LLM 训练
+description: 明确训练目标、数据、基础模型、预算与 checkpoint 交付
+title: "[训练] "
+body:
+  - type: input
+    id: owner
+    attributes:
+      label: 负责人
+      description: 填已登记的成员代号；需要在 GitHub 侧另行指派 Assignee。
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: 实验目标与基线
+      description: 关联 E-ID/假设/文献，描述本次变量、基线及判断标准。
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: 模型与数据版本
+      description: 基础模型/tokenizer revision、训练与验证数据版本和 split；待确定项注明。
+    validations:
+      required: true
+  - type: textarea
+    id: configuration
+    attributes:
+      label: 配置与资源预算
+      description: 训练方式、配置路径、GPU、step/token 预算、目标时间及恢复训练要求。
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 交付物与完成标准
+      description: TR-ID 日志、环境/命令、checkpoint 登记与共享定位、后续评测安排；失败也要保留记录。
+    validations:
+      required: true
