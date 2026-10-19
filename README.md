@@ -4,6 +4,8 @@
 
 ## 第一次参与
 
+团队成员可先阅读 [简明使用指南](docs/team-guide.md)，按文献调研、训练代码和实验日志三类任务开始。
+
 1. 阅读 [协作流程](CONTRIBUTING.md)、[编号与记录规范](docs/conventions.md) 和 [数据管理](docs/data-management.md)。
 2. 在 `metadata/members.tsv` 注册唯一成员代号，并通过 PR 合并；代号使用 2–8 位大写字母或数字。
 3. 在 GitHub 新建或认领一个文献、训练或评测 Issue，写清负责人和交付物。

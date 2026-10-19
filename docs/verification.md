@@ -1,6 +1,6 @@
 # LLM 协作骨架验收记录
 
-日期：2026-10-19（Asia/Shanghai）。范围：文献、实验计划、LLM 训练、checkpoint、评测协议和评测日志的管理骨架。
+日期：2026-10-19（Asia/Shanghai）。范围：文献、实验计划、LLM 训练、checkpoint、评测协议和评测日志的初版管理骨架。下列数量为初版验收时的快照，后续文档增补另行检查。
 
 ## 实际检查
 
@@ -20,4 +20,4 @@
 
 外部存储、训练框架、依赖锁定、运行平台、CI 和远程分支保护尚未配置。GitHub Issue Forms 完成了本地解析与结构检查，合并默认分支后仍需在 GitHub 页面试填确认。
 
-交付位于分支 `docs/jev-collaboration`，供团队通过草稿 PR 评审；未直接合并至 main。
+初版通过分支 `docs/jev-collaboration` 的 [PR #1](https://github.com/wxie9/dummy-test-001/pull/1) 交付，并于 2026-10-19 合并到 main。
