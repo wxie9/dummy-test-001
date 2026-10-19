@@ -1,0 +1,39 @@
+name: 湿实验任务
+description: 追踪实验准备、记录和数据交接
+title: "[实验] "
+body:
+  - type: input
+    id: owner
+    attributes:
+      label: 负责人
+      description: 填已登记的成员代号；需要在 GitHub 侧另行指派 Assignee。
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: 研究目的与关联
+      description: 本次希望回答的问题、Q-ID/H-ID、文献和记录路径。
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: 方案版本与准备状态
+      description: 已有方案填 P-ID、精确版本和路径；尚未确定的方案或资源写明待确认。
+    validations:
+      required: true
+  - type: textarea
+    id: samples
+    attributes:
+      label: 样本、批次与依赖
+      description: 关联的匿名样本 ID、批次和必要输入；尚未分配 ID 时注明，不在此填写身份映射。
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 记录与数据交付标准
+      description: 计划的 E-ID 记录路径、数据版本登记、共享位置、复核安排与目标时间。失败和无显著结果同样需要记录。
+    validations:
+      required: true

@@ -1,0 +1,51 @@
+# 本地系统与编辑器
+.DS_Store
+.idea/
+.vscode/
+*~
+
+# 凭据与本地配置；示例配置可以提交
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.local.*
+.dvc/config.local
+
+# 运行环境与缓存
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.Rhistory
+.RData
+.Ruserdata
+.snakemake/
+.nextflow/
+.nextflow.log*
+
+# 大型数据与运行产物；元数据、小型测试数据另行提交
+/data/raw/
+/data/interim/
+/data/processed/
+/data/external/
+/data/private/
+/data/local/
+/models/
+/artifacts/
+/outputs/
+/results/
+/runs/
+/mlruns/
+/mlartifacts/
+/literature/pdfs/
+.dvc/cache/
+
+# 个体身份映射与本地草稿
+/metadata/private/
+/scratch/
