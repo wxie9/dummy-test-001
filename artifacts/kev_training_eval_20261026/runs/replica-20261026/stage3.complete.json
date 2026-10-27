@@ -1,0 +1,17 @@
+{
+  "completed_utc": "2026-10-26T15:56:00.754817+00:00",
+  "training_metrics": {
+    "wall_seconds": 5524.061454534531,
+    "records_seen": 30329,
+    "requested_records": 22539,
+    "truncated_records": 0,
+    "rejected_records": 0,
+    "optimizer_steps": 2818,
+    "forward_tokens": 15531716,
+    "peak_device_bytes": 23888081920,
+    "device": "cuda",
+    "dtype": "bf16",
+    "batch": 4,
+    "peak_rss_bytes": 5645053952
+  }
+}

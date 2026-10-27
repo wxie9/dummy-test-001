@@ -1,0 +1,49 @@
+{"started_utc": "2026-10-26T15:26:30.865979+00:00", "argv": ["/C20545/kev-08b-official-repro-20261026/python.sh", "-m", "kev.train", "--epochs", "1", "--seed", "1", "--lr", "4e-05", "--lora", "16", "--accum", "1", "--batch", "8", "--perm_kl", "0.0", "--perm_frac", "0.3", "--ord_w", "0.0", "--p_none", "0.1", "--p_none_distract", "0.12", "--p_distract", "0.15", "--p_none_pair", "0.25", "--synthetic_repeat", "1", "--public_frac", "1.0", "--head_lr", "0.0", "--weight_decay", "0.01", "--anchor_w", "0.0", "--dtype", "bf16", "--replay", "2000", "--base", "/C20545/models/Qwen3-0.6B-Base", "--base_revision", "local-model-sha256-cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba", "--init_from", "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage1", "--data", "/C20545/kev-08b-official-repro-20261026/evals/night2/dates_unknowable.jsonl", "--suite", "/C20545/kev-08b-official-repro-20261026/evals/v7/decision-v7", "--out", "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage2", "--device", "cuda"], "cwd": "/C20545/kev-08b-official-repro-20261026/stages/stage2"}
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:   0%|          | 1/310 [00:00<00:33,  9.18it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1842.46it/s]
+delta: warm start from /C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage1: 392 adapter tensors and the pointer head loaded
+device=cuda trainable params=10.6M
+replay: 2000 of 12576 suite training records mixed with 1425 from /C20545/kev-08b-official-repro-20261026/evals/night2/dates_unknowable.jsonl
+3425 training requests (holdout=[]), questions by type {'noul': 1268, 'score': 1431, 'choice': 1214}
+ep0 step 10/429 loss 0.456 kl 0.000 anchor 0.000 0.035s/rec
+ep0 step 20/429 loss 0.643 kl 0.000 anchor 0.000 0.035s/rec
+ep0 step 30/429 loss 0.382 kl 0.000 anchor 0.000 0.036s/rec
+ep0 step 40/429 loss 0.584 kl 0.000 anchor 0.000 0.033s/rec
+ep0 step 50/429 loss 0.486 kl 0.000 anchor 0.000 0.031s/rec
+ep0 step 60/429 loss 0.393 kl 0.000 anchor 0.000 0.033s/rec
+ep0 step 70/429 loss 0.369 kl 0.000 anchor 0.000 0.033s/rec
+ep0 step 80/429 loss 0.663 kl 0.000 anchor 0.000 0.032s/rec
+ep0 step 90/429 loss 0.294 kl 0.000 anchor 0.000 0.032s/rec
+ep0 step 100/429 loss 0.673 kl 0.000 anchor 0.000 0.033s/rec
+ep0 step 110/429 loss 0.426 kl 0.000 anchor 0.000 0.033s/rec
+ep0 step 120/429 loss 0.353 kl 0.000 anchor 0.000 0.032s/rec
+ep0 step 130/429 loss 0.516 kl 0.000 anchor 0.000 0.032s/rec
+ep0 step 140/429 loss 0.196 kl 0.000 anchor 0.000 0.031s/rec
+ep0 step 150/429 loss 0.359 kl 0.000 anchor 0.000 0.031s/rec
+ep0 step 160/429 loss 0.645 kl 0.000 anchor 0.000 0.031s/rec
+ep0 step 170/429 loss 0.387 kl 0.000 anchor 0.000 0.031s/rec
+ep0 step 180/429 loss 0.446 kl 0.000 anchor 0.000 0.031s/rec
+ep0 step 190/429 loss 0.402 kl 0.000 anchor 0.000 0.031s/rec
+ep0 step 200/429 loss 0.383 kl 0.000 anchor 0.000 0.031s/rec
+ep0 step 210/429 loss 0.392 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 220/429 loss 0.451 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 230/429 loss 0.312 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 240/429 loss 0.287 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 250/429 loss 0.510 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 260/429 loss 0.503 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 270/429 loss 0.318 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 280/429 loss 0.470 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 290/429 loss 0.385 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 300/429 loss 0.352 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 310/429 loss 0.295 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 320/429 loss 0.356 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 330/429 loss 0.363 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 340/429 loss 0.452 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 350/429 loss 0.371 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 360/429 loss 0.365 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 370/429 loss 0.438 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 380/429 loss 0.239 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 390/429 loss 0.592 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 400/429 loss 0.397 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 410/429 loss 0.298 kl 0.000 anchor 0.000 0.030s/rec
+ep0 step 420/429 loss 0.373 kl 0.000 anchor 0.000 0.030s/rec
+saved /C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage2

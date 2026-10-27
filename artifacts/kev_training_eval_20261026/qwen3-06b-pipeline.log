@@ -1,0 +1,11 @@
+{"state": "training", "updated_utc": "2026-10-26T15:08:52.191339+00:00", "pid": 47463, "stage": 1, "expected_optimizer_steps": 3144, "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage1"}
+{"state": "training", "updated_utc": "2026-10-26T15:26:30.864880+00:00", "pid": 47463, "stage": 2, "expected_optimizer_steps": 429, "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage2"}
+{"state": "training", "updated_utc": "2026-10-26T15:28:40.345470+00:00", "pid": 47463, "stage": 3, "expected_optimizer_steps": 2818, "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3"}
+{"state": "calibrating", "updated_utc": "2026-10-26T16:43:51.200860+00:00", "pid": 47463, "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3"}
+{"state": "benchmarking", "updated_utc": "2026-10-26T16:45:07.532189+00:00", "pid": 47463, "suite": "v7/decision-v7", "split": "test"}
+{"state": "benchmarking", "updated_utc": "2026-10-26T16:46:11.233299+00:00", "pid": 47463, "suite": "v4/transfer-v4", "split": "test"}
+{"state": "benchmarking", "updated_utc": "2026-10-26T16:46:52.282838+00:00", "pid": 47463, "suite": "v9/transfer-v9", "split": "test"}
+{"state": "benchmarking", "updated_utc": "2026-10-26T16:47:57.623847+00:00", "pid": 47463, "suite": "hard-v1", "split": "test"}
+{"state": "benchmarking", "updated_utc": "2026-10-26T16:49:21.125469+00:00", "pid": 47463, "suite": "devtools-v1", "split": "test"}
+{"state": "benchmarking", "updated_utc": "2026-10-26T16:50:17.067005+00:00", "pid": 47463, "suite": "documents-v1", "split": "test"}
+{"state": "complete", "updated_utc": "2026-10-26T16:51:19.645746+00:00", "pid": 47463, "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3", "benchmarks": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/benchmarks"}

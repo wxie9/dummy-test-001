@@ -1,0 +1,75 @@
+{"started_utc": "2026-10-26T16:02:15.855550+00:00", "argv": ["/C20545/kev-08b-official-repro-20261026/python.sh", "-m", "kev.benchmark", "--run", "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3", "--suite", "/C20545/kev-08b-official-repro-20261026/evals/hard-v1", "--device", "cuda", "--allow-test", "--out", "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/benchmarks/hard-v1-test"], "cwd": "/C20545/kev-08b-official-repro-20261026/stages/stage3"}
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:   0%|          | 1/320 [00:00<01:00,  5.26it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1609.39it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/700
+evaluated 100/700
+evaluated 150/700
+evaluated 200/700
+evaluated 250/700
+evaluated 300/700
+evaluated 350/700
+evaluated 400/700
+evaluated 450/700
+evaluated 500/700
+evaluated 550/700
+evaluated 600/700
+evaluated 650/700
+evaluated 700/700
+{
+  "objective": -0.9024866712958685,
+  "clean": {
+    "n": 1088,
+    "nll": 0.879483266512307,
+    "acc": 0.6498161764705882,
+    "ece": 0.11636673818285703,
+    "brier": 0.4699591363417897,
+    "mean_conf": 0.5334494382877312,
+    "confident_error_rate": 0.0,
+    "coverage_at_0_9": 0.03216911764705882,
+    "accuracy_at_0_9": 1.0,
+    "coverage_at_5pct_error": 0.17003676470588236,
+    "coverage_at_1pct_error": 0.05514705882352941,
+    "aurc": 0.16215313573667586,
+    "error_rate_at_0_9": 0.0,
+    "confidence_bias": -0.11636673818285703,
+    "top_bins": {
+      "0.9": {
+        "n": 35,
+        "errors": 0,
+        "error_rate": 0.0
+      },
+      "0.95": {
+        "n": 2,
+        "errors": 0,
+        "error_rate": 0.0
+      },
+      "0.99": {
+        "n": 0,
+        "errors": 0,
+        "error_rate": null
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.8419117647058824,
+        "confidence_cutoff": 0.5112928329093668
+      },
+      "0.8": {
+        "coverage": 0.8005514705882353,
+        "accuracy": 0.7336394948335246,
+        "confidence_cutoff": 0.3314998857062272
+      }
+    },
+    "score_mae": 0.954111210802365,
+    "ranked_probability_score": 0.11096025383461743
+  },
+  "coverage": {
+    "requested_records": 700,
+    "requested_questions": 1088,
+    "evaluated_records": 700,
+    "evaluated_questions": 1088,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}

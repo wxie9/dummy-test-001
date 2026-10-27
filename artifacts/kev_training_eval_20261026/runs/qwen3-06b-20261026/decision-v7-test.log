@@ -1,0 +1,83 @@
+{"started_utc": "2026-10-26T16:45:07.533162+00:00", "argv": ["/C20545/kev-08b-official-repro-20261026/python.sh", "-m", "kev.benchmark", "--run", "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3", "--suite", "/C20545/kev-08b-official-repro-20261026/evals/v7/decision-v7", "--device", "cuda", "--allow-test", "--out", "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/benchmarks/decision-v7-test"], "cwd": "/C20545/kev-08b-official-repro-20261026/stages/stage3"}
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:   0%|          | 1/310 [00:00<00:33,  9.15it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1759.74it/s]
+evaluated 50/1176
+evaluated 100/1176
+evaluated 150/1176
+evaluated 200/1176
+evaluated 250/1176
+evaluated 300/1176
+evaluated 350/1176
+evaluated 400/1176
+evaluated 450/1176
+evaluated 500/1176
+evaluated 550/1176
+evaluated 600/1176
+evaluated 650/1176
+evaluated 700/1176
+evaluated 750/1176
+evaluated 800/1176
+evaluated 850/1176
+evaluated 900/1176
+evaluated 950/1176
+evaluated 1000/1176
+evaluated 1050/1176
+evaluated 1100/1176
+evaluated 1150/1176
+{
+  "objective": -0.43992393817673114,
+  "clean": {
+    "n": 1200,
+    "nll": 0.45819407550606617,
+    "acc": 0.8166666666666667,
+    "ece": 0.03293846655409957,
+    "brier": 0.24681044304907981,
+    "mean_conf": 0.8185611812345722,
+    "confident_error_rate": 0.015833333333333335,
+    "coverage_at_0_9": 0.5483333333333333,
+    "accuracy_at_0_9": 0.9711246200607903,
+    "coverage_at_5pct_error": 0.6341666666666667,
+    "coverage_at_1pct_error": 0.3458333333333333,
+    "aurc": 0.04927873122493205,
+    "error_rate_at_0_9": 0.028875379939209727,
+    "confidence_bias": 0.0018945145679055697,
+    "top_bins": {
+      "0.9": {
+        "n": 658,
+        "errors": 19,
+        "error_rate": 0.028875379939209727
+      },
+      "0.95": {
+        "n": 533,
+        "errors": 8,
+        "error_rate": 0.0150093808630394
+      },
+      "0.99": {
+        "n": 237,
+        "errors": 2,
+        "error_rate": 0.008438818565400843
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.98,
+        "confidence_cutoff": 0.9258562213256475
+      },
+      "0.8": {
+        "coverage": 0.8,
+        "accuracy": 0.9010416666666666,
+        "confidence_cutoff": 0.5963290929794312
+      }
+    },
+    "score_mae": 0.5149005270059092,
+    "ranked_probability_score": 0.08043287058788119
+  },
+  "coverage": {
+    "requested_records": 1176,
+    "requested_questions": 1440,
+    "evaluated_records": 1176,
+    "evaluated_questions": 1440,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}

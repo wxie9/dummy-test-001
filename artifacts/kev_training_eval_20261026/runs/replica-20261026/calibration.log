@@ -1,0 +1,4 @@
+{"started_utc": "2026-10-26T15:58:31.065515+00:00", "argv": ["/C20545/kev-08b-official-repro-20261026/python.sh", "/C20545/kev-08b-official-repro-20261026/stages/stage3/scripts/calibrate_checkpoint.py", "--run", "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3", "--rows", "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/development-raw/rows.json"], "cwd": "/C20545/kev-08b-official-repro-20261026/stages/stage3"}
+development  T=2.41  acc 0.828 -> 0.828 | brier 0.278 -> 0.253 | ece 0.101 -> 0.025 | conf-err 0.074 -> 0.021 | cov@5% 0.58 -> 0.57
+development  OOF T=[2.46, 2.35, 2.41, 2.35, 2.35] ece raw 0.101 [0.082, 0.123] -> oof 0.026 [0.019, 0.052]  delta [-0.090, -0.041] separated=True
+wrote temperature 2.41 to /C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3/head.pt
