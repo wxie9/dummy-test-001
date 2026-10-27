@@ -1,0 +1,27 @@
+{
+  "title": "Kev · Qwen3-0.6B 与 Qwen3.5-0.8B 训练与评测",
+  "project": "Kev model comparison",
+  "frozen": [
+    "Two completed A800 runs with retained stage configurations, logs, summary JSON, and benchmark reports.",
+    "Shared Stage 1 decision-v7 train file SHA-256: 7ed5254b5cb5291baefaceb09edf7e13110258211518c8038f4a12c11bd628ad."
+  ],
+  "new_numbers": [
+    "Qwen3.5 vs Qwen3 accuracy: decision-v7 84.00% vs 81.67%; hard-v1 64.98% vs 57.17%.",
+    "Three-stage training wall time: 1h59m40s vs 1h33m59s.",
+    "This is a single-run comparison, not a multi-seed significance result."
+  ],
+  "next_gate": "Before making an architecture-level claim, run a second seed and score both runs with identical devtools ID exclusion and paired uncertainty analysis.",
+  "human_notes": "human_notes.md",
+  "checklist": "checklist.md",
+  "prereg": "prereg.txt",
+  "artifacts": [
+    "report_summary.json",
+    "runs/replica-20261026/summary.json",
+    "runs/qwen3-06b-20261026/summary.json",
+    "runs/replica-20261026/reproduction_manifest.json",
+    "runs/qwen3-06b-20261026/reproduction_manifest.json"
+  ],
+  "tables": [],
+  "figures": [],
+  "out": "report.html"
+}

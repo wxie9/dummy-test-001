@@ -1,0 +1,36 @@
+{
+  "title": "Kev Qwen3-0.6B and Qwen3.5-0.8B training and evaluation report",
+  "run_date": "2026-10-26",
+  "runs": {
+    "qwen35_08b": {
+      "run": "runs/replica-20261026",
+      "base": "Qwen/Qwen3.5-0.8B-Base",
+      "training_wall_seconds": 7179.519543,
+      "evaluation_with_calibration_seconds": 654.205,
+      "accuracy": {
+        "decision_v7": 0.84,
+        "transfer_v4": 0.6783536585,
+        "transfer_v9": 0.6137667304,
+        "hard_v1": 0.6498161765,
+        "devtools_v1_raw": 0.651444548,
+        "devtools_v1_official_id_exclusion": 0.6517273576,
+        "documents_v1": 0.8344017094
+      }
+    },
+    "qwen3_06b": {
+      "run": "runs/qwen3-06b-20261026",
+      "base": "/C20545/models/Qwen3-0.6B-Base",
+      "training_wall_seconds": 5638.742179,
+      "evaluation_with_calibration_seconds": 448.445,
+      "accuracy": {
+        "decision_v7": 0.8166666667,
+        "transfer_v4": 0.6539634146,
+        "transfer_v9": 0.5908221797,
+        "hard_v1": 0.5716911765,
+        "devtools_v1_raw": 0.6300093197,
+        "documents_v1": 0.8215811966
+      }
+    }
+  },
+  "claim_boundary": "Single-run comparison only; not a multi-seed statistical conclusion or a bitwise reproduction of official Kev weights."
+}

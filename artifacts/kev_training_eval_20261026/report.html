@@ -1,0 +1,938 @@
+<!doctype html><meta charset='utf-8'><title>Kev · Qwen3-0.6B 与 Qwen3.5-0.8B 训练与评测</title>
+<style>
+:root{--fg:#1a1a1a;--mut:#666;--bd:#e0e0e0;--bg:#fff;--acc:#0b5fff;--warn:#b00020;--ok:#0a7d33}
+*{box-sizing:border-box}
+body{margin:0;padding:2rem;font:15px/1.65 -apple-system,"PingFang SC","Helvetica Neue",Arial,sans-serif;
+     color:var(--fg);background:var(--bg);max-width:1080px;margin-inline:auto}
+h1{font-size:1.7rem;margin:0 0 .2rem} h2{font-size:1.25rem;margin:2.2rem 0 .6rem;
+   padding-bottom:.3rem;border-bottom:2px solid var(--bd)} h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+.sub{color:var(--mut);margin:0 0 1.5rem}
+table{border-collapse:collapse;width:100%;margin:.6rem 0;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--bd);padding:.4rem .6rem;text-align:left;white-space:nowrap}
+th{background:#f6f7f9;font-weight:600}
+.card{border:1px solid var(--bd);border-radius:8px;padding:1rem 1.2rem;margin:.8rem 0;background:#fafbfc}
+.hero{border-left:4px solid var(--acc);background:#f5f8ff}
+.bad{border-left:4px solid var(--warn);background:#fff5f5}
+.good{border-left:4px solid var(--ok);background:#f4fbf6}
+.k{color:var(--mut);font-size:13px} code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+.pill{display:inline-block;padding:.1rem .5rem;border-radius:99px;font-size:12px;background:#eef1f5;margin-right:.3rem}
+.miss{color:var(--warn);font-weight:600}
+pre{white-space:pre-wrap;margin:.3rem 0}
+</style>
+<h1>Kev · Qwen3-0.6B 与 Qwen3.5-0.8B 训练与评测</h1>
+<p class='sub'>Kev model comparison · 生成于 2026-10-27 09:10 CST</p>
+<h2>0 · 组会一页（会上只讲这三样）</h2>
+<div class='card hero'><b>① 新冻结的资产</b><br>Two completed A800 runs with retained stage configurations, logs, summary JSON, and benchmark reports.<br>Shared Stage 1 decision-v7 train file SHA-256: 7ed5254b5cb5291baefaceb09edf7e13110258211518c8038f4a12c11bd628ad.</div>
+<div class='card hero'><b>② 上周新增的数字</b><br>Qwen3.5 vs Qwen3 accuracy: decision-v7 84.00% vs 81.67%; hard-v1 64.98% vs 57.17%.<br>Three-stage training wall time: 1h59m40s vs 1h33m59s.<br>This is a single-run comparison, not a multi-seed significance result.</div>
+<div class='card hero'><b>③ 下周要过的那道门禁</b><br>Before making an architecture-level claim, run a second seed and score both runs with identical devtools ID exclusion and paired uncertainty analysis.</div>
+<div class='card'><b>可被追问清单（作者自评）</b><pre>&lt;!-- 逐条列。这一条会被渲染到报告最前面，讨论从这里开始。
+     例：
+     敢：G1 三 seed 的 Regret@1（端到端跑通、与原文偏差有解释）
+     不敢：非线性 R² 的交叉拟合设置（配置是 AI 给的，我还没手算验证过） --&gt;
+
+---
+
+# 可选补充（不强制）</pre></div>
+<h2>1 · 自检</h2>
+<div class='card bad'><b>未通过：</b><ul><li>字段「跑之前我预测这个数是多少」是空的或只有占位符 —— 需要一个先验信念, 代码里没有</li><li>字段「哪个数出乎我意料, 为什么」是空的或只有占位符 —— 需要预测与结果的差</li><li>字段「我改了什么才让它跑通」是空的或只有占位符 —— 只存在于你的经历里</li><li>字段「如果这个结论是错的, 最可能错在哪一步」是空的或只有占位符 —— 需要对自己 pipeline 的怀疑</li><li>字段「哪几个数我敢在会上被追问, 哪几个不敢」是空的或只有占位符 —— 自我评估</li><li>检查表「1 研究设计」有 3 项未回答（如：本次实验要回答的问题，一句话写下来了 等 3 项）</li><li>检查表「2 计算可复现性」有 4 项未回答（如：代码 commit / 环境 / 依赖版本已记录 等 4 项）</li><li>检查表「3 数据质量」有 3 项未回答（如：数据来源、版本、许可已记录 等 3 项）</li><li>检查表「4 数据预处理」有 3 项未回答（如：预处理步骤对**所有实验条件完全一致**（若不一致，差异已列出） 等 3 项）</li><li>检查表「5 建模」有 3 项未回答（如：模型结构、参数量、每层已记录（Model Card） 等 3 项）</li><li>检查表「6 数据泄露 ⚠️」有 6 项未回答（如：测试集在任何环节都没有参与训练 / 选模 / 调阈值 等 6 项）</li><li>检查表「7 指标与不确定性」有 5 项未回答（如：主指标在跑之前就定了，且只有一个 等 5 项）</li><li>检查表「8 泛化性」有 3 项未回答（如：明确写出结论的**作用域**（哪个环境 / 哪个数据分布 / 哪个表示下成立） 等 3 项）</li><li>检查表「9 本项目专属（自行增补）」有 3 项未回答（如：（例 · PaperC）G1/G3 确实共用同一套 original bin，已在日志中验证 等 3 项）</li><li>⚠ 没有找到预注册文件 prereg.txt（开工三问应存档于此）</li></ul></div>
+<h2>2 · 模型卡与配置（自动）</h2>
+<h3>report_summary.json</h3><div class='card'><pre class='mono'>{
+  &quot;title&quot;: &quot;Kev Qwen3-0.6B and Qwen3.5-0.8B training and evaluation report&quot;,
+  &quot;run_date&quot;: &quot;2026-10-26&quot;,
+  &quot;runs&quot;: {
+    &quot;qwen35_08b&quot;: {
+      &quot;run&quot;: &quot;runs/replica-20261026&quot;,
+      &quot;base&quot;: &quot;Qwen/Qwen3.5-0.8B-Base&quot;,
+      &quot;training_wall_seconds&quot;: 7179.519543,
+      &quot;evaluation_with_calibration_seconds&quot;: 654.205,
+      &quot;accuracy&quot;: {
+        &quot;decision_v7&quot;: 0.84,
+        &quot;transfer_v4&quot;: 0.6783536585,
+        &quot;transfer_v9&quot;: 0.6137667304,
+        &quot;hard_v1&quot;: 0.6498161765,
+        &quot;devtools_v1_raw&quot;: 0.651444548,
+        &quot;devtools_v1_official_id_exclusion&quot;: 0.6517273576,
+        &quot;documents_v1&quot;: 0.8344017094
+      }
+    },
+    &quot;qwen3_06b&quot;: {
+      &quot;run&quot;: &quot;runs/qwen3-06b-20261026&quot;,
+      &quot;base&quot;: &quot;/C20545/models/Qwen3-0.6B-Base&quot;,
+      &quot;training_wall_seconds&quot;: 5638.742179,
+      &quot;evaluation_with_calibration_seconds&quot;: 448.445,
+      &quot;accuracy&quot;: {
+        &quot;decision_v7&quot;: 0.8166666667,
+        &quot;transfer_v4&quot;: 0.6539634146,
+        &quot;transfer_v9&quot;: 0.5908221797,
+        &quot;hard_v1&quot;: 0.5716911765,
+        &quot;devtools_v1_raw&quot;: 0.6300093197,
+        &quot;documents_v1&quot;: 0.8215811966
+      }
+    }
+  },
+  &quot;claim_boundary&quot;: &quot;Single-run comparison only; not a multi-seed statistical conclusion or a bitwise reproduction of official Kev weights.&quot;
+}</pre></div>
+<h3>runs/replica-20261026/summary.json</h3><div class='card'><pre class='mono'>{
+  &quot;training&quot;: {
+    &quot;stage1&quot;: {
+      &quot;wall_seconds&quot;: 1513.529283285141,
+      &quot;records_seen&quot;: 30370,
+      &quot;requested_records&quot;: 25152,
+      &quot;truncated_records&quot;: 0,
+      &quot;rejected_records&quot;: 0,
+      &quot;optimizer_steps&quot;: 3144,
+      &quot;forward_tokens&quot;: 5832366,
+      &quot;peak_device_bytes&quot;: 56711647232,
+      &quot;device&quot;: &quot;cuda&quot;,
+      &quot;dtype&quot;: &quot;bf16&quot;,
+      &quot;batch&quot;: 8,
+      &quot;peak_rss_bytes&quot;: 5661769728
+    },
+    &quot;stage2&quot;: {
+      &quot;wall_seconds&quot;: 141.92880582809448,
+      &quot;records_seen&quot;: 3937,
+      &quot;requested_records&quot;: 3425,
+      &quot;truncated_records&quot;: 0,
+      &quot;rejected_records&quot;: 0,
+      &quot;optimizer_steps&quot;: 429,
+      &quot;forward_tokens&quot;: 640184,
+      &quot;peak_device_bytes&quot;: 43847443456,
+      &quot;device&quot;: &quot;cuda&quot;,
+      &quot;dtype&quot;: &quot;bf16&quot;,
+      &quot;batch&quot;: 8,
+      &quot;peak_rss_bytes&quot;: 5644763136
+    },
+    &quot;stage3&quot;: {
+      &quot;wall_seconds&quot;: 5524.061454534531,
+      &quot;records_seen&quot;: 30329,
+      &quot;requested_records&quot;: 22539,
+      &quot;truncated_records&quot;: 0,
+      &quot;rejected_records&quot;: 0,
+      &quot;optimizer_steps&quot;: 2818,
+      &quot;forward_tokens&quot;: 15531716,
+      &quot;peak_device_bytes&quot;: 23888081920,
+      &quot;device&quot;: &quot;cuda&quot;,
+      &quot;dtype&quot;: &quot;bf16&quot;,
+      &quot;batch&quot;: 4,
+      &quot;peak_rss_bytes&quot;: 5645053952
+    }
+  },
+  &quot;test_benchmarks&quot;: {
+    &quot;transfer-v9-test&quot;: {
+      &quot;clean&quot;: {
+        &quot;n&quot;: 1046,
+        &quot;nll&quot;: 0.9233743245490321,
+        &quot;acc&quot;: 0.6137667304015296,
+        &quot;ece&quot;: 0.041518839541680605,
+        &quot;brier&quot;: 0.47281205379014773,
+        &quot;mean_conf&quot;: 0.5895844478092286,
+        &quot;confident_error_rate&quot;: 0.0,
+        &quot;coverage_at_0_9&quot;: 0.14244741873804972,
+        &quot;accuracy_at_0_9&quot;: 1.0,
+        &quot;coverage_at_5pct_error&quot;: 0.248565965583174,
+        &quot;coverage_at_1pct_error&quot;: 0.1835564053537285,
+        &quot;aurc&quot;: 0.16848088080387064,
+        &quot;error_rate_at_0_9&quot;: 0.0,
+        &quot;confidence_bias&quot;: -0.02418228259230104,
+        &quot;top_bins&quot;: {
+          &quot;0.9&quot;: {
+            &quot;n&quot;: 149,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: 0.0
+          },
+          &quot;0.95&quot;: {
+            &quot;n&quot;: 87,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: 0.0
+          },
+          &quot;0.99&quot;: {
+            &quot;n&quot;: 18,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: 0.0
+          }
+        },
+        &quot;selective&quot;: {
+          &quot;0.5&quot;: {
+            &quot;coverage&quot;: 0.5,
+            &quot;accuracy&quot;: 0.8279158699808795,
+            &quot;confidence_cutoff&quot;: 0.5927844643592834
+          },
+          &quot;0.8&quot;: {
+            &quot;coverage&quot;: 0.8001912045889101,
+            &quot;accuracy&quot;: 0.7084826762246117,
+            &quot;confidence_cutoff&quot;: 0.33254340291023254
+          }
+        },
+        &quot;score_mae&quot;: 0.42718346680625524,
+        &quot;ranked_probability_score&quot;: 0.1298701657282118
+      },
+      &quot;coverage&quot;: {
+        &quot;requested_records&quot;: 1264,
+        &quot;requested_questions&quot;: 1264,
+        &quot;evaluated_records&quot;: 1264,
+        &quot;evaluated_questions&quot;: 1264,
+        &quot;rejected_records&quot;: 0,
+        &quot;truncated_records&quot;: 0
+      },
+      &quot;calibration&quot;: {
+        &quot;inference_temperature&quot;: 2.406050072164233,
+        &quot;additional_temperature&quot;: 1.0,
+        &quot;logits_recorded&quot;: true
+      }
+    },
+    &quot;decision-v7-test&quot;: {
+      &quot;clean&quot;: {
+        &quot;n&quot;: 1200,
+        &quot;nll&quot;: 0.42236277530303273,
+        &quot;acc&quot;: 0.84,
+        &quot;ece&quot;: 0.015808437674685028,
+        &quot;brier&quot;: 0.2270025906765604,
+        &quot;mean_conf&quot;: 0.8322537524492579,
+        &quot;confident_error_rate&quot;: 0.013333333333333334,
+        &quot;coverage_at_0_9&quot;: 0.5633333333333334,
+        &quot;accuracy_at_0_9&quot;: 0.9763313609467456,
+        &quot;coverage_at_5pct_error&quot;: 0.6683333333333333,
+        &quot;coverage_at_1pct_error&quot;: 0.47333333333333333,
+        &quot;aurc&quot;: 0.042581202582072555,
+        &quot;error_rate_at_0_9&quot;: 0.023668639053254437,
+        &quot;confidence_bias&quot;: -0.007746247550742047,
+        &quot;top_bins&quot;: {
+          &quot;0.9&quot;: {
+            &quot;n&quot;: 676,
+            &quot;errors&quot;: 16,
+            &quot;error_rate&quot;: 0.023668639053254437
+          },
+          &quot;0.95&quot;: {
+            &quot;n&quot;: 553,
+            &quot;errors&quot;: 5,
+            &quot;error_rate&quot;: 0.009041591320072333
+          },
+          &quot;0.99&quot;: {
+            &quot;n&quot;: 178,
+            &quot;errors&quot;: 2,
+            &quot;error_rate&quot;: 0.011235955056179775
+          }
+        },
+        &quot;selective&quot;: {
+          &quot;0.5&quot;: {
+            &quot;coverage&quot;: 0.5,
+            &quot;accuracy&quot;: 0.9866666666666667,
+            &quot;confidence_cutoff&quot;: 0.9382373040153176
+          },
+          &quot;0.8&quot;: {
+            &quot;coverage&quot;: 0.8,
+            &quot;accuracy&quot;: 0.9145833333333333,
+            &quot;confidence_cutoff&quot;: 0.6399659299830156
+          }
+        },
+        &quot;score_mae&quot;: 0.5401122190048441,
+        &quot;ranked_probability_score&quot;: 0.0840772063354871
+      },
+      &quot;coverage&quot;: {
+        &quot;requested_records&quot;: 1176,
+        &quot;requested_questions&quot;: 1440,
+        &quot;evaluated_records&quot;: 1176,
+        &quot;evaluated_questions&quot;: 1440,
+        &quot;rejected_records&quot;: 0,
+        &quot;truncated_records&quot;: 0
+      },
+      &quot;calibration&quot;: {
+        &quot;inference_temperature&quot;: 2.406050072164233,
+        &quot;additional_temperature&quot;: 1.0,
+        &quot;logits_recorded&quot;: true
+      }
+    },
+    &quot;hard-v1-test&quot;: {
+      &quot;clean&quot;: {
+        &quot;n&quot;: 1088,
+        &quot;nll&quot;: 0.879483266512307,
+        &quot;acc&quot;: 0.6498161764705882,
+        &quot;ece&quot;: 0.11636673818285703,
+        &quot;brier&quot;: 0.4699591363417897,
+        &quot;mean_conf&quot;: 0.5334494382877312,
+        &quot;confident_error_rate&quot;: 0.0,
+        &quot;coverage_at_0_9&quot;: 0.03216911764705882,
+        &quot;accuracy_at_0_9&quot;: 1.0,
+        &quot;coverage_at_5pct_error&quot;: 0.17003676470588236,
+        &quot;coverage_at_1pct_error&quot;: 0.05514705882352941,
+        &quot;aurc&quot;: 0.16215313573667586,
+        &quot;error_rate_at_0_9&quot;: 0.0,
+        &quot;confidence_bias&quot;: -0.11636673818285703,
+        &quot;top_bins&quot;: {
+          &quot;0.9&quot;: {
+            &quot;n&quot;: 35,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: 0.0
+          },
+          &quot;0.95&quot;: {
+            &quot;n&quot;: 2,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: 0.0
+          },
+          &quot;0.99&quot;: {
+            &quot;n&quot;: 0,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: null
+          }
+        },
+        &quot;selective&quot;: {
+          &quot;0.5&quot;: {
+            &quot;coverage&quot;: 0.5,
+            &quot;accuracy&quot;: 0.8419117647058824,
+            &quot;confide</pre></div>
+<h3>runs/qwen3-06b-20261026/summary.json</h3><div class='card'><pre class='mono'>{
+  &quot;training&quot;: {
+    &quot;stage1&quot;: {
+      &quot;wall_seconds&quot;: 1045.0107777118683,
+      &quot;records_seen&quot;: 30370,
+      &quot;requested_records&quot;: 25152,
+      &quot;truncated_records&quot;: 0,
+      &quot;rejected_records&quot;: 0,
+      &quot;optimizer_steps&quot;: 3144,
+      &quot;forward_tokens&quot;: 5829284,
+      &quot;peak_device_bytes&quot;: 37007694848,
+      &quot;device&quot;: &quot;cuda&quot;,
+      &quot;dtype&quot;: &quot;bf16&quot;,
+      &quot;batch&quot;: 8,
+      &quot;peak_rss_bytes&quot;: 4444229632
+    },
+    &quot;stage2&quot;: {
+      &quot;wall_seconds&quot;: 118.86028718948364,
+      &quot;records_seen&quot;: 3937,
+      &quot;requested_records&quot;: 3425,
+      &quot;truncated_records&quot;: 0,
+      &quot;rejected_records&quot;: 0,
+      &quot;optimizer_steps&quot;: 429,
+      &quot;forward_tokens&quot;: 638258,
+      &quot;peak_device_bytes&quot;: 32866695168,
+      &quot;device&quot;: &quot;cuda&quot;,
+      &quot;dtype&quot;: &quot;bf16&quot;,
+      &quot;batch&quot;: 8,
+      &quot;peak_rss_bytes&quot;: 4436340736
+    },
+    &quot;stage3&quot;: {
+      &quot;wall_seconds&quot;: 4474.871114015579,
+      &quot;records_seen&quot;: 30329,
+      &quot;requested_records&quot;: 22539,
+      &quot;truncated_records&quot;: 0,
+      &quot;rejected_records&quot;: 0,
+      &quot;optimizer_steps&quot;: 2818,
+      &quot;forward_tokens&quot;: 15284299,
+      &quot;peak_device_bytes&quot;: 17094156288,
+      &quot;device&quot;: &quot;cuda&quot;,
+      &quot;dtype&quot;: &quot;bf16&quot;,
+      &quot;batch&quot;: 4,
+      &quot;peak_rss_bytes&quot;: 4431384576
+    }
+  },
+  &quot;test_benchmarks&quot;: {
+    &quot;transfer-v9-test&quot;: {
+      &quot;clean&quot;: {
+        &quot;n&quot;: 1046,
+        &quot;nll&quot;: 0.9596294096898803,
+        &quot;acc&quot;: 0.5908221797323135,
+        &quot;ece&quot;: 0.027729017536227328,
+        &quot;brier&quot;: 0.49548930353325193,
+        &quot;mean_conf&quot;: 0.5638617060683101,
+        &quot;confident_error_rate&quot;: 0.0009560229445506692,
+        &quot;coverage_at_0_9&quot;: 0.12619502868068833,
+        &quot;accuracy_at_0_9&quot;: 0.9924242424242424,
+        &quot;coverage_at_5pct_error&quot;: 0.21606118546845124,
+        &quot;coverage_at_1pct_error&quot;: 0.14340344168260039,
+        &quot;aurc&quot;: 0.19096987333104928,
+        &quot;error_rate_at_0_9&quot;: 0.007575757575757576,
+        &quot;confidence_bias&quot;: -0.026960473664003448,
+        &quot;top_bins&quot;: {
+          &quot;0.9&quot;: {
+            &quot;n&quot;: 132,
+            &quot;errors&quot;: 1,
+            &quot;error_rate&quot;: 0.007575757575757576
+          },
+          &quot;0.95&quot;: {
+            &quot;n&quot;: 89,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: 0.0
+          },
+          &quot;0.99&quot;: {
+            &quot;n&quot;: 15,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: 0.0
+          }
+        },
+        &quot;selective&quot;: {
+          &quot;0.5&quot;: {
+            &quot;coverage&quot;: 0.5,
+            &quot;accuracy&quot;: 0.8011472275334608,
+            &quot;confidence_cutoff&quot;: 0.5682510052881985
+          },
+          &quot;0.8&quot;: {
+            &quot;coverage&quot;: 0.8001912045889101,
+            &quot;accuracy&quot;: 0.6833930704898447,
+            &quot;confidence_cutoff&quot;: 0.31944648383398305
+          }
+        },
+        &quot;score_mae&quot;: 0.48375713530079806,
+        &quot;ranked_probability_score&quot;: 0.14626342227501873
+      },
+      &quot;coverage&quot;: {
+        &quot;requested_records&quot;: 1264,
+        &quot;requested_questions&quot;: 1264,
+        &quot;evaluated_records&quot;: 1264,
+        &quot;evaluated_questions&quot;: 1264,
+        &quot;rejected_records&quot;: 0,
+        &quot;truncated_records&quot;: 0
+      },
+      &quot;calibration&quot;: {
+        &quot;inference_temperature&quot;: 2.3510958125672174,
+        &quot;additional_temperature&quot;: 1.0,
+        &quot;logits_recorded&quot;: true
+      }
+    },
+    &quot;decision-v7-test&quot;: {
+      &quot;clean&quot;: {
+        &quot;n&quot;: 1200,
+        &quot;nll&quot;: 0.45819407550606617,
+        &quot;acc&quot;: 0.8166666666666667,
+        &quot;ece&quot;: 0.03293846655409957,
+        &quot;brier&quot;: 0.24681044304907981,
+        &quot;mean_conf&quot;: 0.8185611812345722,
+        &quot;confident_error_rate&quot;: 0.015833333333333335,
+        &quot;coverage_at_0_9&quot;: 0.5483333333333333,
+        &quot;accuracy_at_0_9&quot;: 0.9711246200607903,
+        &quot;coverage_at_5pct_error&quot;: 0.6341666666666667,
+        &quot;coverage_at_1pct_error&quot;: 0.3458333333333333,
+        &quot;aurc&quot;: 0.04927873122493205,
+        &quot;error_rate_at_0_9&quot;: 0.028875379939209727,
+        &quot;confidence_bias&quot;: 0.0018945145679055697,
+        &quot;top_bins&quot;: {
+          &quot;0.9&quot;: {
+            &quot;n&quot;: 658,
+            &quot;errors&quot;: 19,
+            &quot;error_rate&quot;: 0.028875379939209727
+          },
+          &quot;0.95&quot;: {
+            &quot;n&quot;: 533,
+            &quot;errors&quot;: 8,
+            &quot;error_rate&quot;: 0.0150093808630394
+          },
+          &quot;0.99&quot;: {
+            &quot;n&quot;: 237,
+            &quot;errors&quot;: 2,
+            &quot;error_rate&quot;: 0.008438818565400843
+          }
+        },
+        &quot;selective&quot;: {
+          &quot;0.5&quot;: {
+            &quot;coverage&quot;: 0.5,
+            &quot;accuracy&quot;: 0.98,
+            &quot;confidence_cutoff&quot;: 0.9258562213256475
+          },
+          &quot;0.8&quot;: {
+            &quot;coverage&quot;: 0.8,
+            &quot;accuracy&quot;: 0.9010416666666666,
+            &quot;confidence_cutoff&quot;: 0.5963290929794312
+          }
+        },
+        &quot;score_mae&quot;: 0.5149005270059092,
+        &quot;ranked_probability_score&quot;: 0.08043287058788119
+      },
+      &quot;coverage&quot;: {
+        &quot;requested_records&quot;: 1176,
+        &quot;requested_questions&quot;: 1440,
+        &quot;evaluated_records&quot;: 1176,
+        &quot;evaluated_questions&quot;: 1440,
+        &quot;rejected_records&quot;: 0,
+        &quot;truncated_records&quot;: 0
+      },
+      &quot;calibration&quot;: {
+        &quot;inference_temperature&quot;: 2.3510958125672174,
+        &quot;additional_temperature&quot;: 1.0,
+        &quot;logits_recorded&quot;: true
+      }
+    },
+    &quot;hard-v1-test&quot;: {
+      &quot;clean&quot;: {
+        &quot;n&quot;: 1088,
+        &quot;nll&quot;: 1.0702741068813866,
+        &quot;acc&quot;: 0.5716911764705882,
+        &quot;ece&quot;: 0.14207565215971385,
+        &quot;brier&quot;: 0.5750393767657106,
+        &quot;mean_conf&quot;: 0.4296155243108744,
+        &quot;confident_error_rate&quot;: 0.0,
+        &quot;coverage_at_0_9&quot;: 0.0,
+        &quot;accuracy_at_0_9&quot;: null,
+        &quot;coverage_at_5pct_error&quot;: 0.04595588235294118,
+        &quot;coverage_at_1pct_error&quot;: 0.0009191176470588235,
+        &quot;aurc&quot;: 0.2498953003227315,
+        &quot;error_rate_at_0_9&quot;: null,
+        &quot;confidence_bias&quot;: -0.1420756521597138,
+        &quot;top_bins&quot;: {
+          &quot;0.9&quot;: {
+            &quot;n&quot;: 0,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: null
+          },
+          &quot;0.95&quot;: {
+            &quot;n&quot;: 0,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: null
+          },
+          &quot;0.99&quot;: {
+            &quot;n&quot;: 0,
+            &quot;errors&quot;: 0,
+            &quot;error_rate&quot;: null
+          }
+        },
+        &quot;selective&quot;: {
+          &quot;0.5&quot;: {
+            &quot;coverage&quot;: 0.5,
+    </pre></div>
+<h3>runs/replica-20261026/reproduction_manifest.json</h3><div class='card'><pre class='mono'>{
+  &quot;started_utc&quot;: &quot;2026-10-26T13:55:12.892734+00:00&quot;,
+  &quot;gpu_index&quot;: &quot;1&quot;,
+  &quot;source_verification&quot;: [
+    {
+      &quot;stage&quot;: 1,
+      &quot;commit&quot;: &quot;5f78968927069eaacc3b2bdb688586989b3933ac&quot;,
+      &quot;verified_files&quot;: 23,
+      &quot;errors&quot;: []
+    },
+    {
+      &quot;stage&quot;: 2,
+      &quot;commit&quot;: &quot;19dcae9b6e3e1a48200c5825aad9fc200d31e20a&quot;,
+      &quot;verified_files&quot;: 23,
+      &quot;errors&quot;: []
+    },
+    {
+      &quot;stage&quot;: 3,
+      &quot;commit&quot;: &quot;45923b7a3460b6d36358e2e143455902c1eb856b&quot;,
+      &quot;verified_files&quot;: 30,
+      &quot;errors&quot;: []
+    }
+  ],
+  &quot;data_verification&quot;: [
+    {
+      &quot;file&quot;: &quot;evals/v7/decision-v7/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;7ed5254b5cb5291baefaceb09edf7e13110258211518c8038f4a12c11bd628ad&quot;,
+      &quot;bytes&quot;: 18679889,
+      &quot;records&quot;: 12576
+    },
+    {
+      &quot;file&quot;: &quot;evals/v7/decision-v7/calibration.jsonl&quot;,
+      &quot;sha256&quot;: &quot;12c2029a07d24828f5f8cc48f09f572c81457de96f3d5d16180be4c090abd5ca&quot;,
+      &quot;bytes&quot;: 1449835,
+      &quot;records&quot;: 968
+    },
+    {
+      &quot;file&quot;: &quot;evals/v7/decision-v7/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;8d5765d7aec4d08c61854f4664ca79ec2ba44ed092e9b967eaf61ed86c496d9c&quot;,
+      &quot;bytes&quot;: 1763325,
+      &quot;records&quot;: 1204
+    },
+    {
+      &quot;file&quot;: &quot;evals/v7/decision-v7/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;cd7d129a84232e0c7a4e92b4840a6dfe14c8bb93c5d1904b526fa8c085325d2d&quot;,
+      &quot;bytes&quot;: 1705815,
+      &quot;records&quot;: 1176
+    },
+    {
+      &quot;file&quot;: &quot;evals/v4/transfer-v4/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/v4/transfer-v4/calibration.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/v4/transfer-v4/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;ff374c49c6c9f15f8a56fb274b4a4857d20497eb8dd1ac07ce01560e682a5f2e&quot;,
+      &quot;bytes&quot;: 803309,
+      &quot;records&quot;: 764
+    },
+    {
+      &quot;file&quot;: &quot;evals/v4/transfer-v4/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;c30a91274f9b483aac9e4f02ada5dea953b3f1a2829456e0bc07806c4e73b517&quot;,
+      &quot;bytes&quot;: 803960,
+      &quot;records&quot;: 764
+    },
+    {
+      &quot;file&quot;: &quot;evals/v9/transfer-v9/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;53872ba045564315cf3c3dd8fb656e76441c6c514b1a7ff985ff0db3955710cf&quot;,
+      &quot;bytes&quot;: 1424590,
+      &quot;records&quot;: 1264
+    },
+    {
+      &quot;file&quot;: &quot;evals/v9/transfer-v9/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;048abea5e12c73c3a622ce5836898c00fa43766e0bf48fb2459e77ee9873497f&quot;,
+      &quot;bytes&quot;: 1428328,
+      &quot;records&quot;: 1264
+    },
+    {
+      &quot;file&quot;: &quot;evals/v9/transfer-v9/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/v9/transfer-v9/calibration.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/hard-v1/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;a08ca9c5ba5d365967876d7d88753cf876624be8553df5af3dca8973e4a1aa4d&quot;,
+      &quot;bytes&quot;: 23118561,
+      &quot;records&quot;: 6000
+    },
+    {
+      &quot;file&quot;: &quot;evals/hard-v1/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;3cdbf12a6b7c3b70c73e8c39f2677127ea61ef32f0ea75b55a43556d884b2d98&quot;,
+      &quot;bytes&quot;: 2633546,
+      &quot;records&quot;: 700
+    },
+    {
+      &quot;file&quot;: &quot;evals/hard-v1/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b&quot;,
+      &quot;bytes&quot;: 2598306,
+      &quot;records&quot;: 700
+    },
+    {
+      &quot;file&quot;: &quot;evals/devtools-v1/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;587682c145cbbc0c8c990e9d649da7b972853a9eaaef71e9b7b0fa18163b962c&quot;,
+      &quot;bytes&quot;: 8924680,
+      &quot;records&quot;: 5320
+    },
+    {
+      &quot;file&quot;: &quot;evals/devtools-v1/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;3df3aa83890c43db65ac73b5bb6e4fbb1466362fc1a25dbd383d4d2edd0a1fe6&quot;,
+      &quot;bytes&quot;: 1731002,
+      &quot;records&quot;: 900
+    },
+    {
+      &quot;file&quot;: &quot;evals/devtools-v1/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;2fb7c2a239fef923bcb62c0eee9d6884a608ce30e5e74a4e6b9082787679767f&quot;,
+      &quot;bytes&quot;: 1686530,
+      &quot;records&quot;: 900
+    },
+    {
+      &quot;file&quot;: &quot;evals/documents-v1/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;2d7e4c4360d642a382d55425d7f34ffa2f46d00ca39a9bae31acaf82b178ee69&quot;,
+      &quot;bytes&quot;: 23268481,
+      &quot;records&quot;: 5219
+    },
+    {
+      &quot;file&quot;: &quot;evals/documents-v1/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;bfca7b41b0d8553b03f9781f48c942dfea368ce19b8508794316e555de8280f5&quot;,
+      &quot;bytes&quot;: 2646569,
+      &quot;records&quot;: 568
+    },
+    {
+      &quot;file&quot;: &quot;evals/documents-v1/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;742d04a1abc2207bd3e4f24b281f483cdc69238e4da747cbbc3774e836f2e557&quot;,
+      &quot;bytes&quot;: 2533323,
+      &quot;records&quot;: 574
+    },
+    {
+      &quot;file&quot;: &quot;evals/external/semif-v1/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;b9e0c7939a25a04a7ef7bc12334b5fa45b2027d04904d32021295b5539a97303&quot;,
+      &quot;bytes&quot;: 259562,
+      &quot;records&quot;: 252
+    },
+    {
+      &quot;file&quot;: &quot;evals/external/semif-v1/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/external/semif-v1/calibration.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/external/semif-v1/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/night2/dates.jsonl&quot;,
+      &quot;sha256&quot;: &quot;9d068b1e7d382992add46e93b22a9d539036f4db78b576ea07c0954534b3d401&quot;,
+      &quot;bytes&quot;: 1109707,
+      &quot;records&quot;: 900
+    },
+    {
+      &quot;file&quot;: &quot;evals/night2/unknowable.jsonl&quot;,
+      &quot;sha256&quot;: &quot;7d3ec178c743e922a491d372bf0920b5a341260414d38c99d7c1159855bf6e14&quot;,
+      &quot;bytes&quot;: 676055,
+      &quot;records&quot;: 525
+    },
+    {
+      &quot;file&quot;: &quot;evals/night2/assertion.jsonl&quot;,
+      &quot;sha256&quot;: &quot;0cf795280db6c16ec66499b6d8e5326215080e76a1f5b0a1a265d1f8ef9dd164&quot;,
+      &quot;bytes&quot;: 814571,
+      &quot;records&quot;: 800
+    },
+    {
+      &quot;file&quot;: &quot;evals/night2/all.jsonl&quot;,
+      &quot;sha256&quot;: &quot;b8692830579a1b501aed66a4b5490c943a6fc47d5eca2</pre></div>
+<h3>runs/qwen3-06b-20261026/reproduction_manifest.json</h3><div class='card'><pre class='mono'>{
+  &quot;started_utc&quot;: &quot;2026-10-26T15:08:52.189261+00:00&quot;,
+  &quot;gpu_index&quot;: &quot;2&quot;,
+  &quot;source_verification&quot;: [
+    {
+      &quot;stage&quot;: 1,
+      &quot;commit&quot;: &quot;5f78968927069eaacc3b2bdb688586989b3933ac&quot;,
+      &quot;verified_files&quot;: 23,
+      &quot;errors&quot;: []
+    },
+    {
+      &quot;stage&quot;: 2,
+      &quot;commit&quot;: &quot;19dcae9b6e3e1a48200c5825aad9fc200d31e20a&quot;,
+      &quot;verified_files&quot;: 23,
+      &quot;errors&quot;: []
+    },
+    {
+      &quot;stage&quot;: 3,
+      &quot;commit&quot;: &quot;45923b7a3460b6d36358e2e143455902c1eb856b&quot;,
+      &quot;verified_files&quot;: 30,
+      &quot;errors&quot;: []
+    }
+  ],
+  &quot;data_verification&quot;: [
+    {
+      &quot;file&quot;: &quot;evals/v7/decision-v7/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;7ed5254b5cb5291baefaceb09edf7e13110258211518c8038f4a12c11bd628ad&quot;,
+      &quot;bytes&quot;: 18679889,
+      &quot;records&quot;: 12576
+    },
+    {
+      &quot;file&quot;: &quot;evals/v7/decision-v7/calibration.jsonl&quot;,
+      &quot;sha256&quot;: &quot;12c2029a07d24828f5f8cc48f09f572c81457de96f3d5d16180be4c090abd5ca&quot;,
+      &quot;bytes&quot;: 1449835,
+      &quot;records&quot;: 968
+    },
+    {
+      &quot;file&quot;: &quot;evals/v7/decision-v7/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;8d5765d7aec4d08c61854f4664ca79ec2ba44ed092e9b967eaf61ed86c496d9c&quot;,
+      &quot;bytes&quot;: 1763325,
+      &quot;records&quot;: 1204
+    },
+    {
+      &quot;file&quot;: &quot;evals/v7/decision-v7/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;cd7d129a84232e0c7a4e92b4840a6dfe14c8bb93c5d1904b526fa8c085325d2d&quot;,
+      &quot;bytes&quot;: 1705815,
+      &quot;records&quot;: 1176
+    },
+    {
+      &quot;file&quot;: &quot;evals/v4/transfer-v4/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/v4/transfer-v4/calibration.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/v4/transfer-v4/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;ff374c49c6c9f15f8a56fb274b4a4857d20497eb8dd1ac07ce01560e682a5f2e&quot;,
+      &quot;bytes&quot;: 803309,
+      &quot;records&quot;: 764
+    },
+    {
+      &quot;file&quot;: &quot;evals/v4/transfer-v4/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;c30a91274f9b483aac9e4f02ada5dea953b3f1a2829456e0bc07806c4e73b517&quot;,
+      &quot;bytes&quot;: 803960,
+      &quot;records&quot;: 764
+    },
+    {
+      &quot;file&quot;: &quot;evals/v9/transfer-v9/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;53872ba045564315cf3c3dd8fb656e76441c6c514b1a7ff985ff0db3955710cf&quot;,
+      &quot;bytes&quot;: 1424590,
+      &quot;records&quot;: 1264
+    },
+    {
+      &quot;file&quot;: &quot;evals/v9/transfer-v9/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;048abea5e12c73c3a622ce5836898c00fa43766e0bf48fb2459e77ee9873497f&quot;,
+      &quot;bytes&quot;: 1428328,
+      &quot;records&quot;: 1264
+    },
+    {
+      &quot;file&quot;: &quot;evals/v9/transfer-v9/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/v9/transfer-v9/calibration.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/hard-v1/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;a08ca9c5ba5d365967876d7d88753cf876624be8553df5af3dca8973e4a1aa4d&quot;,
+      &quot;bytes&quot;: 23118561,
+      &quot;records&quot;: 6000
+    },
+    {
+      &quot;file&quot;: &quot;evals/hard-v1/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;3cdbf12a6b7c3b70c73e8c39f2677127ea61ef32f0ea75b55a43556d884b2d98&quot;,
+      &quot;bytes&quot;: 2633546,
+      &quot;records&quot;: 700
+    },
+    {
+      &quot;file&quot;: &quot;evals/hard-v1/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b&quot;,
+      &quot;bytes&quot;: 2598306,
+      &quot;records&quot;: 700
+    },
+    {
+      &quot;file&quot;: &quot;evals/devtools-v1/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;587682c145cbbc0c8c990e9d649da7b972853a9eaaef71e9b7b0fa18163b962c&quot;,
+      &quot;bytes&quot;: 8924680,
+      &quot;records&quot;: 5320
+    },
+    {
+      &quot;file&quot;: &quot;evals/devtools-v1/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;3df3aa83890c43db65ac73b5bb6e4fbb1466362fc1a25dbd383d4d2edd0a1fe6&quot;,
+      &quot;bytes&quot;: 1731002,
+      &quot;records&quot;: 900
+    },
+    {
+      &quot;file&quot;: &quot;evals/devtools-v1/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;2fb7c2a239fef923bcb62c0eee9d6884a608ce30e5e74a4e6b9082787679767f&quot;,
+      &quot;bytes&quot;: 1686530,
+      &quot;records&quot;: 900
+    },
+    {
+      &quot;file&quot;: &quot;evals/documents-v1/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;2d7e4c4360d642a382d55425d7f34ffa2f46d00ca39a9bae31acaf82b178ee69&quot;,
+      &quot;bytes&quot;: 23268481,
+      &quot;records&quot;: 5219
+    },
+    {
+      &quot;file&quot;: &quot;evals/documents-v1/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;bfca7b41b0d8553b03f9781f48c942dfea368ce19b8508794316e555de8280f5&quot;,
+      &quot;bytes&quot;: 2646569,
+      &quot;records&quot;: 568
+    },
+    {
+      &quot;file&quot;: &quot;evals/documents-v1/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;742d04a1abc2207bd3e4f24b281f483cdc69238e4da747cbbc3774e836f2e557&quot;,
+      &quot;bytes&quot;: 2533323,
+      &quot;records&quot;: 574
+    },
+    {
+      &quot;file&quot;: &quot;evals/external/semif-v1/development.jsonl&quot;,
+      &quot;sha256&quot;: &quot;b9e0c7939a25a04a7ef7bc12334b5fa45b2027d04904d32021295b5539a97303&quot;,
+      &quot;bytes&quot;: 259562,
+      &quot;records&quot;: 252
+    },
+    {
+      &quot;file&quot;: &quot;evals/external/semif-v1/train.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/external/semif-v1/calibration.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/external/semif-v1/test.jsonl&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;,
+      &quot;bytes&quot;: 0,
+      &quot;records&quot;: 0
+    },
+    {
+      &quot;file&quot;: &quot;evals/night2/dates.jsonl&quot;,
+      &quot;sha256&quot;: &quot;9d068b1e7d382992add46e93b22a9d539036f4db78b576ea07c0954534b3d401&quot;,
+      &quot;bytes&quot;: 1109707,
+      &quot;records&quot;: 900
+    },
+    {
+      &quot;file&quot;: &quot;evals/night2/unknowable.jsonl&quot;,
+      &quot;sha256&quot;: &quot;7d3ec178c743e922a491d372bf0920b5a341260414d38c99d7c1159855bf6e14&quot;,
+      &quot;bytes&quot;: 676055,
+      &quot;records&quot;: 525
+    },
+    {
+      &quot;file&quot;: &quot;evals/night2/assertion.jsonl&quot;,
+      &quot;sha256&quot;: &quot;0cf795280db6c16ec66499b6d8e5326215080e76a1f5b0a1a265d1f8ef9dd164&quot;,
+      &quot;bytes&quot;: 814571,
+      &quot;records&quot;: 800
+    },
+    {
+      &quot;file&quot;: &quot;evals/night2/all.jsonl&quot;,
+      &quot;sha256&quot;: &quot;b8692830579a1b501aed66a4b5490c943a6fc47d5eca2</pre></div>
+<h2>3 · 结果（自动）</h2>
+<div class='card bad'><span class='miss'>没有结果表</span></div>
+<h2>4 · 作者填写（AI 不许代笔）</h2>
+<div class='card bad'><b>跑之前我预测这个数是多少</b><pre><span class=miss>（空）</span></pre></div>
+<div class='card bad'><b>哪个数出乎我意料, 为什么</b><pre><span class=miss>（空）</span></pre></div>
+<div class='card bad'><b>我改了什么才让它跑通</b><pre><span class=miss>（空）</span></pre></div>
+<div class='card bad'><b>如果这个结论是错的, 最可能错在哪一步</b><pre><span class=miss>（空）</span></pre></div>
+<div class='card bad'><b>哪几个数我敢在会上被追问, 哪几个不敢</b><pre># 可选补充（不强制）</pre></div>
+<h2>5 · 检查表（REFORMS 派生）</h2>
+<h3>1 研究设计</h3>
+<div>⬜ 本次实验要回答的问题，一句话写下来了</div>
+<div>⬜ 判读规则（什么结果算支持 / 算否定）在**看到结果之前**就写死了</div>
+<div>⬜ 允许的结果不只有阳性——负结果的处置方式已写明</div>
+<h3>2 计算可复现性</h3>
+<div>⬜ 代码 commit / 环境 / 依赖版本已记录</div>
+<div>⬜ 随机种子已固定并记录</div>
+<div>⬜ 原始产物（checkpoint / rollout / CSV）有 SHA-256</div>
+<div>⬜ 从干净目录能重跑（或已记录不能重跑的原因）</div>
+<h3>3 数据质量</h3>
+<div>⬜ 数据来源、版本、许可已记录</div>
+<div>⬜ 样本量、缺失率、异常值处理已记录</div>
+<div>⬜ 数据的已知局限已写明（不是&quot;没有局限&quot;）</div>
+<h3>4 数据预处理</h3>
+<div>⬜ 预处理步骤对**所有实验条件完全一致**（若不一致，差异已列出）</div>
+<div>⬜ 标准化 / 分箱 / 离散化的口径已写明，且**不因条件而异**</div>
+<div>⬜ 预处理只用训练集的统计量拟合（未用到测试集信息）</div>
+<h3>5 建模</h3>
+<div>⬜ 模型结构、参数量、每层已记录（Model Card）</div>
+<div>⬜ 训练超参、停止准则、算力已记录</div>
+<div>⬜ 与基线的比较是**同预处理、同预算**下的</div>
+<h3>6 数据泄露 ⚠️</h3>
+<div>⬜ 测试集在任何环节都没有参与训练 / 选模 / 调阈值</div>
+<div>⬜ 训练与测试的划分方式已写明（随机 shuffle / 按时间 / 按组），且**符合任务语义**</div>
+<div>⬜ 检查过训练集与测试集的重叠（重复样本、同一实体跨集）</div>
+<div>⬜ 新增的输入特征**不含目标的函数**，也不含只有事后才可得的信息</div>
+<div>⬜ 若某特征带来了异常大的提升（如 ≥5 个点），**已专门做过泄露排查**并记录结论</div>
+<div>⬜ 时间序列：支持集/上下文的选取严格因果，未读取预测目标或与之重叠的窗口</div>
+<h3>7 指标与不确定性</h3>
+<div>⬜ 主指标在跑之前就定了，且只有一个</div>
+<div>⬜ 报告了离散度（seed 间的原始值，不只是均值）</div>
+<div>⬜ seed 数 &lt; 5 时，**同时报原始点**，不用正态近似造窄区间</div>
+<div>⬜ 指标名称与实际计算一致（例：Spearman 不能标成 Pearson）</div>
+<div>⬜ 配对比较用的是同一组条件（同 seed / 同初始状态 / 同策略顺序）</div>
+<h3>8 泛化性</h3>
+<div>⬜ 明确写出结论的**作用域**（哪个环境 / 哪个数据分布 / 哪个表示下成立）</div>
+<div>⬜ 有至少一个分布外或规模外推的检查（或说明为何做不了）</div>
+<div>⬜ 没有把单环境 / 单数据集的结果表述成普遍结论</div>
+<h3>9 本项目专属（自行增补）</h3>
+<div>⬜ （例 · PaperC）G1/G3 确实共用同一套 original bin，已在日志中验证</div>
+<div>⬜ （例 · PCMCI-PFN）正式方向指标与转置诊断在表中**分栏报告**，未混用</div>
+<div>⬜ （例 · Localize）跨模型汇总的同时给出了分模型结果</div>
+<h2>6 · 血缘（自动）</h2><table><tr><th>文件</th><th>大小</th><th>修改时间(UTC)</th><th>SHA-256</th></tr>
+<tr><td class='mono'>report_summary.json</td><td>1,231</td><td class='mono'>2026-10-27 01:09:45</td><td class='mono'>b3ccb5cc2a1cbe2d…</td></tr>
+<tr><td class='mono'>runs/replica-20261026/summary.json</td><td>12,153</td><td class='mono'>2026-10-26 16:06:54</td><td class='mono'>a73e17f0aba62e6f…</td></tr>
+<tr><td class='mono'>runs/qwen3-06b-20261026/summary.json</td><td>12,263</td><td class='mono'>2026-10-26 16:51:19</td><td class='mono'>832a40728b553bc0…</td></tr>
+<tr><td class='mono'>runs/replica-20261026/reproduction_manifest.json</td><td>8,893</td><td class='mono'>2026-10-26 13:55:12</td><td class='mono'>ad9bdd0fc9b522c5…</td></tr>
+<tr><td class='mono'>runs/qwen3-06b-20261026/reproduction_manifest.json</td><td>8,893</td><td class='mono'>2026-10-26 15:08:52</td><td class='mono'>dfc530c4b106e75c…</td></tr>
+</table>
+<div class='card'><span class='pill'>python 3.9.6</span><span class='pill'>cwd /Users/chen/Documents/ChatGPT/procogs</span><span class='pill'>git 92f9b87</span></div>
