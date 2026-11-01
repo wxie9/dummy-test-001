@@ -1,0 +1,30 @@
+{
+  "4b": {
+    "records": 600,
+    "questions": 813,
+    "families": {
+      "tool_routing": 30,
+      "probability": 60,
+      "injection": 30,
+      "temporal": 30,
+      "commitpackft": 150,
+      "flakeflagger": 150,
+      "codereviewer": 150
+    },
+    "sha256": "ac385f41dd098f85cfb6bbb9319565e81d1d399da635830d78cd840f5a26ff5a"
+  },
+  "9b": {
+    "records": 536,
+    "questions": 839,
+    "families": {
+      "tool_routing": 30,
+      "policy": 60,
+      "probability": 60,
+      "multihop": 56,
+      "temporal": 30,
+      "commitpackft": 150,
+      "codereviewer": 150
+    },
+    "sha256": "d026261c2960dd251c6475c7bb4dde385f0dbf001b9a7ff307a4c713ab1e9f7c"
+  }
+}

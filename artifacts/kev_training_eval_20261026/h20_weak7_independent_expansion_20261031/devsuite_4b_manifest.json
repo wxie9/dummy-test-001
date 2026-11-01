@@ -1,0 +1,19 @@
+{
+  "version": "h20-weak7-neighborhood-expansion-20261101-development-4b",
+  "partitions": ["development"],
+  "locked": [],
+  "eval_only": true,
+  "context": {
+    "max_state": 7552,
+    "max_branch": 8192,
+    "max_packed": 9216,
+    "truncate": false
+  },
+  "files": {
+    "development.jsonl": {
+      "sha256": "fe7593d4581cbafb7e214ff9aa4c1f9c2a1343d2bb7392092a7cb4bd746b7b37",
+      "records": 538
+    }
+  },
+  "holdout_sources": []
+}

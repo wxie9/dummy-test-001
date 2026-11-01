@@ -1,0 +1,32 @@
+== kev-4b-before  (/data/kev/benchmarks/DecisionPivot/kev_eval/runs/4b-before; 13 of 13 tasks have a valid run)
+layer task                         metric          value      95% interval chance  score  cover    ece  brier  auroc    acc   pair  auto5 acc.90  share
+A     answerable_facts             accuracy        0.575 [ 0.553,  0.598]  0.500   15.0  1.000  0.109  0.504  0.642  0.575  0.160  0.000  0.769  0.022
+B     perm_inherit                 accuracy        0.537 [ 0.513,  0.562]  0.500    7.3  1.000  0.185  0.579  0.560  0.537  0.123  0.010  0.674  0.077
+B     policy_case                  accuracy        0.500 [ 0.467,  0.533]  0.333   25.0  1.000  0.176  0.627         0.500  0.085  0.000  0.686  0.117
+C     log_count_check              accuracy        0.507 [ 0.477,  0.535]  0.500    1.3  1.000  0.076  0.514  0.530  0.507  0.143  0.000  0.727  0.018
+D     sched_conflict               accuracy        0.527 [ 0.510,  0.543]  0.500    5.3  1.000  0.120  0.545  0.537  0.527  0.070  0.002  1.000  0.002
+D     state_goal                   accuracy        0.548 [ 0.528,  0.570]  0.500    9.7  1.000  0.085  0.505  0.575  0.548  0.120  0.013  1.000  0.003
+D     toolcall_valid               accuracy        0.663 [ 0.638,  0.692]  0.500   32.7  1.000  0.055  0.402  0.798  0.663  0.327  0.005  0.848  0.055
+D     triage_order                 accuracy        0.300 [ 0.264,  0.341]  0.200   12.5  1.000  0.058  0.755         0.300  0.055  0.007  1.000  0.002
+E     clause_change                pair_accuracy   0.010 [ 0.000,  0.025]  0.038   -2.9  1.000  0.231  0.730         0.367  0.010  0.002  0.667  0.010
+E     dep_resolve                  accuracy        0.547 [ 0.525,  0.568]  0.500    9.3  1.000  0.107  0.518  0.585  0.547  0.127  0.005         0.000
+F     ledger_reconcile             accuracy        0.313 [ 0.272,  0.357]  0.167   17.6  1.000  0.106  0.753         0.313  0.060  0.033         0.000
+F     record_rule                  accuracy        0.347 [ 0.312,  0.382]  0.120   25.8  1.000  0.134  0.806         0.347  0.020  0.045         0.000
+G     filter_match                 accuracy        0.535 [ 0.520,  0.552]  0.500    7.0  1.000  0.197  0.586  0.600  0.535  0.077  0.015  0.653  0.158
+   layer scores: A 15.0 (1)  B 16.2 (2)  C 1.3 (1)  D 15.0 (4)  E 4.7 (2)  F 21.7 (2)  G 7.0 (1)   overall 11.6 over 7 layers
+== kev-4b-after  (/data/kev/benchmarks/DecisionPivot/kev_eval/runs/4b-after; 13 of 13 tasks have a valid run)
+layer task                         metric          value      95% interval chance  score  cover    ece  brier  auroc    acc   pair  auto5 acc.90  share
+A     answerable_facts             accuracy        0.578 [ 0.553,  0.603]  0.500   15.7  1.000  0.240  0.593  0.646  0.578  0.200  0.000  0.678  0.383
+B     perm_inherit                 accuracy        0.533 [ 0.507,  0.560]  0.500    6.7  1.000  0.315  0.722  0.557  0.533  0.140  0.008  0.556  0.492
+B     policy_case                  accuracy        0.510 [ 0.475,  0.545]  0.333   26.5  1.000  0.349  0.772         0.510  0.100  0.000  0.596  0.537
+C     log_count_check              accuracy        0.525 [ 0.497,  0.557]  0.500    5.0  1.000  0.166  0.574  0.530  0.525  0.167  0.000  0.591  0.110
+D     sched_conflict               accuracy        0.525 [ 0.508,  0.543]  0.500    5.0  1.000  0.286  0.699  0.535  0.525  0.073  0.002  0.531  0.327
+D     state_goal                   accuracy        0.553 [ 0.532,  0.575]  0.500   10.7  1.000  0.161  0.564  0.576  0.553  0.137  0.010  0.625  0.147
+D     toolcall_valid               accuracy        0.607 [ 0.583,  0.630]  0.500   21.3  1.000  0.229  0.533  0.803  0.607  0.213  0.003  0.828  0.437
+D     triage_order                 accuracy        0.308 [ 0.272,  0.349]  0.200   13.5  1.000  0.223  0.839         0.308  0.065  0.008  0.526  0.095
+E     clause_change                pair_accuracy   0.010 [ 0.000,  0.025]  0.038   -2.9  1.000  0.488  1.032         0.367  0.010  0.002  0.393  0.497
+E     dep_resolve                  accuracy        0.547 [ 0.527,  0.568]  0.500    9.3  1.000  0.277  0.663  0.587  0.547  0.123  0.002  0.589  0.393
+F     ledger_reconcile             accuracy        0.323 [ 0.283,  0.366]  0.167   18.8  1.000  0.182  0.796         0.323  0.065  0.005  0.800  0.050
+F     record_rule                  accuracy        0.340 [ 0.305,  0.380]  0.120   25.0  1.000  0.057  0.774         0.340  0.013  0.045  1.000  0.033
+G     filter_match                 accuracy        0.537 [ 0.522,  0.552]  0.500    7.3  1.000  0.335  0.744  0.600  0.537  0.077  0.008  0.572  0.557
+   layer scores: A 15.7 (1)  B 16.6 (2)  C 5.0 (1)  D 12.6 (4)  E 4.7 (2)  F 21.9 (2)  G 7.3 (1)   overall 12.0 over 7 layers

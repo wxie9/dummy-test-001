@@ -1,0 +1,785 @@
+{
+  "models": {
+    "4b": {
+      "suites": {
+        "decision-v7": {
+          "n": 1200,
+          "suite_sha256": "a8f50e481b7d90b97da049e0ff6a01cee2f1ed204aed61a8265af0edbb5514d2",
+          "coverage": {
+            "requested_records": 1176,
+            "requested_questions": 1440,
+            "evaluated_records": 1176,
+            "evaluated_questions": 1440,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.8691666666666666,
+            "previous": 0.8675,
+            "expanded": 0.8725
+          },
+          "expanded_minus_original_pp": 0.33333333333334103,
+          "expanded_minus_previous_pp": 0.5000000000000004,
+          "paired_vs_original": {
+            "n": 1200,
+            "left": 1043,
+            "right": 1047,
+            "fixed": 17,
+            "broken": 13
+          },
+          "paired_vs_previous": {
+            "n": 1200,
+            "left": 1041,
+            "right": 1047,
+            "fixed": 14,
+            "broken": 8
+          }
+        },
+        "transfer-v4": {
+          "n": 656,
+          "suite_sha256": "31677c2256b406222e7d94ffdc0a02a70ce05746b9efe307876024c4e77291d1",
+          "coverage": {
+            "requested_records": 764,
+            "requested_questions": 764,
+            "evaluated_records": 764,
+            "evaluated_questions": 764,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.8399390243902439,
+            "previous": 0.836890243902439,
+            "expanded": 0.8445121951219512
+          },
+          "expanded_minus_original_pp": 0.45731707317072656,
+          "expanded_minus_previous_pp": 0.7621951219512146,
+          "paired_vs_original": {
+            "n": 656,
+            "left": 551,
+            "right": 554,
+            "fixed": 8,
+            "broken": 5
+          },
+          "paired_vs_previous": {
+            "n": 656,
+            "left": 549,
+            "right": 554,
+            "fixed": 11,
+            "broken": 6
+          }
+        },
+        "transfer-v9": {
+          "n": 1046,
+          "suite_sha256": "3c4f0be94509a3612678bfd3a30fd99a8d0ca3c47ddfe7318075d95b2fa365e4",
+          "coverage": {
+            "requested_records": 1264,
+            "requested_questions": 1264,
+            "evaluated_records": 1264,
+            "evaluated_questions": 1264,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.7753346080305927,
+            "previous": 0.7695984703632888,
+            "expanded": 0.7743785850860421
+          },
+          "expanded_minus_original_pp": -0.09560229445506607,
+          "expanded_minus_previous_pp": 0.47801147227533036,
+          "paired_vs_original": {
+            "n": 1046,
+            "left": 811,
+            "right": 810,
+            "fixed": 16,
+            "broken": 17
+          },
+          "paired_vs_previous": {
+            "n": 1046,
+            "left": 805,
+            "right": 810,
+            "fixed": 20,
+            "broken": 15
+          }
+        },
+        "hard-v1": {
+          "n": 1088,
+          "suite_sha256": "9d8dd335f5a73840b144c987ee91bb0513301128c474a7a4cd3f754a130cfa5c",
+          "coverage": {
+            "requested_records": 700,
+            "requested_questions": 1088,
+            "evaluated_records": 700,
+            "evaluated_questions": 1088,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.8005514705882353,
+            "previous": 0.7977941176470589,
+            "expanded": 0.8005514705882353
+          },
+          "expanded_minus_original_pp": 0.0,
+          "expanded_minus_previous_pp": 0.27573529411764053,
+          "paired_vs_original": {
+            "n": 1088,
+            "left": 871,
+            "right": 871,
+            "fixed": 43,
+            "broken": 43
+          },
+          "paired_vs_previous": {
+            "n": 1088,
+            "left": 868,
+            "right": 871,
+            "fixed": 42,
+            "broken": 39
+          }
+        },
+        "devtools-v1": {
+          "n": 1073,
+          "suite_sha256": "d0f7cf40cec3284684f8b2fe8f440a5f0cc40fe4a78db108eca47a5fbd141b0f",
+          "coverage": {
+            "requested_records": 900,
+            "requested_questions": 1073,
+            "evaluated_records": 900,
+            "evaluated_questions": 1073,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.7520969245107176,
+            "previous": 0.7642124883504194,
+            "expanded": 0.8219944082013048
+          },
+          "expanded_minus_original_pp": 6.989748369058713,
+          "expanded_minus_previous_pp": 5.778191985088532,
+          "paired_vs_original": {
+            "n": 1073,
+            "left": 807,
+            "right": 882,
+            "fixed": 152,
+            "broken": 77
+          },
+          "paired_vs_previous": {
+            "n": 1073,
+            "left": 820,
+            "right": 882,
+            "fixed": 135,
+            "broken": 73
+          }
+        },
+        "documents-v1": {
+          "n": 936,
+          "suite_sha256": "711903d1241cadbfb9e0a20c93d978762123dcbec0108de9c539a60a753cf8d2",
+          "coverage": {
+            "requested_records": 574,
+            "requested_questions": 936,
+            "evaluated_records": 574,
+            "evaluated_questions": 936,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.8931623931623932,
+            "previous": 0.8952991452991453,
+            "expanded": 0.8974358974358975
+          },
+          "expanded_minus_original_pp": 0.42735042735042583,
+          "expanded_minus_previous_pp": 0.21367521367521292,
+          "paired_vs_original": {
+            "n": 936,
+            "left": 836,
+            "right": 840,
+            "fixed": 9,
+            "broken": 5
+          },
+          "paired_vs_previous": {
+            "n": 936,
+            "left": 838,
+            "right": 840,
+            "fixed": 8,
+            "broken": 6
+          }
+        }
+      },
+      "categories": {
+        "多约束权衡决策": {
+          "n": 200,
+          "original": 181,
+          "previous": 181,
+          "expanded": 179
+        },
+        "概率": {
+          "n": 158,
+          "original": 120,
+          "previous": 121,
+          "expanded": 128
+        },
+        "时间与数值": {
+          "n": 117,
+          "original": 63,
+          "previous": 65,
+          "expanded": 66
+        },
+        "多跳推理": {
+          "n": 125,
+          "original": 104,
+          "previous": 103,
+          "expanded": 101
+        },
+        "计算结果核验": {
+          "n": 188,
+          "original": 153,
+          "previous": 149,
+          "expanded": 153
+        },
+        "长政策": {
+          "n": 200,
+          "original": 164,
+          "previous": 165,
+          "expanded": 161
+        },
+        "信息不足": {
+          "n": 100,
+          "original": 86,
+          "previous": 84,
+          "expanded": 83
+        },
+        "代码变更理解": {
+          "n": 298,
+          "original": 234,
+          "previous": 233,
+          "expanded": 246
+        },
+        "代码审查": {
+          "n": 150,
+          "original": 99,
+          "previous": 96,
+          "expanded": 106
+        },
+        "安全风险判断": {
+          "n": 175,
+          "original": 153,
+          "previous": 153,
+          "expanded": 152
+        },
+        "测试稳定性判断": {
+          "n": 150,
+          "original": 119,
+          "previous": 118,
+          "expanded": 144
+        },
+        "工具路由": {
+          "n": 150,
+          "original": 91,
+          "previous": 97,
+          "expanded": 90
+        },
+        "提示注入": {
+          "n": 150,
+          "original": 111,
+          "previous": 123,
+          "expanded": 144
+        }
+      },
+      "training": {
+        "wall_seconds": 1798.037781715393,
+        "requested_records": 9084,
+        "records_seen": 11322,
+        "optimizer_steps": 1136,
+        "forward_tokens": 2403206,
+        "world_size": 2,
+        "truncated_records": 0,
+        "rejected_records": 0
+      },
+      "pooled_six": {
+        "original": 4919,
+        "previous": 4921,
+        "expanded": 5004,
+        "n": 5999,
+        "fixed_original": 245,
+        "broken_original": 160,
+        "fixed_previous": 230,
+        "broken_previous": 147,
+        "mcnemar_exact_vs_original": 2.810250308250794e-05,
+        "mcnemar_exact_vs_previous": 2.243116107806642e-05
+      },
+      "category_aggregates": {
+        "target_seven": {
+          "n": 1173,
+          "original": 837,
+          "previous": 853,
+          "expanded": 924
+        },
+        "other": {
+          "n": 988,
+          "original": 841,
+          "previous": 835,
+          "expanded": 829
+        }
+      },
+      "development": {
+        "clean": {
+          "n": 658,
+          "nll": 0.595357558648069,
+          "acc": 0.729483282674772,
+          "ece": 0.07029073314971605,
+          "brier": 0.32846140379135785,
+          "mean_conf": 0.7902447708037168,
+          "confident_error_rate": 0.022796352583586626,
+          "coverage_at_0_9": 0.5212765957446809,
+          "accuracy_at_0_9": 0.956268221574344,
+          "coverage_at_5pct_error": 0.5516717325227963,
+          "coverage_at_1pct_error": 0.44224924012158057,
+          "aurc": 0.07766213066221384,
+          "error_rate_at_0_9": 0.043731778425655975,
+          "confidence_bias": 0.060761488128944774,
+          "top_bins": {
+            "0.9": {
+              "n": 343,
+              "errors": 15,
+              "error_rate": 0.043731778425655975
+            },
+            "0.95": {
+              "n": 313,
+              "errors": 8,
+              "error_rate": 0.025559105431309903
+            },
+            "0.99": {
+              "n": 250,
+              "errors": 1,
+              "error_rate": 0.004
+            }
+          },
+          "selective": {
+            "0.5": {
+              "coverage": 0.5,
+              "accuracy": 0.9635258358662614,
+              "confidence_cutoff": 0.9237026526750716
+            },
+            "0.8": {
+              "coverage": 0.8009118541033434,
+              "accuracy": 0.8273244781783681,
+              "confidence_cutoff": 0.5353722891433411
+            }
+          },
+          "score_mae": 0.36847541933303984,
+          "ranked_probability_score": 0.03779722823918603
+        },
+        "coverage": {
+          "requested_records": 538,
+          "requested_questions": 658,
+          "evaluated_records": 538,
+          "evaluated_questions": 658,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "rows": 658,
+        "suite_sha256": "b6f1382719f8ab86d825746d896e3eb870c3a69ca356a8dbd353474241e74c77",
+        "partitions": {
+          "error_neighborhood": {
+            "n": 418,
+            "correct": 283
+          },
+          "independent_development": {
+            "n": 240,
+            "correct": 197
+          }
+        }
+      }
+    },
+    "9b": {
+      "suites": {
+        "decision-v7": {
+          "n": 1200,
+          "suite_sha256": "a8f50e481b7d90b97da049e0ff6a01cee2f1ed204aed61a8265af0edbb5514d2",
+          "coverage": {
+            "requested_records": 1176,
+            "requested_questions": 1440,
+            "evaluated_records": 1176,
+            "evaluated_questions": 1440,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.8666666666666667,
+            "previous": 0.8666666666666667,
+            "expanded": 0.8666666666666667
+          },
+          "expanded_minus_original_pp": 0.0,
+          "expanded_minus_previous_pp": 0.0,
+          "paired_vs_original": {
+            "n": 1200,
+            "left": 1040,
+            "right": 1040,
+            "fixed": 11,
+            "broken": 11
+          },
+          "paired_vs_previous": {
+            "n": 1200,
+            "left": 1040,
+            "right": 1040,
+            "fixed": 7,
+            "broken": 7
+          }
+        },
+        "transfer-v4": {
+          "n": 656,
+          "suite_sha256": "31677c2256b406222e7d94ffdc0a02a70ce05746b9efe307876024c4e77291d1",
+          "coverage": {
+            "requested_records": 764,
+            "requested_questions": 764,
+            "evaluated_records": 764,
+            "evaluated_questions": 764,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.8673780487804879,
+            "previous": 0.8628048780487805,
+            "expanded": 0.8582317073170732
+          },
+          "expanded_minus_original_pp": -0.9146341463414642,
+          "expanded_minus_previous_pp": -0.45731707317072656,
+          "paired_vs_original": {
+            "n": 656,
+            "left": 569,
+            "right": 563,
+            "fixed": 1,
+            "broken": 7
+          },
+          "paired_vs_previous": {
+            "n": 656,
+            "left": 566,
+            "right": 563,
+            "fixed": 1,
+            "broken": 4
+          }
+        },
+        "transfer-v9": {
+          "n": 1046,
+          "suite_sha256": "3c4f0be94509a3612678bfd3a30fd99a8d0ca3c47ddfe7318075d95b2fa365e4",
+          "coverage": {
+            "requested_records": 1264,
+            "requested_questions": 1264,
+            "evaluated_records": 1264,
+            "evaluated_questions": 1264,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.8049713193116634,
+            "previous": 0.8030592734225621,
+            "expanded": 0.8001912045889101
+          },
+          "expanded_minus_original_pp": -0.47801147227533036,
+          "expanded_minus_previous_pp": -0.2868068833651982,
+          "paired_vs_original": {
+            "n": 1046,
+            "left": 842,
+            "right": 837,
+            "fixed": 6,
+            "broken": 11
+          },
+          "paired_vs_previous": {
+            "n": 1046,
+            "left": 840,
+            "right": 837,
+            "fixed": 6,
+            "broken": 9
+          }
+        },
+        "hard-v1": {
+          "n": 1088,
+          "suite_sha256": "9d8dd335f5a73840b144c987ee91bb0513301128c474a7a4cd3f754a130cfa5c",
+          "coverage": {
+            "requested_records": 700,
+            "requested_questions": 1088,
+            "evaluated_records": 700,
+            "evaluated_questions": 1088,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.8354779411764706,
+            "previous": 0.8400735294117647,
+            "expanded": 0.8740808823529411
+          },
+          "expanded_minus_original_pp": 3.860294117647056,
+          "expanded_minus_previous_pp": 3.4007352941176405,
+          "paired_vs_original": {
+            "n": 1088,
+            "left": 909,
+            "right": 951,
+            "fixed": 68,
+            "broken": 26
+          },
+          "paired_vs_previous": {
+            "n": 1088,
+            "left": 914,
+            "right": 951,
+            "fixed": 64,
+            "broken": 27
+          }
+        },
+        "devtools-v1": {
+          "n": 1073,
+          "suite_sha256": "d0f7cf40cec3284684f8b2fe8f440a5f0cc40fe4a78db108eca47a5fbd141b0f",
+          "coverage": {
+            "requested_records": 900,
+            "requested_questions": 1073,
+            "evaluated_records": 900,
+            "evaluated_questions": 1073,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.8117427772600186,
+            "previous": 0.809878844361603,
+            "expanded": 0.809878844361603
+          },
+          "expanded_minus_original_pp": -0.18639328984156878,
+          "expanded_minus_previous_pp": 0.0,
+          "paired_vs_original": {
+            "n": 1073,
+            "left": 871,
+            "right": 869,
+            "fixed": 64,
+            "broken": 66
+          },
+          "paired_vs_previous": {
+            "n": 1073,
+            "left": 869,
+            "right": 869,
+            "fixed": 62,
+            "broken": 62
+          }
+        },
+        "documents-v1": {
+          "n": 936,
+          "suite_sha256": "711903d1241cadbfb9e0a20c93d978762123dcbec0108de9c539a60a753cf8d2",
+          "coverage": {
+            "requested_records": 574,
+            "requested_questions": 936,
+            "evaluated_records": 574,
+            "evaluated_questions": 936,
+            "rejected_records": 0,
+            "truncated_records": 0
+          },
+          "accuracy": {
+            "original": 0.9049145299145299,
+            "previous": 0.9017094017094017,
+            "expanded": 0.9017094017094017
+          },
+          "expanded_minus_original_pp": -0.3205128205128194,
+          "expanded_minus_previous_pp": 0.0,
+          "paired_vs_original": {
+            "n": 936,
+            "left": 847,
+            "right": 844,
+            "fixed": 2,
+            "broken": 5
+          },
+          "paired_vs_previous": {
+            "n": 936,
+            "left": 844,
+            "right": 844,
+            "fixed": 4,
+            "broken": 4
+          }
+        }
+      },
+      "categories": {
+        "多约束权衡决策": {
+          "n": 200,
+          "original": 183,
+          "previous": 181,
+          "expanded": 183
+        },
+        "概率": {
+          "n": 158,
+          "original": 127,
+          "previous": 129,
+          "expanded": 134
+        },
+        "时间与数值": {
+          "n": 117,
+          "original": 72,
+          "previous": 74,
+          "expanded": 80
+        },
+        "多跳推理": {
+          "n": 125,
+          "original": 106,
+          "previous": 105,
+          "expanded": 109
+        },
+        "计算结果核验": {
+          "n": 188,
+          "original": 171,
+          "previous": 170,
+          "expanded": 170
+        },
+        "长政策": {
+          "n": 200,
+          "original": 160,
+          "previous": 164,
+          "expanded": 184
+        },
+        "信息不足": {
+          "n": 100,
+          "original": 90,
+          "previous": 91,
+          "expanded": 91
+        },
+        "代码变更理解": {
+          "n": 298,
+          "original": 231,
+          "previous": 231,
+          "expanded": 232
+        },
+        "代码审查": {
+          "n": 150,
+          "original": 99,
+          "previous": 98,
+          "expanded": 103
+        },
+        "安全风险判断": {
+          "n": 175,
+          "original": 153,
+          "previous": 152,
+          "expanded": 153
+        },
+        "测试稳定性判断": {
+          "n": 150,
+          "original": 136,
+          "previous": 137,
+          "expanded": 137
+        },
+        "工具路由": {
+          "n": 150,
+          "original": 115,
+          "previous": 118,
+          "expanded": 106
+        },
+        "提示注入": {
+          "n": 150,
+          "original": 137,
+          "previous": 133,
+          "expanded": 138
+        }
+      },
+      "training": {
+        "wall_seconds": 5740.391334295273,
+        "requested_records": 8928,
+        "records_seen": 11514,
+        "optimizer_steps": 1116,
+        "forward_tokens": 4434300,
+        "world_size": 4,
+        "truncated_records": 0,
+        "rejected_records": 0
+      },
+      "pooled_six": {
+        "original": 5078,
+        "previous": 5073,
+        "expanded": 5104,
+        "n": 5999,
+        "fixed_original": 152,
+        "broken_original": 126,
+        "fixed_previous": 144,
+        "broken_previous": 113,
+        "mcnemar_exact_vs_original": 0.13362446761788777,
+        "mcnemar_exact_vs_previous": 0.061086084130618175
+      },
+      "category_aggregates": {
+        "target_seven": {
+          "n": 1198,
+          "original": 910,
+          "previous": 919,
+          "expanded": 948
+        },
+        "other": {
+          "n": 963,
+          "original": 870,
+          "previous": 864,
+          "expanded": 872
+        }
+      },
+      "development": {
+        "clean": {
+          "n": 682,
+          "nll": 0.701421148291984,
+          "acc": 0.7126099706744868,
+          "ece": 0.05473469649699848,
+          "brier": 0.37701934935887343,
+          "mean_conf": 0.7673446671714853,
+          "confident_error_rate": 0.02346041055718475,
+          "coverage_at_0_9": 0.4604105571847507,
+          "accuracy_at_0_9": 0.9490445859872612,
+          "coverage_at_5pct_error": 0.46920821114369504,
+          "coverage_at_1pct_error": 0.31671554252199413,
+          "aurc": 0.09824209987222664,
+          "error_rate_at_0_9": 0.050955414012738856,
+          "confidence_bias": 0.05473469649699847,
+          "top_bins": {
+            "0.9": {
+              "n": 314,
+              "errors": 16,
+              "error_rate": 0.050955414012738856
+            },
+            "0.95": {
+              "n": 272,
+              "errors": 6,
+              "error_rate": 0.022058823529411766
+            },
+            "0.99": {
+              "n": 201,
+              "errors": 1,
+              "error_rate": 0.004975124378109453
+            }
+          },
+          "selective": {
+            "0.5": {
+              "coverage": 0.5,
+              "accuracy": 0.9237536656891495,
+              "confidence_cutoff": 0.8482063033488555
+            },
+            "0.8": {
+              "coverage": 0.8005865102639296,
+              "accuracy": 0.7967032967032966,
+              "confidence_cutoff": 0.5298961243064366
+            }
+          },
+          "score_mae": 0.2401197224539255,
+          "ranked_probability_score": 0.026820348235962535
+        },
+        "coverage": {
+          "requested_records": 486,
+          "requested_questions": 682,
+          "evaluated_records": 486,
+          "evaluated_questions": 682,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "rows": 682,
+        "suite_sha256": "8b4d5da323bc9165464ffdae11f1982ae9d35b928219a0e8c7cdcf6213af5fd6",
+        "partitions": {
+          "error_neighborhood": {
+            "n": 404,
+            "correct": 259
+          },
+          "independent_development": {
+            "n": 278,
+            "correct": 227
+          }
+        }
+      }
+    }
+  },
+  "validation": {
+    "all_checks_passed": true
+  },
+  "archive": {
+    "files": 60,
+    "sha256_manifest": "archive_sha256.txt"
+  }
+}

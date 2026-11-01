@@ -1,0 +1,12 @@
+{
+  "4b": {
+    "remote_checkpoint": "/data/kev/runs/h20-4b-weak7-v6-20261031/",
+    "adapter_model.safetensors": "f1a24f7559f8090ea8d26d965024cab3bd6477e504b0f25ae2891cda12ddd982",
+    "head.pt": "36d38dc32a8e3a1da3033d22040cd3fad11cebf6dfb05a5b8367458464403304"
+  },
+  "9b": {
+    "remote_checkpoint": "/data/kev/runs/h20-9b-weak7-v6-20261031/",
+    "adapter_model.safetensors": "aa3817100910b44ee50fae5e4909a11d6f972f046c0f50bba6d2727eb0271571",
+    "head.pt": "8fb66dd3e4a830a5d949994c6d3c492806d0db085e3a7fe0c2535830f62cc779"
+  }
+}

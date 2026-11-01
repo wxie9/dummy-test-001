@@ -1,0 +1,75 @@
+{
+  "seed": 101,
+  "method": "frozen v6 solver-labelled rows plus held-out-screened original devtools train rows",
+  "v6_sha256": "58572b2118b10d9505d5bdb027585fab75f4ad7e52a1c5d8d155979459fecea8",
+  "devtools_train_sha256": "587682c145cbbc0c8c990e9d649da7b972853a9eaaef71e9b7b0fa18163b962c",
+  "heldout_sha256": {
+    "development.jsonl": "3df3aa83890c43db65ac73b5bb6e4fbb1466362fc1a25dbd383d4d2edd0a1fe6",
+    "test.jsonl": "2fb7c2a239fef923bcb62c0eee9d6884a608ce30e5e74a4e6b9082787679767f"
+  },
+  "devtools_screen": {
+    "codereviewer": {
+      "train": 1500,
+      "excluded": 123,
+      "eligible": 1377
+    },
+    "commitpackft": {
+      "train": 1500,
+      "excluded": 0,
+      "eligible": 1500
+    },
+    "flakeflagger": {
+      "train": 820,
+      "excluded": 0,
+      "eligible": 820
+    }
+  },
+  "models": {
+    "4b": {
+      "target_families": {
+        "tool_routing": 100,
+        "temporal": 100,
+        "probability": 350,
+        "injection": 100,
+        "codereviewer": 300,
+        "commitpackft": 300,
+        "flakeflagger": 250
+      },
+      "records": 1500,
+      "questions": 2170,
+      "sha256": "a6e4122ec3db09831115bc3330567287d17262ebf0a1e585609e372d57189cc0",
+      "source_counts": {
+        "targeted-v6-20261030/probability": 350,
+        "targeted_v2_all7_injection": 100,
+        "codereviewer": 300,
+        "commitpackft": 300,
+        "flakeflagger": 250,
+        "targeted_v2_all7_tool_routing": 100,
+        "targeted_v2_all7_temporal": 100
+      }
+    },
+    "9b": {
+      "target_families": {
+        "tool_routing": 100,
+        "temporal": 100,
+        "probability": 350,
+        "policy": 300,
+        "multihop": 270,
+        "codereviewer": 190,
+        "commitpackft": 190
+      },
+      "records": 1500,
+      "questions": 2510,
+      "sha256": "4133171bdefe0a6d7a9c482f5680af4601f7cd41ee2cc2b6872227ab0c7c62fc",
+      "source_counts": {
+        "targeted-v6-20261030/probability": 350,
+        "targeted-v6-20261030/multihop": 270,
+        "commitpackft": 190,
+        "codereviewer": 190,
+        "targeted_v2_all7_tool_routing": 100,
+        "targeted-v6-20261030/policy": 300,
+        "targeted_v2_all7_temporal": 100
+      }
+    }
+  }
+}

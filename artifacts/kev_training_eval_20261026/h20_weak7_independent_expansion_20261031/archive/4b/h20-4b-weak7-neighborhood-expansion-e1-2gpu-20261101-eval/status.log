@@ -1,0 +1,20 @@
+2026-11-01T01:03:37+08:00 TRAIN_START model=4b world=2 gpu=0,1 batch=2 accum=2 effective_batch=8
+2026-11-01T01:34:09+08:00 TRAIN_DONE model=4b
+2026-11-01T01:35:11+08:00 FAILED line=55 model=4b
+2026-11-01T02:50:18+08:00 POST_EVAL_RESTART model=4b gpu=0 reason=custom-data-empty-clean-population
+2026-11-01T02:52:00+08:00 POST_EVAL_FAILED line=19 model=4b
+2026-11-01T03:07:24+08:00 POST_EVAL_RESTART model=4b gpu=0 reason=normalize-development-variant-to-clean
+2026-11-01T03:09:01+08:00 DEVELOPMENT_DONE model=4b
+2026-11-01T03:09:01+08:00 START decision-v7 model=4b
+2026-11-01T03:11:07+08:00 DONE decision-v7 model=4b
+2026-11-01T03:11:07+08:00 START transfer-v4 model=4b
+2026-11-01T03:12:08+08:00 DONE transfer-v4 model=4b
+2026-11-01T03:12:08+08:00 START transfer-v9 model=4b
+2026-11-01T03:13:44+08:00 DONE transfer-v9 model=4b
+2026-11-01T03:13:44+08:00 START hard-v1 model=4b
+2026-11-01T03:18:46+08:00 DONE hard-v1 model=4b
+2026-11-01T03:18:46+08:00 START devtools-v1 model=4b
+2026-11-01T03:21:04+08:00 DONE devtools-v1 model=4b
+2026-11-01T03:21:04+08:00 START documents-v1 model=4b
+2026-11-01T03:25:39+08:00 DONE documents-v1 model=4b
+2026-11-01T03:25:39+08:00 ALL_DONE model=4b

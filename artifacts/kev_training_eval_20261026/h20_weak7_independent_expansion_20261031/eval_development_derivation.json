@@ -1,0 +1,30 @@
+{
+  "4b": {
+    "model": "4b",
+    "source": "4b_combined_development.jsonl",
+    "source_sha256": "5dabaa2da0b684a32f5e51e2facff5b6c266d504d2532bbdeb456f8b58cb6234",
+    "output": "4b_eval_development.jsonl",
+    "output_sha256": "fe7593d4581cbafb7e214ff9aa4c1f9c2a1343d2bb7392092a7cb4bd746b7b37",
+    "records": 538,
+    "original_variants": {
+      "error_neighborhood": 328,
+      "independent_development": 210
+    },
+    "changed_field": "_meta.variant",
+    "new_value": "clean"
+  },
+  "9b": {
+    "model": "9b",
+    "source": "9b_combined_development.jsonl",
+    "source_sha256": "57bd00da6155b8a906feac8430a61ec101d05ff09f4aea59055b8e3ef8cec673",
+    "output": "9b_eval_development.jsonl",
+    "output_sha256": "78e3f6b35f9d18fc1697a89910c4dc5b8a41b6bde6d284796f3407564f15aee2",
+    "records": 486,
+    "original_variants": {
+      "error_neighborhood": 276,
+      "independent_development": 210
+    },
+    "changed_field": "_meta.variant",
+    "new_value": "clean"
+  }
+}

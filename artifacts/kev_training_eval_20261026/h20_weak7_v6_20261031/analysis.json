@@ -1,0 +1,426 @@
+{
+  "4b": {
+    "test": {
+      "多约束权衡决策": {
+        "n": 200,
+        "before": 181,
+        "after": 181,
+        "fixed": 3,
+        "broken": 3
+      },
+      "概率": {
+        "n": 158,
+        "before": 120,
+        "after": 121,
+        "fixed": 5,
+        "broken": 4
+      },
+      "时间与数值": {
+        "n": 117,
+        "before": 63,
+        "after": 65,
+        "fixed": 4,
+        "broken": 2
+      },
+      "多跳推理": {
+        "n": 125,
+        "before": 104,
+        "after": 103,
+        "fixed": 0,
+        "broken": 1
+      },
+      "计算结果核验": {
+        "n": 188,
+        "before": 153,
+        "after": 149,
+        "fixed": 0,
+        "broken": 4
+      },
+      "长政策": {
+        "n": 200,
+        "before": 164,
+        "after": 165,
+        "fixed": 4,
+        "broken": 3
+      },
+      "信息不足": {
+        "n": 100,
+        "before": 86,
+        "after": 84,
+        "fixed": 0,
+        "broken": 2
+      },
+      "代码变更理解": {
+        "n": 298,
+        "before": 234,
+        "after": 233,
+        "fixed": 4,
+        "broken": 5
+      },
+      "代码审查": {
+        "n": 150,
+        "before": 99,
+        "after": 96,
+        "fixed": 3,
+        "broken": 6
+      },
+      "安全风险判断": {
+        "n": 175,
+        "before": 153,
+        "after": 153,
+        "fixed": 1,
+        "broken": 1
+      },
+      "测试稳定性判断": {
+        "n": 150,
+        "before": 119,
+        "after": 118,
+        "fixed": 0,
+        "broken": 1
+      },
+      "工具路由": {
+        "n": 150,
+        "before": 91,
+        "after": 97,
+        "fixed": 8,
+        "broken": 2
+      },
+      "提示注入": {
+        "n": 150,
+        "before": 111,
+        "after": 123,
+        "fixed": 12,
+        "broken": 0
+      }
+    },
+    "development": {
+      "工具路由": {
+        "n": 30,
+        "before": 22,
+        "after": 30,
+        "fixed": 8,
+        "broken": 0
+      },
+      "概率": {
+        "n": 124,
+        "before": 78,
+        "after": 80,
+        "fixed": 17,
+        "broken": 15
+      },
+      "提示注入": {
+        "n": 30,
+        "before": 22,
+        "after": 22,
+        "fixed": 0,
+        "broken": 0
+      },
+      "时间与数值": {
+        "n": 30,
+        "before": 12,
+        "after": 17,
+        "fixed": 5,
+        "broken": 0
+      },
+      "代码变更理解": {
+        "n": 299,
+        "before": 231,
+        "after": 228,
+        "fixed": 5,
+        "broken": 8
+      },
+      "测试稳定性判断": {
+        "n": 150,
+        "before": 103,
+        "after": 102,
+        "fixed": 1,
+        "broken": 2
+      },
+      "代码审查": {
+        "n": 150,
+        "before": 100,
+        "after": 100,
+        "fixed": 8,
+        "broken": 8
+      }
+    },
+    "target_test": {
+      "n": 1173,
+      "before": 837,
+      "after": 853,
+      "fixed": 36,
+      "broken": 20
+    },
+    "other_test": {
+      "n": 988,
+      "before": 841,
+      "after": 835,
+      "fixed": 8,
+      "broken": 14
+    },
+    "all_test": {
+      "n": 2161,
+      "before": 1678,
+      "after": 1688,
+      "fixed": 44,
+      "broken": 34
+    },
+    "target_development": {
+      "n": 813,
+      "before": 568,
+      "after": 579,
+      "fixed": 44,
+      "broken": 33
+    },
+    "six_suites": {
+      "decision-v7": {
+        "n": 1200,
+        "before": 0.8691666666666666,
+        "after": 0.8675,
+        "delta_pp": -0.1666666666666594
+      },
+      "transfer-v4": {
+        "n": 656,
+        "before": 0.8399390243902439,
+        "after": 0.836890243902439,
+        "delta_pp": -0.3048780487804881
+      },
+      "transfer-v9": {
+        "n": 1046,
+        "before": 0.7753346080305927,
+        "after": 0.7695984703632888,
+        "delta_pp": -0.5736137667303964
+      },
+      "hard-v1": {
+        "n": 1088,
+        "before": 0.8005514705882353,
+        "after": 0.7977941176470589,
+        "delta_pp": -0.27573529411764053
+      },
+      "devtools-v1": {
+        "n": 1073,
+        "before": 0.7520969245107176,
+        "after": 0.7642124883504194,
+        "delta_pp": 1.2115563839701804
+      },
+      "documents-v1": {
+        "n": 936,
+        "before": 0.8931623931623932,
+        "after": 0.8952991452991453,
+        "delta_pp": 0.21367521367521292
+      }
+    }
+  },
+  "9b": {
+    "test": {
+      "多约束权衡决策": {
+        "n": 200,
+        "before": 183,
+        "after": 181,
+        "fixed": 1,
+        "broken": 3
+      },
+      "概率": {
+        "n": 158,
+        "before": 127,
+        "after": 129,
+        "fixed": 6,
+        "broken": 4
+      },
+      "时间与数值": {
+        "n": 117,
+        "before": 72,
+        "after": 74,
+        "fixed": 4,
+        "broken": 2
+      },
+      "多跳推理": {
+        "n": 125,
+        "before": 106,
+        "after": 105,
+        "fixed": 3,
+        "broken": 4
+      },
+      "计算结果核验": {
+        "n": 188,
+        "before": 171,
+        "after": 170,
+        "fixed": 1,
+        "broken": 2
+      },
+      "长政策": {
+        "n": 200,
+        "before": 160,
+        "after": 164,
+        "fixed": 9,
+        "broken": 5
+      },
+      "信息不足": {
+        "n": 100,
+        "before": 90,
+        "after": 91,
+        "fixed": 2,
+        "broken": 1
+      },
+      "代码变更理解": {
+        "n": 298,
+        "before": 231,
+        "after": 231,
+        "fixed": 4,
+        "broken": 4
+      },
+      "代码审查": {
+        "n": 150,
+        "before": 99,
+        "after": 98,
+        "fixed": 1,
+        "broken": 2
+      },
+      "安全风险判断": {
+        "n": 175,
+        "before": 153,
+        "after": 152,
+        "fixed": 0,
+        "broken": 1
+      },
+      "测试稳定性判断": {
+        "n": 150,
+        "before": 136,
+        "after": 137,
+        "fixed": 1,
+        "broken": 0
+      },
+      "工具路由": {
+        "n": 150,
+        "before": 115,
+        "after": 118,
+        "fixed": 4,
+        "broken": 1
+      },
+      "提示注入": {
+        "n": 150,
+        "before": 137,
+        "after": 133,
+        "fixed": 0,
+        "broken": 4
+      }
+    },
+    "development": {
+      "工具路由": {
+        "n": 30,
+        "before": 25,
+        "after": 29,
+        "fixed": 4,
+        "broken": 0
+      },
+      "长政策": {
+        "n": 120,
+        "before": 67,
+        "after": 96,
+        "fixed": 31,
+        "broken": 2
+      },
+      "概率": {
+        "n": 124,
+        "before": 87,
+        "after": 97,
+        "fixed": 20,
+        "broken": 10
+      },
+      "多跳推理": {
+        "n": 86,
+        "before": 53,
+        "after": 68,
+        "fixed": 18,
+        "broken": 3
+      },
+      "时间与数值": {
+        "n": 30,
+        "before": 16,
+        "after": 13,
+        "fixed": 1,
+        "broken": 4
+      },
+      "代码变更理解": {
+        "n": 299,
+        "before": 234,
+        "after": 230,
+        "fixed": 0,
+        "broken": 4
+      },
+      "代码审查": {
+        "n": 150,
+        "before": 103,
+        "after": 107,
+        "fixed": 5,
+        "broken": 1
+      }
+    },
+    "target_test": {
+      "n": 1198,
+      "before": 910,
+      "after": 919,
+      "fixed": 31,
+      "broken": 22
+    },
+    "other_test": {
+      "n": 963,
+      "before": 870,
+      "after": 864,
+      "fixed": 5,
+      "broken": 11
+    },
+    "all_test": {
+      "n": 2161,
+      "before": 1780,
+      "after": 1783,
+      "fixed": 36,
+      "broken": 33
+    },
+    "target_development": {
+      "n": 839,
+      "before": 585,
+      "after": 640,
+      "fixed": 79,
+      "broken": 24
+    },
+    "six_suites": {
+      "decision-v7": {
+        "n": 1200,
+        "before": 0.8666666666666667,
+        "after": 0.8666666666666667,
+        "delta_pp": 0.0
+      },
+      "transfer-v4": {
+        "n": 656,
+        "before": 0.8673780487804879,
+        "after": 0.8628048780487805,
+        "delta_pp": -0.45731707317073766
+      },
+      "transfer-v9": {
+        "n": 1046,
+        "before": 0.8049713193116634,
+        "after": 0.8030592734225621,
+        "delta_pp": -0.19120458891013214
+      },
+      "hard-v1": {
+        "n": 1088,
+        "before": 0.8354779411764706,
+        "after": 0.8400735294117647,
+        "delta_pp": 0.4595588235294157
+      },
+      "devtools-v1": {
+        "n": 1073,
+        "before": 0.8117427772600186,
+        "after": 0.809878844361603,
+        "delta_pp": -0.18639328984156878
+      },
+      "documents-v1": {
+        "n": 936,
+        "before": 0.9049145299145299,
+        "after": 0.9017094017094017,
+        "delta_pp": -0.3205128205128194
+      }
+    }
+  }
+}

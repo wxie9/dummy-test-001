@@ -1,0 +1,70 @@
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   6%|▋         | 27/427 [00:00<00:02, 142.47it/s]Loading weights:  27%|██▋       | 116/427 [00:00<00:00, 460.86it/s]Loading weights:  48%|████▊     | 206/427 [00:00<00:00, 626.42it/s]Loading weights:  71%|███████   | 302/427 [00:00<00:00, 740.27it/s]Loading weights:  90%|█████████ | 385/427 [00:00<00:00, 764.16it/s]Loading weights: 100%|██████████| 427/427 [00:00<00:00, 665.86it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+evaluated 50/574
+evaluated 100/574
+evaluated 150/574
+evaluated 200/574
+evaluated 250/574
+evaluated 300/574
+evaluated 350/574
+evaluated 400/574
+evaluated 450/574
+evaluated 500/574
+evaluated 550/574
+{
+  "objective": -0.4948906831517248,
+  "clean": {
+    "n": 936,
+    "nll": 0.5891066760519948,
+    "acc": 0.8995726495726496,
+    "ece": 0.07582180460538633,
+    "brier": 0.17758553888127074,
+    "mean_conf": 0.97431715354452,
+    "confident_error_rate": 0.0673076923076923,
+    "coverage_at_0_9": 0.9177350427350427,
+    "accuracy_at_0_9": 0.9266589057043073,
+    "coverage_at_5pct_error": 0.8482905982905983,
+    "coverage_at_1pct_error": 0.45405982905982906,
+    "aurc": 0.02355857583654333,
+    "error_rate_at_0_9": 0.07334109429569266,
+    "confidence_bias": 0.07474450397187038,
+    "top_bins": {
+      "0.9": {
+        "n": 859,
+        "errors": 63,
+        "error_rate": 0.07334109429569266
+      },
+      "0.95": {
+        "n": 843,
+        "errors": 57,
+        "error_rate": 0.06761565836298933
+      },
+      "0.99": {
+        "n": 782,
+        "errors": 39,
+        "error_rate": 0.049872122762148335
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.9893162393162394,
+        "confidence_cutoff": 0.9999975822216469
+      },
+      "0.8": {
+        "coverage": 0.8002136752136753,
+        "accuracy": 0.9586114819759679,
+        "confidence_cutoff": 0.9954681527056669
+      }
+    }
+  },
+  "coverage": {
+    "requested_records": 574,
+    "requested_questions": 936,
+    "evaluated_records": 574,
+    "evaluated_questions": 936,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}

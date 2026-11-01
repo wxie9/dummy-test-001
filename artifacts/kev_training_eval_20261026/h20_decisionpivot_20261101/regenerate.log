@@ -1,0 +1,17 @@
+nohup: ignoring input
+family                  seed seconds  items  release 1.1 hash  solver     validate audit    keys
+answerable_facts   published     0.7    600  identical         600/600    OK         no flag    PASS     
+perm_inherit       published     3.6    600  identical         600/600    OK         no flag    PASS     
+policy_case        published    29.7    600  identical         600/600    OK         no flag    PASS     
+log_count_check    published     0.4    600  identical         600/600    OK         no flag    PASS     
+sched_conflict     published     0.9    600  identical         600/600    OK         no flag    PASS     
+state_goal         published    20.0    600  identical         600/600    OK         no flag    PASS     
+toolcall_valid     published     2.5    600  identical         600/600    OK         no flag    PASS     
+triage_order       published    13.1    600  identical         600/600    OK         no flag    PASS     
+clause_change      published     0.3    600  identical         600/600    OK         no flag    PASS     
+dep_resolve        published     1.0    600  identical         600/600    OK         no flag    PASS     
+ledger_reconcile   published     0.4    600  identical         600/600    OK         no flag    PASS     
+record_rule        published     6.5    600  identical         600/600    OK         no flag    PASS     
+filter_match       published     1.2    600  identical         600/600    OK         no flag    PASS     
+installed the families with the release hash into /data/kev/benchmarks/DecisionPivot/eval_data/tasks/
+ALL CHECKS PASSED

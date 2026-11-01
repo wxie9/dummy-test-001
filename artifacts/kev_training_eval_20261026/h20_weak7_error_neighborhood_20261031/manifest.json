@@ -1,0 +1,118 @@
+{
+  "status": "candidate_generated_not_trained",
+  "method": "3 train + 1 development views per original-stage wrong context",
+  "source_files": {
+    "/Users/chen/Documents/ChatGPT/procogs/third_party/kev-source-20261025/evals/hard-v1/test.jsonl": "246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/h20_weak7_v6_20261031/diagnostics/source_data/devtools-test.jsonl": "2fb7c2a239fef923bcb62c0eee9d6884a608ce30e5e74a4e6b9082787679767f"
+  },
+  "models": {
+    "4b": {
+      "target_sources": [
+        "codereviewer",
+        "commitpackft",
+        "flakeflagger",
+        "hard_probability",
+        "hard_temporal_numeric",
+        "prompt_injection",
+        "when2call"
+      ],
+      "seed_wrong_questions": 336,
+      "seed_wrong_contexts": 328,
+      "seed_contexts_by_source": {
+        "codereviewer": 51,
+        "commitpackft": 64,
+        "flakeflagger": 31,
+        "hard_probability": 32,
+        "hard_temporal_numeric": 52,
+        "prompt_injection": 39,
+        "when2call": 59
+      },
+      "seed_wrong_questions_by_source": {
+        "codereviewer": 51,
+        "commitpackft": 64,
+        "flakeflagger": 31,
+        "hard_probability": 38,
+        "hard_temporal_numeric": 54,
+        "prompt_injection": 39,
+        "when2call": 59
+      },
+      "train_records": 984,
+      "train_questions": 1254,
+      "development_records": 328,
+      "development_questions": 418,
+      "input_row_sha256": {
+        "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/h20_weak7_v6_20261031/baseline_rows/kev-4b-hard-rows.json": "d077ef823a026511878474b0e1849cc18e6aaf5286e4a49bb4eca37064398584",
+        "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/h20_weak7_v6_20261031/baseline_rows/kev-4b-dev-rows.json": "6c282135b73f20bf3eaa5a047c977bb72ee4dc7206dc6c1a895cf4247638c8b5"
+      },
+      "output_sha256": {
+        "train": "c356464b6f81fa2945510cccaaf05a3b5224ef86044d60577b9f2cdb1e3d24d2",
+        "development": "4a1197614114fd77dd490a268d374684e952699b9f60649d9cafe93a415a0340"
+      },
+      "checks": {
+        "baseline_rows_order_and_labels_aligned": true,
+        "all_seed_errors_covered": true,
+        "three_train_one_development_per_context": true,
+        "question_labels_and_types_preserved": true,
+        "no_exact_frozen_test_state": true,
+        "unique_record_ids": true
+      }
+    },
+    "9b": {
+      "target_sources": [
+        "codereviewer",
+        "commitpackft",
+        "hard_long_policy",
+        "hard_multi_hop",
+        "hard_probability",
+        "hard_temporal_numeric",
+        "when2call"
+      ],
+      "seed_wrong_questions": 288,
+      "seed_wrong_contexts": 276,
+      "seed_contexts_by_source": {
+        "codereviewer": 51,
+        "commitpackft": 65,
+        "hard_long_policy": 34,
+        "hard_multi_hop": 18,
+        "hard_probability": 30,
+        "hard_temporal_numeric": 43,
+        "when2call": 35
+      },
+      "seed_wrong_questions_by_source": {
+        "codereviewer": 51,
+        "commitpackft": 67,
+        "hard_long_policy": 40,
+        "hard_multi_hop": 19,
+        "hard_probability": 31,
+        "hard_temporal_numeric": 45,
+        "when2call": 35
+      },
+      "train_records": 828,
+      "train_questions": 1212,
+      "development_records": 276,
+      "development_questions": 404,
+      "input_row_sha256": {
+        "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/h20_weak7_v6_20261031/baseline_rows/kev-9b-hard-rows.json": "e954e160b706d1d411e6e12a6946578dd5d450e92434a3bbaed3abacc725e4c5",
+        "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/h20_weak7_v6_20261031/baseline_rows/kev-9b-dev-rows.json": "4f5f122824e43c725089297c75fc89026defed4266e799096274fdd03a267dfb"
+      },
+      "output_sha256": {
+        "train": "b1ca6de95f826176b90cff8fa686e0f2941ba289ce7db0797c7b4dee3bdb9795",
+        "development": "ab216dcf8d4414e2f7d9cb3dd1947cc53666640fed7e82fd65fef3bc0a23ae3b"
+      },
+      "checks": {
+        "baseline_rows_order_and_labels_aligned": true,
+        "all_seed_errors_covered": true,
+        "three_train_one_development_per_context": true,
+        "question_labels_and_types_preserved": true,
+        "no_exact_frozen_test_state": true,
+        "unique_record_ids": true
+      }
+    }
+  },
+  "limitations": [
+    "Seeds are selected from frozen hard-v1 and devtools-v1 test errors; neither suite is blind for evaluating these candidates.",
+    "Development views share their seed's semantic skeleton with training views.",
+    "Labels are inherited under controlled edits, without independent semantic adjudication.",
+    "For code, tool routing, prompt injection and long policy, edits are conservative and some text remains close to the test seed."
+  ]
+}

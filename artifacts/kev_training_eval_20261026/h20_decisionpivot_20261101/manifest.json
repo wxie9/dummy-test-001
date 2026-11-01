@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-01",
+  "benchmark": "DecisionPivot Core 1.1",
+  "benchmark_commit": "fd57688f033864e64c452561ffdfcba9739d1811",
+  "release_index_sha256": "474b40117de6a6042d686d6bcc033781f37e99fa1272b275faccda2b4a40d0d8",
+  "task_hash_manifest_sha256": "2997f58ad7b007139510afdaaa0354619dc9eb8b79eac04f6b729d1c93555119",
+  "families": 13,
+  "items_per_family": 600,
+  "items_per_run": 7800,
+  "runs": 4,
+  "request_errors": 0,
+  "coverage": 1.0,
+  "inference_dtype": "bfloat16",
+  "runner_workers": 32,
+  "scorer_resamples": 1000,
+  "gpu_assignment": {"before": 4, "after": 5},
+  "temperature": {"4b_before": 2.462288826689832, "4b_after": 1.0, "9b_before": 1.0, "9b_after": 1.0},
+  "checkpoint_suite_sha256": "a8f50e481b7d90b97da049e0ff6a01cee2f1ed204aed61a8265af0edbb5514d2",
+  "archive_sha256": "7bf05cfdca690a8d3af21ba1be3d4134663517ca5af35969b166614803c0fb30",
+  "tracks_evaluated": ["core"],
+  "tracks_not_evaluated": ["reference"]
+}

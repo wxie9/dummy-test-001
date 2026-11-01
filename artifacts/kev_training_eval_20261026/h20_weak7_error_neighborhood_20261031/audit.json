@@ -1,0 +1,63 @@
+{
+  "4b": {
+    "load_records": true,
+    "materialize_all": true,
+    "train_dev_exact_state_overlap": 0,
+    "within_split_exact_state_duplicates": 0,
+    "train_by_source": {
+      "codereviewer": 153,
+      "prompt_injection": 117,
+      "when2call": 177,
+      "hard_probability": 96,
+      "flakeflagger": 93,
+      "commitpackft": 192,
+      "hard_temporal_numeric": 156
+    },
+    "development_by_source": {
+      "prompt_injection": 39,
+      "when2call": 59,
+      "commitpackft": 64,
+      "hard_temporal_numeric": 52,
+      "codereviewer": 51,
+      "hard_probability": 32,
+      "flakeflagger": 31
+    },
+    "train_by_transform": {
+      "diff_hunk_line_offset": 345,
+      "message_review_wrapper": 117,
+      "tool_schema_render_and_order": 177,
+      "original_0.8b_hard_family_transform": 252,
+      "test_class_namespace_prefix": 93
+    }
+  },
+  "9b": {
+    "load_records": true,
+    "materialize_all": true,
+    "train_dev_exact_state_overlap": 0,
+    "within_split_exact_state_duplicates": 0,
+    "train_by_source": {
+      "commitpackft": 195,
+      "codereviewer": 153,
+      "hard_multi_hop": 54,
+      "hard_probability": 90,
+      "when2call": 105,
+      "hard_temporal_numeric": 129,
+      "hard_long_policy": 102
+    },
+    "development_by_source": {
+      "hard_long_policy": 34,
+      "hard_probability": 30,
+      "codereviewer": 51,
+      "hard_temporal_numeric": 43,
+      "when2call": 35,
+      "commitpackft": 65,
+      "hard_multi_hop": 18
+    },
+    "train_by_transform": {
+      "diff_hunk_line_offset": 348,
+      "original_0.8b_hard_family_transform": 273,
+      "tool_schema_render_and_order": 105,
+      "policy_issuer_rename": 102
+    }
+  }
+}

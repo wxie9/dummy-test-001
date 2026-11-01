@@ -1,0 +1,311 @@
+{
+  "version": "h20-weak7-independent-expansion-20261031",
+  "status": "candidate_generated_local_structural_checks_passed_tokenizer_preflight_pending",
+  "design": {
+    "union_families": [
+      "codereviewer",
+      "commitpackft",
+      "flakeflagger",
+      "injection",
+      "multihop",
+      "policy",
+      "probability",
+      "temporal",
+      "tool_routing"
+    ],
+    "train_contexts_per_family": 150,
+    "train_views_per_context": 2,
+    "development_contexts_per_family": 30,
+    "model_weak_families": {
+      "4b": [
+        "codereviewer",
+        "commitpackft",
+        "flakeflagger",
+        "injection",
+        "probability",
+        "temporal",
+        "tool_routing"
+      ],
+      "9b": [
+        "codereviewer",
+        "commitpackft",
+        "multihop",
+        "policy",
+        "probability",
+        "temporal",
+        "tool_routing"
+      ]
+    }
+  },
+  "union": {
+    "train_records": 2700,
+    "train_contexts": 1350,
+    "development_records": 270,
+    "development_contexts": 270
+  },
+  "models": {
+    "4b": {
+      "families": [
+        "codereviewer",
+        "commitpackft",
+        "flakeflagger",
+        "injection",
+        "probability",
+        "temporal",
+        "tool_routing"
+      ],
+      "new": {
+        "train": {
+          "records": 2100,
+          "questions": 2400,
+          "contexts": 1050,
+          "by_family": {
+            "codereviewer": 300,
+            "commitpackft": 300,
+            "flakeflagger": 300,
+            "injection": 300,
+            "probability": 300,
+            "temporal": 300,
+            "tool_routing": 300
+          },
+          "exact_frozen_test_state_overlap": 0,
+          "duplicate_ids": 0,
+          "duplicate_states": 0,
+          "materialize_all": true
+        },
+        "development": {
+          "records": 210,
+          "questions": 240,
+          "contexts": 210,
+          "by_family": {
+            "codereviewer": 30,
+            "commitpackft": 30,
+            "flakeflagger": 30,
+            "injection": 30,
+            "probability": 30,
+            "temporal": 30,
+            "tool_routing": 30
+          },
+          "exact_frozen_test_state_overlap": 0,
+          "duplicate_ids": 0,
+          "duplicate_states": 0,
+          "materialize_all": true
+        }
+      },
+      "combined": {
+        "train": {
+          "records": 3084,
+          "questions": 3654,
+          "contexts": 1378,
+          "by_family": {
+            "codereviewer": 453,
+            "commitpackft": 492,
+            "flakeflagger": 393,
+            "hard_probability": 96,
+            "hard_temporal_numeric": 156,
+            "injection": 300,
+            "probability": 300,
+            "prompt_injection": 117,
+            "temporal": 300,
+            "tool_routing": 300,
+            "when2call": 177
+          },
+          "exact_frozen_test_state_overlap": 0,
+          "duplicate_ids": 0,
+          "duplicate_states": 0,
+          "materialize_all": true
+        },
+        "development": {
+          "records": 538,
+          "questions": 658,
+          "contexts": 538,
+          "by_family": {
+            "codereviewer": 81,
+            "commitpackft": 94,
+            "flakeflagger": 61,
+            "hard_probability": 32,
+            "hard_temporal_numeric": 52,
+            "injection": 30,
+            "probability": 30,
+            "prompt_injection": 39,
+            "temporal": 30,
+            "tool_routing": 30,
+            "when2call": 59
+          },
+          "exact_frozen_test_state_overlap": 0,
+          "duplicate_ids": 0,
+          "duplicate_states": 0,
+          "materialize_all": true
+        }
+      },
+      "files": {
+        "4b_new_train.jsonl": {
+          "sha256": "3ae3162fca793332912e66e0d582a22dfc693116888caff090a55c9d5baf9ab4",
+          "records": 2100
+        },
+        "4b_new_development.jsonl": {
+          "sha256": "3e968297c46503ff5b466b46b9c90a222c4c36e3069808bcd23e283435204111",
+          "records": 210
+        },
+        "4b_combined_train.jsonl": {
+          "sha256": "3d7b61e934f53e87c3766e975fd623adc0db0ba5a0d53e923e53cd04c23e70e5",
+          "records": 3084
+        },
+        "4b_combined_development.jsonl": {
+          "sha256": "5dabaa2da0b684a32f5e51e2facff5b6c266d504d2532bbdeb456f8b58cb6234",
+          "records": 538
+        }
+      }
+    },
+    "9b": {
+      "families": [
+        "codereviewer",
+        "commitpackft",
+        "multihop",
+        "policy",
+        "probability",
+        "temporal",
+        "tool_routing"
+      ],
+      "new": {
+        "train": {
+          "records": 2100,
+          "questions": 2778,
+          "contexts": 1050,
+          "by_family": {
+            "codereviewer": 300,
+            "commitpackft": 300,
+            "multihop": 300,
+            "policy": 300,
+            "probability": 300,
+            "temporal": 300,
+            "tool_routing": 300
+          },
+          "exact_frozen_test_state_overlap": 0,
+          "duplicate_ids": 0,
+          "duplicate_states": 0,
+          "materialize_all": true
+        },
+        "development": {
+          "records": 210,
+          "questions": 278,
+          "contexts": 210,
+          "by_family": {
+            "codereviewer": 30,
+            "commitpackft": 30,
+            "multihop": 30,
+            "policy": 30,
+            "probability": 30,
+            "temporal": 30,
+            "tool_routing": 30
+          },
+          "exact_frozen_test_state_overlap": 0,
+          "duplicate_ids": 0,
+          "duplicate_states": 0,
+          "materialize_all": true
+        }
+      },
+      "combined": {
+        "train": {
+          "records": 2928,
+          "questions": 3990,
+          "contexts": 1326,
+          "by_family": {
+            "codereviewer": 453,
+            "commitpackft": 495,
+            "hard_long_policy": 102,
+            "hard_multi_hop": 54,
+            "hard_probability": 90,
+            "hard_temporal_numeric": 129,
+            "multihop": 300,
+            "policy": 300,
+            "probability": 300,
+            "temporal": 300,
+            "tool_routing": 300,
+            "when2call": 105
+          },
+          "exact_frozen_test_state_overlap": 0,
+          "duplicate_ids": 0,
+          "duplicate_states": 0,
+          "materialize_all": true
+        },
+        "development": {
+          "records": 486,
+          "questions": 682,
+          "contexts": 486,
+          "by_family": {
+            "codereviewer": 81,
+            "commitpackft": 95,
+            "hard_long_policy": 34,
+            "hard_multi_hop": 18,
+            "hard_probability": 30,
+            "hard_temporal_numeric": 43,
+            "multihop": 30,
+            "policy": 30,
+            "probability": 30,
+            "temporal": 30,
+            "tool_routing": 30,
+            "when2call": 35
+          },
+          "exact_frozen_test_state_overlap": 0,
+          "duplicate_ids": 0,
+          "duplicate_states": 0,
+          "materialize_all": true
+        }
+      },
+      "files": {
+        "9b_new_train.jsonl": {
+          "sha256": "e7ad2b1f1a7101959139781581243369185691070a83551defabcf146493ab2c",
+          "records": 2100
+        },
+        "9b_new_development.jsonl": {
+          "sha256": "90bb08c22ff0901757f0380dcb38e5be1861f2ce3abe3bea833d408820c47f99",
+          "records": 210
+        },
+        "9b_combined_train.jsonl": {
+          "sha256": "460b1fac80b96a26c0df2d1cdf126340f10f2f217df3f96b1bf1633a83d9a30f",
+          "records": 2928
+        },
+        "9b_combined_development.jsonl": {
+          "sha256": "57bd00da6155b8a906feac8430a61ec101d05ff09f4aea59055b8e3ef8cec673",
+          "records": 486
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "/Users/chen/Documents/ChatGPT/procogs/third_party/kev-source-20261025/evals/devtools-v1/train.jsonl": "587682c145cbbc0c8c990e9d649da7b972853a9eaaef71e9b7b0fa18163b962c",
+    "/Users/chen/Documents/ChatGPT/procogs/third_party/kev-source-20261025/evals/devtools-v1/development.jsonl": "3df3aa83890c43db65ac73b5bb6e4fbb1466362fc1a25dbd383d4d2edd0a1fe6",
+    "/Users/chen/Documents/ChatGPT/procogs/third_party/kev-source-20261025/evals/devtools-v1/test.jsonl": "2fb7c2a239fef923bcb62c0eee9d6884a608ce30e5e74a4e6b9082787679767f"
+  },
+  "old_error_neighborhood_manifest_sha256": "3cc052a8e161cc71d715b366d43a9f4e48d323810db7081659f43173d8911fad",
+  "checks": {
+    "all_records_materialize": true,
+    "unique_ids_and_states": true,
+    "train_development_state_overlap": 0,
+    "exact_frozen_test_state_overlap": 0,
+    "devtools_source_group_overlap_between_new_train_and_dev": 0,
+    "source_heldout_ids_groups_states_excluded": true,
+    "solver_or_source_labels_preserved": true
+  },
+  "limitations": [
+    "The second train view is a controlled presentation change of the same context, not an independent semantic problem.",
+    "CodeReviewer, CommitPackFT and FlakeFlagger contexts are sampled from their official training partition; labels are source labels.",
+    "Generated labels are solver/rule based, but there is no independent human semantic review.",
+    "Exact frozen-test states are excluded; semantic or template overlap is not ruled out.",
+    "Combined model files include the earlier benchmark-directed error-neighborhood candidates, so hard-v1/devtools-v1 remain diagnostic rather than blind.",
+    "Tokenizer fits at the 7552-token training limit has not yet run on the target H20 environment."
+  ],
+  "files": {
+    "9b_combined_train.jsonl": "460b1fac80b96a26c0df2d1cdf126340f10f2f217df3f96b1bf1633a83d9a30f",
+    "union_development.jsonl": "3b8cb8a5799b96fa0252c9f5a40840d48635d84d3ccf2a5eba2e866ab7b82fa3",
+    "9b_combined_development.jsonl": "57bd00da6155b8a906feac8430a61ec101d05ff09f4aea59055b8e3ef8cec673",
+    "9b_new_train.jsonl": "e7ad2b1f1a7101959139781581243369185691070a83551defabcf146493ab2c",
+    "union_train.jsonl": "c920ad40612dce5b037f9f8210669309dc0316110e1002bce834795c850e58a6",
+    "4b_combined_development.jsonl": "5dabaa2da0b684a32f5e51e2facff5b6c266d504d2532bbdeb456f8b58cb6234",
+    "4b_new_train.jsonl": "3ae3162fca793332912e66e0d582a22dfc693116888caff090a55c9d5baf9ab4",
+    "9b_new_development.jsonl": "90bb08c22ff0901757f0380dcb38e5be1861f2ce3abe3bea833d408820c47f99",
+    "4b_combined_train.jsonl": "3d7b61e934f53e87c3766e975fd623adc0db0ba5a0d53e923e53cd04c23e70e5",
+    "4b_new_development.jsonl": "3e968297c46503ff5b466b46b9c90a222c4c36e3069808bcd23e283435204111"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": "h20-weak7-v6-20261031-dev-9b",
+  "partitions": [
+    "development"
+  ],
+  "locked": [],
+  "eval_only": true,
+  "context": {
+    "max_state": 7552,
+    "max_branch": 8192,
+    "max_packed": 9216,
+    "truncate": false
+  },
+  "files": {
+    "development.jsonl": {
+      "sha256": "d026261c2960dd251c6475c7bb4dde385f0dbf001b9a7ff307a4c713ab1e9f7c",
+      "records": 536
+    }
+  },
+  "holdout_sources": []
+}

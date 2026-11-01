@@ -1,0 +1,86 @@
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   2%|▏         | 8/426 [00:00<00:20, 20.35it/s]Loading weights:  34%|███▍      | 146/426 [00:00<00:00, 381.15it/s]Loading weights:  62%|██████▏   | 265/426 [00:00<00:00, 603.27it/s]Loading weights:  90%|█████████ | 385/426 [00:00<00:00, 771.43it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 588.70it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+evaluated 50/1264
+evaluated 100/1264
+evaluated 150/1264
+evaluated 200/1264
+evaluated 250/1264
+evaluated 300/1264
+evaluated 350/1264
+evaluated 400/1264
+evaluated 450/1264
+evaluated 500/1264
+evaluated 550/1264
+evaluated 600/1264
+evaluated 650/1264
+evaluated 700/1264
+evaluated 750/1264
+evaluated 800/1264
+evaluated 850/1264
+evaluated 900/1264
+evaluated 950/1264
+evaluated 1000/1264
+evaluated 1050/1264
+evaluated 1100/1264
+evaluated 1150/1264
+evaluated 1200/1264
+evaluated 1250/1264
+{
+  "objective": -0.7482354554872571,
+  "clean": {
+    "n": 1046,
+    "nll": 1.153671696274796,
+    "acc": 0.7648183556405354,
+    "ece": 0.15192531229583117,
+    "brier": 0.3757424991913944,
+    "mean_conf": 0.9152122151727606,
+    "confident_error_rate": 0.10611854684512428,
+    "coverage_at_0_9": 0.7877629063097514,
+    "accuracy_at_0_9": 0.8652912621359223,
+    "coverage_at_5pct_error": 0.5487571701720841,
+    "coverage_at_1pct_error": 0.33747609942638623,
+    "aurc": 0.06797551545232487,
+    "error_rate_at_0_9": 0.13470873786407767,
+    "confidence_bias": 0.15039385953222528,
+    "top_bins": {
+      "0.9": {
+        "n": 824,
+        "errors": 111,
+        "error_rate": 0.13470873786407767
+      },
+      "0.95": {
+        "n": 779,
+        "errors": 96,
+        "error_rate": 0.12323491655969192
+      },
+      "0.99": {
+        "n": 686,
+        "errors": 61,
+        "error_rate": 0.08892128279883382
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.9579349904397706,
+        "confidence_cutoff": 0.999741929128526
+      },
+      "0.8": {
+        "coverage": 0.8001912045889101,
+        "accuracy": 0.8554360812425329,
+        "confidence_cutoff": 0.8753914223630924
+      }
+    },
+    "score_mae": 0.20413867877450412,
+    "ranked_probability_score": 0.08857934409470573
+  },
+  "coverage": {
+    "requested_records": 1264,
+    "requested_questions": 1264,
+    "evaluated_records": 1264,
+    "evaluated_questions": 1264,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}
