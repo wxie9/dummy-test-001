@@ -6,6 +6,10 @@ passwords, caches, and unrelated workspace files are intentionally excluded.
 
 ## Contents
 
+- `Kev_4B_9B_27B_v1_v2_评测指标总报告_20261104.md`: consolidated
+  evaluation report covering the local 4B/9B checkpoints and continuation
+  experiments, the local 27B v1 reproduction, and clearly labelled official
+  27B v2 results.
 - `h20_4b_s4_six_test_20261030.md`: original Kev 4B stage-4 six-suite result.
 - `h20_9b_s3_six_test_20261030.md`: original Kev 9B stage-3 six-suite result.
 - `h20_weak7_error_neighborhood_20261031/`: model-specific weak-category
@@ -38,6 +42,7 @@ passwords, caches, and unrelated workspace files are intentionally excluded.
 
 Start with:
 
+- `Kev_4B_9B_27B_v1_v2_评测指标总报告_20261104.md`
 - `h20_weak7_v6_20261031/scaling_and_continuation_summary.md`
 - `h20_weak7_independent_expansion_20261031/expanded_results.md`
 - `h20_decisionpivot_20261101/summary.md`
