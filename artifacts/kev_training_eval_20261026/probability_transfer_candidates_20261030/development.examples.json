@@ -1,0 +1,441 @@
+[
+  {
+    "state": {
+      "audit_scope": "This is the complete audit. Each record belongs to exactly one group and one status; no record is counted twice.",
+      "status_order": [
+        "acceptable",
+        "defective"
+      ],
+      "records": [
+        {
+          "group": "Supplier R",
+          "counts": [
+            27100,
+            17000
+          ]
+        },
+        {
+          "group": "Supplier S",
+          "counts": [
+            19100,
+            24700
+          ]
+        }
+      ]
+    },
+    "questions": {
+      "forward": {
+        "type": "choice",
+        "instructions": "Among records from Supplier R, what percentage have status acceptable? Round half up to two decimal places.",
+        "criteria": {
+          "a": "41.34%",
+          "b": "75.00%",
+          "c": "58.66%",
+          "d": "30.83%",
+          "e": "61.45%"
+        },
+        "label": "e",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "reverse": {
+        "type": "choice",
+        "instructions": "Among records with status acceptable, what percentage come from Supplier R? Round half up to two decimal places.",
+        "criteria": {
+          "a": "52.56%",
+          "b": "58.66%",
+          "c": "100.00%",
+          "d": "61.45%",
+          "e": "30.83%"
+        },
+        "label": "b",
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/development/table/2",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "development",
+      "group_id": "probability-transfer-candidate-20261030/development/table/2",
+      "subtype": "table",
+      "facts": {
+        "row_labels": [
+          "Supplier R",
+          "Supplier S"
+        ],
+        "status_labels": [
+          "defective",
+          "acceptable"
+        ],
+        "counts": [
+          [
+            17000,
+            27100
+          ],
+          [
+            24700,
+            19100
+          ]
+        ],
+        "target_row": "Supplier R",
+        "target_status": "acceptable",
+        "target_row_position": 0,
+        "target_status_position": 0,
+        "layout": "object",
+        "scale": 100
+      },
+      "review_zh": "Condition on the named set; row and column totals differ.",
+      "text_sha256": "a3b0d885c0c51145f19427cb0f973881668abaa2b7cf03ed538efa1b7d7db650"
+    }
+  },
+  {
+    "state": {
+      "topic": "Decision from the stated audit figures",
+      "details": "In automated defect inspection, twenty percent of cases are actually defective. Among actually defective cases, the system flags eighty percent. Among cases that are not defective, it flags two percent. Select a case uniformly from those flagged. The rates describe this same population."
+    },
+    "questions": {
+      "posterior": {
+        "type": "choice",
+        "instructions": "What is the probability that this flagged case is actually defective? Give a percentage rounded to two decimal places.",
+        "criteria": {
+          "a": "16.00%",
+          "b": "92.61%",
+          "c": "88.01%",
+          "d": "20.00%",
+          "e": "90.91%"
+        },
+        "label": "e",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "more_likely": {
+        "type": "noul",
+        "instructions": "Given a flag, is being defective strictly more likely than not being defective?",
+        "label": true,
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "bucket": {
+        "type": "score",
+        "instructions": "Select the interval containing the exact posterior probability. [ includes an endpoint, ) excludes it.",
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "label": 5,
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/development/bayes/5",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "development",
+      "group_id": "probability-transfer-candidate-20261030/development/bayes/5",
+      "subtype": "bayes",
+      "facts": {
+        "mechanism": "bayes",
+        "prevalence": 20,
+        "sensitivity": 80,
+        "false_positive": 2
+      },
+      "review_zh": "后验=1600/(1600+160)=90.91%。",
+      "text_sha256": "8843c115ffb2b38be535d226021929aa90ca2a28eb582320c7b36bfd7327bbd8",
+      "rate_style": "words"
+    }
+  },
+  {
+    "state": {
+      "topic": "Decision from the stated audit figures",
+      "details": "The following inspection stations have mutually independent success events. Their success rates are 1 out of every 2, 1 out of every 2. These are all the components in the system."
+    },
+    "questions": {
+      "probability": {
+        "type": "choice",
+        "instructions": "What is the probability every component succeeds? Round to two decimal places.",
+        "criteria": {
+          "a": "75.00%",
+          "b": "25.00%",
+          "c": "22.10%",
+          "d": "26.70%",
+          "e": "24.70%"
+        },
+        "label": "b",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "bucket": {
+        "type": "score",
+        "instructions": "What is the probability every component succeeds? Select the interval containing the exact probability; [ includes a boundary and ) excludes it.",
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "label": 1,
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/development/all/7",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "development",
+      "group_id": "probability-transfer-candidate-20261030/development/all/7",
+      "subtype": "all",
+      "facts": {
+        "probabilities": [
+          50,
+          50
+        ],
+        "exact_probability": "1/4",
+        "stratum": 1
+      },
+      "review_zh": "独立事件按乘积及补集计算；概率区间按精确分数确定。",
+      "text_sha256": "ad9deb0b61fde30a822b096a62e9ba5305d9663877c8f8c50424fef84b0b8fba",
+      "rate_style": "outof"
+    }
+  },
+  {
+    "state": {
+      "topic": "Decision from the stated audit figures",
+      "details": "The following backup links have mutually independent success events. Their success rates are 93 out of every 100, 23 out of every 25. These are all the components in the system."
+    },
+    "questions": {
+      "probability": {
+        "type": "choice",
+        "instructions": "What is the probability at least one component fails? Round to two decimal places.",
+        "criteria": {
+          "a": "92.50%",
+          "b": "93.00%",
+          "c": "99.44%",
+          "d": "85.56%",
+          "e": "14.44%"
+        },
+        "label": "e",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "bucket": {
+        "type": "score",
+        "instructions": "What is the probability at least one component fails? Select the interval containing the exact probability; [ includes a boundary and ) excludes it.",
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "label": 1,
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/development/any_fail/7",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "development",
+      "group_id": "probability-transfer-candidate-20261030/development/any_fail/7",
+      "subtype": "any_fail",
+      "facts": {
+        "probabilities": [
+          93,
+          92
+        ],
+        "exact_probability": "361/2500",
+        "stratum": 1
+      },
+      "review_zh": "独立事件按乘积及补集计算；概率区间按精确分数确定。",
+      "text_sha256": "f01a0197df21256d815db5c44726bee77666c74708cf621a99d10321b0c96ea0",
+      "rate_style": "outof"
+    }
+  },
+  {
+    "state": "The following delivery routes have mutually independent success events. Their success rates are 9/50, 17/100, 1/25, 9/50. These are all the components in the system.",
+    "questions": {
+      "probability": {
+        "type": "choice",
+        "instructions": "What is the probability at least one component succeeds? Round to two decimal places.",
+        "criteria": {
+          "a": "53.58%",
+          "b": "46.12%",
+          "c": "99.98%",
+          "d": "43.52%",
+          "e": "46.42%"
+        },
+        "label": "e",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "bucket": {
+        "type": "score",
+        "instructions": "What is the probability at least one component succeeds? Select the interval containing the exact probability; [ includes a boundary and ) excludes it.",
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "label": 2,
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/development/any/2",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "development",
+      "group_id": "probability-transfer-candidate-20261030/development/any/2",
+      "subtype": "any",
+      "facts": {
+        "probabilities": [
+          18,
+          17,
+          4,
+          18
+        ],
+        "exact_probability": "362681/781250",
+        "stratum": 2
+      },
+      "review_zh": "独立事件按乘积及补集计算；概率区间按精确分数确定。",
+      "text_sha256": "107fa26a200f205329881b501893ff1582ff6ce0c22ded43064023604a211f29",
+      "rate_style": "fraction"
+    }
+  },
+  {
+    "state": "A and B are independent, with probabilities 3 out of every 4 and 1 out of every 5. Event X means at least one of A and B happens. Event Y has probability 79 out of every 100. Compare marginal probabilities only; dependence between X and Y is irrelevant.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which statement is correct?",
+        "criteria": {
+          "a": "X is more likely",
+          "b": "Y is more likely",
+          "c": "They have equal probabilities"
+        },
+        "label": "a",
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/development/compare/3",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "development",
+      "group_id": "probability-transfer-candidate-20261030/development/compare/3",
+      "subtype": "compare",
+      "facts": {
+        "p": "3/4",
+        "q": "1/5",
+        "op": "OR",
+        "second": "79/100"
+      },
+      "review_zh": "X=80.00%; Y=79.00%。",
+      "text_sha256": "05de3e9310ba58cde07f5f1815d3f655863d9e701652a7c67634fe8895777cc2",
+      "rate_style": "outof"
+    }
+  },
+  {
+    "state": {
+      "topic": "Decision from the stated audit figures",
+      "details": "Choose exactly one project to maximize expected net cash flow, even if all choices have negative expectation. Each project pays its upfront cost exactly once. Outcomes within each project are exhaustive and mutually exclusive; gains and losses exclude that cost.\nPine: upfront cost $200000.00; 25%: lose $3000000.00; 75%: lose $3500000.00.\nMaple: upfront cost $900000.00; 20%: lose $2750000.00; 30%: lose $4000000.00; 50%: lose $4000000.00.\nOak: upfront cost $500000.00; 40%: lose $500000.00; 60%: lose $3750000.00.\nElm: upfront cost $1200000.00; 40%: lose $2500000.00; 60%: lose $3000000.00."
+    },
+    "questions": {
+      "project": {
+        "type": "choice",
+        "instructions": "Which project maximizes expected net cash flow?",
+        "criteria": {
+          "a": "Elm",
+          "b": "Oak",
+          "c": "Maple",
+          "d": "Pine",
+          "e": "All projects tie"
+        },
+        "label": "b",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "value": {
+        "type": "choice",
+        "instructions": "What is the expected net cash flow of Oak?",
+        "criteria": {
+          "a": "-$2950000.00",
+          "b": "-$3200000.00",
+          "c": "-$2700000.00",
+          "d": "$2950000.00",
+          "e": "-$2450000.00"
+        },
+        "label": "a",
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/development/expected_value/4",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "development",
+      "group_id": "probability-transfer-candidate-20261030/development/expected_value/4",
+      "subtype": "expected_value",
+      "facts": {
+        "mechanism": "expected_value",
+        "projects": {
+          "Pine": {
+            "weights": [
+              25,
+              75
+            ],
+            "values": [
+              -3000000,
+              -3500000
+            ],
+            "cost": 200000
+          },
+          "Maple": {
+            "weights": [
+              20,
+              30,
+              50
+            ],
+            "values": [
+              -2750000,
+              -4000000,
+              -4000000
+            ],
+            "cost": 900000
+          },
+          "Oak": {
+            "weights": [
+              40,
+              60
+            ],
+            "values": [
+              -500000,
+              -3750000
+            ],
+            "cost": 500000
+          },
+          "Elm": {
+            "weights": [
+              40,
+              60
+            ],
+            "values": [
+              -2500000,
+              -3000000
+            ],
+            "cost": 1200000
+          }
+        },
+        "asked": "Oak",
+        "scale": 10000
+      },
+      "review_zh": "所有相关计数或金额同乘10000；条件概率不变，期望净值同倍缩放。",
+      "text_sha256": "b795b8687b119db6b94e2d30f8a653bcf47b96338cb90f3614ba6f0d1a4bdf62",
+      "rate_style": "percent"
+    }
+  }
+]

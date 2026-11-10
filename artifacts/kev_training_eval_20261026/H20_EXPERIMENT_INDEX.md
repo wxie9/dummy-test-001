@@ -1,5 +1,10 @@
 # H20 Kev experiment archive
 
+> This historical H20-only index is retained for compatibility. For the full
+> archive through 2026-11-10, including 0.8B, 27B, data reconstruction and
+> DecisionPivot probability audits, see
+> `KEV_EXPERIMENT_ARCHIVE_INDEX_20261110.md`.
+
 This index covers the H20 Kev 4B/9B training and evaluation artifacts collected
 between 2026-10-30 and 2026-11-01. Model weights, access credentials, SSH
 passwords, caches, and unrelated workspace files are intentionally excluded.

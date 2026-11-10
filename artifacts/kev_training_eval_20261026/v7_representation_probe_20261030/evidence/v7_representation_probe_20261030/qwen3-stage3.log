@@ -1,0 +1,12 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  40%|████      | 124/310 [00:00<00:00, 1239.68it/s]Loading weights:  89%|████████▉ | 276/310 [00:00<00:00, 1398.83it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1414.69it/s]
+evaluated 50/525
+evaluated 100/525
+evaluated 150/525
+evaluated 200/525
+evaluated 250/525
+evaluated 300/525
+evaluated 350/525
+evaluated 400/525
+evaluated 450/525
+evaluated 500/525
+{"clean": {"n": 1050, "nll": 1.4378002746799599, "acc": 0.38285714285714284, "ece": 0.0871660067419553, "brier": 0.7300630148396061, "mean_conf": 0.29569113611518755, "confident_error_rate": 0.0, "coverage_at_0_9": 0.0, "accuracy_at_0_9": null, "coverage_at_5pct_error": 0.007619047619047619, "coverage_at_1pct_error": 0.007619047619047619, "aurc": 0.4802495203559246, "error_rate_at_0_9": null, "confidence_bias": -0.0871660067419553, "top_bins": {"0.9": {"n": 0, "errors": 0, "error_rate": null}, "0.95": {"n": 0, "errors": 0, "error_rate": null}, "0.99": {"n": 0, "errors": 0, "error_rate": null}}, "selective": {"0.5": {"coverage": 0.5, "accuracy": 0.4990476190476191, "confidence_cutoff": 0.2647353132421919}, "0.8": {"coverage": 0.8, "accuracy": 0.41309523809523807, "confidence_cutoff": 0.23889650760436815}}}, "coverage": {"requested_records": 525, "requested_questions": 1050, "evaluated_records": 525, "evaluated_questions": 1050, "rejected_records": 0, "truncated_records": 0}}

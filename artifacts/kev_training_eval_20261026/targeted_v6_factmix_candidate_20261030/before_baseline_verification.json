@@ -1,0 +1,30 @@
+{
+  "qwen3": {
+    "development": {
+      "unchanged_contexts": 336,
+      "total_contexts": 336,
+      "exact_probability_matches": 770,
+      "total_questions": 770
+    },
+    "train-probe": {
+      "unchanged_contexts": 131,
+      "total_contexts": 140,
+      "exact_probability_matches": 223,
+      "total_questions": 268
+    }
+  },
+  "qwen35": {
+    "development": {
+      "unchanged_contexts": 336,
+      "total_contexts": 336,
+      "exact_probability_matches": 770,
+      "total_questions": 770
+    },
+    "train-probe": {
+      "unchanged_contexts": 131,
+      "total_contexts": 140,
+      "exact_probability_matches": 223,
+      "total_questions": 268
+    }
+  }
+}

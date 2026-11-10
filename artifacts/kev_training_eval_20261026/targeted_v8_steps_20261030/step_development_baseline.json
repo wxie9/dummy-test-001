@@ -1,0 +1,174 @@
+{
+  "qwen3": {
+    "insufficient/maximum_reduction": {
+      "correct": 0,
+      "questions": 10
+    },
+    "insufficient/overtime_range": {
+      "correct": 2,
+      "questions": 10
+    },
+    "multihop/first_failure_round": {
+      "correct": 0,
+      "questions": 14
+    },
+    "insufficient/required_rank": {
+      "correct": 6,
+      "questions": 10
+    },
+    "multihop/contact_availability": {
+      "correct": 9,
+      "questions": 12
+    },
+    "policy/first_operation": {
+      "correct": 1,
+      "questions": 12
+    },
+    "insufficient/warranty_expiry": {
+      "correct": 2,
+      "questions": 10
+    },
+    "probability/two_succeed": {
+      "correct": 11,
+      "questions": 18
+    },
+    "policy/conditional_payment": {
+      "correct": 1,
+      "questions": 33
+    },
+    "policy/applicable_ceiling": {
+      "correct": 0,
+      "questions": 15
+    },
+    "multihop/direct_majority": {
+      "correct": 7,
+      "questions": 18
+    },
+    "probability/gross_expectation": {
+      "correct": 0,
+      "questions": 10
+    },
+    "insufficient/shipping_range": {
+      "correct": 0,
+      "questions": 10
+    },
+    "probability/two_fail": {
+      "correct": 2,
+      "questions": 6
+    },
+    "multihop/first_supervisor": {
+      "correct": 7,
+      "questions": 10
+    },
+    "probability/positive_and_flagged": {
+      "correct": 6,
+      "questions": 7
+    },
+    "insufficient/return_range": {
+      "correct": 3,
+      "questions": 10
+    },
+    "insufficient/latest_anniversary": {
+      "correct": 3,
+      "questions": 10
+    },
+    "probability/conditioning_count": {
+      "correct": 5,
+      "questions": 10
+    },
+    "probability/marginal_x": {
+      "correct": 0,
+      "questions": 6
+    },
+    "probability/flagged_population": {
+      "correct": 3,
+      "questions": 3
+    }
+  },
+  "qwen35": {
+    "insufficient/maximum_reduction": {
+      "correct": 2,
+      "questions": 10
+    },
+    "insufficient/overtime_range": {
+      "correct": 1,
+      "questions": 10
+    },
+    "multihop/first_failure_round": {
+      "correct": 5,
+      "questions": 14
+    },
+    "insufficient/required_rank": {
+      "correct": 9,
+      "questions": 10
+    },
+    "multihop/contact_availability": {
+      "correct": 5,
+      "questions": 12
+    },
+    "policy/first_operation": {
+      "correct": 3,
+      "questions": 12
+    },
+    "insufficient/warranty_expiry": {
+      "correct": 3,
+      "questions": 10
+    },
+    "probability/two_succeed": {
+      "correct": 11,
+      "questions": 18
+    },
+    "policy/conditional_payment": {
+      "correct": 2,
+      "questions": 33
+    },
+    "policy/applicable_ceiling": {
+      "correct": 7,
+      "questions": 15
+    },
+    "multihop/direct_majority": {
+      "correct": 16,
+      "questions": 18
+    },
+    "probability/gross_expectation": {
+      "correct": 4,
+      "questions": 10
+    },
+    "insufficient/shipping_range": {
+      "correct": 5,
+      "questions": 10
+    },
+    "probability/two_fail": {
+      "correct": 4,
+      "questions": 6
+    },
+    "multihop/first_supervisor": {
+      "correct": 9,
+      "questions": 10
+    },
+    "probability/positive_and_flagged": {
+      "correct": 3,
+      "questions": 7
+    },
+    "insufficient/return_range": {
+      "correct": 1,
+      "questions": 10
+    },
+    "insufficient/latest_anniversary": {
+      "correct": 9,
+      "questions": 10
+    },
+    "probability/conditioning_count": {
+      "correct": 1,
+      "questions": 10
+    },
+    "probability/marginal_x": {
+      "correct": 0,
+      "questions": 6
+    },
+    "probability/flagged_population": {
+      "correct": 3,
+      "questions": 3
+    }
+  }
+}

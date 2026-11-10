@@ -1,0 +1,32 @@
+{
+  "checked_at_utc": "2026-10-29T22:42:39.219116+00:00",
+  "goal_achieved": false,
+  "models": {
+    "qwen3": {
+      "pipeline_pid": 122098,
+      "training_pid": 124463,
+      "pipeline_live": true,
+      "training_live": true,
+      "last_step": [
+        "90",
+        "938",
+        "0.568"
+      ],
+      "status": "training",
+      "retained_90_baseline_predictions_match_v5": true
+    },
+    "qwen35": {
+      "pipeline_pid": 122099,
+      "training_pid": 125486,
+      "pipeline_live": true,
+      "training_live": true,
+      "last_step": [
+        "60",
+        "938",
+        "0.414"
+      ],
+      "status": "training",
+      "retained_90_baseline_predictions_match_v5": true
+    }
+  }
+}

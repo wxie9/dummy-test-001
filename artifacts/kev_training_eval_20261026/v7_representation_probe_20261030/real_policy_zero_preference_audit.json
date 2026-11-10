@@ -1,0 +1,134 @@
+{
+  "scope": "Already-inspected official diagnostic cases. Descriptive answer inconsistency; not independent confirmation or a causal test.",
+  "jobs": {
+    "qwen3-stage3": {
+      "zero/zero_offered=True": {
+        "contexts": 65,
+        "correct_amount": 65,
+        "predicted_zero": 65,
+        "pay_reason_and_zero_amount": 21
+      },
+      "positive/zero_offered=False": {
+        "contexts": 27,
+        "correct_amount": 16,
+        "predicted_zero": 0,
+        "pay_reason_and_zero_amount": 0
+      },
+      "positive/zero_offered=True": {
+        "contexts": 8,
+        "correct_amount": 0,
+        "predicted_zero": 8,
+        "pay_reason_and_zero_amount": 3
+      }
+    },
+    "qwen3-v7": {
+      "zero/zero_offered=True": {
+        "contexts": 65,
+        "correct_amount": 65,
+        "predicted_zero": 65,
+        "pay_reason_and_zero_amount": 20
+      },
+      "positive/zero_offered=False": {
+        "contexts": 27,
+        "correct_amount": 14,
+        "predicted_zero": 0,
+        "pay_reason_and_zero_amount": 0
+      },
+      "positive/zero_offered=True": {
+        "contexts": 8,
+        "correct_amount": 0,
+        "predicted_zero": 8,
+        "pay_reason_and_zero_amount": 3
+      }
+    },
+    "qwen3-lr5": {
+      "zero/zero_offered=True": {
+        "contexts": 65,
+        "correct_amount": 65,
+        "predicted_zero": 65,
+        "pay_reason_and_zero_amount": 26
+      },
+      "positive/zero_offered=False": {
+        "contexts": 27,
+        "correct_amount": 14,
+        "predicted_zero": 0,
+        "pay_reason_and_zero_amount": 0
+      },
+      "positive/zero_offered=True": {
+        "contexts": 8,
+        "correct_amount": 0,
+        "predicted_zero": 8,
+        "pay_reason_and_zero_amount": 3
+      }
+    },
+    "qwen35-stage3": {
+      "zero/zero_offered=True": {
+        "contexts": 65,
+        "correct_amount": 65,
+        "predicted_zero": 65,
+        "pay_reason_and_zero_amount": 3
+      },
+      "positive/zero_offered=False": {
+        "contexts": 27,
+        "correct_amount": 17,
+        "predicted_zero": 0,
+        "pay_reason_and_zero_amount": 0
+      },
+      "positive/zero_offered=True": {
+        "contexts": 8,
+        "correct_amount": 0,
+        "predicted_zero": 8,
+        "pay_reason_and_zero_amount": 2
+      }
+    },
+    "qwen35-v7": {
+      "zero/zero_offered=True": {
+        "contexts": 65,
+        "correct_amount": 65,
+        "predicted_zero": 65,
+        "pay_reason_and_zero_amount": 4
+      },
+      "positive/zero_offered=False": {
+        "contexts": 27,
+        "correct_amount": 18,
+        "predicted_zero": 0,
+        "pay_reason_and_zero_amount": 0
+      },
+      "positive/zero_offered=True": {
+        "contexts": 8,
+        "correct_amount": 0,
+        "predicted_zero": 8,
+        "pay_reason_and_zero_amount": 3
+      }
+    },
+    "qwen35-lr5": {
+      "zero/zero_offered=True": {
+        "contexts": 65,
+        "correct_amount": 65,
+        "predicted_zero": 65,
+        "pay_reason_and_zero_amount": 9
+      },
+      "positive/zero_offered=False": {
+        "contexts": 27,
+        "correct_amount": 18,
+        "predicted_zero": 0,
+        "pay_reason_and_zero_amount": 0
+      },
+      "positive/zero_offered=True": {
+        "contexts": 8,
+        "correct_amount": 0,
+        "predicted_zero": 8,
+        "pay_reason_and_zero_amount": 2
+      }
+    }
+  },
+  "source_hashes": {
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v7_lr5_20261030/evidence/evals/hard-v1/test.jsonl": "246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v7_lr5_20261030/evidence/runs/qwen3-06b-20261026/benchmarks/hard-v1-test/rows.json": "ccd3f617da66cd1201ec9ceee8b8a743d68cf69609f118f03b8fbf35527f76e2",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v7_20261030/evidence/runs/qwen3-20261030-targeted-v7/eval-hard-v1/rows.json": "06c6c79032151f8d1c766bff1985ea899af1e78d1b420d7469d340ea8e557ac0",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v7_lr5_20261030/evidence/runs/qwen3-20261030-targeted-v7-lr5/eval-hard-v1/rows.json": "78d881b11f343ed9768229cdbb312463865f8bc19415f3eb6baae1346466813b",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v7_lr5_20261030/evidence/runs/replica-20261026/benchmarks/hard-v1-test/rows.json": "ba77a270e1b1851dec3daee76d594d6dd02d2373316dc8d1ecb73d880deb8265",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v7_20261030/evidence/runs/qwen35-20261030-targeted-v7/eval-hard-v1/rows.json": "1e3549ee3dcd0280614b38605ae7aeb77a6d15967f379c6d672f022f392678d5",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v7_lr5_20261030/evidence/runs/qwen35-20261030-targeted-v7-lr5/eval-hard-v1/rows.json": "0ff5e226a1fe17b223c43f0afb4e10c8482f2e4b0410a53898296c10c68f0ce3"
+  }
+}

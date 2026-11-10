@@ -1,0 +1,105 @@
+{
+  "status": "training_and_evaluation_complete_goal_not_established",
+  "started_at_utc": "2026-10-29T22:39:46.852071+00:00",
+  "models": {
+    "qwen3": {
+      "gpu": 1,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v6",
+      "pipeline_live": false,
+      "training_live": false,
+      "last_step": [
+        "90",
+        "938",
+        "0.568"
+      ],
+      "status": "complete",
+      "retained_90_baseline_predictions_match_v5": true,
+      "historical_processes": {
+        "pid": 122098,
+        "pipeline_pid": 122098,
+        "training_pid": 124463
+      },
+      "completed_steps": 938,
+      "training_wall_seconds": 868.9137945175171,
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 512,
+        "after_correct": 509,
+        "before_pct": 51.2,
+        "after_pct": 50.9,
+        "delta_pp": -0.3,
+        "repaired": 43,
+        "newly_wrong": 46,
+        "old_wrong": 488,
+        "repair_pct": 8.811475409836065,
+        "paired_context_bootstrap_95pct_pp": [
+          -2.091633466135458,
+          1.5810276679841897
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 1.3333333333333333,
+        "temporal": 4.273504273504273,
+        "probability": 0.0,
+        "insufficient": -5.0,
+        "multihop": -4.8,
+        "policy": -0.5,
+        "injection": 1.3333333333333333
+      }
+    },
+    "qwen35": {
+      "gpu": 2,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v6",
+      "pipeline_live": false,
+      "training_live": false,
+      "last_step": [
+        "60",
+        "938",
+        "0.414"
+      ],
+      "status": "complete",
+      "retained_90_baseline_predictions_match_v5": true,
+      "historical_processes": {
+        "pid": 122099,
+        "pipeline_pid": 122099,
+        "training_pid": 125486
+      },
+      "completed_steps": 938,
+      "training_wall_seconds": 1017.5750503540039,
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 551,
+        "after_correct": 585,
+        "before_pct": 55.1,
+        "after_pct": 58.5,
+        "delta_pp": 3.4,
+        "repaired": 57,
+        "newly_wrong": 23,
+        "old_wrong": 449,
+        "repair_pct": 12.694877505567929,
+        "paired_context_bootstrap_95pct_pp": [
+          1.6488845780795345,
+          5.226130653266332
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 12.0,
+        "temporal": -1.7094017094017093,
+        "probability": -1.8987341772151898,
+        "insufficient": 1.0,
+        "multihop": -1.6,
+        "policy": 2.0,
+        "injection": 12.0
+      }
+    }
+  },
+  "next": "V6 complete; all-seven objective not met. Prepare fixed-data three-epoch control from original stage3 to distinguish weak acquisition from transfer failure; do not restart v6 one-epoch runs.",
+  "goal_achieved": false,
+  "previous_live_check_utc": "2026-10-29T22:42:39.219116+00:00",
+  "finalized_at_utc": "2026-10-29T23:02:29.169182+00:00",
+  "comparison_sha256": "e87f4f5ef88ff8cc00bb555f2cb07bb1dcfdc36ba4823e651290808f4b0a4441",
+  "all_original_processes_absent_verified_at_utc": "2026-10-29T23:05:21Z",
+  "status_metadata_correction": "Completed one-epoch training had stale training_live=true; corrected from collected terminal status and metrics, with no process action."
+}

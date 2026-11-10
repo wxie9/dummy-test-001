@@ -1,0 +1,204 @@
+{
+  "started_at_utc": "2026-10-30T00:24:50.711478Z",
+  "status": "training_and_evaluation_complete_goal_not_established",
+  "goal_achieved": false,
+  "models": {
+    "qwen3": {
+      "gpu": 1,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v7",
+      "status": "complete",
+      "pipeline_live": false,
+      "training_live": false,
+      "log_tail": "304,\n    \"brier\": 0.4561227588250379,\n    \"mean_conf\": 0.6677779097696381,\n    \"confident_error_rate\": 0.017707362534948742,\n    \"coverage_at_0_9\": 0.22926374650512582,\n    \"accuracy_at_0_9\": 0.9227642276422764,\n    \"coverage_at_5pct_error\": 0.18732525629077354,\n    \"coverage_at_1pct_error\": 0.022367194780987885,\n    \"aurc\": 0.18342883595825746,\n    \"error_rate_at_0_9\": 0.07723577235772358,\n    \"confidence_bias\": 0.03590465720673042,\n    \"top_bins\": {\n      \"0.9\": {\n        \"n\": 246,\n        \"errors\": 19,\n        \"error_rate\": 0.07723577235772358\n      },\n      \"0.95\": {\n        \"n\": 169,\n        \"errors\": 6,\n        \"error_rate\": 0.03550295857988166\n      },\n      \"0.99\": {\n        \"n\": 80,\n        \"errors\": 3,\n        \"error_rate\": 0.0375\n      }\n    },\n    \"selective\": {\n      \"0.5\": {\n        \"coverage\": 0.5004659832246039,\n        \"accuracy\": 0.819366852886406,\n        \"confidence_cutoff\": 0.6543110414054679\n      },\n      \"0.8\": {\n        \"coverage\": 0.8005591798695247,\n        \"accuracy\": 0.7112922002328289,\n        \"confidence_cutoff\": 0.4993730001385137\n      }\n    }\n  },\n  \"coverage\": {\n    \"requested_records\": 900,\n    \"requested_questions\": 1073,\n    \"evaluated_records\": 900,\n    \"evaluated_questions\": 1073,\n    \"rejected_records\": 0,\n    \"truncated_records\": 0\n  }\n}\n",
+      "retained_development_baseline_identical_questions": 90,
+      "last_observed_epoch": 0,
+      "steps_per_epoch": 938,
+      "last_logged_loss": 0.421,
+      "last_logged_seconds_per_record": 0.106,
+      "completed_evaluation_coverage": {
+        "development-before": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-before": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-after": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-after": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-hard-v1": {
+          "requested_records": 700,
+          "requested_questions": 1088,
+          "evaluated_records": 700,
+          "evaluated_questions": 1088,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-devtools-v1": {
+          "requested_records": 900,
+          "requested_questions": 1073,
+          "evaluated_records": 900,
+          "evaluated_questions": 1073,
+          "rejected_records": 0,
+          "truncated_records": 0
+        }
+      },
+      "historical_processes": {
+        "pipeline_pid": 23158,
+        "training_pids": [],
+        "last_observed_step": 930
+      },
+      "completed_steps": 938,
+      "training_wall_seconds": 995.7902610301971,
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 512,
+        "after_correct": 511,
+        "before_pct": 51.2,
+        "after_pct": 51.1,
+        "delta_pp": -0.1,
+        "repaired": 42,
+        "newly_wrong": 43,
+        "old_wrong": 488,
+        "repair_pct": 8.60655737704918,
+        "paired_context_bootstrap_95pct_pp": [
+          -1.9,
+          1.6898608349900597
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 0.6666666666666666,
+        "temporal": 1.7094017094017093,
+        "probability": -2.5316455696202533,
+        "insufficient": -1.0,
+        "multihop": -5.6,
+        "policy": 0.0,
+        "injection": 5.333333333333333
+      }
+    },
+    "qwen35": {
+      "gpu": 2,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v7",
+      "status": "complete",
+      "pipeline_live": false,
+      "training_live": false,
+      "log_tail": "er\": 0.4176487864875738,\n    \"mean_conf\": 0.7781171324501168,\n    \"confident_error_rate\": 0.032618825722273995,\n    \"coverage_at_0_9\": 0.39422180801491147,\n    \"accuracy_at_0_9\": 0.91725768321513,\n    \"coverage_at_5pct_error\": 0.32152842497670087,\n    \"coverage_at_1pct_error\": 0.1500465983224604,\n    \"aurc\": 0.1254866322832816,\n    \"error_rate_at_0_9\": 0.08274231678486997,\n    \"confidence_bias\": 0.09218982583315505,\n    \"top_bins\": {\n      \"0.9\": {\n        \"n\": 423,\n        \"errors\": 35,\n        \"error_rate\": 0.08274231678486997\n      },\n      \"0.95\": {\n        \"n\": 315,\n        \"errors\": 14,\n        \"error_rate\": 0.044444444444444446\n      },\n      \"0.99\": {\n        \"n\": 169,\n        \"errors\": 2,\n        \"error_rate\": 0.011834319526627219\n      }\n    },\n    \"selective\": {\n      \"0.5\": {\n        \"coverage\": 0.5004659832246039,\n        \"accuracy\": 0.8789571694599627,\n        \"confidence_cutoff\": 0.8317711701461324\n      },\n      \"0.8\": {\n        \"coverage\": 0.8005591798695247,\n        \"accuracy\": 0.7764842840512224,\n        \"confidence_cutoff\": 0.5795376430348526\n      }\n    }\n  },\n  \"coverage\": {\n    \"requested_records\": 900,\n    \"requested_questions\": 1073,\n    \"evaluated_records\": 900,\n    \"evaluated_questions\": 1073,\n    \"rejected_records\": 0,\n    \"truncated_records\": 0\n  }\n}\n",
+      "retained_development_baseline_identical_questions": 90,
+      "last_observed_epoch": 0,
+      "steps_per_epoch": 938,
+      "last_logged_loss": 0.414,
+      "last_logged_seconds_per_record": 0.117,
+      "completed_evaluation_coverage": {
+        "development-before": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-before": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-after": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-after": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-hard-v1": {
+          "requested_records": 700,
+          "requested_questions": 1088,
+          "evaluated_records": 700,
+          "evaluated_questions": 1088,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-devtools-v1": {
+          "requested_records": 900,
+          "requested_questions": 1073,
+          "evaluated_records": 900,
+          "evaluated_questions": 1073,
+          "rejected_records": 0,
+          "truncated_records": 0
+        }
+      },
+      "historical_processes": {
+        "pipeline_pid": 23159,
+        "training_pids": [],
+        "last_observed_step": 930
+      },
+      "completed_steps": 938,
+      "training_wall_seconds": 1102.576830625534,
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 551,
+        "after_correct": 579,
+        "before_pct": 55.1,
+        "after_pct": 57.9,
+        "delta_pp": 2.8,
+        "repaired": 56,
+        "newly_wrong": 28,
+        "old_wrong": 449,
+        "repair_pct": 12.47216035634744,
+        "paired_context_bootstrap_95pct_pp": [
+          0.9109311740890689,
+          4.627766599597585
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 13.333333333333334,
+        "temporal": -4.273504273504273,
+        "probability": -3.1645569620253164,
+        "insufficient": -1.0,
+        "multihop": -0.8,
+        "policy": 2.0,
+        "injection": 10.666666666666666
+      }
+    }
+  },
+  "data_sha256": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+  "previous_live_check_utc": "2026-10-30T00:48:45.944650+00:00",
+  "finalized_at_utc": "2026-10-30T00:49:00.944766+00:00",
+  "next": "Evaluate all 1500 fixed v7 training contexts at original stage3 and v7 for both models, without new training, to separate acquisition failure from transfer failure. Preserve all-seven objective.",
+  "comparison_sha256": "1418e6718dddff6dae432a5a0c99d7288945aa8cab0fe3d7228d764af2f6471b"
+}

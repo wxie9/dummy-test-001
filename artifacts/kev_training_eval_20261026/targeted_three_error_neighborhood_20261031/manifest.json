@@ -1,0 +1,59 @@
+{
+  "version": "targeted-three-error-neighborhood-20261031",
+  "status": "candidate_generated_not_trained",
+  "seed_wrong_questions": 177,
+  "seed_wrong_contexts": 164,
+  "train_records": 492,
+  "train_questions": 669,
+  "development_records": 164,
+  "development_questions": 223,
+  "seed_contexts_by_family": {
+    "probability": 64,
+    "temporal": 61,
+    "multihop": 39
+  },
+  "seed_wrong_questions_by_family": {
+    "probability": 71,
+    "temporal": 66,
+    "multihop": 40
+  },
+  "subtypes": {
+    "temporal/diff": 12,
+    "probability/compare": 10,
+    "probability/table": 17,
+    "multihop/deps": 9,
+    "probability/bayes": 15,
+    "temporal/shift": 10,
+    "probability/independent": 12,
+    "temporal/prorata": 13,
+    "multihop/oncall": 18,
+    "temporal/recurring_last_business": 2,
+    "probability/ev": 10,
+    "multihop/ownership": 10,
+    "temporal/recurring_every_n_weeks": 3,
+    "temporal/recurring_business_days": 3,
+    "temporal/deadline": 11,
+    "temporal/tz": 5,
+    "multihop/org": 2,
+    "temporal/recurring_monthly_rollback": 2
+  },
+  "checks": {
+    "original_hard_records_in_training": 0,
+    "train_variants_per_seed": 3,
+    "development_variants_per_seed": 1,
+    "all_seed_errors_covered": true,
+    "labels_and_question_types_preserved": true,
+    "option_order_randomized": true
+  },
+  "limitations": [
+    "Benchmark-directed repair: hard-v1 test errors select every seed; hard-v1 is not blind after this.",
+    "Some variants change presentation/entities but not numeric facts; they are local neighborhoods, not fully independent tasks.",
+    "Labels are inherited under deterministic invariance transforms; no independent semantic reviewer."
+  ],
+  "sha256": {
+    "/Users/chen/Documents/ChatGPT/procogs/third_party/kev-source-20261025/evals/hard-v1/test.jsonl": "246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_20261030/evidence/runs/replica-20261026/benchmarks/hard-v1-test/rows.json": "ba77a270e1b1851dec3daee76d594d6dd02d2373316dc8d1ecb73d880deb8265",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_three_error_neighborhood_20261031/train.jsonl": "20bc83bada4777a34832648a79f20380bbfa9f2d45de450d4f6910f341a2d5be",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_three_error_neighborhood_20261031/development.jsonl": "1fd72b0bd8156a6fdea0e5ab96789f4555600528bd8b3c3bd21a2636fa2fdf26"
+  }
+}

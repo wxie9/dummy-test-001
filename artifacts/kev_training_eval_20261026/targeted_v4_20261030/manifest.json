@@ -1,0 +1,62 @@
+{
+  "version": "targeted-v4-20261030",
+  "status": "assembled_text_checked_tokenization_pending",
+  "files": {
+    "train": {
+      "contexts": 1500,
+      "questions": 2025,
+      "families": {
+        "policy": 300,
+        "probability": 350,
+        "injection": 100,
+        "multihop": 270,
+        "insufficient": 280,
+        "temporal": 100,
+        "tool_routing": 100
+      },
+      "sha256": "37693b64b3738047b17b07476d140f4d09a6b5f29dbc94aab66e8874f5b4b2e1"
+    },
+    "development": {
+      "contexts": 330,
+      "questions": 430,
+      "families": {
+        "policy": 60,
+        "tool_routing": 30,
+        "multihop": 60,
+        "temporal": 30,
+        "insufficient": 60,
+        "probability": 60,
+        "injection": 30
+      },
+      "sha256": "215d2b5c22d46bce40056383afc02cdacbf5acb2c0009ca120138a422c11c087"
+    }
+  },
+  "new_four_families": 1200,
+  "unchanged_three_families": 300,
+  "replay_plan": 6000,
+  "checks": {
+    "visible_text_recomputed_new_train": 1200,
+    "visible_text_recomputed_new_development": 240,
+    "kev_materialize": "passed",
+    "train_development_exact_overlap": 0,
+    "frozen_test_exact_overlap": 0
+  },
+  "development_scope": "Same authored generators with disjoint draws. Useful for interpolation/overfit diagnosis, not independent semantic generalization.",
+  "limitations": [
+    "No independent external model/human reviewer.",
+    "Hard-v1 errors informed the design.",
+    "The same grammar is shared across generated train/dev.",
+    "No fresh untouched test result exists yet."
+  ],
+  "training_plan": {
+    "epochs": 1,
+    "lr": 1e-05,
+    "seed": 101,
+    "lora": 16,
+    "batch": 4,
+    "accum": 2,
+    "replay": 6000,
+    "init": "original pre-targeted stage3",
+    "augmentation": "same as v2"
+  }
+}

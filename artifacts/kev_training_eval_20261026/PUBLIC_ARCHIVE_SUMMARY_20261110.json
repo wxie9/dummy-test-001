@@ -1,0 +1,63 @@
+{
+  "created_at": "2026-11-10",
+  "repository": "wxie9/dummy-test-001",
+  "branch": "codex/kev-training-logs",
+  "selected_file_count_before_manifest": 2011,
+  "selected_bytes_before_manifest": 985961666,
+  "new_file_count_before_manifest": 1421,
+  "already_tracked_file_count": 590,
+  "directory_summary": {
+    "artifacts": {
+      "files": 1867,
+      "bytes": 897473624
+    },
+    "outputs": {
+      "files": 13,
+      "bytes": 87448683
+    },
+    "scripts": {
+      "files": 8,
+      "bytes": 38773
+    },
+    "tools": {
+      "files": 123,
+      "bytes": 1000586
+    }
+  },
+  "excluded": {
+    "cache": {
+      "files": 41,
+      "bytes": 411094
+    },
+    "copied_report_runtime": {
+      "files": 470,
+      "bytes": 3723238
+    },
+    "duplicate_extracted_evidence": {
+      "files": 889,
+      "bytes": 418223140
+    },
+    "environment_file": {
+      "files": 1,
+      "bytes": 209
+    },
+    "github_100mb_limit_redundant_derivative": {
+      "files": 1,
+      "bytes": 120492406
+    },
+    "model_weight": {
+      "files": 4,
+      "bytes": 90883582
+    },
+    "reproducible_tokenizer_copy": {
+      "files": 28,
+      "bytes": 62913832
+    }
+  },
+  "publication_rules": [
+    "No model weights, private keys, API keys, AccessKeys, SSH passwords, or caches.",
+    "Verified evidence tarballs replace their duplicate extracted evidence trees.",
+    "Reproducible tokenizer copies and copied report runtimes are omitted.",
+    "The >100 MB all-pairwise derivative CSV is omitted; compact analyses and portable bundles remain."
+  ]
+}

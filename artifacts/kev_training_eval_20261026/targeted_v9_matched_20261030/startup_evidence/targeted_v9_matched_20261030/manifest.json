@@ -1,0 +1,203 @@
+{
+  "version": "targeted-v9-matched-20261030",
+  "status": "remote_preflight_passed_baselines_in_progress",
+  "goal_achieved": false,
+  "replay_records_separate": 6000,
+  "files": {
+    "train_base": {
+      "records": 1500,
+      "questions": 2300,
+      "sha256": "2bca312bbf97d4b2a8836ce205e6a826cc72b2414876411b601d44ac26acc34b"
+    },
+    "train": {
+      "records": 2520,
+      "questions": 3990,
+      "sha256": "2932da30f01f37e6443f911399fa6195e99ca8605a5e92c85dcec7ba1896352d"
+    },
+    "development_base": {
+      "records": 344,
+      "questions": 504,
+      "sha256": "8d443e4cf87c38acbf5d5a976361527426062cf31c2208634f461d4044ed7b07"
+    },
+    "development": {
+      "records": 562,
+      "questions": 856,
+      "sha256": "23a8dfd30a8b96c78b913d0b552dd7a0d3b0b16a344c2e6ecffe0287f8c0d8b0"
+    },
+    "train_probe": {
+      "records": 140,
+      "questions": 190,
+      "sha256": "28fc06857e528138ac210abfc89dda59b532f4730d7b4117f985a13ad3105660"
+    }
+  },
+  "source_hashes": {
+    "targeted_v5_20261030/train.jsonl": "50d76359f88eafc75392218a70538adc966640f567de06c0852a492cb80bc463",
+    "targeted_v5_20261030/development.jsonl": "aa31703c3b0987692aed4a75a8ad0fdb5391dd9f31680546a3659b3fe6bbc76c",
+    "targeted_v6_20261030/train.jsonl": "58572b2118b10d9505d5bdb027585fab75f4ad7e52a1c5d8d155979459fecea8",
+    "targeted_v6_20261030/development.jsonl": "5747c5b02565f10688d270d8da5afa384386e9cfc42bf55e2971d2924810fe63",
+    "targeted_v7_20261030/train.jsonl": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+    "targeted_v7_20261030/development.jsonl": "1ed87c7660bc732fd86400c913ca70bac7834256084211d6c7ed7a8fe9a26322",
+    "targeted_v8_steps_20261030/train.jsonl": "3118273464feb4ef80e9739a840a841a2c5accf162b87cc0d3467ee24855ff98",
+    "targeted_v8_steps_20261030/development.jsonl": "1ed87c7660bc732fd86400c913ca70bac7834256084211d6c7ed7a8fe9a26322"
+  },
+  "training_plan": {
+    "init": "original pre-targeted stage3",
+    "epochs": 1,
+    "seed": 101,
+    "lr": 1e-05,
+    "lora": 16,
+    "batch": 4,
+    "accum": 2,
+    "replay": 6000,
+    "expected_records_including_replay": 8520,
+    "expected_optimizer_steps": 1065
+  },
+  "limitations": [
+    "1500 base groups are distinct visible cases, not a claim of statistical independence across shared templates.",
+    "Matched views are additional training exposures, not independent new base cases.",
+    "Choice targets are one-hot to preserve the matched candidate semantics under augmentation; this changes augmentation exposure as well as data.",
+    "Same-author visible-text verification is not independent external review.",
+    "Official diagnostic tests informed design; future evaluation is not blind confirmation.",
+    "Policy development reserves domain/cover-count/money-scale combinations, graph development adds side branches. Other families use disjoint case groups from shared generators."
+  ],
+  "train": {
+    "base_context_groups": 1500,
+    "additional_matched_views": 1020,
+    "retained_byte_identical": 300,
+    "wrong_label_mutations_rejected": 13449,
+    "pairs_with_any_changed_answer": 812,
+    "pairs_with_all_answers_unchanged": 208,
+    "mutation_counts": {
+      "all_counts_scaled": 15,
+      "one_cell_count": 60,
+      "irrelevant_identifier_notice": 12,
+      "one_rate": 140,
+      "independent_event_order": 23,
+      "symmetric_event_order": 8,
+      "comparison_reference_rate": 32,
+      "project_order": 12,
+      "one_upfront_cost": 48,
+      "unrelated_edge": 18,
+      "critical_hard_soft_edge": 72,
+      "eligibility_waiting": 34,
+      "eligibility_threshold": 29,
+      "eligibility_not_purchased": 34,
+      "eligibility_flag": 26,
+      "eligibility_intentional": 35,
+      "unrelated_cover_purchase": 50,
+      "eligibility_late": 33,
+      "deductible_order": 27,
+      "loss_crosses_deductible": 32,
+      "remove_deciding_fact": 140,
+      "complete_missing_fact": 140
+    },
+    "resampling_reasons": {
+      "Degenerate initial draw": 3,
+      "duplicate_visible_state": 24,
+      "Unchanged proposed view": 2,
+      "reserved_policy_combination": 127
+    },
+    "reserved_policy_structure_keys": [
+      "device/10/10",
+      "device/2/1",
+      "device/2/10",
+      "device/2/5",
+      "device/4/1",
+      "device/4/5",
+      "device/7/1",
+      "device/7/10",
+      "device/7/5",
+      "health/10/1",
+      "health/10/5",
+      "health/2/10",
+      "health/2/5",
+      "health/4/1",
+      "health/4/10",
+      "health/7/1",
+      "health/7/10",
+      "health/7/5",
+      "home/10/1",
+      "home/10/5",
+      "home/2/10",
+      "home/4/1",
+      "home/4/5",
+      "home/7/1",
+      "home/7/5",
+      "travel/10/1",
+      "travel/10/5",
+      "travel/4/1",
+      "travel/4/5",
+      "travel/7/1",
+      "travel/7/10",
+      "travel/7/5"
+    ]
+  },
+  "development": {
+    "base_context_groups": 344,
+    "additional_matched_views": 218,
+    "retained_byte_identical": 90,
+    "wrong_label_mutations_rejected": 2744,
+    "pairs_with_any_changed_answer": 154,
+    "pairs_with_all_answers_unchanged": 64,
+    "mutation_counts": {
+      "all_counts_scaled": 3,
+      "one_cell_count": 12,
+      "irrelevant_identifier_notice": 3,
+      "one_rate": 27,
+      "independent_event_order": 5,
+      "symmetric_event_order": 2,
+      "comparison_reference_rate": 6,
+      "project_order": 3,
+      "one_upfront_cost": 9,
+      "unrelated_edge": 4,
+      "critical_hard_soft_edge": 14,
+      "eligibility_flag": 7,
+      "unrelated_cover_purchase": 18,
+      "eligibility_threshold": 7,
+      "eligibility_late": 5,
+      "eligibility_waiting": 6,
+      "eligibility_intentional": 3,
+      "deductible_order": 4,
+      "eligibility_not_purchased": 3,
+      "loss_crosses_deductible": 7,
+      "remove_deciding_fact": 28,
+      "complete_missing_fact": 42
+    },
+    "resampling_reasons": {
+      "duplicate_visible_state": 14,
+      "Unchanged proposed view": 1,
+      "reserved_policy_combination": 107
+    },
+    "reserved_policy_structure_keys": [
+      "device/10/1",
+      "device/10/5",
+      "device/4/10",
+      "health/10/10",
+      "health/2/1",
+      "health/4/5",
+      "home/10/10",
+      "home/2/1",
+      "home/2/5",
+      "home/4/10",
+      "home/7/10",
+      "travel/10/10",
+      "travel/2/1",
+      "travel/2/10",
+      "travel/2/5",
+      "travel/4/10"
+    ]
+  },
+  "checks": {
+    "retained_three_families_byte_identical": true,
+    "pair_questions_and_candidate_orders_identical": true,
+    "new_visible_states_exclude_prior_and_official_states": true,
+    "train_dev_groups_disjoint": true,
+    "policy_reserved_combinations_disjoint": true,
+    "labels_rechecked_without_latent_facts": true
+  },
+  "evaluation_plan": {
+    "before": "Original stage3 on all 2520 training records, 562 development records, 140 training probes; exact retained 90-question baseline check.",
+    "after": "Same inputs plus full hard-v1 and devtools-v1. Report repaired and newly broken cases for each of seven categories.",
+    "success": "Both models improve all seven real categories; training accuracy alone is insufficient."
+  }
+}

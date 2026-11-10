@@ -1,0 +1,75 @@
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/900
+evaluated 100/900
+evaluated 150/900
+evaluated 200/900
+evaluated 250/900
+evaluated 300/900
+evaluated 350/900
+evaluated 400/900
+evaluated 450/900
+evaluated 500/900
+evaluated 550/900
+evaluated 600/900
+evaluated 650/900
+evaluated 700/900
+evaluated 750/900
+evaluated 800/900
+evaluated 850/900
+evaluated 900/900
+{
+  "objective": -0.8070760265718004,
+  "clean": {
+    "n": 1073,
+    "nll": 0.8748574021512164,
+    "acc": 0.706430568499534,
+    "ece": 0.16426420262576996,
+    "brier": 0.4468232432514153,
+    "mean_conf": 0.8706947711253041,
+    "confident_error_rate": 0.09412861136999068,
+    "coverage_at_0_9": 0.5824790307548928,
+    "accuracy_at_0_9": 0.8384,
+    "coverage_at_5pct_error": 0.1500465983224604,
+    "coverage_at_1pct_error": 0.036346691519105315,
+    "aurc": 0.15410185730655968,
+    "error_rate_at_0_9": 0.1616,
+    "confidence_bias": 0.16426420262577013,
+    "top_bins": {
+      "0.9": {
+        "n": 625,
+        "errors": 101,
+        "error_rate": 0.1616
+      },
+      "0.95": {
+        "n": 481,
+        "errors": 67,
+        "error_rate": 0.1392931392931393
+      },
+      "0.99": {
+        "n": 208,
+        "errors": 23,
+        "error_rate": 0.11057692307692307
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5004659832246039,
+        "accuracy": 0.8584729981378026,
+        "confidence_cutoff": 0.935832538860963
+      },
+      "0.8": {
+        "coverage": 0.8005591798695247,
+        "accuracy": 0.7718277066356228,
+        "confidence_cutoff": 0.7539749629203236
+      }
+    }
+  },
+  "coverage": {
+    "requested_records": 900,
+    "requested_questions": 1073,
+    "evaluated_records": 900,
+    "evaluated_questions": 1073,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}

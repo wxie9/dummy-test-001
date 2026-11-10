@@ -1,0 +1,6850 @@
+[
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00473",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00473",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00473",
+    "p": [
+      0.45469389720838954,
+      0.5453061027916104
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.35286131501197815,
+      0.5345841646194458
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00553",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00553",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00553",
+    "p": [
+      0.33341628313064575,
+      0.6665837168693542
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.07981838285923004,
+      0.7725922465324402
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00379",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00379",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00379",
+    "p": [
+      0.6001014113426208,
+      0.39989858865737915
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.8382430672645569,
+      0.4323553740978241
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00564",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00564",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00564",
+    "p": [
+      0.43401867151260376,
+      0.5659813284873962
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.30482015013694763,
+      0.5702937245368958
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00360",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00360",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00360",
+    "p": [
+      0.5298444190575009,
+      0.4701555809424991
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.4632015526294708,
+      0.3436817526817322
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00003",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00003",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00003",
+    "p": [
+      0.4381631947658542,
+      0.5618368052341458
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      0.315434992313385,
+      0.5640549659729004
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00475",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00475",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00475",
+    "p": [
+      0.6916817816590732,
+      0.3083182183409268
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.6384479403495789,
+      -0.16954563558101654
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00230",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00230",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00230",
+    "p": [
+      0.7274928092956543,
+      0.2725071907043457
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.5554860830307007,
+      -0.42645299434661865
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00500",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00500",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00500",
+    "p": [
+      0.7230509139016543,
+      0.2769490860983457
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.583250880241394,
+      -0.3763950765132904
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00502",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00502",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00502",
+    "p": [
+      0.522469266579471,
+      0.477530733420529
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.7664949297904968,
+      0.6765572428703308
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00264",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00264",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00264",
+    "p": [
+      0.595392924684497,
+      0.404607075315503
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.142460823059082,
+      0.7561556696891785
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00551",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00551",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00551",
+    "p": [
+      0.5317089557647705,
+      0.4682910442352295
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.4730479121208191,
+      0.346041738986969
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00279",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00279",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00279",
+    "p": [
+      0.29040855169296265,
+      0.7095914483070374
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      -0.25866052508354187,
+      0.6347401738166809
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00113",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00113",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00113",
+    "p": [
+      0.24504032000779152,
+      0.7549596799922085
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      -0.2871275246143341,
+      0.8381139636039734
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00397",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00397",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00397",
+    "p": [
+      0.7411510569200235,
+      0.2588489430799765
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.7992828488349915,
+      -0.252676784992218
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00445",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00445",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00445",
+    "p": [
+      0.5602309703826904,
+      0.43976902961730957
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.9941765069961548,
+      0.7520769834518433
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00358",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00358",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00358",
+    "p": [
+      0.46166008710861206,
+      0.5383399128913879
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.40778762102127075,
+      0.5614489912986755
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00159",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00159",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00159",
+    "p": [
+      0.4474105670276453,
+      0.5525894329723546
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.3688868284225464,
+      0.5800254344940186
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00375",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00375",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00375",
+    "p": [
+      0.27591463101164604,
+      0.724085368988354
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      -0.3366435766220093,
+      0.6281743049621582
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00046",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00046",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00046",
+    "p": [
+      0.5498638585250419,
+      0.450136141474958
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.46324044466018677,
+      0.26311975717544556
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/approval/yes/2/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/approval/yes/2",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/approval/yes/2/base",
+    "p": [
+      0.3933337154984303,
+      0.36843199871039395,
+      0.2382342857911757
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      0.58985435962677,
+      0.5244521498680115,
+      0.08845056593418121
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/tenure/no/1/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/tenure/no/1",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/tenure/no/1/base",
+    "p": [
+      0.38875365257263184,
+      0.2346489131450653,
+      0.37659743428230286
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.0139065980911255,
+      0.5090512037277222,
+      0.9821375012397766
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/warranty/no/8/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/warranty/no/8",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/warranty/no/8/base",
+    "p": [
+      0.7314965561442847,
+      0.20029322355330237,
+      0.06821022030241294
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      2.6700685024261475,
+      1.3747584819793701,
+      0.29757046699523926
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/return/no/7/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/return/no/7",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/return/no/7/base",
+    "p": [
+      0.32746432207418447,
+      0.28279665955295147,
+      0.38973901837286407
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.971308708190918,
+      0.824657678604126,
+      1.1454068422317505
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/price_match/unknown/1/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/price_match/unknown/1",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/price_match/unknown/1/base",
+    "p": [
+      0.2638651093264653,
+      0.2463632785325754,
+      0.3559620327359135,
+      0.13380957940504581
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.6676561832427979,
+      0.599025309085846,
+      0.9670422077178955,
+      -0.011364137753844261
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/return/unknown/5/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/return/unknown/5",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/return/unknown/5/base",
+    "p": [
+      0.12313365649929853,
+      0.26711962622104685,
+      0.6097467172796547
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      0.48813000321388245,
+      1.2625560760498047,
+      2.0879032611846924
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/overtime/no/9/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/overtime/no/9",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/overtime/no/9/base",
+    "p": [
+      0.53906156239097,
+      0.14255905576226283,
+      0.3183793818467671
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.4176894426345825,
+      0.08761601150035858,
+      0.8911033272743225
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/shipping/unknown/9/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/shipping/unknown/9",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/shipping/unknown/9/base",
+    "p": [
+      0.11796707220498204,
+      0.6408729314478885,
+      0.24115999634712948
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      -0.4738219976425171,
+      1.2186037302017212,
+      0.24123311042785645
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/shipping/yes/5/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/shipping/yes/5",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/shipping/yes/5/base",
+    "p": [
+      0.14586776494979858,
+      0.5914492607116699,
+      0.2626829743385315
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.027344824746251106,
+      1.4272202253341675,
+      0.6155921816825867
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/return/unknown/10/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/return/unknown/10",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/return/unknown/10/base",
+    "p": [
+      0.2917550206184387,
+      0.34735798835754395,
+      0.36088699102401733
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.7994600534439087,
+      0.9739015102386475,
+      1.0121104717254639
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/return/unknown/0/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/return/unknown/0",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/return/unknown/0/base",
+    "p": [
+      0.34209153056144714,
+      0.3459143042564392,
+      0.31199416518211365
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.7710820436477661,
+      0.7821947932243347,
+      0.6789882183074951
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/price_match/yes/7/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/price_match/yes/7",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/price_match/yes/7/base",
+    "p": [
+      0.37995604246789283,
+      0.1517358891924603,
+      0.3588590377399182,
+      0.10944903059972869
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.9307907819747925,
+      1.0128766298294067,
+      1.8736648559570312,
+      0.6861941814422607
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/price_match/no/3/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/price_match/no/3",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/price_match/no/3/base",
+    "p": [
+      0.1065664020225524,
+      0.11481245093886029,
+      0.20356450064937023,
+      0.575056646389217
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      0.7297623157501221,
+      0.8042938709259033,
+      1.3769768476486206,
+      2.4154624938964844
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/shipping/yes/7/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/shipping/yes/7",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/shipping/yes/7/base",
+    "p": [
+      0.3683011045545669,
+      0.2160336737642787,
+      0.41566522168115444
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.524113118648529,
+      -0.009353411383926868,
+      0.6450925469398499
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/tenure/yes/0/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/tenure/yes/0",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/tenure/yes/0/base",
+    "p": [
+      0.33333136141291386,
+      0.4210839459784603,
+      0.24558469260862587
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      0.9205505847930908,
+      1.1542457342147827,
+      0.6150554418563843
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/return/unknown/1/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/return/unknown/1",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/return/unknown/1/base",
+    "p": [
+      0.22822824460608132,
+      0.12384660726557087,
+      0.6479251481283478
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.2066570520401,
+      0.5953545570373535,
+      2.2500860691070557
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/tenure/yes/1/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/tenure/yes/1",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/tenure/yes/1/base",
+    "p": [
+      0.4064397160076926,
+      0.2594407057428781,
+      0.33411957824942934
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.201257586479187,
+      0.7523501515388489,
+      1.0053209066390991
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/warranty/nondeciding/3/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/warranty/nondeciding/3",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/warranty/nondeciding/3/base",
+    "p": [
+      0.49344057212353176,
+      0.08605118905045978,
+      0.4205082388260084
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      2.0322327613830566,
+      0.2857726514339447,
+      1.8722944259643555
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/tenure/yes/4/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/tenure/yes/4",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/tenure/yes/4/base",
+    "p": [
+      0.355003383383407,
+      0.2275799831435072,
+      0.4174166334730859
+    ],
+    "raw_probability_sum": 0.999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.018799901008606,
+      0.5741743445396423,
+      1.1807574033737183
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/insufficient/overtime/no/3/base",
+    "group": "targeted-v9-matched-20261030/train/insufficient/overtime/no/3",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/insufficient",
+    "task": "targeted-v9-matched-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/insufficient/overtime/no/3/base",
+    "p": [
+      0.213616008175135,
+      0.3873678022936494,
+      0.39901618953121554
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      0.138604998588562,
+      0.7337995767593384,
+      0.7634268999099731
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/55/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/55",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/55/base",
+    "p": [
+      0.12829850614070892,
+      0.13906718790531158,
+      0.2036309689283371,
+      0.15558941662311554,
+      0.37341392040252686
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.2375618815422058,
+      0.31815943121910095,
+      0.6995115876197815,
+      0.43042290210723877,
+      1.3058898448944092
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dated_roster/52/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dated_roster/52",
+    "question": "contact",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dated_roster/52/base",
+    "p": [
+      0.23821380379477436,
+      0.19230909358994525,
+      0.28300335581595665,
+      0.19202741694409525,
+      0.09444632985522852
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.0967266634106636,
+      -0.11733793467283249,
+      0.2690167725086212,
+      -0.11880375444889069,
+      -0.828410267829895
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dated_roster/52/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dated_roster/52",
+    "question": "group",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dated_roster/52/base",
+    "p": [
+      0.14208993950888243,
+      0.11479090667326332,
+      0.7431191538178542
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      0.1374702751636505,
+      -0.0758776143193245,
+      1.791866421699524
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/15/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/15",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/15/base",
+    "p": [
+      0.12168637753789407,
+      0.20211139471911932,
+      0.132391021642022,
+      0.41197359868864414,
+      0.13183760741232042
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      0.09713447839021683,
+      0.6045064330101013,
+      0.18144725263118744,
+      1.316646695137024,
+      0.17725825309753418
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/rank_escalation/22/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/rank_escalation/22",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+    ],
+    "label": 6,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/rank_escalation/22/base",
+    "p": [
+      0.14658152947886638,
+      0.18487535279337053,
+      0.13766012983277343,
+      0.14528931569092485,
+      0.1523174781179616,
+      0.13380108674018765,
+      0.09947510734591553
+    ],
+    "raw_probability_sum": 1.0000000074505806,
+    "zero_count": 0,
+    "logits": [
+      0.5394878387451172,
+      0.7715879082679749,
+      0.4766939580440521,
+      0.5306330919265747,
+      0.5778731107711792,
+      0.4482603669166565,
+      0.15181350708007812
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/29/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/29",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/29/base",
+    "p": [
+      0.20759886503219604,
+      0.4509437382221222,
+      0.11025207489728928,
+      0.16645404696464539,
+      0.0647512748837471
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.6752480268478394,
+      1.450982928276062,
+      0.04240964353084564,
+      0.45435959100723267,
+      -0.4898063540458679
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/85/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/85",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/85/base",
+    "p": [
+      0.14217928051948547,
+      0.09297195076942444,
+      0.1501656472682953,
+      0.25445616245269775,
+      0.36022695899009705
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.41116246581077576,
+      -0.013628463260829449,
+      0.4658127427101135,
+      0.9932023882865906,
+      1.3408080339431763
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dated_roster/22/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dated_roster/22",
+    "question": "contact",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dated_roster/22/base",
+    "p": [
+      0.1942770149872908,
+      0.19554963383374416,
+      0.18369561038587157,
+      0.2253205463481275,
+      0.201157194444966
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      0.14689095318317413,
+      0.15342020988464355,
+      0.09088601917028427,
+      0.29513001441955566,
+      0.18169258534908295
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dated_roster/22/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dated_roster/22",
+    "question": "group",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dated_roster/22/base",
+    "p": [
+      0.47719924795028185,
+      0.24146088547084713,
+      0.281339866578871
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      0.7568066120147705,
+      0.07558000087738037,
+      0.22843590378761292
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/67/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/67",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/67/base",
+    "p": [
+      0.066978472485176,
+      0.15691968010006904,
+      0.30809338277995807,
+      0.1812162033267112,
+      0.28679226130808566
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      -0.02121564745903015,
+      0.8301471471786499,
+      1.5048160552978516,
+      0.9741039276123047,
+      1.433171272277832
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/32/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/32",
+    "question": "controller",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/32/base",
+    "p": [
+      0.13317842285415446,
+      0.14298015300258424,
+      0.07438232472604793,
+      0.3187270343777897,
+      0.33073206503942365
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      0.25663015246391296,
+      0.3276462256908417,
+      -0.3258412778377533,
+      1.1292754411697388,
+      1.1662490367889404
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/32/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/32",
+    "question": "interest",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/32/base",
+    "p": [
+      0.352654974241703,
+      0.025589749979667367,
+      0.0336081432881398,
+      0.030227643407214982,
+      0.201985096990618,
+      0.35593439209265687
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.3011343479156494,
+      -1.3221638202667236,
+      -1.049587368965149,
+      -1.1555989980697632,
+      0.7438381910324097,
+      1.310390591621399
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/rank_escalation/9/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/rank_escalation/9",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/rank_escalation/9/base",
+    "p": [
+      0.10444767183732498,
+      0.1459170899676843,
+      0.08551896490929968,
+      0.10103052260027115,
+      0.07784287747506614,
+      0.11204738336872136,
+      0.1848691431413463,
+      0.18832634670028608
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      0.2434319704771042,
+      0.5777842998504639,
+      0.04348382726311684,
+      0.21016839146614075,
+      -0.050561875104904175,
+      0.31366756558418274,
+      0.8143940567970276,
+      0.8329220414161682
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/64/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/64",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/64/base",
+    "p": [
+      0.15361688115496153,
+      0.3667136808208417,
+      0.20639473459751995,
+      0.08940874997325242,
+      0.18386595345342438
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      0.5915383696556091,
+      1.461658000946045,
+      0.8868671655654907,
+      0.05029511824250221,
+      0.7712835669517517
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/37/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/37",
+    "question": "controller",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/37/base",
+    "p": [
+      0.13401706516742706,
+      0.4488885700702667,
+      0.19402819871902466,
+      0.10220880061388016,
+      0.1208573654294014
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.7180256843566895,
+      1.9268332719802856,
+      1.088062047958374,
+      0.44707629084587097,
+      0.6146695613861084
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/37/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/37",
+    "question": "interest",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/37/base",
+    "p": [
+      0.3177527439929136,
+      0.022920481519095873,
+      0.025556541598490752,
+      0.28961076900942967,
+      0.0296973730668817,
+      0.3144620908131884
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.2482051849365234,
+      -0.38103747367858887,
+      -0.2721750736236572,
+      2.1554694175720215,
+      -0.1220097690820694,
+      2.237795114517212
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/52/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/52",
+    "question": "controller",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/52/base",
+    "p": [
+      0.13133578589569564,
+      0.2294904841254868,
+      0.2706488789908087,
+      0.2552558595801529,
+      0.11326899140785596
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      0.4324303865432739,
+      0.9905346632003784,
+      1.1554954051971436,
+      1.0969394445419312,
+      0.28443852066993713
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/52/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/52",
+    "question": "interest",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/52/base",
+    "p": [
+      0.06386859405677124,
+      0.05658623674653069,
+      0.25112079357888434,
+      0.12682376187775693,
+      0.3466787766411003,
+      0.15492183709895654
+    ],
+    "raw_probability_sum": 1.0000000484287739,
+    "zero_count": 0,
+    "logits": [
+      0.11788942664861679,
+      -0.0031724630389362574,
+      1.4869956970214844,
+      0.8038600087165833,
+      1.8094602823257446,
+      1.0039823055267334
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/40/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/40",
+    "question": "controller",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/40/base",
+    "p": [
+      0.12204339246678164,
+      0.30668597032727146,
+      0.07966211108591242,
+      0.27452041150363443,
+      0.2170881146164
+    ],
+    "raw_probability_sum": 0.9999999478459358,
+    "zero_count": 0,
+    "logits": [
+      0.32146939635276794,
+      1.2429170608520508,
+      -0.10511314123868942,
+      1.1321183443069458,
+      0.8973960280418396
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/40/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/40",
+    "question": "interest",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/40/base",
+    "p": [
+      0.09231652388212475,
+      0.25870144559965613,
+      0.14796298852535328,
+      0.11542856779268806,
+      0.32985809691144596,
+      0.05573237728873176
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      0.261160284280777,
+      1.2916117906570435,
+      0.7328992486000061,
+      0.48458895087242126,
+      1.5345996618270874,
+      -0.2435017079114914
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/39/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/39",
+    "question": "controller",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/39/base",
+    "p": [
+      0.27962622671483967,
+      0.13392678202525038,
+      0.10781673582978701,
+      0.2900362377621883,
+      0.18859401766793468
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.0846951007843018,
+      0.3485346734523773,
+      0.13167425990104675,
+      1.1212472915649414,
+      0.6908379793167114
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/39/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/39",
+    "question": "interest",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/ownership_control_and_profit/39/base",
+    "p": [
+      0.23592120668702984,
+      0.034729803032363796,
+      0.05674103351542924,
+      0.02933559041210165,
+      0.2941294755123084,
+      0.34914289084076705
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      1.7291216850280762,
+      -0.18677783012390137,
+      0.30412158370018005,
+      -0.3555745482444763,
+      1.9496439695358276,
+      2.121105194091797
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/exact_supervisor_hops/8/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/exact_supervisor_hops/8",
+    "question": "approver",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/exact_supervisor_hops/8/base",
+    "p": [
+      0.17345801771244485,
+      0.04878681371153058,
+      0.07015197292649625,
+      0.0669361904383983,
+      0.109571752380062,
+      0.07743156302414371,
+      0.15101023693428503,
+      0.06457349201620334,
+      0.23807996085643593
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.312759280204773,
+      0.04428378492593765,
+      0.4074876308441162,
+      0.36056357622146606,
+      0.8534033298492432,
+      0.5062181353569031,
+      1.1741713285446167,
+      0.32462769746780396,
+      1.6294302940368652
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/56/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/56",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/56/base",
+    "p": [
+      0.09775780303729754,
+      0.14946407678937454,
+      0.12489698827880691,
+      0.35859508165150394,
+      0.26928605024301705
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      0.3277745246887207,
+      0.7523374557495117,
+      0.572770893573761,
+      1.6274752616882324,
+      1.3410556316375732
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/2/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/2",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/2/base",
+    "p": [
+      0.19379631839968672,
+      0.18822948266443507,
+      0.11198898327284952,
+      0.13520108969218073,
+      0.370784125970848
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      0.8685199022293091,
+      0.8393741250038147,
+      0.32011285424232483,
+      0.5084756016731262,
+      1.5173323154449463
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/89/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/89",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/89/base",
+    "p": [
+      0.18939283913506952,
+      0.37908122790786386,
+      0.27418235557188886,
+      0.0602963282234146,
+      0.09704724916176309
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      0.8481552004814148,
+      1.54208242893219,
+      1.218125343322754,
+      -0.29639679193496704,
+      0.17952993512153625
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/84/base",
+    "group": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/84",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/multihop",
+    "task": "targeted-v9-matched-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/multihop/dependency_candidates/84/base",
+    "p": [
+      0.16632961480302877,
+      0.10990287854833358,
+      0.20064478519461088,
+      0.17995072215575228,
+      0.34317199929827447
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      0.655174732208252,
+      0.24080033600330353,
+      0.842739462852478,
+      0.7338863611221313,
+      1.3794350624084473
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_sublimit/12/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_sublimit/12",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_sublimit/12/base",
+    "p": [
+      0.20993561260642063,
+      0.16981472932492458,
+      0.2562960290798534,
+      0.08471905124489026,
+      0.2792345777439111
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      0.26308661699295044,
+      0.05099371075630188,
+      0.4626188278198242,
+      -0.6443737745285034,
+      0.5483379364013672
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_sublimit/12/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_sublimit/12",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_sublimit/12/base",
+    "p": [
+      0.27107422179426083,
+      0.3089980369209073,
+      0.14445654418805504,
+      0.13656259397045337,
+      0.13890860312632342
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.0220749378204346,
+      1.1530171632766724,
+      0.3926610052585602,
+      0.3364652991294861,
+      0.35349833965301514
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/legal_zero/16/base",
+    "group": "targeted-v9-matched-20261030/train/policy/legal_zero/16",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/legal_zero/16/base",
+    "p": [
+      0.1256530713192661,
+      0.14069631486093528,
+      0.5676558529189847,
+      0.09433513739205693,
+      0.071659623508757
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      -0.0017167626647278666,
+      0.11136239767074585,
+      1.506273865699768,
+      -0.2883877158164978,
+      -0.5633141398429871
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/legal_zero/16/base",
+    "group": "targeted-v9-matched-20261030/train/policy/legal_zero/16",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/legal_zero/16/base",
+    "p": [
+      0.14513835334730854,
+      0.23207264579100192,
+      0.23061322591144712,
+      0.14984512401991887,
+      0.24233065093032355
+    ],
+    "raw_probability_sum": 0.9999998956918716,
+    "zero_count": 0,
+    "logits": [
+      0.42503243684768677,
+      0.8943953514099121,
+      0.8880869746208191,
+      0.4569472074508667,
+      0.9376480579376221
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/27/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/27",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/27/base",
+    "p": [
+      0.16814817488193512,
+      0.09976911544799805,
+      0.08131398260593414,
+      0.10056468844413757,
+      0.5502040386199951
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.1263742744922638,
+      -0.3956127166748047,
+      -0.6001534461975098,
+      -0.38767021894454956,
+      1.3118177652359009
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/27/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/27",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/27/base",
+    "p": [
+      0.2039094029109447,
+      0.1563561339815199,
+      0.21229051594627577,
+      0.17794998684749067,
+      0.24949396031376897
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      0.6704347729682922,
+      0.40489518642425537,
+      0.7107146382331848,
+      0.5342614650726318,
+      0.8721936345100403
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/0/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/0",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/0/base",
+    "p": [
+      0.16314879789123526,
+      0.5117804040810646,
+      0.1990641593514752,
+      0.04939425957475273,
+      0.07661237910147216
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      -0.16041168570518494,
+      0.9828212857246399,
+      0.03855283930897713,
+      -1.3552401065826416,
+      -0.9163156151771545
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/0/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/0",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/0/base",
+    "p": [
+      0.2125601353132745,
+      0.1713077153460341,
+      0.28064495743282075,
+      0.19066803441447072,
+      0.14481915749339994
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      0.6446148157119751,
+      0.42885130643844604,
+      0.9224801659584045,
+      0.5359238386154175,
+      0.2608756422996521
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/not_purchased/4/base",
+    "group": "targeted-v9-matched-20261030/train/policy/not_purchased/4",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/not_purchased/4/base",
+    "p": [
+      0.05591936159494393,
+      0.26502327926352864,
+      0.2129059636783914,
+      0.1340596615943464,
+      0.33209173386878965
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      -1.0921251773834229,
+      0.46378177404403687,
+      0.24481461942195892,
+      -0.21775096654891968,
+      0.6893753409385681
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/not_purchased/4/base",
+    "group": "targeted-v9-matched-20261030/train/policy/not_purchased/4",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/not_purchased/4/base",
+    "p": [
+      0.1485926889512231,
+      0.19124822953723836,
+      0.3299109192232377,
+      0.20037948189469507,
+      0.1298686803936058
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      0.22521857917308807,
+      0.4775818884372711,
+      1.0228322744369507,
+      0.5242225527763367,
+      0.09053338319063187
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_sublimit/44/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_sublimit/44",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_sublimit/44/base",
+    "p": [
+      0.09024411288612147,
+      0.1347339279714872,
+      0.5438879041094498,
+      0.02152674050304915,
+      0.20960731452989237
+    ],
+    "raw_probability_sum": 1.0000000167638063,
+    "zero_count": 0,
+    "logits": [
+      -0.4490424394607544,
+      -0.04825892299413681,
+      1.347182273864746,
+      -1.8822648525238037,
+      0.39367496967315674
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_sublimit/44/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_sublimit/44",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_sublimit/44/base",
+    "p": [
+      0.24265028536319733,
+      0.13662207126617432,
+      0.3335793912410736,
+      0.1633567065000534,
+      0.12379154562950134
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.9881263375282288,
+      0.41372358798980713,
+      1.3063859939575195,
+      0.592441201210022,
+      0.3151041269302368
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_limit/36/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_limit/36",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_limit/36/base",
+    "p": [
+      0.1892389115464363,
+      0.21761584930467157,
+      0.14255097933265506,
+      0.18323228309250722,
+      0.26736197672372986
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.3912537097930908,
+      0.530974805355072,
+      0.1079431027173996,
+      0.35899806022644043,
+      0.736846923828125
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_limit/36/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_limit/36",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_limit/36/base",
+    "p": [
+      0.1394704985776395,
+      0.2661264161429877,
+      0.1339512725486972,
+      0.15416191058868436,
+      0.3062899021419912
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.23564763367176056,
+      0.8817659616470337,
+      0.19527067244052887,
+      0.3357979953289032,
+      1.0223265886306763
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_sublimit/35/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_sublimit/35",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_sublimit/35/base",
+    "p": [
+      0.1250465596125948,
+      0.19441018812128671,
+      0.2152547682620057,
+      0.09656998417623235,
+      0.3687184998278804
+    ],
+    "raw_probability_sum": 0.9999999329447746,
+    "zero_count": 0,
+    "logits": [
+      -0.36377742886543274,
+      0.07750660181045532,
+      0.17935875058174133,
+      -0.6221956610679626,
+      0.717569887638092
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_sublimit/35/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_sublimit/35",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_sublimit/35/base",
+    "p": [
+      0.27275379544152284,
+      0.19493341408173845,
+      0.20317719900438183,
+      0.14872939502666854,
+      0.18040619644568834
+    ],
+    "raw_probability_sum": 0.999999925494194,
+    "zero_count": 0,
+    "logits": [
+      0.9940805435180664,
+      0.6581689715385437,
+      0.6995894908905029,
+      0.38763943314552307,
+      0.580721914768219
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/late/12/base",
+    "group": "targeted-v9-matched-20261030/train/policy/late/12",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/late/12/base",
+    "p": [
+      0.07596579769330179,
+      0.28769820285518016,
+      0.10946170741032718,
+      0.10537743332883492,
+      0.421496858712356
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      -0.7805604338645935,
+      0.5510682463645935,
+      -0.41526901721954346,
+      -0.4532952308654785,
+      0.9329686164855957
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/late/12/base",
+    "group": "targeted-v9-matched-20261030/train/policy/late/12",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/late/12/base",
+    "p": [
+      0.16594321778501245,
+      0.22071763544205375,
+      0.13307300011704862,
+      0.2860835449981161,
+      0.19418260165776907
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.5155778527259827,
+      0.8008164763450623,
+      0.29482996463775635,
+      1.0602160692214966,
+      0.6727312207221985
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/41/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/41",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/41/base",
+    "p": [
+      0.041518657780905695,
+      0.18323984469115964,
+      0.14035165100765748,
+      0.38498046420543697,
+      0.24990938231484022
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      -1.6027976274490356,
+      -0.11814471334218979,
+      -0.3847896158695221,
+      0.6242519021034241,
+      0.19215773046016693
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/41/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/41",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/41/base",
+    "p": [
+      0.25285470485687256,
+      0.1732756644487381,
+      0.19679014384746552,
+      0.23798531293869019,
+      0.13909417390823364
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.6806707382202148,
+      0.30273938179016113,
+      0.42999354004859924,
+      0.6200646162033081,
+      0.0830068588256836
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/legal_zero/4/base",
+    "group": "targeted-v9-matched-20261030/train/policy/legal_zero/4",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/legal_zero/4/base",
+    "p": [
+      0.12502501765536336,
+      0.03253510200797751,
+      0.06280180745293355,
+      0.7333111363128683,
+      0.04632693657085732
+    ],
+    "raw_probability_sum": 0.9999998919665813,
+    "zero_count": 0,
+    "logits": [
+      -0.6464481949806213,
+      -1.9926422834396362,
+      -1.3349781036376953,
+      1.1226081848144531,
+      -1.6392384767532349
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/legal_zero/4/base",
+    "group": "targeted-v9-matched-20261030/train/policy/legal_zero/4",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/legal_zero/4/base",
+    "p": [
+      0.2233991970092417,
+      0.1830842562131171,
+      0.19072049003598884,
+      0.21297444941217678,
+      0.18982160732947556
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      0.5942692160606384,
+      0.3952553868293762,
+      0.4361179769039154,
+      0.5464811325073242,
+      0.43139368295669556
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_limit/18/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_limit/18",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_limit/18/base",
+    "p": [
+      0.23930202157085365,
+      0.5028763953274892,
+      0.16953144778089843,
+      0.06421862470859337,
+      0.024071510612165437
+    ],
+    "raw_probability_sum": 1.000000011175871,
+    "zero_count": 0,
+    "logits": [
+      0.29567375779151917,
+      1.0382916927337646,
+      -0.04901434853672981,
+      -1.0197594165802002,
+      -2.001023769378662
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_limit/18/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_limit/18",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_limit/18/base",
+    "p": [
+      0.18016976238814852,
+      0.21473122072797007,
+      0.23340654969869998,
+      0.17479221595456146,
+      0.19690025123061997
+    ],
+    "raw_probability_sum": 0.9999999105930328,
+    "zero_count": 0,
+    "logits": [
+      0.6187702417373657,
+      0.7942578196525574,
+      0.8776524662971497,
+      0.5884687304496765,
+      0.7075679898262024
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_limit/33/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_limit/33",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_limit/33/base",
+    "p": [
+      0.20652406638398518,
+      0.0631379387103789,
+      0.20434670879145306,
+      0.2855153871508171,
+      0.24047589896336574
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      0.38082361221313477,
+      -0.8042715191841125,
+      0.37022486329078674,
+      0.7047026753425598,
+      0.5330265760421753
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_limit/33/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_limit/33",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_limit/33/base",
+    "p": [
+      0.24473165705000333,
+      0.18808372879277852,
+      0.18354954372494053,
+      0.23184671198864912,
+      0.1517883584436285
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.5594509243965149,
+      0.2961757183074951,
+      0.2717732787132263,
+      0.5053650140762329,
+      0.08177575469017029
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/threshold/14/base",
+    "group": "targeted-v9-matched-20261030/train/policy/threshold/14",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/threshold/14/base",
+    "p": [
+      0.15119897755984302,
+      0.41569401265330563,
+      0.0864708316895801,
+      0.14983765222736997,
+      0.19679852586990126
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      -0.1483929604291916,
+      0.8629598021507263,
+      -0.7071824073791504,
+      -0.15743723511695862,
+      0.11519081145524979
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/threshold/14/base",
+    "group": "targeted-v9-matched-20261030/train/policy/threshold/14",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/threshold/14/base",
+    "p": [
+      0.19029285580792593,
+      0.20637062806995596,
+      0.21083069475980684,
+      0.253961660085966,
+      0.13854416127634528
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.8661420941352844,
+      0.9472514986991882,
+      0.968633234500885,
+      1.1547610759735107,
+      0.5487669110298157
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/56/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/56",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/56/base",
+    "p": [
+      0.18980082303879192,
+      0.13970030427872226,
+      0.1268326900353226,
+      0.16413177060688225,
+      0.37953441204028093
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.3637506365776062,
+      0.05727485194802284,
+      -0.03935578837990761,
+      0.21844501793384552,
+      1.0567207336425781
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/56/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/56",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/56/base",
+    "p": [
+      0.202707579610903,
+      0.1943830313809351,
+      0.2386856121412391,
+      0.22228722770718212,
+      0.1419365491597407
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      0.8091503977775574,
+      0.7672165036201477,
+      0.9725331664085388,
+      0.9013562798500061,
+      0.4527660012245178
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/47/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/47",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/47/base",
+    "p": [
+      0.3846210751394687,
+      0.21916236983621784,
+      0.13603652709640873,
+      0.08752826405625945,
+      0.17265176387164524
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      0.2244366705417633,
+      -0.3380090892314911,
+      -0.8148984909057617,
+      -1.2558602094650269,
+      -0.5765452980995178
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/47/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/47",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/47/base",
+    "p": [
+      0.27521628961611655,
+      0.12803270304300496,
+      0.14262862928595035,
+      0.1832764203332788,
+      0.2708459577216493
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.821567177772522,
+      0.05629566311836243,
+      0.1642540991306305,
+      0.4150053858757019,
+      0.8055601119995117
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/intentional/3/base",
+    "group": "targeted-v9-matched-20261030/train/policy/intentional/3",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/intentional/3/base",
+    "p": [
+      0.07013930720020456,
+      0.6301581568720044,
+      0.0729462763231307,
+      0.04969706254475494,
+      0.1770591970599054
+    ],
+    "raw_probability_sum": 0.9999999515712261,
+    "zero_count": 0,
+    "logits": [
+      0.12519173324108124,
+      2.320679187774658,
+      0.16443157196044922,
+      -0.21934588253498077,
+      1.0511924028396606
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/intentional/3/base",
+    "group": "targeted-v9-matched-20261030/train/policy/intentional/3",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/intentional/3/base",
+    "p": [
+      0.22191306119898144,
+      0.24217484123035793,
+      0.19499262258388467,
+      0.1935567615496147,
+      0.14736271343716126
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.8314144015312195,
+      0.9187886118888855,
+      0.7020903825759888,
+      0.6946994662284851,
+      0.4220256507396698
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/35/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/35",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/35/base",
+    "p": [
+      0.1317100356264407,
+      0.048791087436808836,
+      0.40189083811803405,
+      0.34817841130229216,
+      0.06942962751642424
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      -0.6039261817932129,
+      -1.5969812870025635,
+      0.5116515159606934,
+      0.36818602681159973,
+      -1.2442152500152588
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_loss/35/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_loss/35",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_loss/35/base",
+    "p": [
+      0.13581932676376918,
+      0.20880834135984358,
+      0.24232868128035423,
+      0.14836321328988036,
+      0.26468043730615265
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.14844560623168945,
+      0.578536868095398,
+      0.7274150252342224,
+      0.23678340017795563,
+      0.8156432509422302
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_sublimit/18/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_sublimit/18",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_sublimit/18/base",
+    "p": [
+      0.21638539233120635,
+      0.13614238119974023,
+      0.2676940719898982,
+      0.21343618413425589,
+      0.1663419703448993
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      0.43787822127342224,
+      -0.025481631979346275,
+      0.6506620049476624,
+      0.4241551160812378,
+      0.17486292123794556
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_sublimit/18/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_sublimit/18",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_sublimit/18/base",
+    "p": [
+      0.19947594705367405,
+      0.20593740308657865,
+      0.21857333370606102,
+      0.13866209157335213,
+      0.23735122458033414
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      0.3441295027732849,
+      0.3760080635547638,
+      0.43555739521980286,
+      -0.019524209201335907,
+      0.5179768204689026
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_limit/32/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_limit/32",
+    "question": "amount",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_limit/32/base",
+    "p": [
+      0.17874824734407294,
+      0.26185118761880416,
+      0.07594907170610023,
+      0.20143229959260972,
+      0.28201919373841294
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.41450244188308716,
+      0.7963004112243652,
+      -0.44141286611557007,
+      0.5339773297309875,
+      0.8704991936683655
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/policy/pay_limit/32/base",
+    "group": "targeted-v9-matched-20261030/train/policy/pay_limit/32",
+    "question": "reason",
+    "source": "targeted-v9-matched-20261030/policy",
+    "task": "targeted-v9-matched-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/policy/pay_limit/32/base",
+    "p": [
+      0.1974448173476701,
+      0.1634066004576266,
+      0.2288593867081221,
+      0.1920357254754223,
+      0.21825347001115888
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.5582641959190369,
+      0.369046688079834,
+      0.7059128284454346,
+      0.5304864645004272,
+      0.6584621667861938
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/table/40/base",
+    "group": "targeted-v9-matched-20261030/train/probability/table/40",
+    "question": "forward",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/table/40/base",
+    "p": [
+      0.24207757280246797,
+      0.3097684771722831,
+      0.2659007430590191,
+      0.06556105174087386,
+      0.11669215522535595
+    ],
+    "raw_probability_sum": 1.0000000670552254,
+    "zero_count": 0,
+    "logits": [
+      0.7317091226577759,
+      0.9782760143280029,
+      0.8255739212036133,
+      -0.5745671987533569,
+      0.0019902451895177364
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/table/40/base",
+    "group": "targeted-v9-matched-20261030/train/probability/table/40",
+    "question": "reverse",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/table/40/base",
+    "p": [
+      0.2537754438254916,
+      0.23047199501883991,
+      0.21319023947134258,
+      0.13039481445558646,
+      0.17216750722873944
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.014435052871704,
+      0.9181146025657654,
+      0.8401702046394348,
+      0.3485521972179413,
+      0.6264532208442688
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/table/74/base",
+    "group": "targeted-v9-matched-20261030/train/probability/table/74",
+    "question": "forward",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/table/74/base",
+    "p": [
+      0.2382497155927164,
+      0.17956483096532774,
+      0.23438922711626847,
+      0.19410174795833607,
+      0.1536944783673513
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.5504937767982483,
+      0.26771074533462524,
+      0.5341575145721436,
+      0.3455568850040436,
+      0.11214111000299454
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/table/74/base",
+    "group": "targeted-v9-matched-20261030/train/probability/table/74",
+    "question": "reverse",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/table/74/base",
+    "p": [
+      0.18372826004433243,
+      0.1272520552985064,
+      0.1678493742965255,
+      0.255299325953434,
+      0.26587098440720164
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.8668559789657593,
+      0.49956804513931274,
+      0.7764651775360107,
+      1.1958348751068115,
+      1.2364094257354736
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/34/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/34",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/34/base",
+    "p": [
+      0.13185269033469826,
+      0.18284933813957388,
+      0.18505271330632905,
+      0.17800176674132845,
+      0.16344142447237445,
+      0.1588020670056959
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.17915695905685425,
+      0.5061342120170593,
+      0.5181124210357666,
+      0.4792652428150177,
+      0.39392638206481934,
+      0.3651302456855774
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/34/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/34",
+    "question": "more_likely",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/34/base",
+    "p": [
+      0.44361764192581177,
+      0.5563823580741882
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.9074046015739441,
+      1.133897304534912
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/34/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/34",
+    "question": "posterior",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/34/base",
+    "p": [
+      0.1544389781690253,
+      0.25049977001549184,
+      0.13859672018309116,
+      0.15158965280117673,
+      0.304874878831215
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      0.8692942261695862,
+      1.3529530763626099,
+      0.7610635757446289,
+      0.8506723046302795,
+      1.5493965148925781
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/table/19/base",
+    "group": "targeted-v9-matched-20261030/train/probability/table/19",
+    "question": "forward",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/table/19/base",
+    "p": [
+      0.21614496289603688,
+      0.19815562679204146,
+      0.1491980143488933,
+      0.20858201320603392,
+      0.22791938275699447
+    ],
+    "raw_probability_sum": 1.000000074505806,
+    "zero_count": 0,
+    "logits": [
+      1.0185304880142212,
+      0.9316338300704956,
+      0.6478555202484131,
+      0.9829135537147522,
+      1.0715731382369995
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/table/19/base",
+    "group": "targeted-v9-matched-20261030/train/probability/table/19",
+    "question": "reverse",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/table/19/base",
+    "p": [
+      0.20893686387131025,
+      0.1765953845800345,
+      0.2037987797320253,
+      0.1447528110518214,
+      0.2659161607648086
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.9594779014587402,
+      0.7913069128990173,
+      0.9345788359642029,
+      0.5924733281135559,
+      1.2006268501281738
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any/20/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any/20",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any/20/base",
+    "p": [
+      0.045328774750487424,
+      0.16246525035433934,
+      0.17459694065543224,
+      0.1790873904291136,
+      0.18516853907135097,
+      0.2533531047392764
+    ],
+    "raw_probability_sum": 1.0000000558793545,
+    "zero_count": 0,
+    "logits": [
+      -0.2036566138267517,
+      1.0728654861450195,
+      1.1448813676834106,
+      1.1702752113342285,
+      1.2036677598953247,
+      1.5171854496002197
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any/20/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any/20",
+    "question": "probability",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any/20/base",
+    "p": [
+      0.052243434087348856,
+      0.2920821319970568,
+      0.026813332091321543,
+      0.2726724455977695,
+      0.3561886562265033
+    ],
+    "raw_probability_sum": 0.9999999962747097,
+    "zero_count": 0,
+    "logits": [
+      -0.44793662428855896,
+      1.2731841802597046,
+      -1.114951729774475,
+      1.2044203281402588,
+      1.4716095924377441
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/17/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/17",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/17/base",
+    "p": [
+      0.14000959485754974,
+      0.20938200936642276,
+      0.23581711596523053,
+      0.19999737739566897,
+      0.21479390241512802
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.26177629828453064,
+      0.6642257571220398,
+      0.7831219434738159,
+      0.6183696389198303,
+      0.6897443532943726
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/17/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/17",
+    "question": "more_likely",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/17/base",
+    "p": [
+      0.4143851820941324,
+      0.5856148179058677
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.030045747756958,
+      1.375912070274353
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/17/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/17",
+    "question": "posterior",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/17/base",
+    "p": [
+      0.20732877685139828,
+      0.2697681128285502,
+      0.09514046247734585,
+      0.20602447824125414,
+      0.22173816960145154
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      1.3915373086929321,
+      1.6547942161560059,
+      0.6125858426094055,
+      1.3852264881134033,
+      1.4587286710739136
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/45/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/45",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/45/base",
+    "p": [
+      0.12959385497542567,
+      0.21841507636376067,
+      0.250425528753945,
+      0.2049815150342069,
+      0.19658402487266174
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      -0.049859993159770966,
+      0.4721319079399109,
+      0.6088962554931641,
+      0.40865445137023926,
+      0.36682459712028503
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/45/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/45",
+    "question": "more_likely",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/45/base",
+    "p": [
+      0.4952288420430171,
+      0.5047711579569829
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.9703993201255798,
+      0.9894844889640808
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/45/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/45",
+    "question": "posterior",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/45/base",
+    "p": [
+      0.3402800065362455,
+      0.3269264795460248,
+      0.06292987802415723,
+      0.1784410827887381,
+      0.09142255310483435
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.3219187259674072,
+      1.2818852663040161,
+      -0.3658290207386017,
+      0.6764084696769714,
+      0.007642123848199844
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any_fail/27/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any_fail/27",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any_fail/27/base",
+    "p": [
+      0.2598386542414917,
+      0.26854370444868453,
+      0.1904984364918549,
+      0.10249595133566602,
+      0.09691121934636336,
+      0.08171203413593947
+    ],
+    "raw_probability_sum": 0.9999999478459358,
+    "zero_count": 0,
+    "logits": [
+      1.0521141290664673,
+      1.0850669145584106,
+      0.7416972517967224,
+      0.1218765527009964,
+      0.06584841758012772,
+      -0.1047455295920372
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any_fail/27/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any_fail/27",
+    "question": "probability",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any_fail/27/base",
+    "p": [
+      0.25860134724293543,
+      0.2932291397533866,
+      0.07194536361525716,
+      0.05483825448303169,
+      0.3213858949053891
+    ],
+    "raw_probability_sum": 1.0000000782310963,
+    "zero_count": 0,
+    "logits": [
+      1.010949969291687,
+      1.136616587638855,
+      -0.26843076944351196,
+      -0.5399495959281921,
+      1.2283048629760742
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any_fail/6/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any_fail/6",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any_fail/6/base",
+    "p": [
+      0.3469237762747059,
+      0.19040131994488804,
+      0.1279668985597841,
+      0.11342586830465201,
+      0.09631400025592744,
+      0.12496813666004247
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.3607310056686401,
+      0.7607599496841431,
+      0.363397479057312,
+      0.24277536571025848,
+      0.07923956215381622,
+      0.3396846652030945
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any_fail/6/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any_fail/6",
+    "question": "probability",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any_fail/6/base",
+    "p": [
+      0.11278883944766463,
+      0.20352844590651326,
+      0.08405292653958608,
+      0.5229539197243166,
+      0.07667586838191943
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.7059695720672607,
+      1.2962580919265747,
+      0.41189900040626526,
+      2.239945650100708,
+      0.3200393319129944
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/compare/8/base",
+    "group": "targeted-v9-matched-20261030/train/probability/compare/8",
+    "question": "decision",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/compare/8/base",
+    "p": [
+      0.39805185201686843,
+      0.24137346086839645,
+      0.3605746871147351
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.908051073551178,
+      0.4078141450881958,
+      0.8091678619384766
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any/11/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any/11",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any/11/base",
+    "p": [
+      0.07733787711468156,
+      0.1980383872693537,
+      0.1513126217024419,
+      0.2065336586018452,
+      0.20095534922116026,
+      0.16582210609051742
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      0.0296548493206501,
+      0.9699319005012512,
+      0.7008190155029297,
+      1.0119343996047974,
+      0.9845537543296814,
+      0.792386531829834
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any/11/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any/11",
+    "question": "probability",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any/11/base",
+    "p": [
+      0.28360314466934533,
+      0.3439171705295342,
+      0.20402421331261317,
+      0.06646776548220125,
+      0.10198770600630605
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      1.445028305053711,
+      1.6378533840179443,
+      1.1156911849975586,
+      -0.005830233916640282,
+      0.4223049283027649
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/table/24/base",
+    "group": "targeted-v9-matched-20261030/train/probability/table/24",
+    "question": "forward",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/table/24/base",
+    "p": [
+      0.16947107017040253,
+      0.18242637813091278,
+      0.19785064458847046,
+      0.23935069143772125,
+      0.21090121567249298
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.3608253002166748,
+      0.4344896972179413,
+      0.5156553983688354,
+      0.7060728669166565,
+      0.5795328617095947
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/table/24/base",
+    "group": "targeted-v9-matched-20261030/train/probability/table/24",
+    "question": "reverse",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/table/24/base",
+    "p": [
+      0.18211910128593445,
+      0.3425237536430359,
+      0.14610527455806732,
+      0.19821567833423615,
+      0.1310361921787262
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.5200265049934387,
+      1.1517066955566406,
+      0.29969310760498047,
+      0.6047213673591614,
+      0.19083917140960693
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any_fail/3/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any_fail/3",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any_fail/3/base",
+    "p": [
+      0.1695892747644605,
+      0.27783443488797416,
+      0.22386499405410162,
+      0.1550132276485403,
+      0.12334630178860195,
+      0.05035176685632144
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      0.6751949191093445,
+      1.168840765953064,
+      0.9528585076332092,
+      0.5853258371353149,
+      0.35681116580963135,
+      -0.5391507744789124
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any_fail/3/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any_fail/3",
+    "question": "probability",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any_fail/3/base",
+    "p": [
+      0.18020563780648596,
+      0.2078112897929165,
+      0.2546337767054505,
+      0.17413414495783613,
+      0.18321515073731093
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.9863516092300415,
+      1.1288833618164062,
+      1.332079291343689,
+      0.9520787596702576,
+      1.0029139518737793
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any/21/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any/21",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any/21/base",
+    "p": [
+      0.05021749416527384,
+      0.13465774495969474,
+      0.14377671845513923,
+      0.18759827338321602,
+      0.22327007096755694,
+      0.26047969806911925
+    ],
+    "raw_probability_sum": 1.0000000782310963,
+    "zero_count": 0,
+    "logits": [
+      -0.3165488541126251,
+      0.6698241233825684,
+      0.7353492379188538,
+      1.0013904571533203,
+      1.1754697561264038,
+      1.3296126127243042
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any/21/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any/21",
+    "question": "probability",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any/21/base",
+    "p": [
+      0.04523552836236097,
+      0.27647995227813843,
+      0.4261360355356624,
+      0.02344457371491188,
+      0.22870391010892627
+    ],
+    "raw_probability_sum": 1.000000026077032,
+    "zero_count": 0,
+    "logits": [
+      -0.07824499160051346,
+      1.7320106029510498,
+      2.164630889892578,
+      -0.7354886531829834,
+      1.5423004627227783
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any_fail/34/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any_fail/34",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any_fail/34/base",
+    "p": [
+      0.15048769485297092,
+      0.18561758208143844,
+      0.20145148028049764,
+      0.183241502699144,
+      0.1599162846866038,
+      0.11928545539934521
+    ],
+    "raw_probability_sum": 1.000000074505806,
+    "zero_count": 0,
+    "logits": [
+      0.48344168066978455,
+      0.6932488679885864,
+      0.7751089334487915,
+      0.680365264415741,
+      0.5442107319831848,
+      0.25107982754707336
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any_fail/34/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any_fail/34",
+    "question": "probability",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any_fail/34/base",
+    "p": [
+      0.29838454945671966,
+      0.1915415539707359,
+      0.21552652281169982,
+      0.25040179677606966,
+      0.04414557698477489
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.204360008239746,
+      0.7610816955566406,
+      0.8790609240531921,
+      1.0290436744689941,
+      -0.7065302729606628
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/all/10/base",
+    "group": "targeted-v9-matched-20261030/train/probability/all/10",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/all/10/base",
+    "p": [
+      0.18702345014415941,
+      0.23592694631055622,
+      0.14801353547007298,
+      0.15504326272852562,
+      0.16092838706661136,
+      0.11306441828007441
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      0.3456456661224365,
+      0.5779338479042053,
+      0.11171530932188034,
+      0.15811584889888763,
+      0.19537104666233063,
+      -0.15763063728809357
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/all/10/base",
+    "group": "targeted-v9-matched-20261030/train/probability/all/10",
+    "question": "probability",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/all/10/base",
+    "p": [
+      0.24178790505704495,
+      0.2736936150410708,
+      0.13167042735955653,
+      0.24741610331648356,
+      0.10543194922584409
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      1.3713518381118774,
+      1.4953001737594604,
+      0.7635928392410278,
+      1.394362449645996,
+      0.54135662317276
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any_fail/16/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any_fail/16",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any_fail/16/base",
+    "p": [
+      0.19438913319715012,
+      0.27388980780623995,
+      0.10065629258262893,
+      0.1388154019503638,
+      0.18546715240577494,
+      0.10678221205784222
+    ],
+    "raw_probability_sum": 1.0000000074505806,
+    "zero_count": 0,
+    "logits": [
+      0.4229522943496704,
+      0.7658161520957947,
+      -0.23519814014434814,
+      0.08623529225587845,
+      0.3759681284427643,
+      -0.17611835896968842
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any_fail/16/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any_fail/16",
+    "question": "probability",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any_fail/16/base",
+    "p": [
+      0.2705688875380489,
+      0.11389074898849237,
+      0.17025186755701407,
+      0.21850518206153743,
+      0.22678331385490721
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      1.117836356163025,
+      0.2525492310523987,
+      0.6545884609222412,
+      0.9041192531585693,
+      0.9413045644760132
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/table/15/base",
+    "group": "targeted-v9-matched-20261030/train/probability/table/15",
+    "question": "forward",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/table/15/base",
+    "p": [
+      0.2798844528094935,
+      0.16410119808624965,
+      0.1795892876019437,
+      0.18176366523775445,
+      0.1946613962645587
+    ],
+    "raw_probability_sum": 0.9999999105930328,
+    "zero_count": 0,
+    "logits": [
+      0.8183577060699463,
+      0.2844642400741577,
+      0.37465330958366394,
+      0.38668808341026306,
+      0.45524242520332336
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/table/15/base",
+    "group": "targeted-v9-matched-20261030/train/probability/table/15",
+    "question": "reverse",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/table/15/base",
+    "p": [
+      0.22398894357714225,
+      0.20320857455704885,
+      0.12570249659709642,
+      0.27440970318288493,
+      0.17269028208582754
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.73700350522995,
+      0.6396397352218628,
+      0.15932472050189972,
+      0.9400290250778198,
+      0.47690656781196594
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/55/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/55",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/55/base",
+    "p": [
+      0.16653074324131012,
+      0.18564113974571228,
+      0.15390928089618683,
+      0.17495419085025787,
+      0.15408216416835785,
+      0.16488248109817505
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.4725416302680969,
+      0.5811771750450134,
+      0.3937249779701233,
+      0.5218858122825623,
+      0.39484766125679016,
+      0.4625946283340454
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/55/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/55",
+    "question": "more_likely",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/55/base",
+    "p": [
+      0.4197732383080352,
+      0.5802267616919649
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.9993413090705872,
+      1.3230457305908203
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/bayes/55/base",
+    "group": "targeted-v9-matched-20261030/train/probability/bayes/55",
+    "question": "posterior",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/bayes/55/base",
+    "p": [
+      0.21568022989750252,
+      0.32608673462400933,
+      0.1378361603295231,
+      0.12726195346209337,
+      0.19313492168687169
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      0.9424086213111877,
+      1.3557751178741455,
+      0.49467745423316956,
+      0.41485923528671265,
+      0.832000732421875
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any/0/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any/0",
+    "question": "bucket",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any/0/base",
+    "p": [
+      0.1360301822423935,
+      0.19771675765514374,
+      0.18973740935325623,
+      0.1364990472793579,
+      0.14745789766311646,
+      0.19255870580673218
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.841302216053009,
+      1.2152608633041382,
+      1.174066424369812,
+      0.8447429537773132,
+      0.9219680428504944,
+      1.1888264417648315
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v9-matched-20261030/train/probability/any/0/base",
+    "group": "targeted-v9-matched-20261030/train/probability/any/0",
+    "question": "probability",
+    "source": "targeted-v9-matched-20261030/probability",
+    "task": "targeted-v9-matched-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v9-matched-20261030/train/probability/any/0/base",
+    "p": [
+      0.05839169596458387,
+      0.10577945841016,
+      0.24479541943086924,
+      0.17926145555789902,
+      0.4117719706364879
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      -0.49050262570381165,
+      0.1036800891160965,
+      0.9427465200424194,
+      0.6311690807342529,
+      1.4627934694290161
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00751",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00751",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00751",
+    "p": [
+      0.37699701258549057,
+      0.6230029874145094
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.4589754641056061,
+      0.9612894654273987
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00606",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00606",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00606",
+    "p": [
+      0.18574313681018995,
+      0.2599990646541188,
+      0.12194085775359825,
+      0.18487037580556887,
+      0.24744656497652406
+    ],
+    "raw_probability_sum": 1.0000000074505806,
+    "zero_count": 0,
+    "logits": [
+      0.4750332832336426,
+      0.8113466501235962,
+      0.05420475825667381,
+      0.47032344341278076,
+      0.7618632912635803
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00579",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00579",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00579",
+    "p": [
+      0.4263268538214819,
+      0.5736731461785182
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.519474983215332,
+      0.8163285255432129
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00235",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00235",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00235",
+    "p": [
+      0.4061036705970764,
+      0.5938963294029236
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.4717436730861664,
+      0.8518399596214294
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00083",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00083",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00083",
+    "p": [
+      0.14323347806930542,
+      0.2395743578672409,
+      0.2701309323310852,
+      0.1749264895915985,
+      0.17213474214076996
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.4680265486240387,
+      0.9824143648147583,
+      1.1024574041366577,
+      0.6679164171218872,
+      0.6518281698226929
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00212",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00212",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00212",
+    "p": [
+      0.14401181888527487,
+      0.21662183627686638,
+      0.2472644337744519,
+      0.25786148349069876,
+      0.1342404275727081
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      0.37908050417900085,
+      0.7873382568359375,
+      0.9196434020996094,
+      0.9616076350212097,
+      0.30881747603416443
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00390",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00390",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00390",
+    "p": [
+      0.20439228415489197,
+      0.15722882747650146,
+      0.17094816267490387,
+      0.23818732798099518,
+      0.22924339771270752
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.9071212410926819,
+      0.6447823643684387,
+      0.728440523147583,
+      1.0601376295089722,
+      1.021864414215088
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00705",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00705",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00705",
+    "p": [
+      0.5315334955314843,
+      0.4684665044685156
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.6608531475067139,
+      0.5345515012741089
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00272",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00272",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00272",
+    "p": [
+      0.16341421008110046,
+      0.19616158306598663,
+      0.24981723725795746,
+      0.18531188368797302,
+      0.20529508590698242
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.36787593364715576,
+      0.5505265593528748,
+      0.7923173904418945,
+      0.4936281144618988,
+      0.5960361361503601
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00629",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00629",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00629",
+    "p": [
+      0.17933160467441986,
+      0.2565197107908065,
+      0.11198587220875633,
+      0.2538643834113564,
+      0.19829842891466087
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      0.6100847125053406,
+      0.9680534601211548,
+      0.13922066986560822,
+      0.9576481580734253,
+      0.7106210589408875
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00586",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00586",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00586",
+    "p": [
+      0.5340299924629922,
+      0.4659700075370078
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      0.8504771590232849,
+      0.7141463756561279
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00105",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00105",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00105",
+    "p": [
+      0.17580974282251724,
+      0.2594671354094792,
+      0.1357133883451381,
+      0.20548124570539253,
+      0.22352848771747294
+    ],
+    "raw_probability_sum": 1.000000074505806,
+    "zero_count": 0,
+    "logits": [
+      0.949837863445282,
+      1.339065432548523,
+      0.6909806132316589,
+      1.105790138244629,
+      1.189974308013916
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00421",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00421",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00421",
+    "p": [
+      0.13112860918045044,
+      0.2469889521598816,
+      0.12869635224342346,
+      0.2698870003223419,
+      0.2232990860939026
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.3291327655315399,
+      0.962297797203064,
+      0.31040987372398376,
+      1.0509575605392456,
+      0.8614662289619446
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00683",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00683",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00683",
+    "p": [
+      0.13308679162353837,
+      0.2196285375786664,
+      0.1629166973941042,
+      0.24138794428354252,
+      0.24298002912014852
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      0.20485718548297882,
+      0.7057933807373047,
+      0.40709468722343445,
+      0.8002610206604004,
+      0.8068349361419678
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00220",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00220",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00220",
+    "p": [
+      0.14920298310509375,
+      0.22274109057363597,
+      0.21216087901112798,
+      0.2011404573577506,
+      0.2147545899523917
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.39620181918144226,
+      0.7969042062759399,
+      0.7482389211654663,
+      0.6948975324630737,
+      0.760390043258667
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00510",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00510",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00510",
+    "p": [
+      0.1405028125718655,
+      0.19333316673834872,
+      0.25381544610582957,
+      0.19314509918011874,
+      0.2192034754038375
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      0.5161548256874084,
+      0.835342288017273,
+      1.1075347661972046,
+      0.8343690037727356,
+      0.9609277844429016
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00735",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00735",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00735",
+    "p": [
+      0.16823750232942394,
+      0.24024904548379644,
+      0.2059318808933532,
+      0.21782390124130543,
+      0.16775767005212097
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.8531761169433594,
+      1.2094753980636597,
+      1.0553447008132935,
+      1.1114863157272339,
+      0.8503199219703674
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00680",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00680",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00680",
+    "p": [
+      0.1394355553556813,
+      0.24898544701977232,
+      0.12530406936096938,
+      0.24357277919135156,
+      0.24270214907222543
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.46665140986442566,
+      1.0464434623718262,
+      0.3597923517227173,
+      1.024464726448059,
+      1.0208839178085327
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00420",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00420",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00420",
+    "p": [
+      0.11296654071783495,
+      0.28819318532224053,
+      0.16330317544552775,
+      0.17711220021872967,
+      0.25842489829566706
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      0.06497127562761307,
+      1.0015106201171875,
+      0.43348798155784607,
+      0.5146629810333252,
+      0.8924846649169922
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00176",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00176",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00176",
+    "p": [
+      0.15813611919093487,
+      0.19002014964879005,
+      0.20205838090355338,
+      0.2986789136731301,
+      0.1511064365835916
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.32792985439300537,
+      0.511603832244873,
+      0.5730303525924683,
+      0.9638428688049316,
+      0.28245821595191956
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00498",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00498",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00498",
+    "p": [
+      0.3242962706729214,
+      0.1567184799420607,
+      0.3431892744181942,
+      0.17579597496682367
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.4050382375717163,
+      0.6778317093849182,
+      1.461662769317627,
+      0.7927047610282898
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00286",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00286",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00286",
+    "p": [
+      0.1951386448823598,
+      0.2804114091641551,
+      0.1862636319556017,
+      0.33818631399788346
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      0.6510883569717407,
+      1.0136359930038452,
+      0.6045412421226501,
+      1.2009750604629517
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00635",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00635",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00635",
+    "p": [
+      0.172181419781681,
+      0.32755808558055377,
+      0.26947553741296215,
+      0.2307849572248031
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      0.4247020184993744,
+      1.0678187608718872,
+      0.8726310133934021,
+      0.7176397442817688
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00710",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00710",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00710",
+    "p": [
+      0.15820752320002798,
+      0.2869654340589856,
+      0.2052099139274644,
+      0.34961712881352197
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      0.38222599029541016,
+      0.9776801466941833,
+      0.6423518061637878,
+      1.175157070159912
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00798",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00798",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00798",
+    "p": [
+      0.2772763793443015,
+      0.35241894509280974,
+      0.1789684375659423,
+      0.1913362379969465
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.3046417236328125,
+      1.544447660446167,
+      0.866836428642273,
+      0.9336592555046082
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00510",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00510",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00510",
+    "p": [
+      0.33404174695940125,
+      0.27195349538291613,
+      0.2944170258523302,
+      0.09958773180535235
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.4500749111175537,
+      1.244439959526062,
+      1.3238061666488647,
+      0.23984789848327637
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00734",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00734",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00734",
+    "p": [
+      0.30199071314944753,
+      0.17335407177576315,
+      0.23695250992547706,
+      0.28770270514931223
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.0886340141296387,
+      0.5335739850997925,
+      0.8460975289344788,
+      1.0401655435562134
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00823",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00823",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00823",
+    "p": [
+      0.0981263211603231,
+      0.33167918760413445,
+      0.27618845169019746,
+      0.294006039545345
+    ],
+    "raw_probability_sum": 0.9999999329447746,
+    "zero_count": 0,
+    "logits": [
+      0.269529789686203,
+      1.4874423742294312,
+      1.304357647895813,
+      1.3668744564056396
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00388",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00388",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00388",
+    "p": [
+      0.22476372122764587,
+      0.20955634117126465,
+      0.2741736173629761,
+      0.2915063202381134
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.7691366076469421,
+      0.6990794539451599,
+      0.9678484201431274,
+      1.0291485786437988
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00246",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00246",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00246",
+    "p": [
+      0.1832149542921057,
+      0.2715298710079549,
+      0.22716463086763183,
+      0.31809054383230756
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      0.9783434867858887,
+      1.371755599975586,
+      1.1933584213256836,
+      1.5300195217132568
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00188",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00188",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00188",
+    "p": [
+      0.30479395843735274,
+      0.2090146423729456,
+      0.15785286065716833,
+      0.3283385385325333
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.2079803943634033,
+      0.8307487964630127,
+      0.5500078201293945,
+      1.2823896408081055
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00289",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00289",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00289",
+    "p": [
+      0.160368527163013,
+      0.21241649352262934,
+      0.2796934461684988,
+      0.3475215331458589
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      0.40410473942756653,
+      0.6851790547370911,
+      0.9603243470191956,
+      1.1774568557739258
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00447",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00447",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00447",
+    "p": [
+      0.3169570087252933,
+      0.30270833904699757,
+      0.2824444279985289,
+      0.09789022422918023
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      1.4247535467147827,
+      1.378757119178772,
+      1.309469223022461,
+      0.24983404576778412
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00719",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00719",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00719",
+    "p": [
+      0.11493403618639246,
+      0.21436663158870958,
+      0.058198795550222344,
+      0.6125005366746756
+    ],
+    "raw_probability_sum": 0.9999999217689037,
+    "zero_count": 0,
+    "logits": [
+      0.8514095544815063,
+      1.4747388362884521,
+      0.1709159016609192,
+      2.5246009826660156
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00478",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00478",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00478",
+    "p": [
+      0.28279336022764323,
+      0.3974694133936131,
+      0.14423319052607458,
+      0.17550403585266908
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.4000378847122192,
+      1.7404394149780273,
+      0.7267526984214783,
+      0.9229835271835327
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00350",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00350",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00350",
+    "p": [
+      0.1495190449417349,
+      0.3394235119653112,
+      0.33219218759296926,
+      0.17886525549998467
+    ],
+    "raw_probability_sum": 1.000000074505806,
+    "zero_count": 0,
+    "logits": [
+      0.5564984083175659,
+      1.3763232231140137,
+      1.3547883033752441,
+      0.7357074022293091
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00268",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00268",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00268",
+    "p": [
+      0.2673656702197865,
+      0.34445387894929674,
+      0.27629954240395593,
+      0.11188090842696075
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.251381516456604,
+      1.5047245025634766,
+      1.2842497825622559,
+      0.38019928336143494
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00101",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00101",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00101",
+    "p": [
+      0.3292300725670909,
+      0.1597726953012697,
+      0.4337517055403568,
+      0.07724552659128253
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.4998060464859009,
+      0.776801347732544,
+      1.7755215167999268,
+      0.050038184970617294
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00721",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00721",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00721",
+    "p": [
+      0.3553469830058065,
+      0.15010471865690825,
+      0.27145246075767965,
+      0.22309583757960555
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.5197988748550415,
+      0.6580372452735901,
+      1.2504911422729492,
+      1.0543055534362793
+    ],
+    "inference_temperature": 2.406050072164233
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00881",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00881",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00881",
+    "p": [
+      0.404991193283054,
+      0.3962326778698493,
+      0.056933803530053166,
+      0.14184232531704355
+    ],
+    "raw_probability_sum": 0.9999999664723873,
+    "zero_count": 0,
+    "logits": [
+      1.74215829372406,
+      1.7202945947647095,
+      -0.21981780230998993,
+      0.6930089592933655
+    ],
+    "inference_temperature": 2.406050072164233
+  }
+]

@@ -1,0 +1,16 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 181/320 [00:00<00:00, 1804.88it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1939.31it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/280
+evaluated 100/280
+evaluated 150/280
+evaluated 200/280
+evaluated 250/280
+{"clean": {"n": 280, "nll": 0.9966728441545604, "acc": 0.5214285714285715, "ece": 0.05986427612809828, "brier": 0.5938599807536155, "mean_conf": 0.482931943719175, "confident_error_rate": 0.0, "coverage_at_0_9": 0.0, "accuracy_at_0_9": null, "coverage_at_5pct_error": 0.02857142857142857, "coverage_at_1pct_error": 0.02857142857142857, "aurc": 0.3668286484513467, "error_rate_at_0_9": null, "confidence_bias": -0.038496627709396436, "top_bins": {"0.9": {"n": 0, "errors": 0, "error_rate": null}, "0.95": {"n": 0, "errors": 0, "error_rate": null}, "0.99": {"n": 0, "errors": 0, "error_rate": null}}, "selective": {"0.5": {"coverage": 0.5, "accuracy": 0.6357142857142857, "confidence_cutoff": 0.45623433170956884}, "0.8": {"coverage": 0.8, "accuracy": 0.5714285714285714, "confidence_cutoff": 0.3968551993838668}}}, "coverage": {"requested_records": 280, "requested_questions": 280, "evaluated_records": 280, "evaluated_questions": 280, "rejected_records": 0, "truncated_records": 0}}
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  44%|████▍     | 142/320 [00:00<00:00, 1371.87it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1724.66it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/280
+evaluated 100/280
+evaluated 150/280
+evaluated 200/280
+evaluated 250/280
+{"clean": {"n": 280, "nll": 0.779917034839402, "acc": 0.725, "ece": 0.055427360796195105, "brier": 0.4005466524650315, "mean_conf": 0.7190322243214257, "confident_error_rate": 0.02142857142857143, "coverage_at_0_9": 0.24285714285714285, "accuracy_at_0_9": 0.9117647058823529, "coverage_at_5pct_error": 0.08928571428571429, "coverage_at_1pct_error": 0.05714285714285714, "aurc": 0.1326025060216608, "error_rate_at_0_9": 0.08823529411764706, "confidence_bias": -0.005967775678574316, "top_bins": {"0.9": {"n": 68, "errors": 6, "error_rate": 0.08823529411764706}, "0.95": {"n": 43, "errors": 5, "error_rate": 0.11627906976744186}, "0.99": {"n": 27, "errors": 3, "error_rate": 0.1111111111111111}}, "selective": {"0.5": {"coverage": 0.5, "accuracy": 0.8928571428571429, "confidence_cutoff": 0.7172540915421531}, "0.8": {"coverage": 0.8, "accuracy": 0.7991071428571429, "confidence_cutoff": 0.5139263868331909}}}, "coverage": {"requested_records": 280, "requested_questions": 280, "evaluated_records": 280, "evaluated_questions": 280, "rejected_records": 0, "truncated_records": 0}}

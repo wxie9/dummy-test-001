@@ -1,0 +1,16 @@
+{
+  "status": "prepared_inference_only",
+  "parent_contexts": 30,
+  "probe_presentations": 120,
+  "questions": 600,
+  "sha256": "4dd9d81941ce8c4beb85570cce485c0f339da1b2f55eca863b77914fa77950ef",
+  "conditions": [
+    "original",
+    "without_warning",
+    "prose",
+    "prose_without_warning"
+  ],
+  "warning_present_parent_contexts": 12,
+  "scope": "Synthetic development cases already used for diagnosis. Uniform framing interventions, unchanged rules, facts, questions, labels and options. No per-item best wording selection. Removing the warning changes no factual information. Prose is invertible to the original fact strings; this does not prove broad semantic robustness.",
+  "required_control": "Original condition predictions must match the full five-question native v6 development evaluations exactly before interpretation."
+}

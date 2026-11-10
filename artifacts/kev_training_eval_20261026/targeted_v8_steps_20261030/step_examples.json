@@ -1,0 +1,1511 @@
+[
+  {
+    "_meta": {
+      "facts": {
+        "possible_outcomes": [
+          "Grant the employment benefit"
+        ],
+        "scenario": "tenure",
+        "variant": "yes"
+      },
+      "family": "insufficient",
+      "group_id": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/yes/4",
+      "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/yes/4",
+      "review_zh": "遍历可行的缺失字段补全；只有所有补全结论相同才可确定动作。",
+      "source": "targeted-v7-20261030/insufficient",
+      "split": "train",
+      "subtype": "tenure__yes",
+      "text_sha256": "e8eb1f27a6486b97981c5a1c2df990f2d04f2ce054e28e2ad8858c3534213cd6",
+      "v7_parent_id": "insufficient-transfer-20261030/train/tenure/yes/4",
+      "step_supervision": "insufficient/latest_anniversary"
+    },
+    "questions": {
+      "decision": {
+        "criteria": {
+          "a": "The stated facts permit different decisions; more information is needed.",
+          "b": "Decline the employment benefit",
+          "c": "Grant the employment benefit"
+        },
+        "instructions": "Which action follows from the rule and all stated facts?",
+        "label": "c",
+        "src": "targeted-v7-20261030/insufficient",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "Using the latest company hire date consistent with the stated facts, on what date does the required employment anniversary occur?",
+        "criteria": {
+          "a": "2030-07-19",
+          "b": "2030-08-19",
+          "c": "2030-06-19",
+          "d": "2030-07-18",
+          "e": "2030-07-20"
+        },
+        "label": "a",
+        "target": {
+          "a": 1.0
+        },
+        "src": "targeted-v8-steps/insufficient"
+      }
+    },
+    "state": "[1] CASE TYPE: tenure\n[2] GOVERNING RULE\n[3] The benefit is granted after 1 complete calendar year of continuous company employment. Eligibility starts on the corresponding hire-date anniversary. A team move does not restart employment; the company hire date is on or before the team move. Employment has been continuous.\n[4] AVAILABLE FACTS\n[5] The team move took place on December 18, 2030.\n[6] The benefit application date is February 18, 2031.\n[7] The company employment began on July 19, 2029."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "counts": [
+          [
+            1950000,
+            1750000
+          ],
+          [
+            3330000,
+            2900000
+          ]
+        ],
+        "layout": "object",
+        "row_labels": [
+          "Morning shift",
+          "Evening shift"
+        ],
+        "scale": 10000,
+        "status_labels": [
+          "late",
+          "on time"
+        ],
+        "target_row": "Morning shift",
+        "target_row_position": 0,
+        "target_status": "on time",
+        "target_status_position": 1
+      },
+      "family": "probability",
+      "group_id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/74",
+      "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/74",
+      "review_zh": "Condition on the named set; row and column totals differ.",
+      "source": "targeted-v7-20261030/probability",
+      "split": "train",
+      "subtype": "table",
+      "text_sha256": "9e0cdab174d2309f9b853273cd26a61a8e7aa747d39717418fe5562044a55896",
+      "v7_parent_id": "probability-transfer-candidate-20261030/train/table/74",
+      "step_supervision": "probability/conditioning_count"
+    },
+    "questions": {
+      "forward": {
+        "criteria": {
+          "a": "37.63%",
+          "b": "52.70%",
+          "c": "58.30%",
+          "d": "62.37%",
+          "e": "47.30%"
+        },
+        "instructions": "Among records from Morning shift, what percentage have status on time? Round half up to two decimal places.",
+        "label": "e",
+        "src": "targeted-v7-20261030/probability",
+        "type": "choice"
+      },
+      "reverse": {
+        "criteria": {
+          "a": "37.63%",
+          "b": "25.00%",
+          "c": "47.30%",
+          "d": "46.83%",
+          "e": "62.37%"
+        },
+        "instructions": "Among records with status on time, what percentage come from Morning shift? Round half up to two decimal places.",
+        "label": "a",
+        "src": "targeted-v7-20261030/probability",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "For the question conditioned on status on time, how many records are in the conditioning set (the denominator before division)?",
+        "criteria": {
+          "a": "2900000",
+          "b": "1950000",
+          "c": "4650000",
+          "d": "3330000",
+          "e": "1750000"
+        },
+        "label": "c",
+        "target": {
+          "c": 1.0
+        },
+        "src": "targeted-v8-steps/probability"
+      }
+    },
+    "state": {
+      "audit_scope": "This is the complete audit. Each record belongs to exactly one group and one status; no record is counted twice.",
+      "records": [
+        {
+          "counts": [
+            1950000,
+            1750000
+          ],
+          "group": "Morning shift"
+        },
+        {
+          "counts": [
+            3330000,
+            2900000
+          ],
+          "group": "Evening shift"
+        }
+      ],
+      "status_order": [
+        "late",
+        "on time"
+      ]
+    }
+  },
+  {
+    "_meta": {
+      "facts": {
+        "possible_outcomes": [
+          "Reject the return request"
+        ],
+        "scenario": "return",
+        "variant": "no"
+      },
+      "family": "insufficient",
+      "group_id": "targeted-v7-20261030/insufficient-transfer-20261030/train/return/no/1",
+      "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/return/no/1",
+      "review_zh": "遍历可行的缺失字段补全；只有所有补全结论相同才可确定动作。",
+      "source": "targeted-v7-20261030/insufficient",
+      "split": "train",
+      "subtype": "return__no",
+      "text_sha256": "190b44fee04454a8411a8cfcb90d963fdf0bd6b307852ed1367dd3f54ece9546",
+      "v7_parent_id": "insufficient-transfer-20261030/train/return/no/1",
+      "step_supervision": "insufficient/return_range"
+    },
+    "questions": {
+      "decision": {
+        "criteria": {
+          "a": "The stated facts permit different decisions; more information is needed.",
+          "b": "Accept the return request",
+          "c": "Reject the return request"
+        },
+        "instructions": "Which action follows from the rule and all stated facts?",
+        "label": "c",
+        "src": "targeted-v7-20261030/insufficient",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "What is the tightest possible range of elapsed calendar days from delivery to the return request, using all stated date constraints?",
+        "criteria": {
+          "a": "41 to 51 calendar days, inclusive",
+          "b": "0 to 42 calendar days, inclusive",
+          "c": "42 to 42 calendar days, inclusive",
+          "d": "40 to 40 calendar days, inclusive",
+          "e": "41 to 41 calendar days, inclusive"
+        },
+        "label": "e",
+        "target": {
+          "e": 1.0
+        },
+        "src": "targeted-v8-steps/insufficient"
+      }
+    },
+    "state": "[1] CASE TYPE: return\n[2] GOVERNING RULE\n[3] A return is accepted when the elapsed calendar days from delivery to request are at most 28, including the boundary. Delivery occurred between ordering and requesting, inclusive. There are no other eligibility requirements.\n[4] AVAILABLE FACTS\n[5] The order was placed on 2031-10-28.\n[6] The return was requested on 2031-12-14.\n[7] Delivery took place on 2031-11-03."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "false_positive": 5,
+        "mechanism": "bayes",
+        "prevalence": 35,
+        "sensitivity": 95
+      },
+      "family": "probability",
+      "group_id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/bayes/59",
+      "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/bayes/59",
+      "rate_style": "outof",
+      "review_zh": "后验=3325/(3325+325)=91.10%。",
+      "source": "targeted-v7-20261030/probability",
+      "split": "train",
+      "subtype": "bayes",
+      "text_sha256": "2448fc9234d348b962e180875f37ac7b22f40b6d7fbef79aa23bb63ca1558ed6",
+      "v7_parent_id": "probability-transfer-candidate-20261030/train/bayes/59",
+      "step_supervision": "probability/positive_and_flagged"
+    },
+    "questions": {
+      "bucket": {
+        "criteria": [
+          "[0%, 20%)",
+          "[20%, 40%)",
+          "[40%, 60%)",
+          "[60%, 80%)",
+          "[80%, 100%]"
+        ],
+        "instructions": "Select the interval containing the exact posterior probability. [ includes an endpoint, ) excludes it.",
+        "label": 4,
+        "src": "targeted-v7-20261030/probability",
+        "type": "score"
+      },
+      "more_likely": {
+        "instructions": "Given a flag, is being late strictly more likely than not being late?",
+        "label": true,
+        "src": "targeted-v7-20261030/probability",
+        "type": "noul"
+      },
+      "posterior": {
+        "criteria": {
+          "a": "88.20%",
+          "b": "95.00%",
+          "c": "36.50%",
+          "d": "91.10%",
+          "e": "92.80%"
+        },
+        "instructions": "What is the probability that this flagged case is actually late? Give a percentage rounded to two decimal places.",
+        "label": "d",
+        "src": "targeted-v7-20261030/probability",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "What percentage of the entire population both belongs to the positive class and receives a flag? Use the prevalence and the flag rate within that class.",
+        "criteria": {
+          "a": "35.00%",
+          "b": "36.50%",
+          "c": "33.25%",
+          "d": "5.00%",
+          "e": "95.00%"
+        },
+        "label": "c",
+        "target": {
+          "c": 1.0
+        },
+        "src": "targeted-v8-steps/probability"
+      }
+    },
+    "state": "In shipment delay warnings, 7 out of every 20 cases are actually late. Among actually late cases, the system flags 19 out of every 20. Among cases that are not late, it flags 1 out of every 20. Select a case uniformly from those flagged. The rates describe this same population."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "links": [
+          [
+            "Willow",
+            "Lumen"
+          ],
+          [
+            "Nexus",
+            "Ridge"
+          ],
+          [
+            "Cove",
+            "Dune"
+          ],
+          [
+            "Jade",
+            "Willow"
+          ],
+          [
+            "Lumen",
+            "Nexus"
+          ],
+          [
+            "Haven",
+            "Willow"
+          ]
+        ],
+        "path": [
+          "Jade",
+          "Willow",
+          "Lumen",
+          "Nexus",
+          "Ridge"
+        ],
+        "ranks": {
+          "Amber": 0,
+          "Brook": 2,
+          "Cove": 0,
+          "Dune": 2,
+          "Haven": 5,
+          "Jade": 5,
+          "Knoll": 0,
+          "Lumen": 5,
+          "Nexus": 3,
+          "Peak": 0,
+          "Ridge": 4,
+          "Shore": 0,
+          "Willow": 0
+        },
+        "threshold": 4
+      },
+      "family": "multihop",
+      "group_id": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/16",
+      "id": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/16",
+      "presentation": "object",
+      "review_zh": "根据可见边和条件逐跳求解；不依赖同名节点的位置。",
+      "source": "targeted-v7-20261030/multihop",
+      "split": "train",
+      "subtype": "rank_escalation",
+      "text_sha256": "dc8ffe84153763720b879a8821445f634a0e2e2dc07eefe953da43323c884a4a",
+      "v7_parent_id": "multihop-transfer-20261030/train/rank_escalation/16",
+      "step_supervision": "multihop/first_supervisor"
+    },
+    "questions": {
+      "decision": {
+        "criteria": {
+          "a": "Willow",
+          "b": "Nexus",
+          "c": "Ridge",
+          "d": "Lumen",
+          "e": "Dune",
+          "f": "Cove"
+        },
+        "instructions": "Who must approve this request?",
+        "label": "d",
+        "src": "targeted-v7-20261030/multihop",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "Who is the immediate supervisor of Jade, before following any further supervisor links or applying rank requirements?",
+        "criteria": {
+          "a": "Haven",
+          "b": "Jade",
+          "c": "Lumen",
+          "d": "Nexus",
+          "e": "Willow"
+        },
+        "label": "e",
+        "target": {
+          "e": 1.0
+        },
+        "src": "targeted-v8-steps/multihop"
+      }
+    },
+    "state": {
+      "document": "Operational case record",
+      "entries": [
+        "AUTHORIZATION DIRECTORY",
+        "Ranks in increasing authority: Junior Associate, Senior Specialist, Team Leader, Department Principal, Division Head, Chief Executive. A request is routed from its origin upward to the first supervisor with rank Division Head or higher; the origin cannot approve its own request.",
+        "Lumen holds rank Chief Executive.",
+        "Haven has supervisor Willow.",
+        "Jade has supervisor Willow.",
+        "Jade holds rank Chief Executive.",
+        "Haven holds rank Chief Executive.",
+        "Willow holds rank Junior Associate.",
+        "Amber holds rank Junior Associate.",
+        "Cove holds rank Junior Associate.",
+        "Knoll holds rank Junior Associate.",
+        "Nexus holds rank Department Principal.",
+        "Lumen has supervisor Nexus.",
+        "Nexus has supervisor Ridge.",
+        "Brook holds rank Team Leader.",
+        "Shore holds rank Junior Associate.",
+        "Peak holds rank Junior Associate.",
+        "Ridge holds rank Division Head.",
+        "Cove has supervisor Dune.",
+        "Dune holds rank Team Leader.",
+        "Willow has supervisor Lumen.",
+        "Request origin: Jade."
+      ]
+    }
+  },
+  {
+    "_meta": {
+      "facts": {
+        "op": "AND",
+        "p": "3/4",
+        "q": "1/5",
+        "second": "7/50"
+      },
+      "family": "probability",
+      "group_id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/6",
+      "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/6",
+      "rate_style": "fraction",
+      "review_zh": "X=15.00%; Y=14.00%。",
+      "source": "targeted-v7-20261030/probability",
+      "split": "train",
+      "subtype": "compare",
+      "text_sha256": "1bd34bd1a047b4b15d66467257945f8d98a706ef1b87c2279f96b3f72ffe9cbd",
+      "v7_parent_id": "probability-transfer-candidate-20261030/train/compare/6",
+      "step_supervision": "probability/marginal_x"
+    },
+    "questions": {
+      "decision": {
+        "criteria": {
+          "a": "They have equal probabilities",
+          "b": "X is more likely",
+          "c": "Y is more likely"
+        },
+        "instructions": "Which statement is correct?",
+        "label": "b",
+        "src": "targeted-v7-20261030/probability",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "Compute the marginal probability of event X before comparing it with Y.",
+        "criteria": {
+          "a": "75.00%",
+          "b": "15.00%",
+          "c": "85.00%",
+          "d": "20.00%",
+          "e": "0.00%"
+        },
+        "label": "b",
+        "target": {
+          "b": 1.0
+        },
+        "src": "targeted-v8-steps/probability"
+      }
+    },
+    "state": {
+      "details": "A and B are independent, with probabilities 3/4 and 1/5. Event X means both A and B happen. Event Y has probability 7/50. Compare marginal probabilities only; dependence between X and Y is irrelevant.",
+      "topic": "Decision from the stated audit figures"
+    }
+  },
+  {
+    "_meta": {
+      "facts": {
+        "exact_probability": "29453/500000",
+        "probabilities": [
+          99,
+          98,
+          97
+        ],
+        "stratum": 0
+      },
+      "family": "probability",
+      "group_id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/18",
+      "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/18",
+      "rate_style": "fraction",
+      "review_zh": "独立事件按乘积及补集计算；概率区间按精确分数确定。",
+      "source": "targeted-v7-20261030/probability",
+      "split": "train",
+      "subtype": "any_fail",
+      "text_sha256": "e37ae35ccca2bff1565b36ab37e5d499beb18cc0dc7c206d82419587d2c00cb9",
+      "v7_parent_id": "probability-transfer-candidate-20261030/train/any_fail/18",
+      "step_supervision": "probability/two_succeed"
+    },
+    "questions": {
+      "bucket": {
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "instructions": "What is the probability at least one component fails? Select the interval containing the exact probability; [ includes a boundary and ) excludes it.",
+        "label": 0,
+        "src": "targeted-v7-20261030/probability",
+        "type": "score"
+      },
+      "probability": {
+        "criteria": {
+          "a": "100.00%",
+          "b": "97.00%",
+          "c": "5.89%",
+          "d": "94.11%",
+          "e": "98.00%"
+        },
+        "instructions": "What is the probability at least one component fails? Round to two decimal places.",
+        "label": "c",
+        "src": "targeted-v7-20261030/probability",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "Considering only the first two listed components, what is the probability that both succeed?",
+        "criteria": {
+          "a": "2.98%",
+          "b": "97.02%",
+          "c": "99.00%",
+          "d": "98.50%",
+          "e": "98.00%"
+        },
+        "label": "b",
+        "target": {
+          "b": 1.0
+        },
+        "src": "targeted-v8-steps/probability"
+      }
+    },
+    "state": "The following inspection stations have mutually independent success events. Their success rates are 99/100, 49/50, 97/100. These are all the components in the system."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "cover_count": 7,
+        "deduct_before_cap": true,
+        "domain": "device",
+        "expected_payment": 0,
+        "flag_exception": true,
+        "flag_trigger": true,
+        "named_item_claim": false,
+        "selected_code": "C4",
+        "target": "late",
+        "threshold_exception": true,
+        "threshold_trigger": true
+      },
+      "family": "policy",
+      "group_id": "targeted-v7-20261030/policy-transfer-20261030/train/late/23",
+      "id": "targeted-v7-20261030/policy-transfer-20261030/train/late/23",
+      "review_zh": "按事件定位保障，检查排除与各自例外，再按规定次序扣免赔并应用限额。",
+      "source": "targeted-v7-20261030/policy",
+      "split": "train",
+      "subtype": "late",
+      "text_sha256": "f97d2d7ec05615303d372f5cc80655ed991c6e7baa73c9aaab5b51bbff74099b",
+      "v7_parent_id": "policy-transfer-20261030/train/late/23",
+      "step_supervision": "policy/applicable_ceiling"
+    },
+    "questions": {
+      "amount": {
+        "criteria": {
+          "a": "$480.00",
+          "b": "$0.00",
+          "c": "$2709.00",
+          "d": "$2570.00",
+          "e": "$2679.00"
+        },
+        "instructions": "What dollar amount is payable for this claim?",
+        "label": "b",
+        "src": "targeted-v7-20261030/policy",
+        "type": "choice"
+      },
+      "reason": {
+        "criteria": {
+          "a": "Pay under C4 with its named-item sublimit binding; apply the single deductible in the stated order.",
+          "b": "Pay under C4 with its benefit ceiling binding; apply the single deductible in the stated order.",
+          "c": "Decline because cover C4 was not purchased.",
+          "d": "Decline because notice for C4 arrived after its permitted interval.",
+          "e": "Decline under the device age in months exclusion for C4; its exception does not apply."
+        },
+        "instructions": "Which settlement outcome follows from this policy?",
+        "label": "d",
+        "src": "targeted-v7-20261030/policy",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "For the stated claim item, what is the applicable ceiling (the smaller relevant benefit limit or named-item sublimit), before applying any deductible or eligibility decision?",
+        "criteria": {
+          "a": "$2709.00",
+          "b": "$480.00",
+          "c": "$2600.00",
+          "d": "$30.00",
+          "e": "$0.00"
+        },
+        "label": "c",
+        "target": {
+          "c": 1.0
+        },
+        "src": "targeted-v8-steps/policy"
+      }
+    },
+    "state": "POLICY DOMAIN: device\n\n[Cover C3] drone impact\nThis cover responds only to drone impact. Its whole-item category is camera drone. Its named-item category is navigation module; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $1200.00. One deductible: $90.00. Named-item sublimit: $360.00. The sublimit applies only to navigation module; all other items in this cover use only the benefit ceiling. Waiting interval: 20 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 28 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 18. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Common exclusions and order]\nAn intentionally caused loss is excluded and has no exception. If more than one denial applies, use this priority: not purchased; waiting interval; late notice; threshold exclusion; flag exclusion; intentional loss. If no denial applies, settle the amount using the calculation section. All rules governing this fictional claim are stated here; no outside customary exclusions or unstated document requirements apply.\n\n[Cover C2] accidental impact\nThis cover responds only to accidental impact. Its whole-item category is notebook computer. Its named-item category is display panel; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $1200.00. One deductible: $90.00. Named-item sublimit: $480.00. The sublimit applies only to display panel; all other items in this cover use only the benefit ceiling. Waiting interval: 15 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 28 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 18. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Allocation of the claim]\nOnly the single event and item named in the claim file are being claimed. Other covers remain in the booklet so the reader can distinguish similar but inapplicable benefits. Their purchase status, waiting intervals, exclusions and limits do not alter this claim. A reference to a part in another section does not reclassify the item in this file. The claimed amount contains no unrelated fees, future losses or duplicate invoices. There is no currency conversion and all amounts are US dollars.\n\n[Cover C5] router failure\nThis cover responds only to router failure. Its whole-item category is network router. Its named-item category is antenna assembly; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $2600.00. One deductible: $60.00. Named-item sublimit: $480.00. The sublimit applies only to antenna assembly; all other items in this cover use only the benefit ceiling. Waiting interval: 20 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 7 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 42. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Dates and evidence]\nElapsed days are calendar date differences, with the start date counted as zero. Weekends are included. Use incident minus inception for the waiting interval and report minus incident for notice. A repair appointment or an earlier estimate is not the report date. The claim facts below are accepted findings, not allegations requiring further proof. A listed accepted exception is valid for this incident and the specified cover. A not-accepted exception supplies no waiver.\n\n[Settlement calculation]\nSubtract one deductible from approved loss, flooring at zero, then cap the remainder by the applicable ceilings. The applicable ceiling is the lesser of the benefit ceiling and any named-item sublimit. For whole-item claims there is no named-item ceiling. A ceiling binds only when it is strictly below the amount entering the cap operation; equality is not a binding ceiling. When no ceiling binds, use the loss-based settlement description. If both ceilings are present, the smaller ceiling supplies the settlement description. Pay once per incident; there is no stacking or extra deductible from another cover.\n\n[Purchase schedule]\nInception date: 2030-03-09.\nC1 purchase status: included.\nC2 purchase status: included.\nC3 purchase status: included.\nC4 purchase status: included.\nC5 purchase status: included.\nC6 purchase status: not included.\nC7 purchase status: included.\nA description of a cover is not proof it was purchased. Only the status above establishes inclusion. The policy remains in force on the incident date. Limits have not been reduced by earlier claims and no aggregate exhaustion applies.\n\n[Cover C6] camera malfunction\nThis cover responds only to camera malfunction. Its whole-item category is digital camera. Its named-item category is lens assembly; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $6500.00. One deductible: $90.00. Named-item sublimit: $240.00. The sublimit applies only to lens assembly; all other items in this cover use only the benefit ceiling. Waiting interval: 5 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 7 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 30. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Cover C1] console failure\nThis cover responds only to console failure. Its whole-item category is game console. Its named-item category is controller; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $800.00. One deductible: $30.00. Named-item sublimit: $480.00. The sublimit applies only to controller; all other items in this cover use only the benefit ceiling. Waiting interval: 10 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 28 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 18. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Cover C7] audio breakdown\nThis cover responds only to audio breakdown. Its whole-item category is audio system. Its named-item category is amplifier; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $6500.00. One deductible: $150.00. Named-item sublimit: $480.00. The sublimit applies only to amplifier; all other items in this cover use only the benefit ceiling. Waiting interval: 10 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 28 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 18. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Cover C4] electrical failure\nThis cover responds only to electrical failure. Its whole-item category is desktop computer. Its named-item category is power supply; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $2600.00. One deductible: $30.00. Named-item sublimit: $480.00. The sublimit applies only to power supply; all other items in this cover use only the benefit ceiling. Waiting interval: 10 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 21 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 42. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Claim facts]\nEvent: electrical failure. Claimed item: desktop computer. Approved loss: $2709.00. Incident date: 2030-03-25. Report date: 2030-04-16.\nMeasured device age in months: 46. extended-service endorsement: accepted.\nunapproved repair facility: present. written alternate-facility authorization: accepted.\nIntentional loss: no. All exception statuses in this file refer to C4."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "possible_outcomes": [
+          "Decline warranty coverage",
+          "Repair under the warranty"
+        ],
+        "scenario": "warranty",
+        "variant": "unknown"
+      },
+      "family": "insufficient",
+      "group_id": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/7",
+      "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/7",
+      "review_zh": "遍历可行的缺失字段补全；只有所有补全结论相同才可确定动作。",
+      "source": "targeted-v7-20261030/insufficient",
+      "split": "train",
+      "subtype": "warranty__unknown",
+      "text_sha256": "97061d671562033c50a3e5189bd02714d397e8cf03c2f3a05b212c29789a2f0d",
+      "v7_parent_id": "insufficient-transfer-20261030/train/warranty/unknown/7",
+      "step_supervision": "insufficient/warranty_expiry"
+    },
+    "questions": {
+      "decision": {
+        "criteria": {
+          "a": "The stated facts permit different decisions; more information is needed.",
+          "b": "Repair under the warranty",
+          "c": "Decline warranty coverage"
+        },
+        "instructions": "Which action follows from the rule and all stated facts?",
+        "label": "a",
+        "src": "targeted-v7-20261030/insufficient",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "On what date does the warranty expire under the calendar-month rule, independently of the cause of the damage?",
+        "criteria": {
+          "a": "2032-02-18",
+          "b": "2032-02-19",
+          "c": "2032-02-17",
+          "d": "2032-01-18",
+          "e": "2032-03-18"
+        },
+        "label": "a",
+        "target": {
+          "a": 1.0
+        },
+        "src": "targeted-v8-steps/insufficient"
+      }
+    },
+    "state": "[1] CASE TYPE: warranty\n[2] GOVERNING RULE\n[3] The warranty lasts 12 calendar months from purchase and ends at the beginning of the corresponding monthly anniversary. Before that expiry, only production defects qualify. Accidental damage is excluded. These are the only two possible causes; after expiry neither qualifies.\n[4] AVAILABLE FACTS\n[5] The purchase date is 2031-02-18.\n[6] The claim date is 2031-05-18.\n[7] The failure cause has not been determined."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "economic_owner": "Kestrel",
+        "shape": "chain",
+        "stakes": {
+          "Ember": {
+            "Kestrel": 60
+          },
+          "Garnet": {
+            "Ember": 51,
+            "Mallow": 49
+          }
+        },
+        "target": "Garnet"
+      },
+      "family": "multihop",
+      "group_id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/62",
+      "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/62",
+      "presentation": "object",
+      "review_zh": "控制权闭包结果Kestrel；经济收益比例30.60%。",
+      "source": "targeted-v7-20261030/multihop",
+      "split": "train",
+      "subtype": "ownership_control_and_profit",
+      "text_sha256": "ddaac3da86d7de73aa6057cbf09d4f5638fc9920d8848cfd4c60a16d44ea7dd9",
+      "v7_parent_id": "multihop-transfer-20261030/train/ownership_control_and_profit/62",
+      "step_supervision": "multihop/direct_majority"
+    },
+    "questions": {
+      "controller": {
+        "criteria": {
+          "a": "Delta",
+          "b": "Ember",
+          "c": "Mallow",
+          "d": "Kestrel",
+          "e": "No ultimate controller"
+        },
+        "instructions": "Who is the ultimate controller of Garnet?",
+        "label": "d",
+        "src": "targeted-v7-20261030/multihop",
+        "type": "choice"
+      },
+      "interest": {
+        "criteria": {
+          "a": "30.60%",
+          "b": "50.00%",
+          "c": "100.00%",
+          "d": "35.60%",
+          "e": "0.00%",
+          "f": "69.40%"
+        },
+        "instructions": "What is Kestrel's economic interest in Garnet? Round to two decimal places.",
+        "label": "a",
+        "src": "targeted-v7-20261030/multihop",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "Considering ONLY the directly stated voting stake, does Kestrel own strictly more than half of Ember? Ignore all indirect stakes for this question.",
+        "criteria": {
+          "a": "No",
+          "b": "Yes"
+        },
+        "label": "b",
+        "target": {
+          "b": 1.0
+        },
+        "src": "targeted-v8-steps/multihop"
+      }
+    },
+    "state": {
+      "document": "Operational case record",
+      "entries": [
+        "CORPORATE HOLDINGS REGISTER",
+        "Control and profit share are different. An entity controls an issuer when its own voting shares plus voting shares held by issuers it already controls exceed 50%. Exactly 50% is insufficient. Repeat this rule until no new controlled issuers are found. The ultimate controller is a controller that is not itself controlled by another controller of the target. Profit share instead adds the products of share percentages along all ownership paths. No external agreements confer control. Unlisted shares are dispersed among unrelated investors, each holding less than 5%; they do not act together. Unlisted ownership links do not exist.",
+        "Kestrel owns 60.00% of Ember.",
+        "Mallow owns 49.00% of Garnet.",
+        "Ember owns 51.00% of Garnet."
+      ]
+    }
+  },
+  {
+    "_meta": {
+      "facts": {
+        "candidates": [
+          "Coral",
+          "Zenith",
+          "Topaz"
+        ],
+        "chain_hops": 1,
+        "edges": [
+          [
+            "Alder",
+            "Coral",
+            true
+          ],
+          [
+            "Topaz",
+            "Kestrel",
+            true
+          ],
+          [
+            "Umber",
+            "Fjord",
+            true
+          ],
+          [
+            "Fjord",
+            "Indigo",
+            true
+          ],
+          [
+            "Zenith",
+            "Fjord",
+            true
+          ],
+          [
+            "Coral",
+            "Fjord",
+            false
+          ]
+        ],
+        "initial": "Fjord"
+      },
+      "family": "multihop",
+      "group_id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/40",
+      "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/40",
+      "presentation": "numbered",
+      "review_zh": "从失败的先决条件沿消费者方向传播，软边阻断。",
+      "source": "targeted-v7-20261030/multihop",
+      "split": "train",
+      "subtype": "dependency_candidates",
+      "text_sha256": "d45fab956c56b9fcf72fc28765cb90810008f4fc7c4a42d46a8b8f23c755006d",
+      "v7_parent_id": "multihop-transfer-20261030/train/dependency_candidates/40",
+      "step_supervision": "multihop/first_failure_round"
+    },
+    "questions": {
+      "decision": {
+        "criteria": {
+          "a": "Coral",
+          "b": "None of the listed candidates",
+          "c": "Topaz",
+          "d": "Zenith"
+        },
+        "instructions": "After propagation, which listed candidate has failed?",
+        "label": "d",
+        "src": "targeted-v7-20261030/multihop",
+        "target": {
+          "d": 1.0
+        },
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "Immediately after ONE propagation round, which set of additional units fails because its hard prerequisite was initially down? Exclude the initially failed unit and do not propagate a second time.",
+        "criteria": {
+          "a": "Coral, Umber, Zenith",
+          "b": "Fjord",
+          "c": "Umber, Zenith",
+          "d": "Indigo",
+          "e": "No additional unit"
+        },
+        "label": "c",
+        "target": {
+          "c": 1.0
+        },
+        "src": "targeted-v8-steps/multihop"
+      }
+    },
+    "state": "[1] FAILURE RULE\n[2] A failed hard prerequisite disables its consumer. Apply this rule repeatedly until no further units fail. Soft links never propagate failure. Failure never propagates from a consumer to its prerequisite. All dependencies are listed.\n[3] Coral is a hard prerequisite for Alder.\n[4] Dependency: consumer=Topaz; prerequisite=Kestrel; kind=hard.\n[5] Umber requires Fjord through a hard dependency.\n[6] Indigo is a hard prerequisite for Fjord.\n[7] Dependency: consumer=Zenith; prerequisite=Fjord; kind=hard.\n[8] Coral requires Fjord through a soft dependency.\n[9] Initial failed unit: Fjord. All other units initially function."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "possible_outcomes": [
+          "Authorize the payment"
+        ],
+        "scenario": "approval",
+        "variant": "yes"
+      },
+      "family": "insufficient",
+      "group_id": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/yes/1",
+      "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/yes/1",
+      "review_zh": "遍历可行的缺失字段补全；只有所有补全结论相同才可确定动作。",
+      "source": "targeted-v7-20261030/insufficient",
+      "split": "train",
+      "subtype": "approval__yes",
+      "text_sha256": "8684de530bea79ef3eba372bd8ff89bee1a3911d795120bffd0503abd6dec883",
+      "v7_parent_id": "insufficient-transfer-20261030/train/approval/yes/1",
+      "step_supervision": "insufficient/required_rank"
+    },
+    "questions": {
+      "decision": {
+        "criteria": {
+          "a": "The stated facts permit different decisions; more information is needed.",
+          "b": "Obtain a qualifying approval before payment",
+          "c": "Authorize the payment"
+        },
+        "instructions": "Which action follows from the rule and all stated facts?",
+        "label": "c",
+        "src": "targeted-v7-20261030/insufficient",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "For the payment amount alone, what minimum approval is required? This asks the requirement, not whether the actual signatory meets it.",
+        "criteria": {
+          "a": "No approval is required",
+          "b": "Specialist",
+          "c": "Department Director",
+          "d": "Assistant",
+          "e": "Team Manager"
+        },
+        "label": "c",
+        "target": {
+          "c": 1.0
+        },
+        "src": "targeted-v8-steps/insufficient"
+      }
+    },
+    "state": "[1] CASE TYPE: approval\n[2] GOVERNING RULE\n[3] Amounts below $400 need no approval. For amounts from $400 through $18000, approval must come from a Team Manager or higher. Above $18000, approval must come from a Department Director or higher. Rank order from lowest to highest: Assistant, Specialist, Team Manager, Senior Manager, Department Director, Executive Director. Only the actual signatory supplies approval; a reviewer or copied colleague does not.\n[4] AVAILABLE FACTS\n[5] The copied colleague is an Executive Director.\n[6] The actual signatory holds the rank Executive Director.\n[7] The requested payment is $26442.\n[8] The actual signatory is Tomas."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "cover_count": 4,
+        "deduct_before_cap": true,
+        "domain": "travel",
+        "expected_payment": 600,
+        "flag_exception": false,
+        "flag_trigger": false,
+        "named_item_claim": true,
+        "selected_code": "C4",
+        "target": "pay_sublimit",
+        "threshold_exception": true,
+        "threshold_trigger": true
+      },
+      "family": "policy",
+      "group_id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/36",
+      "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/36",
+      "review_zh": "按事件定位保障，检查排除与各自例外，再按规定次序扣免赔并应用限额。",
+      "source": "targeted-v7-20261030/policy",
+      "split": "train",
+      "subtype": "pay_sublimit",
+      "text_sha256": "5f26e8c57e7765259944f7d3103f1a3f9880f4adbaf1222ba382ea62072a0435",
+      "v7_parent_id": "policy-transfer-20261030/train/pay_sublimit/36",
+      "step_supervision": "policy/first_operation"
+    },
+    "questions": {
+      "amount": {
+        "criteria": {
+          "a": "$690.00",
+          "b": "$600.00",
+          "c": "$0.00",
+          "d": "$1097.00",
+          "e": "$2600.00"
+        },
+        "instructions": "What dollar amount is payable for this claim?",
+        "label": "b",
+        "src": "targeted-v7-20261030/policy",
+        "type": "choice"
+      },
+      "reason": {
+        "criteria": {
+          "a": "Decline because the incident precedes the end of the waiting period for C4.",
+          "b": "Pay the covered loss under C4, with one deductible; no ceiling reduces the amount entering the cap calculation.",
+          "c": "Decline under the trip length in days exclusion for C4; its exception does not apply.",
+          "d": "Pay under C4 with its named-item sublimit binding; apply the single deductible in the stated order.",
+          "e": "Decline under the prohibited activity exclusion for C4; its exception does not apply."
+        },
+        "instructions": "Which settlement outcome follows from this policy?",
+        "label": "d",
+        "src": "targeted-v7-20261030/policy",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "Assume eligibility for this calculation only. What amount remains immediately after the FIRST operation in the settlement calculation, before performing its second operation? The first operation is the deductible or cap, as specified by the policy.",
+        "criteria": {
+          "a": "$1097.00",
+          "b": "$600.00",
+          "c": "$1187.00",
+          "d": "$2600.00",
+          "e": "$0.00"
+        },
+        "label": "a",
+        "target": {
+          "a": 1.0
+        },
+        "src": "targeted-v8-steps/policy"
+      }
+    },
+    "state": "POLICY DOMAIN: travel\n\n[Purchase schedule]\nInception date: 2030-01-10.\nC1 purchase status: included.\nC2 purchase status: included.\nC3 purchase status: not included.\nC4 purchase status: included.\nA description of a cover is not proof it was purchased. Only the status above establishes inclusion. The policy remains in force on the incident date. Limits have not been reduced by earlier claims and no aggregate exhaustion applies.\n\n[Dates and evidence]\nElapsed days are calendar date differences, with the start date counted as zero. Weekends are included. Use incident minus inception for the waiting interval and report minus incident for notice. A repair appointment or an earlier estimate is not the report date. The claim facts below are accepted findings, not allegations requiring further proof. A listed accepted exception is valid for this incident and the specified cover. A not-accepted exception supplies no waiver.\n\n[Common exclusions and order]\nAn intentionally caused loss is excluded and has no exception. If more than one denial applies, use this priority: not purchased; waiting interval; late notice; threshold exclusion; flag exclusion; intentional loss. If no denial applies, settle the amount using the calculation section. All rules governing this fictional claim are stated here; no outside customary exclusions or unstated document requirements apply.\n\n[Settlement calculation]\nSubtract one deductible from approved loss, flooring at zero, then cap the remainder by the applicable ceilings. The applicable ceiling is the lesser of the benefit ceiling and any named-item sublimit. For whole-item claims there is no named-item ceiling. A ceiling binds only when it is strictly below the amount entering the cap operation; equality is not a binding ceiling. When no ceiling binds, use the loss-based settlement description. If both ceilings are present, the smaller ceiling supplies the settlement description. Pay once per incident; there is no stacking or extra deductible from another cover.\n\n[Cover C3] baggage theft\nThis cover responds only to baggage theft. Its whole-item category is luggage. Its named-item category is camera; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $2600.00. One deductible: $90.00. Named-item sublimit: $600.00. The sublimit applies only to camera; all other items in this cover use only the benefit ceiling. Waiting interval: 15 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 7 elapsed days from incident to report, inclusive. Threshold exclusion: trip length in days greater than 60. Exception: extended-trip endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: prohibited activity. This means the loss arose during an activity prohibited by the itinerary conditions. Exception: specific activity permission accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Cover C4] departure delay\nThis cover responds only to departure delay. Its whole-item category is delay expenses. Its named-item category is taxi fare; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $2600.00. One deductible: $90.00. Named-item sublimit: $600.00. The sublimit applies only to taxi fare; all other items in this cover use only the benefit ceiling. Waiting interval: 5 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 7 elapsed days from incident to report, inclusive. Threshold exclusion: trip length in days greater than 21. Exception: extended-trip endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: prohibited activity. This means the loss arose during an activity prohibited by the itinerary conditions. Exception: specific activity permission accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Cover C1] emergency treatment\nThis cover responds only to emergency treatment. Its whole-item category is hospital care. Its named-item category is dental treatment; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $4200.00. One deductible: $30.00. Named-item sublimit: $360.00. The sublimit applies only to dental treatment; all other items in this cover use only the benefit ceiling. Waiting interval: 5 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 28 elapsed days from incident to report, inclusive. Threshold exclusion: trip length in days greater than 60. Exception: extended-trip endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: prohibited activity. This means the loss arose during an activity prohibited by the itinerary conditions. Exception: specific activity permission accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Cover C2] search assistance\nThis cover responds only to search assistance. Its whole-item category is rescue expense. Its named-item category is helicopter transfer; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $6500.00. One deductible: $150.00. Named-item sublimit: $240.00. The sublimit applies only to helicopter transfer; all other items in this cover use only the benefit ceiling. Waiting interval: 20 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 7 elapsed days from incident to report, inclusive. Threshold exclusion: trip length in days greater than 90. Exception: extended-trip endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: prohibited activity. This means the loss arose during an activity prohibited by the itinerary conditions. Exception: specific activity permission accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Allocation of the claim]\nOnly the single event and item named in the claim file are being claimed. Other covers remain in the booklet so the reader can distinguish similar but inapplicable benefits. Their purchase status, waiting intervals, exclusions and limits do not alter this claim. A reference to a part in another section does not reclassify the item in this file. The claimed amount contains no unrelated fees, future losses or duplicate invoices. There is no currency conversion and all amounts are US dollars.\n\n[Claim facts]\nEvent: departure delay. Claimed item: taxi fare. Approved loss: $1187.00. Incident date: 2030-03-02. Report date: 2030-03-07.\nMeasured trip length in days: 22. extended-trip endorsement: accepted.\nprohibited activity: absent. specific activity permission: not accepted.\nIntentional loss: no. All exception statuses in this file refer to C4."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "possible_outcomes": [
+          "Provide free shipping"
+        ],
+        "scenario": "shipping",
+        "variant": "yes"
+      },
+      "family": "insufficient",
+      "group_id": "targeted-v7-20261030/insufficient-transfer-20261030/train/shipping/yes/8",
+      "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/shipping/yes/8",
+      "review_zh": "遍历可行的缺失字段补全；只有所有补全结论相同才可确定动作。",
+      "source": "targeted-v7-20261030/insufficient",
+      "split": "train",
+      "subtype": "shipping__yes",
+      "text_sha256": "4243c348e896690b93dfdd9c3d58a88dd44a0d35e1df69a3c73224a1f4c15330",
+      "v7_parent_id": "insufficient-transfer-20261030/train/shipping/yes/8",
+      "step_supervision": "insufficient/shipping_range"
+    },
+    "questions": {
+      "decision": {
+        "criteria": {
+          "a": "Charge the shipping fee",
+          "b": "Provide free shipping",
+          "c": "The stated facts permit different decisions; more information is needed."
+        },
+        "instructions": "Which action follows from the rule and all stated facts?",
+        "label": "b",
+        "src": "targeted-v7-20261030/insufficient",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "What is the tightest possible range of merchandise value after discount, excluding taxes and shipping, given the stated facts?",
+        "criteria": {
+          "a": "160 to 160 dollars, inclusive",
+          "b": "161 to 171 dollars, inclusive",
+          "c": "161 to 161 dollars, inclusive",
+          "d": "0 to 162 dollars, inclusive",
+          "e": "162 to 162 dollars, inclusive"
+        },
+        "label": "c",
+        "target": {
+          "c": 1.0
+        },
+        "src": "targeted-v8-steps/insufficient"
+      }
+    },
+    "state": {
+      "document": "Operational case record",
+      "entries": [
+        "CASE TYPE: shipping",
+        "GOVERNING RULE",
+        "Free shipping applies when merchandise value after its discount is at least $130. Otherwise charge shipping. The discount can be any whole-dollar amount from $0 through $80. Taxes and shipping charges do not enter the threshold calculation.",
+        "AVAILABLE FACTS",
+        "The merchandise value before discount is $170.",
+        "The tax charge is $11.",
+        "The merchandise discount is $9."
+      ]
+    }
+  },
+  {
+    "_meta": {
+      "facts": {
+        "exact_probability": "498453/500000",
+        "probabilities": [
+          83,
+          93,
+          74
+        ],
+        "stratum": 5
+      },
+      "family": "probability",
+      "group_id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/5",
+      "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/5",
+      "rate_style": "words",
+      "review_zh": "独立事件按乘积及补集计算；概率区间按精确分数确定。",
+      "source": "targeted-v7-20261030/probability",
+      "split": "train",
+      "subtype": "any",
+      "text_sha256": "33a7e19bcbc1a8570a523229e2de9b5f075ccb770f70280beef90491a13995bc",
+      "v7_parent_id": "probability-transfer-candidate-20261030/train/any/5",
+      "step_supervision": "probability/two_fail"
+    },
+    "questions": {
+      "bucket": {
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "instructions": "What is the probability at least one component succeeds? Select the interval containing the exact probability; [ includes a boundary and ) excludes it.",
+        "label": 5,
+        "src": "targeted-v7-20261030/probability",
+        "type": "score"
+      },
+      "probability": {
+        "criteria": {
+          "a": "57.12%",
+          "b": "42.88%",
+          "c": "100.00%",
+          "d": "96.79%",
+          "e": "99.69%"
+        },
+        "instructions": "What is the probability at least one component succeeds? Round to two decimal places.",
+        "label": "e",
+        "src": "targeted-v7-20261030/probability",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "Considering only the first two listed components, what is the probability that both fail?",
+        "criteria": {
+          "a": "88.00%",
+          "b": "83.00%",
+          "c": "93.00%",
+          "d": "1.19%",
+          "e": "98.81%"
+        },
+        "label": "d",
+        "target": {
+          "d": 1.0
+        },
+        "src": "targeted-v8-steps/probability"
+      }
+    },
+    "state": {
+      "details": "The following inspection stations have mutually independent success events. Their success rates are eighty-three percent, ninety-three percent, seventy-four percent. These are all the components in the system.",
+      "topic": "Decision from the stated audit figures"
+    }
+  },
+  {
+    "_meta": {
+      "facts": {
+        "cover_count": 4,
+        "deduct_before_cap": true,
+        "domain": "device",
+        "expected_payment": 480,
+        "flag_exception": true,
+        "flag_trigger": true,
+        "named_item_claim": true,
+        "selected_code": "C1",
+        "target": "pay_sublimit",
+        "threshold_exception": false,
+        "threshold_trigger": false
+      },
+      "family": "policy",
+      "group_id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/7",
+      "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/7",
+      "review_zh": "按事件定位保障，检查排除与各自例外，再按规定次序扣免赔并应用限额。",
+      "source": "targeted-v7-20261030/policy",
+      "split": "train",
+      "subtype": "pay_sublimit",
+      "text_sha256": "719c280eb77d07ca57d3cea01107f88dc2ca059f131ba3618b0ba26184b78020",
+      "v7_parent_id": "policy-transfer-20261030/train/pay_sublimit/7",
+      "step_supervision": "policy/conditional_payment"
+    },
+    "questions": {
+      "amount": {
+        "criteria": {
+          "a": "$0.00",
+          "b": "$540.00",
+          "c": "$570.00",
+          "d": "$480.00",
+          "e": "$630.00"
+        },
+        "instructions": "What dollar amount is payable for this claim?",
+        "label": "d",
+        "src": "targeted-v7-20261030/policy",
+        "type": "choice"
+      },
+      "reason": {
+        "criteria": {
+          "a": "Decline because the claimant intentionally caused the loss; this exclusion has no exception.",
+          "b": "Decline because notice for C1 arrived after its permitted interval.",
+          "c": "Pay under C1 with its named-item sublimit binding; apply the single deductible in the stated order.",
+          "d": "Pay the covered loss under C1, with one deductible; no ceiling reduces the amount entering the cap calculation.",
+          "e": "Decline under the unapproved repair facility exclusion for C1; its exception does not apply."
+        },
+        "instructions": "Which settlement outcome follows from this policy?",
+        "label": "c",
+        "src": "targeted-v7-20261030/policy",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "For this calculation only, assume this claim satisfies all purchase, timing and exclusion conditions. Under the cover matching its stated event and item, what amount follows from the approved loss, applicable ceilings and stated deductible order?",
+        "criteria": {
+          "a": "$1800.00",
+          "b": "$0.00",
+          "c": "$630.00",
+          "d": "$480.00",
+          "e": "$60.00"
+        },
+        "label": "d",
+        "target": {
+          "d": 1.0
+        },
+        "src": "targeted-v8-steps/policy"
+      }
+    },
+    "state": "POLICY DOMAIN: device\n\n[Dates and evidence]\nElapsed days are calendar date differences, with the start date counted as zero. Weekends are included. Use incident minus inception for the waiting interval and report minus incident for notice. A repair appointment or an earlier estimate is not the report date. The claim facts below are accepted findings, not allegations requiring further proof. A listed accepted exception is valid for this incident and the specified cover. A not-accepted exception supplies no waiver.\n\n[Cover C3] console failure\nThis cover responds only to console failure. Its whole-item category is game console. Its named-item category is controller; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $6500.00. One deductible: $90.00. Named-item sublimit: $480.00. The sublimit applies only to controller; all other items in this cover use only the benefit ceiling. Waiting interval: 10 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 21 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 54. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Common exclusions and order]\nAn intentionally caused loss is excluded and has no exception. If more than one denial applies, use this priority: not purchased; waiting interval; late notice; threshold exclusion; flag exclusion; intentional loss. If no denial applies, settle the amount using the calculation section. All rules governing this fictional claim are stated here; no outside customary exclusions or unstated document requirements apply.\n\n[Allocation of the claim]\nOnly the single event and item named in the claim file are being claimed. Other covers remain in the booklet so the reader can distinguish similar but inapplicable benefits. Their purchase status, waiting intervals, exclusions and limits do not alter this claim. A reference to a part in another section does not reclassify the item in this file. The claimed amount contains no unrelated fees, future losses or duplicate invoices. There is no currency conversion and all amounts are US dollars.\n\n[Settlement calculation]\nSubtract one deductible from approved loss, flooring at zero, then cap the remainder by the applicable ceilings. The applicable ceiling is the lesser of the benefit ceiling and any named-item sublimit. For whole-item claims there is no named-item ceiling. A ceiling binds only when it is strictly below the amount entering the cap operation; equality is not a binding ceiling. When no ceiling binds, use the loss-based settlement description. If both ceilings are present, the smaller ceiling supplies the settlement description. Pay once per incident; there is no stacking or extra deductible from another cover.\n\n[Cover C2] drone impact\nThis cover responds only to drone impact. Its whole-item category is camera drone. Its named-item category is navigation module; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $2600.00. One deductible: $150.00. Named-item sublimit: $240.00. The sublimit applies only to navigation module; all other items in this cover use only the benefit ceiling. Waiting interval: 15 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 21 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 42. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Purchase schedule]\nInception date: 2030-07-07.\nC1 purchase status: included.\nC2 purchase status: included.\nC3 purchase status: included.\nC4 purchase status: included.\nA description of a cover is not proof it was purchased. Only the status above establishes inclusion. The policy remains in force on the incident date. Limits have not been reduced by earlier claims and no aggregate exhaustion applies.\n\n[Cover C4] liquid spill\nThis cover responds only to liquid spill. Its whole-item category is tablet computer. Its named-item category is charging board; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $1200.00. One deductible: $90.00. Named-item sublimit: $600.00. The sublimit applies only to charging board; all other items in this cover use only the benefit ceiling. Waiting interval: 15 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 14 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 18. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Cover C1] printer malfunction\nThis cover responds only to printer malfunction. Its whole-item category is printer. Its named-item category is print head; a loss to that named item belongs to this cover even when it is an attachment to a larger item. Benefit ceiling: $1800.00. One deductible: $60.00. Named-item sublimit: $480.00. The sublimit applies only to print head; all other items in this cover use only the benefit ceiling. Waiting interval: 15 elapsed days from inception. An incident on the final waiting boundary is eligible. Notice interval: 7 elapsed days from incident to report, inclusive. Threshold exclusion: device age in months greater than 30. Exception: extended-service endorsement accepted for this cover removes only that threshold exclusion. Flag exclusion: unapproved repair facility. This means the repair was performed by a facility outside the approved list. Exception: written alternate-facility authorization accepted for this cover removes only that flag exclusion. An exception to one exclusion does not waive another exclusion, a waiting period, a notice deadline or purchase status. The event, item and incident must all belong to the same cover; another section cannot supply a higher limit or a smaller deductible. Costs for a whole item and its named component are alternative descriptions of the same loss and cannot be added together. The approved loss in the claim file is already adjusted for salvage, depreciation, taxes and any recoveries. These adjustments must not be deducted a second time.\n\n[Claim facts]\nEvent: printer malfunction. Claimed item: print head. Approved loss: $630.00. Incident date: 2030-07-28. Report date: 2030-07-28.\nMeasured device age in months: 29. extended-service endorsement: not accepted.\nunapproved repair facility: present. written alternate-facility authorization: accepted.\nIntentional loss: no. All exception statuses in this file refer to C1."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "asked": "Elm",
+        "mechanism": "expected_value",
+        "projects": {
+          "Cedar": {
+            "cost": 30,
+            "values": [
+              -225,
+              350,
+              -450
+            ],
+            "weights": [
+              20,
+              30,
+              50
+            ]
+          },
+          "Elm": {
+            "cost": 40,
+            "values": [
+              275,
+              -175
+            ],
+            "weights": [
+              40,
+              60
+            ]
+          },
+          "Oak": {
+            "cost": 40,
+            "values": [
+              575,
+              -425
+            ],
+            "weights": [
+              40,
+              60
+            ]
+          }
+        },
+        "scale": 1
+      },
+      "family": "probability",
+      "group_id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/expected_value/30",
+      "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/expected_value/30",
+      "rate_style": "fraction",
+      "review_zh": "所有相关计数或金额同乘1；条件概率不变，期望净值同倍缩放。",
+      "source": "targeted-v7-20261030/probability",
+      "split": "train",
+      "subtype": "expected_value",
+      "text_sha256": "1331d7b4cff0c69e5291cc2556a678a98ee765d62efab9e20de882b3b64fe810",
+      "v7_parent_id": "probability-transfer-candidate-20261030/train/expected_value/30",
+      "step_supervision": "probability/gross_expectation"
+    },
+    "questions": {
+      "project": {
+        "criteria": {
+          "a": "All projects tie",
+          "b": "Cedar",
+          "c": "Elm",
+          "d": "Oak"
+        },
+        "instructions": "Which project maximizes expected net cash flow?",
+        "label": "c",
+        "src": "targeted-v7-20261030/probability",
+        "type": "choice"
+      },
+      "value": {
+        "criteria": {
+          "a": "-$60.00",
+          "b": "$5.00",
+          "c": "-$10.00",
+          "d": "-$35.00",
+          "e": "$35.00"
+        },
+        "instructions": "What is the expected net cash flow of Elm?",
+        "label": "d",
+        "src": "targeted-v7-20261030/probability",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "For project Elm, what is the expected cash flow from the listed outcomes BEFORE subtracting its upfront cost?",
+        "criteria": {
+          "a": "-$35.00",
+          "b": "-$5.00",
+          "c": "$0.00",
+          "d": "$45.00",
+          "e": "$5.00"
+        },
+        "label": "e",
+        "target": {
+          "e": 1.0
+        },
+        "src": "targeted-v8-steps/probability"
+      }
+    },
+    "state": {
+      "details": "Choose exactly one project to maximize expected net cash flow, even if all choices have negative expectation. Each project pays its upfront cost exactly once. Outcomes within each project are exhaustive and mutually exclusive; gains and losses exclude that cost.\nOak: upfront cost $40.00; 2/5: gain $575.00; 3/5: lose $425.00.\nElm: upfront cost $40.00; 2/5: gain $275.00; 3/5: lose $175.00.\nCedar: upfront cost $30.00; 1/5: lose $225.00; 3/10: gain $350.00; 1/2: lose $450.00.",
+      "topic": "Decision from the stated audit figures"
+    }
+  },
+  {
+    "_meta": {
+      "facts": {
+        "absence_coverage": {
+          "future_absence": 3,
+          "no_absence_record": 3,
+          "past_absence": 3
+        },
+        "desired_contact_position": 0
+      },
+      "family": "multihop",
+      "group_id": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/12",
+      "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/12",
+      "presentation": "numbered",
+      "review_zh": "先关联资产与团队，再判断各联系人的日期可用性。",
+      "source": "targeted-v7-20261030/multihop",
+      "split": "train",
+      "subtype": "dated_roster",
+      "text_sha256": "2a4a277d098ede34dfca21668bca74b60cba2869de01127a0eb2b39e9da9667b",
+      "v7_parent_id": "multihop-transfer-20261030/train/dated_roster/12",
+      "step_supervision": "multihop/contact_availability"
+    },
+    "questions": {
+      "contact": {
+        "criteria": {
+          "a": "Alder",
+          "b": "Hazel",
+          "c": "Lagoon",
+          "d": "Sienna",
+          "e": "Rowan"
+        },
+        "instructions": "Who receives this incident?",
+        "label": "e",
+        "src": "targeted-v7-20261030/multihop",
+        "type": "choice"
+      },
+      "group": {
+        "criteria": {
+          "a": "Marble",
+          "b": "Copper",
+          "c": "Juniper"
+        },
+        "instructions": "Which team owns the incident asset?",
+        "label": "a",
+        "src": "targeted-v7-20261030/multihop",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "On the incident date, is Rowan available according to the stated absence records?",
+        "criteria": {
+          "a": "Available",
+          "b": "Unavailable"
+        },
+        "label": "a",
+        "target": {
+          "a": 1.0
+        },
+        "src": "targeted-v8-steps/multihop"
+      }
+    },
+    "state": "[1] DISPATCH POLICY\n[2] Route the incident to the asset owner. Try the primary contact, then the backup contact, then the duty lead, stopping at the first available person. A person is unavailable exactly on the listed inclusive absence interval and available otherwise. No absence record means available.\n[3] Juniper duty lead: Quartz.\n[4] Copper duty lead: Hazel.\n[5] Marble backup contact: Alder.\n[6] Absence for Onyx: 2030-10-10 to 2030-10-13, inclusive.\n[7] Juniper backup contact: Onyx.\n[8] Copper backup contact: Sienna.\n[9] Absence for Hazel: 2030-10-09 to 2030-10-12, inclusive.\n[10] The owner of Indexer is team Marble.\n[11] Absence for Rowan: 2030-10-10 to 2030-10-13, inclusive.\n[12] Absence for Sienna: 2030-10-17 to 2030-10-20, inclusive.\n[13] Marble primary contact: Rowan.\n[14] Absence for Lagoon: 2030-10-20 to 2030-10-23, inclusive.\n[15] The owner of Gateway is team Marble.\n[16] The owner of Recorder is team Copper.\n[17] The owner of Collector is team Marble.\n[18] Copper primary contact: Garnet.\n[19] The owner of Scheduler is team Marble.\n[20] Absence for Coral: 2030-10-19 to 2030-10-22, inclusive.\n[21] Juniper primary contact: Coral.\n[22] Marble duty lead: Lagoon.\n[23] Asset needing help: Collector. Date needing coverage: 2030-10-16."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "possible_outcomes": [
+          "Match the competitor price"
+        ],
+        "scenario": "price_match",
+        "variant": "yes"
+      },
+      "family": "insufficient",
+      "group_id": "targeted-v7-20261030/insufficient-transfer-20261030/train/price_match/yes/2",
+      "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/price_match/yes/2",
+      "review_zh": "遍历可行的缺失字段补全；只有所有补全结论相同才可确定动作。",
+      "source": "targeted-v7-20261030/insufficient",
+      "split": "train",
+      "subtype": "price_match__yes",
+      "text_sha256": "bc1173d1a3287d5acfec44aa928fd4181cec8014580c706c18d369682ad5701e",
+      "v7_parent_id": "insufficient-transfer-20261030/train/price_match/yes/2",
+      "step_supervision": "insufficient/maximum_reduction"
+    },
+    "questions": {
+      "decision": {
+        "criteria": {
+          "a": "Keep our existing price; it is already no higher",
+          "b": "Decline the requested price match",
+          "c": "The stated facts permit different decisions; more information is needed.",
+          "d": "Match the competitor price"
+        },
+        "instructions": "Which action follows from the rule and all stated facts?",
+        "label": "d",
+        "src": "targeted-v7-20261030/insufficient",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "What is the largest dollar reduction from our listed price allowed by the percentage limit, regardless of stock availability?",
+        "criteria": {
+          "a": "$5.00",
+          "b": "$0.00",
+          "c": "$570.00",
+          "d": "$600.00",
+          "e": "$30.00"
+        },
+        "label": "e",
+        "target": {
+          "e": 1.0
+        },
+        "src": "targeted-v8-steps/insufficient"
+      }
+    },
+    "state": {
+      "document": "Operational case record",
+      "entries": [
+        "CASE TYPE: price_match",
+        "GOVERNING RULE",
+        "Match an identical in-stock competitor item only when its price is below ours and its reduction is at most 5% of our price. First, if its price is at least ours, retain our existing price without an adjustment regardless of stock. Otherwise, if the reduction exceeds the limit or the item is out of stock, decline the match. Item identity is already verified.",
+        "AVAILABLE FACTS",
+        "The competitor listed price is $585.",
+        "Our listed price is $600.",
+        "The competitor item is in stock."
+      ]
+    }
+  },
+  {
+    "_meta": {
+      "facts": {
+        "false_positive": 2,
+        "mechanism": "bayes",
+        "prevalence": 12,
+        "sensitivity": 70
+      },
+      "family": "probability",
+      "group_id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/bayes/10",
+      "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/bayes/10",
+      "rate_style": "fraction",
+      "review_zh": "后验=840/(840+176)=82.68%。",
+      "source": "targeted-v7-20261030/probability",
+      "split": "train",
+      "subtype": "bayes",
+      "text_sha256": "e8ecf464c450d6344f7e13b8adf7b20936ea4a4b0c9b24b52a86473b1f4b25df",
+      "v7_parent_id": "probability-transfer-candidate-20261030/train/bayes/10",
+      "step_supervision": "probability/flagged_population"
+    },
+    "questions": {
+      "bucket": {
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "instructions": "Select the interval containing the exact posterior probability. [ includes an endpoint, ) excludes it.",
+        "label": 4,
+        "src": "targeted-v7-20261030/probability",
+        "type": "score"
+      },
+      "more_likely": {
+        "instructions": "Given a flag, is being malicious strictly more likely than not being malicious?",
+        "label": true,
+        "src": "targeted-v7-20261030/probability",
+        "type": "noul"
+      },
+      "posterior": {
+        "criteria": {
+          "a": "10.16%",
+          "b": "81.38%",
+          "c": "84.38%",
+          "d": "82.68%",
+          "e": "12.00%"
+        },
+        "instructions": "What is the probability that this flagged case is actually malicious? Give a percentage rounded to two decimal places.",
+        "label": "d",
+        "src": "targeted-v7-20261030/probability",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "Before conditioning on a flag, what percentage of the entire population is flagged, including both true and false flags?",
+        "criteria": {
+          "a": "70.00%",
+          "b": "2.00%",
+          "c": "8.40%",
+          "d": "12.00%",
+          "e": "10.16%"
+        },
+        "label": "e",
+        "target": {
+          "e": 1.0
+        },
+        "src": "targeted-v8-steps/probability"
+      }
+    },
+    "state": "In login-risk screening, 3/25 of cases are actually malicious. Among actually malicious cases, the system flags 7/10. Among cases that are not malicious, it flags 1/50. Select a case uniformly from those flagged. The rates describe this same population."
+  },
+  {
+    "_meta": {
+      "facts": {
+        "possible_outcomes": [
+          "Pay overtime for this week"
+        ],
+        "scenario": "overtime",
+        "variant": "yes"
+      },
+      "family": "insufficient",
+      "group_id": "targeted-v7-20261030/insufficient-transfer-20261030/train/overtime/yes/10",
+      "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/overtime/yes/10",
+      "review_zh": "遍历可行的缺失字段补全；只有所有补全结论相同才可确定动作。",
+      "source": "targeted-v7-20261030/insufficient",
+      "split": "train",
+      "subtype": "overtime__yes",
+      "text_sha256": "b4cf0eaafd002cf9120b09d684275f8e632cbecde35205948aa2fc846d0e9e7b",
+      "v7_parent_id": "insufficient-transfer-20261030/train/overtime/yes/10",
+      "step_supervision": "insufficient/overtime_range"
+    },
+    "questions": {
+      "decision": {
+        "criteria": {
+          "a": "No overtime payment is due",
+          "b": "The stated facts permit different decisions; more information is needed.",
+          "c": "Pay overtime for this week"
+        },
+        "instructions": "Which action follows from the rule and all stated facts?",
+        "label": "c",
+        "src": "targeted-v7-20261030/insufficient",
+        "type": "choice"
+      },
+      "zz_rule_step": {
+        "type": "choice",
+        "instructions": "What is the tightest possible range of total weekly hours using the known weekday hours and the permitted range for any missing Friday hours?",
+        "criteria": {
+          "a": "41 to 41 hours, inclusive",
+          "b": "43 to 43 hours, inclusive",
+          "c": "42 to 52 hours, inclusive",
+          "d": "0 to 43 hours, inclusive",
+          "e": "42 to 42 hours, inclusive"
+        },
+        "label": "e",
+        "target": {
+          "e": 1.0
+        },
+        "src": "targeted-v8-steps/insufficient"
+      }
+    },
+    "state": "[1] CASE TYPE: overtime\n[2] GOVERNING RULE\n[3] Weekly hours strictly above 40 earn overtime. There is one shift per weekday, each between 0 and 12 whole hours inclusive, and no weekend work.\n[4] AVAILABLE FACTS\n[5] Wednesday: 8 hours.\n[6] Thursday: 9 hours.\n[7] Monday: 6 hours.\n[8] Tuesday: 7 hours.\n[9] Friday: 12 hours."
+  }
+]

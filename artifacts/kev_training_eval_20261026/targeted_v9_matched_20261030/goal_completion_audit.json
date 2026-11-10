@@ -1,0 +1,50 @@
+{
+  "checked_at_utc": "2026-10-30T03:58:37.978501+00:00",
+  "goal_achieved": false,
+  "status": "contradicted_by_category_regressions",
+  "requirements": [
+    {
+      "requirement": "1500 base contexts covering seven families, extra paired views and 6000 replay counted separately",
+      "evidence": "manifest.json, train_base.jsonl, collected_evidence_index.json",
+      "verdict": "proven"
+    },
+    {
+      "requirement": "Retain tool, temporal and injection records completely unchanged",
+      "evidence": "retained_three_user_constraint.json, comparison against v5/v6/v7 lines",
+      "verdict": "proven"
+    },
+    {
+      "requirement": "Both models train from original pre-targeted stage3 and complete evaluation",
+      "evidence": "collected_evidence_index.json, two 1065-step training metrics, all four prior process IDs missing after completion",
+      "verdict": "proven"
+    },
+    {
+      "requirement": "Both models clearly improve each of seven real categories",
+      "evidence": "comparison-seven.json",
+      "verdict": "contradicted",
+      "non_improved_categories": {
+        "qwen3": [
+          "tool_routing",
+          "probability",
+          "insufficient",
+          "multihop",
+          "policy"
+        ],
+        "qwen35": [
+          "temporal",
+          "probability",
+          "policy"
+        ]
+      }
+    },
+    {
+      "requirement": "Count repaired errors and newly broken correct answers",
+      "evidence": "paired-seven.jsonl, comparison-seven.json",
+      "verdict": "proven"
+    }
+  ],
+  "result_sha256": "32378484fdd404045319d72fbc66590d0ff82b9dd8a58c692460bf235a3543ed",
+  "limitations": [
+    "Single seed; repeatedly inspected diagnostic tests; no independent generalization established."
+  ]
+}

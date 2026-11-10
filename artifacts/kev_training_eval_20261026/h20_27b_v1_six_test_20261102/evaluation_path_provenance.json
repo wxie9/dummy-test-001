@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-02T05:21:23.001413+00:00",
+  "purpose": "evaluation-only path shim; original checkpoint unchanged",
+  "source_run": "/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101",
+  "source_base": "Qwen/Qwen3.8-27B",
+  "source_base_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "local_base": "/data/models/Qwen3.8-27B",
+  "source_adapter_sha256": "2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa",
+  "shim_adapter_sha256": "2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa",
+  "source_head_sha256": "e35c7090af0b6ddde9740065d2c5747a9a31caaa0618f620de88a8d4c29b2cb3",
+  "shim_head_sha256": "dd65b35246999aeaa9529a652fd8ee76c9936b71e4ec3e48c31710b382d8f41a",
+  "source_adapter_config_sha256": "abb269977ffe77d6813ab93d4792c42078288da6ed618096e66ba2004bb129c2",
+  "shim_adapter_config_sha256": "07e0b14cd199cc9df5f709b176a0bf45f33b2c46ac23fb9b695accf92ff709d7",
+  "source_head_unchanged": true
+}

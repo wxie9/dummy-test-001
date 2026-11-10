@@ -1,0 +1,34 @@
+{
+  "goal_achieved": false,
+  "data_and_execution": {
+    "targeted_contexts_1500": true,
+    "replay_separately_6000": true,
+    "all_seven_families_present": true,
+    "retained_three_families_byte_identical": true,
+    "both_init_from_original_stage3": true,
+    "both_training_and_eval_completed": true,
+    "all_88_archive_index_hashes_verified": true
+  },
+  "contradicted_requirement": "Both models show clear improvement in all seven real benchmark categories",
+  "observed_deltas_pp": {
+    "qwen3": {
+      "tool_routing": 0.6666666666666666,
+      "temporal": 1.7094017094017093,
+      "probability": -2.5316455696202533,
+      "insufficient": -1.0,
+      "multihop": -5.6,
+      "policy": 0.0,
+      "injection": 5.333333333333333
+    },
+    "qwen35": {
+      "tool_routing": 13.333333333333334,
+      "temporal": -4.273504273504273,
+      "probability": -3.1645569620253164,
+      "insufficient": -1.0,
+      "multihop": -0.8,
+      "policy": 2.0,
+      "injection": 10.666666666666666
+    }
+  },
+  "next": "Full 1500-context training-set acquisition audit at original stage3 and v7; no new model training yet."
+}

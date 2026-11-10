@@ -1,0 +1,219 @@
+{
+  "started_at_utc": "2026-10-30T00:59:43.110122Z",
+  "status": "training_and_evaluation_complete_goal_not_established",
+  "goal_achieved": false,
+  "models": {
+    "qwen3": {
+      "gpu": 1,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v7-lr5",
+      "status": "complete",
+      "pipeline_live": false,
+      "training_live": false,
+      "log_tail": "er\": 0.4765762175093964,\n    \"mean_conf\": 0.708861253206588,\n    \"confident_error_rate\": 0.035414725069897485,\n    \"coverage_at_0_9\": 0.2907735321528425,\n    \"accuracy_at_0_9\": 0.8782051282051282,\n    \"coverage_at_5pct_error\": 0.14911463187325255,\n    \"coverage_at_1pct_error\": 0.027958993476234855,\n    \"aurc\": 0.19856822543545063,\n    \"error_rate_at_0_9\": 0.12179487179487179,\n    \"confidence_bias\": 0.09283143028021335,\n    \"top_bins\": {\n      \"0.9\": {\n        \"n\": 312,\n        \"errors\": 38,\n        \"error_rate\": 0.12179487179487179\n      },\n      \"0.95\": {\n        \"n\": 219,\n        \"errors\": 16,\n        \"error_rate\": 0.0730593607305936\n      },\n      \"0.99\": {\n        \"n\": 101,\n        \"errors\": 4,\n        \"error_rate\": 0.039603960396039604\n      }\n    },\n    \"selective\": {\n      \"0.5\": {\n        \"coverage\": 0.5004659832246039,\n        \"accuracy\": 0.7951582867783985,\n        \"confidence_cutoff\": 0.703231829212199\n      },\n      \"0.8\": {\n        \"coverage\": 0.8005591798695247,\n        \"accuracy\": 0.6949941792782305,\n        \"confidence_cutoff\": 0.5197456479072571\n      }\n    }\n  },\n  \"coverage\": {\n    \"requested_records\": 900,\n    \"requested_questions\": 1073,\n    \"evaluated_records\": 900,\n    \"evaluated_questions\": 1073,\n    \"rejected_records\": 0,\n    \"truncated_records\": 0\n  }\n}\n",
+      "completed_evaluation_coverage": {
+        "development-before": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-before": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-after": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-after": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "full-train-after": {
+          "requested_records": 1500,
+          "requested_questions": 2320,
+          "evaluated_records": 1500,
+          "evaluated_questions": 2320,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-hard-v1": {
+          "requested_records": 700,
+          "requested_questions": 1088,
+          "evaluated_records": 700,
+          "evaluated_questions": 1088,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-devtools-v1": {
+          "requested_records": 900,
+          "requested_questions": 1073,
+          "evaluated_records": 900,
+          "evaluated_questions": 1073,
+          "rejected_records": 0,
+          "truncated_records": 0
+        }
+      },
+      "last_observed_epoch": 0,
+      "steps_per_epoch": 938,
+      "last_logged_loss": 0.42,
+      "last_logged_seconds_per_record": 0.105,
+      "completed_steps": 938,
+      "training_wall_seconds": 993.9137899875641,
+      "historical_processes": {
+        "pipeline_pid": 34314,
+        "training_pids": [],
+        "last_observed_step": 930
+      },
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 512,
+        "after_correct": 489,
+        "before_pct": 51.2,
+        "after_pct": 48.9,
+        "delta_pp": -2.3,
+        "repaired": 68,
+        "newly_wrong": 91,
+        "old_wrong": 488,
+        "repair_pct": 13.934426229508198,
+        "paired_context_bootstrap_95pct_pp": [
+          -4.723618090452261,
+          0.20100502512562815
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": -1.3333333333333333,
+        "temporal": 0.8547008547008547,
+        "probability": -4.430379746835443,
+        "insufficient": -6.0,
+        "multihop": -3.2,
+        "policy": -3.0,
+        "injection": 0.6666666666666666
+      }
+    },
+    "qwen35": {
+      "gpu": 2,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v7-lr5",
+      "status": "complete",
+      "pipeline_live": false,
+      "training_live": false,
+      "log_tail": "er\": 0.4464452534854848,\n    \"mean_conf\": 0.7937136554993354,\n    \"confident_error_rate\": 0.05032618825722274,\n    \"coverage_at_0_9\": 0.44547996272134205,\n    \"accuracy_at_0_9\": 0.8870292887029289,\n    \"coverage_at_5pct_error\": 0.2982292637465051,\n    \"coverage_at_1pct_error\": 0.12022367194780988,\n    \"aurc\": 0.1394069950802084,\n    \"error_rate_at_0_9\": 0.11297071129707113,\n    \"confidence_bias\": 0.11710601337445181,\n    \"top_bins\": {\n      \"0.9\": {\n        \"n\": 478,\n        \"errors\": 54,\n        \"error_rate\": 0.11297071129707113\n      },\n      \"0.95\": {\n        \"n\": 388,\n        \"errors\": 29,\n        \"error_rate\": 0.07474226804123711\n      },\n      \"0.99\": {\n        \"n\": 174,\n        \"errors\": 3,\n        \"error_rate\": 0.017241379310344827\n      }\n    },\n    \"selective\": {\n      \"0.5\": {\n        \"coverage\": 0.5004659832246039,\n        \"accuracy\": 0.8584729981378026,\n        \"confidence_cutoff\": 0.8608548897759584\n      },\n      \"0.8\": {\n        \"coverage\": 0.8005591798695247,\n        \"accuracy\": 0.7497089639115251,\n        \"confidence_cutoff\": 0.5943702040425004\n      }\n    }\n  },\n  \"coverage\": {\n    \"requested_records\": 900,\n    \"requested_questions\": 1073,\n    \"evaluated_records\": 900,\n    \"evaluated_questions\": 1073,\n    \"rejected_records\": 0,\n    \"truncated_records\": 0\n  }\n}\n",
+      "last_observed_epoch": 0,
+      "steps_per_epoch": 938,
+      "last_logged_loss": 0.344,
+      "last_logged_seconds_per_record": 0.118,
+      "completed_evaluation_coverage": {
+        "development-before": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-before": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-after": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-after": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "full-train-after": {
+          "requested_records": 1500,
+          "requested_questions": 2320,
+          "evaluated_records": 1500,
+          "evaluated_questions": 2320,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-hard-v1": {
+          "requested_records": 700,
+          "requested_questions": 1088,
+          "evaluated_records": 700,
+          "evaluated_questions": 1088,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-devtools-v1": {
+          "requested_records": 900,
+          "requested_questions": 1073,
+          "evaluated_records": 900,
+          "evaluated_questions": 1073,
+          "rejected_records": 0,
+          "truncated_records": 0
+        }
+      },
+      "completed_steps": 938,
+      "training_wall_seconds": 1112.0246753692627,
+      "historical_processes": {
+        "pipeline_pid": 34315,
+        "training_pids": [],
+        "last_observed_step": 930
+      },
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 551,
+        "after_correct": 569,
+        "before_pct": 55.1,
+        "after_pct": 56.9,
+        "delta_pp": 1.8,
+        "repaired": 73,
+        "newly_wrong": 55,
+        "old_wrong": 449,
+        "repair_pct": 16.258351893095767,
+        "paired_context_bootstrap_95pct_pp": [
+          -0.5005005005005005,
+          4.015670910871695
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 14.0,
+        "temporal": -1.7094017094017093,
+        "probability": -1.8987341772151898,
+        "insufficient": -4.0,
+        "multihop": -3.2,
+        "policy": 0.5,
+        "injection": 6.0
+      }
+    }
+  },
+  "data_sha256": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+  "lr": 5e-05,
+  "previous_live_check_utc": "2026-10-30T01:27:38.442615+00:00",
+  "finalized_at_utc": "2026-10-30T01:27:36.233081+00:00",
+  "next": "Both models failed all-seven improvement. Diagnose training-to-real transfer using paired mechanism results before choosing a new intervention; no further LR increase or automatic continuation from targeted checkpoints.",
+  "comparison_sha256": "1ecaad551d9b3f09aa5ede7d9413a43b2824c1b868f81446f9973a5390197a46"
+}

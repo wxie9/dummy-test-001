@@ -1,0 +1,27 @@
+{
+  "status": "inference_audit_started",
+  "scope": "All 1500 raw training contexts, without training augmentation. Compare original stage3 and completed v7. This is acquisition on training data, not independent generalization.",
+  "contexts": 1500,
+  "questions": 2320,
+  "train_sha256": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+  "source_experiment": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v7_20261030",
+  "jobs": {
+    "qwen3-stage3": {
+      "gpu": 1,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3"
+    },
+    "qwen3-v7": {
+      "gpu": 2,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v7/stage4"
+    },
+    "qwen35-stage3": {
+      "gpu": 3,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3"
+    },
+    "qwen35-v7": {
+      "gpu": 4,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v7/stage4"
+    }
+  },
+  "training_performed": false
+}

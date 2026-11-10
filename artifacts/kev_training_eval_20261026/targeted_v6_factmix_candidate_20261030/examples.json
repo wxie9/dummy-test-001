@@ -1,0 +1,49 @@
+{
+  "return": {
+    "before": "Returns qualify if requested no more than 30 elapsed calendar days after delivery, inclusive. Every order below was delivered between its order date and its return request, inclusive. There are no other requirements.\nCase: Order date: 2027-11-30. Return requested: 2028-01-23. An unlisted field is not available; do not assume a default value.",
+    "after": "Returns qualify if requested no more than 30 elapsed calendar days after delivery, inclusive. Every order below was delivered between its order date and its return request, inclusive. There are no other requirements.\nCase: The order was placed on November 30, 2027. A return was requested on January 23, 2028. An unlisted field is not available; do not assume a default value.",
+    "answer": "Cannot determine from the information given"
+  },
+  "overtime": {
+    "before": "Overtime applies when total hours strictly exceed 38 in a Monday-to-Friday week. There is at most one shift per day, each between 0 and 10 hours inclusive. No weekend work occurs.\nCase: Monday through Thursday hours: [8, 8, 8, 9]. Payroll desk: Central.",
+    "after": "Overtime applies when total hours strictly exceed 38 in a Monday-to-Friday week. There is at most one shift per day, each between 0 and 10 hours inclusive. No weekend work occurs.\nCase: The recorded hours are Monday 8, Tuesday 8, Wednesday 8, and Thursday 9. Payroll desk: Central.",
+    "answer": "Cannot determine from the information given"
+  },
+  "price_match": {
+    "before": {
+      "case": "Our price: $500. Competitor price: $475. An unlisted field is not available; do not assume a default value. Competitor inventory: out of stock.",
+      "policy": "A price match qualifies if the identical item is in stock at the competitor and its price is strictly lower than ours by at most 10% of our price. Identity is verified; there are no other conditions."
+    },
+    "after": {
+      "case": "We charge $500.00 for the item. The competitor charges $475.00 for the item. An unlisted field is not available; do not assume a default value. At the competitor, the item is out of stock.",
+      "policy": "A price match qualifies if the identical item is in stock at the competitor and its price is strictly lower than ours by at most 10% of our price. Identity is verified; there are no other conditions."
+    },
+    "answer": "The requirement is not satisfied"
+  },
+  "tenure": {
+    "before": "The benefit requires at least 365 elapsed days of continuous employment by 2028-08-04. Team transfers do not reset employment. The employee joined the company on or before the stated transfer date and has remained continuously employed through the application date.\nCase: Ari transferred to the Support team on 2027-11-04. An unlisted field is not available; do not assume a default value. Company hire date: 2026-10-09.",
+    "after": "The benefit requires at least 365 elapsed days of continuous employment by 2028-08-04. Team transfers do not reset employment. The employee joined the company on or before the stated transfer date and has remained continuously employed through the application date.\nCase: Ari moved to the Support team on November 04, 2027. An unlisted field is not available; do not assume a default value. The company employment began on October 09, 2026.",
+    "answer": "The requirement is satisfied"
+  },
+  "approval": {
+    "before": {
+      "case": "Amount: $1735. Actual approver: Bo. Copied colleague: Director Tessa, authority level 3. An unlisted field is not available; do not assume a default value.",
+      "policy": "Payments below $200 require no approval. All other payments require an actual approver with authority level at least 2. Every approver has level 1, 2 or 3. A copied colleague is not an approver. Decide only whether authorization is sufficient."
+    },
+    "after": {
+      "case": "The payment amount is $1735.00. The person who actually approved is Bo. Copied colleague: Director Tessa, authority level 3. An unlisted field is not available; do not assume a default value.",
+      "policy": "Payments below $200 require no approval. All other payments require an actual approver with authority level at least 2. Every approver has level 1, 2 or 3. A copied colleague is not an approver. Decide only whether authorization is sufficient."
+    },
+    "answer": "Cannot determine from the information given"
+  },
+  "warranty": {
+    "before": "This warranty expires on 2028-01-14, inclusive. A claim by that date qualifies only for a manufacturing defect; accidental damage never qualifies. Every claim has exactly one of these causes. Claims after expiry do not qualify regardless of cause.\nCase: Claim received: 2028-01-03. Item serial: W94869.",
+    "after": "This warranty expires on 2028-01-14, inclusive. A claim by that date qualifies only for a manufacturing defect; accidental damage never qualifies. Every claim has exactly one of these causes. Claims after expiry do not qualify regardless of cause.\nCase: The warranty claim arrived on January 03, 2028. Item serial: W94869.",
+    "answer": "Cannot determine from the information given"
+  },
+  "shipping": {
+    "before": "Shipping is free if merchandise subtotal minus discount is at least $80. The merchandise discount is between $0 and $40 inclusive. Ignore taxes and delivery fees in this calculation.\nCase: Merchandise subtotal: $100. Tax: $3. An unlisted field is not available; do not assume a default value.",
+    "after": "Shipping is free if merchandise subtotal minus discount is at least $80. The merchandise discount is between $0 and $40 inclusive. Ignore taxes and delivery fees in this calculation.\nCase: The merchandise has a pre-discount total of $100.00. Tax: $3. An unlisted field is not available; do not assume a default value.",
+    "answer": "Cannot determine from the information given"
+  }
+}

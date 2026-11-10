@@ -1,0 +1,46 @@
+category_id,name_zh,family,n,errors,large_errors,large_error_rate_all,large_share_of_errors,gold_rank_3plus,rank2_gap_gt_030
+ledger_fee_error,账本核对：费用错误,ledger_reconcile,24,21,19,0.7916666666666666,0.9047619047619048,18,1
+ledger_batch_total_error,账本：批次总额错误,ledger_reconcile,23,18,14,0.6086956521739131,0.7777777777777778,14,0
+ledger_date_error,账本核对：日期错误,ledger_reconcile,57,39,31,0.543859649122807,0.7948717948717948,29,2
+state_quantity_failure,状态目标：数量条件失败,state_goal,86,58,44,0.5116279069767442,0.7586206896551724,0,44
+dependency_complex_closure,依赖解析：Level 3复杂依赖闭包,dep_resolve,200,99,96,0.48,0.9696969696969697,0,96
+dependency_version_conflict,依赖解析：版本冲突,dep_resolve,40,20,19,0.475,0.95,0,19
+schedule_level3,排期冲突：Level 3,sched_conflict,200,98,90,0.45,0.9183673469387755,0,90
+facts_multitable_subtraction,事实判断：多表聚合后减法,answerable_facts,40,18,16,0.4,0.8888888888888888,0,16
+state_equality_failure,状态目标：相同性条件失败,state_goal,28,13,11,0.39285714285714285,0.8461538461538461,0,11
+state_wrong_object,状态目标：目标对象错误,state_goal,75,38,28,0.37333333333333335,0.7368421052631579,0,28
+schedule_equipment,排期冲突：设备条件,sched_conflict,30,12,11,0.36666666666666664,0.9166666666666666,0,11
+state_step_order,状态目标：步骤顺序交换,state_goal,75,30,26,0.3466666666666667,0.8666666666666667,0,26
+policy_rule_precedence,政策判断：规则优先级,policy_case,200,85,69,0.345,0.8117647058823529,15,54
+filter_converted_minimum,条件筛选：换算后的最小值,filter_match,42,18,13,0.30952380952380953,0.7222222222222222,0,13
+permission_level3,权限继承：Level 3,perm_inherit,200,90,60,0.3,0.6666666666666666,0,60
+dependency_missing_item,依赖解析：依赖项缺失,dep_resolve,156,57,46,0.2948717948717949,0.8070175438596491,0,46
+permission_role_chain,权限继承：角色链,perm_inherit,34,15,10,0.29411764705882354,0.6666666666666666,0,10
+state_missing_step,状态目标：关键步骤缺失,state_goal,75,30,21,0.28,0.7,0,21
+dependency_runtime,依赖解析：运行时依赖,dep_resolve,90,29,25,0.2777777777777778,0.8620689655172413,0,25
+record_field_scope,记录规则：字段依赖范围,record_rule,40,20,11,0.275,0.55,7,4
+permission_three_level_tree,权限继承：三层权限树,perm_inherit,70,25,19,0.2714285714285714,0.76,0,19
+policy_four_exceptions,政策判断：四条例外规则,policy_case,107,37,28,0.2616822429906542,0.7567567567567568,9,19
+policy_exception_handling,政策判断：需要处理例外,policy_case,200,60,52,0.26,0.8666666666666667,15,37
+permission_action_change,权限继承：操作权限变化,perm_inherit,67,26,17,0.2537313432835821,0.6538461538461539,0,17
+dependency_self_constraint,依赖解析：包自身约束,dep_resolve,156,45,39,0.25,0.8666666666666667,0,39
+ledger_missing_entry,账本核对：缺少条目,ledger_reconcile,142,50,35,0.24647887323943662,0.7,27,8
+facts_four_hop,事实判断：Level 3四跳事实链,answerable_facts,200,59,48,0.24,0.8135593220338984,0,48
+filter_conditional_rule,条件筛选：条件式规则,filter_match,42,10,10,0.23809523809523808,1.0,0,10
+dependency_exclusive_boundary,依赖解析：排除式版本边界,dep_resolve,56,14,13,0.23214285714285715,0.9285714285714286,0,13
+schedule_capacity,排期冲突：座位容量,sched_conflict,96,26,22,0.22916666666666666,0.8461538461538461,0,22
+permission_scope_change,权限继承：作用域变化,perm_inherit,66,19,15,0.22727272727272727,0.7894736842105263,0,15
+facts_inheritance_reasoning,事实判断：继承关系推理,answerable_facts,80,22,18,0.225,0.8181818181818182,0,18
+log_off_by_one,日志计数：差1条,log_count_check,75,40,16,0.21333333333333335,0.4,0,16
+permission_sealed_resource,权限继承：密封资源,perm_inherit,33,12,7,0.21212121212121213,0.5833333333333334,0,7
+dependency_ordinary_boundary,依赖解析：普通版本边界,dep_resolve,158,34,32,0.20253164556962025,0.9411764705882353,0,32
+record_derived_field,记录规则：派生字段计算,record_rule,40,12,8,0.2,0.6666666666666666,2,6
+permission_level2,权限继承：Level 2,perm_inherit,200,56,39,0.195,0.6964285714285714,0,39
+filter_k_of_n,条件筛选：k-of-n证书要求,filter_match,42,11,8,0.19047619047619047,0.7272727272727273,0,8
+facts_two_level_inheritance,事实判断：两层继承链,answerable_facts,80,16,14,0.175,0.875,0,14
+log_both_boundaries,日志计数：同时处理起止边界,log_count_check,240,68,31,0.12916666666666668,0.45588235294117646,0,31
+state_content_failure,状态目标：内容条件错误,state_goal,179,31,22,0.12290502793296089,0.7096774193548387,0,22
+log_actual_statement,日志计数：实际声明正确,log_count_check,300,74,33,0.11,0.44594594594594594,0,33
+clause_level3,条款变化：Level 3,clause_change,200,30,21,0.105,0.7,3,18
+triage_category_priority,分诊排序：类别优先级,triage_order,99,15,10,0.10101010101010101,0.6666666666666666,3,7
+clause_outside_condition,条款变化：条件范围外,clause_change,167,17,10,0.059880239520958084,0.5882352941176471,3,7

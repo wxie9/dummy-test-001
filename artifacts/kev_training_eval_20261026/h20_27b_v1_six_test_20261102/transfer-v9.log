@@ -1,0 +1,84 @@
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/1264
+evaluated 100/1264
+evaluated 150/1264
+evaluated 200/1264
+evaluated 250/1264
+evaluated 300/1264
+evaluated 350/1264
+evaluated 400/1264
+evaluated 450/1264
+evaluated 500/1264
+evaluated 550/1264
+evaluated 600/1264
+evaluated 650/1264
+evaluated 700/1264
+evaluated 750/1264
+evaluated 800/1264
+evaluated 850/1264
+evaluated 900/1264
+evaluated 950/1264
+evaluated 1000/1264
+evaluated 1050/1264
+evaluated 1100/1264
+evaluated 1150/1264
+evaluated 1200/1264
+evaluated 1250/1264
+{
+  "objective": -0.259998141073078,
+  "clean": {
+    "n": 1046,
+    "nll": 0.46099192052175497,
+    "acc": 0.8451242829827916,
+    "ece": 0.04046513201109393,
+    "brier": 0.21943647283336984,
+    "mean_conf": 0.8710155332613083,
+    "confident_error_rate": 0.02390057361376673,
+    "coverage_at_0_9": 0.7084130019120459,
+    "accuracy_at_0_9": 0.9662618083670715,
+    "coverage_at_5pct_error": 0.7571701720841301,
+    "coverage_at_1pct_error": 0.4646271510516252,
+    "aurc": 0.031603122680834386,
+    "error_rate_at_0_9": 0.033738191632928474,
+    "confidence_bias": 0.025891250278516686,
+    "top_bins": {
+      "0.9": {
+        "n": 741,
+        "errors": 25,
+        "error_rate": 0.033738191632928474
+      },
+      "0.95": {
+        "n": 668,
+        "errors": 19,
+        "error_rate": 0.02844311377245509
+      },
+      "0.99": {
+        "n": 491,
+        "errors": 6,
+        "error_rate": 0.012219959266802444
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.9866156787762906,
+        "confidence_cutoff": 0.9872625194323477
+      },
+      "0.8": {
+        "coverage": 0.8001912045889101,
+        "accuracy": 0.937873357228196,
+        "confidence_cutoff": 0.7304145476098494
+      }
+    },
+    "score_mae": 0.04066323916776434,
+    "ranked_probability_score": 0.013491692994364281
+  },
+  "coverage": {
+    "requested_records": 1264,
+    "requested_questions": 1264,
+    "evaluated_records": 1264,
+    "evaluated_questions": 1264,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}

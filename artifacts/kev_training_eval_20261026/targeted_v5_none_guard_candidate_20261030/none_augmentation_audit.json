@@ -1,0 +1,126 @@
+{
+  "scope": "Exact seeded replay of targeted records only, excluding the 6000 replay records. No model inference; ambiguous supervision is a data finding, not causal proof of score changes.",
+  "data_sha256": "7d2493876883c394f36e6c26389a102d9dab99b187915f0f6eaf283106ac7e52",
+  "code_data_py_sha256": "e77a2fffeb8ee7e05b118893be8e38b8358aef97c3ca2e143cdce208201b92f9",
+  "targeted_contexts": 1500,
+  "original_questions_with_explicit_none": 90,
+  "seed": 101,
+  "settings": {
+    "p_none": 0.1,
+    "p_none_distract": 0.12,
+    "p_distract": 0.15,
+    "p_none_pair": 0.25
+  },
+  "epochs": {
+    "0": {
+      "total": {
+        "questions": 2661,
+        "choice_questions": 2541
+      },
+      "by_family": {
+        "policy": {
+          "questions": 730,
+          "choice_questions": 730
+        },
+        "tool_routing": {
+          "questions": 132,
+          "choice_questions": 132
+        },
+        "insufficient": {
+          "questions": 426,
+          "choice_questions": 426
+        },
+        "multihop": {
+          "questions": 362,
+          "choice_questions": 362
+        },
+        "probability": {
+          "questions": 773,
+          "choice_questions": 653
+        },
+        "temporal": {
+          "questions": 138,
+          "choice_questions": 138
+        },
+        "injection": {
+          "questions": 100,
+          "choice_questions": 100
+        }
+      }
+    },
+    "1": {
+      "total": {
+        "questions": 2719,
+        "choice_questions": 2599
+      },
+      "by_family": {
+        "policy": {
+          "questions": 760,
+          "choice_questions": 760
+        },
+        "tool_routing": {
+          "questions": 140,
+          "choice_questions": 140
+        },
+        "insufficient": {
+          "questions": 440,
+          "choice_questions": 440
+        },
+        "multihop": {
+          "questions": 368,
+          "choice_questions": 368
+        },
+        "probability": {
+          "questions": 773,
+          "choice_questions": 653
+        },
+        "temporal": {
+          "questions": 138,
+          "choice_questions": 138
+        },
+        "injection": {
+          "questions": 100,
+          "choice_questions": 100
+        }
+      }
+    },
+    "2": {
+      "total": {
+        "questions": 2705,
+        "choice_questions": 2585
+      },
+      "by_family": {
+        "policy": {
+          "questions": 754,
+          "choice_questions": 754
+        },
+        "tool_routing": {
+          "questions": 160,
+          "choice_questions": 160
+        },
+        "insufficient": {
+          "questions": 402,
+          "choice_questions": 402
+        },
+        "multihop": {
+          "questions": 366,
+          "choice_questions": 366
+        },
+        "probability": {
+          "questions": 787,
+          "choice_questions": 667
+        },
+        "temporal": {
+          "questions": 136,
+          "choice_questions": 136
+        },
+        "injection": {
+          "questions": 100,
+          "choice_questions": 100
+        }
+      }
+    }
+  },
+  "examples": [],
+  "interpretation": "When two semantically equivalent none options are present and one is gold, one-hot training penalizes selecting the other equally valid option. Implicit other/unknown wordings are excluded from this conservative count."
+}

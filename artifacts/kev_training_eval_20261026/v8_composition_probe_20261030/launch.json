@@ -1,0 +1,40 @@
+{
+  "started_at_utc": "2026-10-30T02:34:16.176821+00:00",
+  "jobs": {
+    "qwen3-stage3": {
+      "gpu": 1,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/v7_training_fit_audit_20261030/qwen3-stage3",
+      "pipeline_pid": 59826
+    },
+    "qwen3-v8": {
+      "gpu": 2,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v8-steps/stage4",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v8-steps/full-train-after",
+      "pipeline_pid": 59827
+    },
+    "qwen35-stage3": {
+      "gpu": 3,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/v7_training_fit_audit_20261030/qwen35-stage3",
+      "pipeline_pid": 59828
+    },
+    "qwen35-v8": {
+      "gpu": 4,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v8-steps/stage4",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v8-steps/full-train-after",
+      "pipeline_pid": 59829
+    }
+  },
+  "checkpoint_hashes": {
+    "runs/qwen3-06b-20261026/stage3/adapter_model.safetensors": "8b69b05f4ce4f3befc2a44d106347751e97e228f4b87b975538a2284a6b699d0",
+    "runs/qwen3-06b-20261026/stage3/head.pt": "56688ff3be9d252df2b7ded421163c5a27a94635a1e0044263e4a8cd42d96bc5",
+    "runs/qwen3-20261030-targeted-v8-steps/stage4/adapter_model.safetensors": "9c14b2df7cb21ade1e3c2237847b290180493a62b2482a9f0ee24ca7233a3217",
+    "runs/qwen3-20261030-targeted-v8-steps/stage4/head.pt": "8c33021097747ec2d3f1565ec88603f74880ea7b603472afcae5257f51280318",
+    "runs/replica-20261026/stage3/adapter_model.safetensors": "8d352bd5d73cfb1aeed00d92c299575a19baff6f79fb9f0e85a20634b012007d",
+    "runs/replica-20261026/stage3/head.pt": "9891098409dc28c904422494790163183cdf047ba4f9630b0a61d8152ca5bb34",
+    "runs/qwen35-20261030-targeted-v8-steps/stage4/adapter_model.safetensors": "bddf6d7ab6292b9ade90612b91dbbcc30da01d3cce10c7dde8543c08efd94dd1",
+    "runs/qwen35-20261030-targeted-v8-steps/stage4/head.pt": "2fc19ce04030435022b277f7002885fde292ed3b11f8e90a78d82f79b84cfe36"
+  },
+  "training_performed": false
+}

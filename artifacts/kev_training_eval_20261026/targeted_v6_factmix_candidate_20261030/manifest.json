@@ -1,0 +1,51 @@
+{
+  "status": "training_and_evaluation_complete_goal_not_established",
+  "version": "v6-factmix-candidate-20261030",
+  "contexts": 1500,
+  "subquestions": 3440,
+  "modified_contexts": 140,
+  "modified_pairs": 70,
+  "unchanged_contexts": 1360,
+  "unchanged_other_six_families": 1220,
+  "unchanged_development": 336,
+  "hashes": {
+    "train.jsonl": "2f50313e50370372cf232a998280a4f5bbc26f98dd59ddef2ee8872f870fe243",
+    "development.jsonl": "5747c5b02565f10688d270d8da5afa384386e9cfc42bf55e2971d2924810fe63",
+    "train_probe.jsonl": "884415464fbae2ccc7eeb8aaacea7f46046af3ae71b2b984ab4caf082c0dde4f"
+  },
+  "only_changes": [
+    "140 state texts and their corresponding text hashes"
+  ],
+  "checks": {
+    "questions_and_labels_identical": true,
+    "record_order_and_ids_identical": true,
+    "augmentation_seeds_unchanged": true,
+    "inverse_fact_reconstruction_exact": 140,
+    "all_case_and_rule_values_preserved": true,
+    "style_balanced_within_scenario_pair_role_answer": true,
+    "question_dictionary_order_unchanged": true,
+    "normalized_train_dev_matches": 0,
+    "server_three_epoch_augmentation_identical": true,
+    "both_model_preflight_all_7500_accepted": true
+  },
+  "scope": "Completed wording-only control: Q3 504/1000 and Q35 584/1000; no gain versus v6 one epoch. Do not promote.",
+  "validation_archive_sha256": "5a0f15537e83d497da389148846515efe161fb96c2ea501aac1a66e51ea93b85",
+  "training_plan": {
+    "epochs": 1,
+    "expected_optimizer_steps": 938,
+    "seed": 101,
+    "lr": 1e-05,
+    "lora": 16,
+    "batch": 4,
+    "accum": 2,
+    "replay": 6000,
+    "init": "original pre-targeted stage3; never targeted stage4",
+    "gpus": {
+      "qwen3": 3,
+      "qwen35": 4
+    },
+    "purpose": "Single-factor fact-wording replacement versus completed v6 one epoch; evaluate all seven categories. Concurrent v6 three-epoch run isolates exposure separately."
+  },
+  "started_at_utc": "2026-10-29T23:32:52.532502+00:00",
+  "goal_achieved": false
+}

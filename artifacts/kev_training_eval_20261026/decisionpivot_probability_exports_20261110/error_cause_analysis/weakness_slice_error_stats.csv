@@ -1,0 +1,46 @@
+rank,category_id,name_zh,family,n,correct,errors,accuracy,error_rate,blend_minus_v1,generated_n
+1,ledger_batch_total_error,账本：批次总额错误,ledger_reconcile,23,5,18,0.21739130434782608,0.782608695652174,-0.043478260869565216,575
+2,log_actual_statement,日志计数：实际声明正确,log_count_check,300,226,74,0.7533333333333333,0.24666666666666667,0.32999999999999996,750
+3,state_equality_failure,状态目标：相同性条件失败,state_goal,28,15,13,0.5357142857142857,0.4642857142857143,0.17857142857142855,525
+4,record_derived_field,记录规则：派生字段计算,record_rule,40,28,12,0.7,0.3,0.35,525
+5,facts_multitable_subtraction,事实判断：多表聚合后减法,answerable_facts,40,22,18,0.55,0.45,0.050000000000000044,300
+6,dependency_complex_closure,依赖解析：Level 3复杂依赖闭包,dep_resolve,200,101,99,0.505,0.495,0.0,775
+7,policy_rule_precedence,政策判断：规则优先级,policy_case,200,115,85,0.575,0.425,0.04999999999999993,0
+8,dependency_version_conflict,依赖解析：版本冲突,dep_resolve,40,20,20,0.5,0.5,-0.025000000000000022,550
+9,record_field_scope,记录规则：字段依赖范围,record_rule,40,20,20,0.5,0.5,-0.07499999999999996,475
+10,log_both_boundaries,日志计数：同时处理起止边界,log_count_check,240,172,68,0.7166666666666667,0.2833333333333333,0.10416666666666663,825
+11,dependency_exclusive_boundary,依赖解析：排除式版本边界,dep_resolve,56,42,14,0.75,0.25,0.125,550
+12,state_missing_step,状态目标：关键步骤缺失,state_goal,75,45,30,0.6,0.4,0.10666666666666663,575
+13,dependency_missing_item,依赖解析：依赖项缺失,dep_resolve,156,99,57,0.6346153846153846,0.36538461538461536,0.0064102564102563875,700
+14,permission_three_level_tree,权限继承：三层权限树,perm_inherit,70,45,25,0.6428571428571429,0.35714285714285715,0.08571428571428574,300
+15,policy_four_exceptions,政策判断：四条例外规则,policy_case,107,70,37,0.6542056074766355,0.34579439252336447,0.01869158878504673,325
+16,permission_role_chain,权限继承：角色链,perm_inherit,34,19,15,0.5588235294117647,0.4411764705882353,0.0,250
+17,dependency_self_constraint,依赖解析：包自身约束,dep_resolve,156,111,45,0.7115384615384616,0.28846153846153844,0.03205128205128205,675
+18,triage_category_priority,分诊排序：类别优先级,triage_order,99,84,15,0.8484848484848485,0.15151515151515152,0.16161616161616166,600
+19,state_wrong_object,状态目标：目标对象错误,state_goal,75,37,38,0.49333333333333335,0.5066666666666667,0.0,550
+20,dependency_runtime,依赖解析：运行时依赖,dep_resolve,90,61,29,0.6777777777777778,0.32222222222222224,-0.022222222222222143,550
+21,facts_four_hop,事实判断：Level 3四跳事实链,answerable_facts,200,141,59,0.705,0.295,0.015000000000000013,325
+22,permission_level2,权限继承：Level 2,perm_inherit,200,144,56,0.72,0.28,0.08499999999999996,325
+23,state_step_order,状态目标：步骤顺序交换,state_goal,75,45,30,0.6,0.4,0.053333333333333344,0
+24,permission_level3,权限继承：Level 3,perm_inherit,200,110,90,0.55,0.45,-0.019999999999999907,325
+25,facts_two_level_inheritance,事实判断：两层继承链,answerable_facts,80,64,16,0.8,0.2,0.08750000000000002,275
+26,dependency_ordinary_boundary,依赖解析：普通版本边界,dep_resolve,158,124,34,0.7848101265822784,0.21518987341772153,0.06962025316455689,625
+27,state_quantity_failure,状态目标：数量条件失败,state_goal,86,28,58,0.32558139534883723,0.6744186046511628,0.0,375
+28,facts_inheritance_reasoning,事实判断：继承关系推理,answerable_facts,80,58,22,0.725,0.275,0.07499999999999996,275
+29,permission_scope_change,权限继承：作用域变化,perm_inherit,66,47,19,0.7121212121212122,0.2878787878787879,0.045454545454545525,250
+30,permission_action_change,权限继承：操作权限变化,perm_inherit,67,41,26,0.6119402985074627,0.3880597014925373,-0.07462686567164178,450
+31,schedule_equipment,排期冲突：设备条件,sched_conflict,30,18,12,0.6,0.4,0.0,400
+32,log_off_by_one,日志计数：差1条,log_count_check,75,35,40,0.4666666666666667,0.5333333333333333,-0.17333333333333334,500
+33,ledger_missing_entry,账本核对：缺少条目,ledger_reconcile,142,92,50,0.647887323943662,0.352112676056338,-0.007042253521126751,600
+34,clause_outside_condition,条款变化：条件范围外,clause_change,167,150,17,0.8982035928143712,0.10179640718562874,0.17964071856287422,600
+35,state_content_failure,状态目标：内容条件错误,state_goal,179,148,31,0.8268156424581006,0.17318435754189945,0.07821229050279332,525
+36,policy_exception_handling,政策判断：需要处理例外,policy_case,200,140,60,0.7,0.3,-0.050000000000000044,325
+37,ledger_fee_error,账本核对：费用错误,ledger_reconcile,24,3,21,0.125,0.875,0.04166666666666667,400
+38,clause_level3,条款变化：Level 3,clause_change,200,170,30,0.85,0.15,0.09499999999999997,325
+39,permission_sealed_resource,权限继承：密封资源,perm_inherit,33,21,12,0.6363636363636364,0.36363636363636365,0.06060606060606055,400
+40,filter_k_of_n,条件筛选：k-of-n证书要求,filter_match,42,31,11,0.7380952380952381,0.2619047619047619,0.023809523809523836,400
+41,ledger_date_error,账本核对：日期错误,ledger_reconcile,57,18,39,0.3157894736842105,0.6842105263157895,0.08771929824561403,450
+42,schedule_capacity,排期冲突：座位容量,sched_conflict,96,70,26,0.7291666666666666,0.2708333333333333,0.0,475
+43,filter_conditional_rule,条件筛选：条件式规则,filter_match,42,32,10,0.7619047619047619,0.23809523809523808,0.023809523809523725,400
+44,schedule_level3,排期冲突：Level 3,sched_conflict,200,102,98,0.51,0.49,0.0,275
+45,filter_converted_minimum,条件筛选：换算后的最小值,filter_match,42,24,18,0.5714285714285714,0.42857142857142855,-0.023809523809523836,325

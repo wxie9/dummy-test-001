@@ -1,0 +1,5091 @@
+{
+  "scope": "Inference-only diagnosis. Policy eligibility is privileged truthful information on known eligible training claims; any improvement is not deployable or official benchmark improvement. Thirty graphs have eight related variants each; variants are not independent training contexts.",
+  "limits": [
+    "Question wording and supplied eligibility change together; cannot attribute effect to a single wording feature.",
+    "Graph topology varies along with path depth, while candidate answers, ordering, edge count and node names are held fixed within each group.",
+    "Same-author visible-label checks are not independent external review."
+  ],
+  "input_sha256": "1943fbc053cf1bdd5be99429e838d9fe004efafda55c272bade3223447f91aac",
+  "jobs": {
+    "qwen3-stage3": {
+      "graph_by_depth": {
+        "1": {
+          "groups": 30,
+          "affected_correct": 0,
+          "blocked_correct": 30,
+          "both_correct": 0,
+          "prediction_changed": 1
+        },
+        "2": {
+          "groups": 30,
+          "affected_correct": 1,
+          "blocked_correct": 26,
+          "both_correct": 0,
+          "prediction_changed": 3
+        },
+        "3": {
+          "groups": 30,
+          "affected_correct": 1,
+          "blocked_correct": 29,
+          "both_correct": 0,
+          "prediction_changed": 0
+        },
+        "4": {
+          "groups": 30,
+          "affected_correct": 2,
+          "blocked_correct": 29,
+          "both_correct": 1,
+          "prediction_changed": 1
+        }
+      },
+      "policy": {
+        "contexts": 120,
+        "original_correct": 7,
+        "eligibility_given_correct": 6,
+        "original_predicted_zero": 88,
+        "eligibility_given_predicted_zero": 90,
+        "repaired": 1,
+        "newly_wrong": 2
+      },
+      "policy_strata": {
+        "zero_offered=True": {
+          "contexts": 93,
+          "original_correct": 2,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 88,
+          "eligibility_given_predicted_zero": 90,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        "zero_offered=False": {
+          "contexts": 27,
+          "original_correct": 5,
+          "eligibility_given_correct": 5,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 1
+        }
+      },
+      "policy_cases": [
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/3",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/4",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/17",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/17",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/17",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/37",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/2",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/3",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/13",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/2",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/5",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/19",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/23",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/19",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/0",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/37",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/27",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/27",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/5",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/5",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/4",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/2",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/1",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/13",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/20",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/16",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/32",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/27",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/20",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/23",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/32",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/22",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/0",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/16",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/4",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/0",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/25",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/22",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/25",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/13",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/25",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/3",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/37",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/23",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/22",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/20",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/1",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/32",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/19",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/16",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/1",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        }
+      ],
+      "original_input_control": {
+        "questions": 240,
+        "same_top_choice": 240,
+        "max_abs_probability_difference": 0.0,
+        "flips": []
+      },
+      "elapsed_seconds": 86.36995601654053
+    },
+    "qwen3-v8": {
+      "graph_by_depth": {
+        "1": {
+          "groups": 30,
+          "affected_correct": 5,
+          "blocked_correct": 22,
+          "both_correct": 2,
+          "prediction_changed": 5
+        },
+        "2": {
+          "groups": 30,
+          "affected_correct": 5,
+          "blocked_correct": 18,
+          "both_correct": 1,
+          "prediction_changed": 4
+        },
+        "3": {
+          "groups": 30,
+          "affected_correct": 5,
+          "blocked_correct": 18,
+          "both_correct": 2,
+          "prediction_changed": 3
+        },
+        "4": {
+          "groups": 30,
+          "affected_correct": 3,
+          "blocked_correct": 20,
+          "both_correct": 1,
+          "prediction_changed": 2
+        }
+      },
+      "policy": {
+        "contexts": 120,
+        "original_correct": 17,
+        "eligibility_given_correct": 24,
+        "original_predicted_zero": 75,
+        "eligibility_given_predicted_zero": 54,
+        "repaired": 10,
+        "newly_wrong": 3
+      },
+      "policy_strata": {
+        "zero_offered=True": {
+          "contexts": 93,
+          "original_correct": 8,
+          "eligibility_given_correct": 15,
+          "original_predicted_zero": 75,
+          "eligibility_given_predicted_zero": 54,
+          "repaired": 10,
+          "newly_wrong": 3
+        },
+        "zero_offered=False": {
+          "contexts": 27,
+          "original_correct": 9,
+          "eligibility_given_correct": 9,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        }
+      },
+      "policy_cases": [
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/3",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/4",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/17",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/17",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/17",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/37",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/2",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/3",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/13",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/2",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/5",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/19",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/23",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/19",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/0",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/8",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/37",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/27",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/27",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/5",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/5",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/4",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/2",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/1",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/13",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/20",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/16",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/32",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/27",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/20",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/23",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/32",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/22",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/0",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/16",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/4",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/0",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/25",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/22",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/25",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/13",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/25",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/3",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/37",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/23",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/22",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/20",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/1",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/32",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/19",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/16",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/1",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        }
+      ],
+      "original_input_control": {
+        "questions": 240,
+        "same_top_choice": 240,
+        "max_abs_probability_difference": 0.0,
+        "flips": []
+      },
+      "elapsed_seconds": 86.53479361534119
+    },
+    "qwen35-stage3": {
+      "graph_by_depth": {
+        "1": {
+          "groups": 30,
+          "affected_correct": 3,
+          "blocked_correct": 28,
+          "both_correct": 3,
+          "prediction_changed": 3
+        },
+        "2": {
+          "groups": 30,
+          "affected_correct": 2,
+          "blocked_correct": 28,
+          "both_correct": 2,
+          "prediction_changed": 5
+        },
+        "3": {
+          "groups": 30,
+          "affected_correct": 0,
+          "blocked_correct": 29,
+          "both_correct": 0,
+          "prediction_changed": 0
+        },
+        "4": {
+          "groups": 30,
+          "affected_correct": 1,
+          "blocked_correct": 29,
+          "both_correct": 1,
+          "prediction_changed": 1
+        }
+      },
+      "policy": {
+        "contexts": 120,
+        "original_correct": 12,
+        "eligibility_given_correct": 20,
+        "original_predicted_zero": 79,
+        "eligibility_given_predicted_zero": 72,
+        "repaired": 10,
+        "newly_wrong": 2
+      },
+      "policy_strata": {
+        "zero_offered=True": {
+          "contexts": 93,
+          "original_correct": 6,
+          "eligibility_given_correct": 10,
+          "original_predicted_zero": 79,
+          "eligibility_given_predicted_zero": 72,
+          "repaired": 5,
+          "newly_wrong": 1
+        },
+        "zero_offered=False": {
+          "contexts": 27,
+          "original_correct": 6,
+          "eligibility_given_correct": 10,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 5,
+          "newly_wrong": 1
+        }
+      },
+      "policy_cases": [
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/3",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/4",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/17",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/17",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/17",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/37",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/2",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/3",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/13",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/2",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/5",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/19",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/23",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/19",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/0",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/18",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/37",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/27",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/27",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/5",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/5",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/4",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/2",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/1",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/13",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/20",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/16",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/32",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/27",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/20",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/23",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/32",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/22",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/0",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/16",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/38",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/4",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/0",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/25",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/22",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/25",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/13",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/25",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/3",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/37",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/23",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/22",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/20",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/1",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/32",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/19",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/16",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/1",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        }
+      ],
+      "original_input_control": {
+        "questions": 240,
+        "same_top_choice": 240,
+        "max_abs_probability_difference": 0.0,
+        "flips": []
+      },
+      "elapsed_seconds": 107.15079760551453
+    },
+    "qwen35-v8": {
+      "graph_by_depth": {
+        "1": {
+          "groups": 30,
+          "affected_correct": 15,
+          "blocked_correct": 7,
+          "both_correct": 4,
+          "prediction_changed": 16
+        },
+        "2": {
+          "groups": 30,
+          "affected_correct": 18,
+          "blocked_correct": 6,
+          "both_correct": 5,
+          "prediction_changed": 18
+        },
+        "3": {
+          "groups": 30,
+          "affected_correct": 13,
+          "blocked_correct": 7,
+          "both_correct": 5,
+          "prediction_changed": 15
+        },
+        "4": {
+          "groups": 30,
+          "affected_correct": 13,
+          "blocked_correct": 7,
+          "both_correct": 4,
+          "prediction_changed": 13
+        }
+      },
+      "policy": {
+        "contexts": 120,
+        "original_correct": 32,
+        "eligibility_given_correct": 64,
+        "original_predicted_zero": 61,
+        "eligibility_given_predicted_zero": 3,
+        "repaired": 37,
+        "newly_wrong": 5
+      },
+      "policy_strata": {
+        "zero_offered=True": {
+          "contexts": 93,
+          "original_correct": 20,
+          "eligibility_given_correct": 53,
+          "original_predicted_zero": 61,
+          "eligibility_given_predicted_zero": 3,
+          "repaired": 35,
+          "newly_wrong": 2
+        },
+        "zero_offered=False": {
+          "contexts": 27,
+          "original_correct": 12,
+          "eligibility_given_correct": 11,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 2,
+          "newly_wrong": 3
+        }
+      },
+      "policy_cases": [
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/3",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/4",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/17",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/17",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/17",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/37",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/2",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/3",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/13",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/2",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/5",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/19",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/30",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/23",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/9",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/33",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/19",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/34",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/29",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/0",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/37",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/31",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/27",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/27",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/5",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/5",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/9",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/4",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/2",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/12",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/1",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/13",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/20",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/16",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/32",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/28",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/26",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/27",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/28",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/20",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/23",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/32",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/24",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/22",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/15",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/11",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/0",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/16",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/38",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/4",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/0",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/24",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/10",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/18",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/10",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/25",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/22",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/25",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/6",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/13",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/25",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/3",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/7",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/37",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/35",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/39",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/8",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/23",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/22",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/35",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/20",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/1",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/36",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/32",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/36",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/14",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/19",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/34",
+          "contexts": 1,
+          "original_correct": 1,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/16",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 1,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/30",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 1,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/1",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/21",
+          "contexts": 1,
+          "original_correct": 0,
+          "eligibility_given_correct": 0,
+          "original_predicted_zero": 0,
+          "eligibility_given_predicted_zero": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        }
+      ],
+      "original_input_control": {
+        "questions": 240,
+        "same_top_choice": 240,
+        "max_abs_probability_difference": 0.0,
+        "flips": []
+      },
+      "elapsed_seconds": 107.0883195400238
+    }
+  }
+}

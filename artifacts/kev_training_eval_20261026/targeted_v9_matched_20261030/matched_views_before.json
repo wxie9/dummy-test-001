@@ -1,0 +1,1526 @@
+{
+  "phase": "before",
+  "models": {
+    "qwen3": {
+      "development": {
+        "status": "complete",
+        "data_sha256": "23a8dfd30a8b96c78b913d0b552dd7a0d3b0b16a344c2e6ecffe0287f8c0d8b0",
+        "accuracy_groups": {
+          "insufficient": {
+            "questions": 140,
+            "correct": 62
+          },
+          "insufficient/decision": {
+            "questions": 140,
+            "correct": 62
+          },
+          "insufficient/base": {
+            "questions": 70,
+            "correct": 28
+          },
+          "policy": {
+            "questions": 240,
+            "correct": 70
+          },
+          "policy/amount": {
+            "questions": 120,
+            "correct": 46
+          },
+          "policy/matched": {
+            "questions": 120,
+            "correct": 31
+          },
+          "policy/reason": {
+            "questions": 120,
+            "correct": 24
+          },
+          "multihop": {
+            "questions": 98,
+            "correct": 45
+          },
+          "multihop/decision": {
+            "questions": 41,
+            "correct": 20
+          },
+          "multihop/base": {
+            "questions": 80,
+            "correct": 35
+          },
+          "policy/base": {
+            "questions": 120,
+            "correct": 39
+          },
+          "insufficient/matched": {
+            "questions": 70,
+            "correct": 34
+          },
+          "injection": {
+            "questions": 30,
+            "correct": 17
+          },
+          "injection/decision": {
+            "questions": 30,
+            "correct": 17
+          },
+          "injection/base": {
+            "questions": 30,
+            "correct": 17
+          },
+          "multihop/approver": {
+            "questions": 5,
+            "correct": 0
+          },
+          "probability": {
+            "questions": 288,
+            "correct": 81
+          },
+          "probability/forward": {
+            "questions": 30,
+            "correct": 4
+          },
+          "probability/base": {
+            "questions": 144,
+            "correct": 43
+          },
+          "probability/reverse": {
+            "questions": 30,
+            "correct": 6
+          },
+          "probability/project": {
+            "questions": 24,
+            "correct": 18
+          },
+          "probability/value": {
+            "questions": 24,
+            "correct": 4
+          },
+          "probability/bucket": {
+            "questions": 70,
+            "correct": 15
+          },
+          "probability/probability": {
+            "questions": 46,
+            "correct": 8
+          },
+          "temporal": {
+            "questions": 30,
+            "correct": 10
+          },
+          "temporal/decision": {
+            "questions": 30,
+            "correct": 10
+          },
+          "temporal/base": {
+            "questions": 30,
+            "correct": 10
+          },
+          "tool_routing": {
+            "questions": 30,
+            "correct": 9
+          },
+          "tool_routing/decision": {
+            "questions": 30,
+            "correct": 9
+          },
+          "tool_routing/base": {
+            "questions": 30,
+            "correct": 9
+          },
+          "probability/matched": {
+            "questions": 144,
+            "correct": 38
+          },
+          "multihop/matched": {
+            "questions": 18,
+            "correct": 10
+          },
+          "probability/decision": {
+            "questions": 16,
+            "correct": 8
+          },
+          "multihop/contact": {
+            "questions": 12,
+            "correct": 4
+          },
+          "multihop/group": {
+            "questions": 12,
+            "correct": 8
+          },
+          "probability/more_likely": {
+            "questions": 24,
+            "correct": 10
+          },
+          "probability/posterior": {
+            "questions": 24,
+            "correct": 8
+          },
+          "multihop/controller": {
+            "questions": 14,
+            "correct": 7
+          },
+          "multihop/interest": {
+            "questions": 14,
+            "correct": 6
+          }
+        },
+        "matched_pairs": {
+          "probability": {
+            "question_pairs": 144,
+            "both_correct": 24,
+            "both_wrong": 87,
+            "prediction_changed": 18,
+            "expected_change_pattern_matched": 82,
+            "context_pairs": 70,
+            "both_contexts_all_correct": 3
+          },
+          "probability/forward": {
+            "question_pairs": 15,
+            "both_correct": 1,
+            "both_wrong": 12,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 12
+          },
+          "probability/gold_unchanged": {
+            "question_pairs": 72,
+            "both_correct": 23,
+            "both_wrong": 48,
+            "prediction_changed": 4,
+            "expected_change_pattern_matched": 68
+          },
+          "probability/reverse": {
+            "question_pairs": 15,
+            "both_correct": 2,
+            "both_wrong": 11,
+            "prediction_changed": 1,
+            "expected_change_pattern_matched": 10
+          },
+          "probability/gold_changes": {
+            "question_pairs": 72,
+            "both_correct": 1,
+            "both_wrong": 39,
+            "prediction_changed": 14,
+            "expected_change_pattern_matched": 14
+          },
+          "probability/bucket": {
+            "question_pairs": 35,
+            "both_correct": 4,
+            "both_wrong": 24,
+            "prediction_changed": 9,
+            "expected_change_pattern_matched": 18
+          },
+          "probability/more_likely": {
+            "question_pairs": 12,
+            "both_correct": 3,
+            "both_wrong": 5,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 8
+          },
+          "probability/posterior": {
+            "question_pairs": 12,
+            "both_correct": 1,
+            "both_wrong": 5,
+            "prediction_changed": 2,
+            "expected_change_pattern_matched": 5
+          },
+          "probability/probability": {
+            "question_pairs": 23,
+            "both_correct": 2,
+            "both_wrong": 17,
+            "prediction_changed": 6,
+            "expected_change_pattern_matched": 12
+          },
+          "probability/decision": {
+            "question_pairs": 8,
+            "both_correct": 1,
+            "both_wrong": 1,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 2
+          },
+          "probability/project": {
+            "question_pairs": 12,
+            "both_correct": 9,
+            "both_wrong": 3,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 12
+          },
+          "probability/value": {
+            "question_pairs": 12,
+            "both_correct": 1,
+            "both_wrong": 9,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 3
+          },
+          "multihop": {
+            "question_pairs": 18,
+            "both_correct": 2,
+            "both_wrong": 2,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 4,
+            "context_pairs": 18,
+            "both_contexts_all_correct": 2
+          },
+          "multihop/decision": {
+            "question_pairs": 18,
+            "both_correct": 2,
+            "both_wrong": 2,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 4
+          },
+          "multihop/gold_unchanged": {
+            "question_pairs": 4,
+            "both_correct": 2,
+            "both_wrong": 2,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 4
+          },
+          "multihop/gold_changes": {
+            "question_pairs": 14,
+            "both_correct": 0,
+            "both_wrong": 0,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 0
+          },
+          "policy": {
+            "question_pairs": 120,
+            "both_correct": 7,
+            "both_wrong": 57,
+            "prediction_changed": 7,
+            "expected_change_pattern_matched": 46,
+            "context_pairs": 60,
+            "both_contexts_all_correct": 0
+          },
+          "policy/amount": {
+            "question_pairs": 60,
+            "both_correct": 4,
+            "both_wrong": 18,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 18
+          },
+          "policy/gold_changes": {
+            "question_pairs": 73,
+            "both_correct": 0,
+            "both_wrong": 20,
+            "prediction_changed": 3,
+            "expected_change_pattern_matched": 3
+          },
+          "policy/reason": {
+            "question_pairs": 60,
+            "both_correct": 3,
+            "both_wrong": 39,
+            "prediction_changed": 7,
+            "expected_change_pattern_matched": 28
+          },
+          "policy/gold_unchanged": {
+            "question_pairs": 47,
+            "both_correct": 7,
+            "both_wrong": 37,
+            "prediction_changed": 4,
+            "expected_change_pattern_matched": 43
+          },
+          "insufficient": {
+            "question_pairs": 70,
+            "both_correct": 12,
+            "both_wrong": 20,
+            "prediction_changed": 21,
+            "expected_change_pattern_matched": 32,
+            "context_pairs": 70,
+            "both_contexts_all_correct": 12
+          },
+          "insufficient/decision": {
+            "question_pairs": 70,
+            "both_correct": 12,
+            "both_wrong": 20,
+            "prediction_changed": 21,
+            "expected_change_pattern_matched": 32
+          },
+          "insufficient/gold_changes": {
+            "question_pairs": 49,
+            "both_correct": 5,
+            "both_wrong": 8,
+            "prediction_changed": 16,
+            "expected_change_pattern_matched": 16
+          },
+          "insufficient/gold_unchanged": {
+            "question_pairs": 21,
+            "both_correct": 7,
+            "both_wrong": 12,
+            "prediction_changed": 5,
+            "expected_change_pattern_matched": 16
+          }
+        },
+        "policy_zero_choice": {
+          "positive": {
+            "records": 74,
+            "correct_amount": 0,
+            "chose_zero": 70
+          },
+          "positive/matched": {
+            "records": 42,
+            "correct_amount": 0,
+            "chose_zero": 40
+          },
+          "zero": {
+            "records": 46,
+            "correct_amount": 46,
+            "chose_zero": 46
+          },
+          "zero/base": {
+            "records": 28,
+            "correct_amount": 28,
+            "chose_zero": 28
+          },
+          "zero/matched": {
+            "records": 18,
+            "correct_amount": 18,
+            "chose_zero": 18
+          },
+          "positive/base": {
+            "records": 32,
+            "correct_amount": 0,
+            "chose_zero": 30
+          }
+        }
+      },
+      "train": {
+        "status": "complete",
+        "data_sha256": "2932da30f01f37e6443f911399fa6195e99ca8605a5e92c85dcec7ba1896352d",
+        "accuracy_groups": {
+          "insufficient": {
+            "questions": 560,
+            "correct": 250
+          },
+          "insufficient/decision": {
+            "questions": 560,
+            "correct": 250
+          },
+          "insufficient/matched": {
+            "questions": 280,
+            "correct": 131
+          },
+          "policy": {
+            "questions": 1200,
+            "correct": 378
+          },
+          "policy/amount": {
+            "questions": 600,
+            "correct": 266
+          },
+          "policy/matched": {
+            "questions": 600,
+            "correct": 190
+          },
+          "policy/reason": {
+            "questions": 600,
+            "correct": 112
+          },
+          "policy/base": {
+            "questions": 600,
+            "correct": 188
+          },
+          "probability": {
+            "questions": 1440,
+            "correct": 438
+          },
+          "probability/bucket": {
+            "questions": 350,
+            "correct": 99
+          },
+          "probability/matched": {
+            "questions": 720,
+            "correct": 218
+          },
+          "probability/probability": {
+            "questions": 230,
+            "correct": 47
+          },
+          "temporal": {
+            "questions": 100,
+            "correct": 36
+          },
+          "temporal/decision": {
+            "questions": 100,
+            "correct": 36
+          },
+          "temporal/base": {
+            "questions": 100,
+            "correct": 36
+          },
+          "insufficient/base": {
+            "questions": 280,
+            "correct": 119
+          },
+          "probability/forward": {
+            "questions": 150,
+            "correct": 32
+          },
+          "probability/reverse": {
+            "questions": 150,
+            "correct": 47
+          },
+          "probability/base": {
+            "questions": 720,
+            "correct": 220
+          },
+          "multihop": {
+            "questions": 490,
+            "correct": 193
+          },
+          "multihop/controller": {
+            "questions": 70,
+            "correct": 29
+          },
+          "multihop/base": {
+            "questions": 400,
+            "correct": 147
+          },
+          "multihop/interest": {
+            "questions": 70,
+            "correct": 25
+          },
+          "probability/decision": {
+            "questions": 80,
+            "correct": 32
+          },
+          "multihop/approver": {
+            "questions": 25,
+            "correct": 3
+          },
+          "multihop/contact": {
+            "questions": 60,
+            "correct": 10
+          },
+          "multihop/group": {
+            "questions": 60,
+            "correct": 34
+          },
+          "probability/project": {
+            "questions": 120,
+            "correct": 61
+          },
+          "probability/value": {
+            "questions": 120,
+            "correct": 30
+          },
+          "tool_routing": {
+            "questions": 100,
+            "correct": 47
+          },
+          "tool_routing/decision": {
+            "questions": 100,
+            "correct": 47
+          },
+          "tool_routing/base": {
+            "questions": 100,
+            "correct": 47
+          },
+          "probability/more_likely": {
+            "questions": 120,
+            "correct": 52
+          },
+          "probability/posterior": {
+            "questions": 120,
+            "correct": 38
+          },
+          "multihop/decision": {
+            "questions": 205,
+            "correct": 92
+          },
+          "injection": {
+            "questions": 100,
+            "correct": 48
+          },
+          "injection/decision": {
+            "questions": 100,
+            "correct": 48
+          },
+          "injection/base": {
+            "questions": 100,
+            "correct": 48
+          },
+          "multihop/matched": {
+            "questions": 90,
+            "correct": 46
+          }
+        },
+        "matched_pairs": {
+          "probability": {
+            "question_pairs": 720,
+            "both_correct": 102,
+            "both_wrong": 384,
+            "prediction_changed": 105,
+            "expected_change_pattern_matched": 325,
+            "context_pairs": 350,
+            "both_contexts_all_correct": 5
+          },
+          "probability/forward": {
+            "question_pairs": 75,
+            "both_correct": 4,
+            "both_wrong": 47,
+            "prediction_changed": 9,
+            "expected_change_pattern_matched": 35
+          },
+          "probability/gold_unchanged": {
+            "question_pairs": 306,
+            "both_correct": 93,
+            "both_wrong": 188,
+            "prediction_changed": 43,
+            "expected_change_pattern_matched": 263
+          },
+          "probability/reverse": {
+            "question_pairs": 75,
+            "both_correct": 10,
+            "both_wrong": 38,
+            "prediction_changed": 5,
+            "expected_change_pattern_matched": 40
+          },
+          "probability/gold_changes": {
+            "question_pairs": 414,
+            "both_correct": 9,
+            "both_wrong": 196,
+            "prediction_changed": 62,
+            "expected_change_pattern_matched": 62
+          },
+          "probability/bucket": {
+            "question_pairs": 175,
+            "both_correct": 28,
+            "both_wrong": 104,
+            "prediction_changed": 38,
+            "expected_change_pattern_matched": 91
+          },
+          "probability/more_likely": {
+            "question_pairs": 60,
+            "both_correct": 13,
+            "both_wrong": 21,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 34
+          },
+          "probability/posterior": {
+            "question_pairs": 60,
+            "both_correct": 9,
+            "both_wrong": 31,
+            "prediction_changed": 12,
+            "expected_change_pattern_matched": 24
+          },
+          "probability/probability": {
+            "question_pairs": 115,
+            "both_correct": 4,
+            "both_wrong": 72,
+            "prediction_changed": 22,
+            "expected_change_pattern_matched": 36
+          },
+          "probability/decision": {
+            "question_pairs": 40,
+            "both_correct": 2,
+            "both_wrong": 10,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 8
+          },
+          "probability/project": {
+            "question_pairs": 60,
+            "both_correct": 25,
+            "both_wrong": 24,
+            "prediction_changed": 15,
+            "expected_change_pattern_matched": 45
+          },
+          "probability/value": {
+            "question_pairs": 60,
+            "both_correct": 7,
+            "both_wrong": 37,
+            "prediction_changed": 4,
+            "expected_change_pattern_matched": 12
+          },
+          "multihop": {
+            "question_pairs": 90,
+            "both_correct": 9,
+            "both_wrong": 9,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 18,
+            "context_pairs": 90,
+            "both_contexts_all_correct": 9
+          },
+          "multihop/decision": {
+            "question_pairs": 90,
+            "both_correct": 9,
+            "both_wrong": 9,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 18
+          },
+          "multihop/gold_unchanged": {
+            "question_pairs": 18,
+            "both_correct": 9,
+            "both_wrong": 9,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 18
+          },
+          "multihop/gold_changes": {
+            "question_pairs": 72,
+            "both_correct": 0,
+            "both_wrong": 0,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 0
+          },
+          "policy": {
+            "question_pairs": 600,
+            "both_correct": 43,
+            "both_wrong": 265,
+            "prediction_changed": 33,
+            "expected_change_pattern_matched": 172,
+            "context_pairs": 300,
+            "both_contexts_all_correct": 3
+          },
+          "policy/amount": {
+            "question_pairs": 300,
+            "both_correct": 25,
+            "both_wrong": 59,
+            "prediction_changed": 2,
+            "expected_change_pattern_matched": 52
+          },
+          "policy/gold_changes": {
+            "question_pairs": 441,
+            "both_correct": 1,
+            "both_wrong": 154,
+            "prediction_changed": 23,
+            "expected_change_pattern_matched": 23
+          },
+          "policy/reason": {
+            "question_pairs": 300,
+            "both_correct": 18,
+            "both_wrong": 206,
+            "prediction_changed": 31,
+            "expected_change_pattern_matched": 120
+          },
+          "policy/gold_unchanged": {
+            "question_pairs": 159,
+            "both_correct": 42,
+            "both_wrong": 111,
+            "prediction_changed": 10,
+            "expected_change_pattern_matched": 149
+          },
+          "insufficient": {
+            "question_pairs": 280,
+            "both_correct": 39,
+            "both_wrong": 69,
+            "prediction_changed": 91,
+            "expected_change_pattern_matched": 91,
+            "context_pairs": 280,
+            "both_contexts_all_correct": 39
+          },
+          "insufficient/decision": {
+            "question_pairs": 280,
+            "both_correct": 39,
+            "both_wrong": 69,
+            "prediction_changed": 91,
+            "expected_change_pattern_matched": 91
+          },
+          "insufficient/gold_changes": {
+            "question_pairs": 224,
+            "both_correct": 29,
+            "both_wrong": 43,
+            "prediction_changed": 63,
+            "expected_change_pattern_matched": 63
+          },
+          "insufficient/gold_unchanged": {
+            "question_pairs": 56,
+            "both_correct": 10,
+            "both_wrong": 26,
+            "prediction_changed": 28,
+            "expected_change_pattern_matched": 28
+          }
+        },
+        "policy_zero_choice": {
+          "positive": {
+            "records": 325,
+            "correct_amount": 0,
+            "chose_zero": 318
+          },
+          "positive/matched": {
+            "records": 165,
+            "correct_amount": 0,
+            "chose_zero": 164
+          },
+          "zero": {
+            "records": 275,
+            "correct_amount": 266,
+            "chose_zero": 266
+          },
+          "zero/base": {
+            "records": 140,
+            "correct_amount": 137,
+            "chose_zero": 137
+          },
+          "positive/base": {
+            "records": 160,
+            "correct_amount": 0,
+            "chose_zero": 154
+          },
+          "zero/matched": {
+            "records": 135,
+            "correct_amount": 129,
+            "chose_zero": 129
+          }
+        }
+      }
+    },
+    "qwen35": {
+      "development": {
+        "status": "complete",
+        "data_sha256": "23a8dfd30a8b96c78b913d0b552dd7a0d3b0b16a344c2e6ecffe0287f8c0d8b0",
+        "accuracy_groups": {
+          "insufficient": {
+            "questions": 140,
+            "correct": 76
+          },
+          "insufficient/decision": {
+            "questions": 140,
+            "correct": 76
+          },
+          "insufficient/base": {
+            "questions": 70,
+            "correct": 35
+          },
+          "policy": {
+            "questions": 240,
+            "correct": 90
+          },
+          "policy/amount": {
+            "questions": 120,
+            "correct": 50
+          },
+          "policy/matched": {
+            "questions": 120,
+            "correct": 40
+          },
+          "policy/reason": {
+            "questions": 120,
+            "correct": 40
+          },
+          "multihop": {
+            "questions": 98,
+            "correct": 43
+          },
+          "multihop/decision": {
+            "questions": 41,
+            "correct": 20
+          },
+          "multihop/base": {
+            "questions": 80,
+            "correct": 33
+          },
+          "policy/base": {
+            "questions": 120,
+            "correct": 50
+          },
+          "insufficient/matched": {
+            "questions": 70,
+            "correct": 41
+          },
+          "injection": {
+            "questions": 30,
+            "correct": 11
+          },
+          "injection/decision": {
+            "questions": 30,
+            "correct": 11
+          },
+          "injection/base": {
+            "questions": 30,
+            "correct": 11
+          },
+          "multihop/approver": {
+            "questions": 5,
+            "correct": 1
+          },
+          "probability": {
+            "questions": 288,
+            "correct": 95
+          },
+          "probability/forward": {
+            "questions": 30,
+            "correct": 7
+          },
+          "probability/base": {
+            "questions": 144,
+            "correct": 53
+          },
+          "probability/reverse": {
+            "questions": 30,
+            "correct": 5
+          },
+          "probability/project": {
+            "questions": 24,
+            "correct": 16
+          },
+          "probability/value": {
+            "questions": 24,
+            "correct": 13
+          },
+          "probability/bucket": {
+            "questions": 70,
+            "correct": 12
+          },
+          "probability/probability": {
+            "questions": 46,
+            "correct": 12
+          },
+          "temporal": {
+            "questions": 30,
+            "correct": 11
+          },
+          "temporal/decision": {
+            "questions": 30,
+            "correct": 11
+          },
+          "temporal/base": {
+            "questions": 30,
+            "correct": 11
+          },
+          "tool_routing": {
+            "questions": 30,
+            "correct": 14
+          },
+          "tool_routing/decision": {
+            "questions": 30,
+            "correct": 14
+          },
+          "tool_routing/base": {
+            "questions": 30,
+            "correct": 14
+          },
+          "probability/matched": {
+            "questions": 144,
+            "correct": 42
+          },
+          "multihop/matched": {
+            "questions": 18,
+            "correct": 10
+          },
+          "probability/decision": {
+            "questions": 16,
+            "correct": 8
+          },
+          "multihop/contact": {
+            "questions": 12,
+            "correct": 1
+          },
+          "multihop/group": {
+            "questions": 12,
+            "correct": 10
+          },
+          "probability/more_likely": {
+            "questions": 24,
+            "correct": 18
+          },
+          "probability/posterior": {
+            "questions": 24,
+            "correct": 4
+          },
+          "multihop/controller": {
+            "questions": 14,
+            "correct": 5
+          },
+          "multihop/interest": {
+            "questions": 14,
+            "correct": 6
+          }
+        },
+        "matched_pairs": {
+          "probability": {
+            "question_pairs": 144,
+            "both_correct": 27,
+            "both_wrong": 76,
+            "prediction_changed": 25,
+            "expected_change_pattern_matched": 75,
+            "context_pairs": 70,
+            "both_contexts_all_correct": 3
+          },
+          "probability/forward": {
+            "question_pairs": 15,
+            "both_correct": 3,
+            "both_wrong": 11,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 12
+          },
+          "probability/gold_unchanged": {
+            "question_pairs": 72,
+            "both_correct": 25,
+            "both_wrong": 41,
+            "prediction_changed": 11,
+            "expected_change_pattern_matched": 61
+          },
+          "probability/reverse": {
+            "question_pairs": 15,
+            "both_correct": 1,
+            "both_wrong": 11,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 9
+          },
+          "probability/gold_changes": {
+            "question_pairs": 72,
+            "both_correct": 2,
+            "both_wrong": 35,
+            "prediction_changed": 14,
+            "expected_change_pattern_matched": 14
+          },
+          "probability/bucket": {
+            "question_pairs": 35,
+            "both_correct": 3,
+            "both_wrong": 26,
+            "prediction_changed": 8,
+            "expected_change_pattern_matched": 19
+          },
+          "probability/more_likely": {
+            "question_pairs": 12,
+            "both_correct": 7,
+            "both_wrong": 1,
+            "prediction_changed": 4,
+            "expected_change_pattern_matched": 8
+          },
+          "probability/posterior": {
+            "question_pairs": 12,
+            "both_correct": 0,
+            "both_wrong": 8,
+            "prediction_changed": 4,
+            "expected_change_pattern_matched": 3
+          },
+          "probability/probability": {
+            "question_pairs": 23,
+            "both_correct": 2,
+            "both_wrong": 13,
+            "prediction_changed": 6,
+            "expected_change_pattern_matched": 8
+          },
+          "probability/decision": {
+            "question_pairs": 8,
+            "both_correct": 1,
+            "both_wrong": 1,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 2
+          },
+          "probability/project": {
+            "question_pairs": 12,
+            "both_correct": 7,
+            "both_wrong": 3,
+            "prediction_changed": 2,
+            "expected_change_pattern_matched": 10
+          },
+          "probability/value": {
+            "question_pairs": 12,
+            "both_correct": 3,
+            "both_wrong": 2,
+            "prediction_changed": 1,
+            "expected_change_pattern_matched": 4
+          },
+          "multihop": {
+            "question_pairs": 18,
+            "both_correct": 2,
+            "both_wrong": 2,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 4,
+            "context_pairs": 18,
+            "both_contexts_all_correct": 2
+          },
+          "multihop/decision": {
+            "question_pairs": 18,
+            "both_correct": 2,
+            "both_wrong": 2,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 4
+          },
+          "multihop/gold_unchanged": {
+            "question_pairs": 4,
+            "both_correct": 2,
+            "both_wrong": 2,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 4
+          },
+          "multihop/gold_changes": {
+            "question_pairs": 14,
+            "both_correct": 0,
+            "both_wrong": 0,
+            "prediction_changed": 0,
+            "expected_change_pattern_matched": 0
+          },
+          "policy": {
+            "question_pairs": 120,
+            "both_correct": 17,
+            "both_wrong": 47,
+            "prediction_changed": 9,
+            "expected_change_pattern_matched": 50,
+            "context_pairs": 60,
+            "both_contexts_all_correct": 3
+          },
+          "policy/amount": {
+            "question_pairs": 60,
+            "both_correct": 6,
+            "both_wrong": 16,
+            "prediction_changed": 2,
+            "expected_change_pattern_matched": 20
+          },
+          "policy/gold_changes": {
+            "question_pairs": 73,
+            "both_correct": 1,
+            "both_wrong": 16,
+            "prediction_changed": 6,
+            "expected_change_pattern_matched": 6
+          },
+          "policy/reason": {
+            "question_pairs": 60,
+            "both_correct": 11,
+            "both_wrong": 31,
+            "prediction_changed": 7,
+            "expected_change_pattern_matched": 30
+          },
+          "policy/gold_unchanged": {
+            "question_pairs": 47,
+            "both_correct": 16,
+            "both_wrong": 31,
+            "prediction_changed": 3,
+            "expected_change_pattern_matched": 44
+          },
+          "insufficient": {
+            "question_pairs": 70,
+            "both_correct": 17,
+            "both_wrong": 11,
+            "prediction_changed": 41,
+            "expected_change_pattern_matched": 34,
+            "context_pairs": 70,
+            "both_contexts_all_correct": 17
+          },
+          "insufficient/decision": {
+            "question_pairs": 70,
+            "both_correct": 17,
+            "both_wrong": 11,
+            "prediction_changed": 41,
+            "expected_change_pattern_matched": 34
+          },
+          "insufficient/gold_changes": {
+            "question_pairs": 49,
+            "both_correct": 14,
+            "both_wrong": 4,
+            "prediction_changed": 27,
+            "expected_change_pattern_matched": 27
+          },
+          "insufficient/gold_unchanged": {
+            "question_pairs": 21,
+            "both_correct": 3,
+            "both_wrong": 7,
+            "prediction_changed": 14,
+            "expected_change_pattern_matched": 7
+          }
+        },
+        "policy_zero_choice": {
+          "positive": {
+            "records": 74,
+            "correct_amount": 4,
+            "chose_zero": 62
+          },
+          "positive/matched": {
+            "records": 42,
+            "correct_amount": 2,
+            "chose_zero": 36
+          },
+          "zero": {
+            "records": 46,
+            "correct_amount": 46,
+            "chose_zero": 46
+          },
+          "zero/base": {
+            "records": 28,
+            "correct_amount": 28,
+            "chose_zero": 28
+          },
+          "zero/matched": {
+            "records": 18,
+            "correct_amount": 18,
+            "chose_zero": 18
+          },
+          "positive/base": {
+            "records": 32,
+            "correct_amount": 2,
+            "chose_zero": 26
+          }
+        }
+      },
+      "train": {
+        "status": "complete",
+        "data_sha256": "2932da30f01f37e6443f911399fa6195e99ca8605a5e92c85dcec7ba1896352d",
+        "accuracy_groups": {
+          "insufficient": {
+            "questions": 560,
+            "correct": 296
+          },
+          "insufficient/decision": {
+            "questions": 560,
+            "correct": 296
+          },
+          "insufficient/matched": {
+            "questions": 280,
+            "correct": 150
+          },
+          "policy": {
+            "questions": 1200,
+            "correct": 432
+          },
+          "policy/amount": {
+            "questions": 600,
+            "correct": 261
+          },
+          "policy/matched": {
+            "questions": 600,
+            "correct": 202
+          },
+          "policy/reason": {
+            "questions": 600,
+            "correct": 171
+          },
+          "policy/base": {
+            "questions": 600,
+            "correct": 230
+          },
+          "probability": {
+            "questions": 1440,
+            "correct": 473
+          },
+          "probability/bucket": {
+            "questions": 350,
+            "correct": 73
+          },
+          "probability/matched": {
+            "questions": 720,
+            "correct": 237
+          },
+          "probability/probability": {
+            "questions": 230,
+            "correct": 63
+          },
+          "temporal": {
+            "questions": 100,
+            "correct": 37
+          },
+          "temporal/decision": {
+            "questions": 100,
+            "correct": 37
+          },
+          "temporal/base": {
+            "questions": 100,
+            "correct": 37
+          },
+          "insufficient/base": {
+            "questions": 280,
+            "correct": 146
+          },
+          "probability/forward": {
+            "questions": 150,
+            "correct": 33
+          },
+          "probability/reverse": {
+            "questions": 150,
+            "correct": 46
+          },
+          "probability/base": {
+            "questions": 720,
+            "correct": 236
+          },
+          "multihop": {
+            "questions": 490,
+            "correct": 197
+          },
+          "multihop/controller": {
+            "questions": 70,
+            "correct": 31
+          },
+          "multihop/base": {
+            "questions": 400,
+            "correct": 153
+          },
+          "multihop/interest": {
+            "questions": 70,
+            "correct": 22
+          },
+          "probability/decision": {
+            "questions": 80,
+            "correct": 37
+          },
+          "multihop/approver": {
+            "questions": 25,
+            "correct": 2
+          },
+          "multihop/contact": {
+            "questions": 60,
+            "correct": 10
+          },
+          "multihop/group": {
+            "questions": 60,
+            "correct": 36
+          },
+          "probability/project": {
+            "questions": 120,
+            "correct": 62
+          },
+          "probability/value": {
+            "questions": 120,
+            "correct": 39
+          },
+          "tool_routing": {
+            "questions": 100,
+            "correct": 47
+          },
+          "tool_routing/decision": {
+            "questions": 100,
+            "correct": 47
+          },
+          "tool_routing/base": {
+            "questions": 100,
+            "correct": 47
+          },
+          "probability/more_likely": {
+            "questions": 120,
+            "correct": 79
+          },
+          "probability/posterior": {
+            "questions": 120,
+            "correct": 41
+          },
+          "multihop/decision": {
+            "questions": 205,
+            "correct": 96
+          },
+          "injection": {
+            "questions": 100,
+            "correct": 51
+          },
+          "injection/decision": {
+            "questions": 100,
+            "correct": 51
+          },
+          "injection/base": {
+            "questions": 100,
+            "correct": 51
+          },
+          "multihop/matched": {
+            "questions": 90,
+            "correct": 44
+          }
+        },
+        "matched_pairs": {
+          "probability": {
+            "question_pairs": 720,
+            "both_correct": 108,
+            "both_wrong": 355,
+            "prediction_changed": 155,
+            "expected_change_pattern_matched": 333,
+            "context_pairs": 350,
+            "both_contexts_all_correct": 10
+          },
+          "probability/forward": {
+            "question_pairs": 75,
+            "both_correct": 7,
+            "both_wrong": 49,
+            "prediction_changed": 4,
+            "expected_change_pattern_matched": 40
+          },
+          "probability/gold_unchanged": {
+            "question_pairs": 306,
+            "both_correct": 92,
+            "both_wrong": 174,
+            "prediction_changed": 64,
+            "expected_change_pattern_matched": 242
+          },
+          "probability/reverse": {
+            "question_pairs": 75,
+            "both_correct": 12,
+            "both_wrong": 41,
+            "prediction_changed": 5,
+            "expected_change_pattern_matched": 36
+          },
+          "probability/gold_changes": {
+            "question_pairs": 414,
+            "both_correct": 16,
+            "both_wrong": 181,
+            "prediction_changed": 91,
+            "expected_change_pattern_matched": 91
+          },
+          "probability/bucket": {
+            "question_pairs": 175,
+            "both_correct": 15,
+            "both_wrong": 117,
+            "prediction_changed": 59,
+            "expected_change_pattern_matched": 86
+          },
+          "probability/more_likely": {
+            "question_pairs": 60,
+            "both_correct": 26,
+            "both_wrong": 7,
+            "prediction_changed": 11,
+            "expected_change_pattern_matched": 33
+          },
+          "probability/posterior": {
+            "question_pairs": 60,
+            "both_correct": 6,
+            "both_wrong": 25,
+            "prediction_changed": 14,
+            "expected_change_pattern_matched": 20
+          },
+          "probability/probability": {
+            "question_pairs": 115,
+            "both_correct": 10,
+            "both_wrong": 62,
+            "prediction_changed": 30,
+            "expected_change_pattern_matched": 48
+          },
+          "probability/decision": {
+            "question_pairs": 40,
+            "both_correct": 3,
+            "both_wrong": 6,
+            "prediction_changed": 3,
+            "expected_change_pattern_matched": 9
+          },
+          "probability/project": {
+            "question_pairs": 60,
+            "both_correct": 24,
+            "both_wrong": 22,
+            "prediction_changed": 16,
+            "expected_change_pattern_matched": 44
+          },
+          "probability/value": {
+            "question_pairs": 60,
+            "both_correct": 5,
+            "both_wrong": 26,
+            "prediction_changed": 13,
+            "expected_change_pattern_matched": 17
+          },
+          "multihop": {
+            "question_pairs": 90,
+            "both_correct": 10,
+            "both_wrong": 14,
+            "prediction_changed": 7,
+            "expected_change_pattern_matched": 23,
+            "context_pairs": 90,
+            "both_contexts_all_correct": 10
+          },
+          "multihop/decision": {
+            "question_pairs": 90,
+            "both_correct": 10,
+            "both_wrong": 14,
+            "prediction_changed": 7,
+            "expected_change_pattern_matched": 23
+          },
+          "multihop/gold_unchanged": {
+            "question_pairs": 18,
+            "both_correct": 9,
+            "both_wrong": 9,
+            "prediction_changed": 1,
+            "expected_change_pattern_matched": 17
+          },
+          "multihop/gold_changes": {
+            "question_pairs": 72,
+            "both_correct": 1,
+            "both_wrong": 5,
+            "prediction_changed": 6,
+            "expected_change_pattern_matched": 6
+          },
+          "policy": {
+            "question_pairs": 600,
+            "both_correct": 65,
+            "both_wrong": 233,
+            "prediction_changed": 60,
+            "expected_change_pattern_matched": 205,
+            "context_pairs": 300,
+            "both_contexts_all_correct": 5
+          },
+          "policy/amount": {
+            "question_pairs": 300,
+            "both_correct": 26,
+            "both_wrong": 65,
+            "prediction_changed": 12,
+            "expected_change_pattern_matched": 58
+          },
+          "policy/gold_changes": {
+            "question_pairs": 441,
+            "both_correct": 10,
+            "both_wrong": 134,
+            "prediction_changed": 53,
+            "expected_change_pattern_matched": 53
+          },
+          "policy/reason": {
+            "question_pairs": 300,
+            "both_correct": 39,
+            "both_wrong": 168,
+            "prediction_changed": 48,
+            "expected_change_pattern_matched": 147
+          },
+          "policy/gold_unchanged": {
+            "question_pairs": 159,
+            "both_correct": 55,
+            "both_wrong": 99,
+            "prediction_changed": 7,
+            "expected_change_pattern_matched": 152
+          },
+          "insufficient": {
+            "question_pairs": 280,
+            "both_correct": 69,
+            "both_wrong": 53,
+            "prediction_changed": 160,
+            "expected_change_pattern_matched": 144,
+            "context_pairs": 280,
+            "both_contexts_all_correct": 69
+          },
+          "insufficient/decision": {
+            "question_pairs": 280,
+            "both_correct": 69,
+            "both_wrong": 53,
+            "prediction_changed": 160,
+            "expected_change_pattern_matched": 144
+          },
+          "insufficient/gold_changes": {
+            "question_pairs": 224,
+            "both_correct": 62,
+            "both_wrong": 33,
+            "prediction_changed": 124,
+            "expected_change_pattern_matched": 124
+          },
+          "insufficient/gold_unchanged": {
+            "question_pairs": 56,
+            "both_correct": 7,
+            "both_wrong": 20,
+            "prediction_changed": 36,
+            "expected_change_pattern_matched": 20
+          }
+        },
+        "policy_zero_choice": {
+          "positive": {
+            "records": 325,
+            "correct_amount": 6,
+            "chose_zero": 289
+          },
+          "positive/matched": {
+            "records": 165,
+            "correct_amount": 3,
+            "chose_zero": 151
+          },
+          "zero": {
+            "records": 275,
+            "correct_amount": 255,
+            "chose_zero": 255
+          },
+          "zero/base": {
+            "records": 140,
+            "correct_amount": 135,
+            "chose_zero": 135
+          },
+          "positive/base": {
+            "records": 160,
+            "correct_amount": 3,
+            "chose_zero": 138
+          },
+          "zero/matched": {
+            "records": 135,
+            "correct_amount": 120,
+            "chose_zero": 120
+          }
+        }
+      }
+    }
+  },
+  "scope": "Observed predictions only. Training scores are in-sample; development uses shared generators. Prediction changes alone do not imply correctness. Extra paired views are not independent base cases."
+}

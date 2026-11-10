@@ -1,0 +1,73 @@
+{
+  "status": "component_only_not_trained",
+  "contexts_planned": 350,
+  "purpose": "Broaden target selection, ordering, representation and rate-language coverage; not the final 1500 corpus.",
+  "files": {
+    "train": {
+      "contexts": 350,
+      "questions": 720,
+      "coverage": {
+        "target_row_position": {
+          "0": 39,
+          "1": 36
+        },
+        "target_status_position": {
+          "0": 40,
+          "1": 35
+        },
+        "layout": {
+          "prose": 25,
+          "table": 25,
+          "object": 25
+        },
+        "rate_style": {
+          "percent": 70,
+          "words": 69,
+          "fraction": 68,
+          "outof": 68
+        }
+      },
+      "incorrect_labels_rejected": 2694,
+      "sha256": "45e52ec992acb0738f7bac1d3394a6d86f5239f2a6e1823031b90b7ae5193f8f"
+    },
+    "development": {
+      "contexts": 60,
+      "questions": 124,
+      "coverage": {
+        "target_row_position": {
+          "0": 6,
+          "1": 4
+        },
+        "target_status_position": {
+          "0": 8,
+          "1": 2
+        },
+        "layout": {
+          "prose": 4,
+          "table": 3,
+          "object": 3
+        },
+        "rate_style": {
+          "percent": 15,
+          "words": 15,
+          "fraction": 10,
+          "outof": 10
+        }
+      },
+      "incorrect_labels_rejected": 477,
+      "sha256": "42d3f8f0c4e60f1dcd4d34960d89cf500b88fffbd1d9ea20b0d2ad4c0bc6da41"
+    }
+  },
+  "checks": {
+    "normalized_state_train_dev_overlap": 0,
+    "normalized_state_frozen_test_overlap": 0,
+    "normalized_state_previous_v6_train_overlap": 0,
+    "visible_numeric_label_verification": true,
+    "all_rate_representations_exactly_reconstruct_original_facts": true
+  },
+  "limitations": [
+    "Authored templates and same-author verifier, not external semantic review.",
+    "Test cases were inspected for coverage diagnosis; future results are not blind generalization.",
+    "Only the probability component is prepared; no new training has started."
+  ]
+}

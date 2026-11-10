@@ -1,0 +1,147 @@
+{
+  "models": {
+    "qwen3": {
+      "yes": {
+        "questions": 18,
+        "contexts": 18,
+        "before_correct": 8,
+        "after_correct": 14,
+        "before_pct": 44.44444444444444,
+        "after_pct": 77.77777777777777,
+        "delta_pp": 33.333333333333336,
+        "repaired": 6,
+        "newly_wrong": 0,
+        "old_wrong": 10,
+        "repair_pct": 60.0,
+        "paired_context_bootstrap_95pct_pp": [
+          11.11111111111111,
+          55.55555555555556
+        ]
+      },
+      "no": {
+        "questions": 14,
+        "contexts": 14,
+        "before_correct": 0,
+        "after_correct": 5,
+        "before_pct": 0.0,
+        "after_pct": 35.714285714285715,
+        "delta_pp": 35.714285714285715,
+        "repaired": 5,
+        "newly_wrong": 0,
+        "old_wrong": 14,
+        "repair_pct": 35.714285714285715,
+        "paired_context_bootstrap_95pct_pp": [
+          14.285714285714286,
+          64.28571428571429
+        ]
+      },
+      "unknown": {
+        "questions": 14,
+        "contexts": 14,
+        "before_correct": 10,
+        "after_correct": 4,
+        "before_pct": 71.42857142857143,
+        "after_pct": 28.571428571428573,
+        "delta_pp": -42.857142857142854,
+        "repaired": 0,
+        "newly_wrong": 6,
+        "old_wrong": 4,
+        "repair_pct": 0.0,
+        "paired_context_bootstrap_95pct_pp": [
+          -71.42857142857143,
+          -21.428571428571427
+        ]
+      },
+      "nondeciding": {
+        "questions": 14,
+        "contexts": 14,
+        "before_correct": 1,
+        "after_correct": 5,
+        "before_pct": 7.142857142857143,
+        "after_pct": 35.714285714285715,
+        "delta_pp": 28.571428571428573,
+        "repaired": 4,
+        "newly_wrong": 0,
+        "old_wrong": 13,
+        "repair_pct": 30.76923076923077,
+        "paired_context_bootstrap_95pct_pp": [
+          7.142857142857143,
+          50.0
+        ]
+      }
+    },
+    "qwen35": {
+      "yes": {
+        "questions": 18,
+        "contexts": 18,
+        "before_correct": 8,
+        "after_correct": 15,
+        "before_pct": 44.44444444444444,
+        "after_pct": 83.33333333333333,
+        "delta_pp": 38.888888888888886,
+        "repaired": 7,
+        "newly_wrong": 0,
+        "old_wrong": 10,
+        "repair_pct": 70.0,
+        "paired_context_bootstrap_95pct_pp": [
+          16.666666666666668,
+          61.111111111111114
+        ]
+      },
+      "no": {
+        "questions": 14,
+        "contexts": 14,
+        "before_correct": 7,
+        "after_correct": 8,
+        "before_pct": 50.0,
+        "after_pct": 57.142857142857146,
+        "delta_pp": 7.142857142857143,
+        "repaired": 2,
+        "newly_wrong": 1,
+        "old_wrong": 7,
+        "repair_pct": 28.571428571428573,
+        "paired_context_bootstrap_95pct_pp": [
+          -14.285714285714286,
+          28.571428571428573
+        ]
+      },
+      "unknown": {
+        "questions": 14,
+        "contexts": 14,
+        "before_correct": 9,
+        "after_correct": 5,
+        "before_pct": 64.28571428571429,
+        "after_pct": 35.714285714285715,
+        "delta_pp": -28.571428571428573,
+        "repaired": 2,
+        "newly_wrong": 6,
+        "old_wrong": 5,
+        "repair_pct": 40.0,
+        "paired_context_bootstrap_95pct_pp": [
+          -64.28571428571429,
+          7.142857142857143
+        ]
+      },
+      "nondeciding": {
+        "questions": 14,
+        "contexts": 14,
+        "before_correct": 4,
+        "after_correct": 9,
+        "before_pct": 28.571428571428573,
+        "after_pct": 64.28571428571429,
+        "delta_pp": 35.714285714285715,
+        "repaired": 5,
+        "newly_wrong": 0,
+        "old_wrong": 10,
+        "repair_pct": 50.0,
+        "paired_context_bootstrap_95pct_pp": [
+          14.285714285714286,
+          64.28571428571429
+        ]
+      }
+    }
+  },
+  "observation": "Unknown-answer accuracy decreases on the generated development set for both models, despite higher aggregate insufficient-information accuracy.",
+  "causal_status": "Label balance and lack of matched pairs are hypotheses; this audit alone does not establish causality.",
+  "next_intervention": "Build deciding-variable present/missing matched pairs and nondeciding-variable controls. Keep siblings in one split. Compare from original stage3, never from v4."
+}

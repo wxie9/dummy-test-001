@@ -1,0 +1,41 @@
+{
+  "rows": 8520,
+  "matched_groups": 1020,
+  "seed": 101,
+  "batch": 4,
+  "accum": 2,
+  "groups": {
+    "all": {
+      "pair_groups": 1020,
+      "same_microbatch": 0,
+      "same_optimizer_step": 0
+    },
+    "probability": {
+      "pair_groups": 350,
+      "same_microbatch": 0,
+      "same_optimizer_step": 0
+    },
+    "multihop": {
+      "pair_groups": 90,
+      "same_microbatch": 0,
+      "same_optimizer_step": 0
+    },
+    "policy": {
+      "pair_groups": 300,
+      "same_microbatch": 0,
+      "same_optimizer_step": 0
+    },
+    "insufficient": {
+      "pair_groups": 280,
+      "same_microbatch": 0,
+      "same_optimizer_step": 0
+    }
+  },
+  "optimizer_step_distance": {
+    "minimum": 1,
+    "median": 306,
+    "maximum": 1046
+  },
+  "scope": "Exact first-epoch original shuffle indices; preflight verified no filtering. Separate CE on both views is still valid. Rare co-occurrence is not proof of failure cause; grouped batches would test a different stochastic optimization schedule, not create new data.",
+  "training_code_sha256": "68428ed43b3e362e52d4650dc5296ab88767061f7998a525715e1b306eeef474"
+}

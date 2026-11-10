@@ -1,0 +1,414 @@
+[
+  {
+    "state": "[1] FAILURE RULE\n[2] A failed hard prerequisite disables its consumer. Apply this rule repeatedly until no further units fail. Soft links never propagate failure. Failure never propagates from a consumer to its prerequisite. All dependencies are listed.\n[3] Dependency: consumer=Sienna; prerequisite=Onyx; kind=hard.\n[4] Onyx requires Beryl through a hard dependency.\n[5] Kestrel is a hard prerequisite for Yarrow.\n[6] Dependency: consumer=Fjord; prerequisite=Lagoon; kind=hard.\n[7] Beryl requires Wren through a hard dependency.\n[8] Wren is a soft prerequisite for Lagoon.\n[9] Dependency: consumer=Wren; prerequisite=Mallow; kind=hard.\n[10] Nimbus requires Onyx through a hard dependency.\n[11] Initial failed unit: Wren. All other units initially function.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "After propagation, which listed candidate has failed?",
+        "criteria": {
+          "a": "Topaz",
+          "b": "Sienna",
+          "c": "None of the listed candidates",
+          "d": "Mallow"
+        },
+        "label": "b",
+        "src": "multihop-transfer-20261030",
+        "target": {
+          "b": 1.0
+        }
+      }
+    },
+    "_meta": {
+      "id": "multihop-transfer-20261030/train/dependency_candidates/32",
+      "source": "multihop-transfer-20261030",
+      "family": "multihop",
+      "split": "train",
+      "group_id": "multihop-transfer-20261030/train/dependency_candidates/32",
+      "subtype": "dependency_candidates",
+      "facts": {
+        "edges": [
+          [
+            "Sienna",
+            "Onyx",
+            true
+          ],
+          [
+            "Onyx",
+            "Beryl",
+            true
+          ],
+          [
+            "Yarrow",
+            "Kestrel",
+            true
+          ],
+          [
+            "Fjord",
+            "Lagoon",
+            true
+          ],
+          [
+            "Beryl",
+            "Wren",
+            true
+          ],
+          [
+            "Lagoon",
+            "Wren",
+            false
+          ],
+          [
+            "Wren",
+            "Mallow",
+            true
+          ],
+          [
+            "Nimbus",
+            "Onyx",
+            true
+          ]
+        ],
+        "initial": "Wren",
+        "chain_hops": 3,
+        "candidates": [
+          "Topaz",
+          "Sienna",
+          "Mallow"
+        ]
+      },
+      "review_zh": "从失败的先决条件沿消费者方向传播，软边阻断。",
+      "text_sha256": "7ca721ce2a71d4d94518ed0105b1d8ca0027b916b6c969af3b5ee5bb171d9a65",
+      "presentation": "numbered"
+    }
+  },
+  {
+    "state": {
+      "document": "Operational case record",
+      "entries": [
+        "AUTHORIZATION DIRECTORY",
+        "Ranks in increasing authority: Junior Associate, Senior Specialist, Team Leader, Department Principal, Division Head, Chief Executive. A request is routed from its origin upward to the first supervisor with rank Team Leader or higher; the origin cannot approve its own request.",
+        "Glade has supervisor Nexus.",
+        "Knoll has supervisor Fern.",
+        "Islet holds rank Chief Executive.",
+        "Echo has supervisor Lumen.",
+        "Peak has supervisor Nexus.",
+        "Nexus holds rank Senior Specialist.",
+        "Nexus has supervisor Ridge.",
+        "Echo holds rank Junior Associate.",
+        "Jade holds rank Team Leader.",
+        "Amber holds rank Division Head.",
+        "Ridge has supervisor Amber.",
+        "Peak holds rank Team Leader.",
+        "Glade holds rank Division Head.",
+        "Ridge holds rank Chief Executive.",
+        "Knoll holds rank Department Principal.",
+        "Amber has supervisor Zephyr.",
+        "Fern holds rank Team Leader.",
+        "Lumen holds rank Team Leader.",
+        "Opal holds rank Chief Executive.",
+        "Islet has supervisor Echo.",
+        "Zephyr has supervisor Islet.",
+        "Zephyr holds rank Division Head.",
+        "Request origin: Peak."
+      ]
+    },
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Who must approve this request?",
+        "criteria": {
+          "a": "Fern",
+          "b": "Amber",
+          "c": "Zephyr",
+          "d": "Ridge",
+          "e": "Islet",
+          "f": "Echo",
+          "g": "Nexus",
+          "h": "Knoll",
+          "i": "Lumen"
+        },
+        "label": "d",
+        "src": "multihop-transfer-20261030"
+      }
+    },
+    "_meta": {
+      "id": "multihop-transfer-20261030/train/rank_escalation/24",
+      "source": "multihop-transfer-20261030",
+      "family": "multihop",
+      "split": "train",
+      "group_id": "multihop-transfer-20261030/train/rank_escalation/24",
+      "subtype": "rank_escalation",
+      "facts": {
+        "path": [
+          "Peak",
+          "Nexus",
+          "Ridge",
+          "Amber",
+          "Zephyr",
+          "Islet",
+          "Echo",
+          "Lumen"
+        ],
+        "links": [
+          [
+            "Echo",
+            "Lumen"
+          ],
+          [
+            "Zephyr",
+            "Islet"
+          ],
+          [
+            "Amber",
+            "Zephyr"
+          ],
+          [
+            "Knoll",
+            "Fern"
+          ],
+          [
+            "Islet",
+            "Echo"
+          ],
+          [
+            "Nexus",
+            "Ridge"
+          ],
+          [
+            "Ridge",
+            "Amber"
+          ],
+          [
+            "Peak",
+            "Nexus"
+          ],
+          [
+            "Glade",
+            "Nexus"
+          ]
+        ],
+        "ranks": {
+          "Peak": 2,
+          "Nexus": 1,
+          "Ridge": 5,
+          "Amber": 4,
+          "Zephyr": 4,
+          "Islet": 5,
+          "Echo": 0,
+          "Lumen": 2,
+          "Knoll": 3,
+          "Fern": 2,
+          "Glade": 4,
+          "Opal": 5,
+          "Jade": 2
+        },
+        "threshold": 2
+      },
+      "review_zh": "根据可见边和条件逐跳求解；不依赖同名节点的位置。",
+      "text_sha256": "c1d331970e3175e4fc0a28917299d6211950c1a607d63e4be834b8ad0d012670",
+      "presentation": "object"
+    }
+  },
+  {
+    "state": "ROUTING INSTRUCTION\nFor this request, start at Violet and follow exactly 2 supervisor links. The person reached must approve; rank and availability do not alter this rule.\nYarrow has supervisor Alder.\nAlder has supervisor Hazel.\nIndigo has supervisor Yarrow.\nViolet has supervisor Indigo.\nBeryl has supervisor Nimbus.\nRowan has supervisor Yarrow.",
+    "questions": {
+      "approver": {
+        "type": "choice",
+        "instructions": "Who is the required approver?",
+        "criteria": {
+          "a": "Indigo",
+          "b": "Nimbus",
+          "c": "Alder",
+          "d": "Hazel",
+          "e": "Yarrow",
+          "f": "Beryl"
+        },
+        "label": "e",
+        "src": "multihop-transfer-20261030"
+      }
+    },
+    "_meta": {
+      "id": "multihop-transfer-20261030/train/exact_supervisor_hops/20",
+      "source": "multihop-transfer-20261030",
+      "family": "multihop",
+      "split": "train",
+      "group_id": "multihop-transfer-20261030/train/exact_supervisor_hops/20",
+      "subtype": "exact_supervisor_hops",
+      "facts": {
+        "start": "Violet",
+        "edges": [
+          [
+            "Yarrow",
+            "Alder"
+          ],
+          [
+            "Alder",
+            "Hazel"
+          ],
+          [
+            "Indigo",
+            "Yarrow"
+          ],
+          [
+            "Violet",
+            "Indigo"
+          ],
+          [
+            "Beryl",
+            "Nimbus"
+          ],
+          [
+            "Rowan",
+            "Yarrow"
+          ]
+        ],
+        "steps": 2
+      },
+      "review_zh": "沿主管边走2次，终点Yarrow。",
+      "text_sha256": "b2bd784902eaab529016340839459ea636267fc1f74cc9f6ca005f0915fced57",
+      "presentation": "plain"
+    }
+  },
+  {
+    "state": {
+      "document": "Operational case record",
+      "entries": [
+        "DISPATCH POLICY",
+        "Route the incident to the asset owner. Try the primary contact, then the backup contact, then the duty lead, stopping at the first available person. A person is unavailable exactly on the listed inclusive absence interval and available otherwise. No absence record means available.",
+        "Marble backup contact: Umber.",
+        "Copper backup contact: Coral.",
+        "The owner of Scheduler is team Marble.",
+        "Absence for Coral: 2030-08-04 to 2030-08-07, inclusive.",
+        "The owner of Collector is team Juniper.",
+        "Absence for Umber: 2030-08-15 to 2030-08-18, inclusive.",
+        "Juniper primary contact: Kestrel.",
+        "Absence for Kestrel: 2030-08-09 to 2030-08-14, inclusive.",
+        "Absence for Nimbus: 2030-08-14 to 2030-08-17, inclusive.",
+        "Juniper backup contact: Topaz.",
+        "Marble primary contact: Onyx.",
+        "Absence for Yarrow: 2030-08-06 to 2030-08-09, inclusive.",
+        "Copper primary contact: Ember.",
+        "Copper duty lead: Garnet.",
+        "The owner of Recorder is team Marble.",
+        "Absence for Ember: 2030-08-12 to 2030-08-15, inclusive.",
+        "Marble duty lead: Yarrow.",
+        "The owner of Gateway is team Juniper.",
+        "Juniper duty lead: Nimbus.",
+        "The owner of Indexer is team Copper.",
+        "Asset needing help: Collector. Date needing coverage: 2030-08-11."
+      ]
+    },
+    "questions": {
+      "contact": {
+        "type": "choice",
+        "instructions": "Who receives this incident?",
+        "criteria": {
+          "a": "Nimbus",
+          "b": "Coral",
+          "c": "Topaz",
+          "d": "Ember",
+          "e": "Kestrel"
+        },
+        "label": "c",
+        "src": "multihop-transfer-20261030"
+      },
+      "group": {
+        "type": "choice",
+        "instructions": "Which team owns the incident asset?",
+        "criteria": {
+          "a": "Marble",
+          "b": "Copper",
+          "c": "Juniper"
+        },
+        "label": "c",
+        "src": "multihop-transfer-20261030"
+      }
+    },
+    "_meta": {
+      "id": "multihop-transfer-20261030/train/dated_roster/34",
+      "source": "multihop-transfer-20261030",
+      "family": "multihop",
+      "split": "train",
+      "group_id": "multihop-transfer-20261030/train/dated_roster/34",
+      "subtype": "dated_roster",
+      "facts": {
+        "desired_contact_position": 1,
+        "absence_coverage": {
+          "future_absence": 3,
+          "past_absence": 2,
+          "no_absence_record": 3,
+          "inside": 1
+        }
+      },
+      "review_zh": "先关联资产与团队，再判断各联系人的日期可用性。",
+      "text_sha256": "e840e511e8f0b67ff2232b2c5cbec32342faf392cb597b58691544533abf007f",
+      "presentation": "object"
+    }
+  },
+  {
+    "state": {
+      "document": "Operational case record",
+      "entries": [
+        "CORPORATE HOLDINGS REGISTER",
+        "Control and profit share are different. An entity controls an issuer when its own voting shares plus voting shares held by issuers it already controls exceed 50%. Exactly 50% is insufficient. Repeat this rule until no new controlled issuers are found. The ultimate controller is a controller that is not itself controlled by another controller of the target. Profit share instead adds the products of share percentages along all ownership paths. No external agreements confer control. Unlisted shares are dispersed among unrelated investors, each holding less than 5%; they do not act together. Unlisted ownership links do not exist.",
+        "Kestrel owns 60.00% of Ember.",
+        "Mallow owns 49.00% of Garnet.",
+        "Ember owns 51.00% of Garnet."
+      ]
+    },
+    "questions": {
+      "controller": {
+        "type": "choice",
+        "instructions": "Who is the ultimate controller of Garnet?",
+        "criteria": {
+          "a": "Delta",
+          "b": "Ember",
+          "c": "Mallow",
+          "d": "Kestrel",
+          "e": "No ultimate controller"
+        },
+        "label": "d",
+        "src": "multihop-transfer-20261030"
+      },
+      "interest": {
+        "type": "choice",
+        "instructions": "What is Kestrel's economic interest in Garnet? Round to two decimal places.",
+        "criteria": {
+          "a": "30.60%",
+          "b": "50.00%",
+          "c": "100.00%",
+          "d": "35.60%",
+          "e": "0.00%",
+          "f": "69.40%"
+        },
+        "label": "a",
+        "src": "multihop-transfer-20261030"
+      }
+    },
+    "_meta": {
+      "id": "multihop-transfer-20261030/train/ownership_control_and_profit/62",
+      "source": "multihop-transfer-20261030",
+      "family": "multihop",
+      "split": "train",
+      "group_id": "multihop-transfer-20261030/train/ownership_control_and_profit/62",
+      "subtype": "ownership_control_and_profit",
+      "facts": {
+        "stakes": {
+          "Ember": {
+            "Kestrel": 60
+          },
+          "Garnet": {
+            "Ember": 51,
+            "Mallow": 49
+          }
+        },
+        "target": "Garnet",
+        "economic_owner": "Kestrel",
+        "shape": "chain"
+      },
+      "review_zh": "控制权闭包结果Kestrel；经济收益比例30.60%。",
+      "text_sha256": "ddaac3da86d7de73aa6057cbf09d4f5638fc9920d8848cfd4c60a16d44ea7dd9",
+      "presentation": "object"
+    }
+  }
+]

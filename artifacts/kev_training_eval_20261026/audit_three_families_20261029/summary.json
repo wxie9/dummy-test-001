@@ -1,0 +1,1331 @@
+{
+  "provenance": {
+    "test_sha256": "246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b",
+    "synthetic_sha256": "038ec3b91328eba89d2e61dfc429cc6054c4fb6fca621a09dc204b16a02fb619",
+    "prediction_sha256": {
+      "q3_before": "ccd3f617da66cd1201ec9ceee8b8a743d68cf69609f118f03b8fbf35527f76e2",
+      "q3_after": "a931a7effad089ef65ab0c237d6d8d53bed534fa344370553b55ffeb5a88701b",
+      "q35_before": "ba77a270e1b1851dec3daee76d594d6dd02d2373316dc8d1ecb73d880deb8265",
+      "q35_after": "d07513635532b964bf34af89d8bff3566f4574025b5e7039980593e40aed60fc"
+    },
+    "records": 300,
+    "questions": 458,
+    "solver_labels_verified": 458,
+    "scope": "Full selected frozen hard-v1 test families; diagnostic reused test, not new held-out validation",
+    "cause_limit": "Metadata classifies required mechanisms, not causal model error attribution."
+  },
+  "groups": {
+    "ambiguous/absent_kind/deciding": {
+      "q3": {
+        "n": 39,
+        "before": 36,
+        "after": 20,
+        "repaired": 0,
+        "broken": 16,
+        "persistent_wrong": 3
+      },
+      "q35": {
+        "n": 39,
+        "before": 34,
+        "after": 27,
+        "repaired": 0,
+        "broken": 7,
+        "persistent_wrong": 5
+      }
+    },
+    "ambiguous/absent_kind/nondeciding": {
+      "q3": {
+        "n": 11,
+        "before": 1,
+        "after": 5,
+        "repaired": 5,
+        "broken": 1,
+        "persistent_wrong": 5
+      },
+      "q35": {
+        "n": 11,
+        "before": 3,
+        "after": 3,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 8
+      }
+    },
+    "ambiguous/answer_status/determinate": {
+      "q3": {
+        "n": 61,
+        "before": 30,
+        "after": 41,
+        "repaired": 13,
+        "broken": 2,
+        "persistent_wrong": 18
+      },
+      "q35": {
+        "n": 61,
+        "before": 35,
+        "after": 39,
+        "repaired": 4,
+        "broken": 0,
+        "persistent_wrong": 22
+      }
+    },
+    "ambiguous/answer_status/unknown": {
+      "q3": {
+        "n": 39,
+        "before": 36,
+        "after": 20,
+        "repaired": 0,
+        "broken": 16,
+        "persistent_wrong": 3
+      },
+      "q35": {
+        "n": 39,
+        "before": 34,
+        "after": 27,
+        "repaired": 0,
+        "broken": 7,
+        "persistent_wrong": 5
+      }
+    },
+    "ambiguous/explicit_unknown/False": {
+      "q3": {
+        "n": 25,
+        "before": 19,
+        "after": 8,
+        "repaired": 2,
+        "broken": 13,
+        "persistent_wrong": 4
+      },
+      "q35": {
+        "n": 25,
+        "before": 19,
+        "after": 12,
+        "repaired": 0,
+        "broken": 7,
+        "persistent_wrong": 6
+      }
+    },
+    "ambiguous/explicit_unknown/True": {
+      "q3": {
+        "n": 25,
+        "before": 18,
+        "after": 17,
+        "repaired": 3,
+        "broken": 4,
+        "persistent_wrong": 4
+      },
+      "q35": {
+        "n": 25,
+        "before": 18,
+        "after": 18,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 7
+      }
+    },
+    "ambiguous/mechanism/approval": {
+      "q3": {
+        "n": 14,
+        "before": 6,
+        "after": 8,
+        "repaired": 4,
+        "broken": 2,
+        "persistent_wrong": 4
+      },
+      "q35": {
+        "n": 14,
+        "before": 10,
+        "after": 11,
+        "repaired": 1,
+        "broken": 0,
+        "persistent_wrong": 3
+      }
+    },
+    "ambiguous/mechanism/overtime": {
+      "q3": {
+        "n": 12,
+        "before": 7,
+        "after": 5,
+        "repaired": 2,
+        "broken": 4,
+        "persistent_wrong": 3
+      },
+      "q35": {
+        "n": 12,
+        "before": 6,
+        "after": 7,
+        "repaired": 3,
+        "broken": 2,
+        "persistent_wrong": 3
+      }
+    },
+    "ambiguous/mechanism/price_match": {
+      "q3": {
+        "n": 14,
+        "before": 10,
+        "after": 9,
+        "repaired": 0,
+        "broken": 1,
+        "persistent_wrong": 4
+      },
+      "q35": {
+        "n": 14,
+        "before": 10,
+        "after": 10,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 4
+      }
+    },
+    "ambiguous/mechanism/return_window": {
+      "q3": {
+        "n": 14,
+        "before": 8,
+        "after": 7,
+        "repaired": 3,
+        "broken": 4,
+        "persistent_wrong": 3
+      },
+      "q35": {
+        "n": 14,
+        "before": 8,
+        "after": 8,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 6
+      }
+    },
+    "ambiguous/mechanism/shipping": {
+      "q3": {
+        "n": 14,
+        "before": 9,
+        "after": 7,
+        "repaired": 2,
+        "broken": 4,
+        "persistent_wrong": 3
+      },
+      "q35": {
+        "n": 14,
+        "before": 9,
+        "after": 8,
+        "repaired": 0,
+        "broken": 1,
+        "persistent_wrong": 5
+      }
+    },
+    "ambiguous/mechanism/tenure": {
+      "q3": {
+        "n": 16,
+        "before": 12,
+        "after": 10,
+        "repaired": 0,
+        "broken": 2,
+        "persistent_wrong": 4
+      },
+      "q35": {
+        "n": 16,
+        "before": 11,
+        "after": 7,
+        "repaired": 0,
+        "broken": 4,
+        "persistent_wrong": 5
+      }
+    },
+    "ambiguous/mechanism/warranty": {
+      "q3": {
+        "n": 16,
+        "before": 14,
+        "after": 15,
+        "repaired": 2,
+        "broken": 1,
+        "persistent_wrong": 0
+      },
+      "q35": {
+        "n": 16,
+        "before": 15,
+        "after": 15,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 1
+      }
+    },
+    "ambiguous/question/decision": {
+      "q3": {
+        "n": 100,
+        "before": 66,
+        "after": 61,
+        "repaired": 13,
+        "broken": 18,
+        "persistent_wrong": 21
+      },
+      "q35": {
+        "n": 100,
+        "before": 69,
+        "after": 66,
+        "repaired": 4,
+        "broken": 7,
+        "persistent_wrong": 27
+      }
+    },
+    "ambiguous/twin/absent": {
+      "q3": {
+        "n": 50,
+        "before": 37,
+        "after": 25,
+        "repaired": 5,
+        "broken": 17,
+        "persistent_wrong": 8
+      },
+      "q35": {
+        "n": 50,
+        "before": 37,
+        "after": 30,
+        "repaired": 0,
+        "broken": 7,
+        "persistent_wrong": 13
+      }
+    },
+    "ambiguous/twin/intact": {
+      "q3": {
+        "n": 50,
+        "before": 29,
+        "after": 36,
+        "repaired": 8,
+        "broken": 1,
+        "persistent_wrong": 13
+      },
+      "q35": {
+        "n": 50,
+        "before": 32,
+        "after": 36,
+        "repaired": 4,
+        "broken": 0,
+        "persistent_wrong": 14
+      }
+    },
+    "family/ambiguous": {
+      "q3": {
+        "n": 100,
+        "before": 66,
+        "after": 61,
+        "repaired": 13,
+        "broken": 18,
+        "persistent_wrong": 21
+      },
+      "q35": {
+        "n": 100,
+        "before": 69,
+        "after": 66,
+        "repaired": 4,
+        "broken": 7,
+        "persistent_wrong": 27
+      }
+    },
+    "family/long_policy": {
+      "q3": {
+        "n": 200,
+        "before": 117,
+        "after": 116,
+        "repaired": 9,
+        "broken": 10,
+        "persistent_wrong": 74
+      },
+      "q35": {
+        "n": 200,
+        "before": 131,
+        "after": 130,
+        "repaired": 5,
+        "broken": 6,
+        "persistent_wrong": 64
+      }
+    },
+    "family/probability": {
+      "q3": {
+        "n": 158,
+        "before": 85,
+        "after": 79,
+        "repaired": 4,
+        "broken": 10,
+        "persistent_wrong": 69
+      },
+      "q35": {
+        "n": 158,
+        "before": 87,
+        "after": 85,
+        "repaired": 5,
+        "broken": 7,
+        "persistent_wrong": 66
+      }
+    },
+    "long_policy/active_exception/False/amount": {
+      "q3": {
+        "n": 84,
+        "before": 70,
+        "after": 69,
+        "repaired": 3,
+        "broken": 4,
+        "persistent_wrong": 11
+      },
+      "q35": {
+        "n": 84,
+        "before": 70,
+        "after": 66,
+        "repaired": 0,
+        "broken": 4,
+        "persistent_wrong": 14
+      }
+    },
+    "long_policy/active_exception/False/outcome": {
+      "q3": {
+        "n": 84,
+        "before": 33,
+        "after": 33,
+        "repaired": 5,
+        "broken": 5,
+        "persistent_wrong": 46
+      },
+      "q35": {
+        "n": 84,
+        "before": 44,
+        "after": 48,
+        "repaired": 4,
+        "broken": 0,
+        "persistent_wrong": 36
+      }
+    },
+    "long_policy/active_exception/True/amount": {
+      "q3": {
+        "n": 16,
+        "before": 11,
+        "after": 11,
+        "repaired": 1,
+        "broken": 1,
+        "persistent_wrong": 4
+      },
+      "q35": {
+        "n": 16,
+        "before": 12,
+        "after": 10,
+        "repaired": 0,
+        "broken": 2,
+        "persistent_wrong": 4
+      }
+    },
+    "long_policy/active_exception/True/outcome": {
+      "q3": {
+        "n": 16,
+        "before": 3,
+        "after": 3,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 13
+      },
+      "q35": {
+        "n": 16,
+        "before": 5,
+        "after": 6,
+        "repaired": 1,
+        "broken": 0,
+        "persistent_wrong": 10
+      }
+    },
+    "long_policy/fee_order/after/amount": {
+      "q3": {
+        "n": 59,
+        "before": 48,
+        "after": 46,
+        "repaired": 3,
+        "broken": 5,
+        "persistent_wrong": 8
+      },
+      "q35": {
+        "n": 59,
+        "before": 46,
+        "after": 41,
+        "repaired": 0,
+        "broken": 5,
+        "persistent_wrong": 13
+      }
+    },
+    "long_policy/fee_order/after/outcome": {
+      "q3": {
+        "n": 59,
+        "before": 21,
+        "after": 22,
+        "repaired": 4,
+        "broken": 3,
+        "persistent_wrong": 34
+      },
+      "q35": {
+        "n": 59,
+        "before": 27,
+        "after": 30,
+        "repaired": 3,
+        "broken": 0,
+        "persistent_wrong": 29
+      }
+    },
+    "long_policy/fee_order/before/amount": {
+      "q3": {
+        "n": 41,
+        "before": 33,
+        "after": 34,
+        "repaired": 1,
+        "broken": 0,
+        "persistent_wrong": 7
+      },
+      "q35": {
+        "n": 41,
+        "before": 36,
+        "after": 35,
+        "repaired": 0,
+        "broken": 1,
+        "persistent_wrong": 5
+      }
+    },
+    "long_policy/fee_order/before/outcome": {
+      "q3": {
+        "n": 41,
+        "before": 15,
+        "after": 14,
+        "repaired": 1,
+        "broken": 2,
+        "persistent_wrong": 25
+      },
+      "q35": {
+        "n": 41,
+        "before": 22,
+        "after": 24,
+        "repaired": 2,
+        "broken": 0,
+        "persistent_wrong": 17
+      }
+    },
+    "long_policy/mechanism/benefits": {
+      "q3": {
+        "n": 48,
+        "before": 28,
+        "after": 33,
+        "repaired": 5,
+        "broken": 0,
+        "persistent_wrong": 15
+      },
+      "q35": {
+        "n": 48,
+        "before": 30,
+        "after": 29,
+        "repaired": 2,
+        "broken": 3,
+        "persistent_wrong": 16
+      }
+    },
+    "long_policy/mechanism/device": {
+      "q3": {
+        "n": 50,
+        "before": 33,
+        "after": 31,
+        "repaired": 1,
+        "broken": 3,
+        "persistent_wrong": 16
+      },
+      "q35": {
+        "n": 50,
+        "before": 35,
+        "after": 36,
+        "repaired": 2,
+        "broken": 1,
+        "persistent_wrong": 13
+      }
+    },
+    "long_policy/mechanism/home": {
+      "q3": {
+        "n": 50,
+        "before": 29,
+        "after": 29,
+        "repaired": 2,
+        "broken": 2,
+        "persistent_wrong": 19
+      },
+      "q35": {
+        "n": 50,
+        "before": 35,
+        "after": 36,
+        "repaired": 1,
+        "broken": 0,
+        "persistent_wrong": 14
+      }
+    },
+    "long_policy/mechanism/travel": {
+      "q3": {
+        "n": 52,
+        "before": 27,
+        "after": 23,
+        "repaired": 1,
+        "broken": 5,
+        "persistent_wrong": 24
+      },
+      "q35": {
+        "n": 52,
+        "before": 31,
+        "after": 29,
+        "repaired": 0,
+        "broken": 2,
+        "persistent_wrong": 21
+      }
+    },
+    "long_policy/payable/False/amount": {
+      "q3": {
+        "n": 65,
+        "before": 65,
+        "after": 65,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      },
+      "q35": {
+        "n": 65,
+        "before": 65,
+        "after": 65,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      }
+    },
+    "long_policy/payable/False/outcome": {
+      "q3": {
+        "n": 65,
+        "before": 28,
+        "after": 29,
+        "repaired": 4,
+        "broken": 3,
+        "persistent_wrong": 33
+      },
+      "q35": {
+        "n": 65,
+        "before": 41,
+        "after": 43,
+        "repaired": 2,
+        "broken": 0,
+        "persistent_wrong": 22
+      }
+    },
+    "long_policy/payable/True/amount": {
+      "q3": {
+        "n": 35,
+        "before": 16,
+        "after": 15,
+        "repaired": 4,
+        "broken": 5,
+        "persistent_wrong": 15
+      },
+      "q35": {
+        "n": 35,
+        "before": 17,
+        "after": 11,
+        "repaired": 0,
+        "broken": 6,
+        "persistent_wrong": 18
+      }
+    },
+    "long_policy/payable/True/outcome": {
+      "q3": {
+        "n": 35,
+        "before": 8,
+        "after": 7,
+        "repaired": 1,
+        "broken": 2,
+        "persistent_wrong": 26
+      },
+      "q35": {
+        "n": 35,
+        "before": 8,
+        "after": 11,
+        "repaired": 3,
+        "broken": 0,
+        "persistent_wrong": 24
+      }
+    },
+    "long_policy/question/amount": {
+      "q3": {
+        "n": 100,
+        "before": 81,
+        "after": 80,
+        "repaired": 4,
+        "broken": 5,
+        "persistent_wrong": 15
+      },
+      "q35": {
+        "n": 100,
+        "before": 82,
+        "after": 76,
+        "repaired": 0,
+        "broken": 6,
+        "persistent_wrong": 18
+      }
+    },
+    "long_policy/question/outcome": {
+      "q3": {
+        "n": 100,
+        "before": 36,
+        "after": 36,
+        "repaired": 5,
+        "broken": 5,
+        "persistent_wrong": 59
+      },
+      "q35": {
+        "n": 100,
+        "before": 49,
+        "after": 54,
+        "repaired": 5,
+        "broken": 0,
+        "persistent_wrong": 46
+      }
+    },
+    "long_policy/target/deny_exclusion/amount": {
+      "q3": {
+        "n": 26,
+        "before": 26,
+        "after": 26,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      },
+      "q35": {
+        "n": 26,
+        "before": 26,
+        "after": 26,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      }
+    },
+    "long_policy/target/deny_exclusion/outcome": {
+      "q3": {
+        "n": 26,
+        "before": 12,
+        "after": 14,
+        "repaired": 2,
+        "broken": 0,
+        "persistent_wrong": 12
+      },
+      "q35": {
+        "n": 26,
+        "before": 18,
+        "after": 20,
+        "repaired": 2,
+        "broken": 0,
+        "persistent_wrong": 6
+      }
+    },
+    "long_policy/target/deny_late/amount": {
+      "q3": {
+        "n": 12,
+        "before": 12,
+        "after": 12,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      },
+      "q35": {
+        "n": 12,
+        "before": 12,
+        "after": 12,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      }
+    },
+    "long_policy/target/deny_late/outcome": {
+      "q3": {
+        "n": 12,
+        "before": 1,
+        "after": 2,
+        "repaired": 1,
+        "broken": 0,
+        "persistent_wrong": 10
+      },
+      "q35": {
+        "n": 12,
+        "before": 0,
+        "after": 0,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 12
+      }
+    },
+    "long_policy/target/deny_waiting/amount": {
+      "q3": {
+        "n": 13,
+        "before": 13,
+        "after": 13,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      },
+      "q35": {
+        "n": 13,
+        "before": 13,
+        "after": 13,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      }
+    },
+    "long_policy/target/deny_waiting/outcome": {
+      "q3": {
+        "n": 13,
+        "before": 7,
+        "after": 7,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 6
+      },
+      "q35": {
+        "n": 13,
+        "before": 9,
+        "after": 9,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 4
+      }
+    },
+    "long_policy/target/not_covered/amount": {
+      "q3": {
+        "n": 13,
+        "before": 13,
+        "after": 13,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      },
+      "q35": {
+        "n": 13,
+        "before": 13,
+        "after": 13,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      }
+    },
+    "long_policy/target/not_covered/outcome": {
+      "q3": {
+        "n": 13,
+        "before": 8,
+        "after": 6,
+        "repaired": 1,
+        "broken": 3,
+        "persistent_wrong": 4
+      },
+      "q35": {
+        "n": 13,
+        "before": 13,
+        "after": 13,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      }
+    },
+    "long_policy/target/pay_less_fee/amount": {
+      "q3": {
+        "n": 11,
+        "before": 6,
+        "after": 6,
+        "repaired": 1,
+        "broken": 1,
+        "persistent_wrong": 4
+      },
+      "q35": {
+        "n": 11,
+        "before": 6,
+        "after": 4,
+        "repaired": 0,
+        "broken": 2,
+        "persistent_wrong": 5
+      }
+    },
+    "long_policy/target/pay_less_fee/outcome": {
+      "q3": {
+        "n": 11,
+        "before": 2,
+        "after": 2,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 9
+      },
+      "q35": {
+        "n": 11,
+        "before": 1,
+        "after": 3,
+        "repaired": 2,
+        "broken": 0,
+        "persistent_wrong": 8
+      }
+    },
+    "long_policy/target/pay_limit/amount": {
+      "q3": {
+        "n": 13,
+        "before": 5,
+        "after": 2,
+        "repaired": 0,
+        "broken": 3,
+        "persistent_wrong": 8
+      },
+      "q35": {
+        "n": 13,
+        "before": 7,
+        "after": 5,
+        "repaired": 0,
+        "broken": 2,
+        "persistent_wrong": 6
+      }
+    },
+    "long_policy/target/pay_limit/outcome": {
+      "q3": {
+        "n": 13,
+        "before": 3,
+        "after": 3,
+        "repaired": 1,
+        "broken": 1,
+        "persistent_wrong": 9
+      },
+      "q35": {
+        "n": 13,
+        "before": 4,
+        "after": 4,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 9
+      }
+    },
+    "long_policy/target/pay_sublimit/amount": {
+      "q3": {
+        "n": 12,
+        "before": 6,
+        "after": 8,
+        "repaired": 3,
+        "broken": 1,
+        "persistent_wrong": 3
+      },
+      "q35": {
+        "n": 12,
+        "before": 5,
+        "after": 3,
+        "repaired": 0,
+        "broken": 2,
+        "persistent_wrong": 7
+      }
+    },
+    "long_policy/target/pay_sublimit/outcome": {
+      "q3": {
+        "n": 12,
+        "before": 3,
+        "after": 2,
+        "repaired": 0,
+        "broken": 1,
+        "persistent_wrong": 9
+      },
+      "q35": {
+        "n": 12,
+        "before": 4,
+        "after": 5,
+        "repaired": 1,
+        "broken": 0,
+        "persistent_wrong": 7
+      }
+    },
+    "probability/mechanism/bayes": {
+      "q3": {
+        "n": 44,
+        "before": 27,
+        "after": 23,
+        "repaired": 0,
+        "broken": 4,
+        "persistent_wrong": 17
+      },
+      "q35": {
+        "n": 44,
+        "before": 26,
+        "after": 24,
+        "repaired": 1,
+        "broken": 3,
+        "persistent_wrong": 17
+      }
+    },
+    "probability/mechanism/compare:and": {
+      "q3": {
+        "n": 8,
+        "before": 3,
+        "after": 4,
+        "repaired": 1,
+        "broken": 0,
+        "persistent_wrong": 4
+      },
+      "q35": {
+        "n": 8,
+        "before": 3,
+        "after": 3,
+        "repaired": 1,
+        "broken": 1,
+        "persistent_wrong": 4
+      }
+    },
+    "probability/mechanism/compare:or": {
+      "q3": {
+        "n": 11,
+        "before": 6,
+        "after": 6,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 5
+      },
+      "q35": {
+        "n": 11,
+        "before": 6,
+        "after": 5,
+        "repaired": 0,
+        "broken": 1,
+        "persistent_wrong": 5
+      }
+    },
+    "probability/mechanism/ev": {
+      "q3": {
+        "n": 26,
+        "before": 11,
+        "after": 11,
+        "repaired": 2,
+        "broken": 2,
+        "persistent_wrong": 13
+      },
+      "q35": {
+        "n": 26,
+        "before": 14,
+        "after": 14,
+        "repaired": 1,
+        "broken": 1,
+        "persistent_wrong": 11
+      }
+    },
+    "probability/mechanism/independent:all": {
+      "q3": {
+        "n": 14,
+        "before": 4,
+        "after": 4,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 10
+      },
+      "q35": {
+        "n": 14,
+        "before": 8,
+        "after": 9,
+        "repaired": 1,
+        "broken": 0,
+        "persistent_wrong": 5
+      }
+    },
+    "probability/mechanism/independent:any": {
+      "q3": {
+        "n": 18,
+        "before": 17,
+        "after": 17,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 1
+      },
+      "q35": {
+        "n": 18,
+        "before": 18,
+        "after": 18,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 0
+      }
+    },
+    "probability/mechanism/independent:any_fail": {
+      "q3": {
+        "n": 14,
+        "before": 9,
+        "after": 8,
+        "repaired": 0,
+        "broken": 1,
+        "persistent_wrong": 5
+      },
+      "q35": {
+        "n": 14,
+        "before": 6,
+        "after": 5,
+        "repaired": 0,
+        "broken": 1,
+        "persistent_wrong": 8
+      }
+    },
+    "probability/mechanism/table:col_given_row": {
+      "q3": {
+        "n": 12,
+        "before": 6,
+        "after": 4,
+        "repaired": 1,
+        "broken": 3,
+        "persistent_wrong": 5
+      },
+      "q35": {
+        "n": 12,
+        "before": 5,
+        "after": 6,
+        "repaired": 1,
+        "broken": 0,
+        "persistent_wrong": 6
+      }
+    },
+    "probability/mechanism/table:row_given_col": {
+      "q3": {
+        "n": 11,
+        "before": 2,
+        "after": 2,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 9
+      },
+      "q35": {
+        "n": 11,
+        "before": 1,
+        "after": 1,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 10
+      }
+    },
+    "probability/question/bucket": {
+      "q3": {
+        "n": 36,
+        "before": 15,
+        "after": 12,
+        "repaired": 0,
+        "broken": 3,
+        "persistent_wrong": 21
+      },
+      "q35": {
+        "n": 36,
+        "before": 16,
+        "after": 16,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 20
+      }
+    },
+    "probability/question/choice": {
+      "q3": {
+        "n": 32,
+        "before": 15,
+        "after": 16,
+        "repaired": 2,
+        "broken": 1,
+        "persistent_wrong": 15
+      },
+      "q35": {
+        "n": 32,
+        "before": 19,
+        "after": 18,
+        "repaired": 2,
+        "broken": 3,
+        "persistent_wrong": 11
+      }
+    },
+    "probability/question/more_likely": {
+      "q3": {
+        "n": 9,
+        "before": 7,
+        "after": 6,
+        "repaired": 0,
+        "broken": 1,
+        "persistent_wrong": 2
+      },
+      "q35": {
+        "n": 9,
+        "before": 5,
+        "after": 5,
+        "repaired": 0,
+        "broken": 0,
+        "persistent_wrong": 4
+      }
+    },
+    "probability/question/value": {
+      "q3": {
+        "n": 81,
+        "before": 48,
+        "after": 45,
+        "repaired": 2,
+        "broken": 5,
+        "persistent_wrong": 31
+      },
+      "q35": {
+        "n": 81,
+        "before": 47,
+        "after": 46,
+        "repaired": 3,
+        "broken": 4,
+        "persistent_wrong": 31
+      }
+    }
+  },
+  "synthetic": {
+    "probability": {
+      "records": 1400,
+      "subtypes": {
+        "independent:bucket": 75,
+        "table:choice": 48,
+        "independent:value": 166,
+        "bayes:value": 142,
+        "independent:choice": 46,
+        "expected_value:choice": 338,
+        "table:more_likely": 22,
+        "table:value": 133,
+        "bayes:bucket": 43,
+        "compare:choice": 219,
+        "table:bucket": 71,
+        "bayes:more_likely": 22,
+        "independent:more_likely": 34,
+        "bayes:choice": 41
+      },
+      "question_types": {
+        "choice": 1400
+      },
+      "expected_value_unsigned_loss_records": 338,
+      "unsigned_loss_changes_best_project": 93,
+      "unsigned_loss_changed_ids": [
+        "targeted-v2-all7-compact-20261029/probability/train/00143",
+        "targeted-v2-all7-compact-20261029/probability/train/01237",
+        "targeted-v2-all7-compact-20261029/probability/train/01375",
+        "targeted-v2-all7-compact-20261029/probability/train/00814",
+        "targeted-v2-all7-compact-20261029/probability/train/00881",
+        "targeted-v2-all7-compact-20261029/probability/train/00495",
+        "targeted-v2-all7-compact-20261029/probability/train/01183",
+        "targeted-v2-all7-compact-20261029/probability/train/00665",
+        "targeted-v2-all7-compact-20261029/probability/train/00903",
+        "targeted-v2-all7-compact-20261029/probability/train/01104",
+        "targeted-v2-all7-compact-20261029/probability/train/00702",
+        "targeted-v2-all7-compact-20261029/probability/train/00320",
+        "targeted-v2-all7-compact-20261029/probability/train/01079",
+        "targeted-v2-all7-compact-20261029/probability/train/00019",
+        "targeted-v2-all7-compact-20261029/probability/train/01360",
+        "targeted-v2-all7-compact-20261029/probability/train/01069",
+        "targeted-v2-all7-compact-20261029/probability/train/01378",
+        "targeted-v2-all7-compact-20261029/probability/train/00606",
+        "targeted-v2-all7-compact-20261029/probability/train/01393",
+        "targeted-v2-all7-compact-20261029/probability/train/00404",
+        "targeted-v2-all7-compact-20261029/probability/train/00428",
+        "targeted-v2-all7-compact-20261029/probability/train/00968",
+        "targeted-v2-all7-compact-20261029/probability/train/01110",
+        "targeted-v2-all7-compact-20261029/probability/train/00226",
+        "targeted-v2-all7-compact-20261029/probability/train/00310",
+        "targeted-v2-all7-compact-20261029/probability/train/00210",
+        "targeted-v2-all7-compact-20261029/probability/train/00720",
+        "targeted-v2-all7-compact-20261029/probability/train/00417",
+        "targeted-v2-all7-compact-20261029/probability/train/00747",
+        "targeted-v2-all7-compact-20261029/probability/train/00611",
+        "targeted-v2-all7-compact-20261029/probability/train/00323",
+        "targeted-v2-all7-compact-20261029/probability/train/00944",
+        "targeted-v2-all7-compact-20261029/probability/train/01250",
+        "targeted-v2-all7-compact-20261029/probability/train/01013",
+        "targeted-v2-all7-compact-20261029/probability/train/01138",
+        "targeted-v2-all7-compact-20261029/probability/train/00570",
+        "targeted-v2-all7-compact-20261029/probability/train/01093",
+        "targeted-v2-all7-compact-20261029/probability/train/00060",
+        "targeted-v2-all7-compact-20261029/probability/train/00937",
+        "targeted-v2-all7-compact-20261029/probability/train/00984",
+        "targeted-v2-all7-compact-20261029/probability/train/01000",
+        "targeted-v2-all7-compact-20261029/probability/train/00228",
+        "targeted-v2-all7-compact-20261029/probability/train/00051",
+        "targeted-v2-all7-compact-20261029/probability/train/00707",
+        "targeted-v2-all7-compact-20261029/probability/train/01105",
+        "targeted-v2-all7-compact-20261029/probability/train/00057",
+        "targeted-v2-all7-compact-20261029/probability/train/01218",
+        "targeted-v2-all7-compact-20261029/probability/train/00006",
+        "targeted-v2-all7-compact-20261029/probability/train/00790",
+        "targeted-v2-all7-compact-20261029/probability/train/01288",
+        "targeted-v2-all7-compact-20261029/probability/train/00515",
+        "targeted-v2-all7-compact-20261029/probability/train/01119",
+        "targeted-v2-all7-compact-20261029/probability/train/00321",
+        "targeted-v2-all7-compact-20261029/probability/train/01363",
+        "targeted-v2-all7-compact-20261029/probability/train/00392",
+        "targeted-v2-all7-compact-20261029/probability/train/01020",
+        "targeted-v2-all7-compact-20261029/probability/train/00986",
+        "targeted-v2-all7-compact-20261029/probability/train/01050",
+        "targeted-v2-all7-compact-20261029/probability/train/00397",
+        "targeted-v2-all7-compact-20261029/probability/train/00939",
+        "targeted-v2-all7-compact-20261029/probability/train/00242",
+        "targeted-v2-all7-compact-20261029/probability/train/00823",
+        "targeted-v2-all7-compact-20261029/probability/train/00465",
+        "targeted-v2-all7-compact-20261029/probability/train/01345",
+        "targeted-v2-all7-compact-20261029/probability/train/00687",
+        "targeted-v2-all7-compact-20261029/probability/train/00068",
+        "targeted-v2-all7-compact-20261029/probability/train/00788",
+        "targeted-v2-all7-compact-20261029/probability/train/00200",
+        "targeted-v2-all7-compact-20261029/probability/train/00040",
+        "targeted-v2-all7-compact-20261029/probability/train/00535",
+        "targeted-v2-all7-compact-20261029/probability/train/00343",
+        "targeted-v2-all7-compact-20261029/probability/train/00607",
+        "targeted-v2-all7-compact-20261029/probability/train/00440",
+        "targeted-v2-all7-compact-20261029/probability/train/00365",
+        "targeted-v2-all7-compact-20261029/probability/train/00567",
+        "targeted-v2-all7-compact-20261029/probability/train/00331",
+        "targeted-v2-all7-compact-20261029/probability/train/00413",
+        "targeted-v2-all7-compact-20261029/probability/train/00050",
+        "targeted-v2-all7-compact-20261029/probability/train/00792",
+        "targeted-v2-all7-compact-20261029/probability/train/01270",
+        "targeted-v2-all7-compact-20261029/probability/train/00990",
+        "targeted-v2-all7-compact-20261029/probability/train/00357",
+        "targeted-v2-all7-compact-20261029/probability/train/01359",
+        "targeted-v2-all7-compact-20261029/probability/train/00880",
+        "targeted-v2-all7-compact-20261029/probability/train/00415",
+        "targeted-v2-all7-compact-20261029/probability/train/00125",
+        "targeted-v2-all7-compact-20261029/probability/train/00030",
+        "targeted-v2-all7-compact-20261029/probability/train/01271",
+        "targeted-v2-all7-compact-20261029/probability/train/00798",
+        "targeted-v2-all7-compact-20261029/probability/train/00868",
+        "targeted-v2-all7-compact-20261029/probability/train/00385",
+        "targeted-v2-all7-compact-20261029/probability/train/00142",
+        "targeted-v2-all7-compact-20261029/probability/train/01302"
+      ]
+    },
+    "insufficient": {
+      "records": 700,
+      "subtypes": {
+        "eligibility": 234,
+        "authorization": 230,
+        "refund": 236
+      },
+      "question_types": {
+        "choice": 700
+      },
+      "semantic_labels": {
+        "deny": 343,
+        "approve": 357
+      },
+      "missing_value": 0
+    },
+    "policy": {
+      "records": 1200,
+      "subtypes": {
+        "long_multi_benefit:equipment": 283,
+        "long_multi_benefit:lodging": 311,
+        "long_multi_benefit:residence": 313,
+        "long_multi_benefit:allowance": 293
+      },
+      "question_types": {
+        "choice": 2400
+      },
+      "outcomes": {
+        "deny_not_purchased": 243,
+        "deny_late": 411,
+        "pay": 234,
+        "deny_exclusion": 176,
+        "deny_not_covered": 122,
+        "deny_deductible": 14
+      },
+      "zero_amount": 966,
+      "explicit_event_contradictions": 152,
+      "multiple_denial_reasons": 364
+    }
+  }
+}

@@ -1,0 +1,3363 @@
+{
+  "data_sha256": "58572b2118b10d9505d5bdb027585fab75f4ad7e52a1c5d8d155979459fecea8",
+  "code_hashes": {
+    "train.py": "68428ed43b3e362e52d4650dc5296ab88767061f7998a525715e1b306eeef474",
+    "data.py": "e77a2fffeb8ee7e05b118893be8e38b8358aef97c3ca2e143cdce208201b92f9"
+  },
+  "targeted_contexts": 1500,
+  "replay_contexts": 6000,
+  "seed": 101,
+  "batch": 4,
+  "accum": 2,
+  "epochs": [
+    {
+      "epoch": 0,
+      "total_ce_mass": 938.0000000000086,
+      "families": {
+        "insufficient": {
+          "contexts": 280,
+          "variants": 436,
+          "actual_ce_mass": 39.99583333333334,
+          "equal_record_ce_mass": 35.0,
+          "none_pair_records": 78,
+          "actual_share_pct": 4.263948116560019,
+          "actual_over_equal_record": 1.1427380952380954
+        },
+        "replay": {
+          "contexts": 6000,
+          "variants": 7316,
+          "actual_ce_mass": 734.9458333333419,
+          "equal_record_ce_mass": 750.5,
+          "none_pair_records": 658,
+          "actual_share_pct": 78.3524342572852,
+          "actual_over_equal_record": 0.9792749278259052
+        },
+        "multihop": {
+          "contexts": 270,
+          "variants": 378,
+          "actual_ce_mass": 36.05833333333333,
+          "equal_record_ce_mass": 33.75,
+          "none_pair_records": 54,
+          "actual_share_pct": 3.844171997157036,
+          "actual_over_equal_record": 1.068395061728395
+        },
+        "policy": {
+          "contexts": 300,
+          "variants": 462,
+          "actual_ce_mass": 41.85000000000004,
+          "equal_record_ce_mass": 37.5,
+          "none_pair_records": 81,
+          "actual_share_pct": 4.461620469083118,
+          "actual_over_equal_record": 1.116000000000001
+        },
+        "temporal": {
+          "contexts": 100,
+          "variants": 138,
+          "actual_ce_mass": 12.808333333333339,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 19,
+          "actual_share_pct": 1.365493958777529,
+          "actual_over_equal_record": 1.024666666666667
+        },
+        "probability": {
+          "contexts": 350,
+          "variants": 536,
+          "actual_ce_mass": 48.42916666666671,
+          "equal_record_ce_mass": 43.75,
+          "none_pair_records": 93,
+          "actual_share_pct": 5.163024164889793,
+          "actual_over_equal_record": 1.106952380952382
+        },
+        "injection": {
+          "contexts": 100,
+          "variants": 100,
+          "actual_ce_mass": 10.904166666666669,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 1.1624911158493145,
+          "actual_over_equal_record": 0.8723333333333335
+        },
+        "tool_routing": {
+          "contexts": 100,
+          "variants": 132,
+          "actual_ce_mass": 13.008333333333338,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 16,
+          "actual_share_pct": 1.3868159203979975,
+          "actual_over_equal_record": 1.040666666666667
+        }
+      },
+      "subtypes": {
+        "insufficient/price_match__complete": {
+          "contexts": 20,
+          "variants": 26,
+          "actual_ce_mass": 2.5625,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.2731876332622576,
+          "actual_over_equal_record": 1.025
+        },
+        "replay/unspecified": {
+          "contexts": 6000,
+          "variants": 7316,
+          "actual_ce_mass": 734.9458333333419,
+          "equal_record_ce_mass": 750.5,
+          "none_pair_records": 658,
+          "actual_share_pct": 78.3524342572852,
+          "actual_over_equal_record": 0.9792749278259052
+        },
+        "insufficient/price_match__unknown": {
+          "contexts": 16,
+          "variants": 24,
+          "actual_ce_mass": 2.229166666666666,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.23765103056147607,
+          "actual_over_equal_record": 1.114583333333333
+        },
+        "multihop/ownership_control_and_profit": {
+          "contexts": 90,
+          "variants": 138,
+          "actual_ce_mass": 12.675000000000006,
+          "equal_record_ce_mass": 11.25,
+          "none_pair_records": 24,
+          "actual_share_pct": 1.3512793176972164,
+          "actual_over_equal_record": 1.1266666666666671
+        },
+        "policy/pay_loss": {
+          "contexts": 40,
+          "variants": 56,
+          "actual_ce_mass": 5.458333333333334,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.5819118692252967,
+          "actual_over_equal_record": 1.0916666666666668
+        },
+        "insufficient/approval__unknown": {
+          "contexts": 16,
+          "variants": 28,
+          "actual_ce_mass": 2.3958333333333335,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.2554193319118669,
+          "actual_over_equal_record": 1.1979166666666667
+        },
+        "insufficient/overtime__unknown": {
+          "contexts": 16,
+          "variants": 24,
+          "actual_ce_mass": 2.2708333333333335,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.24209310589907382,
+          "actual_over_equal_record": 1.1354166666666667
+        },
+        "temporal/late_fee": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.2791666666666663,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2429815209665933,
+          "actual_over_equal_record": 0.8287878787878786
+        },
+        "probability/bayes": {
+          "contexts": 60,
+          "variants": 90,
+          "actual_ce_mass": 8.479166666666666,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 15,
+          "actual_share_pct": 0.9039623312011288,
+          "actual_over_equal_record": 1.1305555555555555
+        },
+        "multihop/dependency_candidates": {
+          "contexts": 45,
+          "variants": 45,
+          "actual_ce_mass": 5.166666666666666,
+          "equal_record_ce_mass": 5.625,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.5508173418621128,
+          "actual_over_equal_record": 0.9185185185185184
+        },
+        "policy/late": {
+          "contexts": 36,
+          "variants": 52,
+          "actual_ce_mass": 4.604166666666667,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.4908493248045442,
+          "actual_over_equal_record": 1.0231481481481481
+        },
+        "policy/not_purchased": {
+          "contexts": 36,
+          "variants": 56,
+          "actual_ce_mass": 4.958333333333334,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.5286069651741245,
+          "actual_over_equal_record": 1.101851851851852
+        },
+        "probability/table": {
+          "contexts": 75,
+          "variants": 109,
+          "actual_ce_mass": 9.8375,
+          "equal_record_ce_mass": 9.375,
+          "none_pair_records": 17,
+          "actual_share_pct": 1.0487739872068134,
+          "actual_over_equal_record": 1.0493333333333335
+        },
+        "temporal/prorata": {
+          "contexts": 28,
+          "variants": 42,
+          "actual_ce_mass": 3.9375000000000004,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.41977611940298126,
+          "actual_over_equal_record": 1.1250000000000002
+        },
+        "temporal/timezone": {
+          "contexts": 28,
+          "variants": 48,
+          "actual_ce_mass": 3.904166666666667,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.41622245913290307,
+          "actual_over_equal_record": 1.1154761904761905
+        },
+        "policy/pay_limit": {
+          "contexts": 40,
+          "variants": 64,
+          "actual_ce_mass": 5.608333333333333,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 12,
+          "actual_share_pct": 0.5979033404406484,
+          "actual_over_equal_record": 1.1216666666666666
+        },
+        "probability/any": {
+          "contexts": 25,
+          "variants": 35,
+          "actual_ce_mass": 2.9875000000000003,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.318496801705754,
+          "actual_over_equal_record": 0.9560000000000001
+        },
+        "insufficient/overtime__complete": {
+          "contexts": 20,
+          "variants": 26,
+          "actual_ce_mass": 2.666666666666667,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.28429282160625186,
+          "actual_over_equal_record": 1.0666666666666669
+        },
+        "insufficient/warranty__complete": {
+          "contexts": 20,
+          "variants": 28,
+          "actual_ce_mass": 2.8125,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.2998400852878437,
+          "actual_over_equal_record": 1.125
+        },
+        "insufficient/shipping__complete": {
+          "contexts": 20,
+          "variants": 28,
+          "actual_ce_mass": 2.5208333333333335,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.26874555792465993,
+          "actual_over_equal_record": 1.0083333333333333
+        },
+        "multihop/dated_roster": {
+          "contexts": 60,
+          "variants": 80,
+          "actual_ce_mass": 7.649999999999999,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.8155650319829348,
+          "actual_over_equal_record": 1.0199999999999998
+        },
+        "policy/pay_sublimit": {
+          "contexts": 40,
+          "variants": 72,
+          "actual_ce_mass": 6.399999999999999,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 16,
+          "actual_share_pct": 0.6823027718550042,
+          "actual_over_equal_record": 1.2799999999999998
+        },
+        "injection/tool result": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.4375,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.25986140724946455,
+          "actual_over_equal_record": 0.8863636363636364
+        },
+        "multihop/rank_escalation": {
+          "contexts": 45,
+          "variants": 67,
+          "actual_ce_mass": 6.333333333333333,
+          "equal_record_ce_mass": 5.625,
+          "none_pair_records": 11,
+          "actual_share_pct": 0.675195451314848,
+          "actual_over_equal_record": 1.1259259259259258
+        },
+        "probability/expected_value": {
+          "contexts": 60,
+          "variants": 92,
+          "actual_ce_mass": 8.1875,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 16,
+          "actual_share_pct": 0.872867803837945,
+          "actual_over_equal_record": 1.0916666666666666
+        },
+        "insufficient/tenure__complete": {
+          "contexts": 20,
+          "variants": 26,
+          "actual_ce_mass": 2.6458333333333335,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.282071783937453,
+          "actual_over_equal_record": 1.0583333333333333
+        },
+        "injection/email": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.520833333333333,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.26874555792465993,
+          "actual_over_equal_record": 0.9166666666666665
+        },
+        "policy/usage": {
+          "contexts": 36,
+          "variants": 54,
+          "actual_ce_mass": 4.962499999999999,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.5290511727078842,
+          "actual_over_equal_record": 1.1027777777777774
+        },
+        "tool_routing/reservation": {
+          "contexts": 25,
+          "variants": 29,
+          "actual_ce_mass": 3.0833333333333335,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.3287135749822287,
+          "actual_over_equal_record": 0.9866666666666667
+        },
+        "injection/web page": {
+          "contexts": 24,
+          "variants": 24,
+          "actual_ce_mass": 2.520833333333333,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.26874555792465993,
+          "actual_over_equal_record": 0.8402777777777777
+        },
+        "injection/code comment": {
+          "contexts": 14,
+          "variants": 14,
+          "actual_ce_mass": 1.583333333333333,
+          "equal_record_ce_mass": 1.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.168798862828712,
+          "actual_over_equal_record": 0.9047619047619045
+        },
+        "probability/any_fail": {
+          "contexts": 50,
+          "variants": 82,
+          "actual_ce_mass": 7.6708333333333325,
+          "equal_record_ce_mass": 6.25,
+          "none_pair_records": 16,
+          "actual_share_pct": 0.8177860696517337,
+          "actual_over_equal_record": 1.2273333333333332
+        },
+        "policy/waiting": {
+          "contexts": 36,
+          "variants": 52,
+          "actual_ce_mass": 4.666666666666667,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.49751243781094073,
+          "actual_over_equal_record": 1.0370370370370372
+        },
+        "insufficient/tenure__unknown": {
+          "contexts": 16,
+          "variants": 28,
+          "actual_ce_mass": 2.441666666666667,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.26030561478322434,
+          "actual_over_equal_record": 1.2208333333333334
+        },
+        "probability/all": {
+          "contexts": 40,
+          "variants": 70,
+          "actual_ce_mass": 6.133333333333334,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 15,
+          "actual_share_pct": 0.6538734896943792,
+          "actual_over_equal_record": 1.2266666666666668
+        },
+        "insufficient/return__complete": {
+          "contexts": 20,
+          "variants": 30,
+          "actual_ce_mass": 2.833333333333333,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.30206112295664256,
+          "actual_over_equal_record": 1.1333333333333333
+        },
+        "tool_routing/exchange": {
+          "contexts": 24,
+          "variants": 32,
+          "actual_ce_mass": 3.0083333333333333,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.32071783937455284,
+          "actual_over_equal_record": 1.0027777777777778
+        },
+        "tool_routing/sum": {
+          "contexts": 31,
+          "variants": 47,
+          "actual_ce_mass": 4.458333333333334,
+          "equal_record_ce_mass": 3.875,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.4753020611229523,
+          "actual_over_equal_record": 1.1505376344086022
+        },
+        "multihop/exact_supervisor_hops": {
+          "contexts": 30,
+          "variants": 48,
+          "actual_ce_mass": 4.233333333333333,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.45131485429992474,
+          "actual_over_equal_record": 1.1288888888888888
+        },
+        "tool_routing/shipment": {
+          "contexts": 20,
+          "variants": 24,
+          "actual_ce_mass": 2.458333333333333,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.2620824449182634,
+          "actual_over_equal_record": 0.9833333333333332
+        },
+        "temporal/deadline": {
+          "contexts": 22,
+          "variants": 26,
+          "actual_ce_mass": 2.6875000000000004,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.28651385927505074,
+          "actual_over_equal_record": 0.9772727272727274
+        },
+        "insufficient/return__unknown": {
+          "contexts": 16,
+          "variants": 32,
+          "actual_ce_mass": 2.7958333333333334,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.29806325515280463,
+          "actual_over_equal_record": 1.3979166666666667
+        },
+        "policy/unsafe": {
+          "contexts": 36,
+          "variants": 56,
+          "actual_ce_mass": 5.191666666666666,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.5534825870646715,
+          "actual_over_equal_record": 1.1537037037037037
+        },
+        "probability/compare": {
+          "contexts": 40,
+          "variants": 58,
+          "actual_ce_mass": 5.133333333333333,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.5472636815920346,
+          "actual_over_equal_record": 1.0266666666666666
+        },
+        "insufficient/approval__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5833333333333334,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.06218905472636759,
+          "actual_over_equal_record": 1.1666666666666667
+        },
+        "insufficient/shipping__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5416666666666666,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.0577469793887699,
+          "actual_over_equal_record": 1.0833333333333333
+        },
+        "insufficient/tenure__nondeciding": {
+          "contexts": 4,
+          "variants": 10,
+          "actual_ce_mass": 0.8333333333333334,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.08884150675195371,
+          "actual_over_equal_record": 1.6666666666666667
+        },
+        "insufficient/warranty__unknown": {
+          "contexts": 16,
+          "variants": 24,
+          "actual_ce_mass": 2.3125,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.2465351812366715,
+          "actual_over_equal_record": 1.15625
+        },
+        "insufficient/warranty__nondeciding": {
+          "contexts": 4,
+          "variants": 8,
+          "actual_ce_mass": 0.6458333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.0688521677327641,
+          "actual_over_equal_record": 1.2916666666666665
+        },
+        "insufficient/overtime__nondeciding": {
+          "contexts": 4,
+          "variants": 8,
+          "actual_ce_mass": 0.6458333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.0688521677327641,
+          "actual_over_equal_record": 1.2916666666666665
+        },
+        "injection/JSON field": {
+          "contexts": 18,
+          "variants": 18,
+          "actual_ce_mass": 1.8416666666666663,
+          "equal_record_ce_mass": 2.25,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.1963397299218176,
+          "actual_over_equal_record": 0.8185185185185184
+        },
+        "insufficient/approval__complete": {
+          "contexts": 20,
+          "variants": 34,
+          "actual_ce_mass": 2.8375000000000004,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.3025053304904024,
+          "actual_over_equal_record": 1.1350000000000002
+        },
+        "insufficient/shipping__unknown": {
+          "contexts": 16,
+          "variants": 28,
+          "actual_ce_mass": 2.3791666666666664,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.25364250177682773,
+          "actual_over_equal_record": 1.1895833333333332
+        },
+        "insufficient/return__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.47916666666666663,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.051083866382373375,
+          "actual_over_equal_record": 0.9583333333333333
+        },
+        "insufficient/price_match__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.05996801705756875,
+          "actual_over_equal_record": 1.125
+        }
+      },
+      "questions": {
+        "insufficient/decision": {
+          "question_occurrences": 324,
+          "actual_ce_mass": 8.977500000000028,
+          "equal_record_ce_mass": 7.533333333333379,
+          "actual_share_pct": 0.9570895522388001,
+          "actual_over_equal_record": 1.1917035398230051
+        },
+        "insufficient/decision_action": {
+          "question_occurrences": 334,
+          "actual_ce_mass": 9.702500000000029,
+          "equal_record_ce_mass": 7.95000000000005,
+          "actual_share_pct": 1.034381663113,
+          "actual_over_equal_record": 1.220440251572323
+        },
+        "insufficient/decision_concise": {
+          "question_occurrences": 338,
+          "actual_ce_mass": 10.06083333333337,
+          "equal_record_ce_mass": 8.11666666666672,
+          "actual_share_pct": 1.0725835110163409,
+          "actual_over_equal_record": 1.2395277207392161
+        },
+        "insufficient/evidence_supports_no": {
+          "question_occurrences": 280,
+          "actual_ce_mass": 5.627500000000008,
+          "equal_record_ce_mass": 5.700000000000018,
+          "actual_share_pct": 0.5999466950959441,
+          "actual_over_equal_record": 0.9872807017543843
+        },
+        "insufficient/evidence_supports_yes": {
+          "question_occurrences": 280,
+          "actual_ce_mass": 5.627500000000008,
+          "equal_record_ce_mass": 5.700000000000018,
+          "actual_share_pct": 0.5999466950959441,
+          "actual_over_equal_record": 0.9872807017543843
+        },
+        "replay/topic": {
+          "question_occurrences": 739,
+          "actual_ce_mass": 36.119444444444596,
+          "equal_record_ce_mass": 27.222222222222474,
+          "actual_share_pct": 3.8506870409855294,
+          "actual_over_equal_record": 1.326836734693871
+        },
+        "replay/is_business": {
+          "question_occurrences": 240,
+          "actual_ce_mass": 8.008333333333333,
+          "equal_record_ce_mass": 8.277777777777807,
+          "actual_share_pct": 0.853766879886275,
+          "actual_over_equal_record": 0.9674496644295267
+        },
+        "replay/is_scitech": {
+          "question_occurrences": 232,
+          "actual_ce_mass": 7.823611111111108,
+          "equal_record_ce_mass": 7.847222222222252,
+          "actual_share_pct": 0.834073679222925,
+          "actual_over_equal_record": 0.9969911504424738
+        },
+        "replay/answer": {
+          "question_occurrences": 472,
+          "actual_ce_mass": 51.98750000000006,
+          "equal_record_ce_mass": 59.0,
+          "actual_share_pct": 5.542377398720638,
+          "actual_over_equal_record": 0.8811440677966113
+        },
+        "replay/rating": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.697916666666714,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.739649964463377,
+          "actual_over_equal_record": 0.8785612535612551
+        },
+        "replay/recommend": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.697916666666714,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.739649964463377,
+          "actual_over_equal_record": 0.8785612535612551
+        },
+        "replay/decision": {
+          "question_occurrences": 1319,
+          "actual_ce_mass": 141.0124999999996,
+          "equal_record_ce_mass": 157.50000000000014,
+          "actual_share_pct": 15.033315565031803,
+          "actual_over_equal_record": 0.895317460317457
+        },
+        "replay/sentiment": {
+          "question_occurrences": 471,
+          "actual_ce_mass": 50.36250000000007,
+          "equal_record_ce_mass": 58.875,
+          "actual_share_pct": 5.369136460554329,
+          "actual_over_equal_record": 0.8554140127388546
+        },
+        "replay/category": {
+          "question_occurrences": 707,
+          "actual_ce_mass": 65.5208333333336,
+          "equal_record_ce_mass": 57.12499999999974,
+          "actual_share_pct": 6.985163468372387,
+          "actual_over_equal_record": 1.1469730123997182
+        },
+        "replay/stars": {
+          "question_occurrences": 492,
+          "actual_ce_mass": 52.916666666666764,
+          "equal_record_ce_mass": 61.5,
+          "actual_share_pct": 5.64143567874907,
+          "actual_over_equal_record": 0.860433604336045
+        },
+        "multihop/controller": {
+          "question_occurrences": 108,
+          "actual_ce_mass": 5.900000000000001,
+          "equal_record_ce_mass": 5.375,
+          "actual_share_pct": 0.6289978678038323,
+          "actual_over_equal_record": 1.0976744186046514
+        },
+        "multihop/interest": {
+          "question_occurrences": 120,
+          "actual_ce_mass": 6.775000000000004,
+          "equal_record_ce_mass": 5.874999999999999,
+          "actual_share_pct": 0.7222814498933839,
+          "actual_over_equal_record": 1.153191489361703
+        },
+        "policy/amount": {
+          "question_occurrences": 378,
+          "actual_ce_mass": 20.91250000000002,
+          "equal_record_ce_mass": 18.624999999999993,
+          "actual_share_pct": 2.22947761194028,
+          "actual_over_equal_record": 1.1228187919463102
+        },
+        "policy/reason": {
+          "question_occurrences": 384,
+          "actual_ce_mass": 20.93750000000002,
+          "equal_record_ce_mass": 18.875000000000004,
+          "actual_share_pct": 2.232142857142839,
+          "actual_over_equal_record": 1.1092715231788088
+        },
+        "replay/positive": {
+          "question_occurrences": 479,
+          "actual_ce_mass": 52.933333333333415,
+          "equal_record_ce_mass": 60.125,
+          "actual_share_pct": 5.643212508884107,
+          "actual_over_equal_record": 0.8803880803880818
+        },
+        "replay/answer_type": {
+          "question_occurrences": 716,
+          "actual_ce_mass": 64.84166666666691,
+          "equal_record_ce_mass": 58.49999999999969,
+          "actual_share_pct": 6.912757640369542,
+          "actual_over_equal_record": 1.1084045584045685
+        },
+        "replay/intent": {
+          "question_occurrences": 754,
+          "actual_ce_mass": 69.5541666666667,
+          "equal_record_ce_mass": 61.2499999999996,
+          "actual_share_pct": 7.415156361051819,
+          "actual_over_equal_record": 1.1355782312925249
+        },
+        "replay/is_sports": {
+          "question_occurrences": 242,
+          "actual_ce_mass": 8.450000000000006,
+          "equal_record_ce_mass": 8.375000000000028,
+          "actual_share_pct": 0.9008528784648112,
+          "actual_over_equal_record": 1.0089552238805943
+        },
+        "replay/relation": {
+          "question_occurrences": 699,
+          "actual_ce_mass": 65.76250000000023,
+          "equal_record_ce_mass": 58.12499999999972,
+          "actual_share_pct": 7.01092750533045,
+          "actual_over_equal_record": 1.1313978494623749
+        },
+        "temporal/decision": {
+          "question_occurrences": 138,
+          "actual_ce_mass": 12.808333333333342,
+          "equal_record_ce_mass": 12.499999999999998,
+          "actual_share_pct": 1.3654939587775292,
+          "actual_over_equal_record": 1.0246666666666675
+        },
+        "probability/bucket": {
+          "question_occurrences": 175,
+          "actual_ce_mass": 7.67222222222223,
+          "equal_record_ce_mass": 7.770833333333337,
+          "actual_share_pct": 0.8179341388296545,
+          "actual_over_equal_record": 0.987310098302056
+        },
+        "probability/more_likely": {
+          "question_occurrences": 60,
+          "actual_ce_mass": 2.034722222222221,
+          "equal_record_ce_mass": 2.083333333333334,
+          "actual_share_pct": 0.21692134565268678,
+          "actual_over_equal_record": 0.9766666666666658
+        },
+        "probability/posterior": {
+          "question_occurrences": 90,
+          "actual_ce_mass": 4.40972222222222,
+          "equal_record_ce_mass": 3.3333333333333295,
+          "actual_share_pct": 0.47011963989575467,
+          "actual_over_equal_record": 1.3229166666666674
+        },
+        "multihop/decision": {
+          "question_occurrences": 112,
+          "actual_ce_mass": 11.500000000000009,
+          "equal_record_ce_mass": 11.249999999999993,
+          "actual_share_pct": 1.226012793176962,
+          "actual_over_equal_record": 1.0222222222222237
+        },
+        "probability/forward": {
+          "question_occurrences": 87,
+          "actual_ce_mass": 4.61875,
+          "equal_record_ce_mass": 4.479166666666665,
+          "actual_share_pct": 0.4924040511727034,
+          "actual_over_equal_record": 1.0311627906976748
+        },
+        "probability/reverse": {
+          "question_occurrences": 97,
+          "actual_ce_mass": 5.218750000000001,
+          "equal_record_ce_mass": 4.895833333333335,
+          "actual_share_pct": 0.5563699360341101,
+          "actual_over_equal_record": 1.0659574468085105
+        },
+        "replay/is_world": {
+          "question_occurrences": 244,
+          "actual_ce_mass": 8.256944444444452,
+          "equal_record_ce_mass": 8.277777777777809,
+          "actual_share_pct": 0.880271262733942,
+          "actual_over_equal_record": 0.9974832214765073
+        },
+        "probability/probability": {
+          "question_occurrences": 187,
+          "actual_ce_mass": 11.154166666666669,
+          "equal_record_ce_mass": 8.687500000000002,
+          "actual_share_pct": 1.1891435678749005,
+          "actual_over_equal_record": 1.2839328537170263
+        },
+        "multihop/contact": {
+          "question_occurrences": 70,
+          "actual_ce_mass": 3.8124999999999987,
+          "equal_record_ce_mass": 3.75,
+          "actual_share_pct": 0.40644989339018806,
+          "actual_over_equal_record": 1.0166666666666664
+        },
+        "multihop/group": {
+          "question_occurrences": 70,
+          "actual_ce_mass": 3.837499999999999,
+          "equal_record_ce_mass": 3.75,
+          "actual_share_pct": 0.4091151385927466,
+          "actual_over_equal_record": 1.023333333333333
+        },
+        "injection/decision": {
+          "question_occurrences": 100,
+          "actual_ce_mass": 10.904166666666669,
+          "equal_record_ce_mass": 12.5,
+          "actual_share_pct": 1.1624911158493145,
+          "actual_over_equal_record": 0.8723333333333335
+        },
+        "probability/project": {
+          "question_occurrences": 72,
+          "actual_ce_mass": 3.8020833333333326,
+          "equal_record_ce_mass": 3.5833333333333335,
+          "actual_share_pct": 0.40533937455578867,
+          "actual_over_equal_record": 1.0610465116279066
+        },
+        "probability/value": {
+          "question_occurrences": 80,
+          "actual_ce_mass": 4.385416666666667,
+          "equal_record_ce_mass": 3.916666666666666,
+          "actual_share_pct": 0.4675284292821563,
+          "actual_over_equal_record": 1.11968085106383
+        },
+        "tool_routing/decision": {
+          "question_occurrences": 132,
+          "actual_ce_mass": 13.008333333333344,
+          "equal_record_ce_mass": 12.499999999999996,
+          "actual_share_pct": 1.3868159203979984,
+          "actual_over_equal_record": 1.0406666666666677
+        },
+        "multihop/approver": {
+          "question_occurrences": 48,
+          "actual_ce_mass": 4.233333333333334,
+          "equal_record_ce_mass": 3.7499999999999982,
+          "actual_share_pct": 0.45131485429992485,
+          "actual_over_equal_record": 1.1288888888888897
+        },
+        "probability/decision": {
+          "question_occurrences": 58,
+          "actual_ce_mass": 5.133333333333331,
+          "equal_record_ce_mass": 5.000000000000003,
+          "actual_share_pct": 0.5472636815920345,
+          "actual_over_equal_record": 1.0266666666666657
+        }
+      },
+      "insufficient_raw_label_exposure": {
+        "decision/The requirement is not satisfied": {
+          "actual_ce_mass": 2.1016666666666644,
+          "occurrences": 86
+        },
+        "decision_action/Decline the requested price match.": {
+          "actual_ce_mass": 0.325,
+          "occurrences": 14
+        },
+        "decision_concise/No": {
+          "actual_ce_mass": 2.3849999999999976,
+          "occurrences": 91
+        },
+        "evidence_supports_no/True": {
+          "actual_ce_mass": 1.8016666666666645,
+          "occurrences": 88
+        },
+        "evidence_supports_yes/False": {
+          "actual_ce_mass": 4.006666666666659,
+          "occurrences": 200
+        },
+        "decision/None of the above": {
+          "actual_ce_mass": 0.20416666666666666,
+          "occurrences": 4
+        },
+        "decision_action/The supplied facts do not settle this decision.": {
+          "actual_ce_mass": 2.665833333333331,
+          "occurrences": 107
+        },
+        "decision_concise/Cannot be determined": {
+          "actual_ce_mass": 3.159999999999996,
+          "occurrences": 114
+        },
+        "evidence_supports_no/False": {
+          "actual_ce_mass": 3.825833333333327,
+          "occurrences": 192
+        },
+        "decision/Cannot determine from the information given": {
+          "actual_ce_mass": 2.7841666666666636,
+          "occurrences": 107
+        },
+        "decision_concise/Something else": {
+          "actual_ce_mass": 0.25416666666666665,
+          "occurrences": 4
+        },
+        "decision_concise/No option matches": {
+          "actual_ce_mass": 0.2708333333333333,
+          "occurrences": 7
+        },
+        "decision_action/No overtime is due for this week.": {
+          "actual_ce_mass": 0.45416666666666666,
+          "occurrences": 16
+        },
+        "decision_action/Decline coverage for this warranty claim.": {
+          "actual_ce_mass": 0.3666666666666667,
+          "occurrences": 14
+        },
+        "decision/The requirement is satisfied": {
+          "actual_ce_mass": 1.729166666666665,
+          "occurrences": 76
+        },
+        "decision_action/Apply zero shipping charges.": {
+          "actual_ce_mass": 0.15833333333333333,
+          "occurrences": 8
+        },
+        "decision_concise/Yes": {
+          "actual_ce_mass": 1.8791666666666649,
+          "occurrences": 81
+        },
+        "evidence_supports_yes/True": {
+          "actual_ce_mass": 1.620833333333332,
+          "occurrences": 80
+        },
+        "decision_concise/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.26249999999999996,
+          "occurrences": 4
+        },
+        "decision_action/None of the listed options apply": {
+          "actual_ce_mass": 0.1958333333333333,
+          "occurrences": 4
+        },
+        "decision_action/Do not grant the stated employment benefit.": {
+          "actual_ce_mass": 0.15416666666666665,
+          "occurrences": 7
+        },
+        "decision_action/Treat some of the week as overtime.": {
+          "actual_ce_mass": 0.15,
+          "occurrences": 7
+        },
+        "decision_concise/An answer not covered by the other options": {
+          "actual_ce_mass": 0.13666666666666666,
+          "occurrences": 5
+        },
+        "decision_action/Do not authorize this return.": {
+          "actual_ce_mass": 0.15416666666666665,
+          "occurrences": 7
+        },
+        "decision_action/Authorize this return.": {
+          "actual_ce_mass": 0.5000000000000001,
+          "occurrences": 18
+        },
+        "decision/Something else": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 3
+        },
+        "decision_action/None": {
+          "actual_ce_mass": 0.7125000000000001,
+          "occurrences": 14
+        },
+        "decision_concise/A reason that fits none of the above": {
+          "actual_ce_mass": 0.18333333333333332,
+          "occurrences": 6
+        },
+        "decision_action/Grant the stated employment benefit.": {
+          "actual_ce_mass": 0.4833333333333334,
+          "occurrences": 17
+        },
+        "decision/None of the listed options apply": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 3
+        },
+        "decision_action/Apply standard shipping charges.": {
+          "actual_ce_mass": 0.4375,
+          "occurrences": 16
+        },
+        "decision/None of these": {
+          "actual_ce_mass": 0.21249999999999997,
+          "occurrences": 4
+        },
+        "decision/No option matches": {
+          "actual_ce_mass": 0.17083333333333334,
+          "occurrences": 3
+        },
+        "decision_action/Other": {
+          "actual_ce_mass": 0.31666666666666665,
+          "occurrences": 7
+        },
+        "decision_action/The payment authorization is adequate.": {
+          "actual_ce_mass": 0.6083333333333335,
+          "occurrences": 19
+        },
+        "decision/None": {
+          "actual_ce_mass": 0.26249999999999996,
+          "occurrences": 8
+        },
+        "decision/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.3333333333333333,
+          "occurrences": 7
+        },
+        "decision/Other": {
+          "actual_ce_mass": 0.15833333333333333,
+          "occurrences": 5
+        },
+        "decision_action/A category that fits none of the above": {
+          "actual_ce_mass": 0.24166666666666664,
+          "occurrences": 6
+        },
+        "decision/An answer not covered by the other options": {
+          "actual_ce_mass": 0.44166666666666665,
+          "occurrences": 8
+        },
+        "decision_action/A reason that fits none of the above": {
+          "actual_ce_mass": 0.2375,
+          "occurrences": 6
+        },
+        "decision_concise/Other": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 3
+        },
+        "decision_action/Honor the requested price match.": {
+          "actual_ce_mass": 0.14583333333333331,
+          "occurrences": 8
+        },
+        "decision_concise/Not listed here": {
+          "actual_ce_mass": 0.2791666666666667,
+          "occurrences": 5
+        },
+        "decision_concise/None of these": {
+          "actual_ce_mass": 0.26249999999999996,
+          "occurrences": 4
+        },
+        "decision_action/The payment authorization is inadequate.": {
+          "actual_ce_mass": 0.15999999999999998,
+          "occurrences": 7
+        },
+        "decision_action/An answer not covered by the other options": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/A category that fits none of the above": {
+          "actual_ce_mass": 0.11666666666666667,
+          "occurrences": 5
+        },
+        "decision_action/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.2058333333333333,
+          "occurrences": 6
+        },
+        "decision_concise/None": {
+          "actual_ce_mass": 0.20833333333333331,
+          "occurrences": 3
+        },
+        "decision_action/No option matches": {
+          "actual_ce_mass": 0.13333333333333333,
+          "occurrences": 3
+        },
+        "decision_concise/None of the above": {
+          "actual_ce_mass": 0.38749999999999996,
+          "occurrences": 7
+        },
+        "decision_action/None of the above": {
+          "actual_ce_mass": 0.12083333333333333,
+          "occurrences": 3
+        },
+        "decision_concise/None of the listed options apply": {
+          "actual_ce_mass": 0.26666666666666666,
+          "occurrences": 4
+        },
+        "decision_action/None of these": {
+          "actual_ce_mass": 0.058333333333333334,
+          "occurrences": 3
+        },
+        "decision/A reason that fits none of the above": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 3
+        },
+        "decision_action/Not listed here": {
+          "actual_ce_mass": 0.27499999999999997,
+          "occurrences": 4
+        },
+        "decision_action/Honor this warranty claim.": {
+          "actual_ce_mass": 0.2833333333333333,
+          "occurrences": 9
+        },
+        "decision_action/Something else": {
+          "actual_ce_mass": 0.09583333333333333,
+          "occurrences": 3
+        },
+        "decision/Not listed here": {
+          "actual_ce_mass": 0.10833333333333334,
+          "occurrences": 2
+        }
+      }
+    },
+    {
+      "epoch": 1,
+      "total_ce_mass": 938.0000000000088,
+      "families": {
+        "replay": {
+          "contexts": 6000,
+          "variants": 7274,
+          "actual_ce_mass": 737.0875000000087,
+          "equal_record_ce_mass": 750.5,
+          "none_pair_records": 637,
+          "actual_share_pct": 78.58075692963773,
+          "actual_over_equal_record": 0.9821285809460476
+        },
+        "policy": {
+          "contexts": 300,
+          "variants": 422,
+          "actual_ce_mass": 40.108333333333334,
+          "equal_record_ce_mass": 37.5,
+          "none_pair_records": 61,
+          "actual_share_pct": 4.275941719971531,
+          "actual_over_equal_record": 1.0695555555555556
+        },
+        "probability": {
+          "contexts": 350,
+          "variants": 508,
+          "actual_ce_mass": 48.10833333333337,
+          "equal_record_ce_mass": 43.75,
+          "none_pair_records": 79,
+          "actual_share_pct": 5.12882018479029,
+          "actual_over_equal_record": 1.0996190476190484
+        },
+        "insufficient": {
+          "contexts": 280,
+          "variants": 402,
+          "actual_ce_mass": 38.48333333333334,
+          "equal_record_ce_mass": 35.0,
+          "none_pair_records": 61,
+          "actual_share_pct": 4.102700781805222,
+          "actual_over_equal_record": 1.0995238095238098
+        },
+        "injection": {
+          "contexts": 100,
+          "variants": 100,
+          "actual_ce_mass": 11.208333333333334,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 1.1949182658137771,
+          "actual_over_equal_record": 0.8966666666666667
+        },
+        "multihop": {
+          "contexts": 270,
+          "variants": 378,
+          "actual_ce_mass": 36.52916666666664,
+          "equal_record_ce_mass": 33.75,
+          "none_pair_records": 54,
+          "actual_share_pct": 3.894367448471887,
+          "actual_over_equal_record": 1.082345679012345
+        },
+        "tool_routing": {
+          "contexts": 100,
+          "variants": 140,
+          "actual_ce_mass": 13.337500000000007,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 20,
+          "actual_share_pct": 1.4219083155650194,
+          "actual_over_equal_record": 1.0670000000000006
+        },
+        "temporal": {
+          "contexts": 100,
+          "variants": 138,
+          "actual_ce_mass": 13.137500000000003,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 19,
+          "actual_share_pct": 1.40058635394455,
+          "actual_over_equal_record": 1.0510000000000002
+        }
+      },
+      "subtypes": {
+        "replay/unspecified": {
+          "contexts": 6000,
+          "variants": 7274,
+          "actual_ce_mass": 737.0875000000087,
+          "equal_record_ce_mass": 750.5,
+          "none_pair_records": 637,
+          "actual_share_pct": 78.58075692963773,
+          "actual_over_equal_record": 0.9821285809460476
+        },
+        "policy/pay_loss": {
+          "contexts": 40,
+          "variants": 64,
+          "actual_ce_mass": 5.587499999999999,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 12,
+          "actual_share_pct": 0.5956823027718493,
+          "actual_over_equal_record": 1.1174999999999997
+        },
+        "probability/any": {
+          "contexts": 25,
+          "variants": 39,
+          "actual_ce_mass": 3.6458333333333335,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.3886815920397974,
+          "actual_over_equal_record": 1.1666666666666667
+        },
+        "insufficient/tenure__unknown": {
+          "contexts": 16,
+          "variants": 26,
+          "actual_ce_mass": 2.5416666666666665,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.2709665955934587,
+          "actual_over_equal_record": 1.2708333333333333
+        },
+        "injection/JSON field": {
+          "contexts": 18,
+          "variants": 18,
+          "actual_ce_mass": 2.0,
+          "equal_record_ce_mass": 2.25,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.21321961620468885,
+          "actual_over_equal_record": 0.8888888888888888
+        },
+        "injection/web page": {
+          "contexts": 24,
+          "variants": 24,
+          "actual_ce_mass": 2.625,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2798507462686541,
+          "actual_over_equal_record": 0.875
+        },
+        "insufficient/approval__complete": {
+          "contexts": 20,
+          "variants": 26,
+          "actual_ce_mass": 2.75,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.2931769722814472,
+          "actual_over_equal_record": 1.1
+        },
+        "probability/all": {
+          "contexts": 40,
+          "variants": 56,
+          "actual_ce_mass": 5.354166666666665,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.5708066808813023,
+          "actual_over_equal_record": 1.070833333333333
+        },
+        "policy/pay_sublimit": {
+          "contexts": 40,
+          "variants": 54,
+          "actual_ce_mass": 5.254166666666666,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.5601457000710679,
+          "actual_over_equal_record": 1.0508333333333333
+        },
+        "multihop/ownership_control_and_profit": {
+          "contexts": 90,
+          "variants": 146,
+          "actual_ce_mass": 13.500000000000004,
+          "equal_record_ce_mass": 11.25,
+          "none_pair_records": 28,
+          "actual_share_pct": 1.4392324093816502,
+          "actual_over_equal_record": 1.2000000000000004
+        },
+        "policy/unsafe": {
+          "contexts": 36,
+          "variants": 42,
+          "actual_ce_mass": 4.295833333333333,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.45797796730632123,
+          "actual_over_equal_record": 0.9546296296296296
+        },
+        "tool_routing/sum": {
+          "contexts": 31,
+          "variants": 41,
+          "actual_ce_mass": 4.083333333333333,
+          "equal_record_ce_mass": 3.875,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.435323383084573,
+          "actual_over_equal_record": 1.053763440860215
+        },
+        "injection/email": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.6041666666666665,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2776297085998552,
+          "actual_over_equal_record": 0.9469696969696969
+        },
+        "injection/code comment": {
+          "contexts": 14,
+          "variants": 14,
+          "actual_ce_mass": 1.5833333333333333,
+          "equal_record_ce_mass": 1.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.16879886282871198,
+          "actual_over_equal_record": 0.9047619047619048
+        },
+        "probability/table": {
+          "contexts": 75,
+          "variants": 121,
+          "actual_ce_mass": 10.970833333333333,
+          "equal_record_ce_mass": 9.375,
+          "none_pair_records": 23,
+          "actual_share_pct": 1.1695984363894703,
+          "actual_over_equal_record": 1.1702222222222223
+        },
+        "probability/bayes": {
+          "contexts": 60,
+          "variants": 78,
+          "actual_ce_mass": 7.737499999999998,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.8248933901918897,
+          "actual_over_equal_record": 1.0316666666666665
+        },
+        "insufficient/approval__unknown": {
+          "contexts": 16,
+          "variants": 24,
+          "actual_ce_mass": 2.2708333333333335,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.2420931058990738,
+          "actual_over_equal_record": 1.1354166666666667
+        },
+        "policy/not_purchased": {
+          "contexts": 36,
+          "variants": 50,
+          "actual_ce_mass": 4.837500000000001,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.5157249466950913,
+          "actual_over_equal_record": 1.0750000000000002
+        },
+        "temporal/late_fee": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.2375,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.23853944562899562,
+          "actual_over_equal_record": 0.8136363636363636
+        },
+        "probability/compare": {
+          "contexts": 40,
+          "variants": 62,
+          "actual_ce_mass": 5.6291666666666655,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 11,
+          "actual_share_pct": 0.600124378109447,
+          "actual_over_equal_record": 1.125833333333333
+        },
+        "probability/expected_value": {
+          "contexts": 60,
+          "variants": 86,
+          "actual_ce_mass": 8.104166666666666,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 13,
+          "actual_share_pct": 0.8639836531627495,
+          "actual_over_equal_record": 1.0805555555555555
+        },
+        "multihop/rank_escalation": {
+          "contexts": 45,
+          "variants": 67,
+          "actual_ce_mass": 6.274999999999999,
+          "equal_record_ce_mass": 5.625,
+          "none_pair_records": 11,
+          "actual_share_pct": 0.6689765458422111,
+          "actual_over_equal_record": 1.1155555555555554
+        },
+        "probability/any_fail": {
+          "contexts": 50,
+          "variants": 66,
+          "actual_ce_mass": 6.666666666666666,
+          "equal_record_ce_mass": 6.25,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.7107320540156294,
+          "actual_over_equal_record": 1.0666666666666667
+        },
+        "policy/usage": {
+          "contexts": 36,
+          "variants": 50,
+          "actual_ce_mass": 5.0625,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.5397121535181186,
+          "actual_over_equal_record": 1.125
+        },
+        "insufficient/shipping__complete": {
+          "contexts": 20,
+          "variants": 26,
+          "actual_ce_mass": 2.395833333333333,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.25541933191186683,
+          "actual_over_equal_record": 0.9583333333333333
+        },
+        "insufficient/price_match__complete": {
+          "contexts": 20,
+          "variants": 30,
+          "actual_ce_mass": 2.7291666666666674,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.2909559346126484,
+          "actual_over_equal_record": 1.091666666666667
+        },
+        "multihop/dated_roster": {
+          "contexts": 60,
+          "variants": 76,
+          "actual_ce_mass": 7.629166666666666,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.813343994314136,
+          "actual_over_equal_record": 1.0172222222222222
+        },
+        "policy/waiting": {
+          "contexts": 36,
+          "variants": 50,
+          "actual_ce_mass": 4.591666666666667,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.4895167022032648,
+          "actual_over_equal_record": 1.0203703703703704
+        },
+        "temporal/prorata": {
+          "contexts": 28,
+          "variants": 54,
+          "actual_ce_mass": 4.583333333333333,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 13,
+          "actual_share_pct": 0.48862828713574524,
+          "actual_over_equal_record": 1.3095238095238095
+        },
+        "multihop/dependency_candidates": {
+          "contexts": 45,
+          "variants": 45,
+          "actual_ce_mass": 4.833333333333334,
+          "equal_record_ce_mass": 5.625,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.5152807391613314,
+          "actual_over_equal_record": 0.8592592592592594
+        },
+        "temporal/deadline": {
+          "contexts": 22,
+          "variants": 30,
+          "actual_ce_mass": 2.879166666666667,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.306947405828,
+          "actual_over_equal_record": 1.046969696969697
+        },
+        "insufficient/return__complete": {
+          "contexts": 20,
+          "variants": 32,
+          "actual_ce_mass": 2.9208333333333334,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.3113894811655976,
+          "actual_over_equal_record": 1.1683333333333334
+        },
+        "tool_routing/reservation": {
+          "contexts": 25,
+          "variants": 39,
+          "actual_ce_mass": 3.6250000000000004,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.3864605543709986,
+          "actual_over_equal_record": 1.1600000000000001
+        },
+        "insufficient/shipping__unknown": {
+          "contexts": 16,
+          "variants": 26,
+          "actual_ce_mass": 2.3541666666666665,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.25097725657426917,
+          "actual_over_equal_record": 1.1770833333333333
+        },
+        "policy/late": {
+          "contexts": 36,
+          "variants": 52,
+          "actual_ce_mass": 5.020833333333332,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.5352700781805209,
+          "actual_over_equal_record": 1.1157407407407405
+        },
+        "insufficient/shipping__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.06663113006396526,
+          "actual_over_equal_record": 1.25
+        },
+        "tool_routing/shipment": {
+          "contexts": 20,
+          "variants": 24,
+          "actual_ce_mass": 2.375,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.253198294243068,
+          "actual_over_equal_record": 0.95
+        },
+        "temporal/timezone": {
+          "contexts": 28,
+          "variants": 32,
+          "actual_ce_mass": 3.4375,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.36647121535180893,
+          "actual_over_equal_record": 0.9821428571428571
+        },
+        "multihop/exact_supervisor_hops": {
+          "contexts": 30,
+          "variants": 44,
+          "actual_ce_mass": 4.291666666666668,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.4575337597725616,
+          "actual_over_equal_record": 1.1444444444444448
+        },
+        "insufficient/price_match__nondeciding": {
+          "contexts": 4,
+          "variants": 8,
+          "actual_ce_mass": 0.75,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.07995735607675832,
+          "actual_over_equal_record": 1.5
+        },
+        "tool_routing/exchange": {
+          "contexts": 24,
+          "variants": 36,
+          "actual_ce_mass": 3.254166666666667,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.34692608386637913,
+          "actual_over_equal_record": 1.0847222222222224
+        },
+        "insufficient/overtime__complete": {
+          "contexts": 20,
+          "variants": 28,
+          "actual_ce_mass": 2.604166666666667,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.2776297085998553,
+          "actual_over_equal_record": 1.0416666666666667
+        },
+        "insufficient/return__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.05996801705756874,
+          "actual_over_equal_record": 1.125
+        },
+        "insufficient/warranty__complete": {
+          "contexts": 20,
+          "variants": 22,
+          "actual_ce_mass": 2.354166666666667,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.25097725657426917,
+          "actual_over_equal_record": 0.9416666666666668
+        },
+        "insufficient/approval__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.5,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.05330490405117221,
+          "actual_over_equal_record": 1.0
+        },
+        "insufficient/tenure__complete": {
+          "contexts": 20,
+          "variants": 28,
+          "actual_ce_mass": 2.4166666666666665,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.25764036958066566,
+          "actual_over_equal_record": 0.9666666666666666
+        },
+        "policy/pay_limit": {
+          "contexts": 40,
+          "variants": 60,
+          "actual_ce_mass": 5.458333333333332,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.5819118692252966,
+          "actual_over_equal_record": 1.0916666666666663
+        },
+        "insufficient/return__unknown": {
+          "contexts": 16,
+          "variants": 26,
+          "actual_ce_mass": 2.479166666666667,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.2643034825870622,
+          "actual_over_equal_record": 1.2395833333333335
+        },
+        "insufficient/price_match__unknown": {
+          "contexts": 16,
+          "variants": 24,
+          "actual_ce_mass": 2.2291666666666665,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.2376510305614761,
+          "actual_over_equal_record": 1.1145833333333333
+        },
+        "insufficient/tenure__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.5,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.05330490405117221,
+          "actual_over_equal_record": 1.0
+        },
+        "injection/tool result": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.395833333333333,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.25541933191186683,
+          "actual_over_equal_record": 0.8712121212121211
+        },
+        "insufficient/warranty__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.06663113006396526,
+          "actual_over_equal_record": 1.25
+        },
+        "insufficient/warranty__unknown": {
+          "contexts": 16,
+          "variants": 24,
+          "actual_ce_mass": 2.2708333333333335,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.2420931058990738,
+          "actual_over_equal_record": 1.1354166666666667
+        },
+        "insufficient/overtime__unknown": {
+          "contexts": 16,
+          "variants": 22,
+          "actual_ce_mass": 2.1458333333333335,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.22876687988628075,
+          "actual_over_equal_record": 1.0729166666666667
+        },
+        "insufficient/overtime__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.4583333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.04886282871357452,
+          "actual_over_equal_record": 0.9166666666666666
+        }
+      },
+      "questions": {
+        "replay/decision": {
+          "question_occurrences": 1311,
+          "actual_ce_mass": 142.6916666666663,
+          "equal_record_ce_mass": 157.50000000000009,
+          "actual_share_pct": 15.21233120113699,
+          "actual_over_equal_record": 0.9059788359788331
+        },
+        "replay/stars": {
+          "question_occurrences": 492,
+          "actual_ce_mass": 54.93750000000009,
+          "equal_record_ce_mass": 61.5,
+          "actual_share_pct": 5.856876332622556,
+          "actual_over_equal_record": 0.8932926829268307
+        },
+        "replay/relation": {
+          "question_occurrences": 731,
+          "actual_ce_mass": 66.83333333333353,
+          "equal_record_ce_mass": 58.12499999999962,
+          "actual_share_pct": 7.125088841506707,
+          "actual_over_equal_record": 1.1498207885304768
+        },
+        "policy/amount": {
+          "question_occurrences": 356,
+          "actual_ce_mass": 19.683333333333334,
+          "equal_record_ce_mass": 18.54166666666667,
+          "actual_share_pct": 2.098436389481146,
+          "actual_over_equal_record": 1.0615730337078648
+        },
+        "policy/reason": {
+          "question_occurrences": 366,
+          "actual_ce_mass": 20.425000000000004,
+          "equal_record_ce_mass": 18.95833333333333,
+          "actual_share_pct": 2.1775053304903853,
+          "actual_over_equal_record": 1.077362637362638
+        },
+        "replay/answer_type": {
+          "question_occurrences": 696,
+          "actual_ce_mass": 64.99583333333356,
+          "equal_record_ce_mass": 58.62499999999967,
+          "actual_share_pct": 6.929193319118652,
+          "actual_over_equal_record": 1.1086709310590008
+        },
+        "replay/intent": {
+          "question_occurrences": 754,
+          "actual_ce_mass": 69.7291666666669,
+          "equal_record_ce_mass": 61.37499999999967,
+          "actual_share_pct": 7.4338130774697495,
+          "actual_over_equal_record": 1.1361167684996705
+        },
+        "replay/topic": {
+          "question_occurrences": 699,
+          "actual_ce_mass": 32.80416666666674,
+          "equal_record_ce_mass": 26.06944444444466,
+          "actual_share_pct": 3.4972459132906644,
+          "actual_over_equal_record": 1.2583377730420808
+        },
+        "replay/is_world": {
+          "question_occurrences": 244,
+          "actual_ce_mass": 8.276388888888892,
+          "equal_record_ce_mass": 8.638888888888914,
+          "actual_share_pct": 0.8823442312248204,
+          "actual_over_equal_record": 0.9580385852090008
+        },
+        "replay/is_sports": {
+          "question_occurrences": 242,
+          "actual_ce_mass": 8.12916666666667,
+          "equal_record_ce_mass": 8.388888888888916,
+          "actual_share_pct": 0.8666488983653086,
+          "actual_over_equal_record": 0.969039735099335
+        },
+        "probability/bucket": {
+          "question_occurrences": 175,
+          "actual_ce_mass": 8.12083333333334,
+          "equal_record_ce_mass": 8.479166666666675,
+          "actual_share_pct": 0.8657604832977894,
+          "actual_over_equal_record": 0.9577395577395577
+        },
+        "probability/probability": {
+          "question_occurrences": 161,
+          "actual_ce_mass": 9.666666666666668,
+          "equal_record_ce_mass": 8.145833333333336,
+          "actual_share_pct": 1.0305614783226629,
+          "actual_over_equal_record": 1.1867007672634269
+        },
+        "replay/positive": {
+          "question_occurrences": 479,
+          "actual_ce_mass": 52.6333333333334,
+          "equal_record_ce_mass": 59.875,
+          "actual_share_pct": 5.611229566453401,
+          "actual_over_equal_record": 0.8790535838552551
+        },
+        "replay/answer": {
+          "question_occurrences": 472,
+          "actual_ce_mass": 51.912500000000094,
+          "equal_record_ce_mass": 59.0,
+          "actual_share_pct": 5.534381663112964,
+          "actual_over_equal_record": 0.8798728813559338
+        },
+        "replay/sentiment": {
+          "question_occurrences": 471,
+          "actual_ce_mass": 51.84166666666673,
+          "equal_record_ce_mass": 59.0,
+          "actual_share_pct": 5.526830135039046,
+          "actual_over_equal_record": 0.8786723163841819
+        },
+        "replay/rating": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.92708333333337,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.7640813788201632,
+          "actual_over_equal_record": 0.8863960113960127
+        },
+        "replay/recommend": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.92708333333337,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.7640813788201632,
+          "actual_over_equal_record": 0.8863960113960127
+        },
+        "insufficient/decision": {
+          "question_occurrences": 320,
+          "actual_ce_mass": 9.018333333333354,
+          "equal_record_ce_mass": 7.650000000000043,
+          "actual_share_pct": 0.961442786069645,
+          "actual_over_equal_record": 1.1788671023965103
+        },
+        "insufficient/decision_action": {
+          "question_occurrences": 318,
+          "actual_ce_mass": 8.768333333333361,
+          "equal_record_ce_mass": 7.566666666666711,
+          "actual_share_pct": 0.9347903340440596,
+          "actual_over_equal_record": 1.1588105726872215
+        },
+        "insufficient/decision_concise": {
+          "question_occurrences": 324,
+          "actual_ce_mass": 9.160000000000034,
+          "equal_record_ce_mass": 7.816666666666716,
+          "actual_share_pct": 0.9765458422174785,
+          "actual_over_equal_record": 1.1718550106609777
+        },
+        "insufficient/evidence_supports_no": {
+          "question_occurrences": 280,
+          "actual_ce_mass": 5.768333333333338,
+          "equal_record_ce_mass": 5.983333333333357,
+          "actual_share_pct": 0.6149609097370239,
+          "actual_over_equal_record": 0.964066852367685
+        },
+        "insufficient/evidence_supports_yes": {
+          "question_occurrences": 280,
+          "actual_ce_mass": 5.768333333333338,
+          "equal_record_ce_mass": 5.983333333333357,
+          "actual_share_pct": 0.6149609097370239,
+          "actual_over_equal_record": 0.964066852367685
+        },
+        "injection/decision": {
+          "question_occurrences": 100,
+          "actual_ce_mass": 11.208333333333334,
+          "equal_record_ce_mass": 12.5,
+          "actual_share_pct": 1.1949182658137771,
+          "actual_over_equal_record": 0.8966666666666667
+        },
+        "replay/category": {
+          "question_occurrences": 701,
+          "actual_ce_mass": 64.39583333333363,
+          "equal_record_ce_mass": 57.12499999999972,
+          "actual_share_pct": 6.865227434257252,
+          "actual_over_equal_record": 1.1272793581327605
+        },
+        "replay/is_scitech": {
+          "question_occurrences": 232,
+          "actual_ce_mass": 7.970833333333334,
+          "equal_record_ce_mass": 8.250000000000028,
+          "actual_share_pct": 0.849769012082437,
+          "actual_over_equal_record": 0.9661616161616129
+        },
+        "multihop/controller": {
+          "question_occurrences": 116,
+          "actual_ce_mass": 6.5625,
+          "equal_record_ce_mass": 5.541666666666668,
+          "actual_share_pct": 0.6996268656716352,
+          "actual_over_equal_record": 1.1842105263157892
+        },
+        "multihop/interest": {
+          "question_occurrences": 120,
+          "actual_ce_mass": 6.9375,
+          "equal_record_ce_mass": 5.708333333333334,
+          "actual_share_pct": 0.7396055437100144,
+          "actual_over_equal_record": 1.2153284671532845
+        },
+        "tool_routing/decision": {
+          "question_occurrences": 140,
+          "actual_ce_mass": 13.337500000000013,
+          "equal_record_ce_mass": 12.499999999999993,
+          "actual_share_pct": 1.42190831556502,
+          "actual_over_equal_record": 1.0670000000000017
+        },
+        "replay/is_business": {
+          "question_occurrences": 240,
+          "actual_ce_mass": 8.081944444444444,
+          "equal_record_ce_mass": 8.527777777777802,
+          "actual_share_pct": 0.8616145463160307,
+          "actual_over_equal_record": 0.9477198697068376
+        },
+        "probability/forward": {
+          "question_occurrences": 97,
+          "actual_ce_mass": 5.406250000000001,
+          "equal_record_ce_mass": 4.645833333333334,
+          "actual_share_pct": 0.5763592750532996,
+          "actual_over_equal_record": 1.1636771300448432
+        },
+        "probability/reverse": {
+          "question_occurrences": 99,
+          "actual_ce_mass": 5.564583333333331,
+          "equal_record_ce_mass": 4.729166666666667,
+          "actual_share_pct": 0.5932391613361705,
+          "actual_over_equal_record": 1.1766519823788542
+        },
+        "probability/more_likely": {
+          "question_occurrences": 60,
+          "actual_ce_mass": 2.120833333333333,
+          "equal_record_ce_mass": 2.25,
+          "actual_share_pct": 0.2261016346837221,
+          "actual_over_equal_record": 0.9425925925925925
+        },
+        "probability/posterior": {
+          "question_occurrences": 78,
+          "actual_ce_mass": 3.495833333333332,
+          "equal_record_ce_mass": 2.9999999999999973,
+          "actual_share_pct": 0.3726901208244456,
+          "actual_over_equal_record": 1.1652777777777783
+        },
+        "temporal/decision": {
+          "question_occurrences": 138,
+          "actual_ce_mass": 13.137500000000014,
+          "equal_record_ce_mass": 12.49999999999999,
+          "actual_share_pct": 1.4005863539445513,
+          "actual_over_equal_record": 1.051000000000002
+        },
+        "probability/decision": {
+          "question_occurrences": 62,
+          "actual_ce_mass": 5.629166666666665,
+          "equal_record_ce_mass": 4.999999999999999,
+          "actual_share_pct": 0.600124378109447,
+          "actual_over_equal_record": 1.1258333333333332
+        },
+        "probability/project": {
+          "question_occurrences": 72,
+          "actual_ce_mass": 3.989583333333332,
+          "equal_record_ce_mass": 3.7083333333333335,
+          "actual_share_pct": 0.42532871357497815,
+          "actual_over_equal_record": 1.0758426966292132
+        },
+        "probability/value": {
+          "question_occurrences": 74,
+          "actual_ce_mass": 4.114583333333333,
+          "equal_record_ce_mass": 3.7916666666666665,
+          "actual_share_pct": 0.4386549395877713,
+          "actual_over_equal_record": 1.085164835164835
+        },
+        "multihop/decision": {
+          "question_occurrences": 112,
+          "actual_ce_mass": 11.108333333333334,
+          "equal_record_ce_mass": 11.25,
+          "actual_share_pct": 1.1842572850035427,
+          "actual_over_equal_record": 0.9874074074074075
+        },
+        "multihop/contact": {
+          "question_occurrences": 70,
+          "actual_ce_mass": 3.99375,
+          "equal_record_ce_mass": 3.8333333333333335,
+          "actual_share_pct": 0.42577292110873804,
+          "actual_over_equal_record": 1.0418478260869564
+        },
+        "multihop/group": {
+          "question_occurrences": 66,
+          "actual_ce_mass": 3.6354166666666656,
+          "equal_record_ce_mass": 3.666666666666667,
+          "actual_share_pct": 0.38757107320539785,
+          "actual_over_equal_record": 0.9914772727272724
+        },
+        "multihop/approver": {
+          "question_occurrences": 44,
+          "actual_ce_mass": 4.291666666666667,
+          "equal_record_ce_mass": 3.7499999999999982,
+          "actual_share_pct": 0.4575337597725615,
+          "actual_over_equal_record": 1.144444444444445
+        }
+      },
+      "insufficient_raw_label_exposure": {
+        "decision/Cannot determine from the information given": {
+          "actual_ce_mass": 2.7958333333333307,
+          "occurrences": 107
+        },
+        "decision_action/The supplied facts do not settle this decision.": {
+          "actual_ce_mass": 2.7999999999999963,
+          "occurrences": 109
+        },
+        "decision_concise/Cannot be determined": {
+          "actual_ce_mass": 2.8249999999999975,
+          "occurrences": 108
+        },
+        "evidence_supports_no/False": {
+          "actual_ce_mass": 3.959999999999992,
+          "occurrences": 192
+        },
+        "evidence_supports_yes/False": {
+          "actual_ce_mass": 4.0999999999999925,
+          "occurrences": 200
+        },
+        "decision_action/An answer not covered by the other options": {
+          "actual_ce_mass": 0.38749999999999996,
+          "occurrences": 7
+        },
+        "decision/The requirement is not satisfied": {
+          "actual_ce_mass": 1.999999999999998,
+          "occurrences": 81
+        },
+        "decision_action/The payment authorization is inadequate.": {
+          "actual_ce_mass": 0.15833333333333333,
+          "occurrences": 7
+        },
+        "decision_concise/No": {
+          "actual_ce_mass": 2.3499999999999965,
+          "occurrences": 91
+        },
+        "evidence_supports_no/True": {
+          "actual_ce_mass": 1.8083333333333313,
+          "occurrences": 88
+        },
+        "decision_action/Apply standard shipping charges.": {
+          "actual_ce_mass": 0.30416666666666664,
+          "occurrences": 15
+        },
+        "decision_action/Decline the requested price match.": {
+          "actual_ce_mass": 0.26666666666666666,
+          "occurrences": 14
+        },
+        "decision_concise/A category that fits none of the above": {
+          "actual_ce_mass": 0.18333333333333332,
+          "occurrences": 3
+        },
+        "decision_action/None of these": {
+          "actual_ce_mass": 0.175,
+          "occurrences": 5
+        },
+        "decision_concise/None of the above": {
+          "actual_ce_mass": 0.10833333333333334,
+          "occurrences": 2
+        },
+        "decision/A category that fits none of the above": {
+          "actual_ce_mass": 0.26666666666666666,
+          "occurrences": 8
+        },
+        "decision_action/Something else": {
+          "actual_ce_mass": 0.10833333333333334,
+          "occurrences": 2
+        },
+        "decision/The requirement is satisfied": {
+          "actual_ce_mass": 1.834999999999998,
+          "occurrences": 77
+        },
+        "decision_action/Authorize this return.": {
+          "actual_ce_mass": 0.4725,
+          "occurrences": 17
+        },
+        "decision_concise/A reason that fits none of the above": {
+          "actual_ce_mass": 0.19166666666666665,
+          "occurrences": 3
+        },
+        "evidence_supports_yes/True": {
+          "actual_ce_mass": 1.6683333333333317,
+          "occurrences": 80
+        },
+        "decision/None": {
+          "actual_ce_mass": 0.575,
+          "occurrences": 9
+        },
+        "decision_action/Do not authorize this return.": {
+          "actual_ce_mass": 0.11249999999999999,
+          "occurrences": 6
+        },
+        "decision_concise/None": {
+          "actual_ce_mass": 0.3,
+          "occurrences": 9
+        },
+        "decision/None of these": {
+          "actual_ce_mass": 0.22499999999999998,
+          "occurrences": 5
+        },
+        "decision_concise/An answer not covered by the other options": {
+          "actual_ce_mass": 0.12916666666666665,
+          "occurrences": 4
+        },
+        "decision_concise/None of these": {
+          "actual_ce_mass": 0.4541666666666666,
+          "occurrences": 8
+        },
+        "decision_action/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.3416666666666667,
+          "occurrences": 7
+        },
+        "decision_action/Apply zero shipping charges.": {
+          "actual_ce_mass": 0.15833333333333333,
+          "occurrences": 8
+        },
+        "decision_concise/Yes": {
+          "actual_ce_mass": 1.7141666666666648,
+          "occurrences": 74
+        },
+        "decision_action/Treat some of the week as overtime.": {
+          "actual_ce_mass": 0.15416666666666665,
+          "occurrences": 8
+        },
+        "decision_action/A reason that fits none of the above": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 3
+        },
+        "decision_action/Honor this warranty claim.": {
+          "actual_ce_mass": 0.1708333333333333,
+          "occurrences": 8
+        },
+        "decision_action/The payment authorization is adequate.": {
+          "actual_ce_mass": 0.325,
+          "occurrences": 14
+        },
+        "decision_concise/Not listed here": {
+          "actual_ce_mass": 0.15416666666666667,
+          "occurrences": 4
+        },
+        "decision_action/No overtime is due for this week.": {
+          "actual_ce_mass": 0.35833333333333334,
+          "occurrences": 14
+        },
+        "decision_action/Grant the stated employment benefit.": {
+          "actual_ce_mass": 0.32499999999999996,
+          "occurrences": 16
+        },
+        "decision_concise/Something else": {
+          "actual_ce_mass": 0.2791666666666667,
+          "occurrences": 5
+        },
+        "decision/Not listed here": {
+          "actual_ce_mass": 0.29166666666666663,
+          "occurrences": 5
+        },
+        "decision_action/None": {
+          "actual_ce_mass": 0.28750000000000003,
+          "occurrences": 8
+        },
+        "decision_concise/None of the listed options apply": {
+          "actual_ce_mass": 0.1708333333333333,
+          "occurrences": 3
+        },
+        "decision_action/Do not grant the stated employment benefit.": {
+          "actual_ce_mass": 0.35,
+          "occurrences": 11
+        },
+        "decision/None of the above": {
+          "actual_ce_mass": 0.21666666666666667,
+          "occurrences": 7
+        },
+        "decision/Other": {
+          "actual_ce_mass": 0.06666666666666667,
+          "occurrences": 3
+        },
+        "decision_action/Honor the requested price match.": {
+          "actual_ce_mass": 0.24583333333333335,
+          "occurrences": 6
+        },
+        "decision_action/A category that fits none of the above": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 3
+        },
+        "decision_action/Other": {
+          "actual_ce_mass": 0.09166666666666667,
+          "occurrences": 4
+        },
+        "decision_action/Decline coverage for this warranty claim.": {
+          "actual_ce_mass": 0.4000000000000001,
+          "occurrences": 15
+        },
+        "decision_concise/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.05,
+          "occurrences": 2
+        },
+        "decision_action/None of the above": {
+          "actual_ce_mass": 0.2625,
+          "occurrences": 4
+        },
+        "decision_concise/Other": {
+          "actual_ce_mass": 0.13333333333333333,
+          "occurrences": 5
+        },
+        "decision/An answer not covered by the other options": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 3
+        },
+        "decision_action/Not listed here": {
+          "actual_ce_mass": 0.06666666666666668,
+          "occurrences": 3
+        },
+        "decision/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.058333333333333334,
+          "occurrences": 3
+        },
+        "decision/No option matches": {
+          "actual_ce_mass": 0.175,
+          "occurrences": 5
+        },
+        "decision_concise/No option matches": {
+          "actual_ce_mass": 0.11666666666666665,
+          "occurrences": 3
+        },
+        "decision/A reason that fits none of the above": {
+          "actual_ce_mass": 0.22083333333333333,
+          "occurrences": 5
+        },
+        "decision_action/No option matches": {
+          "actual_ce_mass": 0.10833333333333334,
+          "occurrences": 2
+        },
+        "decision/None of the listed options apply": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 1
+        },
+        "decision_action/None of the listed options apply": {
+          "actual_ce_mass": 0.10833333333333334,
+          "occurrences": 2
+        },
+        "decision/Something else": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 1
+        }
+      }
+    },
+    {
+      "epoch": 2,
+      "total_ce_mass": 938.0000000000085,
+      "families": {
+        "replay": {
+          "contexts": 6000,
+          "variants": 7226,
+          "actual_ce_mass": 732.0708333333417,
+          "equal_record_ce_mass": 750.25,
+          "none_pair_records": 613,
+          "actual_share_pct": 78.04593105899094,
+          "actual_over_equal_record": 0.9757691880484395
+        },
+        "multihop": {
+          "contexts": 270,
+          "variants": 362,
+          "actual_ce_mass": 35.954166666666666,
+          "equal_record_ce_mass": 33.75,
+          "none_pair_records": 46,
+          "actual_share_pct": 3.8330668088130424,
+          "actual_over_equal_record": 1.0653086419753086
+        },
+        "injection": {
+          "contexts": 100,
+          "variants": 100,
+          "actual_ce_mass": 11.029166666666672,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 1.1758173418621078,
+          "actual_over_equal_record": 0.8823333333333337
+        },
+        "insufficient": {
+          "contexts": 280,
+          "variants": 416,
+          "actual_ce_mass": 39.145833333333336,
+          "equal_record_ce_mass": 35.0,
+          "none_pair_records": 68,
+          "actual_share_pct": 4.1733297796730255,
+          "actual_over_equal_record": 1.118452380952381
+        },
+        "probability": {
+          "contexts": 350,
+          "variants": 526,
+          "actual_ce_mass": 49.01250000000005,
+          "equal_record_ce_mass": 43.75,
+          "none_pair_records": 88,
+          "actual_share_pct": 5.225213219616163,
+          "actual_over_equal_record": 1.1202857142857154
+        },
+        "tool_routing": {
+          "contexts": 100,
+          "variants": 160,
+          "actual_ce_mass": 14.112500000000006,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 30,
+          "actual_share_pct": 1.5045309168443368,
+          "actual_over_equal_record": 1.1290000000000004
+        },
+        "temporal": {
+          "contexts": 100,
+          "variants": 136,
+          "actual_ce_mass": 13.212500000000004,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 18,
+          "actual_share_pct": 1.4085820895522265,
+          "actual_over_equal_record": 1.0570000000000004
+        },
+        "policy": {
+          "contexts": 300,
+          "variants": 472,
+          "actual_ce_mass": 43.4625,
+          "equal_record_ce_mass": 37.75,
+          "none_pair_records": 86,
+          "actual_share_pct": 4.633528784648146,
+          "actual_over_equal_record": 1.1513245033112582
+        }
+      },
+      "subtypes": {
+        "replay/unspecified": {
+          "contexts": 6000,
+          "variants": 7226,
+          "actual_ce_mass": 732.0708333333417,
+          "equal_record_ce_mass": 750.25,
+          "none_pair_records": 613,
+          "actual_share_pct": 78.04593105899094,
+          "actual_over_equal_record": 0.9757691880484395
+        },
+        "multihop/dated_roster": {
+          "contexts": 60,
+          "variants": 86,
+          "actual_ce_mass": 8.791666666666666,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 13,
+          "actual_share_pct": 0.9372778962331115,
+          "actual_over_equal_record": 1.172222222222222
+        },
+        "injection/JSON field": {
+          "contexts": 18,
+          "variants": 18,
+          "actual_ce_mass": 1.895833333333333,
+          "equal_record_ce_mass": 2.25,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.20211442786069467,
+          "actual_over_equal_record": 0.8425925925925924
+        },
+        "insufficient/warranty__complete": {
+          "contexts": 20,
+          "variants": 34,
+          "actual_ce_mass": 3.1875,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.3398187633262229,
+          "actual_over_equal_record": 1.275
+        },
+        "probability/any_fail": {
+          "contexts": 50,
+          "variants": 82,
+          "actual_ce_mass": 7.354166666666665,
+          "equal_record_ce_mass": 6.25,
+          "none_pair_records": 16,
+          "actual_share_pct": 0.7840262970859913,
+          "actual_over_equal_record": 1.1766666666666665
+        },
+        "probability/bayes": {
+          "contexts": 60,
+          "variants": 80,
+          "actual_ce_mass": 7.945833333333332,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.8471037668798784,
+          "actual_over_equal_record": 1.0594444444444442
+        },
+        "probability/all": {
+          "contexts": 40,
+          "variants": 60,
+          "actual_ce_mass": 5.716666666666666,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.6094527363184024,
+          "actual_over_equal_record": 1.143333333333333
+        },
+        "insufficient/price_match__unknown": {
+          "contexts": 16,
+          "variants": 24,
+          "actual_ce_mass": 2.3125,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.24653518123667154,
+          "actual_over_equal_record": 1.15625
+        },
+        "insufficient/overtime__unknown": {
+          "contexts": 16,
+          "variants": 30,
+          "actual_ce_mass": 2.583333333333333,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.2754086709310565,
+          "actual_over_equal_record": 1.2916666666666665
+        },
+        "insufficient/approval__unknown": {
+          "contexts": 16,
+          "variants": 26,
+          "actual_ce_mass": 2.3541666666666665,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.2509772565742692,
+          "actual_over_equal_record": 1.1770833333333333
+        },
+        "probability/table": {
+          "contexts": 75,
+          "variants": 113,
+          "actual_ce_mass": 10.60416666666667,
+          "equal_record_ce_mass": 9.375,
+          "none_pair_records": 19,
+          "actual_share_pct": 1.1305081734186113,
+          "actual_over_equal_record": 1.1311111111111114
+        },
+        "tool_routing/sum": {
+          "contexts": 31,
+          "variants": 51,
+          "actual_ce_mass": 4.5875,
+          "equal_record_ce_mass": 3.875,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.4890724946695052,
+          "actual_over_equal_record": 1.1838709677419357
+        },
+        "temporal/late_fee": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.4583333333333335,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.26208244491826344,
+          "actual_over_equal_record": 0.893939393939394
+        },
+        "probability/compare": {
+          "contexts": 40,
+          "variants": 56,
+          "actual_ce_mass": 5.5,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.5863539445628945,
+          "actual_over_equal_record": 1.1
+        },
+        "policy/late": {
+          "contexts": 36,
+          "variants": 52,
+          "actual_ce_mass": 4.875,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.5197228144989292,
+          "actual_over_equal_record": 1.0833333333333333
+        },
+        "policy/waiting": {
+          "contexts": 36,
+          "variants": 50,
+          "actual_ce_mass": 4.754166666666666,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.5068407960198958,
+          "actual_over_equal_record": 1.0564814814814814
+        },
+        "multihop/dependency_candidates": {
+          "contexts": 45,
+          "variants": 45,
+          "actual_ce_mass": 5.187499999999999,
+          "equal_record_ce_mass": 5.625,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.5530383795309117,
+          "actual_over_equal_record": 0.922222222222222
+        },
+        "probability/expected_value": {
+          "contexts": 60,
+          "variants": 94,
+          "actual_ce_mass": 8.320833333333331,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 17,
+          "actual_share_pct": 0.8870824449182575,
+          "actual_over_equal_record": 1.1094444444444442
+        },
+        "probability/any": {
+          "contexts": 25,
+          "variants": 41,
+          "actual_ce_mass": 3.5708333333333333,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.3806858564321216,
+          "actual_over_equal_record": 1.1426666666666667
+        },
+        "insufficient/tenure__complete": {
+          "contexts": 20,
+          "variants": 28,
+          "actual_ce_mass": 2.6666666666666665,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.2842928216062518,
+          "actual_over_equal_record": 1.0666666666666667
+        },
+        "policy/pay_limit": {
+          "contexts": 40,
+          "variants": 62,
+          "actual_ce_mass": 5.6875,
+          "equal_record_ce_mass": 5.125,
+          "none_pair_records": 11,
+          "actual_share_pct": 0.606343283582084,
+          "actual_over_equal_record": 1.1097560975609757
+        },
+        "multihop/rank_escalation": {
+          "contexts": 45,
+          "variants": 55,
+          "actual_ce_mass": 5.487499999999999,
+          "equal_record_ce_mass": 5.625,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.585021321961615,
+          "actual_over_equal_record": 0.9755555555555554
+        },
+        "policy/pay_loss": {
+          "contexts": 40,
+          "variants": 66,
+          "actual_ce_mass": 6.0249999999999995,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 13,
+          "actual_share_pct": 0.6423240938166253,
+          "actual_over_equal_record": 1.2049999999999998
+        },
+        "insufficient/tenure__unknown": {
+          "contexts": 16,
+          "variants": 22,
+          "actual_ce_mass": 2.125,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.22654584221748195,
+          "actual_over_equal_record": 1.0625
+        },
+        "policy/not_purchased": {
+          "contexts": 36,
+          "variants": 56,
+          "actual_ce_mass": 5.479166666666666,
+          "equal_record_ce_mass": 4.625,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.5841329068940956,
+          "actual_over_equal_record": 1.1846846846846846
+        },
+        "multihop/ownership_control_and_profit": {
+          "contexts": 90,
+          "variants": 134,
+          "actual_ce_mass": 12.462500000000002,
+          "equal_record_ce_mass": 11.25,
+          "none_pair_records": 22,
+          "actual_share_pct": 1.328624733475468,
+          "actual_over_equal_record": 1.107777777777778
+        },
+        "insufficient/shipping__complete": {
+          "contexts": 20,
+          "variants": 24,
+          "actual_ce_mass": 2.375,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.25319829424306806,
+          "actual_over_equal_record": 0.95
+        },
+        "policy/unsafe": {
+          "contexts": 36,
+          "variants": 64,
+          "actual_ce_mass": 5.625,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 14,
+          "actual_share_pct": 0.5996801705756876,
+          "actual_over_equal_record": 1.25
+        },
+        "tool_routing/reservation": {
+          "contexts": 25,
+          "variants": 39,
+          "actual_ce_mass": 3.4375000000000004,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.3664712153518091,
+          "actual_over_equal_record": 1.1
+        },
+        "tool_routing/shipment": {
+          "contexts": 20,
+          "variants": 30,
+          "actual_ce_mass": 2.6875,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.2865138592750507,
+          "actual_over_equal_record": 1.075
+        },
+        "insufficient/price_match__complete": {
+          "contexts": 20,
+          "variants": 26,
+          "actual_ce_mass": 2.5000000000000004,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.26652452025586115,
+          "actual_over_equal_record": 1.0000000000000002
+        },
+        "insufficient/shipping__unknown": {
+          "contexts": 16,
+          "variants": 22,
+          "actual_ce_mass": 2.229166666666667,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.23765103056147618,
+          "actual_over_equal_record": 1.1145833333333335
+        },
+        "temporal/prorata": {
+          "contexts": 28,
+          "variants": 42,
+          "actual_ce_mass": 3.958333333333333,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.4219971570717801,
+          "actual_over_equal_record": 1.130952380952381
+        },
+        "policy/pay_sublimit": {
+          "contexts": 40,
+          "variants": 64,
+          "actual_ce_mass": 5.820833333333334,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 12,
+          "actual_share_pct": 0.6205579246623967,
+          "actual_over_equal_record": 1.1641666666666668
+        },
+        "policy/usage": {
+          "contexts": 36,
+          "variants": 58,
+          "actual_ce_mass": 5.195833333333333,
+          "equal_record_ce_mass": 4.5,
+          "none_pair_records": 11,
+          "actual_share_pct": 0.5539267945984313,
+          "actual_over_equal_record": 1.1546296296296295
+        },
+        "injection/web page": {
+          "contexts": 24,
+          "variants": 24,
+          "actual_ce_mass": 2.7500000000000004,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2931769722814473,
+          "actual_over_equal_record": 0.9166666666666669
+        },
+        "insufficient/return__unknown": {
+          "contexts": 16,
+          "variants": 18,
+          "actual_ce_mass": 1.658333333333333,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.1767945984363878,
+          "actual_over_equal_record": 0.8291666666666665
+        },
+        "temporal/deadline": {
+          "contexts": 22,
+          "variants": 36,
+          "actual_ce_mass": 3.275,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.3491471215351781,
+          "actual_over_equal_record": 1.190909090909091
+        },
+        "insufficient/approval__complete": {
+          "contexts": 20,
+          "variants": 36,
+          "actual_ce_mass": 3.2500000000000004,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.3464818763326195,
+          "actual_over_equal_record": 1.3000000000000003
+        },
+        "injection/tool result": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.375,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.25319829424306806,
+          "actual_over_equal_record": 0.8636363636363636
+        },
+        "insufficient/overtime__complete": {
+          "contexts": 20,
+          "variants": 22,
+          "actual_ce_mass": 2.479166666666667,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.2643034825870623,
+          "actual_over_equal_record": 0.9916666666666668
+        },
+        "temporal/timezone": {
+          "contexts": 28,
+          "variants": 36,
+          "actual_ce_mass": 3.520833333333334,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.3753553660270044,
+          "actual_over_equal_record": 1.0059523809523812
+        },
+        "insufficient/return__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5416666666666666,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.05774697938876991,
+          "actual_over_equal_record": 1.0833333333333333
+        },
+        "insufficient/warranty__unknown": {
+          "contexts": 16,
+          "variants": 24,
+          "actual_ce_mass": 2.154166666666667,
+          "equal_record_ce_mass": 2.0,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.22965529495380035,
+          "actual_over_equal_record": 1.0770833333333334
+        },
+        "multihop/exact_supervisor_hops": {
+          "contexts": 30,
+          "variants": 42,
+          "actual_ce_mass": 4.025,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.4291044776119365,
+          "actual_over_equal_record": 1.0733333333333335
+        },
+        "injection/email": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.425,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.25852878464818524,
+          "actual_over_equal_record": 0.8818181818181817
+        },
+        "tool_routing/exchange": {
+          "contexts": 24,
+          "variants": 40,
+          "actual_ce_mass": 3.4000000000000004,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.36247334754797117,
+          "actual_over_equal_record": 1.1333333333333335
+        },
+        "insufficient/return__complete": {
+          "contexts": 20,
+          "variants": 36,
+          "actual_ce_mass": 3.2291666666666665,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.34426083866382057,
+          "actual_over_equal_record": 1.2916666666666665
+        },
+        "insufficient/shipping__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.4583333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.04886282871357453,
+          "actual_over_equal_record": 0.9166666666666666
+        },
+        "injection/code comment": {
+          "contexts": 14,
+          "variants": 14,
+          "actual_ce_mass": 1.583333333333333,
+          "equal_record_ce_mass": 1.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.168798862828712,
+          "actual_over_equal_record": 0.9047619047619045
+        },
+        "insufficient/tenure__nondeciding": {
+          "contexts": 4,
+          "variants": 8,
+          "actual_ce_mass": 0.7083333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.07551528073916064,
+          "actual_over_equal_record": 1.4166666666666665
+        },
+        "insufficient/price_match__nondeciding": {
+          "contexts": 4,
+          "variants": 8,
+          "actual_ce_mass": 0.75,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.07995735607675833,
+          "actual_over_equal_record": 1.5
+        },
+        "insufficient/warranty__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5416666666666666,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.05774697938876991,
+          "actual_over_equal_record": 1.0833333333333333
+        },
+        "insufficient/overtime__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.059968017057568754,
+          "actual_over_equal_record": 1.125
+        },
+        "insufficient/approval__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.47916666666666663,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.05108386638237338,
+          "actual_over_equal_record": 0.9583333333333333
+        }
+      },
+      "questions": {
+        "replay/answer_type": {
+          "question_occurrences": 694,
+          "actual_ce_mass": 65.54166666666696,
+          "equal_record_ce_mass": 58.499999999999744,
+          "actual_share_pct": 6.987384506041189,
+          "actual_over_equal_record": 1.1203703703703802
+        },
+        "replay/decision": {
+          "question_occurrences": 1323,
+          "actual_ce_mass": 141.78749999999945,
+          "equal_record_ce_mass": 157.49999999999994,
+          "actual_share_pct": 15.115938166311105,
+          "actual_over_equal_record": 0.9002380952380921
+        },
+        "multihop/contact": {
+          "question_occurrences": 74,
+          "actual_ce_mass": 4.479166666666666,
+          "equal_record_ce_mass": 3.7916666666666674,
+          "actual_share_pct": 0.47752309879175114,
+          "actual_over_equal_record": 1.181318681318681
+        },
+        "multihop/group": {
+          "question_occurrences": 72,
+          "actual_ce_mass": 4.312500000000001,
+          "equal_record_ce_mass": 3.7083333333333326,
+          "actual_share_pct": 0.45975479744136055,
+          "actual_over_equal_record": 1.1629213483146073
+        },
+        "replay/sentiment": {
+          "question_occurrences": 471,
+          "actual_ce_mass": 51.89166666666676,
+          "equal_record_ce_mass": 58.875,
+          "actual_share_pct": 5.532160625444167,
+          "actual_over_equal_record": 0.8813871196036817
+        },
+        "replay/answer": {
+          "question_occurrences": 472,
+          "actual_ce_mass": 52.27083333333343,
+          "equal_record_ce_mass": 59.0,
+          "actual_share_pct": 5.5725835110163064,
+          "actual_over_equal_record": 0.8859463276836175
+        },
+        "replay/stars": {
+          "question_occurrences": 492,
+          "actual_ce_mass": 54.33333333333346,
+          "equal_record_ce_mass": 61.625,
+          "actual_share_pct": 5.7924662402273945,
+          "actual_over_equal_record": 0.8816768086544983
+        },
+        "injection/decision": {
+          "question_occurrences": 100,
+          "actual_ce_mass": 11.029166666666672,
+          "equal_record_ce_mass": 12.5,
+          "actual_share_pct": 1.1758173418621078,
+          "actual_over_equal_record": 0.8823333333333337
+        },
+        "insufficient/decision": {
+          "question_occurrences": 324,
+          "actual_ce_mass": 9.052500000000032,
+          "equal_record_ce_mass": 7.700000000000047,
+          "actual_share_pct": 0.9650852878464765,
+          "actual_over_equal_record": 1.1756493506493477
+        },
+        "insufficient/decision_action": {
+          "question_occurrences": 330,
+          "actual_ce_mass": 9.652500000000032,
+          "equal_record_ce_mass": 7.950000000000048,
+          "actual_share_pct": 1.0290511727078833,
+          "actual_over_equal_record": 1.214150943396223
+        },
+        "insufficient/decision_concise": {
+          "question_occurrences": 322,
+          "actual_ce_mass": 8.952500000000029,
+          "equal_record_ce_mass": 7.616666666666713,
+          "actual_share_pct": 0.9544243070362418,
+          "actual_over_equal_record": 1.1753829321662985
+        },
+        "insufficient/evidence_supports_no": {
+          "question_occurrences": 280,
+          "actual_ce_mass": 5.744166666666671,
+          "equal_record_ce_mass": 5.86666666666669,
+          "actual_share_pct": 0.6123845060412173,
+          "actual_over_equal_record": 0.979119318181815
+        },
+        "insufficient/evidence_supports_yes": {
+          "question_occurrences": 280,
+          "actual_ce_mass": 5.744166666666671,
+          "equal_record_ce_mass": 5.86666666666669,
+          "actual_share_pct": 0.6123845060412173,
+          "actual_over_equal_record": 0.979119318181815
+        },
+        "replay/category": {
+          "question_occurrences": 689,
+          "actual_ce_mass": 63.508333333333546,
+          "equal_record_ce_mass": 57.124999999999766,
+          "actual_share_pct": 6.7706112295664145,
+          "actual_over_equal_record": 1.1117432530999354
+        },
+        "replay/positive": {
+          "question_occurrences": 479,
+          "actual_ce_mass": 52.758333333333404,
+          "equal_record_ce_mass": 59.875,
+          "actual_share_pct": 5.624555792466197,
+          "actual_over_equal_record": 0.881141266527489
+        },
+        "probability/bucket": {
+          "question_occurrences": 175,
+          "actual_ce_mass": 7.869444444444453,
+          "equal_record_ce_mass": 7.993055555555557,
+          "actual_share_pct": 0.8389599620942838,
+          "actual_over_equal_record": 0.984535186794093
+        },
+        "probability/probability": {
+          "question_occurrences": 183,
+          "actual_ce_mass": 10.879166666666672,
+          "equal_record_ce_mass": 8.604166666666668,
+          "actual_share_pct": 1.1598258706467561,
+          "actual_over_equal_record": 1.2644067796610174
+        },
+        "probability/more_likely": {
+          "question_occurrences": 60,
+          "actual_ce_mass": 2.106944444444444,
+          "equal_record_ce_mass": 2.2222222222222223,
+          "actual_share_pct": 0.22462094290452286,
+          "actual_over_equal_record": 0.9481249999999997
+        },
+        "probability/posterior": {
+          "question_occurrences": 80,
+          "actual_ce_mass": 3.731944444444442,
+          "equal_record_ce_mass": 3.0555555555555527,
+          "actual_share_pct": 0.3978618810708324,
+          "actual_over_equal_record": 1.2213636363636367
+        },
+        "replay/topic": {
+          "question_occurrences": 743,
+          "actual_ce_mass": 35.783333333333445,
+          "equal_record_ce_mass": 27.291666666666924,
+          "actual_share_pct": 3.814854299928904,
+          "actual_over_equal_record": 1.3111450381679306
+        },
+        "replay/is_scitech": {
+          "question_occurrences": 232,
+          "actual_ce_mass": 7.90416666666667,
+          "equal_record_ce_mass": 8.138888888888916,
+          "actual_share_pct": 0.8426616915422813,
+          "actual_over_equal_record": 0.9711604095563112
+        },
+        "replay/is_world": {
+          "question_occurrences": 244,
+          "actual_ce_mass": 8.048611111111114,
+          "equal_record_ce_mass": 8.25000000000003,
+          "actual_share_pct": 0.8580608860459532,
+          "actual_over_equal_record": 0.9755892255892225
+        },
+        "replay/is_business": {
+          "question_occurrences": 240,
+          "actual_ce_mass": 7.998611111111112,
+          "equal_record_ce_mass": 8.000000000000034,
+          "actual_share_pct": 0.8527303956408357,
+          "actual_over_equal_record": 0.9998263888888848
+        },
+        "replay/is_sports": {
+          "question_occurrences": 242,
+          "actual_ce_mass": 8.08194444444445,
+          "equal_record_ce_mass": 8.194444444444477,
+          "actual_share_pct": 0.8616145463160315,
+          "actual_over_equal_record": 0.9862711864406747
+        },
+        "replay/rating": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.764583333333377,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.7467572850035333,
+          "actual_over_equal_record": 0.8808404558404573
+        },
+        "replay/recommend": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.764583333333377,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.7467572850035333,
+          "actual_over_equal_record": 0.8808404558404573
+        },
+        "replay/relation": {
+          "question_occurrences": 671,
+          "actual_ce_mass": 62.795833333333576,
+          "equal_record_ce_mass": 58.12499999999977,
+          "actual_share_pct": 6.694651741293497,
+          "actual_over_equal_record": 1.0803584229390766
+        },
+        "probability/forward": {
+          "question_occurrences": 95,
+          "actual_ce_mass": 5.364583333333334,
+          "equal_record_ce_mass": 4.729166666666667,
+          "actual_share_pct": 0.571917199715702,
+          "actual_over_equal_record": 1.1343612334801763
+        },
+        "probability/reverse": {
+          "question_occurrences": 93,
+          "actual_ce_mass": 5.239583333333336,
+          "equal_record_ce_mass": 4.645833333333333,
+          "actual_share_pct": 0.5585909737029092,
+          "actual_over_equal_record": 1.1278026905829601
+        },
+        "tool_routing/decision": {
+          "question_occurrences": 160,
+          "actual_ce_mass": 14.112500000000015,
+          "equal_record_ce_mass": 12.499999999999984,
+          "actual_share_pct": 1.5045309168443377,
+          "actual_over_equal_record": 1.1290000000000027
+        },
+        "temporal/decision": {
+          "question_occurrences": 136,
+          "actual_ce_mass": 13.212500000000016,
+          "equal_record_ce_mass": 12.499999999999986,
+          "actual_share_pct": 1.4085820895522276,
+          "actual_over_equal_record": 1.0570000000000026
+        },
+        "probability/decision": {
+          "question_occurrences": 56,
+          "actual_ce_mass": 5.500000000000001,
+          "equal_record_ce_mass": 4.999999999999998,
+          "actual_share_pct": 0.5863539445628946,
+          "actual_over_equal_record": 1.1000000000000005
+        },
+        "replay/intent": {
+          "question_occurrences": 724,
+          "actual_ce_mass": 67.83750000000016,
+          "equal_record_ce_mass": 61.24999999999966,
+          "actual_share_pct": 7.232142857142809,
+          "actual_over_equal_record": 1.107551020408172
+        },
+        "policy/amount": {
+          "question_occurrences": 386,
+          "actual_ce_mass": 21.59791666666667,
+          "equal_record_ce_mass": 18.874999999999996,
+          "actual_share_pct": 2.3025497512437605,
+          "actual_over_equal_record": 1.1442604856512144
+        },
+        "policy/reason": {
+          "question_occurrences": 386,
+          "actual_ce_mass": 21.86458333333334,
+          "equal_record_ce_mass": 18.875,
+          "actual_share_pct": 2.330979033404386,
+          "actual_over_equal_record": 1.1583885209713027
+        },
+        "multihop/decision": {
+          "question_occurrences": 100,
+          "actual_ce_mass": 10.675000000000002,
+          "equal_record_ce_mass": 11.249999999999995,
+          "actual_share_pct": 1.138059701492527,
+          "actual_over_equal_record": 0.9488888888888896
+        },
+        "probability/project": {
+          "question_occurrences": 82,
+          "actual_ce_mass": 4.552083333333331,
+          "equal_record_ce_mass": 3.958333333333333,
+          "actual_share_pct": 0.4852967306325469,
+          "actual_over_equal_record": 1.1499999999999995
+        },
+        "probability/value": {
+          "question_occurrences": 72,
+          "actual_ce_mass": 3.7687499999999985,
+          "equal_record_ce_mass": 3.541666666666667,
+          "actual_share_pct": 0.40178571428571047,
+          "actual_over_equal_record": 1.064117647058823
+        },
+        "multihop/controller": {
+          "question_occurrences": 112,
+          "actual_ce_mass": 6.264583333333334,
+          "equal_record_ce_mass": 5.625000000000001,
+          "actual_share_pct": 0.6678660270078122,
+          "actual_over_equal_record": 1.1137037037037036
+        },
+        "multihop/interest": {
+          "question_occurrences": 112,
+          "actual_ce_mass": 6.197916666666668,
+          "equal_record_ce_mass": 5.624999999999999,
+          "actual_share_pct": 0.6607587064676558,
+          "actual_over_equal_record": 1.1018518518518523
+        },
+        "multihop/approver": {
+          "question_occurrences": 42,
+          "actual_ce_mass": 4.025,
+          "equal_record_ce_mass": 3.7499999999999987,
+          "actual_share_pct": 0.4291044776119365,
+          "actual_over_equal_record": 1.073333333333334
+        }
+      },
+      "insufficient_raw_label_exposure": {
+        "decision/The requirement is satisfied": {
+          "actual_ce_mass": 1.8624999999999978,
+          "occurrences": 74
+        },
+        "decision_action/Honor this warranty claim.": {
+          "actual_ce_mass": 0.3125,
+          "occurrences": 9
+        },
+        "decision_concise/Yes": {
+          "actual_ce_mass": 1.9291666666666643,
+          "occurrences": 76
+        },
+        "evidence_supports_no/False": {
+          "actual_ce_mass": 3.977499999999991,
+          "occurrences": 192
+        },
+        "evidence_supports_yes/True": {
+          "actual_ce_mass": 1.704166666666665,
+          "occurrences": 80
+        },
+        "decision_concise/No option matches": {
+          "actual_ce_mass": 0.1875,
+          "occurrences": 4
+        },
+        "decision/Cannot determine from the information given": {
+          "actual_ce_mass": 3.0358333333333296,
+          "occurrences": 116
+        },
+        "decision_action/The supplied facts do not settle this decision.": {
+          "actual_ce_mass": 2.6191666666666635,
+          "occurrences": 110
+        },
+        "decision_concise/Cannot be determined": {
+          "actual_ce_mass": 2.719166666666663,
+          "occurrences": 114
+        },
+        "evidence_supports_yes/False": {
+          "actual_ce_mass": 4.039999999999993,
+          "occurrences": 200
+        },
+        "decision/None of the listed options apply": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 3
+        },
+        "decision_action/Grant the stated employment benefit.": {
+          "actual_ce_mass": 0.43333333333333335,
+          "occurrences": 16
+        },
+        "decision_action/Not listed here": {
+          "actual_ce_mass": 0.22916666666666663,
+          "occurrences": 5
+        },
+        "decision/None": {
+          "actual_ce_mass": 0.4583333333333333,
+          "occurrences": 9
+        },
+        "decision_action/Apply standard shipping charges.": {
+          "actual_ce_mass": 0.3375,
+          "occurrences": 16
+        },
+        "decision_concise/No": {
+          "actual_ce_mass": 2.2541666666666647,
+          "occurrences": 88
+        },
+        "evidence_supports_no/True": {
+          "actual_ce_mass": 1.7666666666666646,
+          "occurrences": 88
+        },
+        "decision_concise/None of the above": {
+          "actual_ce_mass": 0.2583333333333333,
+          "occurrences": 5
+        },
+        "decision/The requirement is not satisfied": {
+          "actual_ce_mass": 1.8958333333333313,
+          "occurrences": 82
+        },
+        "decision_action/None": {
+          "actual_ce_mass": 0.37499999999999994,
+          "occurrences": 6
+        },
+        "decision_action/An answer not covered by the other options": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 4
+        },
+        "decision_action/The payment authorization is inadequate.": {
+          "actual_ce_mass": 0.3,
+          "occurrences": 9
+        },
+        "decision_action/No overtime is due for this week.": {
+          "actual_ce_mass": 0.425,
+          "occurrences": 17
+        },
+        "decision/No option matches": {
+          "actual_ce_mass": 0.20833333333333331,
+          "occurrences": 4
+        },
+        "decision_action/Do not grant the stated employment benefit.": {
+          "actual_ce_mass": 0.15416666666666667,
+          "occurrences": 8
+        },
+        "decision/A category that fits none of the above": {
+          "actual_ce_mass": 0.04166666666666667,
+          "occurrences": 2
+        },
+        "decision_action/Authorize this return.": {
+          "actual_ce_mass": 0.40833333333333344,
+          "occurrences": 16
+        },
+        "decision_action/The payment authorization is adequate.": {
+          "actual_ce_mass": 0.5541666666666667,
+          "occurrences": 17
+        },
+        "decision_concise/A reason that fits none of the above": {
+          "actual_ce_mass": 0.09999999999999999,
+          "occurrences": 2
+        },
+        "decision_concise/None": {
+          "actual_ce_mass": 0.5291666666666667,
+          "occurrences": 8
+        },
+        "decision_action/Apply zero shipping charges.": {
+          "actual_ce_mass": 0.15416666666666667,
+          "occurrences": 7
+        },
+        "decision_action/A reason that fits none of the above": {
+          "actual_ce_mass": 0.1625,
+          "occurrences": 4
+        },
+        "decision_concise/Something else": {
+          "actual_ce_mass": 0.09999999999999999,
+          "occurrences": 2
+        },
+        "decision_action/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.4916666666666667,
+          "occurrences": 8
+        },
+        "decision_action/Something else": {
+          "actual_ce_mass": 0.11666666666666665,
+          "occurrences": 3
+        },
+        "decision_action/Decline the requested price match.": {
+          "actual_ce_mass": 0.4708333333333333,
+          "occurrences": 17
+        },
+        "decision_action/Do not authorize this return.": {
+          "actual_ce_mass": 0.21250000000000002,
+          "occurrences": 9
+        },
+        "decision_concise/Not listed here": {
+          "actual_ce_mass": 0.15833333333333333,
+          "occurrences": 3
+        },
+        "decision_action/Honor the requested price match.": {
+          "actual_ce_mass": 0.11249999999999999,
+          "occurrences": 6
+        },
+        "decision_concise/None of the listed options apply": {
+          "actual_ce_mass": 0.10833333333333334,
+          "occurrences": 5
+        },
+        "decision/None of the above": {
+          "actual_ce_mass": 0.33333333333333337,
+          "occurrences": 8
+        },
+        "decision/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.14583333333333331,
+          "occurrences": 2
+        },
+        "decision_concise/An answer not covered by the other options": {
+          "actual_ce_mass": 0.12916666666666665,
+          "occurrences": 4
+        },
+        "decision_action/None of these": {
+          "actual_ce_mass": 0.35,
+          "occurrences": 6
+        },
+        "decision_action/Treat some of the week as overtime.": {
+          "actual_ce_mass": 0.175,
+          "occurrences": 7
+        },
+        "decision/An answer not covered by the other options": {
+          "actual_ce_mass": 0.06666666666666668,
+          "occurrences": 3
+        },
+        "decision/None of these": {
+          "actual_ce_mass": 0.14166666666666666,
+          "occurrences": 4
+        },
+        "decision_action/Decline coverage for this warranty claim.": {
+          "actual_ce_mass": 0.5166666666666666,
+          "occurrences": 16
+        },
+        "decision/Other": {
+          "actual_ce_mass": 0.24583333333333335,
+          "occurrences": 6
+        },
+        "decision_concise/None of these": {
+          "actual_ce_mass": 0.37083333333333335,
+          "occurrences": 6
+        },
+        "decision_action/None of the listed options apply": {
+          "actual_ce_mass": 0.25833333333333336,
+          "occurrences": 5
+        },
+        "decision/A reason that fits none of the above": {
+          "actual_ce_mass": 0.31666666666666665,
+          "occurrences": 6
+        },
+        "decision_action/Other": {
+          "actual_ce_mass": 0.04166666666666667,
+          "occurrences": 2
+        },
+        "decision/Not listed here": {
+          "actual_ce_mass": 0.15416666666666667,
+          "occurrences": 4
+        },
+        "decision/Something else": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 1
+        },
+        "decision_action/A category that fits none of the above": {
+          "actual_ce_mass": 0.11249999999999999,
+          "occurrences": 3
+        },
+        "decision_action/None of the above": {
+          "actual_ce_mass": 0.22916666666666663,
+          "occurrences": 3
+        },
+        "decision_concise/Other": {
+          "actual_ce_mass": 0.04166666666666667,
+          "occurrences": 2
+        },
+        "decision_concise/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.04166666666666667,
+          "occurrences": 2
+        },
+        "decision_concise/A category that fits none of the above": {
+          "actual_ce_mass": 0.025,
+          "occurrences": 1
+        },
+        "decision_action/No option matches": {
+          "actual_ce_mass": 0.016666666666666666,
+          "occurrences": 1
+        }
+      }
+    }
+  ],
+  "scope": "Exact scalar coefficients before optimizer, clipping, learning-rate scaling and gradient direction. Preflight confirmed no input filtering. Does not prove these weights caused benchmark regressions.",
+  "toy_example": {
+    "source_record_variant_counts": [
+      3,
+      1,
+      1,
+      1
+    ],
+    "group_records": 8,
+    "actual_source_coefficients": [
+      0.25,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "equal_record_source_coefficients": [
+      0.125,
+      0.125,
+      0.125,
+      0.125
+    ],
+    "within_batch_ratio_three_variants_vs_one": 3
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "candidate_only_not_used_for_training",
+  "files": {
+    "train": {
+      "contexts": 180,
+      "questions": 330,
+      "subtypes": {
+        "exact_supervisor_hops": 30,
+        "dated_roster": 60,
+        "ownership_control_and_profit": 90
+      }
+    },
+    "development": {
+      "contexts": 36,
+      "questions": 66,
+      "subtypes": {
+        "exact_supervisor_hops": 6,
+        "dated_roster": 12,
+        "ownership_control_and_profit": 18
+      }
+    }
+  },
+  "purpose": "Cover exact-hop routing, dated roster joins and aggregated control/economic-interest mechanisms missing from v5.",
+  "scope": "Same-author independent visible-text checker. These are new draws, not independent generalization proof. Running v5 inputs are unchanged."
+}

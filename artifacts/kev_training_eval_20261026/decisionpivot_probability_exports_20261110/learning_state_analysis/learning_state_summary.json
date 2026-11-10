@@ -1,0 +1,59 @@
+{
+  "definitions": {
+    "stable_correct": "correct and top1-top2 margin >= 0.50",
+    "moderate_correct": "correct and 0.10 <= margin < 0.50",
+    "fragile_correct": "correct and margin < 0.10; not proof of guessing",
+    "near_miss_wrong": "wrong, gold ranked second, pmax-p_gold < 0.10",
+    "confident_wrong": "wrong, pmax >= 0.80 and p_gold <= 0.20",
+    "uncertain_wrong": "remaining wrong items",
+    "not_learned_band": "accuracy <= mean chance + 0.05"
+  },
+  "overall": {
+    "group_id": "overall",
+    "name_zh": "全体",
+    "family": "all",
+    "n": 7800,
+    "mean_chance": 0.39639784289782765,
+    "correct": 5547,
+    "accuracy": 0.7111538461538461,
+    "accuracy_minus_chance": 0.3147560032560185,
+    "stable_correct": 4345,
+    "moderate_correct": 977,
+    "fragile_correct": 225,
+    "stable_share_of_correct": 0.7833062916892014,
+    "fragile_share_of_correct": 0.04056246619794483,
+    "near_miss_wrong": 196,
+    "uncertain_wrong": 1268,
+    "confident_wrong": 789,
+    "near_miss_share_of_wrong": 0.08699511762094984,
+    "confident_wrong_share_of_wrong": 0.35019973368841545,
+    "mean_p_gold": 0.6685694487179463,
+    "mean_p_gold_correct": 0.8608430863529805,
+    "mean_p_gold_wrong": 0.19518202396804266,
+    "mean_margin_correct": 0.7430707769965758,
+    "mean_gold_gap_wrong": 0.4992695517088331,
+    "wrong_pmax_mean": 0.694451575676876,
+    "sl_both_correct_on_kev_wrong": 1310,
+    "sl_any_correct_on_kev_wrong": 2153,
+    "mastery_label": "基本掌握",
+    "error_shape": "高置信规则错主导"
+  },
+  "checks": {
+    "items": 7800,
+    "correct": 5547,
+    "errors": 2253,
+    "outcome_state_counts": {
+      "stable_correct": 4345,
+      "confident_wrong": 789,
+      "fragile_correct": 225,
+      "uncertain_wrong": 1268,
+      "near_miss_wrong": 196,
+      "moderate_correct": 977
+    },
+    "outcome_state_sum": 7800,
+    "family_n_sum": 7800,
+    "level_n_sum": 7800,
+    "category_count": 45,
+    "category_memberships_nonadditive": 4810
+  }
+}

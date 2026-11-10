@@ -1,0 +1,67 @@
+{
+  "status": "training_and_evaluation_complete_goal_unachieved",
+  "remote_root": "/C20545/kev-08b-official-repro-20261026",
+  "qwen3": {
+    "run": "runs/qwen3-20261030-targeted-v4",
+    "gpu": 1,
+    "planned_steps": 938,
+    "development_before_accuracy": 0.4116279069767442,
+    "completed_steps": 938,
+    "training_wall_seconds": 823.3352258205414,
+    "seven_pooled": {
+      "questions": 1000,
+      "contexts": 800,
+      "before_correct": 512,
+      "after_correct": 518,
+      "before_pct": 51.2,
+      "after_pct": 51.8,
+      "delta_pp": 0.6,
+      "repaired": 45,
+      "newly_wrong": 39,
+      "old_wrong": 488,
+      "repair_pct": 9.221311475409836,
+      "paired_context_bootstrap_95pct_pp": [
+        -1.2757605495583906,
+        2.4120603015075375
+      ]
+    }
+  },
+  "qwen35": {
+    "run": "runs/qwen35-20261030-targeted-v4",
+    "gpu": 2,
+    "planned_steps": 938,
+    "development_before_accuracy": 0.4186046511627907,
+    "completed_steps": 938,
+    "training_wall_seconds": 913.3403844833374,
+    "seven_pooled": {
+      "questions": 1000,
+      "contexts": 800,
+      "before_correct": 551,
+      "after_correct": 582,
+      "before_pct": 55.1,
+      "after_pct": 58.2,
+      "delta_pp": 3.1,
+      "repaired": 49,
+      "newly_wrong": 18,
+      "old_wrong": 449,
+      "repair_pct": 10.913140311804009,
+      "paired_context_bootstrap_95pct_pp": [
+        1.5166835187057635,
+        4.743083003952569
+      ]
+    }
+  },
+  "preflight": {
+    "both_tokenizers_passed": true,
+    "training_contexts_with_replay": 7500,
+    "training_questions_before_augmentation": 9451,
+    "development_contexts": 330,
+    "development_questions": 430,
+    "rejected_or_truncated": 0
+  },
+  "next": "Diagnose and repair unknown-answer, probability, multihop and positive-payment weaknesses. Do not restart the completed v4 runs or claim all seven categories improved.",
+  "status_basis": "Downloaded complete status, training metrics, full before/after prediction rows and coverage reports; see evidence/runs.",
+  "previous_live_observation_at_utc": "2026-10-29T18:30:17Z",
+  "previous_live_observation_at_asia_shanghai": "2026-10-30 02:30:17",
+  "goal_achieved": false
+}

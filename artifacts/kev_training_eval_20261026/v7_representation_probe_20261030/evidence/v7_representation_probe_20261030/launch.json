@@ -1,0 +1,40 @@
+{
+  "started_at_utc": "2026-10-30T01:35:44.978894+00:00",
+  "jobs": {
+    "qwen3-stage3": {
+      "gpu": 1,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/v7_training_fit_audit_20261030/qwen3-stage3",
+      "pipeline_pid": 44527
+    },
+    "qwen3-lr5": {
+      "gpu": 2,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v7-lr5/stage4",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v7-lr5/full-train-after",
+      "pipeline_pid": 44528
+    },
+    "qwen35-stage3": {
+      "gpu": 3,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/v7_training_fit_audit_20261030/qwen35-stage3",
+      "pipeline_pid": 44529
+    },
+    "qwen35-lr5": {
+      "gpu": 4,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v7-lr5/stage4",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v7-lr5/full-train-after",
+      "pipeline_pid": 44530
+    }
+  },
+  "checkpoint_hashes": {
+    "runs/qwen3-06b-20261026/stage3/adapter_model.safetensors": "8b69b05f4ce4f3befc2a44d106347751e97e228f4b87b975538a2284a6b699d0",
+    "runs/qwen3-06b-20261026/stage3/head.pt": "56688ff3be9d252df2b7ded421163c5a27a94635a1e0044263e4a8cd42d96bc5",
+    "runs/qwen3-20261030-targeted-v7-lr5/stage4/adapter_model.safetensors": "f0202dd1f3ce854cbdefc0b32b74ae8df27a2aea84d9e8b5d5f92fc5de69834b",
+    "runs/qwen3-20261030-targeted-v7-lr5/stage4/head.pt": "6b1729b59fa2116db994564ced897f43e97d136208904ccf798ee3f124673d56",
+    "runs/replica-20261026/stage3/adapter_model.safetensors": "8d352bd5d73cfb1aeed00d92c299575a19baff6f79fb9f0e85a20634b012007d",
+    "runs/replica-20261026/stage3/head.pt": "9891098409dc28c904422494790163183cdf047ba4f9630b0a61d8152ca5bb34",
+    "runs/qwen35-20261030-targeted-v7-lr5/stage4/adapter_model.safetensors": "ff71eff464d9b85efad6aef80ba15e01840dfd7a3d68cbfa32a82eed22242e94",
+    "runs/qwen35-20261030-targeted-v7-lr5/stage4/head.pt": "9fed4fb72984c827e390f6bd38ed9fdecee4b8013080c9f10bfa30b04c0e3eed"
+  },
+  "training_performed": false
+}

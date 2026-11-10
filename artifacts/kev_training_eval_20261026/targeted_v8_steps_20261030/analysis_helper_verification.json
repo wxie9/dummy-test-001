@@ -1,0 +1,13 @@
+{
+  "scope": "Analysis helper validation only. No post-training predictions or improvement claims. Temporary identical before/after fixtures are outside experiment evidence.",
+  "verified_at_utc": "2026-10-30T02:03:36.796851+00:00",
+  "policy_legacy_outputs_match": true,
+  "candidate_mode_reproduces_lr5_both_models_both_sets": true,
+  "step_before_only_after_values_null": true,
+  "step_identity_fixture_contexts_per_model": 244,
+  "step_identity_fixture_repairs_and_new_errors": 0,
+  "source_hashes": {
+    "tools/audit_kev_policy_zero_preference.py": "907768aeadeae7a6e678a9bd19ef899f805b8c7da12975fbb46ac72c671f1abf",
+    "tools/summarize_kev_step_development.py": "1af7371bbd363783efc65bc3bf7ab35e42e205a270006cd74cf2b276ac0204eb"
+  }
+}

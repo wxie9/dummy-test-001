@@ -1,0 +1,412 @@
+{
+  "completed_at": "2026-11-02T05:34:47.422427+00:00",
+  "run": "/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101",
+  "evaluation_shim": "/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101-eval-localbase",
+  "evaluation_root": "/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101-eval-six-localbase-20261102",
+  "protocol": "six frozen test suites; kev.benchmark --allow-test; one suite per GPU 0-5; shipped/raw temperature 1.0; accuracy is temperature-invariant",
+  "models": {
+    "4B stage4": {
+      "suites": [
+        {
+          "suite": "decision-v7",
+          "correct": 1043,
+          "n": 1200,
+          "accuracy": 0.8691666666666666,
+          "coverage": {
+            "requested_records": 1176,
+            "requested_questions": 1440,
+            "evaluated_records": 1176,
+            "evaluated_questions": 1440,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "transfer-v4",
+          "correct": 551,
+          "n": 656,
+          "accuracy": 0.8399390243902439,
+          "coverage": {
+            "requested_records": 764,
+            "requested_questions": 764,
+            "evaluated_records": 764,
+            "evaluated_questions": 764,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "transfer-v9",
+          "correct": 811,
+          "n": 1046,
+          "accuracy": 0.7753346080305927,
+          "coverage": {
+            "requested_records": 1264,
+            "requested_questions": 1264,
+            "evaluated_records": 1264,
+            "evaluated_questions": 1264,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "hard-v1",
+          "correct": 871,
+          "n": 1088,
+          "accuracy": 0.8005514705882353,
+          "coverage": {
+            "requested_records": 700,
+            "requested_questions": 1088,
+            "evaluated_records": 700,
+            "evaluated_questions": 1088,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "devtools-v1",
+          "correct": 807,
+          "n": 1073,
+          "accuracy": 0.7520969245107176,
+          "coverage": {
+            "requested_records": 900,
+            "requested_questions": 1073,
+            "evaluated_records": 900,
+            "evaluated_questions": 1073,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "documents-v1",
+          "correct": 836,
+          "n": 936,
+          "accuracy": 0.8931623931623932,
+          "coverage": {
+            "requested_records": 574,
+            "requested_questions": 936,
+            "evaluated_records": 574,
+            "evaluated_questions": 936,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        }
+      ],
+      "weighted_correct": 4919,
+      "weighted_n": 5999,
+      "weighted_accuracy": 0.8199699949991666
+    },
+    "9B stage3": {
+      "suites": [
+        {
+          "suite": "decision-v7",
+          "correct": 1040,
+          "n": 1200,
+          "accuracy": 0.8666666666666667,
+          "coverage": {
+            "requested_records": 1176,
+            "requested_questions": 1440,
+            "evaluated_records": 1176,
+            "evaluated_questions": 1440,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "transfer-v4",
+          "correct": 569,
+          "n": 656,
+          "accuracy": 0.8673780487804879,
+          "coverage": {
+            "requested_records": 764,
+            "requested_questions": 764,
+            "evaluated_records": 764,
+            "evaluated_questions": 764,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "transfer-v9",
+          "correct": 842,
+          "n": 1046,
+          "accuracy": 0.8049713193116634,
+          "coverage": {
+            "requested_records": 1264,
+            "requested_questions": 1264,
+            "evaluated_records": 1264,
+            "evaluated_questions": 1264,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "hard-v1",
+          "correct": 909,
+          "n": 1088,
+          "accuracy": 0.8354779411764706,
+          "coverage": {
+            "requested_records": 700,
+            "requested_questions": 1088,
+            "evaluated_records": 700,
+            "evaluated_questions": 1088,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "devtools-v1",
+          "correct": 871,
+          "n": 1073,
+          "accuracy": 0.8117427772600186,
+          "coverage": {
+            "requested_records": 900,
+            "requested_questions": 1073,
+            "evaluated_records": 900,
+            "evaluated_questions": 1073,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "documents-v1",
+          "correct": 847,
+          "n": 936,
+          "accuracy": 0.9049145299145299,
+          "coverage": {
+            "requested_records": 574,
+            "requested_questions": 936,
+            "evaluated_records": 574,
+            "evaluated_questions": 936,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        }
+      ],
+      "weighted_correct": 5078,
+      "weighted_n": 5999,
+      "weighted_accuracy": 0.846474412402067
+    },
+    "27B v1": {
+      "suites": [
+        {
+          "suite": "decision-v7",
+          "correct": 1047,
+          "n": 1200,
+          "accuracy": 0.8725,
+          "coverage": {
+            "requested_records": 1176,
+            "requested_questions": 1440,
+            "evaluated_records": 1176,
+            "evaluated_questions": 1440,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "transfer-v4",
+          "correct": 582,
+          "n": 656,
+          "accuracy": 0.8871951219512195,
+          "coverage": {
+            "requested_records": 764,
+            "requested_questions": 764,
+            "evaluated_records": 764,
+            "evaluated_questions": 764,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "transfer-v9",
+          "correct": 884,
+          "n": 1046,
+          "accuracy": 0.8451242829827916,
+          "coverage": {
+            "requested_records": 1264,
+            "requested_questions": 1264,
+            "evaluated_records": 1264,
+            "evaluated_questions": 1264,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "hard-v1",
+          "correct": 848,
+          "n": 1088,
+          "accuracy": 0.7794117647058824,
+          "coverage": {
+            "requested_records": 700,
+            "requested_questions": 1088,
+            "evaluated_records": 700,
+            "evaluated_questions": 1088,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "devtools-v1",
+          "correct": 758,
+          "n": 1073,
+          "accuracy": 0.706430568499534,
+          "coverage": {
+            "requested_records": 900,
+            "requested_questions": 1073,
+            "evaluated_records": 900,
+            "evaluated_questions": 1073,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        },
+        {
+          "suite": "documents-v1",
+          "correct": 820,
+          "n": 936,
+          "accuracy": 0.8760683760683761,
+          "coverage": {
+            "requested_records": 574,
+            "requested_questions": 936,
+            "evaluated_records": 574,
+            "evaluated_questions": 936,
+            "rejected_records": 0,
+            "truncated_records": 0
+          }
+        }
+      ],
+      "weighted_correct": 4939,
+      "weighted_n": 5999,
+      "weighted_accuracy": 0.8233038839806635
+    }
+  },
+  "official_duplicate_id_adjustment_27b": {
+    "devtools_correct": 756,
+    "devtools_n": 1071,
+    "devtools_accuracy": 0.7058823529411765,
+    "weighted_correct": 4937,
+    "weighted_n": 5997,
+    "weighted_accuracy": 0.8232449558112389
+  },
+  "timing_events": [
+    {
+      "time": "2026-11-02T13:23:39+08:00",
+      "event": "START",
+      "suite": "decision-v7"
+    },
+    {
+      "time": "2026-11-02T13:23:39+08:00",
+      "event": "START",
+      "suite": "transfer-v4"
+    },
+    {
+      "time": "2026-11-02T13:23:39+08:00",
+      "event": "START",
+      "suite": "transfer-v9"
+    },
+    {
+      "time": "2026-11-02T13:23:39+08:00",
+      "event": "START",
+      "suite": "hard-v1"
+    },
+    {
+      "time": "2026-11-02T13:23:39+08:00",
+      "event": "START",
+      "suite": "devtools-v1"
+    },
+    {
+      "time": "2026-11-02T13:23:39+08:00",
+      "event": "START",
+      "suite": "documents-v1"
+    },
+    {
+      "time": "2026-11-02T13:26:12+08:00",
+      "event": "DONE",
+      "suite": "transfer-v4"
+    },
+    {
+      "time": "2026-11-02T13:27:15+08:00",
+      "event": "DONE",
+      "suite": "transfer-v9"
+    },
+    {
+      "time": "2026-11-02T13:27:48+08:00",
+      "event": "DONE",
+      "suite": "decision-v7"
+    },
+    {
+      "time": "2026-11-02T13:27:48+08:00",
+      "event": "DONE",
+      "suite": "devtools-v1"
+    },
+    {
+      "time": "2026-11-02T13:30:23+08:00",
+      "event": "DONE",
+      "suite": "documents-v1"
+    },
+    {
+      "time": "2026-11-02T13:32:19+08:00",
+      "event": "DONE",
+      "suite": "hard-v1"
+    }
+  ],
+  "validation": {
+    "status_all_done": true,
+    "requested_records": 5378,
+    "requested_questions": 6565,
+    "rejected_records": 0,
+    "truncated_records": 0,
+    "suite_manifest_hashes": [
+      {
+        "name": "decision-v7",
+        "gpu": 0,
+        "path": "/data/kev/evals/v7/decision-v7",
+        "manifest_sha256": "a8f50e481b7d90b97da049e0ff6a01cee2f1ed204aed61a8265af0edbb5514d2"
+      },
+      {
+        "name": "transfer-v4",
+        "gpu": 1,
+        "path": "/data/kev/evals/v4/transfer-v4",
+        "manifest_sha256": "31677c2256b406222e7d94ffdc0a02a70ce05746b9efe307876024c4e77291d1"
+      },
+      {
+        "name": "transfer-v9",
+        "gpu": 2,
+        "path": "/data/kev/evals/v9/transfer-v9",
+        "manifest_sha256": "3c4f0be94509a3612678bfd3a30fd99a8d0ca3c47ddfe7318075d95b2fa365e4"
+      },
+      {
+        "name": "hard-v1",
+        "gpu": 3,
+        "path": "/data/kev/evals/hard-v1",
+        "manifest_sha256": "9d8dd335f5a73840b144c987ee91bb0513301128c474a7a4cd3f754a130cfa5c"
+      },
+      {
+        "name": "devtools-v1",
+        "gpu": 4,
+        "path": "/data/kev/evals/devtools-v1",
+        "manifest_sha256": "d0f7cf40cec3284684f8b2fe8f440a5f0cc40fe4a78db108eca47a5fbd141b0f"
+      },
+      {
+        "name": "documents-v1",
+        "gpu": 5,
+        "path": "/data/kev/evals/documents-v1",
+        "manifest_sha256": "711903d1241cadbfb9e0a20c93d978762123dcbec0108de9c539a60a753cf8d2"
+      }
+    ],
+    "checkpoint_provenance": {
+      "created_at": "2026-11-02T05:21:23.001413+00:00",
+      "purpose": "evaluation-only path shim; original checkpoint unchanged",
+      "source_run": "/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101",
+      "source_base": "Qwen/Qwen3.8-27B",
+      "source_base_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "local_base": "/data/models/Qwen3.8-27B",
+      "source_adapter_sha256": "2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa",
+      "shim_adapter_sha256": "2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa",
+      "source_head_sha256": "e35c7090af0b6ddde9740065d2c5747a9a31caaa0618f620de88a8d4c29b2cb3",
+      "shim_head_sha256": "dd65b35246999aeaa9529a652fd8ee76c9936b71e4ec3e48c31710b382d8f41a",
+      "source_adapter_config_sha256": "abb269977ffe77d6813ab93d4792c42078288da6ed618096e66ba2004bb129c2",
+      "shim_adapter_config_sha256": "07e0b14cd199cc9df5f709b176a0bf45f33b2c46ac23fb9b695accf92ff709d7",
+      "source_head_unchanged": true
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-10-30T02:24:05.786253+00:00",
+  "goal_achieved": false,
+  "status": "contradicted_by_category_regressions",
+  "requirements": [
+    {
+      "requirement": "1500 distinct training contexts, all seven families, 6000 replay counted separately",
+      "evidence": "train.jsonl, manifest.json, archived training_config/metrics",
+      "verdict": "proven"
+    },
+    {
+      "requirement": "Both models start original pre-targeted stage3 and finish training/evaluation",
+      "evidence": "archive_result.json, collected_evidence_index.json; 938 steps each; both pipelines exited normally",
+      "verdict": "proven"
+    },
+    {
+      "requirement": "Both models show clear improvement in each of seven original categories",
+      "evidence": "comparison-seven.json; Qwen3 multihop/policy decline, insufficient flat; Qwen3.5 temporal/probability/insufficient/multihop decline",
+      "verdict": "contradicted"
+    },
+    {
+      "requirement": "Count both repaired old errors and newly broken correct answers",
+      "evidence": "paired-seven.jsonl and comparison-seven.json",
+      "verdict": "proven"
+    }
+  ],
+  "result_sha256": "931e774ae9b2d77dc9d4b1ee5397de85f1781ff3df5abef3e2e5258de1a4ecf6",
+  "evidence_limitations": [
+    {
+      "requirement": "Stable independent generalization",
+      "evidence": "single seed, repeatedly inspected diagnostic suites; not established",
+      "verdict": "unproven"
+    }
+  ]
+}

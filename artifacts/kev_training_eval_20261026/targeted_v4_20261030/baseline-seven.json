@@ -1,0 +1,62 @@
+{
+  "qwen3": {
+    "tool_routing": {
+      "questions": 150,
+      "correct": 52
+    },
+    "temporal": {
+      "questions": 117,
+      "correct": 44
+    },
+    "probability": {
+      "questions": 158,
+      "correct": 85
+    },
+    "insufficient": {
+      "questions": 100,
+      "correct": 66
+    },
+    "multihop": {
+      "questions": 125,
+      "correct": 61
+    },
+    "policy": {
+      "questions": 200,
+      "correct": 117
+    },
+    "injection": {
+      "questions": 150,
+      "correct": 87
+    }
+  },
+  "qwen35": {
+    "tool_routing": {
+      "questions": 150,
+      "correct": 34
+    },
+    "temporal": {
+      "questions": 117,
+      "correct": 51
+    },
+    "probability": {
+      "questions": 158,
+      "correct": 87
+    },
+    "insufficient": {
+      "questions": 100,
+      "correct": 69
+    },
+    "multihop": {
+      "questions": 125,
+      "correct": 85
+    },
+    "policy": {
+      "questions": 200,
+      "correct": 131
+    },
+    "injection": {
+      "questions": 150,
+      "correct": 94
+    }
+  }
+}

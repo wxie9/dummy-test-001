@@ -1,0 +1,42 @@
+{
+  "status": "inference_complete_and_analyzed",
+  "training_performed": false,
+  "contexts": 480,
+  "questions": 720,
+  "independent_new_graph_groups": 30,
+  "graph_views": 240,
+  "reused_positive_policy_contexts": 120,
+  "policy_views": 240,
+  "source_sha256": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+  "probe_sha256": "1943fbc053cf1bdd5be99429e838d9fe004efafda55c272bade3223447f91aac",
+  "wrong_label_mutations_rejected": 2880,
+  "jobs": {
+    "qwen3-stage3": {
+      "gpu": 1,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/v7_training_fit_audit_20261030/qwen3-stage3"
+    },
+    "qwen3-v8": {
+      "gpu": 2,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v8-steps/stage4",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v8-steps/full-train-after"
+    },
+    "qwen35-stage3": {
+      "gpu": 3,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/v7_training_fit_audit_20261030/qwen35-stage3"
+    },
+    "qwen35-v8": {
+      "gpu": 4,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v8-steps/stage4",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v8-steps/full-train-after"
+    }
+  },
+  "scope": "Inference-only diagnosis. Policy eligibility is privileged truthful information on known eligible training claims; any improvement is not deployable or official benchmark improvement. Thirty graphs have eight related variants each; variants are not independent training contexts.",
+  "limits": [
+    "Question wording and supplied eligibility change together; cannot attribute effect to a single wording feature.",
+    "Graph topology varies along with path depth, while candidate answers, ordering, edge count and node names are held fixed within each group.",
+    "Same-author visible-label checks are not independent external review."
+  ],
+  "goal_achieved": false
+}

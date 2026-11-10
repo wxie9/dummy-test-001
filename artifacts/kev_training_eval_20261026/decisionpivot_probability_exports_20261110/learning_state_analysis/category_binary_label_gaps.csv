@@ -1,0 +1,22 @@
+category_id,name_zh,family,low_gold,low_n,low_accuracy,high_gold,high_n,high_accuracy,accuracy_gap
+schedule_level3,排期冲突：Level 3,sched_conflict,yes,100,0.04,no,100,0.98,0.94
+dependency_complex_closure,依赖解析：Level 3复杂依赖闭包,dep_resolve,yes,100,0.04,no,100,0.97,0.9299999999999999
+facts_multitable_subtraction,事实判断：多表聚合后减法,answerable_facts,no,20,0.1,yes,20,1.0,0.9
+dependency_version_conflict,依赖解析：版本冲突,dep_resolve,yes,20,0.05,no,20,0.95,0.8999999999999999
+schedule_equipment,排期冲突：设备条件,sched_conflict,yes,15,0.2,no,15,1.0,0.8
+dependency_runtime,依赖解析：运行时依赖,dep_resolve,yes,45,0.35555555555555557,no,45,1.0,0.6444444444444444
+facts_four_hop,事实判断：Level 3四跳事实链,answerable_facts,no,100,0.44,yes,100,0.97,0.53
+filter_conditional_rule,条件筛选：条件式规则,filter_match,yes,21,0.5238095238095238,no,21,1.0,0.47619047619047616
+facts_inheritance_reasoning,事实判断：继承关系推理,answerable_facts,yes,40,0.5,no,40,0.95,0.44999999999999996
+filter_k_of_n,条件筛选：k-of-n证书要求,filter_match,yes,21,0.5714285714285714,no,21,0.9047619047619048,0.33333333333333337
+filter_converted_minimum,条件筛选：换算后的最小值,filter_match,yes,21,0.42857142857142855,no,21,0.7142857142857143,0.28571428571428575
+facts_two_level_inheritance,事实判断：两层继承链,answerable_facts,no,40,0.675,yes,40,0.925,0.25
+log_both_boundaries,日志计数：同时处理起止边界,log_count_check,no,120,0.6333333333333333,yes,120,0.8,0.16666666666666674
+dependency_self_constraint,依赖解析：包自身约束,dep_resolve,yes,78,0.6282051282051282,no,78,0.7948717948717948,0.16666666666666663
+dependency_ordinary_boundary,依赖解析：普通版本边界,dep_resolve,yes,79,0.7215189873417721,no,79,0.8481012658227848,0.12658227848101267
+permission_level3,权限继承：Level 3,perm_inherit,yes,100,0.49,no,100,0.61,0.12
+permission_level2,权限继承：Level 2,perm_inherit,no,100,0.68,yes,100,0.76,0.07999999999999996
+dependency_exclusive_boundary,依赖解析：排除式版本边界,dep_resolve,yes,28,0.7142857142857143,no,28,0.7857142857142857,0.0714285714285714
+dependency_missing_item,依赖解析：依赖项缺失,dep_resolve,yes,78,0.6025641025641025,no,78,0.6666666666666666,0.0641025641025641
+schedule_capacity,排期冲突：座位容量,sched_conflict,yes,48,0.7083333333333334,no,48,0.75,0.04166666666666663
+permission_three_level_tree,权限继承：三层权限树,perm_inherit,no,35,0.6285714285714286,yes,35,0.6571428571428571,0.02857142857142858

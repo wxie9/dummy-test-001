@@ -1,0 +1,80 @@
+{
+  "root": "/data/kev/runs/h20-27b-v2-custom114627-v1blend-w85-20261108-eval-standard",
+  "suites": {
+    "decision-v7": {
+      "accuracy": 0.8733333333333333,
+      "correct": 1048,
+      "evaluated_questions": 1440,
+      "evaluated_records": 1176,
+      "n": 1200,
+      "rejected_records": 0,
+      "requested_questions": 1440,
+      "requested_records": 1176,
+      "truncated_records": 0
+    },
+    "devtools-v1": {
+      "accuracy": 0.7865796831314072,
+      "correct": 844,
+      "evaluated_questions": 1073,
+      "evaluated_records": 900,
+      "n": 1073,
+      "rejected_records": 0,
+      "requested_questions": 1073,
+      "requested_records": 900,
+      "truncated_records": 0
+    },
+    "documents-v1": {
+      "accuracy": 0.9123931623931624,
+      "correct": 854,
+      "evaluated_questions": 936,
+      "evaluated_records": 574,
+      "n": 936,
+      "rejected_records": 0,
+      "requested_questions": 936,
+      "requested_records": 574,
+      "truncated_records": 0
+    },
+    "hard-v1": {
+      "accuracy": 0.9108455882352942,
+      "correct": 991,
+      "evaluated_questions": 1088,
+      "evaluated_records": 700,
+      "n": 1088,
+      "rejected_records": 0,
+      "requested_questions": 1088,
+      "requested_records": 700,
+      "truncated_records": 0
+    },
+    "transfer-v4": {
+      "accuracy": 0.8887195121951219,
+      "correct": 583,
+      "evaluated_questions": 764,
+      "evaluated_records": 764,
+      "n": 656,
+      "rejected_records": 0,
+      "requested_questions": 764,
+      "requested_records": 764,
+      "truncated_records": 0
+    },
+    "transfer-v9": {
+      "accuracy": 0.847036328871893,
+      "correct": 886,
+      "evaluated_questions": 1264,
+      "evaluated_records": 1264,
+      "n": 1046,
+      "rejected_records": 0,
+      "requested_questions": 1264,
+      "requested_records": 1264,
+      "truncated_records": 0
+    }
+  },
+  "weighted": {
+    "accuracy": 0.8678113018836473,
+    "correct": 5206,
+    "evaluated_questions": 6565,
+    "n": 5999,
+    "rejected_records": 0,
+    "requested_questions": 6565,
+    "truncated_records": 0
+  }
+}

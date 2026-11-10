@@ -1,0 +1,16 @@
+section,metric,ours,reference,delta_pp,note
+training,optimizer_steps,2567,,,completed
+training,wall_hours,3.9966,,,six H20 GPUs
+training,rejected_records,0,,,training
+training,truncated_records,0,,,training
+six_suite,weighted_accuracy,82.33,,,4939/5999
+official_v1,transfer_v4,88.72,89.63,-0.91,same locked test
+official_v1,hard_v1,77.94,74.90,3.04,same test
+official_v1,devtools_audited,78.73,78.90,-0.17,607/771
+official_v1,documents_v1,87.61,86.90,0.71,same test
+official_v1,pooled_hard_devtools_documents,81.40,80.00,1.40,2275/2795
+official_v2,transfer_v4,88.72,88.87,-0.15,same locked test
+official_v2,hard_v1,77.94,91.80,-13.86,same test
+official_v2,devtools_audited,78.73,82.50,-3.77,607/771
+official_v2,documents_v1,87.61,90.80,-3.19,same test
+official_v2,pooled_hard_devtools_documents,81.40,88.90,-7.50,2275/2795

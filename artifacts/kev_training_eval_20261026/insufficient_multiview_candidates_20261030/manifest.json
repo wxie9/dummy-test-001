@@ -1,0 +1,20 @@
+{
+  "status": "candidate_only_not_in_training",
+  "purpose": "Candidate replacement for the 280-context insufficient-information component; not a complete 1500-context corpus and not additional unique cases.",
+  "source": "Frozen v5 cases, unchanged state and ground-truth decision; all views used uniformly, never selected per item according to model performance.",
+  "scope": "Development shares generators and was already used for diagnosis. No independent-generalization claim.",
+  "files": {
+    "train": {
+      "contexts": 280,
+      "questions": 1400,
+      "all_wrong_label_mutations_rejected": 1400,
+      "sha256": "b208078adda183dff0d74f1e2d9f39244e1af6db3f315315aefc822282311521"
+    },
+    "development": {
+      "contexts": 70,
+      "questions": 350,
+      "all_wrong_label_mutations_rejected": 350,
+      "sha256": "3b2d381e7907159c2e3a3c565de35d9f0571af5c9ea465c9cc12da15d8b4c13f"
+    }
+  }
+}

@@ -1,0 +1,272 @@
+replay: 6000 of 12576 suite training records mixed with 1500 from /C20545/kev-08b-official-repro-20261026/targeted_v5_20261030/train.jsonl
+{"training_contexts_including_replay": 7500, "training_questions": 9481, "development_contexts": 340, "rejected_development": [], "context": {"max_state": 7552, "max_branch": 8192, "max_packed": 9216}}
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  45%|████▍     | 143/320 [00:00<00:00, 1429.29it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1739.55it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/340
+evaluated 100/340
+evaluated 150/340
+evaluated 200/340
+evaluated 250/340
+evaluated 300/340
+{"clean": {"n": 440, "nll": 1.3571159965957662, "acc": 0.375, "ece": 0.057217721509981286, "brier": 0.7004061790517635, "mean_conf": 0.36822637465276836, "confident_error_rate": 0.0, "coverage_at_0_9": 0.0, "accuracy_at_0_9": null, "coverage_at_5pct_error": 0.015909090909090907, "coverage_at_1pct_error": 0.015909090909090907, "aurc": 0.5148065217979829, "error_rate_at_0_9": null, "confidence_bias": -0.006773625347231638, "top_bins": {"0.9": {"n": 0, "errors": 0, "error_rate": null}, "0.95": {"n": 0, "errors": 0, "error_rate": null}, "0.99": {"n": 0, "errors": 0, "error_rate": null}}, "selective": {"0.5": {"coverage": 0.5, "accuracy": 0.4772727272727273, "confidence_cutoff": 0.33229289706013887}, "0.8": {"coverage": 0.8, "accuracy": 0.3977272727272727, "confidence_cutoff": 0.23859547366168155}}, "score_mae": 1.332111802292755, "ranked_probability_score": 0.19048779489866902}, "coverage": {"requested_records": 340, "requested_questions": 440, "evaluated_records": 340, "evaluated_questions": 440, "rejected_records": 0, "truncated_records": 0}}
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  42%|████▏     | 133/320 [00:00<00:00, 1319.77it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1717.80it/s]
+/C20545/kev-08b-official-repro-20261026/runtime/lib/python3.12/site-packages/peft/utils/save_and_load.py:300: UserWarning: Could not find a config file in Qwen/Qwen3.5-0.8B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+delta: warm start from /C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3: 372 adapter tensors and the pointer head loaded
+device=cuda trainable params=11.3M
+replay: 6000 of 12576 suite training records mixed with 1500 from /C20545/kev-08b-official-repro-20261026/targeted_v5_20261030/train.jsonl
+7500 training requests (holdout=[]), questions by type {'choice': 5224, 'score': 1720, 'noul': 2537}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+ep0 step 10/938 loss 0.509 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 20/938 loss 0.579 kl 0.000 anchor 0.000 0.102s/rec
+ep0 step 30/938 loss 0.473 kl 0.000 anchor 0.000 0.106s/rec
+ep0 step 40/938 loss 0.493 kl 0.000 anchor 0.000 0.109s/rec
+ep0 step 50/938 loss 0.403 kl 0.000 anchor 0.000 0.103s/rec
+ep0 step 60/938 loss 0.401 kl 0.000 anchor 0.000 0.101s/rec
+ep0 step 70/938 loss 0.555 kl 0.000 anchor 0.000 0.102s/rec
+ep0 step 80/938 loss 0.483 kl 0.000 anchor 0.000 0.101s/rec
+ep0 step 90/938 loss 0.540 kl 0.000 anchor 0.000 0.101s/rec
+ep0 step 100/938 loss 0.416 kl 0.000 anchor 0.000 0.099s/rec
+ep0 step 110/938 loss 0.447 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 120/938 loss 0.530 kl 0.000 anchor 0.000 0.098s/rec
+ep0 step 130/938 loss 0.457 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 140/938 loss 0.446 kl 0.000 anchor 0.000 0.098s/rec
+ep0 step 150/938 loss 0.566 kl 0.000 anchor 0.000 0.098s/rec
+ep0 step 160/938 loss 0.435 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 170/938 loss 0.435 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 180/938 loss 0.458 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 190/938 loss 0.665 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 200/938 loss 0.487 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 210/938 loss 0.500 kl 0.000 anchor 0.000 0.098s/rec
+ep0 step 220/938 loss 0.468 kl 0.000 anchor 0.000 0.098s/rec
+ep0 step 230/938 loss 0.476 kl 0.000 anchor 0.000 0.098s/rec
+ep0 step 240/938 loss 0.702 kl 0.000 anchor 0.000 0.099s/rec
+ep0 step 250/938 loss 0.421 kl 0.000 anchor 0.000 0.098s/rec
+ep0 step 260/938 loss 0.613 kl 0.000 anchor 0.000 0.098s/rec
+ep0 step 270/938 loss 0.478 kl 0.000 anchor 0.000 0.098s/rec
+ep0 step 280/938 loss 0.425 kl 0.000 anchor 0.000 0.098s/rec
+ep0 step 290/938 loss 0.278 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 300/938 loss 0.415 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 310/938 loss 0.458 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 320/938 loss 0.327 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 330/938 loss 0.392 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 340/938 loss 0.504 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 350/938 loss 0.419 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 360/938 loss 0.245 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 370/938 loss 0.392 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 380/938 loss 0.516 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 390/938 loss 0.318 kl 0.000 anchor 0.000 0.097s/rec
+ep0 step 400/938 loss 0.397 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 410/938 loss 0.418 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 420/938 loss 0.321 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 430/938 loss 0.304 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 440/938 loss 0.386 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 450/938 loss 0.512 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 460/938 loss 0.447 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 470/938 loss 0.453 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 480/938 loss 0.471 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 490/938 loss 0.514 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 500/938 loss 0.341 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 510/938 loss 0.440 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 520/938 loss 0.264 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 530/938 loss 0.228 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 540/938 loss 0.693 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 550/938 loss 0.487 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 560/938 loss 0.665 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 570/938 loss 0.183 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 580/938 loss 0.403 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 590/938 loss 0.568 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 600/938 loss 0.303 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 610/938 loss 0.425 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 620/938 loss 0.345 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 630/938 loss 0.429 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 640/938 loss 0.380 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 650/938 loss 0.692 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 660/938 loss 0.297 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 670/938 loss 0.300 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 680/938 loss 0.208 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 690/938 loss 0.483 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 700/938 loss 0.385 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 710/938 loss 0.205 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 720/938 loss 0.441 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 730/938 loss 0.577 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 740/938 loss 0.590 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 750/938 loss 0.327 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 760/938 loss 0.397 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 770/938 loss 0.293 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 780/938 loss 0.412 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 790/938 loss 0.373 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 800/938 loss 0.362 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 810/938 loss 0.376 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 820/938 loss 0.523 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 830/938 loss 0.610 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 840/938 loss 0.474 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 850/938 loss 0.437 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 860/938 loss 0.398 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 870/938 loss 0.486 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 880/938 loss 0.439 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 890/938 loss 0.328 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 900/938 loss 0.547 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 910/938 loss 0.529 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 920/938 loss 0.671 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 930/938 loss 0.340 kl 0.000 anchor 0.000 0.095s/rec
+saved /C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v5/stage4
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  41%|████▏     | 132/320 [00:00<00:00, 1316.00it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1658.57it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/340
+evaluated 100/340
+evaluated 150/340
+evaluated 200/340
+evaluated 250/340
+evaluated 300/340
+{"clean": {"n": 440, "nll": 1.0394308728104917, "acc": 0.5727272727272728, "ece": 0.06944234824391177, "brier": 0.5401630438743644, "mean_conf": 0.6299170031081129, "confident_error_rate": 0.020454545454545454, "coverage_at_0_9": 0.19090909090909092, "accuracy_at_0_9": 0.8928571428571429, "coverage_at_5pct_error": 0.05454545454545454, "coverage_at_1pct_error": 0.03409090909090909, "aurc": 0.239828935803478, "error_rate_at_0_9": 0.10714285714285714, "confidence_bias": 0.05718973038084019, "top_bins": {"0.9": {"n": 84, "errors": 9, "error_rate": 0.10714285714285714}, "0.95": {"n": 50, "errors": 7, "error_rate": 0.14}, "0.99": {"n": 17, "errors": 1, "error_rate": 0.058823529411764705}}, "selective": {"0.5": {"coverage": 0.5, "accuracy": 0.7636363636363637, "confidence_cutoff": 0.5976230351852049}, "0.8": {"coverage": 0.8, "accuracy": 0.6278409090909091, "confidence_cutoff": 0.40015766658138513}}, "score_mae": 1.2689641906485114, "ranked_probability_score": 0.18621524348052407}, "coverage": {"requested_records": 340, "requested_questions": 440, "evaluated_records": 340, "evaluated_questions": 440, "rejected_records": 0, "truncated_records": 0}}
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 120/320 [00:00<00:00, 1179.11it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1587.06it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/700
+evaluated 100/700
+evaluated 150/700
+evaluated 200/700
+evaluated 250/700
+evaluated 300/700
+evaluated 350/700
+evaluated 400/700
+evaluated 450/700
+evaluated 500/700
+evaluated 550/700
+evaluated 600/700
+evaluated 650/700
+evaluated 700/700
+{
+  "objective": -0.9680598100872168,
+  "clean": {
+    "n": 1088,
+    "nll": 0.9529448898380423,
+    "acc": 0.6488970588235294,
+    "ece": 0.10190829984874158,
+    "brier": 0.48141036332016884,
+    "mean_conf": 0.750805358672271,
+    "confident_error_rate": 0.05514705882352941,
+    "coverage_at_0_9": 0.4099264705882353,
+    "accuracy_at_0_9": 0.8654708520179372,
+    "coverage_at_5pct_error": 0.1875,
+    "coverage_at_1pct_error": 0.03216911764705882,
+    "aurc": 0.1710232178402169,
+    "error_rate_at_0_9": 0.13452914798206278,
+    "confidence_bias": 0.10190829984874161,
+    "top_bins": {
+      "0.9": {
+        "n": 446,
+        "errors": 60,
+        "error_rate": 0.13452914798206278
+      },
+      "0.95": {
+        "n": 385,
+        "errors": 46,
+        "error_rate": 0.11948051948051948
+      },
+      "0.99": {
+        "n": 245,
+        "errors": 19,
+        "error_rate": 0.07755102040816327
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.8272058823529411,
+        "confidence_cutoff": 0.7981780678237446
+      },
+      "0.8": {
+        "coverage": 0.8005514705882353,
+        "accuracy": 0.7267508610792193,
+        "confidence_cutoff": 0.5098000168800354
+      }
+    },
+    "score_mae": 0.845714859651618,
+    "ranked_probability_score": 0.11609256399182809
+  },
+  "coverage": {
+    "requested_records": 700,
+    "requested_questions": 1088,
+    "evaluated_records": 700,
+    "evaluated_questions": 1088,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  40%|████      | 128/320 [00:00<00:00, 1272.13it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1684.12it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/900
+evaluated 100/900
+evaluated 150/900
+evaluated 200/900
+evaluated 250/900
+evaluated 300/900
+evaluated 350/900
+evaluated 400/900
+evaluated 450/900
+evaluated 500/900
+evaluated 550/900
+evaluated 600/900
+evaluated 650/900
+evaluated 700/900
+evaluated 750/900
+evaluated 800/900
+evaluated 850/900
+evaluated 900/900
+{
+  "objective": -0.7547407049118889,
+  "clean": {
+    "n": 1073,
+    "nll": 0.800124740068701,
+    "acc": 0.6831314072693383,
+    "ece": 0.11324760025994568,
+    "brier": 0.43088995813519065,
+    "mean_conf": 0.7947350746048137,
+    "confident_error_rate": 0.04007455731593663,
+    "coverage_at_0_9": 0.43522833178005593,
+    "accuracy_at_0_9": 0.9079229122055674,
+    "coverage_at_5pct_error": 0.32898415657036345,
+    "coverage_at_1pct_error": 0.1891891891891892,
+    "aurc": 0.12732369266126897,
+    "error_rate_at_0_9": 0.09207708779443255,
+    "confidence_bias": 0.11160366733547544,
+    "top_bins": {
+      "0.9": {
+        "n": 467,
+        "errors": 43,
+        "error_rate": 0.09207708779443255
+      },
+      "0.95": {
+        "n": 372,
+        "errors": 21,
+        "error_rate": 0.056451612903225805
+      },
+      "0.99": {
+        "n": 214,
+        "errors": 3,
+        "error_rate": 0.014018691588785047
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5004659832246039,
+        "accuracy": 0.8715083798882681,
+        "confidence_cutoff": 0.8595270430759814
+      },
+      "0.8": {
+        "coverage": 0.8005591798695247,
+        "accuracy": 0.7694994179278231,
+        "confidence_cutoff": 0.5921801924705505
+      }
+    }
+  },
+  "coverage": {
+    "requested_records": 900,
+    "requested_questions": 1073,
+    "evaluated_records": 900,
+    "evaluated_questions": 1073,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}

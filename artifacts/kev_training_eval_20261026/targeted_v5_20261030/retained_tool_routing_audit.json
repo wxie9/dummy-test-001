@@ -1,0 +1,362 @@
+{
+  "train": {
+    "sum_by_label": {
+      "direct": 13,
+      "cannot_answer": 8,
+      "tool_call": 10
+    },
+    "directly_computable_but_cannot_answer": [
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00074",
+        "state": {
+          "assistant_context": "You are assisting Priya. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 43 and 42."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Call one of the available tools.",
+              "b": "Explain that the task cannot be completed with the available tools.",
+              "c": "Answer directly without calling a tool.",
+              "d": "Ask the user for missing information needed for the task."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "b",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00388",
+        "state": {
+          "assistant_context": "You are assisting Priya. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 70 and 46."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Ask the user for missing information needed for the task.",
+              "b": "Call one of the available tools.",
+              "c": "Answer directly without calling a tool.",
+              "d": "Explain that the task cannot be completed with the available tools."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "d",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00734",
+        "state": {
+          "assistant_context": "You are assisting Ravi. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 56 and 8."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Answer directly without calling a tool.",
+              "b": "Ask the user for missing information needed for the task.",
+              "c": "Call one of the available tools.",
+              "d": "Explain that the task cannot be completed with the available tools."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "d",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00654",
+        "state": {
+          "assistant_context": "You are assisting Sofia. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 51 and 51."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Ask the user for missing information needed for the task.",
+              "b": "Call one of the available tools.",
+              "c": "Explain that the task cannot be completed with the available tools.",
+              "d": "Answer directly without calling a tool."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "c",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00774",
+        "state": {
+          "assistant_context": "You are assisting Avery. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 9 and 4."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Answer directly without calling a tool.",
+              "b": "Explain that the task cannot be completed with the available tools.",
+              "c": "Ask the user for missing information needed for the task.",
+              "d": "Call one of the available tools."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "b",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00402",
+        "state": {
+          "assistant_context": "You are assisting Mina. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 49 and 29."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Explain that the task cannot be completed with the available tools.",
+              "b": "Ask the user for missing information needed for the task.",
+              "c": "Answer directly without calling a tool.",
+              "d": "Call one of the available tools."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "a",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00361",
+        "state": {
+          "assistant_context": "You are assisting Ravi. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 61 and 16."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Call one of the available tools.",
+              "b": "Answer directly without calling a tool.",
+              "c": "Ask the user for missing information needed for the task.",
+              "d": "Explain that the task cannot be completed with the available tools."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "d",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00340",
+        "state": {
+          "assistant_context": "You are assisting Mina. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 31 and 33."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Ask the user for missing information needed for the task.",
+              "b": "Explain that the task cannot be completed with the available tools.",
+              "c": "Answer directly without calling a tool.",
+              "d": "Call one of the available tools."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "b",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      }
+    ]
+  },
+  "development": {
+    "sum_by_label": {
+      "cannot_answer": 3,
+      "tool_call": 2,
+      "direct": 2
+    },
+    "directly_computable_but_cannot_answer": [
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/development/00017",
+        "state": {
+          "assistant_context": "You are assisting Yara. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 38 and 73."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Explain that the task cannot be completed with the available tools.",
+              "b": "Call one of the available tools.",
+              "c": "Ask the user for missing information needed for the task.",
+              "d": "Answer directly without calling a tool."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "a",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/development/00062",
+        "state": {
+          "assistant_context": "You are assisting Tariq. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 13 and 38."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Answer directly without calling a tool.",
+              "b": "Call one of the available tools.",
+              "c": "Explain that the task cannot be completed with the available tools.",
+              "d": "Ask the user for missing information needed for the task."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "c",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/tool_routing/development/00064",
+        "state": {
+          "assistant_context": "You are assisting Mara. Choose the next action.",
+          "available_tools": [
+            {
+              "description": "Set a timer.",
+              "name": "set_timer",
+              "required_parameters": [
+                "minutes"
+              ]
+            }
+          ],
+          "user_message": "Please add 53 and 15."
+        },
+        "questions": {
+          "decision": {
+            "criteria": {
+              "a": "Explain that the task cannot be completed with the available tools.",
+              "b": "Ask the user for missing information needed for the task.",
+              "c": "Call one of the available tools.",
+              "d": "Answer directly without calling a tool."
+            },
+            "instructions": "What should the assistant do next?",
+            "label": "a",
+            "src": "targeted_tool_routing",
+            "type": "choice"
+          }
+        },
+        "issue": "The visible request supplies both addends, so absence of a calculator does not itself make direct answering impossible; the context states no tool-only restriction."
+      }
+    ]
+  },
+  "scope": "Read-only semantic audit; no changes to frozen v5 data; does not establish the cause of benchmark deltas."
+}

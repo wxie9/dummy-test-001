@@ -1,0 +1,2384 @@
+{
+  "models": {
+    "qwen3": {
+      "stage3": {
+        "original_control_exactly_reproduced": 150,
+        "conditions": {
+          "original": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 13
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 7
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 5
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 5
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 18
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 14
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 14
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 14
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 3
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 3
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 8
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 8
+              }
+            },
+            "changes_vs_original": []
+          },
+          "without_warning": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 13
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 7
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 6
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 5
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 18
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 13
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 13
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 9
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 2
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 4
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 8
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 7
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000006",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000046",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000033",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000033",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000043",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000002",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000002",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000032",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000007",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              }
+            ]
+          },
+          "prose": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 14
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 8
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 6
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 4
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 17
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 14
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 11
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 12
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 2
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 4
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 10
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 8
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000006",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000006",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000046",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000005",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000033",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000033",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000048",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000001",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000043",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000045",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000037",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000031",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000002",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000032",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000041",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000041",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              }
+            ]
+          },
+          "prose_without_warning": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 15
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 8
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 7
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 5
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 17
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 15
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 11
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 13
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 2
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 5
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 10
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 8
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000006",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000006",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000046",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000005",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000033",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000033",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000033",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000048",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000001",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000043",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000045",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000037",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000031",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000002",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000032",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000041",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000041",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              }
+            ]
+          }
+        }
+      },
+      "v6": {
+        "original_control_exactly_reproduced": 150,
+        "conditions": {
+          "original": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 17
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 7
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 5
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 6
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 18
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 22
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 17
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 23
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 6
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 4
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 11
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 12
+              }
+            },
+            "changes_vs_original": []
+          },
+          "without_warning": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 17
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 7
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 5
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 6
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 18
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 20
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 18
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 21
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 6
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 4
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 11
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 12
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000006",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000006",
+                "question": "evidence_supports_no",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000006",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000007",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              }
+            ]
+          },
+          "prose": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 13
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 7
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 4
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 5
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 17
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 16
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 19
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 22
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 2
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 4
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 8
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 9
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000036",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000046",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000046",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000005",
+                "question": "evidence_supports_no",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "evidence_supports_no",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000048",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000048",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000040",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000040",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "evidence_supports_no",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000001",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000037",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000037",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000037",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000031",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000031",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000039",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000041",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000035",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              }
+            ]
+          },
+          "prose_without_warning": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 12
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 7
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 4
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 4
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 17
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 16
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 19
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 22
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 1
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 4
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 8
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 8
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000036",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000046",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000005",
+                "question": "evidence_supports_no",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "evidence_supports_no",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000033",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000048",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000048",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000040",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000040",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "evidence_supports_no",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000001",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000037",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000037",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000037",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000031",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000031",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000039",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000041",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000007",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000035",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              }
+            ]
+          }
+        }
+      }
+    },
+    "qwen35": {
+      "stage3": {
+        "original_control_exactly_reproduced": 150,
+        "conditions": {
+          "original": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 17
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 6
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 8
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 5
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 15
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 14
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 21
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 19
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 7
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 4
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 12
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 9
+              }
+            },
+            "changes_vs_original": []
+          },
+          "without_warning": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 17
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 6
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 8
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 5
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 15
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 14
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 21
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 17
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 7
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 4
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 12
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 9
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000033",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000032",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              }
+            ]
+          },
+          "prose": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 16
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 6
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 10
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 4
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 17
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 16
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 21
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 17
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 6
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 4
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 12
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 6
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000006",
+                "question": "evidence_supports_no",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000046",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000005",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000001",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000043",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000045",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000037",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000032",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000007",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000007",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              }
+            ]
+          },
+          "prose_without_warning": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 15
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 4
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 10
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 3
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 14
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 15
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 21
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 15
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 7
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 4
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 12
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 5
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000006",
+                "question": "evidence_supports_no",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000046",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000034",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000005",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000033",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000001",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000043",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000043",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000043",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000045",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000032",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000007",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000007",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              }
+            ]
+          }
+        }
+      },
+      "v6": {
+        "original_control_exactly_reproduced": 150,
+        "conditions": {
+          "original": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 18
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 6
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 7
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 7
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 19
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 21
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 23
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 26
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 6
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 6
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 11
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 11
+              }
+            },
+            "changes_vs_original": []
+          },
+          "without_warning": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 18
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 6
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 7
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 7
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 18
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 21
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 23
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 25
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 6
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 6
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 11
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 11
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000002",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000007",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              }
+            ]
+          },
+          "prose": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 19
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 7
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 8
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 7
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 17
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 20
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 22
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 23
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 7
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 5
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 12
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 11
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000005",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000005",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000030",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000048",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000043",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000045",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000031",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000002",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "evidence_supports_yes",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000039",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000041",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              }
+            ]
+          },
+          "prose_without_warning": {
+            "scores": {
+              "question/decision": {
+                "n": 30,
+                "correct": 19
+              },
+              "scenario/return": {
+                "n": 10,
+                "correct": 7
+              },
+              "information/determinate": {
+                "n": 18,
+                "correct": 8
+              },
+              "warning_present/True": {
+                "n": 12,
+                "correct": 7
+              },
+              "question/decision_action": {
+                "n": 30,
+                "correct": 17
+              },
+              "question/decision_concise": {
+                "n": 30,
+                "correct": 19
+              },
+              "question/evidence_supports_no": {
+                "n": 30,
+                "correct": 22
+              },
+              "question/evidence_supports_yes": {
+                "n": 30,
+                "correct": 22
+              },
+              "scenario/shipping": {
+                "n": 10,
+                "correct": 7
+              },
+              "scenario/overtime": {
+                "n": 10,
+                "correct": 5
+              },
+              "warning_present/False": {
+                "n": 18,
+                "correct": 12
+              },
+              "information/unknown": {
+                "n": 12,
+                "correct": 11
+              }
+            },
+            "changes_vs_original": [
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000005",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000005",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000030",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000000",
+                "question": "decision",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000003",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000048",
+                "question": "evidence_supports_no",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000044",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000043",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000009",
+                "question": "decision_concise",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000045",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000031",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_action",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000049",
+                "question": "decision_concise",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000002",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000042",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000039",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000047",
+                "question": "decision_action",
+                "before_ok": false,
+                "after_ok": true
+              },
+              {
+                "parent": "targeted-v6-20261030/insufficient-multiview-candidate-20261030/targeted-v5-20261030/insufficient/development/000041",
+                "question": "evidence_supports_yes",
+                "before_ok": true,
+                "after_ok": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "data_sha256": "4dd9d81941ce8c4beb85570cce485c0f339da1b2f55eca863b77914fa77950ef",
+  "scope": "30 synthetic development contexts in four framing conditions. All five original questions preserved. Same cases are reused, not 120 independent cases; only 12 parents contain the warning. No best-wording selection per item."
+}

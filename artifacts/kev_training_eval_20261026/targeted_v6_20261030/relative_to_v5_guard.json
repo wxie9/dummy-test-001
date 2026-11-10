@@ -1,0 +1,333 @@
+{
+  "reference": "targeted_v5_none_guard_candidate_20261030",
+  "candidate": "targeted_v6_20261030",
+  "source_pair_file_hashes": {
+    "artifacts/kev_training_eval_20261026/targeted_v5_none_guard_candidate_20261030/paired-seven.jsonl": "0ecf09b5908ec562d23631df6fac9dd796066a90bbc984932cd1e84fb4419e73",
+    "artifacts/kev_training_eval_20261026/targeted_v6_20261030/paired-seven.jsonl": "ca3f3d44720f9f14a5c89f82e685fdf3e35eacc766171230c66dac2fef47c035"
+  },
+  "models": {
+    "qwen3": {
+      "seven_categories": {
+        "tool_routing": {
+          "questions": 150,
+          "contexts": 150,
+          "before_correct": 53,
+          "after_correct": 54,
+          "before_pct": 35.333333333333336,
+          "after_pct": 36.0,
+          "delta_pp": 0.6666666666666666,
+          "repaired": 6,
+          "newly_wrong": 5,
+          "old_wrong": 97,
+          "repair_pct": 6.185567010309279,
+          "paired_context_bootstrap_95pct_pp": [
+            -3.3333333333333335,
+            4.666666666666667
+          ],
+          "original_stage3_wrong_count": 98,
+          "reference_repairs_of_original_errors": 15,
+          "candidate_repairs_of_original_errors": 21
+        },
+        "temporal": {
+          "questions": 117,
+          "contexts": 100,
+          "before_correct": 48,
+          "after_correct": 49,
+          "before_pct": 41.02564102564103,
+          "after_pct": 41.88034188034188,
+          "delta_pp": 0.8547008547008547,
+          "repaired": 3,
+          "newly_wrong": 2,
+          "old_wrong": 69,
+          "repair_pct": 4.3478260869565215,
+          "paired_context_bootstrap_95pct_pp": [
+            -2.6548672566371683,
+            4.273504273504273
+          ],
+          "original_stage3_wrong_count": 73,
+          "reference_repairs_of_original_errors": 9,
+          "candidate_repairs_of_original_errors": 10
+        },
+        "probability": {
+          "questions": 158,
+          "contexts": 100,
+          "before_correct": 83,
+          "after_correct": 85,
+          "before_pct": 52.53164556962025,
+          "after_pct": 53.79746835443038,
+          "delta_pp": 1.2658227848101267,
+          "repaired": 6,
+          "newly_wrong": 4,
+          "old_wrong": 75,
+          "repair_pct": 8.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -2.684563758389262,
+            5.8441558441558445
+          ],
+          "original_stage3_wrong_count": 73,
+          "reference_repairs_of_original_errors": 5,
+          "candidate_repairs_of_original_errors": 3
+        },
+        "insufficient": {
+          "questions": 100,
+          "contexts": 100,
+          "before_correct": 61,
+          "after_correct": 61,
+          "before_pct": 61.0,
+          "after_pct": 61.0,
+          "delta_pp": 0.0,
+          "repaired": 2,
+          "newly_wrong": 2,
+          "old_wrong": 39,
+          "repair_pct": 5.128205128205129,
+          "paired_context_bootstrap_95pct_pp": [
+            -4.0,
+            4.0
+          ],
+          "original_stage3_wrong_count": 34,
+          "reference_repairs_of_original_errors": 0,
+          "candidate_repairs_of_original_errors": 2
+        },
+        "multihop": {
+          "questions": 125,
+          "contexts": 100,
+          "before_correct": 59,
+          "after_correct": 55,
+          "before_pct": 47.2,
+          "after_pct": 44.0,
+          "delta_pp": -3.2,
+          "repaired": 2,
+          "newly_wrong": 6,
+          "old_wrong": 66,
+          "repair_pct": 3.0303030303030303,
+          "paired_context_bootstrap_95pct_pp": [
+            -7.874015748031496,
+            1.5037593984962405
+          ],
+          "original_stage3_wrong_count": 64,
+          "reference_repairs_of_original_errors": 7,
+          "candidate_repairs_of_original_errors": 2
+        },
+        "policy": {
+          "questions": 200,
+          "contexts": 100,
+          "before_correct": 118,
+          "after_correct": 116,
+          "before_pct": 59.0,
+          "after_pct": 58.0,
+          "delta_pp": -1.0,
+          "repaired": 3,
+          "newly_wrong": 5,
+          "old_wrong": 82,
+          "repair_pct": 3.658536585365854,
+          "paired_context_bootstrap_95pct_pp": [
+            -3.5,
+            1.5
+          ],
+          "original_stage3_wrong_count": 83,
+          "reference_repairs_of_original_errors": 4,
+          "candidate_repairs_of_original_errors": 3
+        },
+        "injection": {
+          "questions": 150,
+          "contexts": 150,
+          "before_correct": 92,
+          "after_correct": 89,
+          "before_pct": 61.333333333333336,
+          "after_pct": 59.333333333333336,
+          "delta_pp": -2.0,
+          "repaired": 0,
+          "newly_wrong": 3,
+          "old_wrong": 58,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -4.666666666666667,
+            0.0
+          ],
+          "original_stage3_wrong_count": 63,
+          "reference_repairs_of_original_errors": 5,
+          "candidate_repairs_of_original_errors": 2
+        }
+      },
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 514,
+        "after_correct": 509,
+        "before_pct": 51.4,
+        "after_pct": 50.9,
+        "delta_pp": -0.5,
+        "repaired": 22,
+        "newly_wrong": 27,
+        "old_wrong": 486,
+        "repair_pct": 4.526748971193416,
+        "paired_context_bootstrap_95pct_pp": [
+          -1.9,
+          0.8946322067594433
+        ]
+      }
+    },
+    "qwen35": {
+      "seven_categories": {
+        "tool_routing": {
+          "questions": 150,
+          "contexts": 150,
+          "before_correct": 53,
+          "after_correct": 52,
+          "before_pct": 35.333333333333336,
+          "after_pct": 34.666666666666664,
+          "delta_pp": -0.6666666666666666,
+          "repaired": 4,
+          "newly_wrong": 5,
+          "old_wrong": 97,
+          "repair_pct": 4.123711340206185,
+          "paired_context_bootstrap_95pct_pp": [
+            -4.666666666666667,
+            3.3333333333333335
+          ],
+          "original_stage3_wrong_count": 116,
+          "reference_repairs_of_original_errors": 19,
+          "candidate_repairs_of_original_errors": 18
+        },
+        "temporal": {
+          "questions": 117,
+          "contexts": 100,
+          "before_correct": 52,
+          "after_correct": 49,
+          "before_pct": 44.44444444444444,
+          "after_pct": 41.88034188034188,
+          "delta_pp": -2.5641025641025643,
+          "repaired": 3,
+          "newly_wrong": 6,
+          "old_wrong": 65,
+          "repair_pct": 4.615384615384615,
+          "paired_context_bootstrap_95pct_pp": [
+            -7.563025210084033,
+            2.5210084033613445
+          ],
+          "original_stage3_wrong_count": 66,
+          "reference_repairs_of_original_errors": 7,
+          "candidate_repairs_of_original_errors": 4
+        },
+        "probability": {
+          "questions": 158,
+          "contexts": 100,
+          "before_correct": 86,
+          "after_correct": 84,
+          "before_pct": 54.43037974683544,
+          "after_pct": 53.164556962025316,
+          "delta_pp": -1.2658227848101267,
+          "repaired": 3,
+          "newly_wrong": 5,
+          "old_wrong": 72,
+          "repair_pct": 4.166666666666667,
+          "paired_context_bootstrap_95pct_pp": [
+            -4.57516339869281,
+            2.0
+          ],
+          "original_stage3_wrong_count": 71,
+          "reference_repairs_of_original_errors": 3,
+          "candidate_repairs_of_original_errors": 2
+        },
+        "insufficient": {
+          "questions": 100,
+          "contexts": 100,
+          "before_correct": 73,
+          "after_correct": 70,
+          "before_pct": 73.0,
+          "after_pct": 70.0,
+          "delta_pp": -3.0,
+          "repaired": 1,
+          "newly_wrong": 4,
+          "old_wrong": 27,
+          "repair_pct": 3.7037037037037037,
+          "paired_context_bootstrap_95pct_pp": [
+            -8.0,
+            1.0
+          ],
+          "original_stage3_wrong_count": 31,
+          "reference_repairs_of_original_errors": 4,
+          "candidate_repairs_of_original_errors": 4
+        },
+        "multihop": {
+          "questions": 125,
+          "contexts": 100,
+          "before_correct": 84,
+          "after_correct": 83,
+          "before_pct": 67.2,
+          "after_pct": 66.4,
+          "delta_pp": -0.8,
+          "repaired": 6,
+          "newly_wrong": 7,
+          "old_wrong": 41,
+          "repair_pct": 14.634146341463415,
+          "paired_context_bootstrap_95pct_pp": [
+            -6.451612903225806,
+            4.8
+          ],
+          "original_stage3_wrong_count": 40,
+          "reference_repairs_of_original_errors": 8,
+          "candidate_repairs_of_original_errors": 4
+        },
+        "policy": {
+          "questions": 200,
+          "contexts": 100,
+          "before_correct": 130,
+          "after_correct": 135,
+          "before_pct": 65.0,
+          "after_pct": 67.5,
+          "delta_pp": 2.5,
+          "repaired": 5,
+          "newly_wrong": 0,
+          "old_wrong": 70,
+          "repair_pct": 7.142857142857143,
+          "paired_context_bootstrap_95pct_pp": [
+            0.5,
+            5.0
+          ],
+          "original_stage3_wrong_count": 69,
+          "reference_repairs_of_original_errors": 3,
+          "candidate_repairs_of_original_errors": 7
+        },
+        "injection": {
+          "questions": 150,
+          "contexts": 150,
+          "before_correct": 106,
+          "after_correct": 112,
+          "before_pct": 70.66666666666667,
+          "after_pct": 74.66666666666667,
+          "delta_pp": 4.0,
+          "repaired": 6,
+          "newly_wrong": 0,
+          "old_wrong": 44,
+          "repair_pct": 13.636363636363637,
+          "paired_context_bootstrap_95pct_pp": [
+            1.3333333333333333,
+            7.333333333333333
+          ],
+          "original_stage3_wrong_count": 56,
+          "reference_repairs_of_original_errors": 12,
+          "candidate_repairs_of_original_errors": 18
+        }
+      },
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 584,
+        "after_correct": 585,
+        "before_pct": 58.4,
+        "after_pct": 58.5,
+        "delta_pp": 0.1,
+        "repaired": 28,
+        "newly_wrong": 27,
+        "old_wrong": 416,
+        "repair_pct": 6.730769230769231,
+        "paired_context_bootstrap_95pct_pp": [
+          -1.3,
+          1.5
+        ]
+      }
+    }
+  },
+  "scope": "Direct comparison of single-seed controls on an already-inspected diagnostic set. Not an independent generalization or multi-seed result."
+}

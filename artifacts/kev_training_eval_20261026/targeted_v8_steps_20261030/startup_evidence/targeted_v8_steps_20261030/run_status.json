@@ -1,0 +1,95 @@
+{
+  "started_at_utc": "2026-10-30T01:52:23.099119+00:00",
+  "status": "active_or_attention_required",
+  "models": {
+    "qwen3": {
+      "pipeline_pid": 47712,
+      "gpu": 1,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v8-steps",
+      "status": "training",
+      "pipeline_live": true,
+      "training_pids": [
+        51656
+      ],
+      "training_live": true,
+      "log_tail": "064}}, \"score_mae\": 1.349694723170126, \"ranked_probability_score\": 0.18260227692521214}, \"coverage\": {\"requested_records\": 334, \"requested_questions\": 732, \"evaluated_records\": 334, \"evaluated_questions\": 732, \"rejected_records\": 0, \"truncated_records\": 0}}\nOriginal baselines identical; step development fully covered.\n\nLoading weights:   0%|          | 0/310 [00:00<?, ?it/s]\nLoading weights:  66%|\u2588\u2588\u2588\u2588\u2588\u2588\u258b   | 206/310 [00:00<00:00, 2050.40it/s]\nLoading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 310/310 [00:00<00:00, 2115.69it/s]\ndelta: warm start from /C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3: 392 adapter tensors and the pointer head loaded\ndevice=cuda trainable params=10.6M\nreplay: 6000 of 12576 suite training records mixed with 1500 from /C20545/kev-08b-official-repro-20261026/targeted_v8_steps_20261030/train.jsonl\n7500 training requests (holdout=[]), questions by type {'choice': 6574, 'score': 1835, 'noul': 2537}\nep0 step 10/938 loss 0.516 kl 0.000 anchor 0.000 0.096s/rec\nep0 step 20/938 loss 0.504 kl 0.000 anchor 0.000 0.083s/rec\nep0 step 30/938 loss 0.469 kl 0.000 anchor 0.000 0.081s/rec\nep0 step 40/938 loss 0.606 kl 0.000 anchor 0.000 0.083s/rec\nep0 step 50/938 loss 0.555 kl 0.000 anchor 0.000 0.080s/rec\nep0 step 60/938 loss 0.567 kl 0.000 anchor 0.000 0.089s/rec\n",
+      "completed_evaluation_coverage": {
+        "development-before": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-before": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-steps-before": {
+          "requested_records": 334,
+          "requested_questions": 732,
+          "evaluated_records": 334,
+          "evaluated_questions": 732,
+          "rejected_records": 0,
+          "truncated_records": 0
+        }
+      },
+      "last_observed_epoch": 0,
+      "last_observed_step": 60,
+      "steps_per_epoch": 938,
+      "last_logged_loss": 0.567,
+      "last_logged_seconds_per_record": 0.089
+    },
+    "qwen35": {
+      "pipeline_pid": 47713,
+      "gpu": 2,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v8-steps",
+      "status": "training",
+      "pipeline_live": true,
+      "training_pids": [
+        52241
+      ],
+      "training_live": true,
+      "log_tail": "luated_records\": 334, \"evaluated_questions\": 732, \"rejected_records\": 0, \"truncated_records\": 0}}\nOriginal baselines identical; step development fully covered.\n\nLoading weights:   0%|          | 0/320 [00:00<?, ?it/s]\nLoading weights:  45%|\u2588\u2588\u2588\u2588\u258c     | 145/320 [00:00<00:00, 1446.98it/s]\nLoading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 320/320 [00:00<00:00, 1742.71it/s]\n/C20545/kev-08b-official-repro-20261026/runtime/lib/python3.12/site-packages/peft/utils/save_and_load.py:300: UserWarning: Could not find a config file in Qwen/Qwen3.5-0.8B-Base - will assume that the vocabulary was not modified.\n  warnings.warn(\ndelta: warm start from /C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3: 372 adapter tensors and the pointer head loaded\ndevice=cuda trainable params=11.3M\nreplay: 6000 of 12576 suite training records mixed with 1500 from /C20545/kev-08b-official-repro-20261026/targeted_v8_steps_20261030/train.jsonl\n7500 training requests (holdout=[]), questions by type {'choice': 6574, 'score': 1835, 'noul': 2537}\n[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.\nep0 step 10/938 loss 0.442 kl 0.000 anchor 0.000 0.112s/rec\n",
+      "completed_evaluation_coverage": {
+        "development-before": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-before": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-steps-before": {
+          "requested_records": 334,
+          "requested_questions": 732,
+          "evaluated_records": 334,
+          "evaluated_questions": 732,
+          "rejected_records": 0,
+          "truncated_records": 0
+        }
+      },
+      "last_observed_epoch": 0,
+      "last_observed_step": 10,
+      "steps_per_epoch": 938,
+      "last_logged_loss": 0.442,
+      "last_logged_seconds_per_record": 0.112
+    }
+  },
+  "goal_achieved": false,
+  "data_sha256": "3118273464feb4ef80e9739a840a841a2c5accf162b87cc0d3467ee24855ff98",
+  "checked_at_utc": "2026-10-30T01:55:22.941188+00:00"
+}

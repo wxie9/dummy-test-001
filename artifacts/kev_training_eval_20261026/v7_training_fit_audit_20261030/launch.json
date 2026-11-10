@@ -1,0 +1,30 @@
+{
+  "started_at_utc": "2026-10-30T00:52:20.685178Z",
+  "training_performed": false,
+  "jobs": {
+    "qwen3-stage3": {
+      "gpu": 1,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3",
+      "pipeline_pid": 31949,
+      "status": "started"
+    },
+    "qwen3-v7": {
+      "gpu": 2,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v7/stage4",
+      "pipeline_pid": 31950,
+      "status": "started"
+    },
+    "qwen35-stage3": {
+      "gpu": 3,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3",
+      "pipeline_pid": 31951,
+      "status": "started"
+    },
+    "qwen35-v7": {
+      "gpu": 4,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v7/stage4",
+      "pipeline_pid": 31953,
+      "status": "started"
+    }
+  }
+}

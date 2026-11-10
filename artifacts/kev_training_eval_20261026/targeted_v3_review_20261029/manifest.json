@@ -1,0 +1,105 @@
+{
+  "version": "targeted-v3-review-20261029",
+  "stage": "review_pilot_not_training_split",
+  "new_four_families": {
+    "file": "new_four_families.review.jsonl",
+    "sha256": "f9a32fd56bd48f13e31564b598e97bf6a8191f13233cd5a653cf4fc42145c2f0",
+    "contexts": 68
+  },
+  "unchanged_three_families": {
+    "train": {
+      "records": 2300,
+      "by_family": {
+        "temporal": 800,
+        "tool_routing": 900,
+        "injection": 600
+      },
+      "sha256": "4dc6160ebe907388e02c1b6bb095ce72928e1c496075b61d637f5e1bc3d6e83d",
+      "source_sha256": "038ec3b91328eba89d2e61dfc429cc6054c4fb6fca621a09dc204b16a02fb619",
+      "byte_identical_to_source_subset": true
+    },
+    "development": {
+      "records": 300,
+      "by_family": {
+        "tool_routing": 100,
+        "temporal": 100,
+        "injection": 100
+      },
+      "sha256": "05b7f75ccecaa7576f85f374b38b4dcf6884cd260b183971b50b8f1cb358301a",
+      "source_sha256": "b06685e3398f3d2e86dd1f982daa5c9640d1e1cfbb4e9e37ec00d0c6cd467028",
+      "byte_identical_to_source_subset": true
+    },
+    "test": {
+      "records": 300,
+      "by_family": {
+        "temporal": 100,
+        "injection": 100,
+        "tool_routing": 100
+      },
+      "sha256": "0b805b6ed1a59b8de0cbe6b71f71cef463d5ae25449704c743b0079413f54de3",
+      "source_sha256": "5f45c795b05bbca48270aa1f26a451386e61d9f266a8ecedc4ff67ac486a0204",
+      "byte_identical_to_source_subset": true
+    }
+  },
+  "checked_sources": [
+    {
+      "path": "third_party/kev-source-20261025/evals/hard-v1/test.jsonl",
+      "sha256": "246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b"
+    },
+    {
+      "path": "artifacts/kev_training_eval_20261026/targeted_v1/development.jsonl",
+      "sha256": "7f78ac96b6690f2248604d09dac3e68210a4d74c0f1182ea4806e7040434fc42"
+    },
+    {
+      "path": "artifacts/kev_training_eval_20261026/targeted_v1/test.jsonl",
+      "sha256": "082a0d3b28522d309467c4eea6f33dff4dcbd74c112e43be77bd0d2024125572"
+    },
+    {
+      "path": "artifacts/kev_training_eval_20261026/targeted_v1/train.jsonl",
+      "sha256": "853e3f2df093c86fb7065c0913184a0ccb8e78de726477d8802589d3e0edfe90"
+    },
+    {
+      "path": "artifacts/kev_training_eval_20261026/targeted_v2_probability_policy/development.jsonl",
+      "sha256": "28fffcf2b4a1aaca02d82022bc756496b9c74002c143fad9b94bfbd6fcbf46f1"
+    },
+    {
+      "path": "artifacts/kev_training_eval_20261026/targeted_v2_probability_policy/test.jsonl",
+      "sha256": "cab5069bf954260c21b09324cdbec8678a4a838a4babdc5876a89f70ac614426"
+    },
+    {
+      "path": "artifacts/kev_training_eval_20261026/targeted_v2_probability_policy/train.jsonl",
+      "sha256": "f399ee90b78b44e78bd0518b040922a43a54430b3027815010e116821c7c2021"
+    },
+    {
+      "path": "artifacts/kev_training_eval_20261026/targeted_v2_all7_compact/development.jsonl",
+      "sha256": "b06685e3398f3d2e86dd1f982daa5c9640d1e1cfbb4e9e37ec00d0c6cd467028"
+    },
+    {
+      "path": "artifacts/kev_training_eval_20261026/targeted_v2_all7_compact/test.jsonl",
+      "sha256": "5f45c795b05bbca48270aa1f26a451386e61d9f266a8ecedc4ff67ac486a0204"
+    },
+    {
+      "path": "artifacts/kev_training_eval_20261026/targeted_v2_all7_compact/train.jsonl",
+      "sha256": "038ec3b91328eba89d2e61dfc429cc6054c4fb6fca621a09dc204b16a02fb619"
+    }
+  ],
+  "split_policy": "All related contrasts are review-only. When expanding, assign scenario/contract/graph groups to one split before rendering; do not randomly split sibling records.",
+  "assembly_status": "Do not append 68 review contexts to 2300 retained train rows: that would severely underweight the four repaired families. No train.jsonl assembled.",
+  "reference_v2_train_quotas": {
+    "tool_routing": 900,
+    "temporal": 800,
+    "injection": 600,
+    "probability": 1400,
+    "insufficient": 700,
+    "multihop": 800,
+    "policy": 1200
+  },
+  "scale_note": "Quotas are an old reference, not a commitment to generate 6400 rows. Agree size after reviewing the pilot; preserve relative weights if using smaller repaired families.",
+  "provenance": "New synthetic scenarios authored for audited mechanisms. Hard-v1 errors were inspected during design; subsequent scores there measure repair on a known diagnostic set, not untouched-test generalization.",
+  "limitations": [
+    "Pilot has limited authored scenario and contract diversity.",
+    "Exact context exclusion cannot prove semantic non-overlap.",
+    "Author review plus deterministic checks is not independent LLM or human annotation.",
+    "No new training or evaluation performed."
+  ]
+}

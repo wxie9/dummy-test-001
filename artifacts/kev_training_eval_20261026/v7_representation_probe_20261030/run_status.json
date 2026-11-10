@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "checked_at_utc": "2026-10-30T01:39:11.864689+00:00",
+  "training_performed": false,
+  "goal_achieved": false,
+  "historical_pipeline_pids": [
+    44527,
+    44528,
+    44529,
+    44530
+  ],
+  "historical_evaluation_pids": [
+    44531,
+    44532,
+    44533,
+    44534
+  ],
+  "all_eight_proc_handles_missing": true,
+  "all_four_coverage": {
+    "contexts": 525,
+    "questions": 1050,
+    "rejected": 0,
+    "truncated": 0
+  },
+  "unchanged_input_questions_exactly_reproduced_per_checkpoint": 84
+}

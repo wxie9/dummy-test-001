@@ -1,0 +1,2938 @@
+[
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00091/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00091/view-0",
+    "question": "controller",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "cresta_group",
+      "dunmore_ventures",
+      "eastgate_partners",
+      "hollis_investments",
+      "no_controller"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00091/view-0",
+    "p": [
+      0.0008660907875793705,
+      0.0006909603918031212,
+      0.0003947037128174322,
+      0.9206516436707166,
+      0.07739660143708348
+    ],
+    "raw_probability_sum": 0.9999999037536327,
+    "zero_count": 0,
+    "logits": [
+      -0.6751635074615479,
+      -0.9010703563690186,
+      -1.4610178470611572,
+      6.293684005737305,
+      3.817545175552368
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00091/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00091/view-0",
+    "question": "interest",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00091/view-0",
+    "p": [
+      0.001487781084761232,
+      0.7851051218277434,
+      0.13402497983717443,
+      0.05437461746666781,
+      0.02500749978365318
+    ],
+    "raw_probability_sum": 0.9999999839346856,
+    "zero_count": 0,
+    "logits": [
+      -2.4078235626220703,
+      3.860708475112915,
+      2.092916965484619,
+      1.1907882690429688,
+      0.41406649351119995
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00001/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00001/view-0",
+    "question": "bucket",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00001/view-0",
+    "p": [
+      0.012514692766167297,
+      0.1314014051055575,
+      0.30524897660663997,
+      0.22799299721045327,
+      0.1400027577020305,
+      0.1828391706091515
+    ],
+    "raw_probability_sum": 0.9999999972060323,
+    "zero_count": 0,
+    "logits": [
+      0.532696545124054,
+      2.884049892425537,
+      3.7269208431243896,
+      3.435107946395874,
+      2.9474551677703857,
+      3.214400053024292
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00001/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00001/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00001/view-0",
+    "p": [
+      0.014796794704225881,
+      0.0007271092895656138,
+      0.00626211074981503,
+      0.003873408377113483,
+      0.97434057687928
+    ],
+    "raw_probability_sum": 1.0000000418513082,
+    "zero_count": 0,
+    "logits": [
+      2.4194536209106445,
+      -0.5936356782913208,
+      1.5595604181289673,
+      1.0791780948638916,
+      6.606803894042969
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00086/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00086/view-0",
+    "question": "due",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00086/view-0",
+    "p": [
+      0.29131458480579886,
+      0.3169799261076978,
+      0.27175681188639333,
+      0.10505188385185908,
+      0.014896793348250928
+    ],
+    "raw_probability_sum": 1.0000000586733222,
+    "zero_count": 0,
+    "logits": [
+      2.127106189727783,
+      2.211540937423706,
+      2.057610034942627,
+      1.1071568727493286,
+      -0.8461517095565796
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00092/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00092/view-0",
+    "question": "date",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00092/view-0",
+    "p": [
+      0.664596235269667,
+      0.2492054088085036,
+      0.014247014943584662,
+      0.036046506887907996,
+      0.035904834090336735
+    ],
+    "raw_probability_sum": 0.9999999469146132,
+    "zero_count": 0,
+    "logits": [
+      3.45689058303833,
+      2.4759883880615234,
+      -0.38574159145355225,
+      0.5425207614898682,
+      0.5385828018188477
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00070/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00070/view-0",
+    "question": "bucket",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00070/view-0",
+    "p": [
+      0.020767119168622776,
+      0.29614061668777125,
+      0.39565307638893044,
+      0.15739292199523974,
+      0.04438501679124342,
+      0.08566124896819236
+    ],
+    "raw_probability_sum": 0.9999999813735485,
+    "zero_count": 0,
+    "logits": [
+      1.2282371520996094,
+      3.8857007026672363,
+      4.175404071807861,
+      3.2536115646362305,
+      1.987768292427063,
+      2.6452667713165283
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00070/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00070/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00070/view-0",
+    "p": [
+      0.9955923044105118,
+      0.00045324076577167897,
+      0.0015340169320910016,
+      0.0013201006332397456,
+      0.0011003372583857404
+    ],
+    "raw_probability_sum": 0.9999999916763045,
+    "zero_count": 0,
+    "logits": [
+      6.32094144821167,
+      -1.3737280368804932,
+      -0.15450656414031982,
+      -0.3046882450580597,
+      -0.48677968978881836
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00090/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00090/view-0",
+    "question": "bucket",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00090/view-0",
+    "p": [
+      4.188027841973726e-05,
+      8.160364262174855e-05,
+      0.000304446065504002,
+      0.001251305475569899,
+      0.01053495821738266,
+      0.987785806320502
+    ],
+    "raw_probability_sum": 0.9999998893108568,
+    "zero_count": 0,
+    "logits": [
+      -1.6583696603775024,
+      -0.9913109540939331,
+      0.32530850172042847,
+      1.738757610321045,
+      3.869269371032715,
+      8.410036087036133
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00090/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00090/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00090/view-0",
+    "p": [
+      0.00017232397480346594,
+      0.0004310285577140686,
+      0.010251039965951765,
+      0.0009208311969638621,
+      0.9882247763045668
+    ],
+    "raw_probability_sum": 0.9999999681167537,
+    "zero_count": 0,
+    "logits": [
+      -1.2425494194030762,
+      -0.3257506489753723,
+      2.8432090282440186,
+      0.4333517551422119,
+      7.411740303039551
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00043/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00043/view-0",
+    "question": "approver",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "kenji",
+      "omar",
+      "petra",
+      "tomas",
+      "zainab"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00043/view-0",
+    "p": [
+      0.01488423225230642,
+      0.8509520721901268,
+      0.025862264872428438,
+      0.08385629787949635,
+      0.024445132805641936
+    ],
+    "raw_probability_sum": 1.000000019557774,
+    "zero_count": 0,
+    "logits": [
+      -0.3292859196662903,
+      3.7167673110961914,
+      0.22319646179676056,
+      1.399516224861145,
+      0.1668427735567093
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00071/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00071/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00071/view-0",
+    "p": [
+      0.08464619087599928,
+      0.21451596224740008,
+      0.3039248400898591,
+      0.31140608755521804,
+      0.08550691923152355
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      1.27853524684906,
+      2.208439350128174,
+      2.556835651397705,
+      2.58115291595459,
+      1.2886525392532349
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00005/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00005/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00005/view-0",
+    "p": [
+      0.1035567054517339,
+      0.17046805615184005,
+      0.13026509368312103,
+      0.22924232188385912,
+      0.3664678228294459
+    ],
+    "raw_probability_sum": 0.9999999478459358,
+    "zero_count": 0,
+    "logits": [
+      0.4830261468887329,
+      0.9814546704292297,
+      0.7124783396720886,
+      1.277686357498169,
+      1.7468174695968628
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00045/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00045/view-0",
+    "question": "choice",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "equally_likely",
+      "first_event",
+      "second_event"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00045/view-0",
+    "p": [
+      0.15359310576926014,
+      0.5108489318065504,
+      0.3355579624241894
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.4192440509796143,
+      2.6210110187530518,
+      2.2007317543029785
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00098/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00098/view-0",
+    "question": "approver",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "emeka",
+      "kenji",
+      "mira",
+      "rosa",
+      "sana"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00098/view-0",
+    "p": [
+      0.014157756324023283,
+      0.6291587393769167,
+      0.2839628774558568,
+      0.02926456016008921,
+      0.04345606668311401
+    ],
+    "raw_probability_sum": 0.999999993480742,
+    "zero_count": 0,
+    "logits": [
+      0.0909648984670639,
+      3.8850858211517334,
+      3.089545726776123,
+      0.8170796036720276,
+      1.2124525308609009
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00037/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00037/view-0",
+    "question": "days",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00037/view-0",
+    "p": [
+      0.15200662839422566,
+      0.22756243091169642,
+      0.10759218197453294,
+      0.1781742301311229,
+      0.33466452858842205
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.745051145553589,
+      3.1485517024993896,
+      2.39947509765625,
+      2.9038889408111572,
+      3.5342557430267334
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00037/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00037/view-0",
+    "question": "late",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00037/view-0",
+    "p": [
+      0.36751800775527954,
+      0.6324819922447205
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      3.136998414993286,
+      3.679877758026123
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00006/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00006/view-0",
+    "question": "local",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00006/view-0",
+    "p": [
+      0.43612632536135165,
+      0.21817681383032717,
+      0.07726422236775027,
+      0.1765698536294786,
+      0.09186278481109234
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      1.3176759481430054,
+      0.6250498294830322,
+      -0.41302502155303955,
+      0.41346049308776855,
+      -0.2399599254131317
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00073/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00073/view-0",
+    "question": "approver",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "aiko",
+      "hana",
+      "luca",
+      "mateo",
+      "rafael"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00073/view-0",
+    "p": [
+      0.005069549204306393,
+      0.023659056404358864,
+      0.9498822386033506,
+      0.0027821299430020705,
+      0.018607025844981983
+    ],
+    "raw_probability_sum": 0.9999999064020813,
+    "zero_count": 0,
+    "logits": [
+      0.5542615056037903,
+      2.0947556495666504,
+      5.787347793579102,
+      -0.04577337205410004,
+      1.8545490503311157
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00074/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00074/view-0",
+    "question": "paged",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "beatriz",
+      "mira",
+      "omar",
+      "viktor"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00074/view-0",
+    "p": [
+      0.21629720603976837,
+      0.2646708151002107,
+      0.3261711548839337,
+      0.19286082397608723
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.8083521723747253,
+      1.0101854801177979,
+      1.219120979309082,
+      0.6936675310134888
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00012/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00012/view-0",
+    "question": "affected",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "email_relay",
+      "fraud_scorer",
+      "none_affected",
+      "reporting_etl",
+      "user_profile"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00012/view-0",
+    "p": [
+      0.13837997413565267,
+      0.005309892275246791,
+      0.10877348324005973,
+      0.7474126110769076,
+      0.00012403927213327042
+    ],
+    "raw_probability_sum": 1.000000014581019,
+    "zero_count": 0,
+    "logits": [
+      3.052468776702881,
+      -0.2079629749059677,
+      2.8117330074310303,
+      4.7390828132629395,
+      -3.964691638946533
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00089/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00089/view-0",
+    "question": "choice",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "project_beacon",
+      "project_cedar",
+      "project_fjord",
+      "project_garnet"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00089/view-0",
+    "p": [
+      0.62851816649928,
+      0.028767412635562616,
+      0.021080246273727142,
+      0.3216341745914302
+    ],
+    "raw_probability_sum": 0.9999999962747097,
+    "zero_count": 0,
+    "logits": [
+      4.146519660949707,
+      1.0623979568481445,
+      0.7514910697937012,
+      3.476569652557373
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00089/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00089/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00089/view-0",
+    "p": [
+      0.6312801626267974,
+      0.04587296615221837,
+      0.1306246773316633,
+      0.1197396402148278,
+      0.07248255367449305
+    ],
+    "raw_probability_sum": 1.0000000335276127,
+    "zero_count": 0,
+    "logits": [
+      1.3967177867889404,
+      -1.2251559495925903,
+      -0.1787039041519165,
+      -0.2657122015953064,
+      -0.767686128616333
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00068/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00068/view-0",
+    "question": "affected",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "auth_service",
+      "email_relay",
+      "none_affected",
+      "payments_gateway"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00068/view-0",
+    "p": [
+      0.005041514387164342,
+      0.07532536034990525,
+      0.25630175375123426,
+      0.6633313715116961
+    ],
+    "raw_probability_sum": 1.0000000270083547,
+    "zero_count": 0,
+    "logits": [
+      -1.0719598531723022,
+      1.632150411605835,
+      2.856688976287842,
+      3.807608127593994
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00097/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00097/view-0",
+    "question": "bucket",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00097/view-0",
+    "p": [
+      0.01369675299885694,
+      0.07307814333878991,
+      0.4466410743683977,
+      0.42970909288931985,
+      0.030158213531904426,
+      0.006716722872731197
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      -0.3427496552467346,
+      1.3316208124160767,
+      3.1418468952178955,
+      3.1031999588012695,
+      0.4465488791465759,
+      -1.0553079843521118
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00097/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00097/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00097/view-0",
+    "p": [
+      0.006087946245528708,
+      0.0072146379456060365,
+      0.547284603628595,
+      0.009744146847859162,
+      0.4296686653324111
+    ],
+    "raw_probability_sum": 0.9999999990686774,
+    "zero_count": 0,
+    "logits": [
+      -0.9329560995101929,
+      -0.7631546258926392,
+      3.565702199935913,
+      -0.4625997543334961,
+      3.3237476348876953
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00099/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00099/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00099/view-0",
+    "p": [
+      0.13084298469754296,
+      0.1874872758052295,
+      0.45358002523764984,
+      0.09158202328966575,
+      0.1365076909699119
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.7636035680770874,
+      2.123316526412964,
+      3.006777286529541,
+      1.4068405628204346,
+      1.8059865236282349
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00034/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00034/view-0",
+    "question": "due",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00034/view-0",
+    "p": [
+      0.10265135918038129,
+      0.09065500036858022,
+      0.36563382097533076,
+      0.20612089643062498,
+      0.23493892304508274
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.3168559074401855,
+      1.1925785541534424,
+      2.5871498584747314,
+      2.0139803886413574,
+      2.144843101501465
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00007/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00007/view-0",
+    "question": "days",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00007/view-0",
+    "p": [
+      0.35296672845607047,
+      0.13875612719920372,
+      0.2085984662815814,
+      0.21006432332146407,
+      0.08961435474168028
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      2.50285005569458,
+      1.5691941976547241,
+      1.9768874645233154,
+      1.9838900566101074,
+      1.1319918632507324
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00007/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00007/view-0",
+    "question": "late",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00007/view-0",
+    "p": [
+      0.6253318600257677,
+      0.3746681399742323
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.2015328407287598,
+      1.689291000366211
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00068/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00068/view-0",
+    "question": "bucket",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00068/view-0",
+    "p": [
+      0.005458752833128782,
+      0.019885924472774288,
+      0.14759629038297375,
+      0.33796818354790614,
+      0.42311324304681547,
+      0.06597760571640156
+    ],
+    "raw_probability_sum": 0.9999999618157744,
+    "zero_count": 0,
+    "logits": [
+      -0.4840674102306366,
+      0.8087246417999268,
+      2.8131933212280273,
+      3.6416642665863037,
+      3.8663523197174072,
+      2.0080277919769287
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00068/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00068/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00068/view-0",
+    "p": [
+      0.00048267902429382543,
+      0.013424991500449906,
+      0.002169802914502669,
+      0.0020986063262197477,
+      0.9818239202345338
+    ],
+    "raw_probability_sum": 0.9999999402789399,
+    "zero_count": 0,
+    "logits": [
+      -1.7166868448257446,
+      1.6088347434997559,
+      -0.21364706754684448,
+      -0.24700988829135895,
+      5.901128768920898
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00006/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00006/view-0",
+    "question": "choice",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "equally_likely",
+      "first_event",
+      "second_event"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00006/view-0",
+    "p": [
+      0.10163098270800762,
+      0.41216294729224007,
+      0.48620606999975235
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.4923559427261353,
+      2.8924262523651123,
+      3.0576400756835938
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00005/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00005/view-0",
+    "question": "days",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00005/view-0",
+    "p": [
+      0.16041945279582112,
+      0.06018979236907793,
+      0.233273198454228,
+      0.2618341206424114,
+      0.28428343573846154
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      2.9847607612609863,
+      2.00447154045105,
+      3.3591790199279785,
+      3.474679946899414,
+      3.5569405555725098
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00005/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00005/view-0",
+    "question": "late",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00005/view-0",
+    "p": [
+      0.29517412185668945,
+      0.7048258781433105
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.467414617538452,
+      3.3378000259399414
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00000/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00000/view-0",
+    "question": "choice",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "equally_likely",
+      "first_event",
+      "second_event"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00000/view-0",
+    "p": [
+      0.10471485711209264,
+      0.5351167400943747,
+      0.3601684027935326
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.5158698558807373,
+      3.147113800048828,
+      2.7512004375457764
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00080/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00080/view-0",
+    "question": "local",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00080/view-0",
+    "p": [
+      0.10227615597893974,
+      0.13400032417474486,
+      0.0964313844217383,
+      0.0837890983631932,
+      0.5835030370613838
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      1.180006504058838,
+      1.4501721858978271,
+      1.1211615800857544,
+      0.9806328415870667,
+      2.921379566192627
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00088/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00088/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00088/view-0",
+    "p": [
+      0.4215661820535931,
+      0.06434897237496119,
+      0.1967854917528407,
+      0.2199833509328462,
+      0.09731600288575884
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.768357753753662,
+      0.888701856136322,
+      2.006495237350464,
+      2.1179327964782715,
+      1.3023443222045898
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00036/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00036/view-0",
+    "question": "refund",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00036/view-0",
+    "p": [
+      0.08434388943657073,
+      0.2529820548925932,
+      0.2726953080426028,
+      0.3286090554410416,
+      0.06136969218719177
+    ],
+    "raw_probability_sum": 0.9999999813735485,
+    "zero_count": 0,
+    "logits": [
+      1.7539747953414917,
+      2.852391004562378,
+      2.9274275302886963,
+      3.113941192626953,
+      1.4359885454177856
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00051/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00051/view-0",
+    "question": "pay",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00051/view-0",
+    "p": [
+      0.1065552626111594,
+      0.20087965275229835,
+      0.30540226297217726,
+      0.12079182382268633,
+      0.26637099784167867
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      2.00877046585083,
+      2.642812728881836,
+      3.061736583709717,
+      2.1341753005981445,
+      2.924996852874756
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00018/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00018/view-0",
+    "question": "due",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00018/view-0",
+    "p": [
+      0.22084763646125793,
+      0.1613900512456894,
+      0.09188579022884369,
+      0.24407535791397095,
+      0.28180116415023804
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.3163938522338867,
+      2.0027449131011963,
+      1.439467191696167,
+      2.4163978099823,
+      2.560122489929199
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00068/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00068/view-0",
+    "question": "refund",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00068/view-0",
+    "p": [
+      0.2320649800862755,
+      0.14178631460290997,
+      0.06962888324706121,
+      0.4305329694320948,
+      0.12598685263165854
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      2.8791725635528564,
+      2.3864762783050537,
+      1.6753346920013428,
+      3.4971790313720703,
+      2.2683327198028564
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00077/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00077/view-0",
+    "question": "affected",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "billing_api",
+      "cdn_edge",
+      "none_affected",
+      "payments_gateway",
+      "pricing_engine"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00077/view-0",
+    "p": [
+      0.3283106616652457,
+      0.0009984697474018187,
+      0.027951580824402467,
+      0.6368459927199192,
+      0.005893295043030927
+    ],
+    "raw_probability_sum": 1.0000000207219273,
+    "zero_count": 0,
+    "logits": [
+      5.193769454956055,
+      -0.601722240447998,
+      2.73028302192688,
+      5.856337070465088,
+      1.1736247539520264
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00089/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00089/view-0",
+    "question": "paged",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "aiko",
+      "kenji",
+      "mateo",
+      "yusuf"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00089/view-0",
+    "p": [
+      0.3955397307872772,
+      0.05173669755458832,
+      0.37794438004493713,
+      0.17477919161319733
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.5815842151641846,
+      -0.45249974727630615,
+      1.536080002784729,
+      0.7648563981056213
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00064/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00064/view-0",
+    "question": "refund",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00064/view-0",
+    "p": [
+      0.1023693652020111,
+      0.06426783193355047,
+      0.09373773308416007,
+      0.33322714268686515,
+      0.4063979270934132
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.7012510299682617,
+      1.2357227802276611,
+      1.6131643056869507,
+      2.8814878463745117,
+      3.079996347427368
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00017/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00017/view-0",
+    "question": "choice",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "project_beacon",
+      "project_cedar",
+      "project_ember",
+      "project_garnet"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00017/view-0",
+    "p": [
+      0.30844472000332357,
+      0.2802484762520506,
+      0.09524711398797547,
+      0.31605968975665033
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      2.9860925674438477,
+      2.8902266025543213,
+      1.811024785041809,
+      3.010481119155884
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00017/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00017/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00017/view-0",
+    "p": [
+      0.06307101920961432,
+      0.0009761271534835945,
+      0.3698656217693939,
+      0.06389348879208606,
+      0.5021937430754221
+    ],
+    "raw_probability_sum": 1.0000000116997398,
+    "zero_count": 0,
+    "logits": [
+      2.435640811920166,
+      -1.7327828407287598,
+      4.204519271850586,
+      2.448596954345703,
+      4.5103654861450195
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00011/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00011/view-0",
+    "question": "approver",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "ashok",
+      "chloe",
+      "felix",
+      "maya",
+      "tariq"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00011/view-0",
+    "p": [
+      0.08960617200126987,
+      0.0468773164320392,
+      0.14574995419755646,
+      0.11464015968680144,
+      0.603126397682333
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.9168435335159302,
+      0.26895323395729065,
+      1.403311848640442,
+      1.163217544555664,
+      2.8235461711883545
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00036/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00036/view-0",
+    "question": "controller",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "aldermoor_holdings",
+      "eastgate_partners",
+      "fenwick_industries",
+      "kilnworth_plc",
+      "no_controller"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00036/view-0",
+    "p": [
+      0.9447302106909243,
+      0.000291229193035669,
+      0.0001230475157610364,
+      0.0009843510222581897,
+      0.05387116157802077
+    ],
+    "raw_probability_sum": 1.0000000122090569,
+    "zero_count": 0,
+    "logits": [
+      7.067560195922852,
+      -1.016983985900879,
+      -1.8785241842269897,
+      0.20088820159435272,
+      4.203256130218506
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00036/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00036/view-0",
+    "question": "interest",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00036/view-0",
+    "p": [
+      0.00019022199818295016,
+      0.19237539435319007,
+      0.024837112393970684,
+      0.01737971813908276,
+      0.7652175531155735
+    ],
+    "raw_probability_sum": 0.9999999863211997,
+    "zero_count": 0,
+    "logits": [
+      -3.0688467025756836,
+      3.850165367126465,
+      1.803055763244629,
+      1.4460206031799316,
+      5.230876922607422
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00093/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00093/view-0",
+    "question": "approver",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "emeka",
+      "farah",
+      "kofi",
+      "mira",
+      "samir"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00093/view-0",
+    "p": [
+      0.04575751044984922,
+      0.14876753313493032,
+      0.5710302676413993,
+      0.07127194957840367,
+      0.16317273919541744
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      0.10175865888595581,
+      1.280787706375122,
+      2.625844955444336,
+      0.5449057221412659,
+      1.3732120990753174
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00065/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00065/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00065/view-0",
+    "p": [
+      0.06505898840461723,
+      0.16275849210805482,
+      0.2738488194115988,
+      0.16987248495791174,
+      0.32846121511781745
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.1652460098266602,
+      2.082219123840332,
+      2.6025278568267822,
+      2.124999761581421,
+      2.7843704223632812
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00041/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00041/view-0",
+    "question": "bucket",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00041/view-0",
+    "p": [
+      0.0038497273192169695,
+      0.040294952531109055,
+      0.42662045190749975,
+      0.4887753407682337,
+      0.038455027934691056,
+      0.0020044995392494622
+    ],
+    "raw_probability_sum": 1.000000003958121,
+    "zero_count": 0,
+    "logits": [
+      -0.10577883571386337,
+      2.242445230484009,
+      4.602113723754883,
+      4.73812198638916,
+      2.1957085132598877,
+      -0.7583864331245422
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00041/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00041/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00041/view-0",
+    "p": [
+      0.0034602327760659677,
+      0.0007925050823530848,
+      0.9034760357124831,
+      0.00010587048467942383,
+      0.09216535594441834
+    ],
+    "raw_probability_sum": 1.000000026258931,
+    "zero_count": 0,
+    "logits": [
+      1.1381993293762207,
+      -0.3356929421424866,
+      6.703113079071045,
+      -2.348674774169922,
+      4.420447826385498
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00078/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00078/view-0",
+    "question": "controller",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "aldermoor_holdings",
+      "dunmore_ventures",
+      "ivel_holdings",
+      "juno_capital",
+      "no_controller"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00078/view-0",
+    "p": [
+      0.0019110196286316536,
+      0.03756652684085555,
+      0.0008845352359725957,
+      0.0010174521937121937,
+      0.958620466100828
+    ],
+    "raw_probability_sum": 1.000000023515895,
+    "zero_count": 0,
+    "logits": [
+      0.5423051118850708,
+      3.5207815170288086,
+      -0.2280251383781433,
+      -0.08803047984838486,
+      6.760163307189941
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00078/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00078/view-0",
+    "question": "interest",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00078/view-0",
+    "p": [
+      0.0005408357193182874,
+      0.36276393769305665,
+      0.000137169567556521,
+      0.6265538868802367,
+      0.010004170139831842
+    ],
+    "raw_probability_sum": 1.0000000099098543,
+    "zero_count": 0,
+    "logits": [
+      -1.3216197490692139,
+      5.186771869659424,
+      -2.6935174465179443,
+      5.733254432678223,
+      1.5960214138031006
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00063/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00063/view-0",
+    "question": "affected",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "notification_hub",
+      "order_queue",
+      "session_cache",
+      "user_profile"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00063/view-0",
+    "p": [
+      0.01708615601687319,
+      0.5012823432544867,
+      0.4815957930019482,
+      3.570772669186889e-05
+    ],
+    "raw_probability_sum": 0.9999999821920937,
+    "zero_count": 0,
+    "logits": [
+      0.9316200017929077,
+      4.310521125793457,
+      4.270456790924072,
+      -5.239036560058594
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00047/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00047/view-0",
+    "question": "date",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00047/view-0",
+    "p": [
+      0.11985981584326393,
+      0.1355998743385142,
+      0.20327432883590235,
+      0.45776129361741946,
+      0.08350468736490002
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      2.877224922180176,
+      3.0006103515625,
+      3.405458450317383,
+      4.217249870300293,
+      2.5158047676086426
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00013/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00013/view-0",
+    "question": "choice",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "equally_likely",
+      "first_event",
+      "second_event"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00013/view-0",
+    "p": [
+      0.11987192153167257,
+      0.3295039134921976,
+      0.5506241649761299
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.4486424922943115,
+      2.4598069190979004,
+      2.973271131515503
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00014/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00014/view-0",
+    "question": "bucket",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00014/view-0",
+    "p": [
+      0.02353127916512383,
+      0.08000142320994008,
+      0.117785702517655,
+      0.3204252201421705,
+      0.32115469160491783,
+      0.1371016833601927
+    ],
+    "raw_probability_sum": 0.9999999757856131,
+    "zero_count": 0,
+    "logits": [
+      0.9241530299186707,
+      2.14786696434021,
+      2.534689426422119,
+      3.5354714393615723,
+      3.537745475769043,
+      2.6865453720092773
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00014/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00014/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00014/view-0",
+    "p": [
+      0.2212962370525387,
+      0.0057646087666091955,
+      0.011145882365575389,
+      0.7570253053341426,
+      0.004767966481134124
+    ],
+    "raw_probability_sum": 0.9999999948777258,
+    "zero_count": 0,
+    "logits": [
+      3.567049264907837,
+      -0.08071588724851608,
+      0.5786168575286865,
+      4.796943664550781,
+      -0.27053308486938477
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00024/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00024/view-0",
+    "question": "affected",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "email_relay",
+      "none_affected",
+      "notification_hub",
+      "reporting_etl",
+      "search_indexer"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00024/view-0",
+    "p": [
+      0.0003214179740149819,
+      0.014913371080733406,
+      0.007470163174387652,
+      0.00015883823652720303,
+      0.9771362095343368
+    ],
+    "raw_probability_sum": 1.000000045823981,
+    "zero_count": 0,
+    "logits": [
+      -0.26700788736343384,
+      3.570263385772705,
+      2.8789219856262207,
+      -0.9718636274337769,
+      7.752631187438965
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00000/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00000/view-0",
+    "question": "pay",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00000/view-0",
+    "p": [
+      0.11202312171286928,
+      0.04286566057312037,
+      0.5097484208830877,
+      0.16260677854666275,
+      0.17275601828425988
+    ],
+    "raw_probability_sum": 1.000000074505806,
+    "zero_count": 0,
+    "logits": [
+      1.759526252746582,
+      0.7988920211791992,
+      3.274738311767578,
+      2.1321558952331543,
+      2.1927013397216797
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00026/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00026/view-0",
+    "question": "more_likely",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00026/view-0",
+    "p": [
+      0.6125520467758179,
+      0.38744795322418213
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      3.028735637664795,
+      2.570683240890503
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00026/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00026/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00026/view-0",
+    "p": [
+      0.6953411620364459,
+      0.017022989095970175,
+      0.07673767780793293,
+      0.015211115793221876,
+      0.19568705526642913
+    ],
+    "raw_probability_sum": 0.999999925494194,
+    "zero_count": 0,
+    "logits": [
+      3.3330464363098145,
+      -0.376791387796402,
+      1.1290366649627686,
+      -0.4893299341201782,
+      2.0651605129241943
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00094/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00094/view-0",
+    "question": "paged",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "arjun",
+      "bram",
+      "mira",
+      "petra"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00094/view-0",
+    "p": [
+      0.28832315539350645,
+      0.2725906290831974,
+      0.3613762449808048,
+      0.07770997054249136
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.1754156351089478,
+      1.1193047761917114,
+      1.401253342628479,
+      -0.13568267226219177
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00053/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00053/view-0",
+    "question": "controller",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "dunmore_ventures",
+      "fenwick_industries",
+      "garrow_trust",
+      "kilnworth_plc",
+      "no_controller"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00053/view-0",
+    "p": [
+      0.0019305592949385912,
+      0.0006350458160580193,
+      0.17606239094611328,
+      0.025773791704310163,
+      0.79559821223858
+    ],
+    "raw_probability_sum": 0.9999999958090484,
+    "zero_count": 0,
+    "logits": [
+      -0.4583069980144501,
+      -1.5701746940612793,
+      4.054721832275391,
+      2.133241653442383,
+      5.5629777908325195
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00053/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00053/view-0",
+    "question": "interest",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00053/view-0",
+    "p": [
+      0.7828457907778851,
+      0.035463566599753846,
+      0.0011670504123010381,
+      0.005030071252051645,
+      0.17549352095800844
+    ],
+    "raw_probability_sum": 0.999999929452315,
+    "zero_count": 0,
+    "logits": [
+      3.677151679992676,
+      0.5827216506004333,
+      -2.8313043117523193,
+      -1.3703501224517822,
+      2.1818180084228516
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00060/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00060/view-0",
+    "question": "local",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00060/view-0",
+    "p": [
+      0.058113170268964495,
+      0.03676994739297993,
+      0.772652713584975,
+      0.10052310263457101,
+      0.031941066118509595
+    ],
+    "raw_probability_sum": 1.0000000409781933,
+    "zero_count": 0,
+    "logits": [
+      1.0073590278625488,
+      0.5496476292610168,
+      3.5947964191436768,
+      1.5553544759750366,
+      0.40885934233665466
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00058/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00058/view-0",
+    "question": "paged",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "diego",
+      "lotte",
+      "noah",
+      "samir"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00058/view-0",
+    "p": [
+      0.17678227757241907,
+      0.23321069429500857,
+      0.21140017790496085,
+      0.37860685022761154
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      0.8953109979629517,
+      1.1723343133926392,
+      1.0741450786590576,
+      1.6568903923034668
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00039/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00039/view-0",
+    "question": "controller",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "birchfield_capital",
+      "cresta_group",
+      "dunmore_ventures",
+      "garrow_trust",
+      "no_controller"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00039/view-0",
+    "p": [
+      0.0003894389691628539,
+      0.7126514959977881,
+      0.0015452088660104686,
+      0.000867836590687684,
+      0.2845460195763509
+    ],
+    "raw_probability_sum": 0.9999999932188075,
+    "zero_count": 0,
+    "logits": [
+      -1.177950382232666,
+      6.334090232849121,
+      0.20025667548179626,
+      -0.3766542375087738,
+      5.415992736816406
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00039/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00039/view-0",
+    "question": "interest",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00039/view-0",
+    "p": [
+      0.49077422091664596,
+      0.00018886299785963144,
+      0.00020346630976363992,
+      0.002627378438512665,
+      0.5062060713372181
+    ],
+    "raw_probability_sum": 1.0000000471773092,
+    "zero_count": 0,
+    "logits": [
+      5.35985803604126,
+      -2.502859592437744,
+      -2.4283809661865234,
+      0.12986019253730774,
+      5.390817642211914
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00071/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00071/view-0",
+    "question": "local",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00071/view-0",
+    "p": [
+      0.09581648058656332,
+      0.14561720923095595,
+      0.4589541315087756,
+      0.13719155668958352,
+      0.16242062198412155
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      0.9253424406051636,
+      1.3438891172409058,
+      2.4918580055236816,
+      1.2842859029769897,
+      1.4530971050262451
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/multihop/development/00035/view-0",
+    "group": "targeted-three-hardmatched-20261031/multihop/development/00035/view-0",
+    "question": "paged",
+    "source": "targeted-three-hardmatched-20261031/multihop",
+    "task": "targeted-three-hardmatched-20261031/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "ayla",
+      "bram",
+      "farah",
+      "wen"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/multihop/development/00035/view-0",
+    "p": [
+      0.19931664770990778,
+      0.34598570948966956,
+      0.18510949446772088,
+      0.2695881483327018
+    ],
+    "raw_probability_sum": 1.0000000894069672,
+    "zero_count": 0,
+    "logits": [
+      1.2952418327331543,
+      1.8467445373535156,
+      1.221294641494751,
+      1.5972424745559692
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00091/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00091/view-0",
+    "question": "pay",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00091/view-0",
+    "p": [
+      0.3283284408850407,
+      0.39158997585833216,
+      0.10858274349077085,
+      0.05736594305241447,
+      0.1141328967134418
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      2.1361939907073975,
+      2.312394857406616,
+      1.0296920537948608,
+      0.39163047075271606,
+      1.079543113708496
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00085/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00085/view-0",
+    "question": "bucket",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00085/view-0",
+    "p": [
+      0.008831492633401876,
+      0.033316142888102813,
+      0.10059131691287394,
+      0.13705915225395854,
+      0.11503945301756212,
+      0.6051624422941008
+    ],
+    "raw_probability_sum": 0.9999999990686774,
+    "zero_count": 0,
+    "logits": [
+      0.07936592400074005,
+      1.4070837497711182,
+      2.5121076107025146,
+      2.8214542865753174,
+      2.6463167667388916,
+      4.3065385818481445
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/probability/development/00085/view-0",
+    "group": "targeted-three-hardmatched-20261031/probability/development/00085/view-0",
+    "question": "value",
+    "source": "targeted-three-hardmatched-20261031/probability",
+    "task": "targeted-three-hardmatched-20261031/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/probability/development/00085/view-0",
+    "p": [
+      0.739119231356718,
+      0.011310497293569848,
+      0.05757905167640231,
+      0.007702107072015243,
+      0.1842891126012946
+    ],
+    "raw_probability_sum": 1.0000000004656613,
+    "zero_count": 0,
+    "logits": [
+      4.4801506996154785,
+      0.30042269825935364,
+      1.9278502464294434,
+      -0.08381471037864685,
+      3.0911972522735596
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00021/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00021/view-0",
+    "question": "date",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00021/view-0",
+    "p": [
+      0.36342850938439775,
+      0.5161856672419266,
+      0.032380835836139966,
+      0.012503930483688476,
+      0.07550105705384724
+    ],
+    "raw_probability_sum": 1.0000000651925802,
+    "zero_count": 0,
+    "logits": [
+      3.551142454147339,
+      3.902026414871216,
+      1.1331267356872559,
+      0.18160302937030792,
+      1.9797066450119019
+    ],
+    "inference_temperature": 1.0
+  },
+  {
+    "id": "targeted-three-hardmatched-20261031/temporal/development/00067/view-0",
+    "group": "targeted-three-hardmatched-20261031/temporal/development/00067/view-0",
+    "question": "date",
+    "source": "targeted-three-hardmatched-20261031/temporal",
+    "task": "targeted-three-hardmatched-20261031/temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-three-hardmatched-20261031/temporal/development/00067/view-0",
+    "p": [
+      0.2192004290342267,
+      0.23981481433190682,
+      0.18613664528523913,
+      0.3548481113486273
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.824949264526367,
+      2.914829730987549,
+      2.6614437103271484,
+      3.306652545928955
+    ],
+    "inference_temperature": 1.0
+  }
+]

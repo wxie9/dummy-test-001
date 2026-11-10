@@ -1,0 +1,68 @@
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/574
+evaluated 100/574
+evaluated 150/574
+evaluated 200/574
+evaluated 250/574
+evaluated 300/574
+evaluated 350/574
+evaluated 400/574
+evaluated 450/574
+evaluated 500/574
+evaluated 550/574
+{
+  "objective": -0.4055142319065076,
+  "clean": {
+    "n": 936,
+    "nll": 0.32694266328328286,
+    "acc": 0.8760683760683761,
+    "ece": 0.011675091491934127,
+    "brier": 0.1795768089873526,
+    "mean_conf": 0.8686740805732771,
+    "confident_error_rate": 0.014957264957264958,
+    "coverage_at_0_9": 0.625,
+    "accuracy_at_0_9": 0.976068376068376,
+    "coverage_at_5pct_error": 0.7638888888888888,
+    "coverage_at_1pct_error": 0.5235042735042735,
+    "aurc": 0.026486667168512314,
+    "error_rate_at_0_9": 0.023931623931623933,
+    "confidence_bias": -0.007394295495098957,
+    "top_bins": {
+      "0.9": {
+        "n": 585,
+        "errors": 14,
+        "error_rate": 0.023931623931623933
+      },
+      "0.95": {
+        "n": 488,
+        "errors": 3,
+        "error_rate": 0.006147540983606557
+      },
+      "0.99": {
+        "n": 310,
+        "errors": 0,
+        "error_rate": 0.0
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.9935897435897436,
+        "confidence_cutoff": 0.9577243597700402
+      },
+      "0.8": {
+        "coverage": 0.8002136752136753,
+        "accuracy": 0.9439252336448598,
+        "confidence_cutoff": 0.7163203692849963
+      }
+    }
+  },
+  "coverage": {
+    "requested_records": 574,
+    "requested_questions": 936,
+    "evaluated_records": 574,
+    "evaluated_questions": 936,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}

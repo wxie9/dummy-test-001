@@ -1,0 +1,42 @@
+{
+  "status": "inference_complete",
+  "training_performed": false,
+  "source_sha256": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+  "probe_sha256": "0ecd6011a195603b91debb0b10c5d54e0d90431504964117ef861bfc53d51248",
+  "contexts": 525,
+  "questions": 1050,
+  "original_contexts_reused": 375,
+  "jobs": {
+    "qwen3-stage3": {
+      "gpu": 1,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/v7_training_fit_audit_20261030/qwen3-stage3"
+    },
+    "qwen3-lr5": {
+      "gpu": 2,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v7-lr5/stage4",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v7-lr5/full-train-after"
+    },
+    "qwen35-stage3": {
+      "gpu": 3,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/v7_training_fit_audit_20261030/qwen35-stage3"
+    },
+    "qwen35-lr5": {
+      "gpu": 4,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v7-lr5/stage4",
+      "baseline": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v7-lr5/full-train-after"
+    }
+  },
+  "checks": {
+    "all_question_objects_unchanged": true,
+    "all_labels_recomputed_from_visible_text": true
+  },
+  "scope": "Inference-only ablations on existing training cases, not a new 1500-context training dataset. Cached original-input predictions provide matched baselines. No test records or labels used.",
+  "limits": [
+    "The policy selector removes irrelevant covers using an exact visible-event match; it supplies retrieval help and changes length together.",
+    "Table scaling preserves probabilities, not literal population counts; valid only for the unchanged conditional-percentage questions.",
+    "These cases were trained on and this is not independent generalization."
+  ],
+  "goal_achieved": false
+}

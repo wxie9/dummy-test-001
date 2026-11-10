@@ -1,0 +1,4416 @@
+{
+  "scope": "Fixed same-generator development, not independent generalization. Subgroups overlap and can be small; no significance claim. Missing after means training/post-evaluation unfinished, not zero accuracy.",
+  "data_sha256": "1ed87c7660bc732fd86400c913ca70bac7834256084211d6c7ed7a8fe9a26322",
+  "models": {
+    "qwen3": {
+      "stage": "paired",
+      "subgroups": [
+        {
+          "axis": "family",
+          "value": "injection",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 17,
+          "after_correct": 16,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family",
+          "value": "insufficient",
+          "questions": 70,
+          "contexts": 70,
+          "before_correct": 37,
+          "after_correct": 41,
+          "repaired": 18,
+          "newly_wrong": 14
+        },
+        {
+          "axis": "family",
+          "value": "multihop",
+          "questions": 84,
+          "contexts": 54,
+          "before_correct": 29,
+          "after_correct": 37,
+          "repaired": 18,
+          "newly_wrong": 10
+        },
+        {
+          "axis": "family",
+          "value": "policy",
+          "questions": 120,
+          "contexts": 60,
+          "before_correct": 50,
+          "after_correct": 60,
+          "repaired": 18,
+          "newly_wrong": 8
+        },
+        {
+          "axis": "family",
+          "value": "probability",
+          "questions": 124,
+          "contexts": 60,
+          "before_correct": 40,
+          "after_correct": 48,
+          "repaired": 16,
+          "newly_wrong": 8
+        },
+        {
+          "axis": "family",
+          "value": "temporal",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 10,
+          "after_correct": 13,
+          "repaired": 4,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family",
+          "value": "tool_routing",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 9,
+          "after_correct": 25,
+          "repaired": 16,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "injection/decision",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 17,
+          "after_correct": 16,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "insufficient/decision",
+          "questions": 70,
+          "contexts": 70,
+          "before_correct": 37,
+          "after_correct": 41,
+          "repaired": 18,
+          "newly_wrong": 14
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/approver",
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/contact",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 4,
+          "after_correct": 4,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/controller",
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 7,
+          "after_correct": 10,
+          "repaired": 8,
+          "newly_wrong": 5
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/decision",
+          "questions": 19,
+          "contexts": 19,
+          "before_correct": 5,
+          "after_correct": 8,
+          "repaired": 4,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/group",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 7,
+          "after_correct": 9,
+          "repaired": 4,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/interest",
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 5,
+          "after_correct": 6,
+          "repaired": 2,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "policy/amount",
+          "questions": 60,
+          "contexts": 60,
+          "before_correct": 37,
+          "after_correct": 37,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "policy/reason",
+          "questions": 60,
+          "contexts": 60,
+          "before_correct": 13,
+          "after_correct": 23,
+          "repaired": 17,
+          "newly_wrong": 7
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/bucket",
+          "questions": 34,
+          "contexts": 34,
+          "before_correct": 9,
+          "after_correct": 12,
+          "repaired": 3,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/decision",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/forward",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/more_likely",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 6,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/posterior",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 6,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/probability",
+          "questions": 24,
+          "contexts": 24,
+          "before_correct": 8,
+          "after_correct": 5,
+          "repaired": 3,
+          "newly_wrong": 6
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/project",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 6,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/reverse",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 5,
+          "after_correct": 6,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/value",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "temporal/decision",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 10,
+          "after_correct": 13,
+          "repaired": 4,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "tool_routing/decision",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 9,
+          "after_correct": 25,
+          "repaired": 16,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "approval/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 5,
+          "after_correct": 5,
+          "repaired": 2,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "overtime/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 5,
+          "after_correct": 6,
+          "repaired": 4,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "price_match/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 8,
+          "after_correct": 9,
+          "repaired": 2,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "return/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 5,
+          "after_correct": 4,
+          "repaired": 1,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "shipping/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 6,
+          "repaired": 4,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "tenure/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 2,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "warranty/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 7,
+          "after_correct": 8,
+          "repaired": 3,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/variant",
+          "value": "no/decision",
+          "questions": 21,
+          "contexts": 21,
+          "before_correct": 5,
+          "after_correct": 14,
+          "repaired": 9,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "insufficient/variant",
+          "value": "nondeciding/decision",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 4,
+          "after_correct": 4,
+          "repaired": 2,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/variant",
+          "value": "unknown/decision",
+          "questions": 21,
+          "contexts": 21,
+          "before_correct": 13,
+          "after_correct": 10,
+          "repaired": 3,
+          "newly_wrong": 6
+        },
+        {
+          "axis": "insufficient/variant",
+          "value": "yes/decision",
+          "questions": 21,
+          "contexts": 21,
+          "before_correct": 15,
+          "after_correct": 13,
+          "repaired": 4,
+          "newly_wrong": 6
+        },
+        {
+          "axis": "multihop/chain_hops",
+          "value": "1/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/chain_hops",
+          "value": "2/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/chain_hops",
+          "value": "3/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 3,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/chain_hops",
+          "value": "4/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/chain_hops",
+          "value": "5/decision",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "0/contact",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "0/group",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 3,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "1/contact",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "1/group",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 1,
+          "after_correct": 3,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "2/contact",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "2/group",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 3,
+          "after_correct": 4,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/approver",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/contact",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/controller",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 3,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/decision",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/group",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/interest",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "object/contact",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "object/controller",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 3,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "object/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "object/group",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "object/interest",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/approver",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/contact",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/controller",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 5,
+          "repaired": 3,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/decision",
+          "questions": 9,
+          "contexts": 9,
+          "before_correct": 2,
+          "after_correct": 4,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/group",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 5,
+          "after_correct": 4,
+          "repaired": 1,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/interest",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/shape",
+          "value": "aggregated/controller",
+          "questions": 9,
+          "contexts": 9,
+          "before_correct": 6,
+          "after_correct": 4,
+          "repaired": 2,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "multihop/shape",
+          "value": "aggregated/interest",
+          "questions": 9,
+          "contexts": 9,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/shape",
+          "value": "chain/controller",
+          "questions": 9,
+          "contexts": 9,
+          "before_correct": 1,
+          "after_correct": 6,
+          "repaired": 6,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/shape",
+          "value": "chain/interest",
+          "questions": 9,
+          "contexts": 9,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "10/amount",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 8,
+          "after_correct": 8,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "10/reason",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 4,
+          "after_correct": 5,
+          "repaired": 3,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "2/amount",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 10,
+          "after_correct": 9,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "2/reason",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 3,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "4/amount",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 7,
+          "after_correct": 8,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "4/reason",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 3,
+          "after_correct": 8,
+          "repaired": 6,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "7/amount",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 12,
+          "after_correct": 12,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "7/reason",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 3,
+          "after_correct": 7,
+          "repaired": 5,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/deduct_before_cap",
+          "value": "False/amount",
+          "questions": 31,
+          "contexts": 31,
+          "before_correct": 17,
+          "after_correct": 17,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/deduct_before_cap",
+          "value": "False/reason",
+          "questions": 31,
+          "contexts": 31,
+          "before_correct": 7,
+          "after_correct": 15,
+          "repaired": 11,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/deduct_before_cap",
+          "value": "True/amount",
+          "questions": 29,
+          "contexts": 29,
+          "before_correct": 20,
+          "after_correct": 20,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/deduct_before_cap",
+          "value": "True/reason",
+          "questions": 29,
+          "contexts": 29,
+          "before_correct": 6,
+          "after_correct": 8,
+          "repaired": 6,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "policy/domain",
+          "value": "device/amount",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 10,
+          "after_correct": 9,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/domain",
+          "value": "device/reason",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 3,
+          "after_correct": 5,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/domain",
+          "value": "health/amount",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 8,
+          "after_correct": 9,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/domain",
+          "value": "health/reason",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 0,
+          "after_correct": 8,
+          "repaired": 8,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/domain",
+          "value": "home/amount",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 9,
+          "after_correct": 9,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/domain",
+          "value": "home/reason",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 6,
+          "after_correct": 5,
+          "repaired": 3,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "policy/domain",
+          "value": "travel/amount",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 10,
+          "after_correct": 10,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/domain",
+          "value": "travel/reason",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 4,
+          "after_correct": 5,
+          "repaired": 3,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/flag_exception",
+          "value": "False/amount",
+          "questions": 31,
+          "contexts": 31,
+          "before_correct": 18,
+          "after_correct": 18,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/flag_exception",
+          "value": "False/reason",
+          "questions": 31,
+          "contexts": 31,
+          "before_correct": 5,
+          "after_correct": 12,
+          "repaired": 10,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/flag_exception",
+          "value": "True/amount",
+          "questions": 29,
+          "contexts": 29,
+          "before_correct": 19,
+          "after_correct": 19,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/flag_exception",
+          "value": "True/reason",
+          "questions": 29,
+          "contexts": 29,
+          "before_correct": 8,
+          "after_correct": 11,
+          "repaired": 7,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "policy/flag_trigger",
+          "value": "False/amount",
+          "questions": 25,
+          "contexts": 25,
+          "before_correct": 12,
+          "after_correct": 12,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/flag_trigger",
+          "value": "False/reason",
+          "questions": 25,
+          "contexts": 25,
+          "before_correct": 4,
+          "after_correct": 9,
+          "repaired": 7,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/flag_trigger",
+          "value": "True/amount",
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 25,
+          "after_correct": 25,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/flag_trigger",
+          "value": "True/reason",
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 9,
+          "after_correct": 14,
+          "repaired": 10,
+          "newly_wrong": 5
+        },
+        {
+          "axis": "policy/named_item_claim",
+          "value": "False/amount",
+          "questions": 39,
+          "contexts": 39,
+          "before_correct": 26,
+          "after_correct": 27,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/named_item_claim",
+          "value": "False/reason",
+          "questions": 39,
+          "contexts": 39,
+          "before_correct": 8,
+          "after_correct": 17,
+          "repaired": 13,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "policy/named_item_claim",
+          "value": "True/amount",
+          "questions": 21,
+          "contexts": 21,
+          "before_correct": 11,
+          "after_correct": 10,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/named_item_claim",
+          "value": "True/reason",
+          "questions": 21,
+          "contexts": 21,
+          "before_correct": 5,
+          "after_correct": 6,
+          "repaired": 4,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/threshold_exception",
+          "value": "False/amount",
+          "questions": 32,
+          "contexts": 32,
+          "before_correct": 21,
+          "after_correct": 21,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/threshold_exception",
+          "value": "False/reason",
+          "questions": 32,
+          "contexts": 32,
+          "before_correct": 9,
+          "after_correct": 12,
+          "repaired": 8,
+          "newly_wrong": 5
+        },
+        {
+          "axis": "policy/threshold_exception",
+          "value": "True/amount",
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 16,
+          "after_correct": 16,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/threshold_exception",
+          "value": "True/reason",
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 4,
+          "after_correct": 11,
+          "repaired": 9,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/threshold_trigger",
+          "value": "False/amount",
+          "questions": 26,
+          "contexts": 26,
+          "before_correct": 15,
+          "after_correct": 15,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/threshold_trigger",
+          "value": "False/reason",
+          "questions": 26,
+          "contexts": 26,
+          "before_correct": 8,
+          "after_correct": 11,
+          "repaired": 7,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "policy/threshold_trigger",
+          "value": "True/amount",
+          "questions": 34,
+          "contexts": 34,
+          "before_correct": 22,
+          "after_correct": 22,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/threshold_trigger",
+          "value": "True/reason",
+          "questions": 34,
+          "contexts": 34,
+          "before_correct": 5,
+          "after_correct": 12,
+          "repaired": 10,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "probability/layout",
+          "value": "object/forward",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/layout",
+          "value": "object/reverse",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/layout",
+          "value": "prose/forward",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/layout",
+          "value": "prose/reverse",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/layout",
+          "value": "table/forward",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/layout",
+          "value": "table/reverse",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/bucket",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/more_likely",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/posterior",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/probability",
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 0,
+          "after_correct": 3,
+          "repaired": 3,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/project",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/value",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/bucket",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/more_likely",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/posterior",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/probability",
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 2,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/project",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/value",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/bucket",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 4,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/decision",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/more_likely",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/posterior",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/probability",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 3,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/project",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/value",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/bucket",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 5,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/decision",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/more_likely",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/posterior",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/probability",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 3,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/project",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/value",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_row_position",
+          "value": "0/forward",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_row_position",
+          "value": "0/reverse",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_row_position",
+          "value": "1/forward",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_row_position",
+          "value": "1/reverse",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_status_position",
+          "value": "0/forward",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_status_position",
+          "value": "0/reverse",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 5,
+          "after_correct": 6,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_status_position",
+          "value": "1/forward",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_status_position",
+          "value": "1/reverse",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/approval__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/approval__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/approval__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/approval__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/overtime__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 3,
+          "repaired": 3,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/overtime__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/overtime__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/overtime__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/price_match__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/price_match__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/price_match__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/price_match__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/return__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/return__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/return__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/return__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/shipping__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/shipping__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/shipping__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/shipping__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/tenure__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/tenure__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/tenure__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/tenure__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/warranty__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/warranty__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/warranty__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/warranty__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/dated_roster/contact",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 4,
+          "after_correct": 4,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/dated_roster/group",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 7,
+          "after_correct": 9,
+          "repaired": 4,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/dependency_candidates/decision",
+          "questions": 14,
+          "contexts": 14,
+          "before_correct": 5,
+          "after_correct": 8,
+          "repaired": 4,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/exact_supervisor_hops/approver",
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/ownership_control_and_profit/controller",
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 7,
+          "after_correct": 10,
+          "repaired": 8,
+          "newly_wrong": 5
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/ownership_control_and_profit/interest",
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 5,
+          "after_correct": 6,
+          "repaired": 2,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/rank_escalation/decision",
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/flag/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 6,
+          "after_correct": 6,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/flag/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 3,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/intentional/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 6,
+          "after_correct": 6,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/intentional/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 0,
+          "after_correct": 6,
+          "repaired": 6,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/late/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 5,
+          "after_correct": 6,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/late/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/not_purchased/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 6,
+          "after_correct": 6,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/not_purchased/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 3,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_limit/amount",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_limit/reason",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 3,
+          "after_correct": 5,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_loss/amount",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_loss/reason",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_sublimit/amount",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_sublimit/reason",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 4,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/threshold/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 6,
+          "after_correct": 6,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/threshold/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/waiting/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 6,
+          "after_correct": 6,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/waiting/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/all/bucket",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 3,
+          "after_correct": 5,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/all/probability",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/any/bucket",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/any/probability",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/any_fail/bucket",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/any_fail/probability",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/bayes/bucket",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/bayes/more_likely",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 6,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/bayes/posterior",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 6,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/compare/decision",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/expected_value/project",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 6,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/expected_value/value",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/table/forward",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/table/reverse",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 5,
+          "after_correct": 6,
+          "repaired": 1,
+          "newly_wrong": 0
+        }
+      ]
+    },
+    "qwen35": {
+      "stage": "paired",
+      "subgroups": [
+        {
+          "axis": "family",
+          "value": "injection",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 11,
+          "after_correct": 25,
+          "repaired": 14,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family",
+          "value": "insufficient",
+          "questions": 70,
+          "contexts": 70,
+          "before_correct": 45,
+          "after_correct": 44,
+          "repaired": 13,
+          "newly_wrong": 14
+        },
+        {
+          "axis": "family",
+          "value": "multihop",
+          "questions": 84,
+          "contexts": 54,
+          "before_correct": 34,
+          "after_correct": 54,
+          "repaired": 23,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "family",
+          "value": "policy",
+          "questions": 120,
+          "contexts": 60,
+          "before_correct": 47,
+          "after_correct": 67,
+          "repaired": 31,
+          "newly_wrong": 11
+        },
+        {
+          "axis": "family",
+          "value": "probability",
+          "questions": 124,
+          "contexts": 60,
+          "before_correct": 43,
+          "after_correct": 47,
+          "repaired": 22,
+          "newly_wrong": 18
+        },
+        {
+          "axis": "family",
+          "value": "temporal",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 11,
+          "after_correct": 16,
+          "repaired": 10,
+          "newly_wrong": 5
+        },
+        {
+          "axis": "family",
+          "value": "tool_routing",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 14,
+          "after_correct": 27,
+          "repaired": 13,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "injection/decision",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 11,
+          "after_correct": 25,
+          "repaired": 14,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "insufficient/decision",
+          "questions": 70,
+          "contexts": 70,
+          "before_correct": 45,
+          "after_correct": 44,
+          "repaired": 13,
+          "newly_wrong": 14
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/approver",
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/contact",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 2,
+          "after_correct": 4,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/controller",
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 12,
+          "after_correct": 17,
+          "repaired": 5,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/decision",
+          "questions": 19,
+          "contexts": 19,
+          "before_correct": 6,
+          "after_correct": 12,
+          "repaired": 7,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/group",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 10,
+          "after_correct": 12,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "multihop/interest",
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 4,
+          "after_correct": 8,
+          "repaired": 6,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "family_question",
+          "value": "policy/amount",
+          "questions": 60,
+          "contexts": 60,
+          "before_correct": 31,
+          "after_correct": 43,
+          "repaired": 17,
+          "newly_wrong": 5
+        },
+        {
+          "axis": "family_question",
+          "value": "policy/reason",
+          "questions": 60,
+          "contexts": 60,
+          "before_correct": 16,
+          "after_correct": 24,
+          "repaired": 14,
+          "newly_wrong": 6
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/bucket",
+          "questions": 34,
+          "contexts": 34,
+          "before_correct": 11,
+          "after_correct": 9,
+          "repaired": 4,
+          "newly_wrong": 6
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/decision",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 3,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/forward",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 2,
+          "after_correct": 4,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/more_likely",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 4,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/posterior",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 5,
+          "repaired": 4,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/probability",
+          "questions": 24,
+          "contexts": 24,
+          "before_correct": 6,
+          "after_correct": 8,
+          "repaired": 5,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/project",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 8,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/reverse",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "family_question",
+          "value": "probability/value",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 5,
+          "after_correct": 5,
+          "repaired": 2,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "family_question",
+          "value": "temporal/decision",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 11,
+          "after_correct": 16,
+          "repaired": 10,
+          "newly_wrong": 5
+        },
+        {
+          "axis": "family_question",
+          "value": "tool_routing/decision",
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 14,
+          "after_correct": 27,
+          "repaired": 13,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "approval/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 7,
+          "after_correct": 8,
+          "repaired": 3,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "overtime/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 5,
+          "repaired": 4,
+          "newly_wrong": 5
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "price_match/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 8,
+          "after_correct": 8,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "return/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 5,
+          "repaired": 1,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "shipping/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 5,
+          "repaired": 1,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "tenure/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 5,
+          "after_correct": 5,
+          "repaired": 2,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/scenario",
+          "value": "warranty/decision",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 7,
+          "after_correct": 8,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "insufficient/variant",
+          "value": "no/decision",
+          "questions": 21,
+          "contexts": 21,
+          "before_correct": 8,
+          "after_correct": 14,
+          "repaired": 8,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "insufficient/variant",
+          "value": "nondeciding/decision",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 4,
+          "after_correct": 6,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "insufficient/variant",
+          "value": "unknown/decision",
+          "questions": 21,
+          "contexts": 21,
+          "before_correct": 14,
+          "after_correct": 8,
+          "repaired": 1,
+          "newly_wrong": 7
+        },
+        {
+          "axis": "insufficient/variant",
+          "value": "yes/decision",
+          "questions": 21,
+          "contexts": 21,
+          "before_correct": 19,
+          "after_correct": 16,
+          "repaired": 1,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "multihop/chain_hops",
+          "value": "1/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 3,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/chain_hops",
+          "value": "2/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 3,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/chain_hops",
+          "value": "3/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/chain_hops",
+          "value": "4/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/chain_hops",
+          "value": "5/decision",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "0/contact",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 1,
+          "after_correct": 3,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "0/group",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 3,
+          "after_correct": 4,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "1/contact",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "1/group",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 4,
+          "after_correct": 4,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "2/contact",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/desired_contact_position",
+          "value": "2/group",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 3,
+          "after_correct": 4,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/approver",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/contact",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/controller",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 5,
+          "repaired": 3,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/decision",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 3,
+          "after_correct": 5,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/group",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "numbered/interest",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 2,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "object/contact",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "object/controller",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 6,
+          "after_correct": 6,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "object/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "object/group",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 3,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "object/interest",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/approver",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/contact",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/controller",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 4,
+          "after_correct": 6,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/decision",
+          "questions": 9,
+          "contexts": 9,
+          "before_correct": 2,
+          "after_correct": 5,
+          "repaired": 3,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/group",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 6,
+          "after_correct": 6,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/presentation",
+          "value": "plain/interest",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 3,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/shape",
+          "value": "aggregated/controller",
+          "questions": 9,
+          "contexts": 9,
+          "before_correct": 4,
+          "after_correct": 8,
+          "repaired": 4,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/shape",
+          "value": "aggregated/interest",
+          "questions": 9,
+          "contexts": 9,
+          "before_correct": 3,
+          "after_correct": 4,
+          "repaired": 2,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "multihop/shape",
+          "value": "chain/controller",
+          "questions": 9,
+          "contexts": 9,
+          "before_correct": 8,
+          "after_correct": 9,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "multihop/shape",
+          "value": "chain/interest",
+          "questions": 9,
+          "contexts": 9,
+          "before_correct": 1,
+          "after_correct": 4,
+          "repaired": 4,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "10/amount",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 9,
+          "after_correct": 7,
+          "repaired": 1,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "10/reason",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 3,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "2/amount",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 8,
+          "after_correct": 13,
+          "repaired": 6,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "2/reason",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 4,
+          "after_correct": 5,
+          "repaired": 4,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "4/amount",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 6,
+          "after_correct": 9,
+          "repaired": 4,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "4/reason",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 3,
+          "after_correct": 8,
+          "repaired": 5,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "7/amount",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 8,
+          "after_correct": 14,
+          "repaired": 6,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/cover_count",
+          "value": "7/reason",
+          "questions": 16,
+          "contexts": 16,
+          "before_correct": 7,
+          "after_correct": 8,
+          "repaired": 2,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/deduct_before_cap",
+          "value": "False/amount",
+          "questions": 31,
+          "contexts": 31,
+          "before_correct": 12,
+          "after_correct": 20,
+          "repaired": 10,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/deduct_before_cap",
+          "value": "False/reason",
+          "questions": 31,
+          "contexts": 31,
+          "before_correct": 6,
+          "after_correct": 13,
+          "repaired": 8,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/deduct_before_cap",
+          "value": "True/amount",
+          "questions": 29,
+          "contexts": 29,
+          "before_correct": 19,
+          "after_correct": 23,
+          "repaired": 7,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/deduct_before_cap",
+          "value": "True/reason",
+          "questions": 29,
+          "contexts": 29,
+          "before_correct": 10,
+          "after_correct": 11,
+          "repaired": 6,
+          "newly_wrong": 5
+        },
+        {
+          "axis": "policy/domain",
+          "value": "device/amount",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 9,
+          "after_correct": 11,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/domain",
+          "value": "device/reason",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 4,
+          "after_correct": 5,
+          "repaired": 3,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/domain",
+          "value": "health/amount",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 8,
+          "after_correct": 11,
+          "repaired": 4,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/domain",
+          "value": "health/reason",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 2,
+          "after_correct": 5,
+          "repaired": 4,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/domain",
+          "value": "home/amount",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 5,
+          "after_correct": 10,
+          "repaired": 5,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "policy/domain",
+          "value": "home/reason",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 7,
+          "after_correct": 7,
+          "repaired": 2,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/domain",
+          "value": "travel/amount",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 9,
+          "after_correct": 11,
+          "repaired": 5,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/domain",
+          "value": "travel/reason",
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 3,
+          "after_correct": 7,
+          "repaired": 5,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/flag_exception",
+          "value": "False/amount",
+          "questions": 31,
+          "contexts": 31,
+          "before_correct": 18,
+          "after_correct": 22,
+          "repaired": 6,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/flag_exception",
+          "value": "False/reason",
+          "questions": 31,
+          "contexts": 31,
+          "before_correct": 8,
+          "after_correct": 13,
+          "repaired": 8,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/flag_exception",
+          "value": "True/amount",
+          "questions": 29,
+          "contexts": 29,
+          "before_correct": 13,
+          "after_correct": 21,
+          "repaired": 11,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/flag_exception",
+          "value": "True/reason",
+          "questions": 29,
+          "contexts": 29,
+          "before_correct": 8,
+          "after_correct": 11,
+          "repaired": 6,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/flag_trigger",
+          "value": "False/amount",
+          "questions": 25,
+          "contexts": 25,
+          "before_correct": 12,
+          "after_correct": 16,
+          "repaired": 6,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/flag_trigger",
+          "value": "False/reason",
+          "questions": 25,
+          "contexts": 25,
+          "before_correct": 6,
+          "after_correct": 9,
+          "repaired": 6,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/flag_trigger",
+          "value": "True/amount",
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 19,
+          "after_correct": 27,
+          "repaired": 11,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/flag_trigger",
+          "value": "True/reason",
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 10,
+          "after_correct": 15,
+          "repaired": 8,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/named_item_claim",
+          "value": "False/amount",
+          "questions": 39,
+          "contexts": 39,
+          "before_correct": 20,
+          "after_correct": 31,
+          "repaired": 13,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/named_item_claim",
+          "value": "False/reason",
+          "questions": 39,
+          "contexts": 39,
+          "before_correct": 11,
+          "after_correct": 15,
+          "repaired": 7,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/named_item_claim",
+          "value": "True/amount",
+          "questions": 21,
+          "contexts": 21,
+          "before_correct": 11,
+          "after_correct": 12,
+          "repaired": 4,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/named_item_claim",
+          "value": "True/reason",
+          "questions": 21,
+          "contexts": 21,
+          "before_correct": 5,
+          "after_correct": 9,
+          "repaired": 7,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/threshold_exception",
+          "value": "False/amount",
+          "questions": 32,
+          "contexts": 32,
+          "before_correct": 19,
+          "after_correct": 22,
+          "repaired": 7,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "policy/threshold_exception",
+          "value": "False/reason",
+          "questions": 32,
+          "contexts": 32,
+          "before_correct": 11,
+          "after_correct": 14,
+          "repaired": 7,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "policy/threshold_exception",
+          "value": "True/amount",
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 12,
+          "after_correct": 21,
+          "repaired": 10,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "policy/threshold_exception",
+          "value": "True/reason",
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 5,
+          "after_correct": 10,
+          "repaired": 7,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/threshold_trigger",
+          "value": "False/amount",
+          "questions": 26,
+          "contexts": 26,
+          "before_correct": 14,
+          "after_correct": 17,
+          "repaired": 6,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/threshold_trigger",
+          "value": "False/reason",
+          "questions": 26,
+          "contexts": 26,
+          "before_correct": 10,
+          "after_correct": 12,
+          "repaired": 5,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "policy/threshold_trigger",
+          "value": "True/amount",
+          "questions": 34,
+          "contexts": 34,
+          "before_correct": 17,
+          "after_correct": 26,
+          "repaired": 11,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "policy/threshold_trigger",
+          "value": "True/reason",
+          "questions": 34,
+          "contexts": 34,
+          "before_correct": 6,
+          "after_correct": 12,
+          "repaired": 9,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "probability/layout",
+          "value": "object/forward",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/layout",
+          "value": "object/reverse",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/layout",
+          "value": "prose/forward",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/layout",
+          "value": "prose/reverse",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/layout",
+          "value": "table/forward",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/layout",
+          "value": "table/reverse",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/bucket",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/more_likely",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/posterior",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/probability",
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 1,
+          "after_correct": 3,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/project",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "fraction/value",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/bucket",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 3,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/more_likely",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/posterior",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/probability",
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 2,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/project",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "outof/value",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/bucket",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/decision",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/more_likely",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/posterior",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/probability",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/project",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "percent/value",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/bucket",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 2,
+          "after_correct": 4,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/decision",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/more_likely",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/posterior",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/probability",
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/project",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/rate_style",
+          "value": "words/value",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_row_position",
+          "value": "0/forward",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_row_position",
+          "value": "0/reverse",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_row_position",
+          "value": "1/forward",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 0,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_row_position",
+          "value": "1/reverse",
+          "questions": 4,
+          "contexts": 4,
+          "before_correct": 2,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/target_status_position",
+          "value": "0/forward",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 2,
+          "after_correct": 4,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_status_position",
+          "value": "0/reverse",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "probability/target_status_position",
+          "value": "1/forward",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "probability/target_status_position",
+          "value": "1/reverse",
+          "questions": 2,
+          "contexts": 2,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/approval__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 3,
+          "repaired": 3,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/approval__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/approval__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/approval__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/overtime__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 3,
+          "repaired": 3,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/overtime__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/overtime__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/overtime__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/price_match__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/price_match__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/price_match__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/price_match__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/return__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/return__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/return__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/return__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/shipping__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/shipping__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/shipping__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/shipping__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/tenure__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 0,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/tenure__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/tenure__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/tenure__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 2,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/warranty__no/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/warranty__nondeciding/decision",
+          "questions": 1,
+          "contexts": 1,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/warranty__unknown/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "insufficient/warranty__yes/decision",
+          "questions": 3,
+          "contexts": 3,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/dated_roster/contact",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 2,
+          "after_correct": 4,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/dated_roster/group",
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 10,
+          "after_correct": 12,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/dependency_candidates/decision",
+          "questions": 14,
+          "contexts": 14,
+          "before_correct": 5,
+          "after_correct": 11,
+          "repaired": 7,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/exact_supervisor_hops/approver",
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/ownership_control_and_profit/controller",
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 12,
+          "after_correct": 17,
+          "repaired": 5,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/ownership_control_and_profit/interest",
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 4,
+          "after_correct": 8,
+          "repaired": 6,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "multihop/rank_escalation/decision",
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/flag/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 6,
+          "after_correct": 6,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/flag/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 4,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/intentional/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 5,
+          "after_correct": 6,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/intentional/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 4,
+          "after_correct": 6,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/late/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 6,
+          "repaired": 4,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/late/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 0,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/not_purchased/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 4,
+          "after_correct": 6,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/not_purchased/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 3,
+          "after_correct": 2,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_limit/amount",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_limit/reason",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 1,
+          "after_correct": 3,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_loss/amount",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 1,
+          "after_correct": 5,
+          "repaired": 5,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_loss/reason",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_sublimit/amount",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/pay_sublimit/reason",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 2,
+          "after_correct": 4,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/threshold/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 5,
+          "after_correct": 5,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/threshold/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 2,
+          "repaired": 2,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/waiting/amount",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 5,
+          "after_correct": 5,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "policy/waiting/reason",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/all/bucket",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 4,
+          "after_correct": 4,
+          "repaired": 0,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/all/probability",
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 1,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/any/bucket",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/any/probability",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 2,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/any_fail/bucket",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 2,
+          "after_correct": 4,
+          "repaired": 3,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/any_fail/probability",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 6,
+          "repaired": 4,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/bayes/bucket",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 0,
+          "repaired": 0,
+          "newly_wrong": 4
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/bayes/more_likely",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 4,
+          "repaired": 1,
+          "newly_wrong": 1
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/bayes/posterior",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 5,
+          "repaired": 4,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/compare/decision",
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 3,
+          "after_correct": 1,
+          "repaired": 1,
+          "newly_wrong": 3
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/expected_value/project",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 8,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/expected_value/value",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 5,
+          "after_correct": 5,
+          "repaired": 2,
+          "newly_wrong": 2
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/table/forward",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 2,
+          "after_correct": 4,
+          "repaired": 2,
+          "newly_wrong": 0
+        },
+        {
+          "axis": "subtype",
+          "value": "probability/table/reverse",
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 3,
+          "repaired": 1,
+          "newly_wrong": 1
+        }
+      ]
+    }
+  }
+}

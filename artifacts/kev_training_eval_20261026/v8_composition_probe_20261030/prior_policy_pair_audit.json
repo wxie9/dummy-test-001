@@ -1,0 +1,35 @@
+{
+  "scope": "Audit of existing v5 pairs; option differences do not prove why training failed. Reason candidate values were identical in all 150 pairs, despite permutation differences.",
+  "source": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v5_20261030/train.jsonl",
+  "source_sha256": "50d76359f88eafc75392218a70538adc966640f567de06c0852a492cb80bc463",
+  "counts": {
+    "pairs": 150,
+    "amount_identical_criteria_mapping": 1,
+    "amount_same_candidate_values": 50,
+    "reason_identical_criteria_mapping": 0,
+    "reason_same_candidate_values": 150
+  },
+  "by_kind": {
+    "order": {
+      "pairs": 60,
+      "amount_identical_criteria_mapping": 0,
+      "amount_same_candidate_values": 20,
+      "reason_identical_criteria_mapping": 0,
+      "reason_same_candidate_values": 60
+    },
+    "multiple_denial": {
+      "pairs": 30,
+      "amount_identical_criteria_mapping": 1,
+      "amount_same_candidate_values": 30,
+      "reason_identical_criteria_mapping": 0,
+      "reason_same_candidate_values": 30
+    },
+    "boundary": {
+      "pairs": 60,
+      "amount_identical_criteria_mapping": 0,
+      "amount_same_candidate_values": 0,
+      "reason_identical_criteria_mapping": 0,
+      "reason_same_candidate_values": 60
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "full_v7_1500_assembled_remote_preflight_passed_pipelines_started",
+  "target_contexts": 1500,
+  "replay_contexts_separate": 6000,
+  "planned_by_family": {
+    "tool_routing": 100,
+    "temporal": 100,
+    "probability": 350,
+    "policy": 300,
+    "multihop": 270,
+    "insufficient": 280,
+    "injection": 100
+  },
+  "prior_full_train": {
+    "path": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_20261030/train.jsonl",
+    "contexts": 1500,
+    "unique_normalized_visible_states": 1500,
+    "questions": 3440,
+    "sha256": "58572b2118b10d9505d5bdb027585fab75f4ad7e52a1c5d8d155979459fecea8"
+  },
+  "revised_probability": {
+    "path": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/probability_transfer_candidates_20261030/train.candidate.jsonl",
+    "contexts": 350,
+    "questions": 720,
+    "prior_v6_exact_normalized_state_overlap": 0,
+    "sha256": "45e52ec992acb0738f7bac1d3394a6d86f5239f2a6e1823031b90b7ae5193f8f"
+  },
+  "retained_contexts": 300,
+  "other_replacement_contexts_pending": 0,
+  "counting_rule": "Count distinct visible contexts; subquestions, epochs, views and replay do not increase the targeted-context count. Matched cases and shared generators can remain correlated; exact uniqueness is not statistical independence.",
+  "replacement_components_ready": {
+    "multihop": {
+      "path": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/multihop_transfer_candidates_20261030/train.candidate.jsonl",
+      "contexts": 270,
+      "sha256": "dee9b6090ebefbb12370c9d25bfe991330a03654388f5dab8ce0bb03bc02a2be"
+    },
+    "insufficient": {
+      "path": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/insufficient_transfer_candidates_20261030/train.candidate.jsonl",
+      "contexts": 280,
+      "sha256": "fc64d38f4ebf92ffc09c5ec323c0bf9256f41a7ba417aa1939259ef2d5735273"
+    },
+    "probability": {
+      "path": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/probability_transfer_candidates_20261030/train.candidate.jsonl",
+      "contexts": 350,
+      "sha256": "45e52ec992acb0738f7bac1d3394a6d86f5239f2a6e1823031b90b7ae5193f8f"
+    },
+    "policy": {
+      "path": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/policy_transfer_candidates_20261030/train.candidate.jsonl",
+      "contexts": 300,
+      "sha256": "709b696f59220febb970cc86367415079d9d8fdfec141367ec6fe0c28e9d32b6"
+    }
+  },
+  "replacement_contexts_ready": 1200,
+  "total_contexts_prepared": 1500,
+  "pending_families": {},
+  "assembled_directory": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v7_20261030",
+  "assembled_train_sha256": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845"
+}

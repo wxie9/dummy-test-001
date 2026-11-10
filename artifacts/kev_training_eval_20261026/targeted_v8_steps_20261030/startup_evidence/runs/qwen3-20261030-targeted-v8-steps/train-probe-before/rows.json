@@ -1,0 +1,6633 @@
+[
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00159",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00159",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00159",
+    "p": [
+      0.3565451907081959,
+      0.6434548092918041
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.7706855535507202,
+      2.3610763549804688
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00221",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00221",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00221",
+    "p": [
+      0.5332486311645132,
+      0.46675136883548685
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      2.62109112739563,
+      2.4879000186920166
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00030",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00030",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00030",
+    "p": [
+      0.8072748780250549,
+      0.19272512197494507
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.4616193771362305,
+      1.0292199850082397
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00412",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00412",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00412",
+    "p": [
+      0.34937745332717896,
+      0.650622546672821
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.7871479988098145,
+      2.4089248180389404
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00066",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00066",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00066",
+    "p": [
+      0.6225863509599462,
+      0.3774136490400538
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.2293522357940674,
+      1.7288117408752441
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00438",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00438",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00438",
+    "p": [
+      0.8092631342787484,
+      0.19073686572125154
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      2.4676406383514404,
+      1.0224113464355469
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00185",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00185",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00185",
+    "p": [
+      0.24325438931231452,
+      0.7567456106876855
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.5160129070281982,
+      2.6509323120117188
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00133",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00133",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00133",
+    "p": [
+      0.4829774653024237,
+      0.5170225346975763
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.521989345550537,
+      2.5901057720184326
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00493",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00493",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00493",
+    "p": [
+      0.44023896931889744,
+      0.5597610306811025
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.4950623512268066,
+      2.7352545261383057
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00079",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00079",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00079",
+    "p": [
+      0.6449163748298995,
+      0.3550836251701005
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      2.335430145263672,
+      1.7386627197265625
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00163",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00163",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00163",
+    "p": [
+      0.33288417258513486,
+      0.6671158274148651
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.8808653354644775,
+      2.5760345458984375
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00323",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00323",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00323",
+    "p": [
+      0.2636547841819992,
+      0.7363452158180008
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.2628824710845947,
+      2.2899410724639893
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00129",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00129",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00129",
+    "p": [
+      0.6377747274771495,
+      0.36222527252285047
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      2.3570377826690674,
+      1.7913188934326172
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00458",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00458",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00458",
+    "p": [
+      0.24677840262151945,
+      0.7532215973784806
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.1081637144088745,
+      2.224032402038574
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00104",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00104",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00104",
+    "p": [
+      0.5657185912132263,
+      0.4342814087867737
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.400787830352783,
+      2.1363837718963623
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00430",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00430",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00430",
+    "p": [
+      0.23126451782795682,
+      0.7687354821720432
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      1.4595448970794678,
+      2.6607296466827393
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00446",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00446",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00446",
+    "p": [
+      0.7882235411338943,
+      0.21177645886610572
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.5029194355010986,
+      1.188668966293335
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00487",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00487",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00487",
+    "p": [
+      0.34930612595957145,
+      0.6506938740404286
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.6791718006134033,
+      2.301262378692627
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00379",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00379",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00379",
+    "p": [
+      0.4559051990509033,
+      0.5440948009490967
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.539780616760254,
+      2.7166192531585693
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00082",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00082",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00082",
+    "p": [
+      0.7407215237617493,
+      0.25927847623825073
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.1095781326293945,
+      1.0598561763763428
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/3",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/3",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/3",
+    "p": [
+      0.5240904405170942,
+      0.32900269800440657,
+      0.14690686147849927
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      2.2959649562835693,
+      1.830366611480713,
+      1.0240994691848755
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/shipping/no/4",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/shipping/no/4",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/shipping/no/4",
+    "p": [
+      0.22283114160848944,
+      0.5523734010402351,
+      0.22479545735127543
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.056011199951172,
+      2.9638211727142334,
+      2.0647878646850586
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/no/7",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/no/7",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/no/7",
+    "p": [
+      0.3787609097176926,
+      0.08493472762308608,
+      0.5363043626592213
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.418792247772217,
+      0.9237701296806335,
+      2.7665889263153076
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/8",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/8",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/8",
+    "p": [
+      0.4586351948569773,
+      0.26024562896030035,
+      0.2811191761827223
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.7738488912582397,
+      1.2072197198867798,
+      1.2843724489212036
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/price_match/no/9",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/price_match/no/9",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/price_match/no/9",
+    "p": [
+      0.07867981610715115,
+      0.6649218896764798,
+      0.07195261228013951,
+      0.18444568193622948
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.9107921123504639,
+      4.045074939727783,
+      1.8214131593704224,
+      2.7627604007720947
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/unknown/9",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/unknown/9",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/unknown/9",
+    "p": [
+      0.2317953591316247,
+      0.6227682325656448,
+      0.14543640830273044
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.7522809505462646,
+      2.7406005859375,
+      1.2861649990081787
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/return/unknown/1",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/return/unknown/1",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/return/unknown/1",
+    "p": [
+      0.31376479653575434,
+      0.24595541152557382,
+      0.44027979193867184
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      2.2485334873199463,
+      2.005040168762207,
+      2.5873003005981445
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/no/1",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/no/1",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/no/1",
+    "p": [
+      0.11998229265133854,
+      0.27188239716957796,
+      0.6081353101790835
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.128251314163208,
+      1.9462767839431763,
+      2.7513046264648438
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/unknown/8",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/unknown/8",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/unknown/8",
+    "p": [
+      0.40607686015619965,
+      0.4325775012711808,
+      0.16134563857261963
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      2.2929890155792236,
+      2.356208086013794,
+      1.3699954748153687
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/yes/3",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/yes/3",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/yes/3",
+    "p": [
+      0.4442701273520272,
+      0.3599899953605235,
+      0.1957398772874493
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.0749502182006836,
+      1.864593744277954,
+      1.2553040981292725
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/overtime/unknown/11",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/overtime/unknown/11",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/overtime/unknown/11",
+    "p": [
+      0.31718223197354267,
+      0.17972372053406957,
+      0.5030940474923877
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.7742725610733032,
+      1.206216812133789,
+      2.2355732917785645
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/shipping/unknown/7",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/shipping/unknown/7",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/shipping/unknown/7",
+    "p": [
+      0.40824796594297735,
+      0.37258182641484555,
+      0.2191702076421771
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      2.668823480606079,
+      2.5774054527282715,
+      2.046797275543213
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/11",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/11",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/unknown/11",
+    "p": [
+      0.16887189699518526,
+      0.669548044645012,
+      0.16158005835980263
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.278708815574646,
+      2.6561713218688965,
+      1.2345690727233887
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/price_match/unknown/0",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/price_match/unknown/0",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/price_match/unknown/0",
+    "p": [
+      0.3655672533226291,
+      0.3788857318876038,
+      0.14215628273202915,
+      0.11339073205773785
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      1.9341247081756592,
+      1.9699091911315918,
+      0.9896014928817749,
+      0.7635141611099243
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/no/4",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/no/4",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/approval/no/4",
+    "p": [
+      0.26078544492808314,
+      0.31462825449536713,
+      0.4245863005765497
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      2.3680574893951416,
+      2.555751323699951,
+      2.8554747104644775
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/return/yes/5",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/return/yes/5",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/return/yes/5",
+    "p": [
+      0.6605924515558582,
+      0.21791770051235781,
+      0.12148984793178397
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      2.951991081237793,
+      1.8429714441299438,
+      1.258684754371643
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/overtime/yes/1",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/overtime/yes/1",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/overtime/yes/1",
+    "p": [
+      0.11227118968963623,
+      0.3878454267978668,
+      0.49988338351249695
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.8581556677818298,
+      2.0978453159332275,
+      2.3516132831573486
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/yes/7",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/yes/7",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/yes/7",
+    "p": [
+      0.35256793044305057,
+      0.36950983495980994,
+      0.2779222345971395
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.7831705808639526,
+      1.8301045894622803,
+      1.5452686548233032
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/unknown/10",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/unknown/10",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/tenure/unknown/10",
+    "p": [
+      0.39275476336479187,
+      0.1642167866230011,
+      0.44302845001220703
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.2066280841827393,
+      1.3346301317214966,
+      2.3270766735076904
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/no/3",
+    "group": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/no/3",
+    "question": "decision",
+    "source": "targeted-v7-20261030/insufficient",
+    "task": "targeted-v7-20261030/insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/insufficient-transfer-20261030/train/warranty/no/3",
+    "p": [
+      0.3583334279557041,
+      0.4335730244644575,
+      0.20809354757983842
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.0825016498565674,
+      2.2730979919433594,
+      1.5390254259109497
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/78",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/78",
+    "question": "controller",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/78",
+    "p": [
+      0.3487594567793851,
+      0.11206346249296684,
+      0.16309876010870517,
+      0.18920352209194652,
+      0.18687479852699643
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.9896578788757324,
+      0.8543407320976257,
+      1.2296313047409058,
+      1.378098726272583,
+      1.365714430809021
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/78",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/78",
+    "question": "interest",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/78",
+    "p": [
+      0.1270490615155338,
+      0.1990716054828079,
+      0.2950767046602824,
+      0.08640063747169012,
+      0.24532783579814066,
+      0.04707415507154513
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.056714415550232,
+      1.5058056116104126,
+      1.899376392364502,
+      0.6711361408233643,
+      1.7147364616394043,
+      0.0638650506734848
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/77",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/77",
+    "question": "controller",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/77",
+    "p": [
+      0.11980797916936906,
+      0.33282395701372686,
+      0.35552226967331363,
+      0.12943665490393855,
+      0.06240913923965187
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.836269736289978,
+      2.8579931259155273,
+      2.9239673614501953,
+      1.9135710000991821,
+      1.1840910911560059
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/77",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/77",
+    "question": "interest",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/77",
+    "p": [
+      0.0914315865720572,
+      0.17795808348122114,
+      0.2934431389951238,
+      0.09426213660445606,
+      0.11740824405240649,
+      0.22549681029473528
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.1943559646606445,
+      1.860313057899475,
+      2.3604488372802734,
+      1.2248444557189941,
+      1.4444220066070557,
+      2.0970709323883057
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/19",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/19",
+    "question": "decision",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/19",
+    "p": [
+      0.1574212508625165,
+      0.28376425158274926,
+      0.1546678142150585,
+      0.21920090076926055,
+      0.18494578257041522
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.8115020990371704,
+      2.4007205963134766,
+      1.7938565015792847,
+      2.1425654888153076,
+      1.9726394414901733
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/41",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/41",
+    "question": "decision",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/41",
+    "p": [
+      0.1465549236486073,
+      0.1344986469074479,
+      0.40591366913528754,
+      0.3130327603086573
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      0.7273082733154297,
+      0.6414621472358704,
+      1.7460484504699707,
+      1.4862158298492432
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/12",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/12",
+    "question": "contact",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/12",
+    "p": [
+      0.15380979271872905,
+      0.1834363423333917,
+      0.2889953682867602,
+      0.17796085080329407,
+      0.19579764585782494
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.9010781049728394,
+      2.0772292613983154,
+      2.5317721366882324,
+      2.0469250679016113,
+      2.1424431800842285
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/12",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/12",
+    "question": "group",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/12",
+    "p": [
+      0.4081254005432129,
+      0.3151755928993225,
+      0.2766990065574646
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.8211557865142822,
+      2.562711238861084,
+      2.432511568069458
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/25",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/25",
+    "question": "contact",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/25",
+    "p": [
+      0.16140960156917572,
+      0.16844218969345093,
+      0.17701731622219086,
+      0.272323340177536,
+      0.22080755233764648
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.686145305633545,
+      1.7287925481796265,
+      1.7784476280212402,
+      2.2091901302337646,
+      1.999491572380066
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/25",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/25",
+    "question": "group",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/25",
+    "p": [
+      0.2728473490042104,
+      0.3361009957880672,
+      0.39105165520772234
+    ],
+    "raw_probability_sum": 0.9999999105930328,
+    "zero_count": 0,
+    "logits": [
+      2.428971767425537,
+      2.6374709606170654,
+      2.7888989448547363
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/65",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/65",
+    "question": "decision",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/65",
+    "p": [
+      0.21836358959566324,
+      0.1799989545344995,
+      0.18530472175194984,
+      0.41633273411788746
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      0.8158412575721741,
+      0.6226307153701782,
+      0.6516813039779663,
+      1.4611644744873047
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/8",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/8",
+    "question": "decision",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/8",
+    "p": [
+      0.15128905169433046,
+      0.2745610907935446,
+      0.16950187566865232,
+      0.4046479818434726
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      0.5522539019584656,
+      1.1482354402542114,
+      0.6659256219863892,
+      1.5360791683197021
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/20",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/20",
+    "question": "decision",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/20",
+    "p": [
+      0.12116841046261176,
+      0.11389055678411489,
+      0.16097835956546128,
+      0.19422076353101786,
+      0.15471724935297296,
+      0.1083034931376056,
+      0.14672116716621567
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.8126152753829956,
+      1.7506717443466187,
+      2.0967037677764893,
+      2.2844293117523193,
+      2.057033061981201,
+      1.700371265411377,
+      2.003967761993408
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/51",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/51",
+    "question": "decision",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/51",
+    "p": [
+      0.15141654014587402,
+      0.20165365934371948,
+      0.21430864930152893,
+      0.43262115120887756
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.617502748966217,
+      0.9040197730064392,
+      0.9648853540420532,
+      1.6673305034637451
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/7",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/7",
+    "question": "controller",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/7",
+    "p": [
+      0.06439639026812591,
+      0.2935996717274116,
+      0.14770379992657454,
+      0.17140046145171958,
+      0.3228996766261684
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      0.7003298997879028,
+      2.21748948097229,
+      1.530481219291687,
+      1.6792749166488647,
+      2.3126139640808105
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/7",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/7",
+    "question": "interest",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/7",
+    "p": [
+      0.23175079148450772,
+      0.05479597422769608,
+      0.1524663601621917,
+      0.268941050818735,
+      0.14796616467757892,
+      0.1440796586292906
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      2.0032620429992676,
+      0.5612162351608276,
+      1.5845434665679932,
+      2.1520917415618896,
+      1.554583191871643,
+      1.5279659032821655
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/0",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/0",
+    "question": "decision",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/0",
+    "p": [
+      0.1020591401944478,
+      0.14366913805173517,
+      0.1781787246734539,
+      0.2071868320158235,
+      0.1644011399120857,
+      0.20450502515245397
+    ],
+    "raw_probability_sum": 0.9999999329447746,
+    "zero_count": 0,
+    "logits": [
+      1.5425492525100708,
+      1.8845099210739136,
+      2.0997838973999023,
+      2.250617742538452,
+      2.019306182861328,
+      2.2375893592834473
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/30",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/30",
+    "question": "controller",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/30",
+    "p": [
+      0.27824877578198154,
+      0.20954243753762497,
+      0.1753079710734765,
+      0.2713715616043214,
+      0.06552925400259559
+    ],
+    "raw_probability_sum": 0.9999999329447746,
+    "zero_count": 0,
+    "logits": [
+      2.6333582401275635,
+      2.349768877029419,
+      2.171386957168579,
+      2.6083316802978516,
+      1.1873393058776855
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/30",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/30",
+    "question": "interest",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/30",
+    "p": [
+      0.4281138713938911,
+      0.11389351466456779,
+      0.18966585115096196,
+      0.18238652970810934,
+      0.04980312586124054,
+      0.036137107221229266
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.629215717315674,
+      1.305090308189392,
+      1.815090298652649,
+      1.7759548425674438,
+      0.47790423035621643,
+      0.15714658796787262
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/8",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/8",
+    "question": "contact",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/8",
+    "p": [
+      0.11171610158047307,
+      0.2094817804429333,
+      0.19905680862941166,
+      0.2739143134783427,
+      0.20583099586883924
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.2313703298568726,
+      1.860046148300171,
+      1.8089996576309204,
+      2.1282248497009277,
+      1.8424649238586426
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/8",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/8",
+    "question": "group",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/8",
+    "p": [
+      0.11660797062063238,
+      0.3788640470887419,
+      0.5045279822906257
+    ],
+    "raw_probability_sum": 1.0000000074505806,
+    "zero_count": 0,
+    "logits": [
+      1.6211122274398804,
+      2.7994720935821533,
+      3.0859179496765137
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/17",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/17",
+    "question": "contact",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/17",
+    "p": [
+      0.18133075805501278,
+      0.23161949562459433,
+      0.1506413690841402,
+      0.2505883015779898,
+      0.1858200756582629
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.7338831424713135,
+      1.9786564111709595,
+      1.5484623908996582,
+      2.0573718547821045,
+      1.7583394050598145
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/17",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/17",
+    "question": "group",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dated_roster/17",
+    "p": [
+      0.12949126572933,
+      0.6124444421397316,
+      0.2580642921309384
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.8263988494873047,
+      3.3802435398101807,
+      2.515994071960449
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/8",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/8",
+    "question": "decision",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/rank_escalation/8",
+    "p": [
+      0.10280850738540626,
+      0.15210249226750847,
+      0.28982840456963455,
+      0.19013968608544915,
+      0.2651209096920016
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      1.445987343788147,
+      1.8376739025115967,
+      2.482408285140991,
+      2.060878276824951,
+      2.3933053016662598
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/27",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/27",
+    "question": "decision",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/27",
+    "p": [
+      0.47235025547891096,
+      0.15106930878551875,
+      0.19875244203947656,
+      0.17782799369609376
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.763000726699829,
+      0.6230188012123108,
+      0.8973399996757507,
+      0.7860966920852661
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/exact_supervisor_hops/19",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/exact_supervisor_hops/19",
+    "question": "approver",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i"
+    ],
+    "label": 7,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/exact_supervisor_hops/19",
+    "p": [
+      0.06313005324937601,
+      0.04564795813143097,
+      0.060538305362250855,
+      0.06491002682261268,
+      0.10493357125422251,
+      0.04265382299772736,
+      0.051754212072276026,
+      0.061367901465591096,
+      0.5050641486445124
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      2.041707754135132,
+      1.7174698114395142,
+      1.9997870922088623,
+      2.0695128440856934,
+      2.5498383045196533,
+      1.649627685546875,
+      1.8430166244506836,
+      2.013397693634033,
+      4.121196269989014
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/63",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/63",
+    "question": "controller",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/63",
+    "p": [
+      0.19180309772491455,
+      0.3492535352706909,
+      0.1180916577577591,
+      0.19078034162521362,
+      0.15007136762142181
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.483081579208374,
+      2.0824103355407715,
+      0.9980733394622803,
+      1.477734923362732,
+      1.2377232313156128
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/63",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/63",
+    "question": "interest",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/ownership_control_and_profit/63",
+    "p": [
+      0.13065125954220028,
+      0.19037722690207243,
+      0.05194496876247367,
+      0.2584012333273336,
+      0.11114425460349375,
+      0.2574810568624262
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.058972716331482,
+      1.435448408126831,
+      0.13662588596343994,
+      1.7409545183181763,
+      0.8972699046134949,
+      1.7373870611190796
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/24",
+    "group": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/24",
+    "question": "decision",
+    "source": "targeted-v7-20261030/multihop",
+    "task": "targeted-v7-20261030/multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/24",
+    "p": [
+      0.15502269566059113,
+      0.47417503595352173,
+      0.1746060997247696,
+      0.19619616866111755
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.6883321404457092,
+      1.8063371181488037,
+      0.8072930574417114,
+      0.9238755702972412
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/14",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/14",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/14",
+    "p": [
+      0.1781077547230404,
+      0.32828769332384833,
+      0.28864023304462605,
+      0.09370040218308867,
+      0.11126391672539648
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.937386393547058,
+      2.5488879680633545,
+      2.4201786518096924,
+      1.2951000928878784,
+      1.466902732849121
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/14",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/14",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/14",
+    "p": [
+      0.18553523058601754,
+      0.20306822075254713,
+      0.20417442340438471,
+      0.22371226059104177,
+      0.18350986466600885
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      2.0798380374908447,
+      2.170135259628296,
+      2.175567865371704,
+      2.266953945159912,
+      2.068861722946167
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/7",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/7",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/7",
+    "p": [
+      0.12591973874331688,
+      0.13105147491165361,
+      0.4674188285729813,
+      0.15894316916421788,
+      0.11666678860783032
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.371430516242981,
+      1.411375880241394,
+      2.683011531829834,
+      1.6043325662612915,
+      1.2951077222824097
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/7",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/7",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/7",
+    "p": [
+      0.1542725001072511,
+      0.17041613381980852,
+      0.20538987179175974,
+      0.24399982064963724,
+      0.2259216736315434
+    ],
+    "raw_probability_sum": 1.000000074505806,
+    "zero_count": 0,
+    "logits": [
+      2.0721216201782227,
+      2.171644449234009,
+      2.358311176300049,
+      2.5305685997009277,
+      2.45358943939209
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/3",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/3",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/3",
+    "p": [
+      0.10319326529670697,
+      0.02783702049859742,
+      0.30798818800631383,
+      0.27823659000257245,
+      0.2827449361958093
+    ],
+    "raw_probability_sum": 1.0000000279396772,
+    "zero_count": 0,
+    "logits": [
+      1.0370358228683472,
+      -0.27320098876953125,
+      2.130493640899658,
+      2.0289039611816406,
+      2.0449774265289307
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/3",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/3",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/3",
+    "p": [
+      0.15033848359676474,
+      0.2258806791025299,
+      0.21392883041607097,
+      0.18188486722283262,
+      0.22796713966180177
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.7806239128112793,
+      2.18774151802063,
+      2.133378028869629,
+      1.9711085557937622,
+      2.1969361305236816
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/threshold/18",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/threshold/18",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/threshold/18",
+    "p": [
+      0.15533556622771794,
+      0.06603472180793889,
+      0.4008250087806958,
+      0.11580636783712983,
+      0.26199833534651756
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      1.292151927947998,
+      0.43674492835998535,
+      2.240089178085327,
+      0.9984837770462036,
+      1.814902424812317
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/threshold/18",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/threshold/18",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/threshold/18",
+    "p": [
+      0.12462341318927883,
+      0.20325731195339514,
+      0.1762342492394354,
+      0.2223055710413807,
+      0.2735794545765099
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.4645545482635498,
+      1.953730821609497,
+      1.8110722303390503,
+      2.0433108806610107,
+      2.250850200653076
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/23",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/23",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/23",
+    "p": [
+      0.324040206700863,
+      0.06791570088204518,
+      0.1026750810643664,
+      0.2152984754390901,
+      0.2900705359136353
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      2.1437740325927734,
+      0.5811736583709717,
+      0.9944758415222168,
+      1.7349317073822021,
+      2.0330305099487305
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/23",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/23",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/23",
+    "p": [
+      0.1897102856463364,
+      0.20238648071208482,
+      0.20239241137459346,
+      0.19733696862083486,
+      0.20817385364615046
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.9782087802886963,
+      2.0428898334503174,
+      2.042919158935547,
+      2.0176234245300293,
+      2.0710842609405518
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/6",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/6",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/6",
+    "p": [
+      0.1141505845945372,
+      0.10884546569619674,
+      0.346061738923652,
+      0.16543471936460374,
+      0.26550749142101027
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.1882662773132324,
+      1.1406768560409546,
+      2.2973649501800537,
+      1.5593243837356567,
+      2.032390832901001
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/6",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/6",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/6",
+    "p": [
+      0.17930423144672922,
+      0.19523476390631414,
+      0.18905076747830107,
+      0.2299332630674086,
+      0.20647697410124694
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      2.086915969848633,
+      2.172034740447998,
+      2.13984751701355,
+      2.3356211185455322,
+      2.2280209064483643
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/not_purchased/0",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/not_purchased/0",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/not_purchased/0",
+    "p": [
+      0.10789436101913452,
+      0.3630155324935913,
+      0.17734825611114502,
+      0.25969308614730835,
+      0.0920487642288208
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.6784496307373047,
+      2.891742706298828,
+      2.17541241645813,
+      2.556797504425049,
+      1.5196155309677124
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/not_purchased/0",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/not_purchased/0",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/not_purchased/0",
+    "p": [
+      0.23431989201426667,
+      0.2004049241482478,
+      0.19576115614531703,
+      0.193468150593815,
+      0.17604587709835354
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.592951536178589,
+      2.4366042613983154,
+      2.4131596088409424,
+      2.4013772010803223,
+      2.307008981704712
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/4",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/4",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/4",
+    "p": [
+      0.1409055653619274,
+      0.21576086651209891,
+      0.22428084422413308,
+      0.281780672749013,
+      0.13727205115282765
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.478230595588684,
+      1.9043112993240356,
+      1.9430396556854248,
+      2.171269655227661,
+      1.4521052837371826
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/4",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/4",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/4",
+    "p": [
+      0.2016350298876311,
+      0.1939669669573461,
+      0.1868756683636357,
+      0.20664317597980536,
+      0.21087915881158176
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.107720136642456,
+      2.068948745727539,
+      2.0317044258117676,
+      2.1322543621063232,
+      2.1525461673736572
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/8",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/8",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/8",
+    "p": [
+      0.13390179078207753,
+      0.16319441916938437,
+      0.08390519830513893,
+      0.27999100297682733,
+      0.3390075887665718
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.501287817955017,
+      1.6991233825683594,
+      1.0338687896728516,
+      2.238938570022583,
+      2.430203676223755
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/8",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/8",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/8",
+    "p": [
+      0.14060743153095245,
+      0.21108371019363403,
+      0.21470388770103455,
+      0.19793440401554108,
+      0.2356705665588379
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.9747698307037354,
+      2.3810527324676514,
+      2.398057699203491,
+      2.3167335987091064,
+      2.4912328720092773
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/24",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/24",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/24",
+    "p": [
+      0.48786106796536793,
+      0.12548242532738005,
+      0.30335664805650087,
+      0.02580807549098148,
+      0.05749178315976967
+    ],
+    "raw_probability_sum": 0.9999999981373549,
+    "zero_count": 0,
+    "logits": [
+      3.095632791519165,
+      1.7377679347991943,
+      2.620511293411255,
+      0.1562895029783249,
+      0.9572442770004272
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/24",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/24",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/24",
+    "p": [
+      0.23005594774830576,
+      0.263626086847808,
+      0.1083199035382314,
+      0.18892694165139162,
+      0.2090711202142632
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      2.3030803203582764,
+      2.4392895698547363,
+      1.5498467683792114,
+      2.1061182022094727,
+      2.207432270050049
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/21",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/21",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/21",
+    "p": [
+      0.35097898360263496,
+      0.17813878424982668,
+      0.06865742313330707,
+      0.2827755020102673,
+      0.119449307003964
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      2.5730865001678467,
+      1.8949230909347534,
+      0.9414894580841064,
+      2.357013463973999,
+      1.495252251625061
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/21",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/21",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_loss/21",
+    "p": [
+      0.21655592645043026,
+      0.16518904514892466,
+      0.1470766685467462,
+      0.2348850702477257,
+      0.23629328960617318
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.1902968883514404,
+      1.9195386171340942,
+      1.803402066230774,
+      2.2715444564819336,
+      2.277521848678589
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/20",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/20",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/20",
+    "p": [
+      0.29207400944442996,
+      0.10880535273524024,
+      0.3959285112358661,
+      0.06987467788813453,
+      0.13331744869632914
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      2.1394267082214355,
+      1.1519800424575806,
+      2.443653106689453,
+      0.7091227769851685,
+      1.3551526069641113
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/20",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/20",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/20",
+    "p": [
+      0.16245482377842593,
+      0.15812640910963985,
+      0.1583414775627411,
+      0.30835845147495117,
+      0.21271883807424194
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.14056396484375,
+      2.113558769226074,
+      2.1149179935455322,
+      2.7814269065856934,
+      2.410135269165039
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/37",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/37",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/37",
+    "p": [
+      0.11832362982148484,
+      0.15673394267657484,
+      0.11688702379335428,
+      0.34434353792155475,
+      0.26371186578703126
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.4042716026306152,
+      1.6853978633880615,
+      1.3920559883117676,
+      2.4724879264831543,
+      2.205705165863037
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/37",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/37",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_limit/37",
+    "p": [
+      0.14303914989472702,
+      0.24584652117123423,
+      0.1825490566708288,
+      0.20477677576576508,
+      0.22378849649744487
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.1992876529693604,
+      2.7408766746520996,
+      2.443188190460205,
+      2.5580897331237793,
+      2.6468706130981445
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/flag/3",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/flag/3",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/flag/3",
+    "p": [
+      0.19687372666083716,
+      0.12858575726210056,
+      0.48577142304671656,
+      0.048244689199082806,
+      0.14052440383126294
+    ],
+    "raw_probability_sum": 0.9999999888241291,
+    "zero_count": 0,
+    "logits": [
+      1.4851323366165161,
+      1.0591658353805542,
+      2.388308048248291,
+      0.07885541021823883,
+      1.1479510068893433
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/flag/3",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/flag/3",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/flag/3",
+    "p": [
+      0.16093883637810513,
+      0.23063307541458647,
+      0.24922772866015414,
+      0.19667790219237963,
+      0.16252245735477466
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.7965290546417236,
+      2.1563327312469482,
+      2.2338716983795166,
+      1.9970719814300537,
+      1.8063209056854248
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/5",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/5",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/5",
+    "p": [
+      0.14179095308949904,
+      0.1920068668125525,
+      0.07293335185348947,
+      0.34216507504511456,
+      0.2511037531993444
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      1.3589744567871094,
+      1.66215181350708,
+      0.6941666007041931,
+      2.2399139404296875,
+      1.930486798286438
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/5",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/5",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/waiting/5",
+    "p": [
+      0.20955020501539418,
+      0.19145800458577283,
+      0.19679709072108703,
+      0.18335463379851927,
+      0.21884006587922672
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.2173361778259277,
+      2.1270413398742676,
+      2.154546022415161,
+      2.0837950706481934,
+      2.260714054107666
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/3",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/3",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/3",
+    "p": [
+      0.18731540929976057,
+      0.4043232904011869,
+      0.23738018297277869,
+      0.056896870576881226,
+      0.11408424674939263
+    ],
+    "raw_probability_sum": 0.9999999739229679,
+    "zero_count": 0,
+    "logits": [
+      1.4188365936279297,
+      2.1882574558258057,
+      1.6557056903839111,
+      0.22728294134140015,
+      0.9229799509048462
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/3",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/3",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/3",
+    "p": [
+      0.21997329935570736,
+      0.2066452693453663,
+      0.25018947011734327,
+      0.12380066613402468,
+      0.19939129504755837
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      1.965783715248108,
+      1.9032810926437378,
+      2.094496011734009,
+      1.3909502029418945,
+      1.8675466775894165
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/16",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/16",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/16",
+    "p": [
+      0.18006099358064695,
+      0.062275341251298605,
+      0.1513446088579757,
+      0.2676429986735508,
+      0.3386760576365279
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      1.564574122428894,
+      0.5028440356254578,
+      1.3908379077911377,
+      1.9609326124191284,
+      2.1963226795196533
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/16",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/16",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/16",
+    "p": [
+      0.16453683395354443,
+      0.19161991551936428,
+      0.16128477502303346,
+      0.24324838132425713,
+      0.23931009417980068
+    ],
+    "raw_probability_sum": 1.0000000894069672,
+    "zero_count": 0,
+    "logits": [
+      1.9734841585159302,
+      2.125863552093506,
+      1.9535213708877563,
+      2.3644328117370605,
+      2.3481099605560303
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/22",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/22",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/22",
+    "p": [
+      0.1478114492212884,
+      0.17536155173308635,
+      0.0718276681822986,
+      0.19547081867474997,
+      0.4095285121885767
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.2392224073410034,
+      1.4101347923278809,
+      0.517554759979248,
+      1.5186960697174072,
+      2.258291482925415
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/22",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/22",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/22",
+    "p": [
+      0.1993327498237118,
+      0.21025704474023119,
+      0.20390532028392913,
+      0.19769375615399348,
+      0.1888111289981344
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      2.1646056175231934,
+      2.217960834503174,
+      2.187285900115967,
+      2.1563491821289062,
+      2.110377311706543
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/38",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/38",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/38",
+    "p": [
+      0.5035060977597334,
+      0.1654214325699953,
+      0.14075503509279158,
+      0.15199328166281453,
+      0.038324152914665115
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      2.5409128665924072,
+      1.4278134107589722,
+      1.2663382291793823,
+      1.343153476715088,
+      -0.03460261970758438
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/38",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/38",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/pay_sublimit/38",
+    "p": [
+      0.12263189516179894,
+      0.20622462234251832,
+      0.18367864206779794,
+      0.241785277870581,
+      0.2456795625573038
+    ],
+    "raw_probability_sum": 0.9999999180436134,
+    "zero_count": 0,
+    "logits": [
+      1.5972648859024048,
+      2.1170437335968018,
+      2.001265525817871,
+      2.276127815246582,
+      2.2921059131622314
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/24",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/24",
+    "question": "amount",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/24",
+    "p": [
+      0.4278213270204168,
+      0.2220970334310858,
+      0.042782480644146484,
+      0.14732138428371516,
+      0.15997777462063573
+    ],
+    "raw_probability_sum": 1.000000026077032,
+    "zero_count": 0,
+    "logits": [
+      2.5001587867736816,
+      1.8445675373077393,
+      0.19758175313472748,
+      1.4340695142745972,
+      1.516487956047058
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/24",
+    "group": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/24",
+    "question": "reason",
+    "source": "targeted-v7-20261030/policy",
+    "task": "targeted-v7-20261030/policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/policy-transfer-20261030/train/intentional/24",
+    "p": [
+      0.15735000606402763,
+      0.18166153403612276,
+      0.2092948289110486,
+      0.21803665486032747,
+      0.23365697612847353
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.033221483230591,
+      2.176893949508667,
+      2.3184926509857178,
+      2.3594119548797607,
+      2.428602933883667
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/42",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/42",
+    "question": "forward",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/42",
+    "p": [
+      0.16948437438183464,
+      0.22172446218543557,
+      0.1775918725491781,
+      0.28421824746998775,
+      0.1469810434135639
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.5412684679031372,
+      1.8099431991577148,
+      1.5879957675933838,
+      2.0582501888275146,
+      1.3988113403320312
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/42",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/42",
+    "question": "reverse",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/42",
+    "p": [
+      0.11388629165800102,
+      0.19648355857356375,
+      0.22074281182544775,
+      0.23891145413019713,
+      0.22997588381279035
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.021457314491272,
+      1.5668355226516724,
+      1.6832550764083862,
+      1.7623498439788818,
+      1.724231243133545
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/2",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/2",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/2",
+    "p": [
+      0.10093397052487688,
+      0.1752563890107928,
+      0.18315473471812507,
+      0.16065107525365166,
+      0.15588072174609782,
+      0.22412310874645575
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.0095845460891724,
+      1.5613679885864258,
+      1.6054493188858032,
+      1.4743528366088867,
+      1.4442092180252075,
+      1.8073135614395142
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/2",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/2",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/2",
+    "p": [
+      0.23594018289580532,
+      0.27524977307208387,
+      0.06493455771503095,
+      0.39083086570730363,
+      0.03304462060977621
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      2.4180994033813477,
+      2.572200059890747,
+      1.1279010772705078,
+      2.9227960109710693,
+      0.45237982273101807
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/25",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/25",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/25",
+    "p": [
+      0.21096013172030254,
+      0.18560361585611676,
+      0.16550923637286966,
+      0.13863043280496548,
+      0.14289712692950476,
+      0.15639945631624078
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.1304254531860352,
+      1.0023695230484009,
+      0.8877832293510437,
+      0.7105678915977478,
+      0.7408813238143921,
+      0.831169605255127
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/25",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/25",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/25",
+    "p": [
+      0.23584972849152375,
+      0.10753218324926905,
+      0.16697104648435965,
+      0.28231111799875913,
+      0.20733592377608845
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.0606725215911865,
+      0.2752678394317627,
+      0.715298056602478,
+      1.2404873371124268,
+      0.9318178296089172
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/8",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/8",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/8",
+    "p": [
+      0.20537831960356412,
+      0.18383505409095718,
+      0.19089911383609323,
+      0.1411345674689261,
+      0.12108158951678222,
+      0.15767135548367714
+    ],
+    "raw_probability_sum": 0.9999999478459358,
+    "zero_count": 0,
+    "logits": [
+      1.1406923532485962,
+      1.0298775434494019,
+      1.067583680152893,
+      0.7655524611473083,
+      0.6123032569885254,
+      0.8763514161109924
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/8",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/8",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/8",
+    "p": [
+      0.28127441334117975,
+      0.10608577925871647,
+      0.0523278387697011,
+      0.39486978193502464,
+      0.16544218669537802
+    ],
+    "raw_probability_sum": 0.9999999813735485,
+    "zero_count": 0,
+    "logits": [
+      1.8811464309692383,
+      0.9060636758804321,
+      0.19934406876564026,
+      2.220371723175049,
+      1.3504375219345093
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/expected_value/52",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/expected_value/52",
+    "question": "project",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/expected_value/52",
+    "p": [
+      0.3446654975414276,
+      0.353394091129303,
+      0.3019404113292694
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.4653844833374023,
+      1.4903939962387085,
+      1.3330398797988892
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/expected_value/52",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/expected_value/52",
+    "question": "value",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/expected_value/52",
+    "p": [
+      0.18109784750494587,
+      0.16513810805770593,
+      0.1888879807459119,
+      0.39090030802934905,
+      0.07397575566208726
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.3554365634918213,
+      1.263181209564209,
+      1.3975533246994019,
+      2.124851703643799,
+      0.46013668179512024
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/11",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/11",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/11",
+    "p": [
+      0.0919904980356506,
+      0.1251411503254477,
+      0.1928639810535898,
+      0.19249517729480745,
+      0.17317370483440112,
+      0.22433548845610335
+    ],
+    "raw_probability_sum": 0.9999999478459358,
+    "zero_count": 0,
+    "logits": [
+      0.9931647181510925,
+      1.3009217977523804,
+      1.7334645986557007,
+      1.7315505743026733,
+      1.6257745027542114,
+      1.8846220970153809
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/11",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/11",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any/11",
+    "p": [
+      0.21965809166431427,
+      0.09773063659667969,
+      0.26670509576797485,
+      0.23873518407344818,
+      0.177170991897583
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.8181198835372925,
+      1.0082627534866333,
+      2.0121912956237793,
+      1.9014025926589966,
+      1.6031630039215088
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/44",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/44",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/44",
+    "p": [
+      0.19079307858902683,
+      0.19582883690767508,
+      0.19185500990480245,
+      0.14551260444597033,
+      0.1400145524748893,
+      0.135995917677636
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.2537527084350586,
+      1.2798042297363281,
+      1.2593032121658325,
+      0.9828259348869324,
+      0.9443095922470093,
+      0.915188193321228
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/44",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/44",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/44",
+    "p": [
+      0.24615800930912812,
+      0.4050821454468849,
+      0.19012709386930823,
+      0.10379771375203983,
+      0.05483503762263889
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.8166053295135498,
+      2.3147215843200684,
+      1.5583244562149048,
+      0.953075647354126,
+      0.31496095657348633
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/31",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/31",
+    "question": "decision",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/31",
+    "p": [
+      0.3040671646595001,
+      0.3767944574356079,
+      0.31913837790489197
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.1745423078536987,
+      1.388993501663208,
+      1.2229185104370117
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/13",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/13",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/13",
+    "p": [
+      0.18189465051575454,
+      0.18252730913541643,
+      0.19638421226692832,
+      0.16825587058829874,
+      0.14118209901994763,
+      0.12975585847365434
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.1840271949768066,
+      1.1874994039535522,
+      1.2606725692749023,
+      1.1060854196548462,
+      0.930649995803833,
+      0.846254289150238
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/13",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/13",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/13",
+    "p": [
+      0.18379122429619485,
+      0.053110418165707995,
+      0.38400481009494086,
+      0.32458848486665975,
+      0.05450506257649651
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.575548529624939,
+      0.3341211974620819,
+      2.3124032020568848,
+      2.144306182861328,
+      0.3600417673587799
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/7",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/7",
+    "question": "decision",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/7",
+    "p": [
+      0.2735675058832021,
+      0.35340360860239295,
+      0.37302888551440494
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.2604663372039795,
+      1.5165287256240845,
+      1.5705738067626953
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/31",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/31",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/31",
+    "p": [
+      0.12436986807264289,
+      0.17436362932893357,
+      0.18438202280090765,
+      0.17090854176065728,
+      0.1629953098520287,
+      0.18298062818482985
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.0914440155029297,
+      1.429327130317688,
+      1.4851939678192139,
+      1.4093127250671387,
+      1.361905574798584,
+      1.4775644540786743
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/31",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/31",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/31",
+    "p": [
+      0.16014287530630733,
+      0.228292930140715,
+      0.2941214288856834,
+      0.09950919675406533,
+      0.21793356891322893
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      0.871760904788971,
+      1.2263240814208984,
+      1.479687213897705,
+      0.3959445357322693,
+      1.179884910583496
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/7",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/7",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/7",
+    "p": [
+      0.13947147789767517,
+      0.2020098893636531,
+      0.2035340992489994,
+      0.173151378443755,
+      0.1509198754477575,
+      0.13091327959815982
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      1.0898762941360474,
+      1.4603328704833984,
+      1.4678497314453125,
+      1.3061823844909668,
+      1.1687651872634888,
+      1.0265512466430664
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/7",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/7",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/7",
+    "p": [
+      0.18888695902306085,
+      0.22635102412992572,
+      0.07453201266932412,
+      0.321966867329665,
+      0.18826313684802432
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      1.389272928237915,
+      1.5702111721038818,
+      0.4593528211116791,
+      1.9225727319717407,
+      1.3859647512435913
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/16",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/16",
+    "question": "forward",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/16",
+    "p": [
+      0.11296474441062088,
+      0.21550907676314734,
+      0.2290182611871867,
+      0.30405715787538495,
+      0.13845075976366011
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.123091459274292,
+      1.7690187692642212,
+      1.8298174142837524,
+      2.1132314205169678,
+      1.3265304565429688
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/16",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/16",
+    "question": "reverse",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/16",
+    "p": [
+      0.23634303930146217,
+      0.34944420792576514,
+      0.12671877349377592,
+      0.10407092344708052,
+      0.1834230558319162
+    ],
+    "raw_probability_sum": 1.0000000074505806,
+    "zero_count": 0,
+    "logits": [
+      1.830315113067627,
+      2.221374750137329,
+      1.2070010900497437,
+      1.010103464126587,
+      1.5768262147903442
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/6",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/6",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/6",
+    "p": [
+      0.18222483995909422,
+      0.21181437618999285,
+      0.19398065011044704,
+      0.15618294267365612,
+      0.13304689126846048,
+      0.12275029979834927
+    ],
+    "raw_probability_sum": 0.9999999180436134,
+    "zero_count": 0,
+    "logits": [
+      1.3435132503509521,
+      1.4939823150634766,
+      1.4060304164886475,
+      1.1892999410629272,
+      1.0289735794067383,
+      0.9484241604804993
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/6",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/6",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/6",
+    "p": [
+      0.15064186418957504,
+      0.11428339460057745,
+      0.31927303669128704,
+      0.10958193650774421,
+      0.3062197680108163
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      1.1836246252059937,
+      0.9074006080627441,
+      1.9347660541534424,
+      0.8653919100761414,
+      1.8930224180221558
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/15",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/15",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/15",
+    "p": [
+      0.10676750193415217,
+      0.18123003025464826,
+      0.16921133433324598,
+      0.1530684140722608,
+      0.16289611767590484,
+      0.22682660172978794
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      0.8400263786315918,
+      1.3691399097442627,
+      1.3005212545394897,
+      1.2002577781677246,
+      1.2624855041503906,
+      1.593558669090271
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/15",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/15",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/all/15",
+    "p": [
+      0.2869634373033559,
+      0.1898842333239948,
+      0.17655223871100303,
+      0.2159389885654895,
+      0.1306611020961568
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.8649628162384033,
+      1.452022671699524,
+      1.3792247772216797,
+      1.5806039571762085,
+      1.0782150030136108
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/36",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/36",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/36",
+    "p": [
+      0.21362583020887033,
+      0.18316954101369468,
+      0.18185627189492773,
+      0.15534400708460797,
+      0.1292516569904736,
+      0.13675269280742566
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.3702621459960938,
+      1.2164483070373535,
+      1.2092528343200684,
+      1.05167818069458,
+      0.8677974939346313,
+      0.9242101311683655
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/36",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/36",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/36",
+    "p": [
+      0.15812327203338253,
+      0.13720169867875723,
+      0.2059784860309733,
+      0.26627681056077496,
+      0.232419732696112
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.348879098892212,
+      1.2069562673568726,
+      1.6132758855819702,
+      1.8700405359268188,
+      1.7340490818023682
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/3",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/3",
+    "question": "decision",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/3",
+    "p": [
+      0.2639607927822594,
+      0.3657046636519036,
+      0.37033454356583695
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      0.9551543593406677,
+      1.2811799049377441,
+      1.2937605381011963
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/2",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/2",
+    "question": "forward",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/2",
+    "p": [
+      0.20525559210429753,
+      0.19590894263575714,
+      0.21271630582435305,
+      0.24607078340966032,
+      0.14004837602593195
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.5511943101882935,
+      1.50458824634552,
+      1.586897611618042,
+      1.7325575351715088,
+      1.1689262390136719
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/2",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/2",
+    "question": "reverse",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/table/2",
+    "p": [
+      0.2398847866092686,
+      0.26061602650237004,
+      0.2357303876957182,
+      0.13101708498546227,
+      0.1327517142071809
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.6454662084579468,
+      1.7283556461334229,
+      1.6279962062835693,
+      1.040635108947754,
+      1.0537880659103394
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/5",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/5",
+    "question": "bucket",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/5",
+    "p": [
+      0.17309664247303985,
+      0.2124038677576662,
+      0.20710967842725025,
+      0.15419852622138197,
+      0.12694836797848655,
+      0.12624291714217517
+    ],
+    "raw_probability_sum": 0.9999999105930328,
+    "zero_count": 0,
+    "logits": [
+      1.2988176345825195,
+      1.5034570693969727,
+      1.4782160520553589,
+      1.1832084655761719,
+      0.9887479543685913,
+      0.9831755757331848
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/5",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/5",
+    "question": "probability",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/any_fail/5",
+    "p": [
+      0.18454383313655853,
+      0.25143828988075256,
+      0.17017334699630737,
+      0.23802560567855835,
+      0.15581892430782318
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.6072843074798584,
+      1.9165948629379272,
+      1.5262149572372437,
+      1.8617756366729736,
+      1.4380918741226196
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/36",
+    "group": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/36",
+    "question": "decision",
+    "source": "targeted-v7-20261030/probability",
+    "task": "targeted-v7-20261030/probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v7-20261030/probability-transfer-candidate-20261030/train/compare/36",
+    "p": [
+      0.31885644793510437,
+      0.3316461443901062,
+      0.34949740767478943
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.0798840522766113,
+      1.1192116737365723,
+      1.1716392040252686
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00510",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00510",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00510",
+    "p": [
+      0.14040843070770592,
+      0.1746464274718293,
+      0.23805151099120114,
+      0.1953576116370443,
+      0.25153601919221935
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.3359134197235107,
+      1.5541213750839233,
+      1.863844871520996,
+      1.6661895513534546,
+      1.918944001197815
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00258",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00258",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00258",
+    "p": [
+      0.483745813369751,
+      0.516254186630249
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.8365148305892944,
+      1.9015544652938843
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00434",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00434",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00434",
+    "p": [
+      0.13084058463573456,
+      0.17743532359600067,
+      0.22418582439422607,
+      0.22165291011333466,
+      0.24588535726070404
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.1777561902999878,
+      1.4823826551437378,
+      1.7162518501281738,
+      1.704889178276062,
+      1.8086419105529785
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00226",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00226",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00226",
+    "p": [
+      0.12936733663082123,
+      0.22987280786037445,
+      0.1808929145336151,
+      0.2671019434928894,
+      0.1927649974822998
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.375350832939148,
+      1.950221061706543,
+      1.7106002569198608,
+      2.100325345993042,
+      1.7741667032241821
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00694",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00694",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00694",
+    "p": [
+      0.4659477313145319,
+      0.5340522686854681
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.8429549932479858,
+      1.9793753623962402
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00283",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00283",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00283",
+    "p": [
+      0.18787972909032896,
+      0.14594370344197308,
+      0.25000796094548644,
+      0.1913304506440528,
+      0.22483815587815875
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.5282565355300903,
+      1.2756754159927368,
+      1.8139472007751465,
+      1.5464564561843872,
+      1.70783531665802
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00251",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00251",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00251",
+    "p": [
+      0.4608099895957109,
+      0.539190010404289
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.8228766918182373,
+      1.9799590110778809
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00433",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00433",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00433",
+    "p": [
+      0.49328236261851677,
+      0.5067176373814832
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      2.1332037448883057,
+      2.1600759029388428
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00090",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00090",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00090",
+    "p": [
+      0.10615519671488993,
+      0.19683164798092057,
+      0.25134614671795397,
+      0.2587410567419467,
+      0.1869259518442888
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.1836142539978027,
+      1.8010609149932861,
+      2.0455431938171387,
+      2.07453989982605,
+      1.749424695968628
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00463",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00463",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00463",
+    "p": [
+      0.1492579348053605,
+      0.2111408804867065,
+      0.193250411447156,
+      0.24741452548270787,
+      0.19893624777806912
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.6421196460723877,
+      1.988969326019287,
+      1.90043044090271,
+      2.1475088596343994,
+      1.9294281005859375
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00083",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00083",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00083",
+    "p": [
+      0.14063507108934117,
+      0.20875768052402616,
+      0.2848236816402721,
+      0.18983794465902532,
+      0.17594562208733525
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.5628093481063843,
+      1.9578150510787964,
+      2.2685112953186035,
+      1.862811803817749,
+      1.786815881729126
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00065",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00065",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00065",
+    "p": [
+      0.15297948507872902,
+      0.18856654414086987,
+      0.22963925732549686,
+      0.2454910686086596,
+      0.18332364484624467
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.344551682472229,
+      1.5536988973617554,
+      1.7507575750350952,
+      1.8175084590911865,
+      1.525501012802124
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00016",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00016",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00016",
+    "p": [
+      0.17677523985990465,
+      0.23579659621998353,
+      0.2389614092839394,
+      0.18718268814009523,
+      0.16128406649607718
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.39057195186615,
+      1.6786624193191528,
+      1.6919949054718018,
+      1.4477778673171997,
+      1.29885995388031
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00672",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00672",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00672",
+    "p": [
+      0.1696076468947968,
+      0.2164706535549754,
+      0.14428941060406314,
+      0.23187538527885312,
+      0.23775690366731153
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.4962557554244995,
+      1.7402229309082031,
+      1.3345890045166016,
+      1.8089680671691895,
+      1.8340166807174683
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00014",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00014",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00014",
+    "p": [
+      0.11944313403210198,
+      0.20315889886342056,
+      0.22534401735735057,
+      0.21122105345867187,
+      0.24083289628845503
+    ],
+    "raw_probability_sum": 0.9999999329447746,
+    "zero_count": 0,
+    "logits": [
+      1.0376235246658325,
+      1.5687716007232666,
+      1.6724114418029785,
+      1.6076884269714355,
+      1.7388864755630493
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00192",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00192",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00192",
+    "p": [
+      0.12862574139054453,
+      0.21919963743685056,
+      0.24941517037519084,
+      0.2087671105012496,
+      0.19399234029616447
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.0625078678131104,
+      1.5955837965011597,
+      1.724719762802124,
+      1.5468202829360962,
+      1.4734195470809937
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00235",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00235",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00235",
+    "p": [
+      0.5017164945602417,
+      0.4982835054397583
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.0643768310546875,
+      2.0575108528137207
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00451",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00451",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00451",
+    "p": [
+      0.14064617035847396,
+      0.23544106675860088,
+      0.2036745040513723,
+      0.20230046801863705,
+      0.21793779081291584
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.3021341562271118,
+      1.817347526550293,
+      1.672410011291504,
+      1.665640950202942,
+      1.7400965690612793
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00312",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00312",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00312",
+    "p": [
+      0.18202297931978045,
+      0.24050105334821503,
+      0.25133232031262875,
+      0.10002292990752845,
+      0.2261207171118473
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.4668740034103394,
+      1.7454655170440674,
+      1.7895171642303467,
+      0.8681405186653137,
+      1.6838101148605347
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00772",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00772",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00772",
+    "p": [
+      0.21056898643937014,
+      0.30999516285973927,
+      0.15231210916071725,
+      0.10956301131982314,
+      0.21756073022035025
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      1.5703325271606445,
+      1.957075834274292,
+      1.2464509010314941,
+      0.9170190095901489,
+      1.6029971837997437
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00104",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00104",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00104",
+    "p": [
+      0.3433300852775574,
+      0.19282899796962738,
+      0.16219772398471832,
+      0.3016431927680969
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      3.203871488571167,
+      2.6269829273223877,
+      2.4539952278137207,
+      3.0744240283966064
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00546",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00546",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00546",
+    "p": [
+      0.14277813689578395,
+      0.4673934559460554,
+      0.13528082581048165,
+      0.25454758134767896
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      2.1823174953460693,
+      3.368196964263916,
+      2.128378391265869,
+      2.7605133056640625
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00106",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00106",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00106",
+    "p": [
+      0.12812177359604188,
+      0.10330947103688601,
+      0.39979811013497,
+      0.36877064523210207
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      2.0476841926574707,
+      1.8324321508407593,
+      3.1856627464294434,
+      3.1048779487609863
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00012",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00012",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00012",
+    "p": [
+      0.11963489772793438,
+      0.15909293954334724,
+      0.23056872476651466,
+      0.4907034379622037
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      1.6948137283325195,
+      1.9798576831817627,
+      2.3509180545806885,
+      3.1062090396881104
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00340",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00340",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00340",
+    "p": [
+      0.12293502114229062,
+      0.19365830672221682,
+      0.3532523478010556,
+      0.330154324334437
+    ],
+    "raw_probability_sum": 0.999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.827160358428955,
+      2.281599760055542,
+      2.8826870918273926,
+      2.8150646686553955
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00215",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00215",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00215",
+    "p": [
+      0.5105591302240089,
+      0.21548552329498105,
+      0.11197387176810492,
+      0.1619814747129051
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      3.6048789024353027,
+      2.7422661781311035,
+      2.0876379013061523,
+      2.4568543434143066
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00865",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00865",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00865",
+    "p": [
+      0.1217233182283728,
+      0.10146827261658554,
+      0.4264326115274885,
+      0.35037579762755316
+    ],
+    "raw_probability_sum": 0.999999925494194,
+    "zero_count": 0,
+    "logits": [
+      2.1086652278900146,
+      1.9266608953475952,
+      3.3623690605163574,
+      3.1659209728240967
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00169",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00169",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00169",
+    "p": [
+      0.16289465129375458,
+      0.2943894863128662,
+      0.17987804114818573,
+      0.3628378212451935
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.276794910430908,
+      2.8685948848724365,
+      2.3759703636169434,
+      3.0776472091674805
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00263",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00263",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00263",
+    "p": [
+      0.12398250117832799,
+      0.19640672938550746,
+      0.13591297477159556,
+      0.543697794664569
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      2.1629183292388916,
+      2.6229655742645264,
+      2.2547926902770996,
+      3.641171455383301
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00734",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00734",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00734",
+    "p": [
+      0.30447152256965637,
+      0.1090710312128067,
+      0.40013551712036133,
+      0.1863219290971756
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.886812210083008,
+      1.8602341413497925,
+      3.1600379943847656,
+      2.3957107067108154
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00050",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00050",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00050",
+    "p": [
+      0.48494549773389833,
+      0.16668053716483133,
+      0.23242938067448352,
+      0.1159445844267868
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      3.4200057983398438,
+      2.352048397064209,
+      2.684555768966675,
+      1.989081621170044
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00268",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00268",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00268",
+    "p": [
+      0.15780882772518437,
+      0.20380649274299284,
+      0.315651093656586,
+      0.32273358587523676
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.214747667312622,
+      2.470534324645996,
+      2.908000946044922,
+      2.9301905632019043
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00246",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00246",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00246",
+    "p": [
+      0.11547533680816002,
+      0.2131246674014181,
+      0.15903285501225714,
+      0.5123671407781647
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      2.117053270339966,
+      2.7298736572265625,
+      2.4371070861816406,
+      3.6070377826690674
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00335",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00335",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00335",
+    "p": [
+      0.3534212165090623,
+      0.14303627823347267,
+      0.41215119379984133,
+      0.0913913114576237
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      3.198913812637329,
+      2.294351577758789,
+      3.3526434898376465,
+      1.8464035987854004
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00308",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00308",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00308",
+    "p": [
+      0.07398627918917773,
+      0.4622703034362287,
+      0.14263789780848915,
+      0.3211055195661044
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.5568106174468994,
+      3.389080762863159,
+      2.213240146636963,
+      3.024700880050659
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00580",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00580",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00580",
+    "p": [
+      0.17814021343410652,
+      0.22149758701019248,
+      0.3153432403607142,
+      0.2850189591949868
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.9892377853393555,
+      2.207078456878662,
+      2.560328483581543,
+      2.4592225551605225
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00798",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00798",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00798",
+    "p": [
+      0.1680497179016555,
+      0.5103034821062242,
+      0.17181300604900698,
+      0.14983379394311327
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.697920799255371,
+      3.808666467666626,
+      2.7200675010681152,
+      2.5831875801086426
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00823",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00823",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00823",
+    "p": [
+      0.35079401208767275,
+      0.1993465542890645,
+      0.29186850351291144,
+      0.15799093011035129
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      3.1393563747406006,
+      2.574202060699463,
+      2.955460548400879,
+      2.3416948318481445
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00388",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00388",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00388",
+    "p": [
+      0.11755837675271,
+      0.3531828873333765,
+      0.345383708855267,
+      0.18387502705864647
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.7790464162826538,
+      2.8790974617004395,
+      2.856767416000366,
+      2.226367712020874
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00227",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00227",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00227",
+    "p": [
+      0.1856357753276825,
+      0.12833403050899506,
+      0.535881519317627,
+      0.1501486748456955
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.659003257751465,
+      2.289853096008301,
+      3.719129800796509,
+      2.446842670440674
+    ],
+    "inference_temperature": 2.3510958125672174
+  }
+]

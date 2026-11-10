@@ -1,0 +1,20 @@
+{
+  "started_at_utc": "2026-10-29T23:11:37.998232+00:00",
+  "kind": "inference_only",
+  "models": {
+    "qwen3": {
+      "pipeline_pid": 4655,
+      "status": "complete",
+      "pipeline_live": false
+    },
+    "qwen35": {
+      "pipeline_pid": 4656,
+      "status": "complete",
+      "pipeline_live": false
+    }
+  },
+  "status": "complete",
+  "original_control_reproduced": true,
+  "archive_sha256": "ac82cb2f75d3e620d8954ffc66639c9978018bb40e10a17ddebdbe439daa53f4",
+  "indexed_files_verified": 26
+}

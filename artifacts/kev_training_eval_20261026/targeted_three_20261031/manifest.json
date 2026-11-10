@@ -1,0 +1,21 @@
+{
+  "source": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_20261030/train.jsonl",
+  "selection": [
+    "multihop",
+    "probability",
+    "temporal"
+  ],
+  "contexts": {
+    "multihop": 270,
+    "probability": 350,
+    "temporal": 100
+  },
+  "subquestions": {
+    "multihop": 420,
+    "probability": 720,
+    "temporal": 100
+  },
+  "total_contexts": 720,
+  "total_subquestions": 1240,
+  "sha256": "1e9fc8dbd2d67328799791cc3b59d0e9e1032ed88e1e93c82e71f3705aef9266"
+}

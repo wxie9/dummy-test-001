@@ -1,0 +1,6469 @@
+[
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00333",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00333",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00333",
+    "p": [
+      0.8025861262889784,
+      0.19741387371102165
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.5461506843566895,
+      1.1436139345169067
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00368",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00368",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00368",
+    "p": [
+      0.241572354365631,
+      0.758427645634369
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.5125409364700317,
+      2.6566193103790283
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00130",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00130",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00130",
+    "p": [
+      0.30713709273525797,
+      0.6928629072647421
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.7730351686477661,
+      2.5865731239318848
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00375",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00375",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00375",
+    "p": [
+      0.28010237216949463,
+      0.7198976278305054
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.1458793878555298,
+      2.0898332595825195
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00207",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00207",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00207",
+    "p": [
+      0.7533818336356779,
+      0.2466181663643221
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      2.0998857021331787,
+      0.9831547141075134
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00159",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00159",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00159",
+    "p": [
+      0.3565451907081959,
+      0.6434548092918041
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.7706855535507202,
+      2.3610763549804688
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00269",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00269",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00269",
+    "p": [
+      0.4849586044264256,
+      0.5150413955735744
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.709956645965576,
+      2.7701404094696045
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00412",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00412",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00412",
+    "p": [
+      0.34937745332717896,
+      0.650622546672821
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.7871479988098145,
+      2.4089248180389404
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00475",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00475",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00475",
+    "p": [
+      0.7265701293945312,
+      0.27342987060546875
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.152980089187622,
+      1.1756901741027832
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00344",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00344",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00344",
+    "p": [
+      0.3513218567169266,
+      0.6486781432830734
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      2.0228703022003174,
+      2.636104106903076
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00285",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00285",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00285",
+    "p": [
+      0.3661595960760357,
+      0.6338404039239642
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      1.7099632024765015,
+      2.2586910724639893
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00129",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00129",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00129",
+    "p": [
+      0.6377747274771495,
+      0.36222527252285047
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      2.3570377826690674,
+      1.7913188934326172
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00074",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00074",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00074",
+    "p": [
+      0.7498975172669435,
+      0.25010248273305646
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.068460702896118,
+      0.9703949093818665
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00500",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00500",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00500",
+    "p": [
+      0.7302488684654236,
+      0.2697511315345764
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.0891802310943604,
+      1.093294620513916
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00189",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00189",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00189",
+    "p": [
+      0.7182949185371399,
+      0.2817050814628601
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.9825142621994019,
+      1.046494722366333
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00160",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00160",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00160",
+    "p": [
+      0.7338781138098802,
+      0.2661218861901198
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.1326897144317627,
+      1.1183011531829834
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00144",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00144",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00144",
+    "p": [
+      0.7987762093544006,
+      0.20122379064559937
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.5186712741851807,
+      1.1400080919265747
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00241",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00241",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00241",
+    "p": [
+      0.32504580393570076,
+      0.6749541960642992
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.8184480667114258,
+      2.5491268634796143
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00397",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00397",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00397",
+    "p": [
+      0.7420312762260437,
+      0.2579687237739563
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.0915396213531494,
+      1.0349866151809692
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/injection/train/00118",
+    "group": "targeted-v2-all7-compact-20261029/injection/train/00118",
+    "question": "decision",
+    "source": "targeted_v2_all7_injection",
+    "task": "targeted_injection",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/injection/train/00118",
+    "p": [
+      0.6289462634607036,
+      0.3710537365392964
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      2.1877999305725098,
+      1.6601009368896484
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000273",
+    "group": "targeted-v5-20261030/train/pair00136",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000273",
+    "p": [
+      0.5532344414819943,
+      0.24462055430947083,
+      0.20214500420853482
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.2565526962280273,
+      1.440479040145874,
+      1.249756097793579
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000029",
+    "group": "targeted-v5-20261030/train/pair00014",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000029",
+    "p": [
+      0.4339925374085111,
+      0.36724638694870376,
+      0.1987610756427851
+    ],
+    "raw_probability_sum": 0.999999925494194,
+    "zero_count": 0,
+    "logits": [
+      2.3497018814086914,
+      2.1827075481414795,
+      1.5687780380249023
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000093",
+    "group": "targeted-v5-20261030/train/pair00046",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000093",
+    "p": [
+      0.472582021091192,
+      0.31140099563892204,
+      0.21601698326988594
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.9429881572723389,
+      1.5258582830429077,
+      1.1601338386535645
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000006",
+    "group": "targeted-v5-20261030/train/pair00003",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000006",
+    "p": [
+      0.26772589289325155,
+      0.2223484880432036,
+      0.5099256190635448
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.6246321201324463,
+      1.4389142990112305,
+      2.2689332962036133
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000237",
+    "group": "targeted-v5-20261030/train/pair00118",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000237",
+    "p": [
+      0.2858325753857918,
+      0.2788847899769309,
+      0.4352826346372773
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.8958977460861206,
+      1.8712902069091797,
+      2.3164870738983154
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000104",
+    "group": "targeted-v5-20261030/train/pair00052",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000104",
+    "p": [
+      0.09392375964153529,
+      0.7189250970207126,
+      0.18715114333775212
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.6988656520843506,
+      3.7341394424438477,
+      2.388298749923706
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000127",
+    "group": "targeted-v5-20261030/train/pair00063",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000127",
+    "p": [
+      0.25049013645917584,
+      0.2117291453996046,
+      0.5377807181412195
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.5868816375732422,
+      1.4187699556350708,
+      2.3509130477905273
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000071",
+    "group": "targeted-v5-20261030/train/pair00035",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000071",
+    "p": [
+      0.4137525794840965,
+      0.34649556358910255,
+      0.23975185692680095
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      2.204918146133423,
+      2.027519941329956,
+      1.6592544317245483
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000004",
+    "group": "targeted-v5-20261030/train/pair00002",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000004",
+    "p": [
+      0.5614517331123352,
+      0.15247595310211182,
+      0.286072313785553
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.9609792232513428,
+      1.657460331916809,
+      2.28669810295105
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000146",
+    "group": "targeted-v5-20261030/train/pair00073",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000146",
+    "p": [
+      0.3896277844905853,
+      0.38039731979370117,
+      0.2299748957157135
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.9681921005249023,
+      1.9442166090011597,
+      1.4409704208374023
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000013",
+    "group": "targeted-v5-20261030/train/pair00006",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000013",
+    "p": [
+      0.24864867329597473,
+      0.3258418142795563,
+      0.425509512424469
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.2758960723876953,
+      1.546267032623291,
+      1.8131424188613892
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000087",
+    "group": "targeted-v5-20261030/train/pair00043",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000087",
+    "p": [
+      0.2636726875207629,
+      0.2009024083883288,
+      0.5354249040909083
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.3864740133285522,
+      1.1145848035812378,
+      2.0948262214660645
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000216",
+    "group": "targeted-v5-20261030/train/pair00108",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000216",
+    "p": [
+      0.47476842849066425,
+      0.22095684534054072,
+      0.304274726168795
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      2.7124266624450684,
+      1.9475668668746948,
+      2.2675304412841797
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000103",
+    "group": "targeted-v5-20261030/train/pair00051",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000103",
+    "p": [
+      0.2192198634147644,
+      0.3214572072029114,
+      0.4593229293823242
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.7612950801849365,
+      2.1440844535827637,
+      2.5009734630584717
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000260",
+    "group": "targeted-v5-20261030/train/pair00130",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000260",
+    "p": [
+      0.23266232463736872,
+      0.3709623945819261,
+      0.39637528078070516
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.100501298904419,
+      1.5670137405395508,
+      1.6332745552062988
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000125",
+    "group": "targeted-v5-20261030/train/pair00062",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000125",
+    "p": [
+      0.19591798180219505,
+      0.40005109310226283,
+      0.40403092509554217
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.324318528175354,
+      2.038214683532715,
+      2.0481138229370117
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000201",
+    "group": "targeted-v5-20261030/train/pair00100",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000201",
+    "p": [
+      0.24768543598692389,
+      0.3072596421286197,
+      0.44505492188445644
+    ],
+    "raw_probability_sum": 0.999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.619746446609497,
+      1.8352800607681274,
+      2.205784559249878
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000204",
+    "group": "targeted-v5-20261030/train/pair00102",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000204",
+    "p": [
+      0.3301688632318716,
+      0.2898620280664555,
+      0.3799691087016729
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.4631805419921875,
+      2.3329813480377197,
+      2.603666305541992
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000270",
+    "group": "targeted-v5-20261030/train/pair00135",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000270",
+    "p": [
+      0.36158171834918434,
+      0.09048088029743552,
+      0.5479374013533801
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.4207241535186768,
+      1.035374641418457,
+      2.836397171020508
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/insufficient/train/000119",
+    "group": "targeted-v5-20261030/train/pair00059",
+    "question": "decision",
+    "source": "targeted-v5-20261030_insufficient",
+    "task": "targeted-v5-20261030_insufficient",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/insufficient/train/000119",
+    "p": [
+      0.5231689888711123,
+      0.24268840614987025,
+      0.23414260497901745
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.1376266479492188,
+      1.3695005178451538,
+      1.3336524963378906
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001169",
+    "group": "targeted-v5-20261030/multihop/train/001169",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001169",
+    "p": [
+      0.12561030030792875,
+      0.11788530777992938,
+      0.19277608879333272,
+      0.1523600886276318,
+      0.19623825420686766,
+      0.21512996028430967
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      1.164904236793518,
+      1.101432204246521,
+      1.5932493209838867,
+      1.357966661453247,
+      1.6110494136810303,
+      1.7029622793197632
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001070",
+    "group": "targeted-v5-20261030/multihop/train/001070",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001070",
+    "p": [
+      0.19267809158461466,
+      0.2226912329174966,
+      0.23469620334838004,
+      0.1958730343693762,
+      0.15406143778013248
+    ],
+    "raw_probability_sum": 1.0000000894069672,
+    "zero_count": 0,
+    "logits": [
+      2.1201605796813965,
+      2.264925956726074,
+      2.317431688308716,
+      2.136606454849243,
+      1.8964911699295044
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001117",
+    "group": "targeted-v5-20261030/multihop/train/001117",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001117",
+    "p": [
+      0.05972076079595226,
+      0.13608421942936783,
+      0.1243307566927311,
+      0.19326766627261166,
+      0.11129320123875593,
+      0.10421017984417073,
+      0.1399914977696034,
+      0.13110171795680708
+    ],
+    "raw_probability_sum": 0.9999999590218067,
+    "zero_count": 0,
+    "logits": [
+      1.0191539525985718,
+      1.8427481651306152,
+      1.7524195909500122,
+      2.1935503482818604,
+      1.6416423320770264,
+      1.5758841037750244,
+      1.8710558414459229,
+      1.8054478168487549
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001179",
+    "group": "targeted-v5-20261030/multihop/train/001179",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001179",
+    "p": [
+      0.11304211784961996,
+      0.14623300949086263,
+      0.16304126624824503,
+      0.17598749959450213,
+      0.2512461878545014,
+      0.1504499189622688
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.3733285665512085,
+      1.6307692527770996,
+      1.7395713329315186,
+      1.8159810304641724,
+      2.172001361846924,
+      1.65919828414917
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001167",
+    "group": "targeted-v5-20261030/multihop/train/001167",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001167",
+    "p": [
+      0.11523712999765381,
+      0.17141264421622984,
+      0.126214874890225,
+      0.1239878665806671,
+      0.11319945583940363,
+      0.16574150076893715,
+      0.18420652770688342
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.53838312625885,
+      1.935464859008789,
+      1.6293768882751465,
+      1.6115747690200806,
+      1.5205425024032593,
+      1.901820421218872,
+      2.007448673248291
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/000991",
+    "group": "targeted-v5-20261030/multihop/train/000991",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/000991",
+    "p": [
+      0.48402850472672243,
+      0.12772998561889062,
+      0.16392631853285564,
+      0.22431519112153134
+    ],
+    "raw_probability_sum": 1.0000000894069672,
+    "zero_count": 0,
+    "logits": [
+      1.9143273830413818,
+      0.5821020603179932,
+      0.8316007256507874,
+      1.1452356576919556
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001036",
+    "group": "targeted-v5-20261030/multihop/train/001036",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001036",
+    "p": [
+      0.15723855793476105,
+      0.1288696527481079,
+      0.14809788763523102,
+      0.1277080625295639,
+      0.11062276363372803,
+      0.10557414591312408,
+      0.221888929605484
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.1852617263793945,
+      1.9862990379333496,
+      2.125370979309082,
+      1.9772443771362305,
+      1.8336234092712402,
+      1.786911129951477,
+      2.529674530029297
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/000932",
+    "group": "targeted-v5-20261030/multihop/train/000932",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/000932",
+    "p": [
+      0.41919450221045323,
+      0.16466087593617665,
+      0.19753805391603868,
+      0.21860656793733144
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.9729803800582886,
+      1.0385334491729736,
+      1.2205766439437866,
+      1.3219190835952759
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001108",
+    "group": "targeted-v5-20261030/multihop/train/001108",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001108",
+    "p": [
+      0.18039647282351473,
+      0.21656500448480262,
+      0.22476065828682953,
+      0.18983772962801843,
+      0.1884401347768347
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.9488486051559448,
+      2.131582260131836,
+      2.1687276363372803,
+      1.999861240386963,
+      1.9924719333648682
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001074",
+    "group": "targeted-v5-20261030/multihop/train/001074",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001074",
+    "p": [
+      0.06620532224919407,
+      0.09495043683834048,
+      0.17492765057885906,
+      0.11567642453553956,
+      0.14737976977691225,
+      0.12328861561947602,
+      0.09381839563087824,
+      0.07850262464208435,
+      0.10525076012871593
+    ],
+    "raw_probability_sum": 1.0000000074505806,
+    "zero_count": 0,
+    "logits": [
+      1.6528126001358032,
+      2.013406753540039,
+      2.6244242191314697,
+      2.210848569869995,
+      2.453064441680908,
+      2.2745797634124756,
+      2.0014126300811768,
+      1.8231837749481201,
+      2.1163973808288574
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/000968",
+    "group": "targeted-v5-20261030/multihop/train/000968",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/000968",
+    "p": [
+      0.424749489113658,
+      0.18041613283253508,
+      0.14117484636156835,
+      0.25365953169223854
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.881582260131836,
+      1.0253486633300781,
+      0.7800820469856262,
+      1.3660756349563599
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001011",
+    "group": "targeted-v5-20261030/multihop/train/001011",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001011",
+    "p": [
+      0.14122858853978795,
+      0.15070384965395703,
+      0.18055476517311878,
+      0.5275127966331362
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      0.719649612903595,
+      0.7845863699913025,
+      0.9653039574623108,
+      2.037442922592163
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001173",
+    "group": "targeted-v5-20261030/multihop/train/001173",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001173",
+    "p": [
+      0.06860377128394161,
+      0.11182458610649511,
+      0.13285182916731916,
+      0.19100993938670013,
+      0.2196845844623011,
+      0.12979351507175602,
+      0.14623177452148686
+    ],
+    "raw_probability_sum": 1.000000074505806,
+    "zero_count": 0,
+    "logits": [
+      0.969357430934906,
+      1.4579414129257202,
+      1.6302443742752075,
+      1.993335485458374,
+      2.1332027912139893,
+      1.60695481300354,
+      1.7262028455734253
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001190",
+    "group": "targeted-v5-20261030/multihop/train/001190",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001190",
+    "p": [
+      0.08633391392979939,
+      0.09722996410034357,
+      0.0842756238466547,
+      0.12601513515514295,
+      0.13762275307331068,
+      0.12764754257222924,
+      0.17373367818894314,
+      0.16714138913357632
+    ],
+    "raw_probability_sum": 0.9999999329447746,
+    "zero_count": 0,
+    "logits": [
+      1.2562061548233032,
+      1.3750627040863037,
+      1.2320764064788818,
+      1.6343857049942017,
+      1.722499966621399,
+      1.6472564935684204,
+      1.9555072784423828,
+      1.9168237447738647
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001118",
+    "group": "targeted-v5-20261030/multihop/train/001118",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+    ],
+    "label": 6,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001118",
+    "p": [
+      0.08699264992784485,
+      0.10309229637544906,
+      0.15173193586272096,
+      0.1291884015621483,
+      0.1192110014079362,
+      0.1925460816540408,
+      0.21723763320985984
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.490659236907959,
+      1.660460352897644,
+      2.0469510555267334,
+      1.8861074447631836,
+      1.8057307004928589,
+      2.2851712703704834,
+      2.405827522277832
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001088",
+    "group": "targeted-v5-20261030/multihop/train/001088",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+    ],
+    "label": 6,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001088",
+    "p": [
+      0.13578365338493426,
+      0.10460681901553813,
+      0.14124610599141998,
+      0.1287643871079568,
+      0.15710857042346685,
+      0.192417973505915,
+      0.14007249057076898
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.008223533630371,
+      1.747369408607483,
+      2.0476644039154053,
+      1.9551448822021484,
+      2.15409779548645,
+      2.356830596923828,
+      2.039320707321167
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001083",
+    "group": "targeted-v5-20261030/multihop/train/001083",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001083",
+    "p": [
+      0.2057678760817014,
+      0.23984337567816305,
+      0.1734316102692965,
+      0.1830439771128886,
+      0.19791316085795047
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      2.4001379013061523,
+      2.553375244140625,
+      2.229172468185425,
+      2.2831156253814697,
+      2.361217498779297
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/001038",
+    "group": "targeted-v5-20261030/multihop/train/001038",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/001038",
+    "p": [
+      0.11857270234403174,
+      0.12690502972476317,
+      0.1794616958258314,
+      0.24114267115932722,
+      0.33391790094604645
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.5209271907806396,
+      1.5888398885726929,
+      1.935362696647644,
+      2.2307896614074707,
+      2.5562961101531982
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/000975",
+    "group": "targeted-v5-20261030/multihop/train/000975",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/000975",
+    "p": [
+      0.4922165274620056,
+      0.1740771383047104,
+      0.14381368458271027,
+      0.18989264965057373
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.8770416975021362,
+      0.8376215100288391,
+      0.6466416716575623,
+      0.9245818853378296
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/multihop/train/000956",
+    "group": "targeted-v5-20261030/multihop/train/000956",
+    "question": "decision",
+    "source": "targeted-v5-20261030_multihop",
+    "task": "targeted-v5-20261030_multihop",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/multihop/train/000956",
+    "p": [
+      0.4353677721650397,
+      0.16375143799943667,
+      0.1383315448461364,
+      0.26254924498938725
+    ],
+    "raw_probability_sum": 0.9999999105930328,
+    "zero_count": 0,
+    "logits": [
+      1.8445574045181274,
+      0.8667158484458923,
+      0.6980196237564087,
+      1.3388049602508545
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000333",
+    "group": "targeted-v5-20261030/train/pair00166",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000333",
+    "p": [
+      0.1771355476979253,
+      0.15574402294897913,
+      0.05661923888076341,
+      0.37127030939689154,
+      0.1100088971103558,
+      0.1292219839650848
+    ],
+    "raw_probability_sum": 1.0000000521540642,
+    "zero_count": 0,
+    "logits": [
+      1.9403005838394165,
+      1.8115991353988647,
+      0.7997340559959412,
+      2.6803157329559326,
+      1.4639465808868408,
+      1.6249171495437622
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000333",
+    "group": "targeted-v5-20261030/train/pair00166",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000333",
+    "p": [
+      0.1385749383699103,
+      0.13345145683373935,
+      0.139197196006566,
+      0.09840458619628743,
+      0.12893463141729172,
+      0.17871023555921284,
+      0.1070725923085654,
+      0.07565436330842698
+    ],
+    "raw_probability_sum": 0.999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.8712754249572754,
+      1.833601951599121,
+      1.875755786895752,
+      1.528951644897461,
+      1.799169659614563,
+      2.1256299018859863,
+      1.6133712530136108,
+      1.266039252281189
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000317",
+    "group": "targeted-v5-20261030/train/pair00158",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000317",
+    "p": [
+      0.2734681469748969,
+      0.1794592208958872,
+      0.08194537766074306,
+      0.3704989094473015,
+      0.04124041800351508,
+      0.05338792701765623
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      2.202059745788574,
+      1.7808226346969604,
+      0.9969274401664734,
+      2.505725145339966,
+      0.31029343605041504,
+      0.5684592723846436
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000317",
+    "group": "targeted-v5-20261030/train/pair00158",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000317",
+    "p": [
+      0.08328863729766829,
+      0.17577470396606348,
+      0.07032374711774272,
+      0.16275160984704554,
+      0.155552545520815,
+      0.13056191090118355,
+      0.1442539479883878,
+      0.0774928973610936
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.1643197536468506,
+      1.9112106561660767,
+      0.9951171278953552,
+      1.8342326879501343,
+      1.7889912128448486,
+      1.6138551235198975,
+      1.7135828733444214,
+      1.092193841934204
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000455",
+    "group": "targeted-v5-20261030/train/pair00227",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000455",
+    "p": [
+      0.10984539985656738,
+      0.13167014718055725,
+      0.18714085221290588,
+      0.3081565499305725,
+      0.11042927205562592,
+      0.15275777876377106
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.4514034986495972,
+      1.632629632949829,
+      1.9841911792755127,
+      2.4829375743865967,
+      1.45670485496521,
+      1.7811832427978516
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000455",
+    "group": "targeted-v5-20261030/train/pair00227",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000455",
+    "p": [
+      0.07702985119997569,
+      0.10126006461739925,
+      0.10173006962120948,
+      0.1378650151410708,
+      0.13961275754050956,
+      0.21991789161669562,
+      0.11194644790568638,
+      0.11063790235745324
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.0001157522201538,
+      1.273614764213562,
+      1.2782456874847412,
+      1.5821977853775024,
+      1.5947953462600708,
+      2.0491769313812256,
+      1.3739433288574219,
+      1.3621853590011597
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000480",
+    "group": "targeted-v5-20261030/train/pair00240",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000480",
+    "p": [
+      0.17567974721669585,
+      0.39441792058388714,
+      0.19160722624377666,
+      0.17827402453737015,
+      0.0600210814182702
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      1.540953278541565,
+      2.3497016429901123,
+      1.627738118171692,
+      1.555612325668335,
+      0.46698641777038574
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000480",
+    "group": "targeted-v5-20261030/train/pair00240",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000480",
+    "p": [
+      0.05746434937271085,
+      0.15699462417146612,
+      0.12686881281209575,
+      0.16483674759227693,
+      0.11716272551011973,
+      0.1505639387231625,
+      0.1391220822283393,
+      0.08698671958982886
+    ],
+    "raw_probability_sum": 1.000000011175871,
+    "zero_count": 0,
+    "logits": [
+      0.8079923391342163,
+      1.8130391836166382,
+      1.5999810695648193,
+      1.8617831468582153,
+      1.5203913450241089,
+      1.7712153196334839,
+      1.6921794414520264,
+      1.2225830554962158
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000421",
+    "group": "targeted-v5-20261030/train/pair00210",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000421",
+    "p": [
+      0.17266005020350142,
+      0.07833792897555338,
+      0.15537340707520533,
+      0.36256408151143665,
+      0.15523965425432243,
+      0.07582487797998073
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.6483240127563477,
+      0.8580312132835388,
+      1.5428307056427002,
+      2.390200614929199,
+      1.5419694185256958,
+      0.825425922870636
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000421",
+    "group": "targeted-v5-20261030/train/pair00210",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000421",
+    "p": [
+      0.08239092616445626,
+      0.11645486119050635,
+      0.15138250476581971,
+      0.07155939138263917,
+      0.11443987403482292,
+      0.1288033416211356,
+      0.17560052740871512,
+      0.1593685734319048
+    ],
+    "raw_probability_sum": 1.0000000074505806,
+    "zero_count": 0,
+    "logits": [
+      1.063689112663269,
+      1.4097175598144531,
+      1.6720236539840698,
+      0.9227416515350342,
+      1.392263412475586,
+      1.5105005502700806,
+      1.8204255104064941,
+      1.7234333753585815
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000292",
+    "group": "targeted-v5-20261030/train/pair00146",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000292",
+    "p": [
+      0.2560518796467131,
+      0.4102177207269246,
+      0.09742656040608408,
+      0.14579736348080768,
+      0.04194851034649508,
+      0.04855796539297545
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      2.263096570968628,
+      2.7344045639038086,
+      1.2968153953552246,
+      1.6999342441558838,
+      0.45415952801704407,
+      0.6004747152328491
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000292",
+    "group": "targeted-v5-20261030/train/pair00146",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000292",
+    "p": [
+      0.07156834804690143,
+      0.07635267135763668,
+      0.14539693404284815,
+      0.2069929555579495,
+      0.11983239740008411,
+      0.14852921775377703,
+      0.1220300728233909,
+      0.10929740301741214
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.1751426458358765,
+      1.239852786064148,
+      1.8839572668075562,
+      2.2371745109558105,
+      1.6905838251113892,
+      1.9052714109420776,
+      1.7087572813034058,
+      1.5985623598098755
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000316",
+    "group": "targeted-v5-20261030/train/pair00158",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000316",
+    "p": [
+      0.213136150638997,
+      0.13119420360328926,
+      0.20110766514723127,
+      0.34450265636852884,
+      0.0460167488231631,
+      0.06404257541879052
+    ],
+    "raw_probability_sum": 1.0000000037252903,
+    "zero_count": 0,
+    "logits": [
+      1.99263334274292,
+      1.5073809623718262,
+      1.9345426559448242,
+      2.472804069519043,
+      0.459707647562027,
+      0.7902502417564392
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000316",
+    "group": "targeted-v5-20261030/train/pair00158",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000316",
+    "p": [
+      0.0838112955149622,
+      0.1329091449705021,
+      0.06803142076637086,
+      0.15132838036631405,
+      0.18897117111172762,
+      0.12832678472021863,
+      0.1739171989584804,
+      0.07270460359142412
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.2006571292877197,
+      1.661755084991455,
+      0.9920588731765747,
+      1.7915414571762085,
+      2.013683795928955,
+      1.6266694068908691,
+      1.9306687116622925,
+      1.058493971824646
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000328",
+    "group": "targeted-v5-20261030/train/pair00164",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000328",
+    "p": [
+      0.1942279131940629,
+      0.18805390035945474,
+      0.11118427332686563,
+      0.17316865404937704,
+      0.04532629861455266,
+      0.28803896045568705
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.6352382898330688,
+      1.602934718132019,
+      1.0773950815200806,
+      1.5204720497131348,
+      0.18009351193904877,
+      2.029301881790161
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000328",
+    "group": "targeted-v5-20261030/train/pair00164",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000328",
+    "p": [
+      0.07706170643958012,
+      0.11140773611378277,
+      0.14070041687340165,
+      0.12541264482457407,
+      0.16771050047443062,
+      0.16759115707265074,
+      0.12201699051286266,
+      0.08809884768871735
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      0.9671754240989685,
+      1.3357657194137573,
+      1.5692018270492554,
+      1.4541783332824707,
+      1.7448081970214844,
+      1.744096279144287,
+      1.4267292022705078,
+      1.1010284423828125
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000555",
+    "group": "targeted-v5-20261030/train/pair00277",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000555",
+    "p": [
+      0.4556013285309769,
+      0.15175264375111838,
+      0.06477634201522466,
+      0.14050512748610894,
+      0.1873645582165711
+    ],
+    "raw_probability_sum": 0.9999999478459358,
+    "zero_count": 0,
+    "logits": [
+      2.507739782333374,
+      1.408373475074768,
+      0.5570622086524963,
+      1.3313655853271484,
+      1.6191778182983398
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000555",
+    "group": "targeted-v5-20261030/train/pair00277",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000555",
+    "p": [
+      0.07779941194651759,
+      0.11724954447893932,
+      0.19414155763809554,
+      0.09788047814012998,
+      0.12866972770302676,
+      0.17613699067047212,
+      0.11944411305916647,
+      0.08867817636365224
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.1199572086334229,
+      1.5301278829574585,
+      2.0344109535217285,
+      1.3495705127716064,
+      1.6230722665786743,
+      1.9370853900909424,
+      1.5486719608306885,
+      1.2508370876312256
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000315",
+    "group": "targeted-v5-20261030/train/pair00157",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000315",
+    "p": [
+      0.03682537404317687,
+      0.12265507223200106,
+      0.17002083487824227,
+      0.35151973628639976,
+      0.13644878667927374,
+      0.18253019588090624
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      0.3364633023738861,
+      1.5396522283554077,
+      1.866197109222412,
+      2.5925419330596924,
+      1.6462253332138062,
+      1.9371917247772217
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000315",
+    "group": "targeted-v5-20261030/train/pair00157",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000315",
+    "p": [
+      0.10410428047180176,
+      0.18542566895484924,
+      0.06312379986047745,
+      0.17212098836898804,
+      0.15019522607326508,
+      0.10405299812555313,
+      0.09319557249546051,
+      0.1277814656496048
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.4177004098892212,
+      1.9949615001678467,
+      0.917405366897583,
+      1.9205050468444824,
+      1.7842433452606201,
+      1.4172077178955078,
+      1.3070076704025269,
+      1.622628927230835
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000550",
+    "group": "targeted-v5-20261030/train/pair00275",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000550",
+    "p": [
+      0.413154906230493,
+      0.1684996808841777,
+      0.10862530929781958,
+      0.1766468014813483,
+      0.13307330210616145
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.4526941776275635,
+      1.5558054447174072,
+      1.1167759895324707,
+      1.603023886680603,
+      1.319771647453308
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000550",
+    "group": "targeted-v5-20261030/train/pair00275",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000550",
+    "p": [
+      0.09668353800947163,
+      0.10987591579741365,
+      0.14522716186602172,
+      0.17414170244124974,
+      0.142857892172666,
+      0.19985021352991145,
+      0.06447668277507003,
+      0.06688689340819577
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.345367431640625,
+      1.4732760190963745,
+      1.7522233724594116,
+      1.9337936639785767,
+      1.7357746362686157,
+      2.0714924335479736,
+      0.9402279257774353,
+      0.9769272804260254
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000565",
+    "group": "targeted-v5-20261030/train/pair00282",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000565",
+    "p": [
+      0.17954088881269759,
+      0.12462734523882973,
+      0.10939455113853924,
+      0.4260415764603136,
+      0.16039563834961978
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.5107418298721313,
+      1.1456668376922607,
+      1.015299916267395,
+      2.374875783920288,
+      1.3979822397232056
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000565",
+    "group": "targeted-v5-20261030/train/pair00282",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000565",
+    "p": [
+      0.10362937633364912,
+      0.09529417433282275,
+      0.1105332772582832,
+      0.07378856758156035,
+      0.08881854763419766,
+      0.2352235203359067,
+      0.14192174279074266,
+      0.15079079373283755
+    ],
+    "raw_probability_sum": 1.000000111758709,
+    "zero_count": 0,
+    "logits": [
+      1.3053315877914429,
+      1.2214794158935547,
+      1.3698272705078125,
+      0.9657144546508789,
+      1.1511062383651733,
+      2.125046968460083,
+      1.6197866201400757,
+      1.6804040670394897
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000310",
+    "group": "targeted-v5-20261030/train/pair00155",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000310",
+    "p": [
+      0.34352181129578824,
+      0.17153466131243097,
+      0.09907236171675537,
+      0.10903077816286932,
+      0.08490414362186514,
+      0.19193624389029093
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      2.388902425765991,
+      1.6944371461868286,
+      1.1455023288726807,
+      1.2412819862365723,
+      0.9911746978759766,
+      1.8068151473999023
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000310",
+    "group": "targeted-v5-20261030/train/pair00155",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 6,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000310",
+    "p": [
+      0.06384477478959673,
+      0.15664259389150467,
+      0.10364930613416555,
+      0.10701758681159078,
+      0.0893187408453789,
+      0.2617620410727542,
+      0.13799408951428133,
+      0.07977086694072781
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.0195119380950928,
+      1.91702401638031,
+      1.5040702819824219,
+      1.5360504388809204,
+      1.3552684783935547,
+      2.430493116378784,
+      1.7902681827545166,
+      1.242215633392334
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000575",
+    "group": "targeted-v5-20261030/train/pair00287",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000575",
+    "p": [
+      0.1978822722242129,
+      0.17987922504094336,
+      0.4269578913956095,
+      0.07390326536831503,
+      0.1213773459709192
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      1.7034940719604492,
+      1.608107566833496,
+      2.4725072383880615,
+      0.7185787558555603,
+      1.2147260904312134
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000575",
+    "group": "targeted-v5-20261030/train/pair00287",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000575",
+    "p": [
+      0.0990220457315445,
+      0.10425427556037903,
+      0.15989018976688385,
+      0.10530289262533188,
+      0.11384131759405136,
+      0.13139358162879944,
+      0.15951240062713623,
+      0.12678329646587372
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.189309000968933,
+      1.2407994270324707,
+      1.6684538125991821,
+      1.2508074045181274,
+      1.3287720680236816,
+      1.4721637964248657,
+      1.6660882234573364,
+      1.4364458322525024
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000503",
+    "group": "targeted-v5-20261030/train/pair00251",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000503",
+    "p": [
+      0.23623078445488405,
+      0.15997188866211765,
+      0.11563331332268867,
+      0.3422432750623564,
+      0.05222244797066921,
+      0.09369829052728403
+    ],
+    "raw_probability_sum": 1.000000026077032,
+    "zero_count": 0,
+    "logits": [
+      1.9460176229476929,
+      1.5562065839767456,
+      1.2316325902938843,
+      2.316730260848999,
+      0.43672090768814087,
+      1.0212883949279785
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000503",
+    "group": "targeted-v5-20261030/train/pair00251",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000503",
+    "p": [
+      0.1254328340291977,
+      0.08747924119234085,
+      0.11317429691553116,
+      0.10327160358428955,
+      0.17153048515319824,
+      0.11817298829555511,
+      0.09798327088356018,
+      0.1829552799463272
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.2833915948867798,
+      0.9230226278305054,
+      1.180550217628479,
+      1.0889835357666016,
+      1.5963821411132812,
+      1.2237707376480103,
+      1.0364179611206055,
+      1.660862922668457
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000375",
+    "group": "targeted-v5-20261030/train/pair00187",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000375",
+    "p": [
+      0.03323771680751008,
+      0.1707895483527501,
+      0.1702734168517062,
+      0.20241179308251317,
+      0.15201571017445215,
+      0.2712718147310684
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      0.21811240911483765,
+      1.8548592329025269,
+      1.851832628250122,
+      2.024731397628784,
+      1.7384110689163208,
+      2.3175485134124756
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000375",
+    "group": "targeted-v5-20261030/train/pair00187",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000375",
+    "p": [
+      0.13354650139808655,
+      0.11247782409191132,
+      0.26734834909439087,
+      0.08792748302221298,
+      0.11439020931720734,
+      0.07626258581876755,
+      0.10232926160097122,
+      0.10571778565645218
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.610830307006836,
+      1.4391366243362427,
+      2.3049330711364746,
+      1.1928929090499878,
+      1.455996036529541,
+      1.050563097000122,
+      1.3445762395858765,
+      1.3771536350250244
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000542",
+    "group": "targeted-v5-20261030/train/pair00271",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000542",
+    "p": [
+      0.4568628566668289,
+      0.15238438206051927,
+      0.12491371203406798,
+      0.1798800785866362,
+      0.08595897065194762
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      2.641268730163574,
+      1.543291687965393,
+      1.3445086479187012,
+      1.7091758251190186,
+      0.9707556366920471
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000542",
+    "group": "targeted-v5-20261030/train/pair00271",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000542",
+    "p": [
+      0.21132684541221133,
+      0.09238026635275283,
+      0.15641747997766287,
+      0.07920351919544932,
+      0.12791747331311826,
+      0.13358282050426382,
+      0.12696788187950409,
+      0.07220371336503749
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      2.12516188621521,
+      1.2976692914962769,
+      1.8242844343185425,
+      1.1437766551971436,
+      1.6231411695480347,
+      1.6664775609970093,
+      1.615689992904663,
+      1.0512473583221436
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000353",
+    "group": "targeted-v5-20261030/train/pair00176",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000353",
+    "p": [
+      0.4275352513498915,
+      0.12517259595337002,
+      0.03263462597984212,
+      0.19269291410507178,
+      0.15112953871426787,
+      0.07083507389755672
+    ],
+    "raw_probability_sum": 1.0000000335276127,
+    "zero_count": 0,
+    "logits": [
+      2.7272918224334717,
+      1.4989486932754517,
+      0.15462905168533325,
+      1.930352807044983,
+      1.6873924732208252,
+      0.9296093583106995
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000353",
+    "group": "targeted-v5-20261030/train/pair00176",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000353",
+    "p": [
+      0.06787147966314525,
+      0.10458071296109156,
+      0.11225700127504018,
+      0.212088490752388,
+      0.1280915112474968,
+      0.07983068198344077,
+      0.17303680986828782,
+      0.12224331224910961
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      0.8315063118934631,
+      1.2638493776321411,
+      1.3346811532974243,
+      1.9708938598632812,
+      1.4666352272033691,
+      0.9937981367111206,
+      1.7673946619033813,
+      1.4199036359786987
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000513",
+    "group": "targeted-v5-20261030/train/pair00256",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "label": 5,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000513",
+    "p": [
+      0.1615009927973299,
+      0.09669292862255766,
+      0.221114668564717,
+      0.313249056238667,
+      0.09237859535781436,
+      0.11506375841891406
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.696047306060791,
+      1.18307626247406,
+      2.0102174282073975,
+      2.358534574508667,
+      1.137431263923645,
+      1.3570222854614258
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000513",
+    "group": "targeted-v5-20261030/train/pair00256",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000513",
+    "p": [
+      0.12323605177375635,
+      0.0890871354260509,
+      0.10475911121994919,
+      0.10179861559123832,
+      0.12217374800016173,
+      0.10454794686624447,
+      0.23066018349930506,
+      0.12373720762329393
+    ],
+    "raw_probability_sum": 1.0000000074505806,
+    "zero_count": 0,
+    "logits": [
+      1.5298688411712646,
+      1.205382227897644,
+      1.3674306869506836,
+      1.33876371383667,
+      1.5212113857269287,
+      1.3654130697250366,
+      2.156712770462036,
+      1.5339272022247314
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000496",
+    "group": "targeted-v5-20261030/train/pair00248",
+    "question": "amount",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000496",
+    "p": [
+      0.20181711168450944,
+      0.43313187683471943,
+      0.11479506727155347,
+      0.06922864965519793,
+      0.18102729455401967
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.5690864324569702,
+      2.3327667713165283,
+      1.0048730373382568,
+      0.49913930892944336,
+      1.4603723287582397
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/policy/train/000496",
+    "group": "targeted-v5-20261030/train/pair00248",
+    "question": "reason",
+    "source": "targeted-v5-20261030_policy",
+    "task": "targeted-v5-20261030_policy",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/policy/train/000496",
+    "p": [
+      0.09039072288316237,
+      0.2371874196594617,
+      0.13231282834800356,
+      0.13594364512218632,
+      0.06779254669878423,
+      0.11624382661683143,
+      0.0965366990922377,
+      0.12359231157933273
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.4658217430114746,
+      2.4305307865142822,
+      1.8468492031097412,
+      1.8739205598831177,
+      1.1781322956085205,
+      1.7173700332641602,
+      1.5316033363342285,
+      1.7786684036254883
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000759",
+    "group": "targeted-v5-20261030/probability/train/000759",
+    "question": "probability",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000759",
+    "p": [
+      0.2143661209563089,
+      0.1314171183953952,
+      0.22826103736525996,
+      0.20952982959329067,
+      0.2164258936897453
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.6865687370300293,
+      1.197259783744812,
+      1.749373197555542,
+      1.6637494564056396,
+      1.6961315870285034
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000712",
+    "group": "targeted-v5-20261030/probability/train/000712",
+    "question": "bucket",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000712",
+    "p": [
+      0.19040671346147575,
+      0.19081177170206476,
+      0.1837443152818492,
+      0.21731655494472057,
+      0.2177206446098897
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      1.0722525119781494,
+      1.0743776559829712,
+      1.036635398864746,
+      1.204445242881775,
+      1.2063030004501343
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000712",
+    "group": "targeted-v5-20261030/probability/train/000712",
+    "question": "more_likely",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000712",
+    "p": [
+      0.5843932976957141,
+      0.4156067023042859
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.842254877090454,
+      1.501420021057129
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000712",
+    "group": "targeted-v5-20261030/probability/train/000712",
+    "question": "posterior",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000712",
+    "p": [
+      0.16617133342367907,
+      0.11333428000413924,
+      0.44307784896633956,
+      0.19279161813823947,
+      0.08462491946760264
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      1.4790929555892944,
+      1.0964152812957764,
+      2.4598190784454346,
+      1.6276835203170776,
+      0.8043023943901062
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000618",
+    "group": "targeted-v5-20261030/probability/train/000618",
+    "question": "forward",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000618",
+    "p": [
+      0.232547327876091,
+      0.1278146505355835,
+      0.2143927365541458,
+      0.21924988925457,
+      0.20599539577960968
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.0198097229003906,
+      1.4212971925735474,
+      1.9385255575180054,
+      1.9609280824661255,
+      1.8985698223114014
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000618",
+    "group": "targeted-v5-20261030/probability/train/000618",
+    "question": "reverse",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000618",
+    "p": [
+      0.21717050475898414,
+      0.2528419645334461,
+      0.1591378247223988,
+      0.2046826156784663,
+      0.16616709030670465
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.9928392171859741,
+      2.144921064376831,
+      1.6819270849227905,
+      1.9336168766021729,
+      1.725150227546692
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000772",
+    "group": "targeted-v5-20261030/probability/train/000772",
+    "question": "probability",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000772",
+    "p": [
+      0.16594042384979582,
+      0.1462139102093035,
+      0.2976011158465674,
+      0.10353367903627879,
+      0.2867108710580545
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      1.6613194942474365,
+      1.5347614288330078,
+      2.2454447746276855,
+      1.1895877122879028,
+      2.208164930343628
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000781",
+    "group": "targeted-v5-20261030/probability/train/000781",
+    "question": "probability",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000781",
+    "p": [
+      0.11780778624833427,
+      0.2679484982807749,
+      0.27632512612919785,
+      0.26145528773012433,
+      0.07646330161156872
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      1.1395552158355713,
+      1.9612956047058105,
+      1.9920790195465088,
+      1.936764121055603,
+      0.707311749458313
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000886",
+    "group": "targeted-v5-20261030/probability/train/000886",
+    "question": "project",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000886",
+    "p": [
+      0.22069965302944183,
+      0.2769675850868225,
+      0.26692166924476624,
+      0.23541109263896942
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.3371795415878296,
+      1.5642772912979126,
+      1.527332067489624,
+      1.4017101526260376
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000886",
+    "group": "targeted-v5-20261030/probability/train/000886",
+    "question": "value",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000886",
+    "p": [
+      0.11267303664939606,
+      0.11623647774660364,
+      0.2586970453838005,
+      0.2821405638809124,
+      0.2302528763392874
+    ],
+    "raw_probability_sum": 1.0000000670552254,
+    "zero_count": 0,
+    "logits": [
+      0.6893036365509033,
+      0.7204402089118958,
+      1.520471215248108,
+      1.607218861579895,
+      1.40399169921875
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000617",
+    "group": "targeted-v5-20261030/probability/train/000617",
+    "question": "forward",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000617",
+    "p": [
+      0.18111416017029405,
+      0.1928978946610344,
+      0.22858444878091433,
+      0.2105466370528923,
+      0.18685685933486487
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.7366116046905518,
+      1.7996450662612915,
+      1.969389796257019,
+      1.8871912956237793,
+      1.7678269147872925
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000617",
+    "group": "targeted-v5-20261030/probability/train/000617",
+    "question": "reverse",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000617",
+    "p": [
+      0.17545169016839438,
+      0.18675639709304853,
+      0.26038794087406686,
+      0.2829189150067598,
+      0.09448505685773044
+    ],
+    "raw_probability_sum": 0.9999999478459358,
+    "zero_count": 0,
+    "logits": [
+      1.9183088541030884,
+      1.9807502031326294,
+      2.313117742538452,
+      2.3961055278778076,
+      1.2993868589401245
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000679",
+    "group": "targeted-v5-20261030/probability/train/000679",
+    "question": "bucket",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000679",
+    "p": [
+      0.13981564551317163,
+      0.20189249816376714,
+      0.1994742035787434,
+      0.2170775714081164,
+      0.24174008133620145
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      0.8160637617111206,
+      1.1834744215011597,
+      1.1714240312576294,
+      1.2559937238693237,
+      1.3636021614074707
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000679",
+    "group": "targeted-v5-20261030/probability/train/000679",
+    "question": "more_likely",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000679",
+    "p": [
+      0.6105799493020788,
+      0.3894200506979212
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.9109829664230347,
+      1.461232304573059
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000679",
+    "group": "targeted-v5-20261030/probability/train/000679",
+    "question": "posterior",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000679",
+    "p": [
+      0.17476408827329745,
+      0.041472086537118535,
+      0.3819113486824649,
+      0.08813593109783864,
+      0.31371654540928046
+    ],
+    "raw_probability_sum": 1.0000000484287739,
+    "zero_count": 0,
+    "logits": [
+      1.6749390363693237,
+      0.2365226298570633,
+      2.456690549850464,
+      0.9903824329376221,
+      2.2599918842315674
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000850",
+    "group": "targeted-v5-20261030/probability/train/000850",
+    "question": "decision",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000850",
+    "p": [
+      0.2827274203300476,
+      0.32607096433639526,
+      0.39120161533355713
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      0.8446418642997742,
+      0.9872737526893616,
+      1.1693817377090454
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000783",
+    "group": "targeted-v5-20261030/probability/train/000783",
+    "question": "probability",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000783",
+    "p": [
+      0.2054210427654411,
+      0.18945219751907572,
+      0.21679101686424118,
+      0.17820219267619805,
+      0.21013355017504395
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.6790355443954468,
+      1.598110556602478,
+      1.7329076528549194,
+      1.5368926525115967,
+      1.7017171382904053
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000849",
+    "group": "targeted-v5-20261030/probability/train/000849",
+    "question": "decision",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000849",
+    "p": [
+      0.3372159402732831,
+      0.37359077851744826,
+      0.2891932812092686
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.134822130203247,
+      1.2372597455978394,
+      0.9811939597129822
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000620",
+    "group": "targeted-v5-20261030/probability/train/000620",
+    "question": "forward",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000620",
+    "p": [
+      0.18856645277590517,
+      0.17500404231232217,
+      0.19970469774135807,
+      0.19504064939734417,
+      0.24168415777307042
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.5292292833328247,
+      1.4545878171920776,
+      1.5866185426712036,
+      1.5629867315292358,
+      1.7774105072021484
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000620",
+    "group": "targeted-v5-20261030/probability/train/000620",
+    "question": "reverse",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000620",
+    "p": [
+      0.17109727222110063,
+      0.16054249701863166,
+      0.2765725748027647,
+      0.2702347237529336,
+      0.12155293220456942
+    ],
+    "raw_probability_sum": 1.000000037252903,
+    "zero_count": 0,
+    "logits": [
+      1.6918296813964844,
+      1.6281561851501465,
+      2.1720707416534424,
+      2.148888349533081,
+      1.3499473333358765
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000581",
+    "group": "targeted-v5-20261030/probability/train/000581",
+    "question": "forward",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000581",
+    "p": [
+      0.17609626232860517,
+      0.15608296125509133,
+      0.25243128445511426,
+      0.18115224084613912,
+      0.2342372511150501
+    ],
+    "raw_probability_sum": 1.000000074505806,
+    "zero_count": 0,
+    "logits": [
+      1.8341401815414429,
+      1.7134970426559448,
+      2.1942484378814697,
+      1.8624471426010132,
+      2.119443893432617
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000581",
+    "group": "targeted-v5-20261030/probability/train/000581",
+    "question": "reverse",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000581",
+    "p": [
+      0.1840891159733035,
+      0.2194051495460354,
+      0.25956367286010057,
+      0.21173562653054476,
+      0.12520643509001575
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.986897349357605,
+      2.1623973846435547,
+      2.330479383468628,
+      2.1268157958984375,
+      1.6014412641525269
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000657",
+    "group": "targeted-v5-20261030/probability/train/000657",
+    "question": "bucket",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000657",
+    "p": [
+      0.14940446769555202,
+      0.19371245559640626,
+      0.19413320474625784,
+      0.21602026676950453,
+      0.24672960519227935
+    ],
+    "raw_probability_sum": 1.0000000894069672,
+    "zero_count": 0,
+    "logits": [
+      0.7354939579963684,
+      0.995211660861969,
+      0.9973812699317932,
+      1.1042089462280273,
+      1.237129807472229
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000657",
+    "group": "targeted-v5-20261030/probability/train/000657",
+    "question": "more_likely",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000657",
+    "p": [
+      0.6269435286521912,
+      0.37305647134780884
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.8823667764663696,
+      1.363240122795105
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000657",
+    "group": "targeted-v5-20261030/probability/train/000657",
+    "question": "posterior",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000657",
+    "p": [
+      0.2224718953200269,
+      0.3137782549162759,
+      0.05680171091260438,
+      0.07102795024619941,
+      0.3359201886048934
+    ],
+    "raw_probability_sum": 0.9999999888241291,
+    "zero_count": 0,
+    "logits": [
+      1.7000497579574585,
+      2.043935537338257,
+      0.3348153829574585,
+      0.5583224296569824,
+      2.1121225357055664
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000739",
+    "group": "targeted-v5-20261030/probability/train/000739",
+    "question": "probability",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000739",
+    "p": [
+      0.15963276563159645,
+      0.24851131245180358,
+      0.18368438844226836,
+      0.11859063677589936,
+      0.28958089669843223
+    ],
+    "raw_probability_sum": 0.9999999478459358,
+    "zero_count": 0,
+    "logits": [
+      1.1102862358093262,
+      1.552898645401001,
+      1.2506293058395386,
+      0.8130878210067749,
+      1.7058449983596802
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000649",
+    "group": "targeted-v5-20261030/probability/train/000649",
+    "question": "forward",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000649",
+    "p": [
+      0.16136563064702794,
+      0.1515855662760968,
+      0.2424129730822589,
+      0.3113860534338065,
+      0.13324977656080986
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.763623595237732,
+      1.7011010646820068,
+      2.170593500137329,
+      2.4209842681884766,
+      1.572176218032837
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000649",
+    "group": "targeted-v5-20261030/probability/train/000649",
+    "question": "reverse",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000649",
+    "p": [
+      0.1975504457950592,
+      0.2861255705356598,
+      0.147943377494812,
+      0.22941134870052338,
+      0.13896925747394562
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.8833810091018677,
+      2.2538177967071533,
+      1.5942165851593018,
+      2.0329036712646484,
+      1.5316396951675415
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000768",
+    "group": "targeted-v5-20261030/probability/train/000768",
+    "question": "probability",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000768",
+    "p": [
+      0.2552944554914623,
+      0.3387958584097848,
+      0.24004743755111146,
+      0.08353206205907787,
+      0.0823301864885636
+    ],
+    "raw_probability_sum": 0.9999999478459358,
+    "zero_count": 0,
+    "logits": [
+      2.026852607727051,
+      2.309832811355591,
+      1.9652715921401978,
+      0.9096655249595642,
+      0.8951728940010071
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000883",
+    "group": "targeted-v5-20261030/probability/train/000883",
+    "question": "project",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000883",
+    "p": [
+      0.22032470672838828,
+      0.2831374960670248,
+      0.4965377972045869
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.0982916355133057,
+      1.3491219282150269,
+      1.91084885597229
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000883",
+    "group": "targeted-v5-20261030/probability/train/000883",
+    "question": "value",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000883",
+    "p": [
+      0.1992214947242881,
+      0.24821148051722172,
+      0.16704000535965013,
+      0.18318885712523972,
+      0.2023381622736003
+    ],
+    "raw_probability_sum": 0.9999999105930328,
+    "zero_count": 0,
+    "logits": [
+      1.0900555849075317,
+      1.3099194765090942,
+      0.9138716459274292,
+      1.0061559677124023,
+      1.1055786609649658
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000791",
+    "group": "targeted-v5-20261030/probability/train/000791",
+    "question": "probability",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000791",
+    "p": [
+      0.16927761572848488,
+      0.2339653864220357,
+      0.22388716531304276,
+      0.24345586105633404,
+      0.1294139714801026
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.607813835144043,
+      1.93144690990448,
+      1.887415885925293,
+      1.9712094068527222,
+      1.3392900228500366
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000705",
+    "group": "targeted-v5-20261030/probability/train/000705",
+    "question": "bucket",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "score",
+    "variant": "clean",
+    "keys": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000705",
+    "p": [
+      0.1311774156110424,
+      0.16755694392644288,
+      0.14644338589583442,
+      0.17404301657952245,
+      0.16880898410014927,
+      0.21197025388700858
+    ],
+    "raw_probability_sum": 1.000000074505806,
+    "zero_count": 0,
+    "logits": [
+      0.9575542211532593,
+      1.202326774597168,
+      1.0676424503326416,
+      1.24030601978302,
+      1.2097712755203247,
+      1.4374494552612305
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000705",
+    "group": "targeted-v5-20261030/probability/train/000705",
+    "question": "more_likely",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "noul",
+    "variant": "clean",
+    "keys": [
+      "false",
+      "true"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000705",
+    "p": [
+      0.6210632920265198,
+      0.3789367079734802
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.9355673789978027,
+      1.4415035247802734
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v5-20261030/probability/train/000705",
+    "group": "targeted-v5-20261030/probability/train/000705",
+    "question": "posterior",
+    "source": "targeted-v5-20261030_probability",
+    "task": "targeted-v5-20261030_probability",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v5-20261030/probability/train/000705",
+    "p": [
+      0.07871856599091415,
+      0.16448165598870557,
+      0.2811637243715206,
+      0.33598107349858486,
+      0.13965498015027478
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      0.9979721307754517,
+      1.7348921298980713,
+      2.2710301876068115,
+      2.449147939682007,
+      1.571268081665039
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00347",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00347",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00347",
+    "p": [
+      0.1726685690582649,
+      0.2437875379825028,
+      0.21690947787059,
+      0.24464863142290555,
+      0.12198578366573679
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.4371548891067505,
+      1.7820780277252197,
+      1.6652610301971436,
+      1.7856040000915527,
+      1.0896854400634766
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00568",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00568",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00568",
+    "p": [
+      0.14428336288233773,
+      0.24332481582908724,
+      0.18177684734921737,
+      0.26533316167194615,
+      0.16528181226741148
+    ],
+    "raw_probability_sum": 0.9999999403953552,
+    "zero_count": 0,
+    "logits": [
+      1.2004460096359253,
+      1.7230640649795532,
+      1.4314467906951904,
+      1.8096531629562378,
+      1.336318850517273
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00499",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00499",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00499",
+    "p": [
+      0.1468744107056497,
+      0.2650873919563384,
+      0.27843269290875355,
+      0.13950030297785546,
+      0.17010520145140287
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      1.1481599807739258,
+      1.738641619682312,
+      1.787758469581604,
+      1.096648931503296,
+      1.294999122619629
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00738",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00738",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00738",
+    "p": [
+      0.13567133450018368,
+      0.2224604520568319,
+      0.21698162282975947,
+      0.24101508022867263,
+      0.18387151038455232
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.4300510883331299,
+      1.9245651960372925,
+      1.8996285200119019,
+      2.0046753883361816,
+      1.734053134918213
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00190",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00190",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00190",
+    "p": [
+      0.16734112799167633,
+      0.2762792706489563,
+      0.21631617844104767,
+      0.14269818365573883,
+      0.19736523926258087
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.6428829431533813,
+      2.1442606449127197,
+      1.8995896577835083,
+      1.4835803508758545,
+      1.8079044818878174
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00223",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00223",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00223",
+    "p": [
+      0.1442599169054615,
+      0.2343531434886626,
+      0.25903195528733663,
+      0.1464157424333057,
+      0.21593924188523356
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.2430552244186401,
+      1.7282676696777344,
+      1.8283900022506714,
+      1.257888674736023,
+      1.6464356184005737
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00563",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00563",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00563",
+    "p": [
+      0.1565808011120319,
+      0.1562749249853216,
+      0.2505890950385006,
+      0.18027324437280762,
+      0.2562819344913383
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.1462030410766602,
+      1.1442476511001587,
+      1.6164454221725464,
+      1.287104606628418,
+      1.638909101486206
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00680",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00680",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00680",
+    "p": [
+      0.14736174595958537,
+      0.2521086727123213,
+      0.11749282171923003,
+      0.25572256206432586,
+      0.22731419754453738
+    ],
+    "raw_probability_sum": 0.999999962747097,
+    "zero_count": 0,
+    "logits": [
+      1.1696715354919434,
+      1.7066413164138794,
+      0.9431582689285278,
+      1.7208741903305054,
+      1.6031142473220825
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00027",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00027",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00027",
+    "p": [
+      0.4593924283981323,
+      0.5406075716018677
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      1.6561424732208252,
+      1.8189313411712646
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00512",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00512",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00512",
+    "p": [
+      0.47051665362616457,
+      0.5294833463738354
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      1.790433406829834,
+      1.908503770828247
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00708",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00708",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00708",
+    "p": [
+      0.1286413165044196,
+      0.21542533269113306,
+      0.2570998255714852,
+      0.18311766461502024,
+      0.2157158606179419
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      1.1818164587020874,
+      1.6974027156829834,
+      1.8742529153823853,
+      1.5349173545837402,
+      1.6987504959106445
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00176",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00176",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00176",
+    "p": [
+      0.1617442023234307,
+      0.23952860416386712,
+      0.17096651581029546,
+      0.265955797852403,
+      0.16180487985000372
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.4598315954208374,
+      1.8524882793426514,
+      1.515283226966858,
+      1.9571455717086792,
+      1.4602066278457642
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00159",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00159",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00159",
+    "p": [
+      0.5133152008056641,
+      0.48668479919433594
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.0037410259246826,
+      1.950467586517334
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00328",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00328",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00328",
+    "p": [
+      0.12185307028670714,
+      0.2519935705064769,
+      0.25614178562375584,
+      0.20532211967292607,
+      0.16468945391013404
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      1.0333638191223145,
+      1.7599513530731201,
+      1.7762789726257324,
+      1.5551278591156006,
+      1.3346095085144043
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00100",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00100",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00100",
+    "p": [
+      0.14369896687871414,
+      0.19607436978373707,
+      0.24945792559040036,
+      0.17650720915155357,
+      0.23426152859559485
+    ],
+    "raw_probability_sum": 1.0000000596046448,
+    "zero_count": 0,
+    "logits": [
+      1.384279727935791,
+      1.6950531005859375,
+      1.9358494281768799,
+      1.5899208784103394,
+      1.8729972839355469
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00169",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00169",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00169",
+    "p": [
+      0.458588318270793,
+      0.541411681729207
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.8181036710739136,
+      1.9841307401657104
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00343",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00343",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00343",
+    "p": [
+      0.14703666725645462,
+      0.15857448701338508,
+      0.17535039259939217,
+      0.2512954100580391,
+      0.267743043072729
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      1.2930841445922852,
+      1.3686264753341675,
+      1.4691883325576782,
+      1.8290313482284546,
+      1.8924298286437988
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00192",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00192",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00192",
+    "p": [
+      0.12862574139054453,
+      0.21919963743685056,
+      0.24941517037519084,
+      0.2087671105012496,
+      0.19399234029616447
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.0625078678131104,
+      1.5955837965011597,
+      1.724719762802124,
+      1.5468202829360962,
+      1.4734195470809937
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00603",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00603",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 4,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00603",
+    "p": [
+      0.13977853088580955,
+      0.2661077201116556,
+      0.1158170900859128,
+      0.26318923815440703,
+      0.21510742076221498
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      1.0620588064193726,
+      1.70590078830719,
+      0.8740116953849792,
+      1.6948729753494263,
+      1.4931371212005615
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/temporal/train/00786",
+    "group": "targeted-v2-all7-compact-20261029/temporal/train/00786",
+    "question": "decision",
+    "source": "targeted_v2_all7_temporal",
+    "task": "targeted_temporal",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/temporal/train/00786",
+    "p": [
+      0.13701081378020952,
+      0.2605818827493629,
+      0.12443270626986552,
+      0.23051756792156075,
+      0.24745702927900126
+    ],
+    "raw_probability_sum": 0.9999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.014297366142273,
+      1.6571546792984009,
+      0.9180024862289429,
+      1.5345646142959595,
+      1.6054744720458984
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00135",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00135",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00135",
+    "p": [
+      0.10525927731836418,
+      0.21946300711207145,
+      0.5460076738899703,
+      0.12927004167959405
+    ],
+    "raw_probability_sum": 0.999999925494194,
+    "zero_count": 0,
+    "logits": [
+      1.7559189796447754,
+      2.490675926208496,
+      3.402125358581543,
+      1.9613959789276123
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00734",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00734",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00734",
+    "p": [
+      0.30447152256965637,
+      0.1090710312128067,
+      0.40013551712036133,
+      0.1863219290971756
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.886812210083008,
+      1.8602341413497925,
+      3.1600379943847656,
+      2.3957107067108154
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00298",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00298",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00298",
+    "p": [
+      0.4258077975242168,
+      0.09041394158580986,
+      0.15195047628953343,
+      0.3318277846004399
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      3.2939250469207764,
+      1.744335412979126,
+      2.263491630554199,
+      3.04455304145813
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00774",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00774",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00774",
+    "p": [
+      0.3250201497217946,
+      0.20206277659254776,
+      0.13418922718513487,
+      0.3387278465005228
+    ],
+    "raw_probability_sum": 1.0000000447034836,
+    "zero_count": 0,
+    "logits": [
+      2.705947160720825,
+      2.2306385040283203,
+      1.8213109970092773,
+      2.7472569942474365
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00641",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00641",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00641",
+    "p": [
+      0.26395866895091513,
+      0.1968137296902779,
+      0.1788055885905991,
+      0.36042201276820784
+    ],
+    "raw_probability_sum": 1.0000000894069672,
+    "zero_count": 0,
+    "logits": [
+      2.601334810256958,
+      2.307800054550171,
+      2.211841583251953,
+      2.91281795501709
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00402",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00402",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00402",
+    "p": [
+      0.1950239746279709,
+      0.15408970874815311,
+      0.3421674174716299,
+      0.3087188991522461
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      2.2877445220947266,
+      2.052156925201416,
+      2.8499221801757812,
+      2.7470531463623047
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00308",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00308",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00308",
+    "p": [
+      0.07398627918917773,
+      0.4622703034362287,
+      0.14263789780848915,
+      0.3211055195661044
+    ],
+    "raw_probability_sum": 0.9999999701976776,
+    "zero_count": 0,
+    "logits": [
+      1.5568106174468994,
+      3.389080762863159,
+      2.213240146636963,
+      3.024700880050659
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00435",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00435",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00435",
+    "p": [
+      0.11106858484957999,
+      0.15227184834121527,
+      0.2293345354001623,
+      0.5073250314090424
+    ],
+    "raw_probability_sum": 0.999999925494194,
+    "zero_count": 0,
+    "logits": [
+      2.1275508403778076,
+      2.443070411682129,
+      2.8525848388671875,
+      3.646554946899414
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00823",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00823",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00823",
+    "p": [
+      0.35079401208767275,
+      0.1993465542890645,
+      0.29186850351291144,
+      0.15799093011035129
+    ],
+    "raw_probability_sum": 1.0000000149011612,
+    "zero_count": 0,
+    "logits": [
+      3.1393563747406006,
+      2.574202060699463,
+      2.955460548400879,
+      2.3416948318481445
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00157",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00157",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00157",
+    "p": [
+      0.19891169667243958,
+      0.13690215349197388,
+      0.10593906044960022,
+      0.5582470893859863
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.5397515296936035,
+      2.1661570072174072,
+      1.9097546339035034,
+      3.5716922283172607
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00401",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00401",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00401",
+    "p": [
+      0.13714684137264366,
+      0.1012583791834599,
+      0.3452688650706749,
+      0.4163259143732216
+    ],
+    "raw_probability_sum": 1.0000000298023224,
+    "zero_count": 0,
+    "logits": [
+      2.0274322032928467,
+      1.7240554094314575,
+      2.9507033824920654,
+      3.137848377227783
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00510",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00510",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00510",
+    "p": [
+      0.2669352630814204,
+      0.19459672562177072,
+      0.19706020052820744,
+      0.34140781076860144
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.702385425567627,
+      2.386308431625366,
+      2.398888349533081,
+      2.9484567642211914
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00398",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00398",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00398",
+    "p": [
+      0.37140411478913854,
+      0.40043628815736965,
+      0.1479176564142993,
+      0.08024194063919252
+    ],
+    "raw_probability_sum": 0.9999999105930328,
+    "zero_count": 0,
+    "logits": [
+      3.3785321712493896,
+      3.453796148300171,
+      2.457897186279297,
+      1.8462878465652466
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00563",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00563",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00563",
+    "p": [
+      0.15188265525770137,
+      0.07289310870586821,
+      0.6523758464623621,
+      0.12284838957406832
+    ],
+    "raw_probability_sum": 0.9999999552965164,
+    "zero_count": 0,
+    "logits": [
+      2.606008768081665,
+      1.8718945980072021,
+      4.063521385192871,
+      2.3938515186309814
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00068",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00068",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 3,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00068",
+    "p": [
+      0.33002484336532417,
+      0.1793596771264028,
+      0.2908720715473901,
+      0.1997434079608829
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      2.634106159210205,
+      2.0243313312530518,
+      2.507821798324585,
+      2.131971836090088
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00335",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00335",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00335",
+    "p": [
+      0.3534212165090623,
+      0.14303627823347267,
+      0.41215119379984133,
+      0.0913913114576237
+    ],
+    "raw_probability_sum": 0.9999999850988388,
+    "zero_count": 0,
+    "logits": [
+      3.198913812637329,
+      2.294351577758789,
+      3.3526434898376465,
+      1.8464035987854004
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00540",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00540",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 1,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00540",
+    "p": [
+      0.2861992205530986,
+      0.4795594454139884,
+      0.14627999467551747,
+      0.08796133935739552
+    ],
+    "raw_probability_sum": 1.000000074505806,
+    "zero_count": 0,
+    "logits": [
+      3.0702755451202393,
+      3.5864553451538086,
+      2.3991100788116455,
+      1.8904848098754883
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00790",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00790",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00790",
+    "p": [
+      0.10861257706461647,
+      0.21661153919871612,
+      0.5252946136585164,
+      0.149481270078151
+    ],
+    "raw_probability_sum": 0.9999999776482582,
+    "zero_count": 0,
+    "logits": [
+      2.1104187965393066,
+      2.800737142562866,
+      3.6865909099578857,
+      2.429802656173706
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00169",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00169",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 2,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00169",
+    "p": [
+      0.16289465129375458,
+      0.2943894863128662,
+      0.17987804114818573,
+      0.3628378212451935
+    ],
+    "raw_probability_sum": 1.0,
+    "zero_count": 0,
+    "logits": [
+      2.276794910430908,
+      2.8685948848724365,
+      2.3759703636169434,
+      3.0776472091674805
+    ],
+    "inference_temperature": 2.3510958125672174
+  },
+  {
+    "id": "targeted-v2-all7-compact-20261029/tool_routing/train/00215",
+    "group": "targeted-v2-all7-compact-20261029/tool_routing/train/00215",
+    "question": "decision",
+    "source": "targeted_v2_all7_tool_routing",
+    "task": "targeted_tool_routing",
+    "type": "choice",
+    "variant": "clean",
+    "keys": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "label": 0,
+    "control_id": null,
+    "pair_id": null,
+    "sibling": null,
+    "parent": "targeted-v2-all7-compact-20261029/tool_routing/train/00215",
+    "p": [
+      0.5105591302240089,
+      0.21548552329498105,
+      0.11197387176810492,
+      0.1619814747129051
+    ],
+    "raw_probability_sum": 1.0000000223517418,
+    "zero_count": 0,
+    "logits": [
+      3.6048789024353027,
+      2.7422661781311035,
+      2.0876379013061523,
+      2.4568543434143066
+    ],
+    "inference_temperature": 2.3510958125672174
+  }
+]

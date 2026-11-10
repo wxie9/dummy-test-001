@@ -1,0 +1,76 @@
+{
+  "version": "decisionpivot-core-v1.1-alignment-v1",
+  "description": "Capability taxonomy aligned to the 13 DecisionPivot Core 1.1 task families. `other` is used when a training item does not exercise a close analogue of any Core family.",
+  "families": {
+    "answerable_facts": {
+      "layer": "A",
+      "description": "Decide whether the supplied facts contain enough information to answer a question; includes lookup, inheritance, comparison, aggregation and missing-evidence chains.",
+      "fine_categories": ["direct_lookup", "inheritance_chain", "multihop_fact_chain", "comparison", "aggregation_arithmetic", "missing_required_fact"]
+    },
+    "perm_inherit": {
+      "layer": "B",
+      "description": "Resolve access or action permission through assignments, groups, resource hierarchy, role/action inheritance, denies and seals.",
+      "fine_categories": ["direct_role_action", "group_membership", "hierarchy_scope", "role_chain", "action_inclusion", "explicit_deny", "sealed_resource"]
+    },
+    "policy_case": {
+      "layer": "B",
+      "description": "Apply ordered policy clauses to a case, including precedence, exceptions and threshold boundaries, to choose approve/deny/escalate or an analogous decision.",
+      "fine_categories": ["plain_rule", "rule_precedence", "exception_handling", "threshold_boundary"]
+    },
+    "log_count_check": {
+      "layer": "C",
+      "description": "Verify a stated count against event or log records under level, service and time-window filters, including boundary handling.",
+      "fine_categories": ["exact_count_statement", "off_by_one", "off_by_two", "service_filter", "time_window", "start_end_boundary"]
+    },
+    "sched_conflict": {
+      "layer": "D",
+      "description": "Judge whether a proposed schedule or booking is feasible given overlaps, attendees, operating hours, capacity, equipment or multi-day constraints.",
+      "fine_categories": ["time_overlap", "attendee_conflict", "operating_hours", "seat_capacity", "equipment_requirement", "multiday_schedule"]
+    },
+    "state_goal": {
+      "layer": "D",
+      "description": "Judge whether an action sequence reaches a requested goal and final state, including missing, swapped or wrong steps and content/count/equality conditions.",
+      "fine_categories": ["valid_goal", "missing_step", "wrong_target", "step_order", "content_condition", "count_condition", "equality_condition", "existence_condition"]
+    },
+    "toolcall_valid": {
+      "layer": "D",
+      "description": "Validate a structured tool or function call against its schema and cross-field rules.",
+      "fine_categories": ["valid_call", "missing_argument", "extra_argument", "enum_violation", "type_violation", "value_constraint", "cross_field_rule"]
+    },
+    "triage_order": {
+      "layer": "D",
+      "description": "Rank or select cases according to priority rules, flags, arrival/order/time and queue-position tie breakers.",
+      "fine_categories": ["class_priority", "flag_priority", "arrival_order", "clock_time", "queue_position", "combined_priority"]
+    },
+    "clause_change": {
+      "layer": "E",
+      "description": "Determine how changing a contractual or policy clause changes the outcome for a fixed case.",
+      "fine_categories": ["numeric_threshold_change", "wording_scope_change", "combined_change", "outside_condition", "same_outcome"]
+    },
+    "dep_resolve": {
+      "layer": "E",
+      "description": "Resolve package, component or software dependencies under version bounds, missing requirements, runtime requirements and conflicts.",
+      "fine_categories": ["missing_dependency", "own_constraint", "runtime_dependency", "version_bound", "excluded_version_bound", "version_conflict", "complex_dependency_closure"]
+    },
+    "ledger_reconcile": {
+      "layer": "F",
+      "description": "Reconcile ledgers, transactions or batch totals and identify missing, amount, sign, date, split, fee or total discrepancies.",
+      "fine_categories": ["clean_ledger", "missing_entry", "amount_error", "sign_error", "date_error", "split_sum_error", "fee_error", "batch_total_error"]
+    },
+    "record_rule": {
+      "layer": "F",
+      "description": "Validate structured records against field and batch rules such as derived fields, references, ranges, uniqueness, XOR presence, conditionals and sequence constraints.",
+      "fine_categories": ["clean_batch", "derived_field", "field_dependency_range", "composite_uniqueness", "reference_membership", "active_reference", "date_order", "conditional_requirement", "allowed_values", "range_check", "uniqueness", "xor_presence", "self_reference", "sequence"]
+    },
+    "filter_match": {
+      "layer": "G",
+      "description": "Check whether one record satisfies every condition in a multi-constraint search or filtering request.",
+      "fine_categories": ["all_constraints_match", "k_of_n_certification", "unit_conversion_threshold", "conditional_rule", "unit_price", "discount", "date_boundary", "date_gap", "ready_by", "listing_age", "category_match", "region_match", "tag_constraint", "feature_threshold"]
+    },
+    "other": {
+      "layer": "O",
+      "description": "No close DecisionPivot Core analogue; use this instead of forcing an unrelated classification, generation, sentiment, open-domain QA or rubric task into a Core family.",
+      "fine_categories": ["other"]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "decision-v7": {
+    "n": 1200,
+    "before_correct": 1008,
+    "after_correct": 1007,
+    "before_acc_pct": 84.0,
+    "after_acc_pct": 83.92,
+    "delta_pp": -0.08
+  },
+  "transfer-v4": {
+    "n": 656,
+    "before_correct": 445,
+    "after_correct": 440,
+    "before_acc_pct": 67.84,
+    "after_acc_pct": 67.07,
+    "delta_pp": -0.76
+  },
+  "transfer-v9": {
+    "n": 1046,
+    "before_correct": 642,
+    "after_correct": 634,
+    "before_acc_pct": 61.38,
+    "after_acc_pct": 60.61,
+    "delta_pp": -0.76
+  },
+  "hard-v1": {
+    "n": 1088,
+    "before_correct": 707,
+    "after_correct": 720,
+    "before_acc_pct": 64.98,
+    "after_acc_pct": 66.18,
+    "delta_pp": 1.19
+  },
+  "devtools-v1": {
+    "n": 1073,
+    "before_correct": 699,
+    "after_correct": 722,
+    "before_acc_pct": 65.14,
+    "after_acc_pct": 67.29,
+    "delta_pp": 2.14
+  },
+  "documents-v1": {
+    "n": 936,
+    "before_correct": 781,
+    "after_correct": 786,
+    "before_acc_pct": 83.44,
+    "after_acc_pct": 83.97,
+    "delta_pp": 0.53
+  }
+}

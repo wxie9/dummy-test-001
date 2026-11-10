@@ -1,0 +1,35 @@
+{
+  "archive": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/v7_training_fit_audit_20261030/training-fit-verified-evidence.tar.gz",
+  "sha256": "deb4bcab7183a776300b6b9887d50d2e038e10bf44501e2a8529c86b8f2d124c",
+  "indexed_files_verified": 39,
+  "checks": {
+    "qwen3-stage3": {
+      "contexts": 1500,
+      "questions": 2320,
+      "probe_questions": 185,
+      "maximum_probe_probability_difference": 0.0,
+      "weights_match_completed_v7_archive": true
+    },
+    "qwen3-v7": {
+      "contexts": 1500,
+      "questions": 2320,
+      "probe_questions": 185,
+      "maximum_probe_probability_difference": 0.0,
+      "weights_match_completed_v7_archive": true
+    },
+    "qwen35-stage3": {
+      "contexts": 1500,
+      "questions": 2320,
+      "probe_questions": 185,
+      "maximum_probe_probability_difference": 0.0,
+      "weights_match_completed_v7_archive": true
+    },
+    "qwen35-v7": {
+      "contexts": 1500,
+      "questions": 2320,
+      "probe_questions": 185,
+      "maximum_probe_probability_difference": 0.0,
+      "weights_match_completed_v7_archive": true
+    }
+  }
+}

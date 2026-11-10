@@ -1,0 +1,60 @@
+{
+  "version": "targeted-v2-all7-20261029",
+  "purpose": "fresh all-seven-family continuation data; do not resume a targeted-v1 adapter",
+  "families": [
+    "tool_routing",
+    "temporal",
+    "probability",
+    "insufficient",
+    "multihop",
+    "policy",
+    "injection"
+  ],
+  "label_protocol": "deterministic solvers; every label is recomputed before write",
+  "isolation": "test, then development, then train; split-specific renders; global exact-state exclusion against targeted-v1, targeted-v2 probability/policy, and all new partitions",
+  "probability_policy": "richer v2 mechanisms replace the earlier simplified generators",
+  "files": {
+    "train.jsonl": {
+      "records": 12100,
+      "questions": 13900,
+      "by_family": {
+        "injection": 1100,
+        "insufficient": 1200,
+        "multihop": 1300,
+        "policy": 1800,
+        "probability": 3600,
+        "temporal": 1500,
+        "tool_routing": 1600
+      },
+      "sha256": "d8bbcae6577884c4ed1901476b3de8004a810b7ecd3f9a008cae6e407edce1d5"
+    },
+    "development.jsonl": {
+      "records": 1600,
+      "questions": 1800,
+      "by_family": {
+        "injection": 200,
+        "insufficient": 200,
+        "multihop": 200,
+        "policy": 200,
+        "probability": 400,
+        "temporal": 200,
+        "tool_routing": 200
+      },
+      "sha256": "7dd3e1d29addcd4fe241fc0359d28a6ae20a353f11351c49537093f9dca2a5aa"
+    },
+    "test.jsonl": {
+      "records": 1600,
+      "questions": 1800,
+      "by_family": {
+        "injection": 200,
+        "insufficient": 200,
+        "multihop": 200,
+        "policy": 200,
+        "probability": 400,
+        "temporal": 200,
+        "tool_routing": 200
+      },
+      "sha256": "b933fe498726878ee77da68fc4da32d3055b9811af88bf523569c08fb9f45e5e"
+    }
+  }
+}

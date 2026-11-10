@@ -1,0 +1,255 @@
+{
+  "scope": "Exact seeded replay of source records and, when requested, the same replay:101 sample. No model inference or token filtering; current training preflight verified all 7500 records fit. Ambiguous supervision is a data finding, not causal proof of score changes.",
+  "data_sha256": "58572b2118b10d9505d5bdb027585fab75f4ad7e52a1c5d8d155979459fecea8",
+  "code_data_py_sha256": "e77a2fffeb8ee7e05b118893be8e38b8358aef97c3ca2e143cdce208201b92f9",
+  "targeted_contexts": 1500,
+  "replay_contexts": 6000,
+  "replay_ids_sha256": "ee54f05757ffb6af15fe96c3d5d8c01de19757dca38ae46ccdd01aac7421bee9",
+  "original_questions_with_explicit_none": 45,
+  "seed": 101,
+  "settings": {
+    "p_none": 0.1,
+    "p_none_distract": 0.12,
+    "p_distract": 0.15,
+    "p_none_pair": 0.25
+  },
+  "epochs": {
+    "0": {
+      "total": {
+        "questions": 12864,
+        "choice_questions": 7932
+      },
+      "by_family": {
+        "tool_routing": {
+          "questions": 132,
+          "choice_questions": 132
+        },
+        "temporal": {
+          "questions": 138,
+          "choice_questions": 138
+        },
+        "probability": {
+          "questions": 906,
+          "choice_questions": 671
+        },
+        "policy": {
+          "questions": 762,
+          "choice_questions": 762
+        },
+        "multihop": {
+          "questions": 528,
+          "choice_questions": 528
+        },
+        "insufficient": {
+          "questions": 1556,
+          "choice_questions": 996
+        },
+        "injection": {
+          "questions": 100,
+          "choice_questions": 100
+        },
+        "replay/mnli": {
+          "questions": 699,
+          "choice_questions": 699
+        },
+        "replay/imdb": {
+          "questions": 479
+        },
+        "replay/agnews": {
+          "questions": 1697,
+          "choice_questions": 739
+        },
+        "replay/amazon": {
+          "questions": 492
+        },
+        "replay/dbpedia14": {
+          "questions": 707,
+          "choice_questions": 707
+        },
+        "replay/compositional": {
+          "questions": 818,
+          "choice_questions": 818
+        },
+        "replay/yelp": {
+          "questions": 936
+        },
+        "replay/boolq": {
+          "questions": 472
+        },
+        "replay/legacy_policy": {
+          "questions": 501,
+          "choice_questions": 172
+        },
+        "replay/sst5": {
+          "questions": 471
+        },
+        "replay/banking77": {
+          "questions": 754,
+          "choice_questions": 754
+        },
+        "replay/trec": {
+          "questions": 716,
+          "choice_questions": 716
+        }
+      }
+    },
+    "1": {
+      "total": {
+        "questions": 12728,
+        "choice_questions": 7796
+      },
+      "by_family": {
+        "tool_routing": {
+          "questions": 140,
+          "choice_questions": 140
+        },
+        "temporal": {
+          "questions": 138,
+          "choice_questions": 138
+        },
+        "probability": {
+          "questions": 878,
+          "choice_questions": 643
+        },
+        "policy": {
+          "questions": 722,
+          "choice_questions": 722
+        },
+        "multihop": {
+          "questions": 528,
+          "choice_questions": 528
+        },
+        "insufficient": {
+          "questions": 1522,
+          "choice_questions": 962
+        },
+        "injection": {
+          "questions": 100,
+          "choice_questions": 100
+        },
+        "replay/mnli": {
+          "questions": 731,
+          "choice_questions": 731
+        },
+        "replay/imdb": {
+          "questions": 479
+        },
+        "replay/agnews": {
+          "questions": 1657,
+          "choice_questions": 699
+        },
+        "replay/amazon": {
+          "questions": 492
+        },
+        "replay/dbpedia14": {
+          "questions": 701,
+          "choice_questions": 701
+        },
+        "replay/compositional": {
+          "questions": 818,
+          "choice_questions": 818
+        },
+        "replay/yelp": {
+          "questions": 936
+        },
+        "replay/boolq": {
+          "questions": 472
+        },
+        "replay/legacy_policy": {
+          "questions": 493,
+          "choice_questions": 164
+        },
+        "replay/sst5": {
+          "questions": 471
+        },
+        "replay/banking77": {
+          "questions": 754,
+          "choice_questions": 754
+        },
+        "replay/trec": {
+          "questions": 696,
+          "choice_questions": 696
+        }
+      }
+    },
+    "2": {
+      "total": {
+        "questions": 12764,
+        "choice_questions": 7832
+      },
+      "by_family": {
+        "tool_routing": {
+          "questions": 160,
+          "choice_questions": 160
+        },
+        "temporal": {
+          "questions": 136,
+          "choice_questions": 136
+        },
+        "probability": {
+          "questions": 896,
+          "choice_questions": 661
+        },
+        "policy": {
+          "questions": 772,
+          "choice_questions": 772
+        },
+        "multihop": {
+          "questions": 512,
+          "choice_questions": 512
+        },
+        "insufficient": {
+          "questions": 1536,
+          "choice_questions": 976
+        },
+        "injection": {
+          "questions": 100,
+          "choice_questions": 100
+        },
+        "replay/mnli": {
+          "questions": 671,
+          "choice_questions": 671
+        },
+        "replay/imdb": {
+          "questions": 479
+        },
+        "replay/agnews": {
+          "questions": 1701,
+          "choice_questions": 743
+        },
+        "replay/amazon": {
+          "questions": 492
+        },
+        "replay/dbpedia14": {
+          "questions": 689,
+          "choice_questions": 689
+        },
+        "replay/compositional": {
+          "questions": 818,
+          "choice_questions": 818
+        },
+        "replay/yelp": {
+          "questions": 936
+        },
+        "replay/boolq": {
+          "questions": 472
+        },
+        "replay/legacy_policy": {
+          "questions": 505,
+          "choice_questions": 176
+        },
+        "replay/sst5": {
+          "questions": 471
+        },
+        "replay/banking77": {
+          "questions": 724,
+          "choice_questions": 724
+        },
+        "replay/trec": {
+          "questions": 694,
+          "choice_questions": 694
+        }
+      }
+    }
+  }
+}

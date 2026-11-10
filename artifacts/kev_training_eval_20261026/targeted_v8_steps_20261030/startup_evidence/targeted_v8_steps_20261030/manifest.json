@@ -1,0 +1,77 @@
+{
+  "status": "pipelines_started",
+  "goal_achieved": false,
+  "contexts": 1500,
+  "replay_separate": 6000,
+  "original_questions": 2320,
+  "auxiliary_questions": 1200,
+  "total_questions": 3520,
+  "family_contexts": {
+    "tool_routing": 100,
+    "insufficient": 280,
+    "probability": 350,
+    "multihop": 270,
+    "injection": 100,
+    "policy": 300,
+    "temporal": 100
+  },
+  "step_types": {
+    "insufficient/latest_anniversary": 40,
+    "probability/conditioning_count": 75,
+    "insufficient/return_range": 40,
+    "probability/positive_and_flagged": 27,
+    "multihop/first_supervisor": 50,
+    "probability/marginal_x": 40,
+    "probability/two_succeed": 90,
+    "policy/applicable_ceiling": 78,
+    "insufficient/warranty_expiry": 40,
+    "multihop/direct_majority": 90,
+    "multihop/first_failure_round": 70,
+    "insufficient/required_rank": 40,
+    "policy/first_operation": 64,
+    "insufficient/shipping_range": 40,
+    "probability/two_fail": 25,
+    "policy/conditional_payment": 158,
+    "probability/gross_expectation": 60,
+    "multihop/contact_availability": 60,
+    "insufficient/maximum_reduction": 40,
+    "probability/flagged_population": 33,
+    "insufficient/overtime_range": 40
+  },
+  "wrong_label_mutations_rejected": 4350,
+  "train_sha256": "3118273464feb4ef80e9739a840a841a2c5accf162b87cc0d3467ee24855ff98",
+  "source_train_sha256": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+  "development_steps": {
+    "contexts": 334,
+    "questions": 732,
+    "sha256": "49977c6c8e8873fe54a284ba68adbf68507273094202d8bf6e89d37e0fe3ab24"
+  },
+  "checks": {
+    "all_states_and_original_questions_unchanged": true,
+    "retained_three_families_byte_identical": true,
+    "same_ids_and_record_order": true,
+    "step_answers_recomputed_without_metadata_facts": true
+  },
+  "training_plan": {
+    "init": "original pre-targeted stage3",
+    "lr": 1e-05,
+    "epochs": 1,
+    "seed": 101,
+    "replay": 6000,
+    "expected_optimizer_steps": 938
+  },
+  "limitations": [
+    "This changes supervision, not the number of independent contexts.",
+    "Same-author visible-text rechecking is not independent external review.",
+    "Step gold answers are labels only; branches do not see each other or each other's gold answers. There is no explicit consistency loss.",
+    "Mean per-question loss makes original questions retain between half and three-quarters of each changed record's unaugmented CE share; augmentation must be audited before launch.",
+    "Additional question RNG draws can change none-pair augmentation; original augmentation code remains unchanged.",
+    "No effect measured; official diagnostic tests have already informed design.",
+    "At original stage3, adding step branches changes one near-tied Qwen3.5 development primary top choice; max probability difference 0.000606. Official evaluation retains original question layouts."
+  ],
+  "evaluation_plan": {
+    "before": "Original dev488/probe185 identical to original-stage3 v7 baselines; step dev732 before/after.",
+    "after": "Original development and probe, step development, all original 1500 training contexts/2320 primary questions, full hard-v1 and devtools-v1.",
+    "success": "Both models must clearly improve all seven real categories; step or training accuracy alone is insufficient."
+  }
+}

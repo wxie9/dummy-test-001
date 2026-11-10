@@ -1,0 +1,148 @@
+{
+  "title": "Kev-27B v1 六卡训练与评测报告",
+  "asOf": "2026-11-02",
+  "buildStatus": "complete",
+  "report": {
+    "asOf": "2026-11-02"
+  },
+  "filters": [],
+  "queries": {
+    "training_summary": {
+      "rows": [
+        {"optimizerSteps":2567,"wallSeconds":14387.923807382584,"requestedRecords":15401,"recordsSeen":18172,"forwardTokens":10164492,"rejected":0,"truncated":0,"clippedSteps":2157,"gradientNormMean":6.352912,"gradientNormMax":443.807129,"peakDeviceBytes":79335837184}
+      ],
+      "source": {
+        "label": "H20 Kev-27B v1 training metrics",
+        "path": "../h20_27b_v1_6gpu_20261101/training_metrics.json",
+        "filters": ["Formal six-GPU run only; no smoke or preflight steps"],
+        "metricDefinitions": [
+          {"label":"Optimizer steps","definition":"Completed parameter-update steps reported by the training process."},
+          {"label":"Records seen","definition":"Actual training records after none-pair augmentation; not the original requested record count."},
+          {"label":"Wall time","definition":"End-to-end formal training wall-clock time in seconds."}
+        ]
+      }
+    },
+    "six_suite_results": {
+      "rows": [
+        {"suite":"decision-v7","n":1200,"correct":1047,"accuracy":0.8725,"model4B":0.8691666667,"model9B":0.8666666667},
+        {"suite":"transfer-v4","n":656,"correct":582,"accuracy":0.8871951220,"model4B":0.8399390244,"model9B":0.8673780488},
+        {"suite":"transfer-v9","n":1046,"correct":884,"accuracy":0.8451242830,"model4B":0.7753346080,"model9B":0.8049713193},
+        {"suite":"hard-v1","n":1088,"correct":848,"accuracy":0.7794117647,"model4B":0.8005514706,"model9B":0.8354779412},
+        {"suite":"devtools-v1","n":1073,"correct":758,"accuracy":0.7064305685,"model4B":0.7520969245,"model9B":0.8117427773},
+        {"suite":"documents-v1","n":936,"correct":820,"accuracy":0.8760683761,"model4B":0.8931623932,"model9B":0.9049145299}
+      ],
+      "source": {
+        "label": "Six frozen test suites",
+        "path": "../h20_27b_v1_six_test_20261102/summary.json",
+        "filters": ["clean variants; top-choice accuracy; same suite manifests as 4B/9B"],
+        "metricDefinitions": [
+          {"label":"Accuracy","definition":"Correct clean questions divided by clean scored questions; positive temperature scaling does not change top-choice accuracy."}
+        ]
+      }
+    },
+    "official_v1_comparison": {
+      "rows": [
+        {"panel":"decision-v7 test","official":0.87,"ours":0.8725},
+        {"panel":"transfer-v4 locked test","official":0.8963,"ours":0.8871951220},
+        {"panel":"hard-v1","official":0.749,"ours":0.7794117647},
+        {"panel":"devtools audited","official":0.789,"ours":0.7872892348},
+        {"panel":"documents-v1","official":0.869,"ours":0.8760683761},
+        {"panel":"pooled hard+devtools+documents","official":0.8,"ours":0.8139534884},
+        {"panel":"devtools all sources","official":0.711,"ours":0.7058823529}
+      ],
+      "source": {
+        "label": "Official Kev-27B v1 and current v2 model cards",
+        "urls": ["https://huggingface.co/jaredpalmer/kev-27b/blob/v1-lora/README.md","https://huggingface.co/jaredpalmer/kev-27b/blob/main/README.md"],
+        "filters": ["Only directly comparable test panels; official devtools audit exclusions applied"],
+        "metricDefinitions": [
+          {"label":"Percentage-point delta","definition":"Our accuracy minus official reported accuracy on the same panel."}
+        ]
+      }
+    },
+    "official_v2_comparison": {
+      "rows": [
+        {"panel":"transfer-v4 locked test","official":0.8887,"ours":0.8871951220},
+        {"panel":"hard-v1","official":0.918,"ours":0.7794117647},
+        {"panel":"devtools audited","official":0.825,"ours":0.7872892348},
+        {"panel":"documents-v1","official":0.908,"ours":0.8760683761},
+        {"panel":"pooled hard+devtools+documents","official":0.889,"ours":0.8139534884},
+        {"panel":"devtools all sources","official":0.79,"ours":0.7058823529}
+      ],
+      "source": {
+        "label": "Official Kev-27B v2 model card",
+        "url": "https://huggingface.co/jaredpalmer/kev-27b/blob/main/README.md",
+        "filters": ["Only directly comparable test panels; no development/test mixing"],
+        "metricDefinitions": [
+          {"label":"Percentage-point delta","definition":"Our v1 accuracy minus official v2 accuracy on the same panel."}
+        ]
+      }
+    }
+  },
+  "training": {
+    "model": "Kev-27B v1",
+    "base": "Qwen/Qwen3.8-27B",
+    "baseRevision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "dataRecords": 15401,
+    "dataSha256": "fb86543b3baccb5aff9355065821e8481a083b874521637dc2f3a5cb06faa56a",
+    "loraRank": 16,
+    "worldSize": 6,
+    "effectiveBatch": 6,
+    "epochs": 1,
+    "learningRate": 0.00005,
+    "optimizerSteps": 2567,
+    "recordsSeen": 18172,
+    "forwardTokens": 10164492,
+    "wallSeconds": 14387.923807382584,
+    "rejected": 0,
+    "truncated": 0,
+    "gradientNormMean": 6.352912,
+    "gradientNormMax": 443.807129,
+    "clippedSteps": 2157,
+    "peakDeviceBytes": 79335837184,
+    "adapterSha256": "2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa",
+    "headSha256": "e35c7090af0b6ddde9740065d2c5747a9a31caaa0618f620de88a8d4c29b2cb3"
+  },
+  "sixSuite": [
+    {"suite":"decision-v7","n":1200,"correct":1047,"accuracy":0.8725,"model4B":0.8691666667,"model9B":0.8666666667},
+    {"suite":"transfer-v4","n":656,"correct":582,"accuracy":0.8871951220,"model4B":0.8399390244,"model9B":0.8673780488},
+    {"suite":"transfer-v9","n":1046,"correct":884,"accuracy":0.8451242830,"model4B":0.7753346080,"model9B":0.8049713193},
+    {"suite":"hard-v1","n":1088,"correct":848,"accuracy":0.7794117647,"model4B":0.8005514706,"model9B":0.8354779412},
+    {"suite":"devtools-v1","n":1073,"correct":758,"accuracy":0.7064305685,"model4B":0.7520969245,"model9B":0.8117427773},
+    {"suite":"documents-v1","n":936,"correct":820,"accuracy":0.8760683761,"model4B":0.8931623932,"model9B":0.9049145299}
+  ],
+  "weighted": {
+    "rawCorrect": 4939,
+    "rawN": 5999,
+    "rawAccuracy": 0.8233038840,
+    "officialAdjustedCorrect": 4937,
+    "officialAdjustedN": 5997,
+    "officialAdjustedAccuracy": 0.8232449558,
+    "coverageRecords": 5378,
+    "coverageQuestions": 6565
+  },
+  "officialV1": [
+    {"panel":"decision-v7 test","official":0.87,"ours":0.8725},
+    {"panel":"transfer-v4 locked test","official":0.8963,"ours":0.8871951220},
+    {"panel":"hard-v1","official":0.749,"ours":0.7794117647},
+    {"panel":"devtools audited","official":0.789,"ours":0.7872892348},
+    {"panel":"documents-v1","official":0.869,"ours":0.8760683761},
+    {"panel":"pooled hard+devtools+documents","official":0.8,"ours":0.8139534884},
+    {"panel":"devtools all sources","official":0.711,"ours":0.7058823529}
+  ],
+  "officialV2": [
+    {"panel":"transfer-v4 locked test","official":0.8887,"ours":0.8871951220},
+    {"panel":"hard-v1","official":0.918,"ours":0.7794117647},
+    {"panel":"devtools audited","official":0.825,"ours":0.7872892348},
+    {"panel":"documents-v1","official":0.908,"ours":0.8760683761},
+    {"panel":"pooled hard+devtools+documents","official":0.889,"ours":0.8139534884},
+    {"panel":"devtools all sources","official":0.79,"ours":0.7058823529}
+  ],
+  "sources": [
+    {"id":"training_metrics","path":"../h20_27b_v1_6gpu_20261101/training_metrics.json","description":"六卡训练运行指标"},
+    {"id":"training_config","path":"../h20_27b_v1_6gpu_20261101/training_config.json","description":"训练超参与基座 revision"},
+    {"id":"six_suite_summary","path":"../h20_27b_v1_six_test_20261102/summary.json","description":"六套冻结测试结果"},
+    {"id":"evaluation_provenance","path":"../h20_27b_v1_six_test_20261102/evaluation_path_provenance.json","description":"评测专用 base-path shim 的哈希和边界"},
+    {"id":"official_v1","url":"https://huggingface.co/jaredpalmer/kev-27b/blob/v1-lora/README.md","description":"官方 Kev-27B v1 模型卡"},
+    {"id":"official_v2","url":"https://huggingface.co/jaredpalmer/kev-27b/blob/main/README.md","description":"官方 Kev-27B v2 模型卡及 v1/v2 同题对比"}
+  ]
+}

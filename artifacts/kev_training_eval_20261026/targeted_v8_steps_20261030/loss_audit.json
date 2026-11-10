@@ -1,0 +1,5335 @@
+{
+  "data_sha256": "3118273464feb4ef80e9739a840a841a2c5accf162b87cc0d3467ee24855ff98",
+  "code_hashes": {
+    "train.py": "68428ed43b3e362e52d4650dc5296ab88767061f7998a525715e1b306eeef474",
+    "data.py": "e77a2fffeb8ee7e05b118893be8e38b8358aef97c3ca2e143cdce208201b92f9"
+  },
+  "targeted_contexts": 1500,
+  "replay_contexts": 6000,
+  "seed": 101,
+  "batch": 4,
+  "accum": 2,
+  "epochs": [
+    {
+      "epoch": 0,
+      "total_ce_mass": 938.0000000000093,
+      "families": {
+        "multihop": {
+          "contexts": 270,
+          "variants": 372,
+          "actual_ce_mass": 35.85416666666666,
+          "equal_record_ce_mass": 33.75,
+          "none_pair_records": 51,
+          "actual_share_pct": 3.822405828002804,
+          "actual_over_equal_record": 1.0623456790123453
+        },
+        "replay": {
+          "contexts": 6000,
+          "variants": 7316,
+          "actual_ce_mass": 736.2000000000093,
+          "equal_record_ce_mass": 750.5,
+          "none_pair_records": 658,
+          "actual_share_pct": 78.4861407249469,
+          "actual_over_equal_record": 0.9809460359760284
+        },
+        "probability": {
+          "contexts": 350,
+          "variants": 510,
+          "actual_ce_mass": 47.06250000000003,
+          "equal_record_ce_mass": 43.75,
+          "none_pair_records": 80,
+          "actual_share_pct": 5.017324093816584,
+          "actual_over_equal_record": 1.0757142857142863
+        },
+        "tool_routing": {
+          "contexts": 100,
+          "variants": 132,
+          "actual_ce_mass": 12.791666666666673,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 16,
+          "actual_share_pct": 1.363717128642489,
+          "actual_over_equal_record": 1.0233333333333339
+        },
+        "policy": {
+          "contexts": 300,
+          "variants": 466,
+          "actual_ce_mass": 43.05833333333336,
+          "equal_record_ce_mass": 37.5,
+          "none_pair_records": 83,
+          "actual_share_pct": 4.590440653873447,
+          "actual_over_equal_record": 1.148222222222223
+        },
+        "temporal": {
+          "contexts": 100,
+          "variants": 138,
+          "actual_ce_mass": 13.145833333333337,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 19,
+          "actual_share_pct": 1.401474769012069,
+          "actual_over_equal_record": 1.051666666666667
+        },
+        "insufficient": {
+          "contexts": 280,
+          "variants": 412,
+          "actual_ce_mass": 38.699999999999996,
+          "equal_record_ce_mass": 35.0,
+          "none_pair_records": 66,
+          "actual_share_pct": 4.125799573560726,
+          "actual_over_equal_record": 1.1057142857142856
+        },
+        "injection": {
+          "contexts": 100,
+          "variants": 100,
+          "actual_ce_mass": 11.1875,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 1.1926972281449775,
+          "actual_over_equal_record": 0.895
+        }
+      },
+      "subtypes": {
+        "multihop/dated_roster": {
+          "contexts": 60,
+          "variants": 100,
+          "actual_ce_mass": 8.98333333333333,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 20,
+          "actual_share_pct": 0.9577114427860598,
+          "actual_over_equal_record": 1.1977777777777774
+        },
+        "replay/unspecified": {
+          "contexts": 6000,
+          "variants": 7316,
+          "actual_ce_mass": 736.2000000000093,
+          "equal_record_ce_mass": 750.5,
+          "none_pair_records": 658,
+          "actual_share_pct": 78.4861407249469,
+          "actual_over_equal_record": 0.9809460359760284
+        },
+        "probability/expected_value": {
+          "contexts": 60,
+          "variants": 94,
+          "actual_ce_mass": 8.741666666666665,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 17,
+          "actual_share_pct": 0.9319474058279934,
+          "actual_over_equal_record": 1.1655555555555555
+        },
+        "probability/table": {
+          "contexts": 75,
+          "variants": 103,
+          "actual_ce_mass": 9.583333333333334,
+          "equal_record_ce_mass": 9.375,
+          "none_pair_records": 14,
+          "actual_share_pct": 1.0216773276474669,
+          "actual_over_equal_record": 1.0222222222222224
+        },
+        "multihop/dependency_candidates": {
+          "contexts": 70,
+          "variants": 70,
+          "actual_ce_mass": 7.624999999999997,
+          "equal_record_ce_mass": 8.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.8128997867803754,
+          "actual_over_equal_record": 0.8714285714285711
+        },
+        "probability/any_fail": {
+          "contexts": 50,
+          "variants": 80,
+          "actual_ce_mass": 6.870833333333332,
+          "equal_record_ce_mass": 6.25,
+          "none_pair_records": 15,
+          "actual_share_pct": 0.7324982231698575,
+          "actual_over_equal_record": 1.099333333333333
+        },
+        "tool_routing/sum": {
+          "contexts": 31,
+          "variants": 47,
+          "actual_ce_mass": 4.333333333333334,
+          "equal_record_ce_mass": 3.875,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.46197583511015894,
+          "actual_over_equal_record": 1.1182795698924732
+        },
+        "probability/bayes": {
+          "contexts": 60,
+          "variants": 88,
+          "actual_ce_mass": 7.958333333333332,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 14,
+          "actual_share_pct": 0.8484363894811571,
+          "actual_over_equal_record": 1.061111111111111
+        },
+        "policy/intentional": {
+          "contexts": 30,
+          "variants": 46,
+          "actual_ce_mass": 4.2125,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.4490938166311257,
+          "actual_over_equal_record": 1.1233333333333335
+        },
+        "temporal/late_fee": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.333333333333333,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.24875621890547014,
+          "actual_over_equal_record": 0.8484848484848484
+        },
+        "policy/waiting": {
+          "contexts": 30,
+          "variants": 46,
+          "actual_ce_mass": 4.4375,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.4730810234541531,
+          "actual_over_equal_record": 1.1833333333333333
+        },
+        "tool_routing/shipment": {
+          "contexts": 20,
+          "variants": 24,
+          "actual_ce_mass": 2.5,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.2665245202558609,
+          "actual_over_equal_record": 1.0
+        },
+        "multihop/rank_escalation": {
+          "contexts": 25,
+          "variants": 29,
+          "actual_ce_mass": 2.9250000000000003,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.31183368869935724,
+          "actual_over_equal_record": 0.936
+        },
+        "multihop/ownership_control_and_profit": {
+          "contexts": 90,
+          "variants": 134,
+          "actual_ce_mass": 12.737500000000002,
+          "equal_record_ce_mass": 11.25,
+          "none_pair_records": 22,
+          "actual_share_pct": 1.3579424307036114,
+          "actual_over_equal_record": 1.1322222222222225
+        },
+        "probability/compare": {
+          "contexts": 40,
+          "variants": 54,
+          "actual_ce_mass": 5.145833333333333,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.5485963041933136,
+          "actual_over_equal_record": 1.0291666666666666
+        },
+        "insufficient/warranty__unknown": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.6041666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.17101990049751073,
+          "actual_over_equal_record": 1.0694444444444444
+        },
+        "injection/email": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.4166666666666665,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2576403695806655,
+          "actual_over_equal_record": 0.8787878787878788
+        },
+        "insufficient/approval__unknown": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.5416666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.1643567874911142,
+          "actual_over_equal_record": 1.0277777777777777
+        },
+        "insufficient/tenure__no": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.4791666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.1576936744847177,
+          "actual_over_equal_record": 0.986111111111111
+        },
+        "injection/code comment": {
+          "contexts": 14,
+          "variants": 14,
+          "actual_ce_mass": 1.5416666666666667,
+          "equal_record_ce_mass": 1.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.16435678749111424,
+          "actual_over_equal_record": 0.880952380952381
+        },
+        "insufficient/tenure__yes": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.4583333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.15547263681591883,
+          "actual_over_equal_record": 0.9722222222222222
+        },
+        "injection/tool result": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.583333333333333,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.27540867093105625,
+          "actual_over_equal_record": 0.9393939393939393
+        },
+        "temporal/prorata": {
+          "contexts": 28,
+          "variants": 42,
+          "actual_ce_mass": 3.8750000000000004,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.41311300639658444,
+          "actual_over_equal_record": 1.1071428571428572
+        },
+        "insufficient/price_match__no": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.6458333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.1754619758351084,
+          "actual_over_equal_record": 1.097222222222222
+        },
+        "insufficient/shipping__no": {
+          "contexts": 12,
+          "variants": 22,
+          "actual_ce_mass": 1.9374999999999998,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.20655650319829216,
+          "actual_over_equal_record": 1.2916666666666665
+        },
+        "policy/pay_sublimit": {
+          "contexts": 40,
+          "variants": 64,
+          "actual_ce_mass": 5.791666666666667,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 12,
+          "actual_share_pct": 0.6174484719260778,
+          "actual_over_equal_record": 1.1583333333333334
+        },
+        "tool_routing/exchange": {
+          "contexts": 24,
+          "variants": 32,
+          "actual_ce_mass": 3.041666666666667,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.32427149964463076,
+          "actual_over_equal_record": 1.013888888888889
+        },
+        "multihop/exact_supervisor_hops": {
+          "contexts": 25,
+          "variants": 39,
+          "actual_ce_mass": 3.5833333333333335,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.38201847903340064,
+          "actual_over_equal_record": 1.1466666666666667
+        },
+        "insufficient/tenure__nondeciding": {
+          "contexts": 4,
+          "variants": 8,
+          "actual_ce_mass": 0.6875,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.07329424307036174,
+          "actual_over_equal_record": 1.375
+        },
+        "insufficient/tenure__unknown": {
+          "contexts": 12,
+          "variants": 22,
+          "actual_ce_mass": 1.875,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.19989339019189567,
+          "actual_over_equal_record": 1.25
+        },
+        "probability/all": {
+          "contexts": 40,
+          "variants": 58,
+          "actual_ce_mass": 5.570833333333334,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.59390547263681,
+          "actual_over_equal_record": 1.1141666666666667
+        },
+        "policy/flag": {
+          "contexts": 30,
+          "variants": 48,
+          "actual_ce_mass": 4.5,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.4797441364605496,
+          "actual_over_equal_record": 1.2
+        },
+        "tool_routing/reservation": {
+          "contexts": 25,
+          "variants": 29,
+          "actual_ce_mass": 2.916666666666667,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.3109452736318377,
+          "actual_over_equal_record": 0.9333333333333335
+        },
+        "insufficient/warranty__no": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.6458333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.1754619758351084,
+          "actual_over_equal_record": 1.097222222222222
+        },
+        "insufficient/shipping__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.0599680170575687,
+          "actual_over_equal_record": 1.125
+        },
+        "insufficient/return__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.06663113006396522,
+          "actual_over_equal_record": 1.25
+        },
+        "insufficient/approval__yes": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.7958333333333332,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.19145344705046005,
+          "actual_over_equal_record": 1.1972222222222222
+        },
+        "insufficient/overtime__no": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.5833333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.16879886282871187,
+          "actual_over_equal_record": 1.0555555555555556
+        },
+        "probability/any": {
+          "contexts": 25,
+          "variants": 33,
+          "actual_ce_mass": 3.191666666666667,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.3402629708599824,
+          "actual_over_equal_record": 1.0213333333333334
+        },
+        "injection/web page": {
+          "contexts": 24,
+          "variants": 24,
+          "actual_ce_mass": 2.6458333333333335,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2820717839374528,
+          "actual_over_equal_record": 0.8819444444444445
+        },
+        "insufficient/overtime__unknown": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.2916666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.13770433546552813,
+          "actual_over_equal_record": 0.861111111111111
+        },
+        "insufficient/return__yes": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.4999999999999998,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.1599147121535165,
+          "actual_over_equal_record": 0.9999999999999999
+        },
+        "policy/threshold": {
+          "contexts": 30,
+          "variants": 42,
+          "actual_ce_mass": 4.0,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.4264392324093774,
+          "actual_over_equal_record": 1.0666666666666667
+        },
+        "policy/pay_limit": {
+          "contexts": 40,
+          "variants": 70,
+          "actual_ce_mass": 6.341666666666667,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 15,
+          "actual_share_pct": 0.6760838663823671,
+          "actual_over_equal_record": 1.2683333333333333
+        },
+        "insufficient/return__no": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.525,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.16257995735607514,
+          "actual_over_equal_record": 1.0166666666666666
+        },
+        "policy/not_purchased": {
+          "contexts": 30,
+          "variants": 50,
+          "actual_ce_mass": 4.229166666666666,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.4508706467661646,
+          "actual_over_equal_record": 1.1277777777777775
+        },
+        "insufficient/warranty__yes": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.3958333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.1488095238095223,
+          "actual_over_equal_record": 0.9305555555555555
+        },
+        "policy/pay_loss": {
+          "contexts": 40,
+          "variants": 58,
+          "actual_ce_mass": 5.358333333333333,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.5712508884150619,
+          "actual_over_equal_record": 1.0716666666666668
+        },
+        "insufficient/price_match__yes": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.6458333333333335,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.17546197583510842,
+          "actual_over_equal_record": 1.0972222222222223
+        },
+        "policy/late": {
+          "contexts": 30,
+          "variants": 42,
+          "actual_ce_mass": 4.1875,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.446428571428567,
+          "actual_over_equal_record": 1.1166666666666667
+        },
+        "insufficient/return__unknown": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.65,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.17590618336886818,
+          "actual_over_equal_record": 1.0999999999999999
+        },
+        "insufficient/approval__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.05330490405117218,
+          "actual_over_equal_record": 1.0
+        },
+        "injection/JSON field": {
+          "contexts": 18,
+          "variants": 18,
+          "actual_ce_mass": 1.9999999999999996,
+          "equal_record_ce_mass": 2.25,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.21321961620468866,
+          "actual_over_equal_record": 0.8888888888888887
+        },
+        "insufficient/overtime__yes": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.7083333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.1821250888415049,
+          "actual_over_equal_record": 1.1388888888888888
+        },
+        "temporal/timezone": {
+          "contexts": 28,
+          "variants": 48,
+          "actual_ce_mass": 4.354166666666667,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.4641968727789577,
+          "actual_over_equal_record": 1.244047619047619
+        },
+        "insufficient/shipping__yes": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.6666666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.17768301350390725,
+          "actual_over_equal_record": 1.111111111111111
+        },
+        "insufficient/shipping__unknown": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.8333333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.19545131485429795,
+          "actual_over_equal_record": 1.222222222222222
+        },
+        "temporal/deadline": {
+          "contexts": 22,
+          "variants": 26,
+          "actual_ce_mass": 2.583333333333333,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.27540867093105625,
+          "actual_over_equal_record": 0.9393939393939393
+        },
+        "insufficient/price_match__unknown": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.8124999999999998,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.19323027718549912,
+          "actual_over_equal_record": 1.2083333333333333
+        },
+        "insufficient/warranty__nondeciding": {
+          "contexts": 4,
+          "variants": 8,
+          "actual_ce_mass": 0.6666666666666666,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.0710732054015629,
+          "actual_over_equal_record": 1.3333333333333333
+        },
+        "insufficient/approval__no": {
+          "contexts": 12,
+          "variants": 22,
+          "actual_ce_mass": 2.0,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.2132196162046887,
+          "actual_over_equal_record": 1.3333333333333333
+        },
+        "insufficient/overtime__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.0599680170575687,
+          "actual_over_equal_record": 1.125
+        },
+        "insufficient/price_match__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.5,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.05330490405117218,
+          "actual_over_equal_record": 1.0
+        }
+      },
+      "questions": {
+        "multihop/contact": {
+          "question_occurrences": 74,
+          "actual_ce_mass": 2.963888888888888,
+          "equal_record_ce_mass": 2.527777777777777,
+          "actual_share_pct": 0.315979625681115,
+          "actual_over_equal_record": 1.1725274725274726
+        },
+        "multihop/group": {
+          "question_occurrences": 86,
+          "actual_ce_mass": 4.030555555555555,
+          "equal_record_ce_mass": 3.027777777777775,
+          "actual_share_pct": 0.42969675432361565,
+          "actual_over_equal_record": 1.3311926605504598
+        },
+        "multihop/zz_rule_step": {
+          "question_occurrences": 270,
+          "actual_ce_mass": 11.463888888888894,
+          "equal_record_ce_mass": 12.208333333333332,
+          "actual_share_pct": 1.2221629945510426,
+          "actual_over_equal_record": 0.9390216154721279
+        },
+        "replay/topic": {
+          "question_occurrences": 739,
+          "actual_ce_mass": 35.9194444444446,
+          "equal_record_ce_mass": 27.222222222222474,
+          "actual_share_pct": 3.829365079365058,
+          "actual_over_equal_record": 1.319489795918361
+        },
+        "replay/is_business": {
+          "question_occurrences": 240,
+          "actual_ce_mass": 7.883333333333332,
+          "equal_record_ce_mass": 8.277777777777807,
+          "actual_share_pct": 0.8404406538734811,
+          "actual_over_equal_record": 0.9523489932885871
+        },
+        "replay/is_scitech": {
+          "question_occurrences": 232,
+          "actual_ce_mass": 7.766666666666665,
+          "equal_record_ce_mass": 7.847222222222252,
+          "actual_share_pct": 0.8280028429282077,
+          "actual_over_equal_record": 0.9897345132743324
+        },
+        "replay/answer": {
+          "question_occurrences": 472,
+          "actual_ce_mass": 52.375000000000085,
+          "equal_record_ce_mass": 59.0,
+          "actual_share_pct": 5.5836886993602945,
+          "actual_over_equal_record": 0.8877118644067811
+        },
+        "replay/rating": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.864583333333385,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.7574182658137665,
+          "actual_over_equal_record": 0.8842592592592611
+        },
+        "replay/recommend": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.864583333333385,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.7574182658137665,
+          "actual_over_equal_record": 0.8842592592592611
+        },
+        "replay/decision": {
+          "question_occurrences": 1319,
+          "actual_ce_mass": 141.1791666666663,
+          "equal_record_ce_mass": 157.50000000000014,
+          "actual_share_pct": 15.051083866382184,
+          "actual_over_equal_record": 0.8963756613756583
+        },
+        "replay/sentiment": {
+          "question_occurrences": 471,
+          "actual_ce_mass": 51.27083333333339,
+          "equal_record_ce_mass": 58.875,
+          "actual_share_pct": 5.465973702913954,
+          "actual_over_equal_record": 0.8708421797593782
+        },
+        "probability/project": {
+          "question_occurrences": 74,
+          "actual_ce_mass": 3.049999999999999,
+          "equal_record_ce_mass": 2.61111111111111,
+          "actual_share_pct": 0.32515991471215017,
+          "actual_over_equal_record": 1.168085106382979
+        },
+        "probability/value": {
+          "question_occurrences": 80,
+          "actual_ce_mass": 3.6583333333333328,
+          "equal_record_ce_mass": 2.861111111111109,
+          "actual_share_pct": 0.39001421464107633,
+          "actual_over_equal_record": 1.27864077669903
+        },
+        "probability/zz_rule_step": {
+          "question_occurrences": 350,
+          "actual_ce_mass": 11.850000000000014,
+          "equal_record_ce_mass": 12.56944444444443,
+          "actual_share_pct": 1.263326226012782,
+          "actual_over_equal_record": 0.9427624309392286
+        },
+        "replay/category": {
+          "question_occurrences": 707,
+          "actual_ce_mass": 65.23333333333363,
+          "equal_record_ce_mass": 57.12499999999974,
+          "actual_share_pct": 6.954513148542961,
+          "actual_over_equal_record": 1.1419401896426071
+        },
+        "replay/stars": {
+          "question_occurrences": 492,
+          "actual_ce_mass": 53.31250000000011,
+          "equal_record_ce_mass": 61.5,
+          "actual_share_pct": 5.683635394456245,
+          "actual_over_equal_record": 0.8668699186991887
+        },
+        "probability/forward": {
+          "question_occurrences": 95,
+          "actual_ce_mass": 3.9861111111111076,
+          "equal_record_ce_mass": 3.5694444444444398,
+          "actual_share_pct": 0.4249585406301778,
+          "actual_over_equal_record": 1.116731517509728
+        },
+        "probability/reverse": {
+          "question_occurrences": 83,
+          "actual_ce_mass": 3.1111111111111094,
+          "equal_record_ce_mass": 3.0694444444444415,
+          "actual_share_pct": 0.3316749585406267,
+          "actual_over_equal_record": 1.0135746606334846
+        },
+        "multihop/decision": {
+          "question_occurrences": 99,
+          "actual_ce_mass": 5.441666666666669,
+          "equal_record_ce_mass": 6.020833333333333,
+          "actual_share_pct": 0.5801350390902574,
+          "actual_over_equal_record": 0.9038062283737028
+        },
+        "replay/positive": {
+          "question_occurrences": 479,
+          "actual_ce_mass": 53.02083333333343,
+          "equal_record_ce_mass": 60.125,
+          "actual_share_pct": 5.65254086709306,
+          "actual_over_equal_record": 0.8818433818433834
+        },
+        "replay/answer_type": {
+          "question_occurrences": 716,
+          "actual_ce_mass": 64.94166666666689,
+          "equal_record_ce_mass": 58.49999999999969,
+          "actual_share_pct": 6.92341862117977,
+          "actual_over_equal_record": 1.1101139601139698
+        },
+        "probability/bucket": {
+          "question_occurrences": 175,
+          "actual_ce_mass": 5.278472222222219,
+          "equal_record_ce_mass": 5.597222222222229,
+          "actual_share_pct": 0.562736910684666,
+          "actual_over_equal_record": 0.9430521091811397
+        },
+        "probability/probability": {
+          "question_occurrences": 171,
+          "actual_ce_mass": 8.055555555555552,
+          "equal_record_ce_mass": 6.347222222222236,
+          "actual_share_pct": 0.8588012319355514,
+          "actual_over_equal_record": 1.2691466083150953
+        },
+        "replay/intent": {
+          "question_occurrences": 754,
+          "actual_ce_mass": 69.45833333333343,
+          "equal_record_ce_mass": 61.2499999999996,
+          "actual_share_pct": 7.4049395877753454,
+          "actual_over_equal_record": 1.1340136054421859
+        },
+        "replay/is_sports": {
+          "question_occurrences": 242,
+          "actual_ce_mass": 8.36666666666667,
+          "equal_record_ce_mass": 8.375000000000028,
+          "actual_share_pct": 0.8919687277896149,
+          "actual_over_equal_record": 0.9990049751243752
+        },
+        "replay/relation": {
+          "question_occurrences": 699,
+          "actual_ce_mass": 65.65416666666691,
+          "equal_record_ce_mass": 58.12499999999972,
+          "actual_share_pct": 6.999378109452692,
+          "actual_over_equal_record": 1.129534050179221
+        },
+        "tool_routing/decision": {
+          "question_occurrences": 132,
+          "actual_ce_mass": 12.791666666666679,
+          "equal_record_ce_mass": 12.499999999999993,
+          "actual_share_pct": 1.3637171286424896,
+          "actual_over_equal_record": 1.0233333333333348
+        },
+        "probability/more_likely": {
+          "question_occurrences": 60,
+          "actual_ce_mass": 1.4895833333333326,
+          "equal_record_ce_mass": 1.5833333333333335,
+          "actual_share_pct": 0.15880419331911702,
+          "actual_over_equal_record": 0.94078947368421
+        },
+        "probability/posterior": {
+          "question_occurrences": 88,
+          "actual_ce_mass": 3.4895833333333357,
+          "equal_record_ce_mass": 2.749999999999999,
+          "actual_share_pct": 0.3720238095238061,
+          "actual_over_equal_record": 1.2689393939393951
+        },
+        "policy/amount": {
+          "question_occurrences": 386,
+          "actual_ce_mass": 16.697222222222255,
+          "equal_record_ce_mass": 13.777777777777745,
+          "actual_share_pct": 1.7800876569533144,
+          "actual_over_equal_record": 1.211895161290328
+        },
+        "policy/reason": {
+          "question_occurrences": 380,
+          "actual_ce_mass": 16.238888888888912,
+          "equal_record_ce_mass": 13.527777777777752,
+          "actual_share_pct": 1.7312248282397389,
+          "actual_over_equal_record": 1.2004106776180739
+        },
+        "policy/zz_rule_step": {
+          "question_occurrences": 300,
+          "actual_ce_mass": 10.12222222222224,
+          "equal_record_ce_mass": 10.194444444444454,
+          "actual_share_pct": 1.0791281686803986,
+          "actual_over_equal_record": 0.9929155313351506
+        },
+        "temporal/decision": {
+          "question_occurrences": 138,
+          "actual_ce_mass": 13.145833333333343,
+          "equal_record_ce_mass": 12.49999999999999,
+          "actual_share_pct": 1.4014747690120697,
+          "actual_over_equal_record": 1.0516666666666683
+        },
+        "multihop/controller": {
+          "question_occurrences": 120,
+          "actual_ce_mass": 5.445833333333332,
+          "equal_record_ce_mass": 4.388888888888886,
+          "actual_share_pct": 0.5805792466240167,
+          "actual_over_equal_record": 1.2408227848101272
+        },
+        "multihop/interest": {
+          "question_occurrences": 104,
+          "actual_ce_mass": 4.195833333333329,
+          "equal_record_ce_mass": 3.722222222222217,
+          "actual_share_pct": 0.4473169864960861,
+          "actual_over_equal_record": 1.1272388059701497
+        },
+        "replay/is_world": {
+          "question_occurrences": 244,
+          "actual_ce_mass": 8.088888888888892,
+          "equal_record_ce_mass": 8.277777777777809,
+          "actual_share_pct": 0.8623548922056303,
+          "actual_over_equal_record": 0.977181208053688
+        },
+        "probability/decision": {
+          "question_occurrences": 54,
+          "actual_ce_mass": 3.09375,
+          "equal_record_ce_mass": 2.7916666666666665,
+          "actual_share_pct": 0.32982409381662786,
+          "actual_over_equal_record": 1.1082089552238807
+        },
+        "insufficient/decision": {
+          "question_occurrences": 412,
+          "actual_ce_mass": 24.31250000000001,
+          "equal_record_ce_mass": 20.250000000000007,
+          "actual_share_pct": 2.591950959488248,
+          "actual_over_equal_record": 1.2006172839506173
+        },
+        "insufficient/zz_rule_step": {
+          "question_occurrences": 280,
+          "actual_ce_mass": 14.387499999999982,
+          "equal_record_ce_mass": 14.750000000000016,
+          "actual_share_pct": 1.5338486140724774,
+          "actual_over_equal_record": 0.975423728813557
+        },
+        "injection/decision": {
+          "question_occurrences": 100,
+          "actual_ce_mass": 11.1875,
+          "equal_record_ce_mass": 12.5,
+          "actual_share_pct": 1.1926972281449775,
+          "actual_over_equal_record": 0.895
+        },
+        "multihop/approver": {
+          "question_occurrences": 39,
+          "actual_ce_mass": 2.3125,
+          "equal_record_ce_mass": 1.854166666666667,
+          "actual_share_pct": 0.2465351812366713,
+          "actual_over_equal_record": 1.2471910112359548
+        }
+      },
+      "insufficient_raw_label_exposure": {
+        "decision/The stated facts permit different decisions; more information is needed.": {
+          "actual_ce_mass": 5.45,
+          "occurrences": 99
+        },
+        "zz_rule_step/2032-06-21": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/Team Manager": {
+          "actual_ce_mass": 0.8999999999999999,
+          "occurrences": 18
+        },
+        "decision/Decline the employment benefit": {
+          "actual_ce_mass": 0.6770833333333333,
+          "occurrences": 12
+        },
+        "zz_rule_step/2032-10-02": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Grant the employment benefit": {
+          "actual_ce_mass": 1.0729166666666665,
+          "occurrences": 20
+        },
+        "zz_rule_step/2031-01-17": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/None of the listed options apply": {
+          "actual_ce_mass": 0.3958333333333333,
+          "occurrences": 6
+        },
+        "zz_rule_step/$100.00": {
+          "actual_ce_mass": 0.3958333333333333,
+          "occurrences": 7
+        },
+        "decision/Charge the shipping fee": {
+          "actual_ce_mass": 1.0208333333333333,
+          "occurrences": 17
+        },
+        "zz_rule_step/49 to 49 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.6041666666666666,
+          "occurrences": 9
+        },
+        "zz_rule_step/2030-07-20": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-08-09": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/None": {
+          "actual_ce_mass": 1.3749999999999998,
+          "occurrences": 18
+        },
+        "zz_rule_step/2031-06-06": {
+          "actual_ce_mass": 0.07291666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2031-07-13": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Decline warranty coverage": {
+          "actual_ce_mass": 1.1145833333333333,
+          "occurrences": 20
+        },
+        "zz_rule_step/2032-04-19": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Provide free shipping": {
+          "actual_ce_mass": 0.9895833333333333,
+          "occurrences": 17
+        },
+        "zz_rule_step/65 to 105 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-04-15": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Accept the return request": {
+          "actual_ce_mass": 0.9374999999999999,
+          "occurrences": 16
+        },
+        "zz_rule_step/0 to 19 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Authorize the payment": {
+          "actual_ce_mass": 1.10625,
+          "occurrences": 20
+        },
+        "decision/No overtime payment is due": {
+          "actual_ce_mass": 0.8854166666666665,
+          "occurrences": 17
+        },
+        "zz_rule_step/37 to 37 hours, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/2032-12-14": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "decision/A category that fits none of the above": {
+          "actual_ce_mass": 0.43749999999999994,
+          "occurrences": 6
+        },
+        "zz_rule_step/139 to 179 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/81 to 81 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/37 to 49 hours, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "decision/Something else": {
+          "actual_ce_mass": 0.4583333333333333,
+          "occurrences": 7
+        },
+        "zz_rule_step/2034-10-08": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/35 to 35 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-01-20": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Reject the return request": {
+          "actual_ce_mass": 0.7625000000000001,
+          "occurrences": 15
+        },
+        "zz_rule_step/22 to 22 calendar days, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "decision/Repair under the warranty": {
+          "actual_ce_mass": 0.6979166666666666,
+          "occurrences": 13
+        },
+        "zz_rule_step/2032-02-13": {
+          "actual_ce_mass": 0.09375,
+          "occurrences": 2
+        },
+        "decision/Match the competitor price": {
+          "actual_ce_mass": 0.6979166666666667,
+          "occurrences": 12
+        },
+        "zz_rule_step/$30.00": {
+          "actual_ce_mass": 0.22916666666666666,
+          "occurrences": 4
+        },
+        "zz_rule_step/2032-05-15": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/46 to 46 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/Department Director": {
+          "actual_ce_mass": 1.0104166666666665,
+          "occurrences": 18
+        },
+        "zz_rule_step/0 to 54 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/No approval is required": {
+          "actual_ce_mass": 0.1875,
+          "occurrences": 4
+        },
+        "decision/None of the above": {
+          "actual_ce_mass": 0.6645833333333333,
+          "occurrences": 10
+        },
+        "zz_rule_step/32 to 44 hours, inclusive": {
+          "actual_ce_mass": 0.09375,
+          "occurrences": 2
+        },
+        "zz_rule_step/2032-01-20": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "decision/Not listed here": {
+          "actual_ce_mass": 0.7083333333333333,
+          "occurrences": 10
+        },
+        "zz_rule_step/14 to 14 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Pay overtime for this week": {
+          "actual_ce_mass": 0.8541666666666666,
+          "occurrences": 14
+        },
+        "zz_rule_step/41 to 41 hours, inclusive": {
+          "actual_ce_mass": 0.1875,
+          "occurrences": 3
+        },
+        "zz_rule_step/101 to 101 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-07-06": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/80 to 100 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-09-16": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/46 to 46 hours, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2035-02-20": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2036-12-06": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/$10.00": {
+          "actual_ce_mass": 0.29166666666666663,
+          "occurrences": 6
+        },
+        "zz_rule_step/2033-02-16": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/No option matches": {
+          "actual_ce_mass": 0.29166666666666663,
+          "occurrences": 4
+        },
+        "zz_rule_step/39 to 39 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$200.00": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "decision/An answer not covered by the other options": {
+          "actual_ce_mass": 0.5,
+          "occurrences": 7
+        },
+        "zz_rule_step/42 to 42 hours, inclusive": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "decision/Other": {
+          "actual_ce_mass": 0.2708333333333333,
+          "occurrences": 4
+        },
+        "zz_rule_step/35 to 35 hours, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2031-07-20": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-12-17": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/-28 to 52 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-04-22": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/A reason that fits none of the above": {
+          "actual_ce_mass": 0.2375,
+          "occurrences": 4
+        },
+        "zz_rule_step/0 to 67 calendar days, inclusive": {
+          "actual_ce_mass": 0.025,
+          "occurrences": 1
+        },
+        "zz_rule_step/40 to 40 hours, inclusive": {
+          "actual_ce_mass": 0.14583333333333331,
+          "occurrences": 3
+        },
+        "zz_rule_step/186 to 186 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/179 to 179 dollars, inclusive": {
+          "actual_ce_mass": 0.07291666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/50 to 130 dollars, inclusive": {
+          "actual_ce_mass": 0.19791666666666666,
+          "occurrences": 4
+        },
+        "decision/Decline the requested price match": {
+          "actual_ce_mass": 0.7604166666666666,
+          "occurrences": 13
+        },
+        "zz_rule_step/$20.00": {
+          "actual_ce_mass": 0.22916666666666666,
+          "occurrences": 4
+        },
+        "zz_rule_step/132 to 132 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 44 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/76 to 76 dollars, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2030-08-20": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-03-02": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Obtain a qualifying approval before payment": {
+          "actual_ce_mass": 0.875,
+          "occurrences": 15
+        },
+        "zz_rule_step/33 to 45 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/91 to 91 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/35 to 47 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-02-07": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/43 to 43 calendar days, inclusive": {
+          "actual_ce_mass": 0.09375,
+          "occurrences": 2
+        },
+        "zz_rule_step/2032-10-08": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-11-24": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/5 to 5 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-05-22": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 42 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-08-14": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 2
+        },
+        "zz_rule_step/2032-06-08": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 6 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$80.00": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "zz_rule_step/2031-06-09": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/47 to 47 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 75 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/19 to 19 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/None of these": {
+          "actual_ce_mass": 0.3416666666666666,
+          "occurrences": 5
+        },
+        "zz_rule_step/0 to 30 calendar days, inclusive": {
+          "actual_ce_mass": 0.07291666666666666,
+          "occurrences": 2
+        },
+        "decision/Keep our existing price; it is already no higher": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "zz_rule_step/0 to 37 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/133 to 133 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-12-06": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2033-02-09": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/70 to 70 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/182 to 182 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/170 to 190 dollars, inclusive": {
+          "actual_ce_mass": 0.1875,
+          "occurrences": 3
+        },
+        "zz_rule_step/0 to 56 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/38 to 50 hours, inclusive": {
+          "actual_ce_mass": 0.15624999999999997,
+          "occurrences": 4
+        },
+        "zz_rule_step/42 to 54 hours, inclusive": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/2031-06-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-05-07": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/38 to 38 hours, inclusive": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/2035-01-10": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-05-10": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/125 to 125 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/68 to 68 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-11-19": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-07-23": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-06-22": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 62 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/9 to 9 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/1 to 1 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/68 to 88 dollars, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/64 to 64 calendar days, inclusive": {
+          "actual_ce_mass": 0.09375,
+          "occurrences": 2
+        },
+        "zz_rule_step/2032-01-21": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 48 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-04-13": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/8 to 8 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-09": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-14": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-04-14": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$50.00": {
+          "actual_ce_mass": 0.40625,
+          "occurrences": 7
+        },
+        "zz_rule_step/2034-09-16": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-02-18": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/34 to 34 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$40.00": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 2
+        },
+        "zz_rule_step/2032-01-18": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/32 to 32 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 28 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/24 to 36 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/23 to 23 calendar days, inclusive": {
+          "actual_ce_mass": 0.025,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-07-14": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/161 to 161 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/57 to 57 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-10-08": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-09-17": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 2
+        },
+        "zz_rule_step/90 to 170 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/40 to 80 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$150.00": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-09-12": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-22": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/38 to 38 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/31 to 43 hours, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-10-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-07-19": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2033-06-15": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/45 to 45 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-05-08": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$250.00": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/18 to 18 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-05-07": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/29 to 29 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-08-18": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/70 to 110 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/51 to 51 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/34 to 34 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-03-22": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/58 to 58 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-08": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/3 to 3 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 0 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/80 to 80 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 29 calendar days, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/21 to 21 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/98 to 98 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-04-22": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/73 to 73 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 18 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-09-15": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/$60.00": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-12-06": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-11-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-09": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/41 to 41 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-05-04": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-11": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-09-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-05-06": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/84 to 84 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/41 to 53 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-03-18": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-08-17": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/69 to 69 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/88 to 88 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-03-20": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/120 to 140 dollars, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-16": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        }
+      }
+    },
+    {
+      "epoch": 1,
+      "total_ce_mass": 938.0000000000091,
+      "families": {
+        "replay": {
+          "contexts": 6000,
+          "variants": 7274,
+          "actual_ce_mass": 734.3083333333424,
+          "equal_record_ce_mass": 750.5,
+          "none_pair_records": 637,
+          "actual_share_pct": 78.28447050461996,
+          "actual_over_equal_record": 0.9784254941150464
+        },
+        "multihop": {
+          "contexts": 270,
+          "variants": 384,
+          "actual_ce_mass": 36.4875,
+          "equal_record_ce_mass": 33.75,
+          "none_pair_records": 57,
+          "actual_share_pct": 3.88992537313429,
+          "actual_over_equal_record": 1.0811111111111111
+        },
+        "probability": {
+          "contexts": 350,
+          "variants": 518,
+          "actual_ce_mass": 48.58333333333336,
+          "equal_record_ce_mass": 43.75,
+          "none_pair_records": 84,
+          "actual_share_pct": 5.1794598436389006,
+          "actual_over_equal_record": 1.110476190476191
+        },
+        "policy": {
+          "contexts": 300,
+          "variants": 452,
+          "actual_ce_mass": 41.05000000000002,
+          "equal_record_ce_mass": 37.5,
+          "none_pair_records": 76,
+          "actual_share_pct": 4.376332622601239,
+          "actual_over_equal_record": 1.0946666666666671
+        },
+        "insufficient": {
+          "contexts": 280,
+          "variants": 422,
+          "actual_ce_mass": 39.91250000000001,
+          "equal_record_ce_mass": 35.0,
+          "none_pair_records": 71,
+          "actual_share_pct": 4.255063965884821,
+          "actual_over_equal_record": 1.140357142857143
+        },
+        "temporal": {
+          "contexts": 100,
+          "variants": 138,
+          "actual_ce_mass": 13.170833333333338,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 19,
+          "actual_share_pct": 1.4041400142146279,
+          "actual_over_equal_record": 1.053666666666667
+        },
+        "tool_routing": {
+          "contexts": 100,
+          "variants": 140,
+          "actual_ce_mass": 13.458333333333336,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 20,
+          "actual_share_pct": 1.4347903340440515,
+          "actual_over_equal_record": 1.0766666666666669
+        },
+        "injection": {
+          "contexts": 100,
+          "variants": 100,
+          "actual_ce_mass": 11.029166666666669,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 1.175817341862107,
+          "actual_over_equal_record": 0.8823333333333335
+        }
+      },
+      "subtypes": {
+        "replay/unspecified": {
+          "contexts": 6000,
+          "variants": 7274,
+          "actual_ce_mass": 734.3083333333424,
+          "equal_record_ce_mass": 750.5,
+          "none_pair_records": 637,
+          "actual_share_pct": 78.28447050461996,
+          "actual_over_equal_record": 0.9784254941150464
+        },
+        "multihop/dependency_candidates": {
+          "contexts": 70,
+          "variants": 70,
+          "actual_ce_mass": 7.89583333333333,
+          "equal_record_ce_mass": 8.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.8417732764747605,
+          "actual_over_equal_record": 0.9023809523809521
+        },
+        "probability/compare": {
+          "contexts": 40,
+          "variants": 56,
+          "actual_ce_mass": 5.4625,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.5823560767590562,
+          "actual_over_equal_record": 1.0925
+        },
+        "multihop/dated_roster": {
+          "contexts": 60,
+          "variants": 92,
+          "actual_ce_mass": 8.65,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 16,
+          "actual_share_pct": 0.922174840085279,
+          "actual_over_equal_record": 1.1533333333333333
+        },
+        "multihop/rank_escalation": {
+          "contexts": 25,
+          "variants": 43,
+          "actual_ce_mass": 3.629166666666667,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.3869047619047582,
+          "actual_over_equal_record": 1.1613333333333333
+        },
+        "policy/threshold": {
+          "contexts": 30,
+          "variants": 50,
+          "actual_ce_mass": 4.2,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.44776119402984643,
+          "actual_over_equal_record": 1.12
+        },
+        "policy/waiting": {
+          "contexts": 30,
+          "variants": 46,
+          "actual_ce_mass": 4.3125,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.45975479744136016,
+          "actual_over_equal_record": 1.15
+        },
+        "insufficient/shipping__unknown": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.7916666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.19100923951670035,
+          "actual_over_equal_record": 1.1944444444444444
+        },
+        "insufficient/shipping__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.06663113006396523,
+          "actual_over_equal_record": 1.25
+        },
+        "policy/pay_sublimit": {
+          "contexts": 40,
+          "variants": 64,
+          "actual_ce_mass": 5.549999999999999,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 12,
+          "actual_share_pct": 0.5916844349680112,
+          "actual_over_equal_record": 1.1099999999999999
+        },
+        "temporal/timezone": {
+          "contexts": 28,
+          "variants": 32,
+          "actual_ce_mass": 3.2500000000000004,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.3464818763326193,
+          "actual_over_equal_record": 0.9285714285714287
+        },
+        "insufficient/price_match__yes": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.6666666666666667,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.17768301350390733,
+          "actual_over_equal_record": 1.1111111111111112
+        },
+        "probability/bayes": {
+          "contexts": 60,
+          "variants": 104,
+          "actual_ce_mass": 8.945833333333333,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 22,
+          "actual_share_pct": 0.9537135749822224,
+          "actual_over_equal_record": 1.1927777777777777
+        },
+        "probability/expected_value": {
+          "contexts": 60,
+          "variants": 76,
+          "actual_ce_mass": 7.499999999999999,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.7995735607675828,
+          "actual_over_equal_record": 0.9999999999999999
+        },
+        "policy/intentional": {
+          "contexts": 30,
+          "variants": 46,
+          "actual_ce_mass": 4.233333333333333,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.4513148542999245,
+          "actual_over_equal_record": 1.1288888888888888
+        },
+        "policy/flag": {
+          "contexts": 30,
+          "variants": 46,
+          "actual_ce_mass": 4.0,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.42643923240937753,
+          "actual_over_equal_record": 1.0666666666666667
+        },
+        "probability/table": {
+          "contexts": 75,
+          "variants": 117,
+          "actual_ce_mass": 11.125,
+          "equal_record_ce_mass": 9.375,
+          "none_pair_records": 21,
+          "actual_share_pct": 1.1860341151385811,
+          "actual_over_equal_record": 1.1866666666666668
+        },
+        "tool_routing/shipment": {
+          "contexts": 20,
+          "variants": 24,
+          "actual_ce_mass": 2.375,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.2531982942430679,
+          "actual_over_equal_record": 0.95
+        },
+        "probability/any": {
+          "contexts": 25,
+          "variants": 43,
+          "actual_ce_mass": 3.75,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.39978678038379145,
+          "actual_over_equal_record": 1.2
+        },
+        "insufficient/tenure__yes": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.6666666666666667,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.17768301350390733,
+          "actual_over_equal_record": 1.1111111111111112
+        },
+        "injection/JSON field": {
+          "contexts": 18,
+          "variants": 18,
+          "actual_ce_mass": 1.9999999999999998,
+          "equal_record_ce_mass": 2.25,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.21321961620468874,
+          "actual_over_equal_record": 0.8888888888888888
+        },
+        "multihop/ownership_control_and_profit": {
+          "contexts": 90,
+          "variants": 138,
+          "actual_ce_mass": 12.758333333333335,
+          "equal_record_ce_mass": 11.25,
+          "none_pair_records": 24,
+          "actual_share_pct": 1.3601634683724106,
+          "actual_over_equal_record": 1.1340740740740742
+        },
+        "insufficient/approval__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.4583333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.0488628287135745,
+          "actual_over_equal_record": 0.9166666666666666
+        },
+        "policy/not_purchased": {
+          "contexts": 30,
+          "variants": 42,
+          "actual_ce_mass": 3.9791666666666674,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.42421819474057876,
+          "actual_over_equal_record": 1.0611111111111113
+        },
+        "policy/pay_loss": {
+          "contexts": 40,
+          "variants": 58,
+          "actual_ce_mass": 5.129166666666666,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.5468194740582747,
+          "actual_over_equal_record": 1.0258333333333334
+        },
+        "temporal/late_fee": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.4999999999999996,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2665245202558609,
+          "actual_over_equal_record": 0.909090909090909
+        },
+        "insufficient/shipping__no": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.8749999999999998,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.1998933901918957,
+          "actual_over_equal_record": 1.2499999999999998
+        },
+        "insufficient/warranty__unknown": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.7083333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.18212508884150497,
+          "actual_over_equal_record": 1.1388888888888888
+        },
+        "insufficient/tenure__no": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.6708333333333332,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.17812722103766704,
+          "actual_over_equal_record": 1.1138888888888887
+        },
+        "tool_routing/reservation": {
+          "contexts": 25,
+          "variants": 39,
+          "actual_ce_mass": 3.5208333333333335,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.3753553660270042,
+          "actual_over_equal_record": 1.1266666666666667
+        },
+        "insufficient/tenure__unknown": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.6458333333333335,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.17546197583510847,
+          "actual_over_equal_record": 1.0972222222222223
+        },
+        "insufficient/price_match__no": {
+          "contexts": 12,
+          "variants": 24,
+          "actual_ce_mass": 1.9416666666666667,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.207000710732052,
+          "actual_over_equal_record": 1.2944444444444445
+        },
+        "insufficient/shipping__yes": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.7708333333333335,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.18878820184790152,
+          "actual_over_equal_record": 1.1805555555555556
+        },
+        "policy/late": {
+          "contexts": 30,
+          "variants": 44,
+          "actual_ce_mass": 4.145833333333334,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.44198649609096946,
+          "actual_over_equal_record": 1.1055555555555556
+        },
+        "policy/pay_limit": {
+          "contexts": 40,
+          "variants": 56,
+          "actual_ce_mass": 5.499999999999999,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.586353944562894,
+          "actual_over_equal_record": 1.0999999999999999
+        },
+        "insufficient/overtime__no": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.5833333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.16879886282871193,
+          "actual_over_equal_record": 1.0555555555555556
+        },
+        "injection/web page": {
+          "contexts": 24,
+          "variants": 24,
+          "actual_ce_mass": 2.6333333333333333,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2807391613361735,
+          "actual_over_equal_record": 0.8777777777777778
+        },
+        "injection/email": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.3125,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2465351812366714,
+          "actual_over_equal_record": 0.8409090909090909
+        },
+        "tool_routing/sum": {
+          "contexts": 31,
+          "variants": 41,
+          "actual_ce_mass": 4.166666666666667,
+          "equal_record_ce_mass": 3.875,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.4442075337597683,
+          "actual_over_equal_record": 1.0752688172043012
+        },
+        "probability/all": {
+          "contexts": 40,
+          "variants": 52,
+          "actual_ce_mass": 5.354166666666666,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.5708066808813022,
+          "actual_over_equal_record": 1.0708333333333333
+        },
+        "insufficient/approval__unknown": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.5624999999999998,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.16657782515991307,
+          "actual_over_equal_record": 1.0416666666666665
+        },
+        "insufficient/warranty__yes": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.6666666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.1776830135039073,
+          "actual_over_equal_record": 1.111111111111111
+        },
+        "insufficient/overtime__unknown": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.6666666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.1776830135039073,
+          "actual_over_equal_record": 1.111111111111111
+        },
+        "temporal/deadline": {
+          "contexts": 22,
+          "variants": 30,
+          "actual_ce_mass": 2.8958333333333335,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.308724235963039,
+          "actual_over_equal_record": 1.053030303030303
+        },
+        "probability/any_fail": {
+          "contexts": 50,
+          "variants": 70,
+          "actual_ce_mass": 6.445833333333333,
+          "equal_record_ce_mass": 6.25,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.6871890547263614,
+          "actual_over_equal_record": 1.0313333333333332
+        },
+        "injection/code comment": {
+          "contexts": 14,
+          "variants": 14,
+          "actual_ce_mass": 1.5624999999999998,
+          "equal_record_ce_mass": 1.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.16657782515991307,
+          "actual_over_equal_record": 0.8928571428571427
+        },
+        "multihop/exact_supervisor_hops": {
+          "contexts": 25,
+          "variants": 41,
+          "actual_ce_mass": 3.5541666666666667,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.37890902629708234,
+          "actual_over_equal_record": 1.1373333333333333
+        },
+        "insufficient/tenure__nondeciding": {
+          "contexts": 4,
+          "variants": 8,
+          "actual_ce_mass": 0.75,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.07995735607675829,
+          "actual_over_equal_record": 1.5
+        },
+        "temporal/prorata": {
+          "contexts": 28,
+          "variants": 54,
+          "actual_ce_mass": 4.525,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 13,
+          "actual_share_pct": 0.48240938166310837,
+          "actual_over_equal_record": 1.292857142857143
+        },
+        "insufficient/warranty__no": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.6458333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.17546197583510845,
+          "actual_over_equal_record": 1.097222222222222
+        },
+        "insufficient/approval__no": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.7291666666666667,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.18434612651030385,
+          "actual_over_equal_record": 1.152777777777778
+        },
+        "tool_routing/exchange": {
+          "contexts": 24,
+          "variants": 36,
+          "actual_ce_mass": 3.395833333333333,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.3620291400142111,
+          "actual_over_equal_record": 1.1319444444444444
+        },
+        "injection/tool result": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.5208333333333335,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2687455579246598,
+          "actual_over_equal_record": 0.9166666666666667
+        },
+        "insufficient/overtime__yes": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.8333333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.195451314854298,
+          "actual_over_equal_record": 1.222222222222222
+        },
+        "insufficient/price_match__unknown": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.6666666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.1776830135039073,
+          "actual_over_equal_record": 1.111111111111111
+        },
+        "insufficient/return__unknown": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.5,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.15991471215351657,
+          "actual_over_equal_record": 1.0
+        },
+        "insufficient/approval__yes": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.6041666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.17101990049751076,
+          "actual_over_equal_record": 1.0694444444444444
+        },
+        "insufficient/overtime__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.41666666666666663,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.044420753375976826,
+          "actual_over_equal_record": 0.8333333333333333
+        },
+        "insufficient/return__no": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.8583333333333334,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.19811656005685666,
+          "actual_over_equal_record": 1.238888888888889
+        },
+        "insufficient/return__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.4583333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.0488628287135745,
+          "actual_over_equal_record": 0.9166666666666666
+        },
+        "insufficient/return__yes": {
+          "contexts": 12,
+          "variants": 24,
+          "actual_ce_mass": 1.9416666666666664,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.20700071073205198,
+          "actual_over_equal_record": 1.2944444444444443
+        },
+        "insufficient/price_match__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.4583333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.0488628287135745,
+          "actual_over_equal_record": 0.9166666666666666
+        },
+        "insufficient/warranty__nondeciding": {
+          "contexts": 4,
+          "variants": 10,
+          "actual_ce_mass": 0.75,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.07995735607675829,
+          "actual_over_equal_record": 1.5
+        }
+      },
+      "questions": {
+        "replay/decision": {
+          "question_occurrences": 1311,
+          "actual_ce_mass": 142.48333333333298,
+          "equal_record_ce_mass": 157.50000000000009,
+          "actual_share_pct": 15.190120824448996,
+          "actual_over_equal_record": 0.9046560846560819
+        },
+        "replay/stars": {
+          "question_occurrences": 492,
+          "actual_ce_mass": 53.89583333333346,
+          "equal_record_ce_mass": 61.5,
+          "actual_share_pct": 5.745824449182615,
+          "actual_over_equal_record": 0.8763550135501375
+        },
+        "replay/relation": {
+          "question_occurrences": 731,
+          "actual_ce_mass": 66.74583333333352,
+          "equal_record_ce_mass": 58.12499999999962,
+          "actual_share_pct": 7.1157604832977475,
+          "actual_over_equal_record": 1.1483154121863905
+        },
+        "multihop/decision": {
+          "question_occurrences": 113,
+          "actual_ce_mass": 6.437500000000003,
+          "equal_record_ce_mass": 6.3125,
+          "actual_share_pct": 0.6863006396588422,
+          "actual_over_equal_record": 1.0198019801980203
+        },
+        "multihop/zz_rule_step": {
+          "question_occurrences": 270,
+          "actual_ce_mass": 11.385416666666664,
+          "equal_record_ce_mass": 11.930555555555552,
+          "actual_share_pct": 1.2137970859985665,
+          "actual_over_equal_record": 0.9543073341094297
+        },
+        "replay/answer_type": {
+          "question_occurrences": 696,
+          "actual_ce_mass": 64.92083333333356,
+          "equal_record_ce_mass": 58.62499999999967,
+          "actual_share_pct": 6.921197583510973,
+          "actual_over_equal_record": 1.1073916133617727
+        },
+        "replay/intent": {
+          "question_occurrences": 754,
+          "actual_ce_mass": 68.87083333333348,
+          "equal_record_ce_mass": 61.37499999999967,
+          "actual_share_pct": 7.342306325515224,
+          "actual_over_equal_record": 1.1221317040054395
+        },
+        "replay/topic": {
+          "question_occurrences": 699,
+          "actual_ce_mass": 32.77500000000008,
+          "equal_record_ce_mass": 26.06944444444466,
+          "actual_share_pct": 3.4941364605543455,
+          "actual_over_equal_record": 1.2572189664357944
+        },
+        "replay/is_world": {
+          "question_occurrences": 244,
+          "actual_ce_mass": 8.23472222222223,
+          "equal_record_ce_mass": 8.638888888888914,
+          "actual_share_pct": 0.8779021558872228,
+          "actual_over_equal_record": 0.9532154340835993
+        },
+        "replay/is_sports": {
+          "question_occurrences": 242,
+          "actual_ce_mass": 8.173611111111114,
+          "equal_record_ce_mass": 8.388888888888916,
+          "actual_share_pct": 0.8713871120587457,
+          "actual_over_equal_record": 0.9743377483443681
+        },
+        "probability/decision": {
+          "question_occurrences": 56,
+          "actual_ce_mass": 3.364583333333334,
+          "equal_record_ce_mass": 2.8333333333333335,
+          "actual_share_pct": 0.3586975835110129,
+          "actual_over_equal_record": 1.1875000000000002
+        },
+        "probability/zz_rule_step": {
+          "question_occurrences": 350,
+          "actual_ce_mass": 12.19965277777777,
+          "equal_record_ce_mass": 12.49999999999999,
+          "actual_share_pct": 1.3006026415541205,
+          "actual_over_equal_record": 0.9759722222222224
+        },
+        "replay/positive": {
+          "question_occurrences": 479,
+          "actual_ce_mass": 52.56250000000006,
+          "equal_record_ce_mass": 59.875,
+          "actual_share_pct": 5.603678038379482,
+          "actual_over_equal_record": 0.8778705636743225
+        },
+        "replay/answer": {
+          "question_occurrences": 472,
+          "actual_ce_mass": 51.96666666666676,
+          "equal_record_ce_mass": 59.0,
+          "actual_share_pct": 5.54015636105184,
+          "actual_over_equal_record": 0.880790960451979
+        },
+        "replay/sentiment": {
+          "question_occurrences": 471,
+          "actual_ce_mass": 52.1208333333334,
+          "equal_record_ce_mass": 59.0,
+          "actual_share_pct": 5.5565920398009485,
+          "actual_over_equal_record": 0.8834039548022611
+        },
+        "replay/rating": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.654166666666704,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.7349857853588975,
+          "actual_over_equal_record": 0.8770655270655283
+        },
+        "replay/recommend": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.654166666666704,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.7349857853588975,
+          "actual_over_equal_record": 0.8770655270655283
+        },
+        "multihop/contact": {
+          "question_occurrences": 76,
+          "actual_ce_mass": 3.2972222222222207,
+          "equal_record_ce_mass": 2.7222222222222205,
+          "actual_share_pct": 0.35151622838189645,
+          "actual_over_equal_record": 1.2112244897959186
+        },
+        "multihop/group": {
+          "question_occurrences": 76,
+          "actual_ce_mass": 3.2805555555555532,
+          "equal_record_ce_mass": 2.7222222222222205,
+          "actual_share_pct": 0.3497393982468573,
+          "actual_over_equal_record": 1.2051020408163264
+        },
+        "replay/category": {
+          "question_occurrences": 701,
+          "actual_ce_mass": 64.17500000000028,
+          "equal_record_ce_mass": 57.12499999999972,
+          "actual_share_pct": 6.841684434967981,
+          "actual_over_equal_record": 1.1234135667396166
+        },
+        "replay/is_scitech": {
+          "question_occurrences": 232,
+          "actual_ce_mass": 7.995833333333336,
+          "equal_record_ce_mass": 8.250000000000028,
+          "actual_share_pct": 0.8524342572849956,
+          "actual_over_equal_record": 0.9691919191919162
+        },
+        "policy/amount": {
+          "question_occurrences": 378,
+          "actual_ce_mass": 15.783333333333383,
+          "equal_record_ce_mass": 13.638888888888856,
+          "actual_share_pct": 1.6826581378820074,
+          "actual_over_equal_record": 1.157230142566198
+        },
+        "policy/reason": {
+          "question_occurrences": 374,
+          "actual_ce_mass": 15.433333333333376,
+          "equal_record_ce_mass": 13.472222222222193,
+          "actual_share_pct": 1.6453447050461862,
+          "actual_over_equal_record": 1.145567010309284
+        },
+        "policy/zz_rule_step": {
+          "question_occurrences": 300,
+          "actual_ce_mass": 9.83333333333335,
+          "equal_record_ce_mass": 10.388888888888896,
+          "actual_share_pct": 1.0483297796730549,
+          "actual_over_equal_record": 0.9465240641711239
+        },
+        "insufficient/decision": {
+          "question_occurrences": 422,
+          "actual_ce_mass": 25.36458333333333,
+          "equal_record_ce_mass": 20.458333333333336,
+          "actual_share_pct": 2.7041133617625888,
+          "actual_over_equal_record": 1.2398167006109977
+        },
+        "insufficient/zz_rule_step": {
+          "question_occurrences": 280,
+          "actual_ce_mass": 14.547916666666646,
+          "equal_record_ce_mass": 14.54166666666668,
+          "actual_share_pct": 1.5509506041222287,
+          "actual_over_equal_record": 1.0004297994269318
+        },
+        "replay/is_business": {
+          "question_occurrences": 240,
+          "actual_ce_mass": 8.079166666666667,
+          "equal_record_ce_mass": 8.527777777777802,
+          "actual_share_pct": 0.8613184079601908,
+          "actual_over_equal_record": 0.947394136807815
+        },
+        "temporal/decision": {
+          "question_occurrences": 138,
+          "actual_ce_mass": 13.170833333333345,
+          "equal_record_ce_mass": 12.499999999999988,
+          "actual_share_pct": 1.4041400142146285,
+          "actual_over_equal_record": 1.0536666666666687
+        },
+        "probability/bucket": {
+          "question_occurrences": 175,
+          "actual_ce_mass": 5.421180555555556,
+          "equal_record_ce_mass": 5.513888888888895,
+          "actual_share_pct": 0.5779510187159385,
+          "actual_over_equal_record": 0.9831863979848857
+        },
+        "probability/more_likely": {
+          "question_occurrences": 60,
+          "actual_ce_mass": 1.4572916666666662,
+          "equal_record_ce_mass": 1.4166666666666667,
+          "actual_share_pct": 0.1553615849324789,
+          "actual_over_equal_record": 1.028676470588235
+        },
+        "probability/posterior": {
+          "question_occurrences": 104,
+          "actual_ce_mass": 4.5739583333333345,
+          "equal_record_ce_mass": 3.249999999999997,
+          "actual_share_pct": 0.4876288201847857,
+          "actual_over_equal_record": 1.4073717948717965
+        },
+        "probability/project": {
+          "question_occurrences": 70,
+          "actual_ce_mass": 2.84722222222222,
+          "equal_record_ce_mass": 2.694444444444443,
+          "actual_share_pct": 0.3035418147358414,
+          "actual_over_equal_record": 1.0567010309278349
+        },
+        "probability/value": {
+          "question_occurrences": 66,
+          "actual_ce_mass": 2.555555555555554,
+          "equal_record_ce_mass": 2.527777777777777,
+          "actual_share_pct": 0.2724472873726577,
+          "actual_over_equal_record": 1.0109890109890107
+        },
+        "probability/forward": {
+          "question_occurrences": 91,
+          "actual_ce_mass": 3.8749999999999973,
+          "equal_record_ce_mass": 3.2083333333333295,
+          "actual_share_pct": 0.41311300639658416,
+          "actual_over_equal_record": 1.2077922077922083
+        },
+        "probability/reverse": {
+          "question_occurrences": 101,
+          "actual_ce_mass": 4.666666666666663,
+          "equal_record_ce_mass": 3.624999999999995,
+          "actual_share_pct": 0.4975124378109401,
+          "actual_over_equal_record": 1.2873563218390813
+        },
+        "tool_routing/decision": {
+          "question_occurrences": 140,
+          "actual_ce_mass": 13.45833333333334,
+          "equal_record_ce_mass": 12.499999999999998,
+          "actual_share_pct": 1.4347903340440522,
+          "actual_over_equal_record": 1.0766666666666673
+        },
+        "probability/probability": {
+          "question_occurrences": 165,
+          "actual_ce_mass": 7.6222222222222245,
+          "equal_record_ce_mass": 6.180555555555567,
+          "actual_share_pct": 0.8126036484245363,
+          "actual_over_equal_record": 1.2332584269662903
+        },
+        "injection/decision": {
+          "question_occurrences": 100,
+          "actual_ce_mass": 11.029166666666669,
+          "equal_record_ce_mass": 12.5,
+          "actual_share_pct": 1.175817341862107,
+          "actual_over_equal_record": 0.8823333333333335
+        },
+        "multihop/controller": {
+          "question_occurrences": 116,
+          "actual_ce_mass": 4.927777777777775,
+          "equal_record_ce_mass": 4.166666666666662,
+          "actual_share_pct": 0.5253494432598856,
+          "actual_over_equal_record": 1.1826666666666674
+        },
+        "multihop/interest": {
+          "question_occurrences": 112,
+          "actual_ce_mass": 4.769444444444441,
+          "equal_record_ce_mass": 3.999999999999994,
+          "actual_share_pct": 0.5084695569770143,
+          "actual_over_equal_record": 1.192361111111112
+        },
+        "multihop/approver": {
+          "question_occurrences": 41,
+          "actual_ce_mass": 2.3895833333333334,
+          "equal_record_ce_mass": 1.8958333333333337,
+          "actual_share_pct": 0.2547530206112271,
+          "actual_over_equal_record": 1.2604395604395602
+        }
+      },
+      "insufficient_raw_label_exposure": {
+        "decision/The stated facts permit different decisions; more information is needed.": {
+          "actual_ce_mass": 5.552083333333334,
+          "occurrences": 98
+        },
+        "zz_rule_step/90 to 170 dollars, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "decision/An answer not covered by the other options": {
+          "actual_ce_mass": 0.6854166666666667,
+          "occurrences": 11
+        },
+        "decision/Charge the shipping fee": {
+          "actual_ce_mass": 1.0208333333333333,
+          "occurrences": 17
+        },
+        "zz_rule_step/139 to 179 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Match the competitor price": {
+          "actual_ce_mass": 0.8333333333333334,
+          "occurrences": 14
+        },
+        "zz_rule_step/$30.00": {
+          "actual_ce_mass": 0.20833333333333331,
+          "occurrences": 4
+        },
+        "zz_rule_step/$250.00": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "decision/Grant the employment benefit": {
+          "actual_ce_mass": 1.1458333333333333,
+          "occurrences": 19
+        },
+        "zz_rule_step/2030-07-19": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/120 to 140 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Authorize the payment": {
+          "actual_ce_mass": 0.9895833333333333,
+          "occurrences": 18
+        },
+        "zz_rule_step/No approval is required": {
+          "actual_ce_mass": 0.22916666666666666,
+          "occurrences": 4
+        },
+        "zz_rule_step/57 to 57 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Something else": {
+          "actual_ce_mass": 0.3333333333333333,
+          "occurrences": 4
+        },
+        "zz_rule_step/2032-05-15": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Decline the employment benefit": {
+          "actual_ce_mass": 0.8354166666666666,
+          "occurrences": 15
+        },
+        "zz_rule_step/2031-06-09": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-09": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/No option matches": {
+          "actual_ce_mass": 0.5625,
+          "occurrences": 7
+        },
+        "decision/Decline the requested price match": {
+          "actual_ce_mass": 1.0333333333333332,
+          "occurrences": 19
+        },
+        "zz_rule_step/$10.00": {
+          "actual_ce_mass": 0.29166666666666663,
+          "occurrences": 6
+        },
+        "zz_rule_step/2032-12-17": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Provide free shipping": {
+          "actual_ce_mass": 1.0104166666666667,
+          "occurrences": 17
+        },
+        "zz_rule_step/182 to 182 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/No overtime payment is due": {
+          "actual_ce_mass": 0.8333333333333333,
+          "occurrences": 16
+        },
+        "zz_rule_step/37 to 37 hours, inclusive": {
+          "actual_ce_mass": 0.14583333333333331,
+          "occurrences": 3
+        },
+        "decision/None of these": {
+          "actual_ce_mass": 0.6875,
+          "occurrences": 9
+        },
+        "zz_rule_step/2031-09-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/Department Director": {
+          "actual_ce_mass": 0.8749999999999999,
+          "occurrences": 18
+        },
+        "decision/Repair under the warranty": {
+          "actual_ce_mass": 0.7708333333333333,
+          "occurrences": 13
+        },
+        "zz_rule_step/2032-01-22": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/42 to 54 hours, inclusive": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/38 to 50 hours, inclusive": {
+          "actual_ce_mass": 0.22916666666666666,
+          "occurrences": 4
+        },
+        "zz_rule_step/42 to 42 hours, inclusive": {
+          "actual_ce_mass": 0.15625,
+          "occurrences": 3
+        },
+        "zz_rule_step/2031-04-22": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-07-20": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Decline warranty coverage": {
+          "actual_ce_mass": 1.1041666666666665,
+          "occurrences": 19
+        },
+        "zz_rule_step/2031-06-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/101 to 101 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Obtain a qualifying approval before payment": {
+          "actual_ce_mass": 0.8229166666666667,
+          "occurrences": 14
+        },
+        "zz_rule_step/2032-04-19": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/69 to 69 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/None of the listed options apply": {
+          "actual_ce_mass": 0.5291666666666666,
+          "occurrences": 8
+        },
+        "zz_rule_step/2032-09-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$100.00": {
+          "actual_ce_mass": 0.3958333333333333,
+          "occurrences": 7
+        },
+        "zz_rule_step/2031-03-02": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/76 to 76 dollars, inclusive": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "zz_rule_step/2033-02-16": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-02-13": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "decision/Pay overtime for this week": {
+          "actual_ce_mass": 1.0208333333333333,
+          "occurrences": 17
+        },
+        "zz_rule_step/41 to 41 hours, inclusive": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "decision/Other": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "zz_rule_step/2031-08-17": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/None": {
+          "actual_ce_mass": 0.8958333333333334,
+          "occurrences": 12
+        },
+        "zz_rule_step/91 to 91 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/88 to 88 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 62 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/None of the above": {
+          "actual_ce_mass": 0.28958333333333336,
+          "occurrences": 5
+        },
+        "zz_rule_step/24 to 36 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/170 to 190 dollars, inclusive": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/2031-11-19": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$50.00": {
+          "actual_ce_mass": 0.3645833333333333,
+          "occurrences": 7
+        },
+        "zz_rule_step/81 to 81 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-21": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/40 to 80 dollars, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "decision/A category that fits none of the above": {
+          "actual_ce_mass": 0.7604166666666666,
+          "occurrences": 11
+        },
+        "zz_rule_step/$20.00": {
+          "actual_ce_mass": 0.19166666666666665,
+          "occurrences": 4
+        },
+        "zz_rule_step/58 to 58 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-07-06": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/$80.00": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "decision/Reject the return request": {
+          "actual_ce_mass": 0.8875000000000001,
+          "occurrences": 15
+        },
+        "zz_rule_step/43 to 43 calendar days, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/Team Manager": {
+          "actual_ce_mass": 0.9479166666666664,
+          "occurrences": 18
+        },
+        "zz_rule_step/80 to 80 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-07-14": {
+          "actual_ce_mass": 0.025,
+          "occurrences": 1
+        },
+        "decision/Not listed here": {
+          "actual_ce_mass": 0.6541666666666667,
+          "occurrences": 9
+        },
+        "zz_rule_step/2032-04-14": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/32 to 44 hours, inclusive": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "zz_rule_step/0 to 67 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-11-24": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/46 to 46 hours, inclusive": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 2
+        },
+        "zz_rule_step/50 to 130 dollars, inclusive": {
+          "actual_ce_mass": 0.18749999999999997,
+          "occurrences": 4
+        },
+        "decision/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.40624999999999994,
+          "occurrences": 6
+        },
+        "zz_rule_step/2032-06-08": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/38 to 38 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/35 to 35 hours, inclusive": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 2
+        },
+        "decision/Accept the return request": {
+          "actual_ce_mass": 1.0854166666666667,
+          "occurrences": 19
+        },
+        "zz_rule_step/0 to 37 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/40 to 40 hours, inclusive": {
+          "actual_ce_mass": 0.15625,
+          "occurrences": 3
+        },
+        "zz_rule_step/0 to 48 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/32 to 32 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/64 to 64 calendar days, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2034-09-16": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/34 to 34 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-03-18": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2033-02-09": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-05-06": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/18 to 18 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/179 to 179 dollars, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/31 to 43 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/80 to 100 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-20": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2032-04-15": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-06-06": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/29 to 29 calendar days, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/49 to 49 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/186 to 186 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/33 to 45 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2035-01-10": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/133 to 133 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/84 to 84 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-06-22": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/51 to 51 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/A reason that fits none of the above": {
+          "actual_ce_mass": 0.3645833333333333,
+          "occurrences": 6
+        },
+        "zz_rule_step/$200.00": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 3
+        },
+        "zz_rule_step/2031-07-20": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-07-13": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/37 to 49 hours, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/0 to 0 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/$40.00": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 2
+        },
+        "zz_rule_step/2031-10-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/125 to 125 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/45 to 45 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 54 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/22 to 22 calendar days, inclusive": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 2
+        },
+        "zz_rule_step/0 to 30 calendar days, inclusive": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 2
+        },
+        "zz_rule_step/2032-05-22": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-10-02": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-16": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-05-07": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 44 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 56 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-18": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-05-10": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 75 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 29 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Keep our existing price; it is already no higher": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "zz_rule_step/34 to 34 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/39 to 39 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-05-04": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-02-07": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/41 to 53 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-04-22": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-08-18": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$60.00": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/68 to 68 calendar days, inclusive": {
+          "actual_ce_mass": 0.025,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-09-17": {
+          "actual_ce_mass": 0.09375,
+          "occurrences": 2
+        },
+        "zz_rule_step/38 to 38 hours, inclusive": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/23 to 23 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/-28 to 52 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-07-23": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/73 to 73 dollars, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/35 to 35 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 28 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-14": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 42 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-09": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-10-08": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/5 to 5 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-05-08": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-10-08": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-03-20": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-12-14": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/65 to 105 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 6 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/161 to 161 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-12-06": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/19 to 19 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/1 to 1 calendar days, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-06-21": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-03-22": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-05-07": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/68 to 88 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-11": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2036-12-06": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-02-18": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$150.00": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-08": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/132 to 132 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-08-09": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/70 to 110 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 18 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2035-02-20": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/41 to 41 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-10-08": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-08-14": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/35 to 47 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/9 to 9 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/8 to 8 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/46 to 46 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-09-15": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/98 to 98 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-09-16": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-01-20": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 19 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-04-13": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/70 to 70 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2033-06-15": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/14 to 14 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-08-20": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/21 to 21 calendar days, inclusive": {
+          "actual_ce_mass": 0.025,
+          "occurrences": 1
+        },
+        "zz_rule_step/3 to 3 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-11-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/47 to 47 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-01-17": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-12-06": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        }
+      }
+    },
+    {
+      "epoch": 2,
+      "total_ce_mass": 938.0000000000086,
+      "families": {
+        "replay": {
+          "contexts": 6000,
+          "variants": 7226,
+          "actual_ce_mass": 734.0541666666753,
+          "equal_record_ce_mass": 750.25,
+          "none_pair_records": 613,
+          "actual_share_pct": 78.25737384506061,
+          "actual_over_equal_record": 0.9784127513051321
+        },
+        "insufficient": {
+          "contexts": 280,
+          "variants": 406,
+          "actual_ce_mass": 38.349999999999994,
+          "equal_record_ce_mass": 35.125,
+          "none_pair_records": 63,
+          "actual_share_pct": 4.088486140724909,
+          "actual_over_equal_record": 1.0918149466192169
+        },
+        "probability": {
+          "contexts": 350,
+          "variants": 520,
+          "actual_ce_mass": 48.141666666666694,
+          "equal_record_ce_mass": 43.75,
+          "none_pair_records": 85,
+          "actual_share_pct": 5.132373845060368,
+          "actual_over_equal_record": 1.100380952380953
+        },
+        "policy": {
+          "contexts": 300,
+          "variants": 460,
+          "actual_ce_mass": 42.1125,
+          "equal_record_ce_mass": 37.5,
+          "none_pair_records": 80,
+          "actual_share_pct": 4.48960554370998,
+          "actual_over_equal_record": 1.123
+        },
+        "temporal": {
+          "contexts": 100,
+          "variants": 136,
+          "actual_ce_mass": 13.729166666666671,
+          "equal_record_ce_mass": 12.625,
+          "none_pair_records": 18,
+          "actual_share_pct": 1.4636638237384376,
+          "actual_over_equal_record": 1.087458745874588
+        },
+        "multihop": {
+          "contexts": 270,
+          "variants": 370,
+          "actual_ce_mass": 36.24166666666666,
+          "equal_record_ce_mass": 33.75,
+          "none_pair_records": 50,
+          "actual_share_pct": 3.8637171286424654,
+          "actual_over_equal_record": 1.073827160493827
+        },
+        "tool_routing": {
+          "contexts": 100,
+          "variants": 160,
+          "actual_ce_mass": 14.01666666666667,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 30,
+          "actual_share_pct": 1.4943141435678615,
+          "actual_over_equal_record": 1.1213333333333335
+        },
+        "injection": {
+          "contexts": 100,
+          "variants": 100,
+          "actual_ce_mass": 11.35416666666667,
+          "equal_record_ce_mass": 12.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 1.2104655294953695,
+          "actual_over_equal_record": 0.9083333333333335
+        }
+      },
+      "subtypes": {
+        "replay/unspecified": {
+          "contexts": 6000,
+          "variants": 7226,
+          "actual_ce_mass": 734.0541666666753,
+          "equal_record_ce_mass": 750.25,
+          "none_pair_records": 613,
+          "actual_share_pct": 78.25737384506061,
+          "actual_over_equal_record": 0.9784127513051321
+        },
+        "insufficient/approval__yes": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.4791666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.1576936744847178,
+          "actual_over_equal_record": 0.986111111111111
+        },
+        "probability/all": {
+          "contexts": 40,
+          "variants": 52,
+          "actual_ce_mass": 5.083333333333333,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.5419331911869175,
+          "actual_over_equal_record": 1.0166666666666666
+        },
+        "policy/pay_limit": {
+          "contexts": 40,
+          "variants": 66,
+          "actual_ce_mass": 5.983333333333333,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 13,
+          "actual_share_pct": 0.6378820184790276,
+          "actual_over_equal_record": 1.1966666666666668
+        },
+        "probability/any_fail": {
+          "contexts": 50,
+          "variants": 80,
+          "actual_ce_mass": 7.062499999999999,
+          "equal_record_ce_mass": 6.25,
+          "none_pair_records": 15,
+          "actual_share_pct": 0.7529317697228074,
+          "actual_over_equal_record": 1.13
+        },
+        "policy/pay_loss": {
+          "contexts": 40,
+          "variants": 62,
+          "actual_ce_mass": 5.7749999999999995,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 11,
+          "actual_share_pct": 0.6156716417910391,
+          "actual_over_equal_record": 1.1549999999999998
+        },
+        "insufficient/return__yes": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.7291666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.1843461265103039,
+          "actual_over_equal_record": 1.1527777777777777
+        },
+        "insufficient/price_match__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.06663113006396527,
+          "actual_over_equal_record": 1.25
+        },
+        "insufficient/price_match__no": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.3333333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.1421464108031259,
+          "actual_over_equal_record": 0.8888888888888888
+        },
+        "temporal/timezone": {
+          "contexts": 28,
+          "variants": 36,
+          "actual_ce_mass": 3.729166666666667,
+          "equal_record_ce_mass": 3.625,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.3975657427149928,
+          "actual_over_equal_record": 1.028735632183908
+        },
+        "multihop/ownership_control_and_profit": {
+          "contexts": 90,
+          "variants": 142,
+          "actual_ce_mass": 12.900000000000004,
+          "equal_record_ce_mass": 11.25,
+          "none_pair_records": 26,
+          "actual_share_pct": 1.3752665245202438,
+          "actual_over_equal_record": 1.146666666666667
+        },
+        "policy/waiting": {
+          "contexts": 30,
+          "variants": 44,
+          "actual_ce_mass": 3.9166666666666674,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.41755508173418243,
+          "actual_over_equal_record": 1.0444444444444447
+        },
+        "insufficient/warranty__unknown": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.75,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.18656716417910277,
+          "actual_over_equal_record": 1.1666666666666667
+        },
+        "temporal/prorata": {
+          "contexts": 28,
+          "variants": 42,
+          "actual_ce_mass": 4.0,
+          "equal_record_ce_mass": 3.5,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.42643923240937776,
+          "actual_over_equal_record": 1.1428571428571428
+        },
+        "temporal/deadline": {
+          "contexts": 22,
+          "variants": 36,
+          "actual_ce_mass": 3.5000000000000004,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.3731343283582056,
+          "actual_over_equal_record": 1.272727272727273
+        },
+        "multihop/exact_supervisor_hops": {
+          "contexts": 25,
+          "variants": 41,
+          "actual_ce_mass": 4.0,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.42643923240937776,
+          "actual_over_equal_record": 1.28
+        },
+        "policy/flag": {
+          "contexts": 30,
+          "variants": 54,
+          "actual_ce_mass": 4.541666666666667,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 12,
+          "actual_share_pct": 0.48418621179814764,
+          "actual_over_equal_record": 1.2111111111111112
+        },
+        "multihop/dependency_candidates": {
+          "contexts": 70,
+          "variants": 70,
+          "actual_ce_mass": 7.591666666666664,
+          "equal_record_ce_mass": 8.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.8093461265102979,
+          "actual_over_equal_record": 0.8676190476190473
+        },
+        "tool_routing/sum": {
+          "contexts": 31,
+          "variants": 51,
+          "actual_ce_mass": 4.483333333333333,
+          "equal_record_ce_mass": 3.875,
+          "none_pair_records": 10,
+          "actual_share_pct": 0.4779673063255109,
+          "actual_over_equal_record": 1.156989247311828
+        },
+        "policy/intentional": {
+          "contexts": 30,
+          "variants": 48,
+          "actual_ce_mass": 4.354166666666667,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 9,
+          "actual_share_pct": 0.4641968727789581,
+          "actual_over_equal_record": 1.1611111111111112
+        },
+        "insufficient/return__unknown": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.75,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.18656716417910277,
+          "actual_over_equal_record": 1.1666666666666667
+        },
+        "tool_routing/exchange": {
+          "contexts": 24,
+          "variants": 40,
+          "actual_ce_mass": 3.541666666666667,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 8,
+          "actual_share_pct": 0.3775764036958032,
+          "actual_over_equal_record": 1.1805555555555556
+        },
+        "probability/expected_value": {
+          "contexts": 60,
+          "variants": 92,
+          "actual_ce_mass": 8.541666666666666,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 16,
+          "actual_share_pct": 0.9106254442075253,
+          "actual_over_equal_record": 1.1388888888888888
+        },
+        "insufficient/tenure__yes": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.6458333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.17546197583510853,
+          "actual_over_equal_record": 1.097222222222222
+        },
+        "injection/web page": {
+          "contexts": 24,
+          "variants": 24,
+          "actual_ce_mass": 2.7708333333333335,
+          "equal_record_ce_mass": 3.0,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.29539800995024607,
+          "actual_over_equal_record": 0.9236111111111112
+        },
+        "probability/table": {
+          "contexts": 75,
+          "variants": 109,
+          "actual_ce_mass": 10.3125,
+          "equal_record_ce_mass": 9.375,
+          "none_pair_records": 17,
+          "actual_share_pct": 1.099413646055427,
+          "actual_over_equal_record": 1.1
+        },
+        "insufficient/warranty__yes": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.8541666666666667,
+          "equal_record_ce_mass": 1.625,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.19767235252309698,
+          "actual_over_equal_record": 1.141025641025641
+        },
+        "insufficient/shipping__no": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.625,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.1732409381663097,
+          "actual_over_equal_record": 1.0833333333333333
+        },
+        "policy/not_purchased": {
+          "contexts": 30,
+          "variants": 40,
+          "actual_ce_mass": 3.8125,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.40644989339018817,
+          "actual_over_equal_record": 1.0166666666666666
+        },
+        "insufficient/shipping__yes": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.5,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.15991471215351666,
+          "actual_over_equal_record": 1.0
+        },
+        "injection/email": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.4375,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.25986140724946455,
+          "actual_over_equal_record": 0.8863636363636364
+        },
+        "multihop/dated_roster": {
+          "contexts": 60,
+          "variants": 86,
+          "actual_ce_mass": 8.520833333333334,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 13,
+          "actual_share_pct": 0.9084044065387266,
+          "actual_over_equal_record": 1.1361111111111113
+        },
+        "policy/pay_sublimit": {
+          "contexts": 40,
+          "variants": 52,
+          "actual_ce_mass": 5.166666666666667,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.550817341862113,
+          "actual_over_equal_record": 1.0333333333333334
+        },
+        "policy/threshold": {
+          "contexts": 30,
+          "variants": 42,
+          "actual_ce_mass": 3.8125000000000004,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.4064498933901882,
+          "actual_over_equal_record": 1.0166666666666668
+        },
+        "injection/tool result": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.625,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.27985074626865414,
+          "actual_over_equal_record": 0.9545454545454546
+        },
+        "insufficient/overtime__no": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.5416666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.16435678749111432,
+          "actual_over_equal_record": 1.0277777777777777
+        },
+        "temporal/late_fee": {
+          "contexts": 22,
+          "variants": 22,
+          "actual_ce_mass": 2.5,
+          "equal_record_ce_mass": 2.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.2665245202558611,
+          "actual_over_equal_record": 0.9090909090909091
+        },
+        "probability/bayes": {
+          "contexts": 60,
+          "variants": 94,
+          "actual_ce_mass": 8.816666666666668,
+          "equal_record_ce_mass": 7.5,
+          "none_pair_records": 17,
+          "actual_share_pct": 0.9399431414356703,
+          "actual_over_equal_record": 1.1755555555555557
+        },
+        "injection/code comment": {
+          "contexts": 14,
+          "variants": 14,
+          "actual_ce_mass": 1.5416666666666665,
+          "equal_record_ce_mass": 1.75,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.16435678749111432,
+          "actual_over_equal_record": 0.8809523809523808
+        },
+        "multihop/rank_escalation": {
+          "contexts": 25,
+          "variants": 31,
+          "actual_ce_mass": 3.229166666666667,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.34426083866382057,
+          "actual_over_equal_record": 1.0333333333333334
+        },
+        "insufficient/overtime__yes": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.6458333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.17546197583510853,
+          "actual_over_equal_record": 1.097222222222222
+        },
+        "policy/late": {
+          "contexts": 30,
+          "variants": 52,
+          "actual_ce_mass": 4.75,
+          "equal_record_ce_mass": 3.75,
+          "none_pair_records": 11,
+          "actual_share_pct": 0.5063965884861361,
+          "actual_over_equal_record": 1.2666666666666666
+        },
+        "probability/compare": {
+          "contexts": 40,
+          "variants": 64,
+          "actual_ce_mass": 5.300000000000001,
+          "equal_record_ce_mass": 5.0,
+          "none_pair_records": 12,
+          "actual_share_pct": 0.5650319829424256,
+          "actual_over_equal_record": 1.06
+        },
+        "insufficient/shipping__unknown": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.6333333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.17412935323382925,
+          "actual_over_equal_record": 1.0888888888888888
+        },
+        "insufficient/price_match__unknown": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.4833333333333334,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.1581378820184776,
+          "actual_over_equal_record": 0.9888888888888889
+        },
+        "insufficient/approval__no": {
+          "contexts": 12,
+          "variants": 16,
+          "actual_ce_mass": 1.5416666666666667,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.16435678749111435,
+          "actual_over_equal_record": 1.027777777777778
+        },
+        "insufficient/tenure__no": {
+          "contexts": 12,
+          "variants": 24,
+          "actual_ce_mass": 2.020833333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 6,
+          "actual_share_pct": 0.21544065387348768,
+          "actual_over_equal_record": 1.347222222222222
+        },
+        "tool_routing/reservation": {
+          "contexts": 25,
+          "variants": 39,
+          "actual_ce_mass": 3.3416666666666672,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 7,
+          "actual_share_pct": 0.3562544420753344,
+          "actual_over_equal_record": 1.0693333333333335
+        },
+        "insufficient/tenure__unknown": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.7291666666666665,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.1843461265103039,
+          "actual_over_equal_record": 1.1527777777777777
+        },
+        "probability/any": {
+          "contexts": 25,
+          "variants": 29,
+          "actual_ce_mass": 3.0250000000000004,
+          "equal_record_ce_mass": 3.125,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.322494669509592,
+          "actual_over_equal_record": 0.9680000000000001
+        },
+        "insufficient/shipping__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.06663113006396527,
+          "actual_over_equal_record": 1.25
+        },
+        "injection/JSON field": {
+          "contexts": 18,
+          "variants": 18,
+          "actual_ce_mass": 1.9791666666666665,
+          "equal_record_ce_mass": 2.25,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.21099857853589002,
+          "actual_over_equal_record": 0.8796296296296295
+        },
+        "insufficient/return__no": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.7125,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.18256929637526484,
+          "actual_over_equal_record": 1.1416666666666666
+        },
+        "insufficient/warranty__no": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.5208333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.16213574982231546,
+          "actual_over_equal_record": 1.0138888888888888
+        },
+        "insufficient/overtime__unknown": {
+          "contexts": 12,
+          "variants": 18,
+          "actual_ce_mass": 1.708333333333333,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 3,
+          "actual_share_pct": 0.18212508884150505,
+          "actual_over_equal_record": 1.1388888888888886
+        },
+        "insufficient/warranty__nondeciding": {
+          "contexts": 4,
+          "variants": 8,
+          "actual_ce_mass": 0.6875,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 2,
+          "actual_share_pct": 0.0732942430703618,
+          "actual_over_equal_record": 1.375
+        },
+        "insufficient/approval__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5625,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.05996801705756875,
+          "actual_over_equal_record": 1.125
+        },
+        "tool_routing/shipment": {
+          "contexts": 20,
+          "variants": 30,
+          "actual_ce_mass": 2.6499999999999995,
+          "equal_record_ce_mass": 2.5,
+          "none_pair_records": 5,
+          "actual_share_pct": 0.2825159914712127,
+          "actual_over_equal_record": 1.0599999999999998
+        },
+        "insufficient/price_match__yes": {
+          "contexts": 12,
+          "variants": 20,
+          "actual_ce_mass": 1.6875,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 4,
+          "actual_share_pct": 0.17990405117270622,
+          "actual_over_equal_record": 1.125
+        },
+        "insufficient/approval__unknown": {
+          "contexts": 12,
+          "variants": 14,
+          "actual_ce_mass": 1.4583333333333335,
+          "equal_record_ce_mass": 1.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.15547263681591897,
+          "actual_over_equal_record": 0.9722222222222223
+        },
+        "insufficient/tenure__nondeciding": {
+          "contexts": 4,
+          "variants": 6,
+          "actual_ce_mass": 0.5833333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 1,
+          "actual_share_pct": 0.062189054726367585,
+          "actual_over_equal_record": 1.1666666666666665
+        },
+        "insufficient/overtime__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.4583333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.04886282871357453,
+          "actual_over_equal_record": 0.9166666666666666
+        },
+        "insufficient/return__nondeciding": {
+          "contexts": 4,
+          "variants": 4,
+          "actual_ce_mass": 0.4583333333333333,
+          "equal_record_ce_mass": 0.5,
+          "none_pair_records": 0,
+          "actual_share_pct": 0.04886282871357453,
+          "actual_over_equal_record": 0.9166666666666666
+        }
+      },
+      "questions": {
+        "replay/answer_type": {
+          "question_occurrences": 694,
+          "actual_ce_mass": 66.03333333333363,
+          "equal_record_ce_mass": 58.499999999999744,
+          "actual_share_pct": 7.039800995024843,
+          "actual_over_equal_record": 1.1287749287749387
+        },
+        "replay/decision": {
+          "question_occurrences": 1323,
+          "actual_ce_mass": 142.895833333333,
+          "equal_record_ce_mass": 157.49999999999994,
+          "actual_share_pct": 15.234097370291224,
+          "actual_over_equal_record": 0.9072751322751305
+        },
+        "insufficient/decision": {
+          "question_occurrences": 406,
+          "actual_ce_mass": 23.87500000000001,
+          "equal_record_ce_mass": 20.22916666666667,
+          "actual_share_pct": 2.5453091684434743,
+          "actual_over_equal_record": 1.1802265705458292
+        },
+        "insufficient/zz_rule_step": {
+          "question_occurrences": 280,
+          "actual_ce_mass": 14.474999999999985,
+          "equal_record_ce_mass": 14.895833333333343,
+          "actual_share_pct": 1.5431769722814341,
+          "actual_over_equal_record": 0.9717482517482502
+        },
+        "replay/sentiment": {
+          "question_occurrences": 471,
+          "actual_ce_mass": 51.750000000000085,
+          "equal_record_ce_mass": 58.875,
+          "actual_share_pct": 5.517057569296333,
+          "actual_over_equal_record": 0.8789808917197467
+        },
+        "replay/answer": {
+          "question_occurrences": 472,
+          "actual_ce_mass": 52.22916666666676,
+          "equal_record_ce_mass": 59.0,
+          "actual_share_pct": 5.568141435678708,
+          "actual_over_equal_record": 0.8852401129943518
+        },
+        "replay/stars": {
+          "question_occurrences": 492,
+          "actual_ce_mass": 54.22916666666681,
+          "equal_record_ce_mass": 61.625,
+          "actual_share_pct": 5.781361051883403,
+          "actual_over_equal_record": 0.8799864773495629
+        },
+        "probability/bucket": {
+          "question_occurrences": 175,
+          "actual_ce_mass": 5.4076388888888856,
+          "equal_record_ce_mass": 5.673611111111118,
+          "actual_share_pct": 0.5765073442312192,
+          "actual_over_equal_record": 0.953121175030598
+        },
+        "probability/probability": {
+          "question_occurrences": 161,
+          "actual_ce_mass": 7.401388888888885,
+          "equal_record_ce_mass": 6.069444444444455,
+          "actual_share_pct": 0.7890606491352683,
+          "actual_over_equal_record": 1.219450800915329
+        },
+        "probability/zz_rule_step": {
+          "question_occurrences": 350,
+          "actual_ce_mass": 11.853472222222234,
+          "equal_record_ce_mass": 12.38194444444443,
+          "actual_share_pct": 1.2636963989575825,
+          "actual_over_equal_record": 0.9573191250701085
+        },
+        "policy/amount": {
+          "question_occurrences": 380,
+          "actual_ce_mass": 16.32083333333336,
+          "equal_record_ce_mass": 13.61111111111108,
+          "actual_share_pct": 1.7399609097370161,
+          "actual_over_equal_record": 1.199081632653066
+        },
+        "policy/reason": {
+          "question_occurrences": 380,
+          "actual_ce_mass": 15.737500000000026,
+          "equal_record_ce_mass": 13.611111111111079,
+          "actual_share_pct": 1.6777718550106482,
+          "actual_over_equal_record": 1.156224489795923
+        },
+        "policy/zz_rule_step": {
+          "question_occurrences": 300,
+          "actual_ce_mass": 10.054166666666667,
+          "equal_record_ce_mass": 10.277777777777787,
+          "actual_share_pct": 1.0718727789623215,
+          "actual_over_equal_record": 0.9782432432432424
+        },
+        "replay/category": {
+          "question_occurrences": 689,
+          "actual_ce_mass": 63.22916666666691,
+          "equal_record_ce_mass": 57.124999999999766,
+          "actual_share_pct": 6.740849324804513,
+          "actual_over_equal_record": 1.1068563092633203
+        },
+        "replay/positive": {
+          "question_occurrences": 479,
+          "actual_ce_mass": 53.0333333333334,
+          "equal_record_ce_mass": 59.875,
+          "actual_share_pct": 5.653873489694341,
+          "actual_over_equal_record": 0.8857341684064034
+        },
+        "replay/topic": {
+          "question_occurrences": 743,
+          "actual_ce_mass": 36.025000000000105,
+          "equal_record_ce_mass": 27.291666666666924,
+          "actual_share_pct": 3.8406183368869695,
+          "actual_over_equal_record": 1.3199999999999914
+        },
+        "replay/is_scitech": {
+          "question_occurrences": 232,
+          "actual_ce_mass": 7.961111111111116,
+          "equal_record_ce_mass": 8.138888888888916,
+          "actual_share_pct": 0.848732527836998,
+          "actual_over_equal_record": 0.978156996587028
+        },
+        "replay/is_world": {
+          "question_occurrences": 244,
+          "actual_ce_mass": 8.216666666666672,
+          "equal_record_ce_mass": 8.25000000000003,
+          "actual_share_pct": 0.875977256574264,
+          "actual_over_equal_record": 0.9959595959595929
+        },
+        "replay/is_business": {
+          "question_occurrences": 240,
+          "actual_ce_mass": 8.147222222222226,
+          "equal_record_ce_mass": 8.000000000000034,
+          "actual_share_pct": 0.8685737976782677,
+          "actual_over_equal_record": 1.018402777777774
+        },
+        "temporal/decision": {
+          "question_occurrences": 136,
+          "actual_ce_mass": 13.729166666666675,
+          "equal_record_ce_mass": 12.624999999999995,
+          "actual_share_pct": 1.4636638237384378,
+          "actual_over_equal_record": 1.0874587458745886
+        },
+        "replay/is_sports": {
+          "question_occurrences": 242,
+          "actual_ce_mass": 8.175000000000002,
+          "equal_record_ce_mass": 8.194444444444477,
+          "actual_share_pct": 0.871535181236666,
+          "actual_over_equal_record": 0.9976271186440642
+        },
+        "replay/rating": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.73333333333338,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.743425728500335,
+          "actual_over_equal_record": 0.8797720797720814
+        },
+        "replay/recommend": {
+          "question_occurrences": 468,
+          "actual_ce_mass": 25.73333333333338,
+          "equal_record_ce_mass": 29.25,
+          "actual_share_pct": 2.743425728500335,
+          "actual_over_equal_record": 0.8797720797720814
+        },
+        "replay/relation": {
+          "question_occurrences": 671,
+          "actual_ce_mass": 62.78750000000028,
+          "equal_record_ce_mass": 58.12499999999977,
+          "actual_share_pct": 6.693763326225981,
+          "actual_over_equal_record": 1.0802150537634498
+        },
+        "multihop/controller": {
+          "question_occurrences": 122,
+          "actual_ce_mass": 5.42222222222222,
+          "equal_record_ce_mass": 4.361111111111108,
+          "actual_share_pct": 0.5780620705993784,
+          "actual_over_equal_record": 1.2433121019108284
+        },
+        "multihop/interest": {
+          "question_occurrences": 110,
+          "actual_ce_mass": 4.488888888888885,
+          "equal_record_ce_mass": 3.8611111111111054,
+          "actual_share_pct": 0.47855958303719015,
+          "actual_over_equal_record": 1.1625899280575547
+        },
+        "multihop/zz_rule_step": {
+          "question_occurrences": 270,
+          "actual_ce_mass": 11.66319444444444,
+          "equal_record_ce_mass": 12.20833333333333,
+          "actual_share_pct": 1.2434109215825513,
+          "actual_over_equal_record": 0.9553469852104662
+        },
+        "multihop/approver": {
+          "question_occurrences": 41,
+          "actual_ce_mass": 2.6666666666666665,
+          "equal_record_ce_mass": 1.8958333333333335,
+          "actual_share_pct": 0.2842928216062518,
+          "actual_over_equal_record": 1.4065934065934065
+        },
+        "replay/intent": {
+          "question_occurrences": 724,
+          "actual_ce_mass": 67.8750000000002,
+          "equal_record_ce_mass": 61.24999999999966,
+          "actual_share_pct": 7.23614072494665,
+          "actual_over_equal_record": 1.108163265306132
+        },
+        "multihop/decision": {
+          "question_occurrences": 101,
+          "actual_ce_mass": 5.639583333333334,
+          "equal_record_ce_mass": 6.0625,
+          "actual_share_pct": 0.6012348969438468,
+          "actual_over_equal_record": 0.9302405498281788
+        },
+        "tool_routing/decision": {
+          "question_occurrences": 160,
+          "actual_ce_mass": 14.01666666666668,
+          "equal_record_ce_mass": 12.499999999999982,
+          "actual_share_pct": 1.4943141435678624,
+          "actual_over_equal_record": 1.121333333333336
+        },
+        "probability/project": {
+          "question_occurrences": 82,
+          "actual_ce_mass": 3.7499999999999973,
+          "equal_record_ce_mass": 2.9722222222222197,
+          "actual_share_pct": 0.39978678038379134,
+          "actual_over_equal_record": 1.2616822429906545
+        },
+        "probability/value": {
+          "question_occurrences": 70,
+          "actual_ce_mass": 2.7916666666666647,
+          "equal_record_ce_mass": 2.4722222222222214,
+          "actual_share_pct": 0.2976190476190447,
+          "actual_over_equal_record": 1.129213483146067
+        },
+        "injection/decision": {
+          "question_occurrences": 100,
+          "actual_ce_mass": 11.35416666666667,
+          "equal_record_ce_mass": 12.5,
+          "actual_share_pct": 1.2104655294953695,
+          "actual_over_equal_record": 0.9083333333333335
+        },
+        "probability/forward": {
+          "question_occurrences": 89,
+          "actual_ce_mass": 3.6458333333333304,
+          "equal_record_ce_mass": 3.2361111111111076,
+          "actual_share_pct": 0.3886815920397971,
+          "actual_over_equal_record": 1.126609442060086
+        },
+        "probability/reverse": {
+          "question_occurrences": 95,
+          "actual_ce_mass": 4.104166666666663,
+          "equal_record_ce_mass": 3.4861111111111067,
+          "actual_share_pct": 0.4375444207533716,
+          "actual_over_equal_record": 1.177290836653387
+        },
+        "multihop/contact": {
+          "question_occurrences": 68,
+          "actual_ce_mass": 2.784722222222221,
+          "equal_record_ce_mass": 2.4722222222222214,
+          "actual_share_pct": 0.29687870172944514,
+          "actual_over_equal_record": 1.1264044943820224
+        },
+        "multihop/group": {
+          "question_occurrences": 78,
+          "actual_ce_mass": 3.5763888888888866,
+          "equal_record_ce_mass": 2.8888888888888866,
+          "actual_share_pct": 0.38127813314380105,
+          "actual_over_equal_record": 1.2379807692307694
+        },
+        "probability/more_likely": {
+          "question_occurrences": 60,
+          "actual_ce_mass": 1.522916666666666,
+          "equal_record_ce_mass": 1.5208333333333337,
+          "actual_share_pct": 0.1623578535891953,
+          "actual_over_equal_record": 1.001369863013698
+        },
+        "probability/posterior": {
+          "question_occurrences": 94,
+          "actual_ce_mass": 4.247916666666668,
+          "equal_record_ce_mass": 2.9374999999999987,
+          "actual_share_pct": 0.452869580668084,
+          "actual_over_equal_record": 1.4460992907801429
+        },
+        "probability/decision": {
+          "question_occurrences": 64,
+          "actual_ce_mass": 3.416666666666666,
+          "equal_record_ce_mass": 2.9999999999999996,
+          "actual_share_pct": 0.3642501776830101,
+          "actual_over_equal_record": 1.1388888888888888
+        }
+      },
+      "insufficient_raw_label_exposure": {
+        "decision/Authorize the payment": {
+          "actual_ce_mass": 0.8958333333333333,
+          "occurrences": 16
+        },
+        "zz_rule_step/Department Director": {
+          "actual_ce_mass": 0.8541666666666665,
+          "occurrences": 18
+        },
+        "decision/Accept the return request": {
+          "actual_ce_mass": 1.0937499999999998,
+          "occurrences": 19
+        },
+        "zz_rule_step/14 to 14 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/None of the above": {
+          "actual_ce_mass": 0.5208333333333334,
+          "occurrences": 8
+        },
+        "zz_rule_step/$20.00": {
+          "actual_ce_mass": 0.22916666666666666,
+          "occurrences": 4
+        },
+        "decision/Keep our existing price; it is already no higher": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 1
+        },
+        "decision/None": {
+          "actual_ce_mass": 0.8333333333333333,
+          "occurrences": 13
+        },
+        "decision/Decline the requested price match": {
+          "actual_ce_mass": 0.7499999999999999,
+          "occurrences": 14
+        },
+        "zz_rule_step/$100.00": {
+          "actual_ce_mass": 0.3645833333333333,
+          "occurrences": 7
+        },
+        "zz_rule_step/2032-12-17": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "decision/The stated facts permit different decisions; more information is needed.": {
+          "actual_ce_mass": 5.454166666666667,
+          "occurrences": 98
+        },
+        "decision/A reason that fits none of the above": {
+          "actual_ce_mass": 0.3958333333333333,
+          "occurrences": 6
+        },
+        "zz_rule_step/0 to 62 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/A category that fits none of the above": {
+          "actual_ce_mass": 0.6458333333333333,
+          "occurrences": 9
+        },
+        "zz_rule_step/2032-03-11": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Cannot be determined from the options given": {
+          "actual_ce_mass": 0.7166666666666668,
+          "occurrences": 10
+        },
+        "decision/Grant the employment benefit": {
+          "actual_ce_mass": 0.9583333333333333,
+          "occurrences": 17
+        },
+        "zz_rule_step/2031-01-17": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/21 to 21 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Repair under the warranty": {
+          "actual_ce_mass": 0.6770833333333334,
+          "occurrences": 10
+        },
+        "zz_rule_step/2032-01-20": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "decision/Charge the shipping fee": {
+          "actual_ce_mass": 0.9999999999999999,
+          "occurrences": 19
+        },
+        "zz_rule_step/57 to 57 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Provide free shipping": {
+          "actual_ce_mass": 0.7499999999999999,
+          "occurrences": 13
+        },
+        "zz_rule_step/101 to 101 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-12-06": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/No overtime payment is due": {
+          "actual_ce_mass": 0.8333333333333333,
+          "occurrences": 15
+        },
+        "zz_rule_step/32 to 32 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "decision/Pay overtime for this week": {
+          "actual_ce_mass": 0.8645833333333333,
+          "occurrences": 15
+        },
+        "zz_rule_step/39 to 39 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-05-10": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/170 to 190 dollars, inclusive": {
+          "actual_ce_mass": 0.11249999999999999,
+          "occurrences": 3
+        },
+        "decision/None of these": {
+          "actual_ce_mass": 0.4333333333333333,
+          "occurrences": 7
+        },
+        "zz_rule_step/$10.00": {
+          "actual_ce_mass": 0.28541666666666665,
+          "occurrences": 6
+        },
+        "zz_rule_step/$80.00": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "zz_rule_step/41 to 41 hours, inclusive": {
+          "actual_ce_mass": 0.1875,
+          "occurrences": 3
+        },
+        "decision/Obtain a qualifying approval before payment": {
+          "actual_ce_mass": 0.7083333333333334,
+          "occurrences": 13
+        },
+        "zz_rule_step/Team Manager": {
+          "actual_ce_mass": 1.0729166666666667,
+          "occurrences": 18
+        },
+        "decision/Decline the employment benefit": {
+          "actual_ce_mass": 0.9687499999999999,
+          "occurrences": 17
+        },
+        "zz_rule_step/2032-04-15": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "decision/No option matches": {
+          "actual_ce_mass": 0.7083333333333333,
+          "occurrences": 9
+        },
+        "zz_rule_step/73 to 73 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Something else": {
+          "actual_ce_mass": 0.6875,
+          "occurrences": 10
+        },
+        "zz_rule_step/2035-01-10": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/120 to 140 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 42 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/-28 to 52 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/8 to 8 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Reject the return request": {
+          "actual_ce_mass": 0.8562500000000001,
+          "occurrences": 15
+        },
+        "zz_rule_step/22 to 22 calendar days, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2031-01-20": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/Decline warranty coverage": {
+          "actual_ce_mass": 0.9375,
+          "occurrences": 18
+        },
+        "zz_rule_step/2033-02-16": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/37 to 37 hours, inclusive": {
+          "actual_ce_mass": 0.14583333333333331,
+          "occurrences": 3
+        },
+        "zz_rule_step/2031-07-13": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2033-02-09": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/33 to 45 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 30 calendar days, inclusive": {
+          "actual_ce_mass": 0.07291666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2030-12-06": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-03-18": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/68 to 68 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/23 to 23 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-09-16": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/No approval is required": {
+          "actual_ce_mass": 0.21875,
+          "occurrences": 4
+        },
+        "zz_rule_step/2031-06-09": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-03-02": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-12-14": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$50.00": {
+          "actual_ce_mass": 0.38541666666666663,
+          "occurrences": 7
+        },
+        "zz_rule_step/45 to 45 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-10-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/An answer not covered by the other options": {
+          "actual_ce_mass": 0.7083333333333334,
+          "occurrences": 10
+        },
+        "zz_rule_step/133 to 133 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/139 to 179 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/80 to 100 dollars, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-07-23": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-16": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-06-08": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "decision/Match the competitor price": {
+          "actual_ce_mass": 0.6145833333333333,
+          "occurrences": 12
+        },
+        "zz_rule_step/2032-05-08": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/1 to 1 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$200.00": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/0 to 0 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/38 to 50 hours, inclusive": {
+          "actual_ce_mass": 0.18749999999999997,
+          "occurrences": 4
+        },
+        "zz_rule_step/31 to 43 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/91 to 91 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-04-14": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/$40.00": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/49 to 49 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/64 to 64 calendar days, inclusive": {
+          "actual_ce_mass": 0.09375,
+          "occurrences": 2
+        },
+        "zz_rule_step/34 to 34 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-08-14": {
+          "actual_ce_mass": 0.07291666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2030-11-24": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/69 to 69 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-07-19": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/35 to 35 hours, inclusive": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "zz_rule_step/0 to 29 calendar days, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-18": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "decision/Other": {
+          "actual_ce_mass": 0.3125,
+          "occurrences": 4
+        },
+        "zz_rule_step/38 to 38 hours, inclusive": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/2032-10-02": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "decision/Not listed here": {
+          "actual_ce_mass": 0.3,
+          "occurrences": 5
+        },
+        "zz_rule_step/46 to 46 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-02-18": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/65 to 105 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/50 to 130 dollars, inclusive": {
+          "actual_ce_mass": 0.21875,
+          "occurrences": 4
+        },
+        "zz_rule_step/35 to 35 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/35 to 47 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/98 to 98 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/46 to 46 hours, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2032-08-18": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-06-06": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/42 to 54 hours, inclusive": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/2031-05-07": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/47 to 47 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-09": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/40 to 40 hours, inclusive": {
+          "actual_ce_mass": 0.11458333333333333,
+          "occurrences": 3
+        },
+        "zz_rule_step/76 to 76 dollars, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2031-08-17": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/9 to 9 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/42 to 42 hours, inclusive": {
+          "actual_ce_mass": 0.14583333333333331,
+          "occurrences": 3
+        },
+        "zz_rule_step/0 to 44 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/38 to 38 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/70 to 70 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-05-06": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-04-13": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/161 to 161 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-06-21": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/182 to 182 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/19 to 19 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "decision/None of the listed options apply": {
+          "actual_ce_mass": 0.16666666666666666,
+          "occurrences": 3
+        },
+        "zz_rule_step/2030-10-08": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-09": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-05-04": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2036-12-06": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-05-07": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-04-22": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/$60.00": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-05-22": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-22": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/$150.00": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/179 to 179 dollars, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2030-07-20": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/43 to 43 calendar days, inclusive": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "zz_rule_step/2032-05-15": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$30.00": {
+          "actual_ce_mass": 0.17708333333333331,
+          "occurrences": 4
+        },
+        "zz_rule_step/2031-03-22": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-10-08": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/41 to 53 hours, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/37 to 49 hours, inclusive": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2031-09-15": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-01-21": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-08-20": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/$250.00": {
+          "actual_ce_mass": 0.15625,
+          "occurrences": 3
+        },
+        "zz_rule_step/58 to 58 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2033-06-15": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-11-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/88 to 88 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/29 to 29 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 6 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/32 to 44 hours, inclusive": {
+          "actual_ce_mass": 0.125,
+          "occurrences": 2
+        },
+        "zz_rule_step/34 to 34 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-10-08": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-07-20": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/3 to 3 calendar days, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 19 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 67 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 75 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-02-13": {
+          "actual_ce_mass": 0.10416666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/2031-09-17": {
+          "actual_ce_mass": 0.07291666666666666,
+          "occurrences": 2
+        },
+        "zz_rule_step/90 to 170 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-11-19": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 28 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-06-12": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2030-07-06": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 56 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2035-02-20": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/80 to 80 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/84 to 84 dollars, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-02-07": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 18 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-04-22": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/186 to 186 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/18 to 18 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/40 to 80 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/70 to 110 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/68 to 88 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-09-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-04-19": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/24 to 36 hours, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/132 to 132 dollars, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-09-16": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/125 to 125 dollars, inclusive": {
+          "actual_ce_mass": 0.03125,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 37 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-09-12": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-08-09": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2031-06-22": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-14": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/51 to 51 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-07-14": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 54 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/81 to 81 dollars, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/41 to 41 calendar days, inclusive": {
+          "actual_ce_mass": 0.025,
+          "occurrences": 1
+        },
+        "zz_rule_step/2034-03-20": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/0 to 48 calendar days, inclusive": {
+          "actual_ce_mass": 0.0625,
+          "occurrences": 1
+        },
+        "zz_rule_step/5 to 5 calendar days, inclusive": {
+          "actual_ce_mass": 0.041666666666666664,
+          "occurrences": 1
+        },
+        "zz_rule_step/2032-03-08": {
+          "actual_ce_mass": 0.08333333333333333,
+          "occurrences": 1
+        }
+      }
+    }
+  ],
+  "scope": "Exact scalar coefficients before optimizer, clipping, learning-rate scaling and gradient direction. Preflight confirmed no input filtering. Does not prove these weights caused benchmark regressions.",
+  "toy_example": {
+    "source_record_variant_counts": [
+      3,
+      1,
+      1,
+      1
+    ],
+    "group_records": 8,
+    "actual_source_coefficients": [
+      0.25,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "equal_record_source_coefficients": [
+      0.125,
+      0.125,
+      0.125,
+      0.125
+    ],
+    "within_batch_ratio_three_variants_vs_one": 3
+  }
+}

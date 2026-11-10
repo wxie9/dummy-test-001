@@ -1,0 +1,422 @@
+[
+  {
+    "state": {
+      "audit_scope": "This is the complete audit. Each record belongs to exactly one group and one status; no record is counted twice.",
+      "status_order": [
+        "kept",
+        "returned"
+      ],
+      "records": [
+        {
+          "group": "North depot",
+          "counts": [
+            1480,
+            3350
+          ]
+        },
+        {
+          "group": "South depot",
+          "counts": [
+            280,
+            3620
+          ]
+        }
+      ]
+    },
+    "questions": {
+      "forward": {
+        "type": "choice",
+        "instructions": "Among records from South depot, what percentage have status kept? Round half up to two decimal places.",
+        "criteria": {
+          "a": "50.00%",
+          "b": "7.18%",
+          "c": "20.16%",
+          "d": "84.09%",
+          "e": "15.91%"
+        },
+        "label": "b",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "reverse": {
+        "type": "choice",
+        "instructions": "Among records with status kept, what percentage come from South depot? Round half up to two decimal places.",
+        "criteria": {
+          "a": "50.00%",
+          "b": "7.18%",
+          "c": "15.91%",
+          "d": "20.16%",
+          "e": "3.21%"
+        },
+        "label": "c",
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/train/table/71",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "train",
+      "group_id": "probability-transfer-candidate-20261030/train/table/71",
+      "subtype": "table",
+      "facts": {
+        "row_labels": [
+          "North depot",
+          "South depot"
+        ],
+        "status_labels": [
+          "returned",
+          "kept"
+        ],
+        "counts": [
+          [
+            3350,
+            1480
+          ],
+          [
+            3620,
+            280
+          ]
+        ],
+        "target_row": "South depot",
+        "target_status": "kept",
+        "target_row_position": 1,
+        "target_status_position": 0,
+        "layout": "object",
+        "scale": 10
+      },
+      "review_zh": "Condition on the named set; row and column totals differ.",
+      "text_sha256": "d73fa4ac83cc8676da1d0d8bfb88f5e1383146b27540607f40b7464bbfef261f"
+    }
+  },
+  {
+    "state": "In login-risk screening, 1 out of every 100 cases are actually malicious. Among actually malicious cases, the system flags 7 out of every 10. Among cases that are not malicious, it flags 1 out of every 20. Select a case uniformly from those flagged. The rates describe this same population.",
+    "questions": {
+      "posterior": {
+        "type": "choice",
+        "instructions": "What is the probability that this flagged case is actually malicious? Give a percentage rounded to two decimal places.",
+        "criteria": {
+          "a": "11.09%",
+          "b": "0.70%",
+          "c": "12.39%",
+          "d": "1.00%",
+          "e": "9.49%"
+        },
+        "label": "c",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "more_likely": {
+        "type": "noul",
+        "instructions": "Given a flag, is being malicious strictly more likely than not being malicious?",
+        "label": false,
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "bucket": {
+        "type": "score",
+        "instructions": "Select the interval containing the exact posterior probability. [ includes an endpoint, ) excludes it.",
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "label": 1,
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/train/bayes/19",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "train",
+      "group_id": "probability-transfer-candidate-20261030/train/bayes/19",
+      "subtype": "bayes",
+      "facts": {
+        "mechanism": "bayes",
+        "prevalence": 1,
+        "sensitivity": 70,
+        "false_positive": 5
+      },
+      "review_zh": "后验=70/(70+495)=12.39%。",
+      "text_sha256": "ef644ac4db83cafc54737bba1f6c8a6f5619e4430cd222516492062f0cc98b25",
+      "rate_style": "outof"
+    }
+  },
+  {
+    "state": {
+      "topic": "Decision from the stated audit figures",
+      "details": "The following backup links have mutually independent success events. Their success rates are 96%, 95%, 98%. These are all the components in the system."
+    },
+    "questions": {
+      "probability": {
+        "type": "choice",
+        "instructions": "What is the probability every component succeeds? Round to two decimal places.",
+        "criteria": {
+          "a": "89.38%",
+          "b": "89.08%",
+          "c": "100.00%",
+          "d": "98.00%",
+          "e": "91.08%"
+        },
+        "label": "a",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "bucket": {
+        "type": "score",
+        "instructions": "What is the probability every component succeeds? Select the interval containing the exact probability; [ includes a boundary and ) excludes it.",
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "label": 4,
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/train/all/28",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "train",
+      "group_id": "probability-transfer-candidate-20261030/train/all/28",
+      "subtype": "all",
+      "facts": {
+        "probabilities": [
+          96,
+          95,
+          98
+        ],
+        "exact_probability": "2793/3125",
+        "stratum": 4
+      },
+      "review_zh": "独立事件按乘积及补集计算；概率区间按精确分数确定。",
+      "text_sha256": "4175f720c4932e1e9e8879cb80f6ee14fcacdb861ea684f446e43351fb98dfa3",
+      "rate_style": "percent"
+    }
+  },
+  {
+    "state": "The following backup links have mutually independent success events. Their success rates are ninety-five percent, ninety-five percent, ninety-four percent. These are all the components in the system.",
+    "questions": {
+      "probability": {
+        "type": "choice",
+        "instructions": "What is the probability at least one component fails? Round to two decimal places.",
+        "criteria": {
+          "a": "16.86%",
+          "b": "99.98%",
+          "c": "15.16%",
+          "d": "94.67%",
+          "e": "12.27%"
+        },
+        "label": "c",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "bucket": {
+        "type": "score",
+        "instructions": "What is the probability at least one component fails? Select the interval containing the exact probability; [ includes a boundary and ) excludes it.",
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "label": 1,
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/train/any_fail/1",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "train",
+      "group_id": "probability-transfer-candidate-20261030/train/any_fail/1",
+      "subtype": "any_fail",
+      "facts": {
+        "probabilities": [
+          95,
+          95,
+          94
+        ],
+        "exact_probability": "3033/20000",
+        "stratum": 1
+      },
+      "review_zh": "独立事件按乘积及补集计算；概率区间按精确分数确定。",
+      "text_sha256": "4787eee908523f68775f59eaafa19f88fba8029cbcf227a3c10d5fc1f5448fa0",
+      "rate_style": "words"
+    }
+  },
+  {
+    "state": {
+      "topic": "Decision from the stated audit figures",
+      "details": "The following processing jobs have mutually independent success events. Their success rates are one percent, two percent, five percent, two percent, five percent. These are all the components in the system."
+    },
+    "questions": {
+      "probability": {
+        "type": "choice",
+        "instructions": "What is the probability at least one component succeeds? Round to two decimal places.",
+        "criteria": {
+          "a": "100.00%",
+          "b": "14.19%",
+          "c": "3.00%",
+          "d": "0.00%",
+          "e": "11.29%"
+        },
+        "label": "b",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "bucket": {
+        "type": "score",
+        "instructions": "What is the probability at least one component succeeds? Select the interval containing the exact probability; [ includes a boundary and ) excludes it.",
+        "criteria": [
+          "[0%, 10%)",
+          "[10%, 30%)",
+          "[30%, 50%)",
+          "[50%, 70%)",
+          "[70%, 90%)",
+          "[90%, 100%]"
+        ],
+        "label": 1,
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/train/any/13",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "train",
+      "group_id": "probability-transfer-candidate-20261030/train/any/13",
+      "subtype": "any",
+      "facts": {
+        "probabilities": [
+          1,
+          2,
+          5,
+          2,
+          5
+        ],
+        "exact_probability": "14190661/100000000",
+        "stratum": 1
+      },
+      "review_zh": "独立事件按乘积及补集计算；概率区间按精确分数确定。",
+      "text_sha256": "92b8d7aeaebee56faf50c8cbae0e6b305e2fbaaab36b86912fe89dde3db93775",
+      "rate_style": "words"
+    }
+  },
+  {
+    "state": {
+      "topic": "Decision from the stated audit figures",
+      "details": "A and B are independent, with probabilities 25.00% and 40.00%. Event X means both A and B happen. Event Y has probability 10.00%. Compare marginal probabilities only; dependence between X and Y is irrelevant."
+    },
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Which statement is correct?",
+        "criteria": {
+          "a": "They have equal probabilities",
+          "b": "Y is more likely",
+          "c": "X is more likely"
+        },
+        "label": "a",
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/train/compare/28",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "train",
+      "group_id": "probability-transfer-candidate-20261030/train/compare/28",
+      "subtype": "compare",
+      "facts": {
+        "p": "1/4",
+        "q": "2/5",
+        "op": "AND",
+        "second": "1/10"
+      },
+      "review_zh": "X=10.00%; Y=10.00%。",
+      "text_sha256": "85d4abb42bd3ee7c94a240e19bfb782e1e719189456e672a538172caffadf4a0",
+      "rate_style": "percent"
+    }
+  },
+  {
+    "state": {
+      "topic": "Decision from the stated audit figures",
+      "details": "Choose exactly one project to maximize expected net cash flow, even if all choices have negative expectation. Each project pays its upfront cost exactly once. Outcomes within each project are exhaustive and mutually exclusive; gains and losses exclude that cost.\nMaple: upfront cost $500.00; 1 out of every 5: lose $1000.00; 3 out of every 10: gain $4500.00; 1 out of every 2: gain $3500.00.\nElm: upfront cost $400.00; 1 out of every 5: gain $1750.00; 3 out of every 10: gain $1000.00; 1 out of every 2: lose $2500.00."
+    },
+    "questions": {
+      "project": {
+        "type": "choice",
+        "instructions": "Which project maximizes expected net cash flow?",
+        "criteria": {
+          "a": "All projects tie",
+          "b": "Maple",
+          "c": "Elm"
+        },
+        "label": "b",
+        "src": "probability-transfer-candidate-20261030"
+      },
+      "value": {
+        "type": "choice",
+        "instructions": "What is the expected net cash flow of Elm?",
+        "criteria": {
+          "a": "-$1000.00",
+          "b": "-$1250.00",
+          "c": "-$750.00",
+          "d": "$1000.00",
+          "e": "-$600.00"
+        },
+        "label": "a",
+        "src": "probability-transfer-candidate-20261030"
+      }
+    },
+    "_meta": {
+      "id": "probability-transfer-candidate-20261030/train/expected_value/31",
+      "source": "probability-transfer-candidate-20261030",
+      "family": "probability",
+      "split": "train",
+      "group_id": "probability-transfer-candidate-20261030/train/expected_value/31",
+      "subtype": "expected_value",
+      "facts": {
+        "mechanism": "expected_value",
+        "projects": {
+          "Maple": {
+            "weights": [
+              20,
+              30,
+              50
+            ],
+            "values": [
+              -1000,
+              4500,
+              3500
+            ],
+            "cost": 500
+          },
+          "Elm": {
+            "weights": [
+              20,
+              30,
+              50
+            ],
+            "values": [
+              1750,
+              1000,
+              -2500
+            ],
+            "cost": 400
+          }
+        },
+        "asked": "Elm",
+        "scale": 10
+      },
+      "review_zh": "所有相关计数或金额同乘10；条件概率不变，期望净值同倍缩放。",
+      "text_sha256": "e6f0651729f99a71cc0d56f9d2d4d578f83bb1a342724641dd97c240bc3e9429",
+      "rate_style": "outof"
+    }
+  }
+]

@@ -1,0 +1,374 @@
+{
+  "train": {
+    "prorata_endpoint_ambiguities": [
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00786",
+        "state": "A subscription costing $247.00 runs from January 3, 2027 through February 2, 2027. It was cancelled on January 25, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$57.63",
+        "end_excluded_cents": 5763,
+        "end_included_cents": 6374,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00105",
+        "state": "A subscription costing $178.00 runs from March 4, 2027 through April 3, 2027. It was cancelled on March 31, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$11.87",
+        "end_excluded_cents": 1187,
+        "end_included_cents": 1723,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00603",
+        "state": "A subscription costing $231.00 runs from April 2, 2027 through April 1, 2028. It was cancelled on June 3, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$191.13",
+        "end_excluded_cents": 19113,
+        "end_included_cents": 19124,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00563",
+        "state": "A subscription costing $280.00 runs from 2027-05-14 through 2027-06-14. It was cancelled on 2027-05-26. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$162.58",
+        "end_excluded_cents": 16258,
+        "end_included_cents": 16625,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00594",
+        "state": "A subscription costing $198.00 runs from June 15, 2027 through July 15, 2027. It was cancelled on June 16, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$184.80",
+        "end_excluded_cents": 18480,
+        "end_included_cents": 18523,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00421",
+        "state": "A subscription costing $247.00 runs from 3 February 2027 through 6 March 2027. It was cancelled on 22 February 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$87.65",
+        "end_excluded_cents": 8765,
+        "end_included_cents": 9263,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00101",
+        "state": "A subscription costing $65.00 runs from 2027-03-10 through 2027-04-10. It was cancelled on 2027-03-13. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$56.61",
+        "end_excluded_cents": 5661,
+        "end_included_cents": 5688,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00641",
+        "state": "A subscription costing $257.00 runs from 2027-01-16 through 2027-02-15. It was cancelled on 2027-02-02. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$102.80",
+        "end_excluded_cents": 10280,
+        "end_included_cents": 10777,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00127",
+        "state": "A subscription costing $48.00 runs from 9 June 2027 through 9 July 2027. It was cancelled on 24 June 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$22.40",
+        "end_excluded_cents": 2240,
+        "end_included_cents": 2323,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00680",
+        "state": "A subscription costing $217.00 runs from 2027-04-20 through 2027-07-19. It was cancelled on 2027-05-30. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$118.14",
+        "end_excluded_cents": 11814,
+        "end_included_cents": 11923,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00213",
+        "state": "A subscription costing $65.00 runs from February 5, 2027 through February 5, 2028. It was cancelled on September 19, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$24.58",
+        "end_excluded_cents": 2458,
+        "end_included_cents": 2469,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00451",
+        "state": "A subscription costing $64.00 runs from 8 April 2027 through 8 May 2027. It was cancelled on 11 April 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$55.47",
+        "end_excluded_cents": 5547,
+        "end_included_cents": 5574,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00499",
+        "state": "A subscription costing $287.00 runs from 1 April 2027 through 30 June 2027. It was cancelled on 12 May 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$153.07",
+        "end_excluded_cents": 15307,
+        "end_included_cents": 15454,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00568",
+        "state": "A subscription costing $243.00 runs from 19 February 2027 through 22 March 2027. It was cancelled on 8 March 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$101.90",
+        "end_excluded_cents": 10190,
+        "end_included_cents": 10631,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00780",
+        "state": "A subscription costing $118.00 runs from April 16, 2027 through May 17, 2027. It was cancelled on May 4, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$45.68",
+        "end_excluded_cents": 4568,
+        "end_included_cents": 4794,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00223",
+        "state": "A subscription costing $71.00 runs from 12 February 2027 through 14 March 2027. It was cancelled on 13 February 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$66.27",
+        "end_excluded_cents": 6627,
+        "end_included_cents": 6642,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00629",
+        "state": "A subscription costing $100.00 runs from 2027-05-07 through 2027-06-07. It was cancelled on 2027-05-09. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$90.32",
+        "end_excluded_cents": 9032,
+        "end_included_cents": 9063,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00735",
+        "state": "A subscription costing $183.00 runs from March 11, 2027 through June 9, 2027. It was cancelled on May 7, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$65.07",
+        "end_excluded_cents": 6507,
+        "end_included_cents": 6636,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00401",
+        "state": "A subscription costing $232.00 runs from 2027-02-15 through 2027-03-18. It was cancelled on 2027-02-22. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$172.13",
+        "end_excluded_cents": 17213,
+        "end_included_cents": 17400,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00678",
+        "state": "A subscription costing $184.00 runs from February 5, 2027 through March 8, 2027. It was cancelled on February 13, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$130.58",
+        "end_excluded_cents": 13058,
+        "end_included_cents": 13225,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00656",
+        "state": "A subscription costing $206.00 runs from 2027-05-14 through 2027-06-13. It was cancelled on 2027-05-19. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$164.80",
+        "end_excluded_cents": 16480,
+        "end_included_cents": 16613,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00706",
+        "state": "A subscription costing $110.00 runs from 14 February 2027 through 15 May 2027. It was cancelled on 14 April 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$36.67",
+        "end_excluded_cents": 3667,
+        "end_included_cents": 3747,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00016",
+        "state": "A subscription costing $123.00 runs from 7 April 2027 through 6 April 2028. It was cancelled on 7 March 2028. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$9.77",
+        "end_excluded_cents": 977,
+        "end_included_cents": 1008,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00420",
+        "state": "A subscription costing $289.00 runs from March 5, 2027 through April 4, 2027. It was cancelled on March 8, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$250.47",
+        "end_excluded_cents": 25047,
+        "end_included_cents": 25171,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00691",
+        "state": "A subscription costing $245.00 runs from 1 February 2027 through 3 March 2027. It was cancelled on 4 February 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$212.33",
+        "end_excluded_cents": 21233,
+        "end_included_cents": 21339,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00238",
+        "state": "A subscription costing $147.00 runs from 12 March 2027 through 11 March 2028. It was cancelled on 20 February 2028. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$7.65",
+        "end_excluded_cents": 765,
+        "end_included_cents": 803,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00347",
+        "state": "A subscription costing $62.00 runs from 2027-04-08 through 2027-07-07. It was cancelled on 2027-04-23. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$50.98",
+        "end_excluded_cents": 5098,
+        "end_included_cents": 5110,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/train/00531",
+        "state": "A subscription costing $151.00 runs from May 20, 2027 through June 20, 2027. It was cancelled on May 31, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$92.55",
+        "end_excluded_cents": 9255,
+        "end_included_cents": 9438,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      }
+    ],
+    "timezone_ambiguous_or_nonexistent": []
+  },
+  "development": {
+    "prorata_endpoint_ambiguities": [
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00052",
+        "state": "A subscription costing $169.00 runs from 7 May 2027 through 6 May 2028. It was cancelled on 29 July 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$130.11",
+        "end_excluded_cents": 13011,
+        "end_included_cents": 13021,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00089",
+        "state": "A subscription costing $131.00 runs from 2027-05-05 through 2028-05-04. It was cancelled on 2027-05-29. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$122.03",
+        "end_excluded_cents": 12203,
+        "end_included_cents": 12205,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00032",
+        "state": "A subscription costing $198.00 runs from 2027-02-09 through 2028-02-09. It was cancelled on 2027-07-20. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$110.12",
+        "end_excluded_cents": 11012,
+        "end_included_cents": 11036,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00042",
+        "state": "A subscription costing $271.00 runs from June 6, 2027 through September 4, 2027. It was cancelled on July 28, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$111.41",
+        "end_excluded_cents": 11141,
+        "end_included_cents": 11316,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00082",
+        "state": "A subscription costing $296.00 runs from 18 January 2027 through 18 January 2028. It was cancelled on 27 December 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$17.03",
+        "end_excluded_cents": 1703,
+        "end_included_cents": 1779,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00026",
+        "state": "A subscription costing $284.00 runs from 2027-04-07 through 2027-05-07. It was cancelled on 2027-04-15. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$198.80",
+        "end_excluded_cents": 19880,
+        "end_included_cents": 20155,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00009",
+        "state": "A subscription costing $292.00 runs from February 8, 2027 through May 9, 2027. It was cancelled on April 27, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$35.69",
+        "end_excluded_cents": 3569,
+        "end_included_cents": 3851,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00077",
+        "state": "A subscription costing $202.00 runs from 2027-04-01 through 2027-05-01. It was cancelled on 2027-04-28. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$13.47",
+        "end_excluded_cents": 1347,
+        "end_included_cents": 1955,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00066",
+        "state": "A subscription costing $249.00 runs from March 8, 2027 through April 8, 2027. It was cancelled on March 24, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$112.45",
+        "end_excluded_cents": 11245,
+        "end_included_cents": 11672,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00005",
+        "state": "A subscription costing $278.00 runs from 2027-06-20 through 2027-07-21. It was cancelled on 2027-06-23. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$242.13",
+        "end_excluded_cents": 24213,
+        "end_included_cents": 24325,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00069",
+        "state": "A subscription costing $249.00 runs from January 6, 2027 through January 6, 2028. It was cancelled on August 22, 2027. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$92.78",
+        "end_excluded_cents": 9278,
+        "end_included_cents": 9320,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      },
+      {
+        "id": "targeted-v2-all7-compact-20261029/temporal/development/00038",
+        "state": "A subscription costing $54.00 runs from 2027-01-15 through 2027-02-14. It was cancelled on 2027-01-24. The cancellation day counts as used. Refund unused days pro rata, rounded to the nearest cent. What is the refund?",
+        "label": "$36.00",
+        "end_excluded_cents": 3600,
+        "end_included_cents": 3658,
+        "same_rounded_answer": false,
+        "issue": "through does not explicitly specify the exclusive endpoint assumed by the label"
+      }
+    ],
+    "timezone_ambiguous_or_nonexistent": []
+  },
+  "status": "read-only audit; frozen v5 data unchanged; clarification requested because user asked to preserve the original three families",
+  "causality": "Does not establish that this wording caused the observed accuracy regression."
+}

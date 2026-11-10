@@ -1,0 +1,731 @@
+{
+  "temporal": [
+    {
+      "state": "CASE RECORD: Complaint response deadline\n1) Summit Parcel must answer every formal complaint within 8 business days of receiving it.\n2) Business days are Monday to Friday, excluding the public holidays listed here; the day the complaint is received does not count.\n3) Public holidays this year: Heritage Day (Sunday, September 21, 2025); Company Day (Wednesday, October 1, 2025); Founders' Day (Monday, November 3, 2025).\n4) A complaint was received on Sunday, September 28, 2025.",
+      "questions": {
+        "due": {
+          "type": "choice",
+          "instructions": "What due date should be recorded?",
+          "criteria": {
+            "c": "October 8, 2025",
+            "b": "October 10, 2025",
+            "a": "October 9, 2025",
+            "d": "October 6, 2025"
+          },
+          "src": "targeted-three-error-neighborhood-20261031/temporal",
+          "label": "a"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-error-neighborhood-20261031/temporal/train/00048/variant-0",
+        "source": "targeted-three-error-neighborhood-20261031/temporal",
+        "group_id": "targeted-three-error-neighborhood-20261031/temporal/train/00048/variant-0",
+        "variant": "clean",
+        "split": "train",
+        "template": "temporal_numeric/t5/error-neighborhood",
+        "family": "temporal",
+        "subtype": "deadline",
+        "facts": {
+          "kind": "deadline",
+          "received": "2025-09-21",
+          "n": 8,
+          "holidays": [
+            "2025-09-14",
+            "2025-09-24",
+            "2025-10-27"
+          ],
+          "options_q": {
+            "due": {
+              "a": "2025-10-02",
+              "b": "2025-10-03",
+              "c": "2025-10-01",
+              "d": "2025-09-29"
+            }
+          }
+        },
+        "text_sha256": "9ce760593380b8b947e5473639028c34bb000736d02c77985442deb7ffbac5d2",
+        "state_tokens": 131,
+        "seed_error_id": "hard-v1/temporal_numeric/test/00048",
+        "semantic_case_id": "targeted-three-error-neighborhood-20261031/temporal/train/00048/variant-0",
+        "transform": {
+          "presentation": 0,
+          "date_shift_days": 7
+        },
+        "targeted_wrong_questions": [
+          "due"
+        ]
+      }
+    },
+    {
+      "state": "CASE RECORD: Meeting across time zones\n1) A call is scheduled for Sunday, January 17, 8:45 AM Denver time.\n2) On that date Denver is on UTC-6 and Adelaide is on UTC+9:30.\n3) One attendee is in Adelaide.",
+      "questions": {
+        "local": {
+          "type": "choice",
+          "instructions": "At what local time does the Adelaide attendee join?",
+          "criteria": {
+            "a": "Saturday, January 16, 5:15 PM",
+            "b": "Monday, January 18, 12:15 AM",
+            "d": "Sunday, January 17, 12:15 AM",
+            "e": "Sunday, January 17, 11:15 PM",
+            "c": "Monday, January 18, 1:15 AM"
+          },
+          "src": "targeted-three-error-neighborhood-20261031/temporal",
+          "label": "b"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-error-neighborhood-20261031/temporal/train/00064/variant-0",
+        "source": "targeted-three-error-neighborhood-20261031/temporal",
+        "group_id": "targeted-three-error-neighborhood-20261031/temporal/train/00064/variant-0",
+        "variant": "clean",
+        "split": "train",
+        "template": "temporal_numeric/t5/error-neighborhood",
+        "family": "temporal",
+        "subtype": "tz",
+        "facts": {
+          "kind": "tz",
+          "start": "2027-01-17T08:45",
+          "off_a": -6,
+          "off_b": 9.5,
+          "options_q": {
+            "local": {
+              "a": "2027-01-16T17:15",
+              "b": "2027-01-18T00:15",
+              "c": "2027-01-18T01:15",
+              "d": "2027-01-17T00:15",
+              "e": "2027-01-17T23:15"
+            }
+          }
+        },
+        "text_sha256": "281debd6f2d8de3969b1e205941ec17197769b740ac53baf15ad5dd9d159b299",
+        "state_tokens": 63,
+        "seed_error_id": "hard-v1/temporal_numeric/test/00064",
+        "semantic_case_id": "targeted-three-error-neighborhood-20261031/temporal/train/00064/variant-0",
+        "transform": {
+          "presentation": 0
+        },
+        "targeted_wrong_questions": [
+          "local"
+        ]
+      }
+    },
+    {
+      "state": "CASE NOTES: Shift pay check\nFact 1: A warehouse worker clocked in at 8:45 AM on May 7, 2026 and clocked out at 4:00 PM.\nFact 2: They took a 60-minute unpaid break.\nFact 3: The hourly rate is $28.50.\nFact 4: Paid time beyond 8 hours in a shift is paid at 1.5 times the hourly rate.",
+      "questions": {
+        "pay": {
+          "type": "choice",
+          "instructions": "What does the shift earn?",
+          "criteria": {
+            "d": "$267.19",
+            "e": "$178.13",
+            "a": "$206.63",
+            "b": "$192.38",
+            "c": "$228.00"
+          },
+          "src": "targeted-three-error-neighborhood-20261031/temporal",
+          "label": "e"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-error-neighborhood-20261031/temporal/train/00046/variant-1",
+        "source": "targeted-three-error-neighborhood-20261031/temporal",
+        "group_id": "targeted-three-error-neighborhood-20261031/temporal/train/00046/variant-1",
+        "variant": "clean",
+        "split": "train",
+        "template": "temporal_numeric/t5/error-neighborhood",
+        "family": "temporal",
+        "subtype": "shift",
+        "overtime": false,
+        "facts": {
+          "kind": "shift",
+          "start": "2026-04-23T08:45",
+          "end": "2026-04-23T16:00",
+          "break_min": 60,
+          "rate_cents": 2850,
+          "ot_after_h": 8,
+          "options_q": {
+            "pay": {
+              "a": 20663,
+              "b": 19238,
+              "c": 22800,
+              "d": 26719,
+              "e": 17813
+            }
+          }
+        },
+        "text_sha256": "67f354fa5f287a8866c531c7a3ee79cabf7f0f20c3873c72d928860134978495",
+        "state_tokens": 96,
+        "seed_error_id": "hard-v1/temporal_numeric/test/00046",
+        "semantic_case_id": "targeted-three-error-neighborhood-20261031/temporal/train/00046/variant-1",
+        "transform": {
+          "presentation": 1,
+          "date_shift_days": 14
+        },
+        "targeted_wrong_questions": [
+          "pay"
+        ]
+      }
+    }
+  ],
+  "probability": [
+    {
+      "state": "CASE NOTES: Quarterly breakdown\nFact 1: Counts of store visitors last month by type and outcome:\nFact 2: new: 171 converted, 1074 did not convert.\nFact 3: returning: 546 converted, 423 did not convert.",
+      "questions": {
+        "value": {
+          "type": "choice",
+          "instructions": "Question: Among returning records, what share were converted?",
+          "criteria": {
+            "a": "24.7%",
+            "b": "32.4%",
+            "c": "76.2%",
+            "d": "43.8%",
+            "e": "56.3%"
+          },
+          "src": "targeted-three-error-neighborhood-20261031/probability",
+          "label": "e"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-error-neighborhood-20261031/probability/train/00004/variant-1",
+        "source": "targeted-three-error-neighborhood-20261031/probability",
+        "group_id": "targeted-three-error-neighborhood-20261031/probability/train/00004/variant-1",
+        "variant": "clean",
+        "split": "train",
+        "template": "probability/t5/error-neighborhood",
+        "family": "probability",
+        "subtype": "table",
+        "facts": {
+          "kind": "table",
+          "p": {},
+          "counts": {
+            "new": {
+              "converted": 57,
+              "did not convert": 358
+            },
+            "returning": {
+              "converted": 182,
+              "did not convert": 141
+            }
+          },
+          "row": "returning",
+          "col": "converted",
+          "ask": "col_given_row",
+          "options_q": {
+            "value": {
+              "a": 247,
+              "b": 324,
+              "c": 762,
+              "d": 438,
+              "e": 563
+            }
+          }
+        },
+        "text_sha256": "b0507192d260ec9c0428b2f8f2972b9ddb7da741c3ff494030dcd9917d8ee4f1",
+        "state_tokens": 56,
+        "seed_error_id": "hard-v1/probability/test/00004",
+        "semantic_case_id": "targeted-three-error-neighborhood-20261031/probability/train/00004/variant-1",
+        "transform": {
+          "presentation": 1,
+          "count_scale": 3
+        },
+        "targeted_wrong_questions": [
+          "value"
+        ]
+      }
+    },
+    {
+      "state": "CASE NOTES: Project funding decision\nFact 1: The planning team must fund exactly one of 3 projects and wants the highest expected net value (expected payoff minus up-front cost).\nFact 2: Project Cedar costs $300,000.00 up front and has a 15-in-100 chance of a gain of $2,430,000.00; a 50-in-100 chance of a gain of $990,000.00; a 35-in-100 chance of a gain of $660,000.00.\nFact 3: Project Delta costs $270,000.00 up front and has a 40-in-100 chance of a gain of $2,190,000.00; a 50-in-100 chance of a gain of $1,680,000.00; a 10-in-100 chance of a gain of $120,000.00.\nFact 4: Project Atlas costs $270,000.00 up front and has a 65-in-100 chance of a gain of $1,410,000.00; a 15-in-100 chance of a gain of $360,000.00; a 20-in-100 chance of a loss of $330,000.00.",
+      "questions": {
+        "choice": {
+          "type": "choice",
+          "instructions": "Question: Which project has the highest expected net value?",
+          "criteria": {
+            "project_atlas": null,
+            "project_cedar": null,
+            "project_delta": null
+          },
+          "src": "targeted-three-error-neighborhood-20261031/probability",
+          "label": "project_delta"
+        },
+        "value": {
+          "type": "choice",
+          "instructions": "Question: What is the expected net value of Project Atlas?",
+          "criteria": {
+            "d": "$904,500.00",
+            "a": "$634,500.00",
+            "e": "$364,500.00",
+            "c": "$210,000.00",
+            "b": "$1,140,000.00"
+          },
+          "src": "targeted-three-error-neighborhood-20261031/probability",
+          "label": "a"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-error-neighborhood-20261031/probability/train/00097/variant-1",
+        "source": "targeted-three-error-neighborhood-20261031/probability",
+        "group_id": "targeted-three-error-neighborhood-20261031/probability/train/00097/variant-1",
+        "variant": "clean",
+        "split": "train",
+        "template": "probability/t5/error-neighborhood",
+        "family": "probability",
+        "subtype": "ev",
+        "facts": {
+          "kind": "ev",
+          "p": {},
+          "projects": {
+            "Project Cedar": {
+              "outcomes": [
+                [
+                  "15/100",
+                  810000
+                ],
+                [
+                  "50/100",
+                  330000
+                ],
+                [
+                  "35/100",
+                  220000
+                ]
+              ],
+              "cost": 100000
+            },
+            "Project Delta": {
+              "outcomes": [
+                [
+                  "40/100",
+                  730000
+                ],
+                [
+                  "50/100",
+                  560000
+                ],
+                [
+                  "10/100",
+                  40000
+                ]
+              ],
+              "cost": 90000
+            },
+            "Project Atlas": {
+              "outcomes": [
+                [
+                  "65/100",
+                  470000
+                ],
+                [
+                  "15/100",
+                  120000
+                ],
+                [
+                  "20/100",
+                  -110000
+                ]
+              ],
+              "cost": 90000
+            }
+          },
+          "asked": "Project Atlas",
+          "options_q": {
+            "choice": {
+              "project_atlas": "project_atlas",
+              "project_delta": "project_delta",
+              "project_cedar": "project_cedar"
+            },
+            "value": {
+              "a": 211500,
+              "b": 380000,
+              "c": 70000,
+              "d": 301500,
+              "e": 121500
+            }
+          }
+        },
+        "text_sha256": "66aa85e8c8e4e6d022d67a57a49f1f750d95d45e1938ec65ee38c314ce7d8dd1",
+        "state_tokens": 293,
+        "seed_error_id": "hard-v1/probability/test/00097",
+        "semantic_case_id": "targeted-three-error-neighborhood-20261031/probability/train/00097/variant-1",
+        "transform": {
+          "presentation": 1,
+          "money_scale": 3
+        },
+        "targeted_wrong_questions": [
+          "value"
+        ]
+      }
+    },
+    {
+      "state": "CASE NOTES: Reliability estimate\nFact 1: A checkout succeeds only if all 3 independent steps succeed: the address validator, the fraud check, the payment gateway.\nFact 2: The address validator succeeds in 95 out of every 100 cases.\nFact 3: The fraud check succeeds in 75 out of every 100 cases.\nFact 4: The payment gateway succeeds in 90 out of every 100 cases.",
+      "questions": {
+        "value": {
+          "type": "choice",
+          "instructions": "Question: What is the probability that a checkout succeeds?",
+          "criteria": {
+            "d": "64.1%",
+            "c": "75.0%",
+            "a": "99.9%",
+            "e": "35.9%",
+            "b": "0.1%"
+          },
+          "src": "targeted-three-error-neighborhood-20261031/probability",
+          "label": "d"
+        },
+        "bucket": {
+          "type": "score",
+          "instructions": "Question: How likely is it that a checkout succeeds?",
+          "criteria": [
+            "Under 10%",
+            "10% to 30%",
+            "30% to 50%",
+            "50% to 70%",
+            "70% to 90%",
+            "Over 90%"
+          ],
+          "src": "targeted-three-error-neighborhood-20261031/probability",
+          "label": 3
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-error-neighborhood-20261031/probability/train/00079/variant-1",
+        "source": "targeted-three-error-neighborhood-20261031/probability",
+        "group_id": "targeted-three-error-neighborhood-20261031/probability/train/00079/variant-1",
+        "variant": "clean",
+        "split": "train",
+        "template": "probability/t5/error-neighborhood",
+        "family": "probability",
+        "subtype": "independent",
+        "facts": {
+          "kind": "independent",
+          "p": {},
+          "ps": [
+            "95/100",
+            "75/100",
+            "90/100"
+          ],
+          "ask": "all",
+          "options_q": {
+            "value": {
+              "a": 999,
+              "b": 1,
+              "c": 750,
+              "d": 641,
+              "e": 359
+            }
+          },
+          "qid2": "bucket"
+        },
+        "text_sha256": "fdfd61975889435a10b8d3a1f453f9c1bd4a2cd41f8a9668a495eebdcab6f439",
+        "state_tokens": 93,
+        "seed_error_id": "hard-v1/probability/test/00079",
+        "semantic_case_id": "targeted-three-error-neighborhood-20261031/probability/train/00079/variant-1",
+        "transform": {
+          "presentation": 1
+        },
+        "targeted_wrong_questions": [
+          "bucket"
+        ]
+      }
+    }
+  ],
+  "multihop": [
+    {
+      "state": "CASE NOTES: Group structure\n- An entity controls a company if it holds more than 50% of that company's shares, counting shares it holds directly and shares held by companies it controls.\n- Drift Systems owns 25% of Flint Industries.\n- Harbor Labs owns 36% of Flint Industries.\n- Alder Group owns 14% of Harbor Labs.\n- Juniper Services owns 39% of Flint Industries.\n- Indigo Networks owns 86% of Harbor Labs.",
+      "questions": {
+        "controller": {
+          "type": "choice",
+          "instructions": "Who is the ultimate controlling entity of Flint Industries?",
+          "criteria": {
+            "eastgate_partners": null,
+            "kilnworth_plc": null,
+            "aldermoor_holdings": null,
+            "juno_capital": null,
+            "no_controller": "No entity controls it"
+          },
+          "src": "targeted-three-error-neighborhood-20261031/multihop",
+          "label": "no_controller"
+        },
+        "interest": {
+          "type": "choice",
+          "instructions": "What is Indigo Networks's effective economic interest in Flint Industries (its share of Flint Industries's profits through all holdings)?",
+          "criteria": {
+            "b": "31.0%",
+            "e": "86.0%",
+            "d": "62.0%",
+            "c": "36.0%",
+            "a": "61.0%"
+          },
+          "src": "targeted-three-error-neighborhood-20261031/multihop",
+          "label": "b"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-error-neighborhood-20261031/multihop/train/00045/variant-2",
+        "source": "targeted-three-error-neighborhood-20261031/multihop",
+        "group_id": "targeted-three-error-neighborhood-20261031/multihop/train/00045/variant-2",
+        "variant": "clean",
+        "split": "train",
+        "template": "multi_hop/t5/error-neighborhood",
+        "family": "multihop",
+        "subtype": "ownership",
+        "shape": "none",
+        "facts": {
+          "kind": "ownership",
+          "stakes": {
+            "Aldermoor Holdings": {
+              "Kilnworth plc": "86/100",
+              "Fenwick Industries": "14/100"
+            },
+            "Hollis Investments": {
+              "Aldermoor Holdings": "36/100",
+              "Juno Capital": "39/100",
+              "Eastgate Partners": "25/100"
+            }
+          },
+          "candidates": [
+            "Kilnworth plc",
+            "Juno Capital",
+            "Aldermoor Holdings",
+            "Eastgate Partners"
+          ],
+          "target": "Hollis Investments",
+          "top": "Kilnworth plc",
+          "options_q": {
+            "controller": {
+              "no_controller": "no_controller",
+              "juno_capital": "juno_capital",
+              "aldermoor_holdings": "aldermoor_holdings",
+              "kilnworth_plc": "kilnworth_plc",
+              "eastgate_partners": "eastgate_partners"
+            },
+            "interest": {
+              "a": 610,
+              "b": 310,
+              "c": 360,
+              "d": 620,
+              "e": 860
+            }
+          }
+        },
+        "text_sha256": "eb7afbc98e40cf565f182ff418c90f9896c875e241d5fec8e897c1bd29c41808",
+        "state_tokens": 125,
+        "seed_error_id": "hard-v1/multi_hop/test/00045",
+        "semantic_case_id": "targeted-three-error-neighborhood-20261031/multihop/train/00045/variant-2",
+        "transform": {
+          "presentation": 2,
+          "entity_mapping": {
+            "Aldermoor Holdings": "Harbor Labs",
+            "Eastgate Partners": "Drift Systems",
+            "Fenwick Industries": "Alder Group",
+            "Hollis Investments": "Flint Industries",
+            "Juno Capital": "Juniper Services",
+            "Kilnworth plc": "Indigo Networks"
+          }
+        },
+        "targeted_wrong_questions": [
+          "controller"
+        ]
+      }
+    },
+    {
+      "state": "CASE NOTES: Alert from event pipeline\n- Paging rule: an alert pages the owning team's primary on-call; if the primary is on leave that day, it pages the secondary; if the secondary is also on leave, it pages the team's engineering manager.\n- Alerts from the event pipeline are owned by the Payments team.\n- This week's Payments primary on-call is Dalia and the secondary is Imani.\n- Dalia is on leave from 2026-08-28 to 2026-09-02 inclusive.\n- The Data Platform engineering manager is Xenia.\n- Pavel is on leave from 2026-09-01 to 2026-09-10 inclusive.\n- Alerts from the blob store are owned by the Storage team.\n- The Payments engineering manager is Lucan.\n- The Storage engineering manager is Mirela.\n- Alerts from the ranking model are owned by the Data Platform team.\n- Alerts from the iOS release train are owned by the Storage team.\n- Ciro is on leave from 2026-09-02 to 2026-09-05 inclusive.\n- This week's Data Platform primary on-call is Ciro and the secondary is Yara.\n- This week's Storage primary on-call is Pavel and the secondary is Javed.\n- On 2026-09-05, an alert fired from the event pipeline.",
+      "questions": {
+        "paged": {
+          "type": "choice",
+          "instructions": "Whom does the alert page?",
+          "criteria": {
+            "viktor": null,
+            "aiko": null,
+            "lena": null,
+            "kofi": null
+          },
+          "src": "targeted-three-error-neighborhood-20261031/multihop",
+          "label": "viktor"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-error-neighborhood-20261031/multihop/train/00039/variant-2",
+        "source": "targeted-three-error-neighborhood-20261031/multihop",
+        "group_id": "targeted-three-error-neighborhood-20261031/multihop/train/00039/variant-2",
+        "variant": "clean",
+        "split": "train",
+        "template": "multi_hop/t5/error-neighborhood",
+        "family": "multihop",
+        "subtype": "oncall",
+        "facts": {
+          "kind": "oncall",
+          "routes": {
+            "iOS release train": "Storage",
+            "ranking model": "Data Platform",
+            "event pipeline": "Payments",
+            "blob store": "Storage"
+          },
+          "primary": {
+            "Storage": "Arjun",
+            "Data Platform": "Kofi",
+            "Payments": "Viktor"
+          },
+          "secondary": {
+            "Storage": "Noah",
+            "Data Platform": "Mateo",
+            "Payments": "Aiko"
+          },
+          "manager": {
+            "Storage": "Farah",
+            "Data Platform": "Lotte",
+            "Payments": "Lena"
+          },
+          "leave": {
+            "Viktor": [
+              [
+                "2026-08-28",
+                "2026-09-02"
+              ]
+            ],
+            "Arjun": [
+              [
+                "2026-09-01",
+                "2026-09-10"
+              ]
+            ],
+            "Kofi": [
+              [
+                "2026-09-02",
+                "2026-09-05"
+              ]
+            ]
+          },
+          "component": "event pipeline",
+          "date": "2026-09-05",
+          "options_q": {
+            "paged": {
+              "viktor": "viktor",
+              "lena": "lena",
+              "aiko": "aiko",
+              "kofi": "kofi"
+            }
+          }
+        },
+        "text_sha256": "9a36618d7f950bca51219eb3e69b94f7b37a4863607b1a38711396e91d10e0a2",
+        "state_tokens": 339,
+        "seed_error_id": "hard-v1/multi_hop/test/00039",
+        "semantic_case_id": "targeted-three-error-neighborhood-20261031/multihop/train/00039/variant-2",
+        "transform": {
+          "presentation": 2,
+          "entity_mapping": {
+            "Aiko": "Imani",
+            "Arjun": "Pavel",
+            "Farah": "Mirela",
+            "Kofi": "Ciro",
+            "Lena": "Lucan",
+            "Lotte": "Xenia",
+            "Mateo": "Yara",
+            "Noah": "Javed",
+            "Viktor": "Dalia"
+          }
+        },
+        "targeted_wrong_questions": [
+          "paged"
+        ]
+      }
+    },
+    {
+      "state": "CASE NOTES: Outage: cobalt-db\nFact 1: Outages propagate along hard dependencies: if a service goes down, every service that depends on it, directly or through other hard dependencies, is affected. Soft dependencies do not propagate outages.\nFact 2: ion-search depends on harbor-web.\nFact 3: nova-profile depends on falcon-index.\nFact 4: prism-catalog depends on nova-profile.\nFact 5: harbor-web depends on cobalt-db.\nFact 6: glacier-store depends on falcon-index.\nFact 7: cobalt-db depends on summit-fraud.\nFact 8: cobalt-db is currently down.",
+      "questions": {
+        "affected": {
+          "type": "choice",
+          "instructions": "Which listed service is hit by the outage?",
+          "criteria": {
+            "none_affected": "None of these services is affected",
+            "ledger_service": null,
+            "inventory_db": null,
+            "search_indexer": null
+          },
+          "src": "targeted-three-error-neighborhood-20261031/multihop",
+          "label": "none_affected"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-error-neighborhood-20261031/multihop/train/00073/variant-1",
+        "source": "targeted-three-error-neighborhood-20261031/multihop",
+        "group_id": "targeted-three-error-neighborhood-20261031/multihop/train/00073/variant-1",
+        "variant": "clean",
+        "split": "train",
+        "template": "multi_hop/t5/error-neighborhood",
+        "family": "multihop",
+        "subtype": "deps",
+        "hops": 2,
+        "soft": false,
+        "facts": {
+          "kind": "deps",
+          "edges": [
+            [
+              "cdn-edge",
+              "user-profile",
+              false
+            ],
+            [
+              "order-queue",
+              "cdn-edge",
+              false
+            ],
+            [
+              "user-profile",
+              "search-indexer",
+              false
+            ],
+            [
+              "inventory-db",
+              "geo-lookup",
+              false
+            ],
+            [
+              "ledger-service",
+              "geo-lookup",
+              false
+            ],
+            [
+              "auth-service",
+              "inventory-db",
+              false
+            ]
+          ],
+          "down": "user-profile",
+          "candidates": [
+            "search-indexer",
+            "ledger-service",
+            "inventory-db"
+          ],
+          "options_q": {
+            "affected": {
+              "inventory_db": "inventory_db",
+              "none_affected": "none_affected",
+              "ledger_service": "ledger_service",
+              "search_indexer": "search_indexer"
+            }
+          }
+        },
+        "text_sha256": "127292bbdce3b8e4d522471c9ad2d9d97af6e7d7514aa96577084402cdb336b4",
+        "state_tokens": 124,
+        "seed_error_id": "hard-v1/multi_hop/test/00073",
+        "semantic_case_id": "targeted-three-error-neighborhood-20261031/multihop/train/00073/variant-1",
+        "transform": {
+          "presentation": 1,
+          "entity_mapping": {
+            "auth-service": "prism-catalog",
+            "cdn-edge": "harbor-web",
+            "geo-lookup": "falcon-index",
+            "inventory-db": "nova-profile",
+            "ledger-service": "glacier-store",
+            "order-queue": "ion-search",
+            "search-indexer": "summit-fraud",
+            "user-profile": "cobalt-db"
+          }
+        },
+        "targeted_wrong_questions": [
+          "affected"
+        ]
+      }
+    }
+  ]
+}

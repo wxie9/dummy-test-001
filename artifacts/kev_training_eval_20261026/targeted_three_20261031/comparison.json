@@ -1,0 +1,79 @@
+{
+  "hard_tradeoff": {
+    "label": "多约束权衡决策",
+    "n": 200,
+    "before": 158,
+    "after": 160,
+    "before_pct": 79.0,
+    "after_pct": 80.0,
+    "delta_pp": 1.0,
+    "wrong_to_right": 3,
+    "right_to_wrong": 1
+  },
+  "hard_probability": {
+    "label": "概率",
+    "n": 158,
+    "before": 87,
+    "after": 85,
+    "before_pct": 55.06329113924051,
+    "after_pct": 53.79746835443038,
+    "delta_pp": -1.2658227848101267,
+    "wrong_to_right": 4,
+    "right_to_wrong": 6
+  },
+  "hard_temporal_numeric": {
+    "label": "时间与数值",
+    "n": 117,
+    "before": 51,
+    "after": 49,
+    "before_pct": 43.58974358974359,
+    "after_pct": 41.88034188034188,
+    "delta_pp": -1.7094017094017095,
+    "wrong_to_right": 2,
+    "right_to_wrong": 4
+  },
+  "hard_multi_hop": {
+    "label": "多跳推理",
+    "n": 125,
+    "before": 85,
+    "after": 84,
+    "before_pct": 68.0,
+    "after_pct": 67.2,
+    "delta_pp": -0.8,
+    "wrong_to_right": 3,
+    "right_to_wrong": 4
+  },
+  "hard_judge": {
+    "label": "计算结果核验",
+    "n": 188,
+    "before": 126,
+    "after": 129,
+    "before_pct": 67.02127659574468,
+    "after_pct": 68.61702127659575,
+    "delta_pp": 1.5957446808510638,
+    "wrong_to_right": 11,
+    "right_to_wrong": 8
+  },
+  "hard_long_policy": {
+    "label": "长政策",
+    "n": 200,
+    "before": 131,
+    "after": 134,
+    "before_pct": 65.5,
+    "after_pct": 67.0,
+    "delta_pp": 1.5,
+    "wrong_to_right": 5,
+    "right_to_wrong": 2
+  },
+  "hard_ambiguous": {
+    "label": "信息不足",
+    "n": 100,
+    "before": 69,
+    "after": 67,
+    "before_pct": 69.0,
+    "after_pct": 67.0,
+    "delta_pp": -2.0,
+    "wrong_to_right": 2,
+    "right_to_wrong": 4
+  }
+}

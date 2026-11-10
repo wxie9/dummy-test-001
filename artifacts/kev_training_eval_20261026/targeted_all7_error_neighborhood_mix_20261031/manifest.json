@@ -1,0 +1,77 @@
+{
+  "version": "targeted-all7-error-neighborhood-mix-20261031",
+  "status": "training_and_evaluation_complete",
+  "seed": 101,
+  "init": "original qwen3.5 replica-20261026/stage3; do not continue from a targeted stage4",
+  "method": "three-family hard-v1 error-neighborhood data plus byte-semantic-identical frozen v6 rows for tool_routing, insufficient, policy, injection",
+  "training": {
+    "epochs": 1,
+    "lr": 1e-05,
+    "lora_rank": 16,
+    "batch": 4,
+    "accum": 2,
+    "replay": 0
+  },
+  "files": {
+    "train": {
+      "records": 1272,
+      "questions": 2869,
+      "records_by_family": {
+        "injection": 100,
+        "insufficient": 280,
+        "multihop": 117,
+        "policy": 300,
+        "probability": 192,
+        "temporal": 183,
+        "tool_routing": 100
+      },
+      "questions_by_family": {
+        "injection": 100,
+        "insufficient": 1400,
+        "multihop": 147,
+        "policy": 600,
+        "probability": 303,
+        "temporal": 219,
+        "tool_routing": 100
+      },
+      "three_family_records": 492,
+      "frozen_v6_four_family_records": 780,
+      "sha256": "141072ea5d8e95928c9911f04a89f38350b1a10523019781ec457578102434aa"
+    },
+    "development": {
+      "records": 354,
+      "questions": 753,
+      "records_by_family": {
+        "injection": 30,
+        "insufficient": 70,
+        "multihop": 39,
+        "policy": 60,
+        "probability": 64,
+        "temporal": 61,
+        "tool_routing": 30
+      },
+      "questions_by_family": {
+        "injection": 30,
+        "insufficient": 350,
+        "multihop": 49,
+        "policy": 120,
+        "probability": 101,
+        "temporal": 73,
+        "tool_routing": 30
+      },
+      "three_family_records": 164,
+      "frozen_v6_four_family_records": 190,
+      "sha256": "2e1ce6a9ebf2446d65614b5376866ec600d558715f127a1f5f935a5ce9ba22ac"
+    }
+  },
+  "source_sha256": {
+    "three_train": "20bc83bada4777a34832648a79f20380bbfa9f2d45de450d4f6910f341a2d5be",
+    "three_development": "1fd72b0bd8156a6fdea0e5ab96789f4555600528bd8b3c3bd21a2636fa2fdf26",
+    "v6_train": "58572b2118b10d9505d5bdb027585fab75f4ad7e52a1c5d8d155979459fecea8",
+    "v6_development": "5747c5b02565f10688d270d8da5afa384386e9cfc42bf55e2971d2924810fe63"
+  },
+  "evidence_boundary": [
+    "hard-v1 test errors were used to design three-family training rows, so hard-v1 is a targeted repair backtest, not blind evaluation.",
+    "development rows share generators or seed semantic skeletons with training and measure local transfer only."
+  ]
+}

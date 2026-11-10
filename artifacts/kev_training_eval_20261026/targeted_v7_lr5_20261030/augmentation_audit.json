@@ -1,0 +1,257 @@
+{
+  "scope": "Exact seeded replay of source records and, when requested, the same replay:101 sample. No model inference or token filtering; current training preflight verified all 7500 records fit. Ambiguous supervision is a data finding, not causal proof of score changes.",
+  "data_sha256": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+  "code_data_py_sha256": "e77a2fffeb8ee7e05b118893be8e38b8358aef97c3ca2e143cdce208201b92f9",
+  "targeted_contexts": 1500,
+  "replay_contexts": 6000,
+  "replay_ids_sha256": "ee54f05757ffb6af15fe96c3d5d8c01de19757dca38ae46ccdd01aac7421bee9",
+  "original_questions_with_explicit_none": 70,
+  "seed": 101,
+  "settings": {
+    "p_none": 0.1,
+    "p_none_distract": 0.12,
+    "p_distract": 0.15,
+    "p_none_pair": 0.25
+  },
+  "epochs": {
+    "0": {
+      "total": {
+        "questions": 11700,
+        "choice_questions": 7328
+      },
+      "by_family": {
+        "tool_routing": {
+          "questions": 132,
+          "choice_questions": 132
+        },
+        "insufficient": {
+          "questions": 414,
+          "choice_questions": 414
+        },
+        "probability": {
+          "questions": 886,
+          "choice_questions": 651
+        },
+        "multihop": {
+          "questions": 528,
+          "choice_questions": 528
+        },
+        "injection": {
+          "questions": 100,
+          "choice_questions": 100
+        },
+        "policy": {
+          "questions": 760,
+          "choice_questions": 760
+        },
+        "temporal": {
+          "questions": 138,
+          "choice_questions": 138
+        },
+        "replay/mnli": {
+          "questions": 699,
+          "choice_questions": 699
+        },
+        "replay/imdb": {
+          "questions": 479
+        },
+        "replay/agnews": {
+          "questions": 1697,
+          "choice_questions": 739
+        },
+        "replay/amazon": {
+          "questions": 492
+        },
+        "replay/dbpedia14": {
+          "questions": 707,
+          "choice_questions": 707
+        },
+        "replay/compositional": {
+          "questions": 818,
+          "choice_questions": 818
+        },
+        "replay/yelp": {
+          "questions": 936
+        },
+        "replay/boolq": {
+          "questions": 472
+        },
+        "replay/legacy_policy": {
+          "questions": 501,
+          "choice_questions": 172
+        },
+        "replay/sst5": {
+          "questions": 471
+        },
+        "replay/banking77": {
+          "questions": 754,
+          "choice_questions": 754
+        },
+        "replay/trec": {
+          "questions": 716,
+          "choice_questions": 716
+        }
+      }
+    },
+    "1": {
+      "total": {
+        "questions": 11676,
+        "choice_questions": 7304
+      },
+      "by_family": {
+        "tool_routing": {
+          "questions": 140,
+          "choice_questions": 140
+        },
+        "insufficient": {
+          "questions": 428,
+          "choice_questions": 428
+        },
+        "probability": {
+          "questions": 902,
+          "choice_questions": 667
+        },
+        "multihop": {
+          "questions": 516,
+          "choice_questions": 516
+        },
+        "injection": {
+          "questions": 100,
+          "choice_questions": 100
+        },
+        "policy": {
+          "questions": 752,
+          "choice_questions": 752
+        },
+        "temporal": {
+          "questions": 138,
+          "choice_questions": 138
+        },
+        "replay/mnli": {
+          "questions": 731,
+          "choice_questions": 731
+        },
+        "replay/imdb": {
+          "questions": 479
+        },
+        "replay/agnews": {
+          "questions": 1657,
+          "choice_questions": 699
+        },
+        "replay/amazon": {
+          "questions": 492
+        },
+        "replay/dbpedia14": {
+          "questions": 701,
+          "choice_questions": 701
+        },
+        "replay/compositional": {
+          "questions": 818,
+          "choice_questions": 818
+        },
+        "replay/yelp": {
+          "questions": 936
+        },
+        "replay/boolq": {
+          "questions": 472
+        },
+        "replay/legacy_policy": {
+          "questions": 493,
+          "choice_questions": 164
+        },
+        "replay/sst5": {
+          "questions": 471
+        },
+        "replay/banking77": {
+          "questions": 754,
+          "choice_questions": 754
+        },
+        "replay/trec": {
+          "questions": 696,
+          "choice_questions": 696
+        }
+      }
+    },
+    "2": {
+      "total": {
+        "questions": 11604,
+        "choice_questions": 7232
+      },
+      "by_family": {
+        "tool_routing": {
+          "questions": 160,
+          "choice_questions": 160
+        },
+        "insufficient": {
+          "questions": 442,
+          "choice_questions": 442
+        },
+        "probability": {
+          "questions": 870,
+          "choice_questions": 635
+        },
+        "multihop": {
+          "questions": 510,
+          "choice_questions": 510
+        },
+        "injection": {
+          "questions": 100,
+          "choice_questions": 100
+        },
+        "policy": {
+          "questions": 734,
+          "choice_questions": 734
+        },
+        "temporal": {
+          "questions": 136,
+          "choice_questions": 136
+        },
+        "replay/mnli": {
+          "questions": 671,
+          "choice_questions": 671
+        },
+        "replay/imdb": {
+          "questions": 479
+        },
+        "replay/agnews": {
+          "questions": 1701,
+          "choice_questions": 743
+        },
+        "replay/amazon": {
+          "questions": 492
+        },
+        "replay/dbpedia14": {
+          "questions": 689,
+          "choice_questions": 689
+        },
+        "replay/compositional": {
+          "questions": 818,
+          "choice_questions": 818
+        },
+        "replay/yelp": {
+          "questions": 936
+        },
+        "replay/boolq": {
+          "questions": 472
+        },
+        "replay/legacy_policy": {
+          "questions": 505,
+          "choice_questions": 176
+        },
+        "replay/sst5": {
+          "questions": 471
+        },
+        "replay/banking77": {
+          "questions": 724,
+          "choice_questions": 724
+        },
+        "replay/trec": {
+          "questions": 694,
+          "choice_questions": 694
+        }
+      }
+    }
+  },
+  "examples": [],
+  "interpretation": "When two semantically equivalent none options are present and one is gold, one-hot training penalizes selecting the other equally valid option. Implicit other/unknown wordings are excluded from this conservative count."
+}

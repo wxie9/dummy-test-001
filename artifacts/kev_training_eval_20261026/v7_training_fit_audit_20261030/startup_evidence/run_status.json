@@ -1,0 +1,51 @@
+{
+  "started_at_utc": "2026-10-30T00:52:20.685178Z",
+  "training_performed": false,
+  "jobs": {
+    "qwen3-stage3": {
+      "gpu": 1,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3",
+      "pipeline_pid": 31949,
+      "status": "evaluating",
+      "pipeline_live": true,
+      "evaluation_pids": [
+        31952
+      ],
+      "log_tail": "\u2588\u2588\u2588\u258a | 273/310 [00:00<00:00, 1359.06it/s]\nLoading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 310/310 [00:00<00:00, 1391.31it/s]\nevaluated 50/1500\nevaluated 100/1500\nevaluated 150/1500\nevaluated 200/1500\nevaluated 250/1500\nevaluated 300/1500\nevaluated 350/1500\nevaluated 400/1500\nevaluated 450/1500\nevaluated 500/1500\n"
+    },
+    "qwen3-v7": {
+      "gpu": 2,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v7/stage4",
+      "pipeline_pid": 31950,
+      "status": "evaluating",
+      "pipeline_live": true,
+      "evaluation_pids": [
+        31954
+      ],
+      "log_tail": "     | 144/310 [00:00<00:00, 1431.53it/s]\nLoading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 310/310 [00:00<00:00, 1590.97it/s]\nevaluated 50/1500\nevaluated 100/1500\nevaluated 150/1500\nevaluated 200/1500\nevaluated 250/1500\nevaluated 300/1500\nevaluated 350/1500\nevaluated 400/1500\nevaluated 450/1500\nevaluated 500/1500\n"
+    },
+    "qwen35-stage3": {
+      "gpu": 3,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3",
+      "pipeline_pid": 31951,
+      "status": "evaluating",
+      "pipeline_live": true,
+      "evaluation_pids": [
+        31955
+      ],
+      "log_tail": " PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.\nevaluated 50/1500\nevaluated 100/1500\nevaluated 150/1500\nevaluated 200/1500\nevaluated 250/1500\nevaluated 300/1500\nevaluated 350/1500\nevaluated 400/1500\n"
+    },
+    "qwen35-v7": {
+      "gpu": 4,
+      "checkpoint": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v7/stage4",
+      "pipeline_pid": 31953,
+      "status": "evaluating",
+      "pipeline_live": true,
+      "evaluation_pids": [
+        31956
+      ],
+      "log_tail": " PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.\nevaluated 50/1500\nevaluated 100/1500\nevaluated 150/1500\nevaluated 200/1500\nevaluated 250/1500\nevaluated 300/1500\nevaluated 350/1500\nevaluated 400/1500\n"
+    }
+  },
+  "checked_at_utc": "2026-10-30T00:53:21.884862Z"
+}

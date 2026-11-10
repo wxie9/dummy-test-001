@@ -1,0 +1,685 @@
+{
+  "scope": "Already-inspected official diagnostic cases; descriptive, not a causal or blind-generalization claim.",
+  "models": {
+    "qwen3": {
+      "before": {
+        "strata": {
+          "zero/zero_offered=True": {
+            "contexts": 65,
+            "correct_amount": 65,
+            "predicted_zero": 65,
+            "pay_reason_and_zero_amount": 21
+          },
+          "positive/zero_offered=False": {
+            "contexts": 27,
+            "correct_amount": 16,
+            "predicted_zero": 0,
+            "pay_reason_and_zero_amount": 0
+          },
+          "positive/zero_offered=True": {
+            "contexts": 8,
+            "correct_amount": 0,
+            "predicted_zero": 8,
+            "pay_reason_and_zero_amount": 3
+          }
+        },
+        "positive_amount_errors": [
+          {
+            "id": "hard-v1/long_policy/test/00014",
+            "gold": 20000.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Flood is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00069",
+            "gold": 40000.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Flood is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00092",
+            "gold": 174.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: the treatment happened during the waiting period (paragraph 18.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00041",
+            "gold": 1900.0,
+            "predicted": 200.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: the incident happened during the waiting period (paragraph 4.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00096",
+            "gold": 1500.0,
+            "predicted": 1400.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Baggage and Personal Belongings is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00049",
+            "gold": 500.0,
+            "predicted": 1000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline under the flood warnings exclusion (paragraph 16.4)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00027",
+            "gold": 50.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline under the unattended property exclusion (paragraph 5.4)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00020",
+            "gold": 1950.0,
+            "predicted": 2000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00077",
+            "gold": 400.0,
+            "predicted": 375.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay the assessed loss less the deductible"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00001",
+            "gold": 125.0,
+            "predicted": 400.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Massage therapy sublimit (paragraph 11.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00037",
+            "gold": 200.0,
+            "predicted": 300.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: the claim was notified too late (paragraph 57.3)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00007",
+            "gold": 32.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00028",
+            "gold": 1101.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay up to the Theft and Loss limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00076",
+            "gold": 44.99,
+            "predicted": 100.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00033",
+            "gold": 393.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay the assessed loss less the service fee"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00060",
+            "gold": 700.0,
+            "predicted": 1514.4,
+            "zero_offered": false,
+            "predicted_outcome": "Decline under the out-of-network providers exclusion (paragraph 15.6)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00016",
+            "gold": 500.0,
+            "predicted": 1819.4,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Garden items sublimit (paragraph 28.3)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00079",
+            "gold": 1475.0,
+            "predicted": 1500.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Breakdown limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00062",
+            "gold": 187.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay the assessed loss less the excess"
+          }
+        ]
+      },
+      "after": {
+        "strata": {
+          "zero/zero_offered=True": {
+            "contexts": 65,
+            "correct_amount": 65,
+            "predicted_zero": 65,
+            "pay_reason_and_zero_amount": 32
+          },
+          "positive/zero_offered=False": {
+            "contexts": 27,
+            "correct_amount": 14,
+            "predicted_zero": 0,
+            "pay_reason_and_zero_amount": 0
+          },
+          "positive/zero_offered=True": {
+            "contexts": 8,
+            "correct_amount": 0,
+            "predicted_zero": 8,
+            "pay_reason_and_zero_amount": 5
+          }
+        },
+        "positive_amount_errors": [
+          {
+            "id": "hard-v1/long_policy/test/00014",
+            "gold": 20000.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay up to the Flood limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00069",
+            "gold": 40000.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Flood is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00092",
+            "gold": 174.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay the assessed loss less the deductible"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00041",
+            "gold": 1900.0,
+            "predicted": 2000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: the incident happened during the waiting period (paragraph 4.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00096",
+            "gold": 1500.0,
+            "predicted": 1400.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay the assessed loss less the excess"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00049",
+            "gold": 500.0,
+            "predicted": 1000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Flood limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00027",
+            "gold": 50.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline under the unattended property exclusion (paragraph 5.4)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00020",
+            "gold": 1950.0,
+            "predicted": 2000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00077",
+            "gold": 400.0,
+            "predicted": 375.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Vision Care limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00001",
+            "gold": 125.0,
+            "predicted": 400.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Massage therapy sublimit (paragraph 11.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00037",
+            "gold": 200.0,
+            "predicted": 300.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Trip Cancellation limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00007",
+            "gold": 32.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00028",
+            "gold": 1101.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay up to the Theft and Loss limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00076",
+            "gold": 44.99,
+            "predicted": 100.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00033",
+            "gold": 393.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay the assessed loss less the service fee"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00066",
+            "gold": 250.0,
+            "predicted": 1300.5,
+            "zero_offered": false,
+            "predicted_outcome": "Decline under the pre-existing conditions exclusion (paragraph 37.4)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00060",
+            "gold": 700.0,
+            "predicted": 1514.4,
+            "zero_offered": false,
+            "predicted_outcome": "Decline under the out-of-network providers exclusion (paragraph 15.6)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00016",
+            "gold": 500.0,
+            "predicted": 1819.4,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Garden items sublimit (paragraph 28.3)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00081",
+            "gold": 94.25,
+            "predicted": 194.25,
+            "zero_offered": false,
+            "predicted_outcome": "Decline under the disinclination to travel exclusion (paragraph 8.5)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00079",
+            "gold": 1475.0,
+            "predicted": 1500.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Breakdown limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00062",
+            "gold": 187.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay the assessed loss less the excess"
+          }
+        ]
+      }
+    },
+    "qwen35": {
+      "before": {
+        "strata": {
+          "zero/zero_offered=True": {
+            "contexts": 65,
+            "correct_amount": 65,
+            "predicted_zero": 65,
+            "pay_reason_and_zero_amount": 3
+          },
+          "positive/zero_offered=False": {
+            "contexts": 27,
+            "correct_amount": 17,
+            "predicted_zero": 0,
+            "pay_reason_and_zero_amount": 0
+          },
+          "positive/zero_offered=True": {
+            "contexts": 8,
+            "correct_amount": 0,
+            "predicted_zero": 8,
+            "pay_reason_and_zero_amount": 2
+          }
+        },
+        "positive_amount_errors": [
+          {
+            "id": "hard-v1/long_policy/test/00014",
+            "gold": 20000.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Flood is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00058",
+            "gold": 2900.0,
+            "predicted": 3000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Baggage and Personal Belongings limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00069",
+            "gold": 40000.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Flood is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00092",
+            "gold": 174.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: the treatment happened during the waiting period (paragraph 18.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00041",
+            "gold": 1900.0,
+            "predicted": 2000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: the incident happened during the waiting period (paragraph 4.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00010",
+            "gold": 796.0,
+            "predicted": 71.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: the incident happened during the waiting period (paragraph 5.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00072",
+            "gold": 700.0,
+            "predicted": 800.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Bicycles sublimit (paragraph 3.3)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00049",
+            "gold": 500.0,
+            "predicted": 1000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: the incident happened during the waiting period (paragraph 16.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00027",
+            "gold": 50.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay up to the Accessories sublimit (paragraph 5.3)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00020",
+            "gold": 1950.0,
+            "predicted": 2000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00001",
+            "gold": 125.0,
+            "predicted": 200.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Therapy Services is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00007",
+            "gold": 32.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00028",
+            "gold": 1101.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay up to the Theft and Loss limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00033",
+            "gold": 393.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Theft and Loss is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00066",
+            "gold": 250.0,
+            "predicted": 500.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline under the pre-existing conditions exclusion (paragraph 37.4)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00016",
+            "gold": 500.0,
+            "predicted": 1000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Garden items sublimit (paragraph 28.3)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00045",
+            "gold": 150.0,
+            "predicted": 200.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Therapy Services is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00062",
+            "gold": 187.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Travel Delay is not a cover shown in the schedule"
+          }
+        ]
+      },
+      "after": {
+        "strata": {
+          "zero/zero_offered=True": {
+            "contexts": 65,
+            "correct_amount": 65,
+            "predicted_zero": 65,
+            "pay_reason_and_zero_amount": 3
+          },
+          "positive/zero_offered=False": {
+            "contexts": 27,
+            "correct_amount": 11,
+            "predicted_zero": 0,
+            "pay_reason_and_zero_amount": 0
+          },
+          "positive/zero_offered=True": {
+            "contexts": 8,
+            "correct_amount": 0,
+            "predicted_zero": 8,
+            "pay_reason_and_zero_amount": 3
+          }
+        },
+        "positive_amount_errors": [
+          {
+            "id": "hard-v1/long_policy/test/00091",
+            "gold": 1451.0,
+            "predicted": 1500.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Breakdown limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00014",
+            "gold": 20000.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Flood is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00032",
+            "gold": 475.0,
+            "predicted": 500.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline under the replacement frequency exclusion (paragraph 4.4)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00058",
+            "gold": 2900.0,
+            "predicted": 3000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Baggage and Personal Belongings limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00090",
+            "gold": 2000.0,
+            "predicted": 2500.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Theft limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00069",
+            "gold": 40000.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Flood is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00092",
+            "gold": 174.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay the assessed loss less the deductible"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00041",
+            "gold": 1900.0,
+            "predicted": 2000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: the incident happened during the waiting period (paragraph 4.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00072",
+            "gold": 700.0,
+            "predicted": 800.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Bicycles sublimit (paragraph 3.3)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00049",
+            "gold": 500.0,
+            "predicted": 1000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: the incident happened during the waiting period (paragraph 16.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00027",
+            "gold": 50.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay up to the Accessories sublimit (paragraph 5.3)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00020",
+            "gold": 1950.0,
+            "predicted": 2000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00001",
+            "gold": 125.0,
+            "predicted": 200.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Therapy Services is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00007",
+            "gold": 32.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00028",
+            "gold": 1101.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Pay up to the Theft and Loss limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00076",
+            "gold": 44.99,
+            "predicted": 100.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Trip Cancellation is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00033",
+            "gold": 393.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Theft and Loss is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00066",
+            "gold": 250.0,
+            "predicted": 500.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline under the pre-existing conditions exclusion (paragraph 37.4)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00012",
+            "gold": 650.0,
+            "predicted": 750.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Dental Care is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00016",
+            "gold": 500.0,
+            "predicted": 1000.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Garden items sublimit (paragraph 28.3)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00045",
+            "gold": 150.0,
+            "predicted": 200.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: Therapy Services is not a cover shown in the schedule"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00050",
+            "gold": 551.0,
+            "predicted": 600.0,
+            "zero_offered": false,
+            "predicted_outcome": "Decline: the incident happened during the waiting period (paragraph 3.2)"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00079",
+            "gold": 1475.0,
+            "predicted": 1500.0,
+            "zero_offered": false,
+            "predicted_outcome": "Pay up to the Breakdown limit"
+          },
+          {
+            "id": "hard-v1/long_policy/test/00062",
+            "gold": 187.0,
+            "predicted": 0.0,
+            "zero_offered": true,
+            "predicted_outcome": "Decline: Travel Delay is not a cover shown in the schedule"
+          }
+        ]
+      }
+    }
+  },
+  "hashes": {
+    "artifacts/kev_training_eval_20261026/targeted_v9_matched_20261030/evidence/runs/qwen3-06b-20261026/benchmarks/hard-v1-test/rows.json": "ccd3f617da66cd1201ec9ceee8b8a743d68cf69609f118f03b8fbf35527f76e2",
+    "artifacts/kev_training_eval_20261026/targeted_v9_matched_20261030/evidence/runs/qwen3-20261030-targeted-v9-matched/eval-hard-v1/rows.json": "ac2f1345d94c7564b99e8034bb2bd5421bb1a152f66af79da78b86a27e0d52e5",
+    "artifacts/kev_training_eval_20261026/targeted_v9_matched_20261030/evidence/runs/replica-20261026/benchmarks/hard-v1-test/rows.json": "ba77a270e1b1851dec3daee76d594d6dd02d2373316dc8d1ecb73d880deb8265",
+    "artifacts/kev_training_eval_20261026/targeted_v9_matched_20261030/evidence/runs/qwen35-20261030-targeted-v9-matched/eval-hard-v1/rows.json": "88da7099ad95f4d23fb65112fc14b3b4925fff127c8a2bab68e0c5b718a48001"
+  }
+}

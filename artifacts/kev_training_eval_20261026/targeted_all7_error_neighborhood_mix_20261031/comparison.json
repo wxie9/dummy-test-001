@@ -1,0 +1,231 @@
+{
+  "run": "qwen35-20261031-targeted-all7-error-neighborhood-mix-e1",
+  "families": {
+    "工具路由": {
+      "n": 150,
+      "before_correct": 34,
+      "after_correct": 46,
+      "before_acc": 22.67,
+      "after_acc": 30.67,
+      "delta_correct": 12,
+      "delta_pp": 8.0,
+      "original_errors": 116,
+      "repaired": 13,
+      "newly_broken": 1
+    },
+    "时间与数值": {
+      "n": 117,
+      "before_correct": 51,
+      "after_correct": 55,
+      "before_acc": 43.59,
+      "after_acc": 47.01,
+      "delta_correct": 4,
+      "delta_pp": 3.42,
+      "original_errors": 66,
+      "repaired": 7,
+      "newly_broken": 3
+    },
+    "概率": {
+      "n": 158,
+      "before_correct": 87,
+      "after_correct": 94,
+      "before_acc": 55.06,
+      "after_acc": 59.49,
+      "delta_correct": 7,
+      "delta_pp": 4.43,
+      "original_errors": 71,
+      "repaired": 18,
+      "newly_broken": 11
+    },
+    "信息不足": {
+      "n": 100,
+      "before_correct": 69,
+      "after_correct": 70,
+      "before_acc": 69.0,
+      "after_acc": 70.0,
+      "delta_correct": 1,
+      "delta_pp": 1.0,
+      "original_errors": 31,
+      "repaired": 5,
+      "newly_broken": 4
+    },
+    "多跳推理": {
+      "n": 125,
+      "before_correct": 85,
+      "after_correct": 88,
+      "before_acc": 68.0,
+      "after_acc": 70.4,
+      "delta_correct": 3,
+      "delta_pp": 2.4,
+      "original_errors": 40,
+      "repaired": 9,
+      "newly_broken": 6
+    },
+    "长政策": {
+      "n": 200,
+      "before_correct": 131,
+      "after_correct": 131,
+      "before_acc": 65.5,
+      "after_acc": 65.5,
+      "delta_correct": 0,
+      "delta_pp": 0.0,
+      "original_errors": 69,
+      "repaired": 4,
+      "newly_broken": 4
+    },
+    "提示注入": {
+      "n": 150,
+      "before_correct": 94,
+      "after_correct": 102,
+      "before_acc": 62.67,
+      "after_acc": 68.0,
+      "delta_correct": 8,
+      "delta_pp": 5.33,
+      "original_errors": 56,
+      "repaired": 8,
+      "newly_broken": 0
+    }
+  },
+  "seven_target_total": {
+    "n": 1000,
+    "before_correct": 551,
+    "after_correct": 586,
+    "before_acc": 55.1,
+    "after_acc": 58.6,
+    "delta_correct": 35,
+    "delta_pp": 3.5,
+    "repaired": 64,
+    "newly_broken": 29
+  },
+  "hard_v1_all": {
+    "n": 1088,
+    "before_correct": 707,
+    "after_correct": 720,
+    "before_acc": 64.98,
+    "after_acc": 66.18,
+    "delta_correct": 13,
+    "delta_pp": 1.19,
+    "original_errors": 381,
+    "repaired": 53,
+    "newly_broken": 40
+  },
+  "devtools_v1_all": {
+    "n": 1073,
+    "before_correct": 699,
+    "after_correct": 722,
+    "before_acc": 65.14,
+    "after_acc": 67.29,
+    "delta_correct": 23,
+    "delta_pp": 2.14,
+    "original_errors": 374,
+    "repaired": 33,
+    "newly_broken": 10
+  },
+  "mixed_development": {
+    "injection": {
+      "n": 30,
+      "before_correct": 11,
+      "after_correct": 21,
+      "before_acc": 36.67,
+      "after_acc": 70.0,
+      "delta_correct": 10,
+      "delta_pp": 33.33,
+      "original_errors": 19,
+      "repaired": 10,
+      "newly_broken": 0
+    },
+    "insufficient": {
+      "n": 350,
+      "before_correct": 197,
+      "after_correct": 243,
+      "before_acc": 56.29,
+      "after_acc": 69.43,
+      "delta_correct": 46,
+      "delta_pp": 13.14,
+      "original_errors": 153,
+      "repaired": 56,
+      "newly_broken": 10
+    },
+    "multihop": {
+      "n": 49,
+      "before_correct": 25,
+      "after_correct": 25,
+      "before_acc": 51.02,
+      "after_acc": 51.02,
+      "delta_correct": 0,
+      "delta_pp": 0.0,
+      "original_errors": 24,
+      "repaired": 4,
+      "newly_broken": 4
+    },
+    "policy": {
+      "n": 120,
+      "before_correct": 35,
+      "after_correct": 49,
+      "before_acc": 29.17,
+      "after_acc": 40.83,
+      "delta_correct": 14,
+      "delta_pp": 11.67,
+      "original_errors": 85,
+      "repaired": 18,
+      "newly_broken": 4
+    },
+    "probability": {
+      "n": 101,
+      "before_correct": 34,
+      "after_correct": 52,
+      "before_acc": 33.66,
+      "after_acc": 51.49,
+      "delta_correct": 18,
+      "delta_pp": 17.82,
+      "original_errors": 67,
+      "repaired": 19,
+      "newly_broken": 1
+    },
+    "temporal": {
+      "n": 73,
+      "before_correct": 10,
+      "after_correct": 17,
+      "before_acc": 13.7,
+      "after_acc": 23.29,
+      "delta_correct": 7,
+      "delta_pp": 9.59,
+      "original_errors": 63,
+      "repaired": 8,
+      "newly_broken": 1
+    },
+    "tool_routing": {
+      "n": 30,
+      "before_correct": 14,
+      "after_correct": 25,
+      "before_acc": 46.67,
+      "after_acc": 83.33,
+      "delta_correct": 11,
+      "delta_pp": 36.67,
+      "original_errors": 16,
+      "repaired": 11,
+      "newly_broken": 0
+    }
+  },
+  "three_family_vs_three_only": {
+    "时间与数值": {
+      "three_only_correct": 57,
+      "all7_mix_correct": 55,
+      "difference_all7_minus_three_only": -2
+    },
+    "概率": {
+      "three_only_correct": 92,
+      "all7_mix_correct": 94,
+      "difference_all7_minus_three_only": 2
+    },
+    "多跳推理": {
+      "three_only_correct": 88,
+      "all7_mix_correct": 88,
+      "difference_all7_minus_three_only": 0
+    }
+  },
+  "limits": [
+    "hard-v1 errors were used to design three-family training data; hard-v1 is a targeted repair backtest.",
+    "One seed; development shares generators or semantic skeletons with training."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "status": "training_and_evaluation_complete_goal_not_established",
+  "started_at_utc": "2026-10-29T23:32:52.532502+00:00",
+  "models": {
+    "qwen3": {
+      "gpu": 3,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v6-factmix",
+      "status": "complete",
+      "pipeline_live": false,
+      "training_live": false,
+      "preflight": {
+        "training_contexts_including_replay": 7500,
+        "training_questions": 10866,
+        "development_contexts": 336,
+        "rejected_development": [],
+        "context": {
+          "max_state": 7552,
+          "max_branch": 8192,
+          "max_packed": 9216
+        }
+      },
+      "historical_processes": {
+        "pipeline_pid": 8730,
+        "training_pid": 11020,
+        "last_observed_step": [
+          "0",
+          "320",
+          "938",
+          "0.451"
+        ]
+      },
+      "completed_steps": 938,
+      "training_wall_seconds": 844.9399216175079,
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 512,
+        "after_correct": 504,
+        "before_pct": 51.2,
+        "after_pct": 50.4,
+        "delta_pp": -0.8,
+        "repaired": 40,
+        "newly_wrong": 48,
+        "old_wrong": 488,
+        "repair_pct": 8.19672131147541,
+        "paired_context_bootstrap_95pct_pp": [
+          -2.613065326633166,
+          1.0848126232741617
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 0.6666666666666666,
+        "temporal": 3.4188034188034186,
+        "probability": 0.0,
+        "insufficient": -7.0,
+        "multihop": -5.6,
+        "policy": -1.0,
+        "injection": 2.0
+      }
+    },
+    "qwen35": {
+      "gpu": 4,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v6-factmix",
+      "status": "complete",
+      "pipeline_live": false,
+      "training_live": false,
+      "preflight": {
+        "training_contexts_including_replay": 7500,
+        "training_questions": 10866,
+        "development_contexts": 336,
+        "rejected_development": [],
+        "context": {
+          "max_state": 7552,
+          "max_branch": 8192,
+          "max_packed": 9216
+        }
+      },
+      "historical_processes": {
+        "pipeline_pid": 8731,
+        "training_pid": 12101,
+        "last_observed_step": [
+          "0",
+          "250",
+          "938",
+          "0.411"
+        ]
+      },
+      "completed_steps": 938,
+      "training_wall_seconds": 1018.7530295848846,
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 551,
+        "after_correct": 584,
+        "before_pct": 55.1,
+        "after_pct": 58.4,
+        "delta_pp": 3.3,
+        "repaired": 57,
+        "newly_wrong": 24,
+        "old_wrong": 449,
+        "repair_pct": 12.694877505567929,
+        "paired_context_bootstrap_95pct_pp": [
+          1.4866204162537167,
+          5.117707267144319
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 12.0,
+        "temporal": -1.7094017094017093,
+        "probability": -1.8987341772151898,
+        "insufficient": 1.0,
+        "multihop": -1.6,
+        "policy": 2.0,
+        "injection": 11.333333333333334
+      }
+    }
+  },
+  "goal_achieved": false,
+  "next": "Do not promote wording-only control: no all-seven gain. Finish existing v6 three-epoch control and investigate training-to-test transfer before another dataset revision.",
+  "last_goal_turn_classification": "verified_wait: four live training processes and advancing logs; no complete effect evaluation yet",
+  "previous_live_check_utc": "2026-10-29T23:39:07.059502+00:00",
+  "finalized_at_utc": "2026-10-29T23:55:30.734927+00:00",
+  "comparison_sha256": "12eae415c087eb8ea006177d0773fb723eeff9b011ea9a52e48fdeb59a2e3756"
+}

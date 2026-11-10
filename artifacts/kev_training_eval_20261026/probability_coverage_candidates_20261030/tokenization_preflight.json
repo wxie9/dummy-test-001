@@ -1,0 +1,26 @@
+{
+  "qwen3": {
+    "train": {
+      "contexts": 350,
+      "questions": 720,
+      "rejected": []
+    },
+    "development": {
+      "contexts": 60,
+      "questions": 124,
+      "rejected": []
+    }
+  },
+  "qwen35": {
+    "train": {
+      "contexts": 350,
+      "questions": 720,
+      "rejected": []
+    },
+    "development": {
+      "contexts": 60,
+      "questions": 124,
+      "rejected": []
+    }
+  }
+}

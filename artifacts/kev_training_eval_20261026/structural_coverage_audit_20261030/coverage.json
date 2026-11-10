@@ -1,0 +1,417 @@
+{
+  "scope": "Coverage observations on generated training data and already inspected diagnostic tests; neither causal attribution nor independent generalization evidence.",
+  "files": {
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_20261030/train.jsonl": "58572b2118b10d9505d5bdb027585fab75f4ad7e52a1c5d8d155979459fecea8",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_20261030/evidence/evals/hard-v1/test.jsonl": "246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_3ep_20261030/evidence/runs/qwen3-06b-20261026/benchmarks/hard-v1-test/rows.json": "ccd3f617da66cd1201ec9ceee8b8a743d68cf69609f118f03b8fbf35527f76e2",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_20261030/evidence/runs/qwen3-20261030-targeted-v6/eval-hard-v1/rows.json": "ad58ebf0f2d47c58ee1085ecf6b31b4b61c1d6610e755b70fb04571527a1d275",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_3ep_20261030/evidence/runs/qwen3-20261030-targeted-v6-3ep/eval-hard-v1/rows.json": "c770e02212c212b6311ba292fa35039de40f196374570d2d733c0b0662a303f3",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_3ep_20261030/evidence/runs/replica-20261026/benchmarks/hard-v1-test/rows.json": "ba77a270e1b1851dec3daee76d594d6dd02d2373316dc8d1ecb73d880deb8265",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_20261030/evidence/runs/qwen35-20261030-targeted-v6/eval-hard-v1/rows.json": "26924b7e8927f494884bc08d215067065ac2e53572c86e8fe379a44a60d667f7",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_3ep_20261030/evidence/runs/qwen35-20261030-targeted-v6-3ep/eval-hard-v1/rows.json": "85e71811be8e8687a34fe34541f1257a207757ae8c53ef19fa5d3659c1d69a21"
+  },
+  "families": {
+    "probability": {
+      "training_contexts": 350,
+      "test_contexts": 100,
+      "training_subtypes": {
+        "bayes": 60,
+        "compare": 40,
+        "expected_value": 60,
+        "table": 75,
+        "any_fail": 50,
+        "all": 40,
+        "any": 25
+      },
+      "test_subtypes": {
+        "independent": 23,
+        "bayes": 22,
+        "compare": 19,
+        "table": 23,
+        "ev": 13
+      },
+      "training_state_chars": {
+        "min": 123,
+        "p25": 154,
+        "median": 208,
+        "p75": 248,
+        "max": 649
+      },
+      "test_state_chars": {
+        "min": 171,
+        "p25": 254,
+        "median": 316,
+        "p75": 390,
+        "max": 819
+      },
+      "test_templates": {
+        "probability/t5": 100
+      }
+    },
+    "multihop": {
+      "training_contexts": 270,
+      "test_contexts": 100,
+      "training_subtypes": {
+        "rank_escalation": 45,
+        "dependency_candidates": 45,
+        "ownership_control_and_profit": 90,
+        "dated_roster": 60,
+        "exact_supervisor_hops": 30
+      },
+      "test_subtypes": {
+        "deps": 26,
+        "org": 24,
+        "ownership": 25,
+        "oncall": 25
+      },
+      "training_state_chars": {
+        "min": 341,
+        "p25": 702,
+        "median": 764,
+        "p75": 845,
+        "max": 1492
+      },
+      "test_state_chars": {
+        "min": 365,
+        "p25": 526,
+        "median": 744,
+        "p75": 1057,
+        "max": 1194
+      },
+      "test_templates": {
+        "multi_hop/t5": 100
+      }
+    },
+    "insufficient": {
+      "training_contexts": 280,
+      "test_contexts": 100,
+      "training_subtypes": {
+        "warranty__complete": 20,
+        "tenure__unknown": 16,
+        "overtime__unknown": 16,
+        "warranty__unknown": 16,
+        "return__unknown": 16,
+        "shipping__complete": 20,
+        "price_match__unknown": 16,
+        "approval__complete": 20,
+        "price_match__complete": 20,
+        "tenure__complete": 20,
+        "shipping__unknown": 16,
+        "approval__unknown": 16,
+        "overtime__complete": 20,
+        "approval__nondeciding": 4,
+        "shipping__nondeciding": 4,
+        "tenure__nondeciding": 4,
+        "price_match__nondeciding": 4,
+        "return__nondeciding": 4,
+        "return__complete": 20,
+        "warranty__nondeciding": 4,
+        "overtime__nondeciding": 4
+      },
+      "test_subtypes": {
+        "return_window": 14,
+        "tenure": 16,
+        "warranty": 16,
+        "price_match": 14,
+        "overtime": 12,
+        "approval": 14,
+        "shipping": 14
+      },
+      "training_state_chars": {
+        "min": 220,
+        "p25": 296,
+        "median": 337,
+        "p75": 369,
+        "max": 463
+      },
+      "test_state_chars": {
+        "min": 253,
+        "p25": 317,
+        "median": 353,
+        "p75": 442,
+        "max": 555
+      },
+      "test_templates": {
+        "ambiguous/t5": 100
+      }
+    },
+    "policy": {
+      "training_contexts": 300,
+      "test_contexts": 100,
+      "training_subtypes": {
+        "not_purchased": 36,
+        "pay_limit": 40,
+        "unsafe": 36,
+        "pay_sublimit": 40,
+        "late": 36,
+        "waiting": 36,
+        "pay_loss": 40,
+        "usage": 36
+      },
+      "test_subtypes": {
+        "travel": 26,
+        "device": 25,
+        "benefits": 24,
+        "home": 25
+      },
+      "training_state_chars": {
+        "min": 8061,
+        "p25": 8074,
+        "median": 8090,
+        "p75": 8126,
+        "max": 8163
+      },
+      "test_state_chars": {
+        "min": 4908,
+        "p25": 9372,
+        "median": 12607,
+        "p75": 16067,
+        "max": 18226
+      },
+      "test_templates": {
+        "long_policy/t5": 100
+      },
+      "training_domains": {
+        "appliance": 46,
+        "workshop": 48,
+        "exhibition": 52,
+        "laboratory": 42,
+        "shipment": 60,
+        "equipment": 52
+      },
+      "test_domains": {
+        "travel": 26,
+        "device": 25,
+        "benefits": 24,
+        "home": 25
+      }
+    }
+  },
+  "probability_table": {
+    "training_target_row_positions": {
+      "0": 75
+    },
+    "test_target_row_positions": {
+      "0": 9,
+      "1": 14
+    },
+    "test_cases": [
+      {
+        "id": "hard-v1/probability/test/00095",
+        "target_row_position": 0,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00064",
+        "target_row_position": 1,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00004",
+        "target_row_position": 1,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00063",
+        "target_row_position": 0,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00020",
+        "target_row_position": 1,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00057",
+        "target_row_position": 1,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00026",
+        "target_row_position": 0,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00074",
+        "target_row_position": 1,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00082",
+        "target_row_position": 1,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00067",
+        "target_row_position": 1,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00033",
+        "target_row_position": 0,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00044",
+        "target_row_position": 1,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00091",
+        "target_row_position": 0,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00023",
+        "target_row_position": 1,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00011",
+        "target_row_position": 0,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00001",
+        "target_row_position": 1,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00078",
+        "target_row_position": 0,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00016",
+        "target_row_position": 0,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00098",
+        "target_row_position": 0,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00053",
+        "target_row_position": 1,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00084",
+        "target_row_position": 1,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00036",
+        "target_row_position": 1,
+        "direction": "col_given_row",
+        "template": "probability/t5"
+      },
+      {
+        "id": "hard-v1/probability/test/00045",
+        "target_row_position": 1,
+        "direction": "row_given_col",
+        "template": "probability/t5"
+      }
+    ],
+    "evaluation": {
+      "qwen3": {
+        "all/row_0": {
+          "stage3": 1,
+          "v6_one_epoch": 1,
+          "v6_three_epochs": 1,
+          "questions": 9
+        },
+        "all/row_1": {
+          "stage3": 7,
+          "v6_one_epoch": 7,
+          "v6_three_epochs": 4,
+          "questions": 14
+        },
+        "col_given_row/row_0": {
+          "stage3": 1,
+          "v6_one_epoch": 1,
+          "v6_three_epochs": 1,
+          "questions": 3
+        },
+        "col_given_row/row_1": {
+          "stage3": 5,
+          "v6_one_epoch": 5,
+          "v6_three_epochs": 3,
+          "questions": 9
+        },
+        "row_given_col/row_0": {
+          "stage3": 0,
+          "v6_one_epoch": 0,
+          "v6_three_epochs": 0,
+          "questions": 6
+        },
+        "row_given_col/row_1": {
+          "stage3": 2,
+          "v6_one_epoch": 2,
+          "v6_three_epochs": 1,
+          "questions": 5
+        }
+      },
+      "qwen35": {
+        "all/row_0": {
+          "stage3": 2,
+          "v6_one_epoch": 2,
+          "v6_three_epochs": 2,
+          "questions": 9
+        },
+        "all/row_1": {
+          "stage3": 4,
+          "v6_one_epoch": 4,
+          "v6_three_epochs": 6,
+          "questions": 14
+        },
+        "col_given_row/row_0": {
+          "stage3": 2,
+          "v6_one_epoch": 2,
+          "v6_three_epochs": 2,
+          "questions": 3
+        },
+        "col_given_row/row_1": {
+          "stage3": 3,
+          "v6_one_epoch": 3,
+          "v6_three_epochs": 5,
+          "questions": 9
+        },
+        "row_given_col/row_0": {
+          "stage3": 0,
+          "v6_one_epoch": 0,
+          "v6_three_epochs": 0,
+          "questions": 6
+        },
+        "row_given_col/row_1": {
+          "stage3": 1,
+          "v6_one_epoch": 1,
+          "v6_three_epochs": 1,
+          "questions": 5
+        }
+      }
+    }
+  }
+}

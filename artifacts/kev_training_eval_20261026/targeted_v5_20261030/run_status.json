@@ -1,0 +1,73 @@
+{
+  "status": "training_and_evaluation_complete_goal_unachieved",
+  "remote_root": "/C20545/kev-08b-official-repro-20261026",
+  "qwen3": {
+    "run": "runs/qwen3-20261030-targeted-v5",
+    "gpu": 1,
+    "planned_steps": 938,
+    "completed_steps": 938,
+    "training_wall_seconds": 815.3781733512878,
+    "seven_pooled": {
+      "questions": 1000,
+      "contexts": 800,
+      "before_correct": 512,
+      "after_correct": 513,
+      "before_pct": 51.2,
+      "after_pct": 51.3,
+      "delta_pp": 0.1,
+      "repaired": 44,
+      "newly_wrong": 43,
+      "old_wrong": 488,
+      "repair_pct": 9.01639344262295,
+      "paired_context_bootstrap_95pct_pp": [
+        -1.715438950554995,
+        1.9289340101522843
+      ]
+    }
+  },
+  "qwen35": {
+    "run": "runs/qwen35-20261030-targeted-v5",
+    "gpu": 2,
+    "planned_steps": 938,
+    "completed_steps": 938,
+    "training_wall_seconds": 901.3312320709229,
+    "seven_pooled": {
+      "questions": 1000,
+      "contexts": 800,
+      "before_correct": 551,
+      "after_correct": 579,
+      "before_pct": 55.1,
+      "after_pct": 57.9,
+      "delta_pp": 2.8,
+      "repaired": 51,
+      "newly_wrong": 23,
+      "old_wrong": 449,
+      "repair_pct": 11.35857461024499,
+      "paired_context_bootstrap_95pct_pp": [
+        1.0858835143139192,
+        4.4579533941236065
+      ]
+    }
+  },
+  "preflight": {
+    "both_tokenizers_passed": true,
+    "training_contexts_with_replay": 7500,
+    "training_questions_before_augmentation": 9481,
+    "development_contexts": 340,
+    "development_questions": 440,
+    "rejected_or_truncated": 0
+  },
+  "goal_achieved": false,
+  "pending_user_clarification": "May the retained temporal prorata problems be clarified to state an exclusive end date? Current frozen v5 inputs are unchanged.",
+  "next": "A separate fixed-data 3-epoch experiment tests acquisition strength; never restart completed v5 or report all seven improved.",
+  "train_probe": {
+    "contexts": 140,
+    "questions": 175,
+    "before_complete_both_models": true,
+    "after": "complete, full paired evidence downloaded",
+    "scope": "training-set diagnostic, not heldout"
+  },
+  "actual_remote_train_py_sha256": "68428ed43b3e362e52d4650dc5296ab88767061f7998a525715e1b306eeef474",
+  "previous_live_check_utc": "2026-10-29T21:28:50Z",
+  "finalized_at_utc": "2026-10-29T21:35:58.375521+00:00"
+}

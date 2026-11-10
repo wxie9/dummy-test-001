@@ -1,0 +1,20 @@
+{
+  "started_at_utc": "2026-10-30T01:52:23.099119+00:00",
+  "status": "pipelines_started",
+  "models": {
+    "qwen3": {
+      "pipeline_pid": 47712,
+      "gpu": 1,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v8-steps",
+      "status": "started"
+    },
+    "qwen35": {
+      "pipeline_pid": 47713,
+      "gpu": 2,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v8-steps",
+      "status": "started"
+    }
+  },
+  "goal_achieved": false,
+  "data_sha256": "3118273464feb4ef80e9739a840a841a2c5accf162b87cc0d3467ee24855ff98"
+}

@@ -1,0 +1,39 @@
+{
+  "qwen3": {
+    "questions": 488,
+    "same_top_choice": 488,
+    "max_absolute_probability_difference": 3.3892851502015375e-06,
+    "changed": []
+  },
+  "qwen35": {
+    "questions": 488,
+    "same_top_choice": 487,
+    "max_absolute_probability_difference": 0.0006055367586996763,
+    "changed": [
+      {
+        "id": "targeted-v7-20261030/multihop-transfer-20261030/development/ownership_control_and_profit/5",
+        "question": "interest",
+        "keys": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "label": 3,
+        "plain_p": [
+          0.15412687106975384,
+          0.16897899143554335,
+          0.33848014932273707,
+          0.3384139881719658
+        ],
+        "steps_p": [
+          0.1539048128411891,
+          0.1689404870411826,
+          0.3385265818018702,
+          0.33862811831575806
+        ],
+        "max_delta": 0.00022205822856474766
+      }
+    ]
+  }
+}

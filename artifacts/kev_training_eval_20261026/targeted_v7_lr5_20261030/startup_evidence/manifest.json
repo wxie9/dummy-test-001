@@ -1,0 +1,91 @@
+{
+  "version": "targeted-v7-20261030",
+  "status": "pipelines_started",
+  "goal_achieved": false,
+  "replay_contexts_separate": 6000,
+  "files": {
+    "train": {
+      "contexts": 1500,
+      "questions": 2320,
+      "families": {
+        "tool_routing": 100,
+        "insufficient": 280,
+        "probability": 350,
+        "multihop": 270,
+        "injection": 100,
+        "policy": 300,
+        "temporal": 100
+      },
+      "sha256": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+      "retained_byte_identical_contexts": 300
+    },
+    "development": {
+      "contexts": 334,
+      "questions": 488,
+      "families": {
+        "insufficient": 70,
+        "injection": 30,
+        "multihop": 54,
+        "temporal": 30,
+        "policy": 60,
+        "probability": 60,
+        "tool_routing": 30
+      },
+      "sha256": "1ed87c7660bc732fd86400c913ca70bac7834256084211d6c7ed7a8fe9a26322",
+      "retained_byte_identical_contexts": 90
+    }
+  },
+  "sources": {
+    "probability_transfer_candidates_20261030/train.candidate.jsonl": "45e52ec992acb0738f7bac1d3394a6d86f5239f2a6e1823031b90b7ae5193f8f",
+    "multihop_transfer_candidates_20261030/train.candidate.jsonl": "dee9b6090ebefbb12370c9d25bfe991330a03654388f5dab8ce0bb03bc02a2be",
+    "insufficient_transfer_candidates_20261030/train.candidate.jsonl": "fc64d38f4ebf92ffc09c5ec323c0bf9256f41a7ba417aa1939259ef2d5735273",
+    "policy_transfer_candidates_20261030/train.candidate.jsonl": "709b696f59220febb970cc86367415079d9d8fdfec141367ec6fe0c28e9d32b6",
+    "probability_transfer_candidates_20261030/development.candidate.jsonl": "42d3f8f0c4e60f1dcd4d34960d89cf500b88fffbd1d9ea20b0d2ad4c0bc6da41",
+    "multihop_transfer_candidates_20261030/development.candidate.jsonl": "630784f32f39608b56f0058ad4e8ebf95ca76e58707d2a94eea1a889ae13696b",
+    "insufficient_transfer_candidates_20261030/development.candidate.jsonl": "4957c158c9e42f7f2790cb321a31679bd1687a367e2a9183d13e6c1b7613da05",
+    "policy_transfer_candidates_20261030/development.candidate.jsonl": "916e59ac61773df25d99632a94019ea5a8ce1b795f0256377a9a28e128881ac5"
+  },
+  "training_plan": {
+    "epochs": 1,
+    "seed": 101,
+    "lr": 5e-05,
+    "lora": 16,
+    "batch": 4,
+    "accum": 2,
+    "replay": 6000,
+    "init": "original pre-targeted stage3",
+    "expected_optimizer_steps": 938,
+    "purpose": "Change only the common learning rate from 1e-5 to 5e-5. head_lr=0 inherits lr, so both LoRA and head receive the same rate increase. Data, order, augmentation, replay, seed, schedule length and original stage3 starts remain unchanged."
+  },
+  "limitations": [
+    "Different visible contexts are not statistically independent; generators share templates.",
+    "The official test has informed diagnostics; subsequent evaluation is not a fresh blind holdout.",
+    "Four regenerated families change rules, layouts, options and supervision density together.",
+    "Insufficient-information now has one action question per context, compared with five in v6.",
+    "Retained three families remain unchanged including known wording ambiguities.",
+    "No new model effect has been measured."
+  ],
+  "checks": {
+    "normalized_train_dev_overlap": 0,
+    "normalized_frozen_test_overlap": 0,
+    "four_replacement_family_visible_label_checks": true,
+    "retained_three_families_byte_identical": true
+  },
+  "train_probe": {
+    "contexts": 140,
+    "questions": 185,
+    "sha256": "c2831a4bd1ffc76c9111d6f2175ea3f92cbb5f5bce59b7f268b710ca3c514860"
+  },
+  "experiment": "targeted-v7-lr5-20261030",
+  "data_version_unchanged": "targeted-v7-20261030",
+  "unchanged_data_hashes": {
+    "train.jsonl": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+    "development.jsonl": "1ed87c7660bc732fd86400c913ca70bac7834256084211d6c7ed7a8fe9a26322",
+    "train_probe.jsonl": "c2831a4bd1ffc76c9111d6f2175ea3f92cbb5f5bce59b7f268b710ca3c514860"
+  },
+  "evaluation_plan": {
+    "before": "Development and training probe must reproduce v7 original-stage3 probabilities exactly. Full training baseline is the verified v7_training_fit_audit stage3 prediction.",
+    "after": "Development, 140-context probe, all 1500 raw training contexts, and complete hard-v1/devtools-v1.",
+    "success": "All-seven real-benchmark improvement for both models remains required. Training acquisition alone is not success."
+  }
+}

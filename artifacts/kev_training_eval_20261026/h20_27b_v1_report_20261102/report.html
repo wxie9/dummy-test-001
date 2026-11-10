@@ -1,0 +1,1099 @@
+<!doctype html><meta charset='utf-8'><title>Kev-27B v1 六卡训练与评测</title>
+<style>
+:root{--fg:#1a1a1a;--mut:#666;--bd:#e0e0e0;--bg:#fff;--acc:#0b5fff;--warn:#b00020;--ok:#0a7d33}
+*{box-sizing:border-box}
+body{margin:0;padding:2rem;font:15px/1.65 -apple-system,"PingFang SC","Helvetica Neue",Arial,sans-serif;
+     color:var(--fg);background:var(--bg);max-width:1080px;margin-inline:auto}
+h1{font-size:1.7rem;margin:0 0 .2rem} h2{font-size:1.25rem;margin:2.2rem 0 .6rem;
+   padding-bottom:.3rem;border-bottom:2px solid var(--bd)} h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+.sub{color:var(--mut);margin:0 0 1.5rem}
+table{border-collapse:collapse;width:100%;margin:.6rem 0;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--bd);padding:.4rem .6rem;text-align:left;white-space:nowrap}
+th{background:#f6f7f9;font-weight:600}
+.card{border:1px solid var(--bd);border-radius:8px;padding:1rem 1.2rem;margin:.8rem 0;background:#fafbfc}
+.hero{border-left:4px solid var(--acc);background:#f5f8ff}
+.bad{border-left:4px solid var(--warn);background:#fff5f5}
+.good{border-left:4px solid var(--ok);background:#f4fbf6}
+.k{color:var(--mut);font-size:13px} code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+.pill{display:inline-block;padding:.1rem .5rem;border-radius:99px;font-size:12px;background:#eef1f5;margin-right:.3rem}
+.miss{color:var(--warn);font-weight:600}
+pre{white-space:pre-wrap;margin:.3rem 0}
+</style>
+<h1>Kev-27B v1 六卡训练与评测</h1>
+<p class='sub'>Kev training and evaluation · 生成于 2026-11-02 14:53 CST</p>
+<h2>0 · 组会一页（会上只讲这三样）</h2>
+<div class='card hero'><b>① 新冻结的资产</b><br>Qwen/Qwen3.8-27B@1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0<br>B1-v2 train: 15,401 records; SHA-256 fb86543b3baccb5aff9355065821e8481a083b874521637dc2f3a5cb06faa56a<br>Six frozen suite manifests are identical to the earlier 4B/9B evaluation<br>Adapter SHA-256 2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa</div>
+<div class='card hero'><b>② 上周新增的数字</b><br>Training complete: 2,567/2,567 steps in 3:59:47.9; rejected/truncated 0/0<br>Six-suite clean weighted accuracy: 4,939/5,999 = 82.33%<br>Official-v1-aligned pooled hard+devtools+documents: 2,275/2,795 = 81.40% vs official 80.00%<br>Transfer-v4: 88.72% vs official v1 89.63% and official v2 88.87%<br>Gradient clipping occurred on 2,157/2,567 steps = 84.0%</div>
+<div class='card hero'><b>③ 下周要过的那道门禁</b><br>Before calling the run an exact reproduction, either rerun with official effective batch 8 and a frozen code commit or add a second seed; before reporting calibration, fit temperature on a compliant held-out pool.</div>
+<div class='card'><b>可被追问清单（作者自评）</b><pre>&lt;!-- 请分别列出可以承受追问的数字和还需复核的数字。 --&gt;</pre></div>
+<h2>1 · 自检</h2>
+<div class='card bad'><b>未通过：</b><ul><li>字段「跑之前我预测这个数是多少」是空的或只有占位符 —— 需要一个先验信念, 代码里没有</li><li>字段「哪个数出乎我意料, 为什么」是空的或只有占位符 —— 需要预测与结果的差</li><li>字段「我改了什么才让它跑通」是空的或只有占位符 —— 只存在于你的经历里</li><li>字段「如果这个结论是错的, 最可能错在哪一步」是空的或只有占位符 —— 需要对自己 pipeline 的怀疑</li><li>字段「哪几个数我敢在会上被追问, 哪几个不敢」是空的或只有占位符 —— 自我评估</li><li>⚠ 预注册文件 prereg.txt 的修改时间晚于结果文件 —— 预测必须写在跑之前。若确实先写后改, 请在报告里说明改了什么、为什么</li></ul></div>
+<h2>2 · 模型卡与配置（自动）</h2>
+<h3>reviewed_snapshot.json</h3><div class='card'><pre class='mono'>{
+  &quot;title&quot;: &quot;Kev-27B v1 六卡训练与评测报告&quot;,
+  &quot;asOf&quot;: &quot;2026-11-02&quot;,
+  &quot;buildStatus&quot;: &quot;creating&quot;,
+  &quot;training&quot;: {
+    &quot;model&quot;: &quot;Kev-27B v1&quot;,
+    &quot;base&quot;: &quot;Qwen/Qwen3.8-27B&quot;,
+    &quot;baseRevision&quot;: &quot;1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0&quot;,
+    &quot;dataRecords&quot;: 15401,
+    &quot;dataSha256&quot;: &quot;fb86543b3baccb5aff9355065821e8481a083b874521637dc2f3a5cb06faa56a&quot;,
+    &quot;loraRank&quot;: 16,
+    &quot;worldSize&quot;: 6,
+    &quot;effectiveBatch&quot;: 6,
+    &quot;epochs&quot;: 1,
+    &quot;learningRate&quot;: 5e-05,
+    &quot;optimizerSteps&quot;: 2567,
+    &quot;recordsSeen&quot;: 18172,
+    &quot;forwardTokens&quot;: 10164492,
+    &quot;wallSeconds&quot;: 14387.923807382584,
+    &quot;rejected&quot;: 0,
+    &quot;truncated&quot;: 0,
+    &quot;gradientNormMean&quot;: 6.352912,
+    &quot;gradientNormMax&quot;: 443.807129,
+    &quot;clippedSteps&quot;: 2157,
+    &quot;peakDeviceBytes&quot;: 79335837184,
+    &quot;adapterSha256&quot;: &quot;2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa&quot;,
+    &quot;headSha256&quot;: &quot;e35c7090af0b6ddde9740065d2c5747a9a31caaa0618f620de88a8d4c29b2cb3&quot;
+  },
+  &quot;sixSuite&quot;: [
+    {
+      &quot;suite&quot;: &quot;decision-v7&quot;,
+      &quot;n&quot;: 1200,
+      &quot;correct&quot;: 1047,
+      &quot;accuracy&quot;: 0.8725,
+      &quot;model4B&quot;: 0.8691666667,
+      &quot;model9B&quot;: 0.8666666667
+    },
+    {
+      &quot;suite&quot;: &quot;transfer-v4&quot;,
+      &quot;n&quot;: 656,
+      &quot;correct&quot;: 582,
+      &quot;accuracy&quot;: 0.887195122,
+      &quot;model4B&quot;: 0.8399390244,
+      &quot;model9B&quot;: 0.8673780488
+    },
+    {
+      &quot;suite&quot;: &quot;transfer-v9&quot;,
+      &quot;n&quot;: 1046,
+      &quot;correct&quot;: 884,
+      &quot;accuracy&quot;: 0.845124283,
+      &quot;model4B&quot;: 0.775334608,
+      &quot;model9B&quot;: 0.8049713193
+    },
+    {
+      &quot;suite&quot;: &quot;hard-v1&quot;,
+      &quot;n&quot;: 1088,
+      &quot;correct&quot;: 848,
+      &quot;accuracy&quot;: 0.7794117647,
+      &quot;model4B&quot;: 0.8005514706,
+      &quot;model9B&quot;: 0.8354779412
+    },
+    {
+      &quot;suite&quot;: &quot;devtools-v1&quot;,
+      &quot;n&quot;: 1073,
+      &quot;correct&quot;: 758,
+      &quot;accuracy&quot;: 0.7064305685,
+      &quot;model4B&quot;: 0.7520969245,
+      &quot;model9B&quot;: 0.8117427773
+    },
+    {
+      &quot;suite&quot;: &quot;documents-v1&quot;,
+      &quot;n&quot;: 936,
+      &quot;correct&quot;: 820,
+      &quot;accuracy&quot;: 0.8760683761,
+      &quot;model4B&quot;: 0.8931623932,
+      &quot;model9B&quot;: 0.9049145299
+    }
+  ],
+  &quot;weighted&quot;: {
+    &quot;rawCorrect&quot;: 4939,
+    &quot;rawN&quot;: 5999,
+    &quot;rawAccuracy&quot;: 0.823303884,
+    &quot;officialAdjustedCorrect&quot;: 4937,
+    &quot;officialAdjustedN&quot;: 5997,
+    &quot;officialAdjustedAccuracy&quot;: 0.8232449558,
+    &quot;coverageRecords&quot;: 5378,
+    &quot;coverageQuestions&quot;: 6565
+  },
+  &quot;officialV1&quot;: [
+    {
+      &quot;panel&quot;: &quot;decision-v7 test&quot;,
+      &quot;official&quot;: 0.87,
+      &quot;ours&quot;: 0.8725
+    },
+    {
+      &quot;panel&quot;: &quot;transfer-v4 locked test&quot;,
+      &quot;official&quot;: 0.8963,
+      &quot;ours&quot;: 0.887195122
+    },
+    {
+      &quot;panel&quot;: &quot;hard-v1&quot;,
+      &quot;official&quot;: 0.749,
+      &quot;ours&quot;: 0.7794117647
+    },
+    {
+      &quot;panel&quot;: &quot;devtools audited&quot;,
+      &quot;official&quot;: 0.789,
+      &quot;ours&quot;: 0.7872892348
+    },
+    {
+      &quot;panel&quot;: &quot;documents-v1&quot;,
+      &quot;official&quot;: 0.869,
+      &quot;ours&quot;: 0.8760683761
+    },
+    {
+      &quot;panel&quot;: &quot;pooled hard+devtools+documents&quot;,
+      &quot;official&quot;: 0.8,
+      &quot;ours&quot;: 0.8139534884
+    },
+    {
+      &quot;panel&quot;: &quot;devtools all sources&quot;,
+      &quot;official&quot;: 0.711,
+      &quot;ours&quot;: 0.7058823529
+    }
+  ],
+  &quot;officialV2&quot;: [
+    {
+      &quot;panel&quot;: &quot;transfer-v4 locked test&quot;,
+      &quot;official&quot;: 0.8887,
+      &quot;ours&quot;: 0.887195122
+    },
+    {
+      &quot;panel&quot;: &quot;hard-v1&quot;,
+      &quot;official&quot;: 0.918,
+      &quot;ours&quot;: 0.7794117647
+    },
+    {
+      &quot;panel&quot;: &quot;devtools audited&quot;,
+      &quot;official&quot;: 0.825,
+      &quot;ours&quot;: 0.7872892348
+    },
+    {
+      &quot;panel&quot;: &quot;documents-v1&quot;,
+      &quot;official&quot;: 0.908,
+      &quot;ours&quot;: 0.8760683761
+    },
+    {
+      &quot;panel&quot;: &quot;pooled hard+devtools+documents&quot;,
+      &quot;official&quot;: 0.889,
+      &quot;ours&quot;: 0.8139534884
+    },
+    {
+      &quot;panel&quot;: &quot;devtools all sources&quot;,
+      &quot;official&quot;: 0.79,
+      &quot;ours&quot;: 0.7058823529
+    }
+  ],
+  &quot;sources&quot;: [
+    {
+      &quot;id&quot;: &quot;training_metrics&quot;,
+      &quot;path&quot;: &quot;../h20_27b_v1_6gpu_20261101/training_metrics.json&quot;,
+      &quot;description&quot;: &quot;六卡训练运行指标&quot;
+    },
+    {
+      &quot;id&quot;: &quot;training_config&quot;,
+      &quot;path&quot;: &quot;../h20_27b_v1_6gpu_20261101/training_config.json&quot;,
+      &quot;description&quot;: &quot;训练超参与基座 revision&quot;
+    },
+    {
+      &quot;id&quot;: &quot;six_suite_summary&quot;,
+      &quot;path&quot;: &quot;../h20_27b_v1_six_test_20261102/summary.json&quot;,
+      &quot;description&quot;: &quot;六套冻结测试结果&quot;
+    },
+    {
+      &quot;id&quot;: &quot;evaluation_provenance&quot;,
+      &quot;path&quot;: &quot;../h20_27b_v1_six_test_20261102/evaluation_path_provenance.json&quot;,
+      &quot;description&quot;: &quot;评测专用 base-path shim 的哈希和边界&quot;
+    },
+    {
+      &quot;id&quot;: &quot;official_v1&quot;,
+      &quot;url&quot;: &quot;https://huggingface.co/jaredpalmer/kev-27b/blob/v1-lora/README.md&quot;,
+      &quot;description&quot;: &quot;官方 Kev-27B v1 模型卡&quot;
+    },
+    {
+      &quot;id&quot;: &quot;official_v2&quot;,
+      &quot;url&quot;: &quot;https://huggingface.co/jaredpalmer/kev-27b/blob/main/README.md&quot;,
+      &quot;description&quot;: &quot;官方 Kev-27B v2 模型卡及 v1/v2 同题对比&quot;
+    }
+  ]
+}</pre></div>
+<h3>../h20_27b_v1_6gpu_20261101/training_config.json</h3><div class='card'><pre class='mono'>{
+  &quot;args&quot;: {
+    &quot;base&quot;: &quot;Qwen/Qwen3.8-27B&quot;,
+    &quot;n_per_source&quot;: 1000,
+    &quot;epochs&quot;: 1,
+    &quot;lr&quot;: 5e-05,
+    &quot;head_lr&quot;: 0.0,
+    &quot;weight_decay&quot;: 0.01,
+    &quot;lora&quot;: 16,
+    &quot;accum&quot;: 1,
+    &quot;holdout&quot;: &quot;&quot;,
+    &quot;perm_kl&quot;: 0.0,
+    &quot;perm_frac&quot;: 0.3,
+    &quot;ord_w&quot;: 0.0,
+    &quot;label_smoothing&quot;: 0.0,
+    &quot;brier_w&quot;: 0.0,
+    &quot;focal_gamma&quot;: 0.0,
+    &quot;suite&quot;: null,
+    &quot;train_sources&quot;: &quot;&quot;,
+    &quot;device&quot;: &quot;cuda&quot;,
+    &quot;batch&quot;: 1,
+    &quot;dtype&quot;: &quot;bf16&quot;,
+    &quot;weights_dtype&quot;: &quot;bf16&quot;,
+    &quot;checkpointing&quot;: 1,
+    &quot;option_isolation&quot;: 0,
+    &quot;special_embeddings&quot;: 0,
+    &quot;head_dim&quot;: 256,
+    &quot;lora_targets&quot;: &quot;all&quot;,
+    &quot;base_revision&quot;: &quot;1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0&quot;,
+    &quot;p_none&quot;: 0.1,
+    &quot;p_none_distract&quot;: 0.12,
+    &quot;p_distract&quot;: 0.15,
+    &quot;p_none_pair&quot;: 0.25,
+    &quot;none_pair_max_state&quot;: null,
+    &quot;synthetic_repeat&quot;: 1,
+    &quot;public_frac&quot;: 1.0,
+    &quot;anchor&quot;: &quot;&quot;,
+    &quot;anchor_w&quot;: 0.0,
+    &quot;anchor_sources&quot;: &quot;&quot;,
+    &quot;out&quot;: &quot;/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101&quot;,
+    &quot;data&quot;: &quot;/data/kev-v1-official-final-20261101/b1v2/train.jsonl&quot;,
+    &quot;max_state&quot;: 7552,
+    &quot;replay&quot;: 0,
+    &quot;init_from&quot;: &quot;&quot;,
+    &quot;full_ft&quot;: 0,
+    &quot;distributed_lora&quot;: 1,
+    &quot;row_budget&quot;: 0,
+    &quot;shared_prefix&quot;: 0,
+    &quot;length_sort&quot;: 0,
+    &quot;pass_tokens_max&quot;: 0,
+    &quot;max_steps&quot;: 0,
+    &quot;save_every_steps&quot;: 0,
+    &quot;save_every_minutes&quot;: 0,
+    &quot;resume&quot;: 0,
+    &quot;stop_after&quot;: 0,
+    &quot;snapshot_fractions&quot;: &quot;&quot;,
+    &quot;snapshot_every_steps&quot;: 0,
+    &quot;snapshot_dir&quot;: &quot;&quot;,
+    &quot;seed&quot;: 2
+  },
+  &quot;suite_sha256&quot;: null,
+  &quot;base_revision&quot;: &quot;1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0&quot;,
+  &quot;init_source&quot;: null,
+  &quot;ordinal_objective&quot;: &quot;ranked_probability_score&quot;,
+  &quot;holdout&quot;: []
+}</pre></div>
+<h3>../h20_27b_v1_6gpu_20261101/training_metrics.json</h3><div class='card'><pre class='mono'>{
+  &quot;wall_seconds&quot;: 14387.923807382584,
+  &quot;records_seen&quot;: 18172,
+  &quot;requested_records&quot;: 15401,
+  &quot;truncated_records&quot;: 0,
+  &quot;rejected_records&quot;: 0,
+  &quot;optimizer_steps&quot;: 2567,
+  &quot;forward_tokens&quot;: 10164492,
+  &quot;step_seconds&quot;: [
+    20.289,
+    1.977,
+    3.58,
+    25.867,
+    9.539,
+    19.379,
+    22.242,
+    1.409,
+    0.84,
+    3.548,
+    1.845,
+    48.546,
+    13.126,
+    1.753,
+    1.302,
+    16.026,
+    1.326,
+    12.687,
+    9.545,
+    1.079,
+    0.787,
+    1.089,
+    1.407,
+    0.774,
+    0.773,
+    3.363,
+    1.749,
+    9.442,
+    0.818,
+    0.794,
+    39.27,
+    1.616,
+    10.37,
+    0.814,
+    3.561,
+    0.82,
+    0.787,
+    12.756,
+    16.439,
+    1.012,
+    6.614,
+    1.168,
+    9.659,
+    15.523,
+    38.554,
+    3.772,
+    1.293,
+    0.784,
+    6.643,
+    6.644,
+    36.51,
+    16.022,
+    9.845,
+    6.483,
+    1.103,
+    1.375,
+    1.948,
+    9.602,
+    3.767,
+    9.206,
+    1.755,
+    3.33,
+    29.312,
+    0.762,
+    6.499,
+    3.411,
+    32.932,
+    8.09,
+    3.73,
+    6.592,
+    9.859,
+    9.924,
+    9.538,
+    51.182,
+    28.123,
+    26.691,
+    10.385,
+    9.744,
+    7.439,
+    1.141,
+    9.611,
+    0.759,
+    9.486,
+    1.409,
+    0.808,
+    1.834,
+    1.459,
+    1.111,
+    1.094,
+    1.293,
+    0.793,
+    6.534,
+    9.785,
+    1.273,
+    1.391,
+    6.334,
+    1.26,
+    40.959,
+    0.816,
+    1.168,
+    0.794,
+    3.78,
+    3.201,
+    0.795,
+    0.867,
+    19.945,
+    1.269,
+    1.143,
+    0.769,
+    1.047,
+    12.742,
+    0.788,
+    10.081,
+    7.68,
+    9.314,
+    0.776,
+    3.185,
+    6.716,
+    7.635,
+    1.21,
+    9.887,
+    6.658,
+    1.304,
+    9.827,
+    1.098,
+    26.727,
+    1.149,
+    20.139,
+    3.486,
+    1.199,
+    6.666,
+    0.903,
+    9.578,
+    15.566,
+    1.124,
+    39.014,
+    1.738,
+    0.804,
+    1.254,
+    3.512,
+    1.301,
+    0.772,
+    3.88,
+    1.07,
+    0.785,
+    9.85,
+    21.261,
+    1.076,
+    26.825,
+    0.859,
+    16.753,
+    3.33,
+    1.095,
+    3.795,
+    9.929,
+    1.137,
+    3.567,
+    1.131,
+    1.179,
+    0.778,
+    22.143,
+    1.942,
+    1.054,
+    9.398,
+    21.792,
+    1.138,
+    3.764,
+    6.809,
+    3.623,
+    0.821,
+    1.701,
+    9.588,
+    1.099,
+    1.781,
+    1.299,
+    1.861,
+    1.06,
+    0.764,
+    6.522,
+    6.322,
+    0.776,
+    1.886,
+    20.713,
+    0.784,
+    9.914,
+    6.484,
+    16.956,
+    3.541,
+    3.651,
+    6.501,
+    9.706,
+    1.282,
+    3.764,
+    1.08,
+    1.289,
+    1.111,
+    10.06,
+    6.382,
+    9.584,
+    6.503,
+    20.462,
+    0.796,
+    1.098,
+    10.529,
+    9.776,
+    0.767,
+    1.133,
+    1.329,
+    1.866,
+    20.981,
+    3.534,
+    9.432,
+    0.919,
+    1.116,
+    1.13,
+    17.267,
+    1.77,
+    1.254,
+    1.027,
+    10.056,
+    3.529,
+    1.379,
+    6.661,
+    1.035,
+    32.527,
+    1.121,
+    0.764,
+    1.381,
+    9.919,
+    32.281,
+    6.551,
+    10.146,
+    3.284,
+    70.302,
+    28.009,
+    1.817,
+    1.097,
+    0.799,
+    0.777,
+    0.834,
+    7.253,
+    6.483,
+    9.872,
+    1.157,
+    1.432,
+    2.012,
+    0.77,
+    0.765,
+    32.185,
+    1.254,
+    3.077,
+    9.594,
+    1.646,
+    1.123,
+    20.86,
+    1.291,
+    0.774,
+    20.799,
+    1.227,
+    0.768,
+    9.655,
+    1.339,
+    1.307,
+    22.122,
+    6.584,
+    9.945,
+    3.781,
+    1.307,
+    9.609,
+    3.084,
+    0.774,
+    1.289,
+    1.365,
+    1.228,
+    0.856,
+    1.276,
+    48.879,
+    0.813,
+    1.967,
+    0.927,
+    1.231,
+    6.464,
+    14.216,
+    32.09,
+    21.811,
+    11.138,
+    1.303,
+    3.44,
+    1.209,
+    0.803,
+    1.099,
+    1.379,
+    10.055,
+    9.647,
+    22.169,
+    1.137,
+    3.326,
+    1.086,
+    21.064,
+    0.824,
+    1.375,
+    1.302,
+    10.791,
+    6.616,
+    0.825,
+    32.262,
+    0.795,
+    0.773,
+    1.471,
+    1.09,
+    1.344,
+    10.035,
+    3.538,
+    1.43,
+    1.283,
+    6.323,
+    0.785,
+    9.739,
+    1.355,
+    9.639,
+    0.873,
+    1.089,
+    1.171,
+    1.067,
+    0.787,
+    32.075,
+    9.567,
+    3.562,
+    9.611,
+    1.214,
+    0.78,
+    1.38,
+    10.918,
+    1.449,
+    22.006,
+    10.169,
+    9.843,
+    0.768,
+    1.342,
+    3.286,
+    1.075,
+    9.606,
+    3.426,
+    43.009,
+    3.293,
+    3.338,
+    1.312,
+    1.317,
+    0.761,
+    1.096,
+    3.434,
+    7.03,
+    1.07,
+    6.507,
+    1.107,
+    9.744,
+    6.466,
+    9.48,
+    0.775,
+    6.466,
+    6.643,
+    4.011,
+    1.126,
+    14.008,
+    39.033,
+    9.85,
+    9.94,
+    0.779,
+    0.894,
+    1.242,
+    1.507,
+    1.169,
+    1.147,
+    0.767,
+    1.895,
+    6.336,
+    0.783,
+    9.614,
+    0.769,
+    1.465,
+    9.543,
+    21.637,
+    3.932,
+    9.515,
+    0.776,
+    39.795,
+    0.802,
+    20.092,
+    3.22,
+    3.494,
+    1.524,
+    1.011,
+    8.362,
+    9.874,
+    1.172,
+    1.299,
+    0.774,
+    1.411,
+    11.485,
+    1.124,
+    1.341,
+    0.784,
+    9.857,
+    6.506,
+    9.625,
+    0.783,
+    2.015,
+    9.687,
+    6.572,
+    1.297,
+    10.126,
+    1.112,
+    39.647,
+    32.591,
+    0.798,
+    0.755,
+    1.4,
+    32.461,
+    1.146,
+    14.182,
+    1.566,
+    1.241,
+    9.856,
+    8.46,
+    1.372,
+    0.998,
+    0.755,
+    9.823,
+    32.219,
+    6.781,
+    1.113,
+    1.105,
+    1.121,
+    0.773,
+    6.641,
+    6.549,
+    0.792,
+    3.357,
+    1.142,
+    9.842,
+    1.069,
+    1.305,
+    9.527,
+    1.2,
+    0.785,
+    9.913,
+    6.487,
+    1.221,
+    1.22,
+    3.768,
+    1.431,
+    7.463,
+    9.537,
+    1.275,
+    3.344,
+    10.05,
+    1.299,
+    0.81,
+    9.467,
+    1.072,
+    1.062,
+    1.266,
+    1.336,
+    6.469,
+    0.773,
+    9.942,
+    6.482,
+    1.098,
+    6.485,
+    2.191,
+    1.094,
+    22.69,
+    39.413,
+    6.37,
+    1.39,
+    3.509,
+    0.894,
+    4.477,
+    3.492,
+    1.143,
+    6.572,
+    9.9,
+    1.164,
+    9.381,
+    0.79,
+    1.012,
+    0.772,
+    1.082,
+    1.134,
+    0.768,
+    1.241,
+    1.224,
+    6.53,
+    22.158,
+    1.095,
+    0.777,
+    0.755,
+    1.276,
+    9.618,
+    1.088,
+    3.98,
+    6.526,
+    1.13,
+    0.777,
+    1.077,
+    0.761,
+    6.489,
+    0.934,
+    1.535,
+    1.069,
+    3.3,
+    1.243,
+    1.046,
+    1.088,
+    0.765,
+    0.769,
+    6.675,
+    0.789,
+    1.757,
+    1.054,
+    1.096,
+    9.686,
+    1.</pre></div>
+<h3>../h20_27b_v1_six_test_20261102/summary.json</h3><div class='card'><pre class='mono'>{
+  &quot;completed_at&quot;: &quot;2026-11-02T05:34:47.422427+00:00&quot;,
+  &quot;run&quot;: &quot;/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101&quot;,
+  &quot;evaluation_shim&quot;: &quot;/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101-eval-localbase&quot;,
+  &quot;evaluation_root&quot;: &quot;/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101-eval-six-localbase-20261102&quot;,
+  &quot;protocol&quot;: &quot;six frozen test suites; kev.benchmark --allow-test; one suite per GPU 0-5; shipped/raw temperature 1.0; accuracy is temperature-invariant&quot;,
+  &quot;models&quot;: {
+    &quot;4B stage4&quot;: {
+      &quot;suites&quot;: [
+        {
+          &quot;suite&quot;: &quot;decision-v7&quot;,
+          &quot;correct&quot;: 1043,
+          &quot;n&quot;: 1200,
+          &quot;accuracy&quot;: 0.8691666666666666,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 1176,
+            &quot;requested_questions&quot;: 1440,
+            &quot;evaluated_records&quot;: 1176,
+            &quot;evaluated_questions&quot;: 1440,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        },
+        {
+          &quot;suite&quot;: &quot;transfer-v4&quot;,
+          &quot;correct&quot;: 551,
+          &quot;n&quot;: 656,
+          &quot;accuracy&quot;: 0.8399390243902439,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 764,
+            &quot;requested_questions&quot;: 764,
+            &quot;evaluated_records&quot;: 764,
+            &quot;evaluated_questions&quot;: 764,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        },
+        {
+          &quot;suite&quot;: &quot;transfer-v9&quot;,
+          &quot;correct&quot;: 811,
+          &quot;n&quot;: 1046,
+          &quot;accuracy&quot;: 0.7753346080305927,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 1264,
+            &quot;requested_questions&quot;: 1264,
+            &quot;evaluated_records&quot;: 1264,
+            &quot;evaluated_questions&quot;: 1264,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        },
+        {
+          &quot;suite&quot;: &quot;hard-v1&quot;,
+          &quot;correct&quot;: 871,
+          &quot;n&quot;: 1088,
+          &quot;accuracy&quot;: 0.8005514705882353,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 700,
+            &quot;requested_questions&quot;: 1088,
+            &quot;evaluated_records&quot;: 700,
+            &quot;evaluated_questions&quot;: 1088,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        },
+        {
+          &quot;suite&quot;: &quot;devtools-v1&quot;,
+          &quot;correct&quot;: 807,
+          &quot;n&quot;: 1073,
+          &quot;accuracy&quot;: 0.7520969245107176,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 900,
+            &quot;requested_questions&quot;: 1073,
+            &quot;evaluated_records&quot;: 900,
+            &quot;evaluated_questions&quot;: 1073,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        },
+        {
+          &quot;suite&quot;: &quot;documents-v1&quot;,
+          &quot;correct&quot;: 836,
+          &quot;n&quot;: 936,
+          &quot;accuracy&quot;: 0.8931623931623932,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 574,
+            &quot;requested_questions&quot;: 936,
+            &quot;evaluated_records&quot;: 574,
+            &quot;evaluated_questions&quot;: 936,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        }
+      ],
+      &quot;weighted_correct&quot;: 4919,
+      &quot;weighted_n&quot;: 5999,
+      &quot;weighted_accuracy&quot;: 0.8199699949991666
+    },
+    &quot;9B stage3&quot;: {
+      &quot;suites&quot;: [
+        {
+          &quot;suite&quot;: &quot;decision-v7&quot;,
+          &quot;correct&quot;: 1040,
+          &quot;n&quot;: 1200,
+          &quot;accuracy&quot;: 0.8666666666666667,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 1176,
+            &quot;requested_questions&quot;: 1440,
+            &quot;evaluated_records&quot;: 1176,
+            &quot;evaluated_questions&quot;: 1440,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        },
+        {
+          &quot;suite&quot;: &quot;transfer-v4&quot;,
+          &quot;correct&quot;: 569,
+          &quot;n&quot;: 656,
+          &quot;accuracy&quot;: 0.8673780487804879,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 764,
+            &quot;requested_questions&quot;: 764,
+            &quot;evaluated_records&quot;: 764,
+            &quot;evaluated_questions&quot;: 764,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        },
+        {
+          &quot;suite&quot;: &quot;transfer-v9&quot;,
+          &quot;correct&quot;: 842,
+          &quot;n&quot;: 1046,
+          &quot;accuracy&quot;: 0.8049713193116634,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 1264,
+            &quot;requested_questions&quot;: 1264,
+            &quot;evaluated_records&quot;: 1264,
+            &quot;evaluated_questions&quot;: 1264,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        },
+        {
+          &quot;suite&quot;: &quot;hard-v1&quot;,
+          &quot;correct&quot;: 909,
+          &quot;n&quot;: 1088,
+          &quot;accuracy&quot;: 0.8354779411764706,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 700,
+            &quot;requested_questions&quot;: 1088,
+            &quot;evaluated_records&quot;: 700,
+            &quot;evaluated_questions&quot;: 1088,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        },
+        {
+          &quot;suite&quot;: &quot;devtools-v1&quot;,
+          &quot;correct&quot;: 871,
+          &quot;n&quot;: 1073,
+          &quot;accuracy&quot;: 0.8117427772600186,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 900,
+            &quot;requested_questions&quot;: 1073,
+            &quot;evaluated_records&quot;: 900,
+            &quot;evaluated_questions&quot;: 1073,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        },
+        {
+          &quot;suite&quot;: &quot;documents-v1&quot;,
+          &quot;correct&quot;: 847,
+          &quot;n&quot;: 936,
+          &quot;accuracy&quot;: 0.9049145299145299,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 574,
+            &quot;requested_questions&quot;: 936,
+            &quot;evaluated_records&quot;: 574,
+            &quot;evaluated_questions&quot;: 936,
+            &quot;rejected_records&quot;: 0,
+            &quot;truncated_records&quot;: 0
+          }
+        }
+      ],
+      &quot;weighted_correct&quot;: 5078,
+      &quot;weighted_n&quot;: 5999,
+      &quot;weighted_accuracy&quot;: 0.846474412402067
+    },
+    &quot;27B v1&quot;: {
+      &quot;suites&quot;: [
+        {
+          &quot;suite&quot;: &quot;decision-v7&quot;,
+          &quot;correct&quot;: 1047,
+          &quot;n&quot;: 1200,
+          &quot;accuracy&quot;: 0.8725,
+          &quot;coverage&quot;: {
+            &quot;requested_records&quot;: 1176,
+            &quot;requested_questions&quot;: 1440,
+            &quot;evaluated_records&quot;: 1176,
+            &quot;evaluated_questions&quot;: 1440</pre></div>
+<h3>../h20_27b_v1_six_test_20261102/evaluation_path_provenance.json</h3><div class='card'><pre class='mono'>{
+  &quot;created_at&quot;: &quot;2026-11-02T05:21:23.001413+00:00&quot;,
+  &quot;purpose&quot;: &quot;evaluation-only path shim; original checkpoint unchanged&quot;,
+  &quot;source_run&quot;: &quot;/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101&quot;,
+  &quot;source_base&quot;: &quot;Qwen/Qwen3.8-27B&quot;,
+  &quot;source_base_revision&quot;: &quot;1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0&quot;,
+  &quot;local_base&quot;: &quot;/data/models/Qwen3.8-27B&quot;,
+  &quot;source_adapter_sha256&quot;: &quot;2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa&quot;,
+  &quot;shim_adapter_sha256&quot;: &quot;2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa&quot;,
+  &quot;source_head_sha256&quot;: &quot;e35c7090af0b6ddde9740065d2c5747a9a31caaa0618f620de88a8d4c29b2cb3&quot;,
+  &quot;shim_head_sha256&quot;: &quot;dd65b35246999aeaa9529a652fd8ee76c9936b71e4ec3e48c31710b382d8f41a&quot;,
+  &quot;source_adapter_config_sha256&quot;: &quot;abb269977ffe77d6813ab93d4792c42078288da6ed618096e66ba2004bb129c2&quot;,
+  &quot;shim_adapter_config_sha256&quot;: &quot;07e0b14cd199cc9df5f709b176a0bf45f33b2c46ac23fb9b695accf92ff709d7&quot;,
+  &quot;source_head_unchanged&quot;: true
+}</pre></div>
+<h2>3 · 结果（自动）</h2>
+<h3>results.csv <span class='k'>（15 行）</span></h3>
+<table><tr><th>section</th><th>metric</th><th>ours</th><th>reference</th><th>delta_pp</th><th>note</th></tr>
+<tr><td>training</td><td>optimizer_steps</td><td>2567</td><td></td><td></td><td>completed</td></tr>
+<tr><td>training</td><td>wall_hours</td><td>3.9966</td><td></td><td></td><td>six H20 GPUs</td></tr>
+<tr><td>training</td><td>rejected_records</td><td>0</td><td></td><td></td><td>training</td></tr>
+<tr><td>training</td><td>truncated_records</td><td>0</td><td></td><td></td><td>training</td></tr>
+<tr><td>six_suite</td><td>weighted_accuracy</td><td>82.33</td><td></td><td></td><td>4939/5999</td></tr>
+<tr><td>official_v1</td><td>transfer_v4</td><td>88.72</td><td>89.63</td><td>-0.91</td><td>same locked test</td></tr>
+<tr><td>official_v1</td><td>hard_v1</td><td>77.94</td><td>74.90</td><td>3.04</td><td>same test</td></tr>
+<tr><td>official_v1</td><td>devtools_audited</td><td>78.73</td><td>78.90</td><td>-0.17</td><td>607/771</td></tr>
+<tr><td>official_v1</td><td>documents_v1</td><td>87.61</td><td>86.90</td><td>0.71</td><td>same test</td></tr>
+<tr><td>official_v1</td><td>pooled_hard_devtools_documents</td><td>81.40</td><td>80.00</td><td>1.40</td><td>2275/2795</td></tr>
+<tr><td>official_v2</td><td>transfer_v4</td><td>88.72</td><td>88.87</td><td>-0.15</td><td>same locked test</td></tr>
+<tr><td>official_v2</td><td>hard_v1</td><td>77.94</td><td>91.80</td><td>-13.86</td><td>same test</td></tr>
+<tr><td>official_v2</td><td>devtools_audited</td><td>78.73</td><td>82.50</td><td>-3.77</td><td>607/771</td></tr>
+<tr><td>official_v2</td><td>documents_v1</td><td>87.61</td><td>90.80</td><td>-3.19</td><td>same test</td></tr>
+<tr><td>official_v2</td><td>pooled_hard_devtools_documents</td><td>81.40</td><td>88.90</td><td>-7.50</td><td>2275/2795</td></tr>
+</table>
+<h2>4 · 作者填写（AI 不许代笔）</h2>
+<div class='card bad'><b>跑之前我预测这个数是多少</b><pre><span class=miss>（空）</span></pre></div>
+<div class='card bad'><b>哪个数出乎我意料, 为什么</b><pre><span class=miss>（空）</span></pre></div>
+<div class='card bad'><b>我改了什么才让它跑通</b><pre><span class=miss>（空）</span></pre></div>
+<div class='card bad'><b>如果这个结论是错的, 最可能错在哪一步</b><pre><span class=miss>（空）</span></pre></div>
+<div class='card bad'><b>哪几个数我敢在会上被追问, 哪几个不敢</b><pre><span class=miss>（空）</span></pre></div>
+<h2>5 · 检查表（REFORMS 派生）</h2>
+<h3>研究设计</h3>
+<div>✅ 实验目标已写明。</div>
+<div>⬜ 未找到训练前冻结的主指标阈值。 — 未做原因：现有归档中无 preregistration 文件。</div>
+<div>✅ 负结果和评测弱项已保留在报告中。</div>
+<h3>计算可复现性</h3>
+<div>⬜ 完整代码 commit 未冻结。 — 未做原因：本次使用当前代码与未提交 distributed-LoRA 改动。</div>
+<div>✅ 随机种子已记录（seed=2）。</div>
+<div>✅ 训练数据、adapter、head、config、metrics 都有 SHA-256。</div>
+<div>⬜ 没有从新的干净目录做第二次完整重跑。 — 未做原因：本次只跑了单 seed 正式训练。</div>
+<h3>数据与预处理</h3>
+<div>✅ 基座 revision、数据记录数和 SHA-256 已记录。</div>
+<div>✅ rejected/truncated 都已记录为 0。</div>
+<div>✅ none-pair 扩增导致 records seen 多于 requested records 已说明。</div>
+<div>✅ 六套评测使用冻结 manifest，评测副本的改动边界已保存。</div>
+<h3>建模</h3>
+<div>✅ 基座、LoRA rank、学习率、batch、epoch、precision、max state 和 seed 已记录。</div>
+<div>✅ 六卡 effective batch=6 与官方 effective batch=8 的差异已披露。</div>
+<div>⬜ 4B/9B 不是同训练预处理和同数据预算。 — 未做原因：它们只用于描述性对比，不称受控 scaling。</div>
+<h3>数据泄漏</h3>
+<div>✅ 训练数据是官方 B1-v2 数据，六套 test 没有被本次用于训练或选 checkpoint。</div>
+<div>⬜ 本次未重做 B1-v2 与六套 test 的全量近重复扫描。 — 未做原因：复现使用官方冻结数据与官方评测套件。</div>
+<h3>指标与不确定性</h3>
+<div>✅ 每套准确率、分母和 clean 加权结果已报告。</div>
+<div>⬜ 没有 seed 间方差。 — 未做原因：只训练了 seed=2 一个 checkpoint。</div>
+<div>⬜ 未为本次与官方对比重算 paired bootstrap 区间。 — 未做原因：没有官方模型在本地的逐题 logits/rows。</div>
+<h3>泛化性</h3>
+<div>✅ transfer-v4 和 transfer-v9 作为域外/迁移证据分开报告。</div>
+<div>✅ hard/devtools/documents 与 v2 的 trained-family 边界已说明。</div>
+<div>✅ 没有把单 seed、单训练配方的结果扩写成普遍结论。</div>
+<h2>6 · 血缘（自动）</h2><table><tr><th>文件</th><th>大小</th><th>修改时间(UTC)</th><th>SHA-256</th></tr>
+<tr><td class='mono'>reviewed_snapshot.json</td><td>3,829</td><td class='mono'>2026-11-02 06:52:36</td><td class='mono'>9cb3decf761db892…</td></tr>
+<tr><td class='mono'>../h20_27b_v1_6gpu_20261101/training_config.json</td><td>1,630</td><td class='mono'>2026-11-01 17:43:26</td><td class='mono'>3e0ad17e5a8b539d…</td></tr>
+<tr><td class='mono'>../h20_27b_v1_6gpu_20261101/training_metrics.json</td><td>28,951</td><td class='mono'>2026-11-01 17:43:26</td><td class='mono'>526e10813e439eb5…</td></tr>
+<tr><td class='mono'>../h20_27b_v1_six_test_20261102/summary.json</td><td>12,303</td><td class='mono'>2026-11-02 05:35:48</td><td class='mono'>cc2db931dc535cda…</td></tr>
+<tr><td class='mono'>../h20_27b_v1_six_test_20261102/evaluation_path_provenance.json</td><td>948</td><td class='mono'>2026-11-02 05:35:49</td><td class='mono'>9a2a15afb1fb5da6…</td></tr>
+<tr><td class='mono'>results.csv</td><td>823</td><td class='mono'>2026-11-02 06:52:36</td><td class='mono'>c2576150f645fe4e…</td></tr>
+</table>
+<div class='card'><span class='pill'>python 3.9.6</span><span class='pill'>cwd /Users/chen/Documents/ChatGPT/procogs</span><span class='pill'>git 3e91d43</span></div>

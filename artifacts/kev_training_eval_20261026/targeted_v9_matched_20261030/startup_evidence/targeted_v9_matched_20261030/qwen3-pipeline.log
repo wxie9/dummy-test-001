@@ -1,0 +1,49 @@
+replay: 6000 of 12576 suite training records mixed with 2520 from /C20545/kev-08b-official-repro-20261026/targeted_v9_matched_20261030/train.jsonl
+{"training_contexts_including_replay": 8520, "training_questions": 11416, "development_contexts": 562, "rejected_development": [], "context": {"max_state": 7552, "max_branch": 8192, "max_packed": 9216}, "base_contexts": 1500, "additional_views": 1020, "retained_byte_identical": 300, "matched_groups": 1020, "matched_choice_augmentation_checks": 2910, "expected_optimizer_steps": 1065, "replay_records": 6000, "data_sha256": "2932da30f01f37e6443f911399fa6195e99ca8605a5e92c85dcec7ba1896352d", "augmentation_note": "Candidate values preserved; independently seeded permutations need not have the same order across paired records."}
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  54%|█████▍    | 168/310 [00:00<00:00, 1660.78it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1818.91it/s]
+evaluated 50/562
+evaluated 100/562
+evaluated 150/562
+evaluated 200/562
+evaluated 250/562
+evaluated 300/562
+evaluated 350/562
+evaluated 400/562
+evaluated 450/562
+evaluated 500/562
+evaluated 550/562
+{"clean": {"n": 856, "nll": 1.4068141635915214, "acc": 0.34345794392523366, "ece": 0.027736153397826747, "brier": 0.7312818081575504, "mean_conf": 0.3588738223408149, "confident_error_rate": 0.0, "coverage_at_0_9": 0.0, "accuracy_at_0_9": null, "coverage_at_5pct_error": 0.0035046728971962616, "coverage_at_1pct_error": 0.0035046728971962616, "aurc": 0.5446463260406513, "error_rate_at_0_9": null, "confidence_bias": 0.01541587841558123, "top_bins": {"0.9": {"n": 0, "errors": 0, "error_rate": null}, "0.95": {"n": 0, "errors": 0, "error_rate": null}, "0.99": {"n": 0, "errors": 0, "error_rate": null}}, "selective": {"0.5": {"coverage": 0.5, "accuracy": 0.4322429906542056, "confidence_cutoff": 0.32552494143583144}, "0.8": {"coverage": 0.8002336448598131, "accuracy": 0.3795620437956204, "confidence_cutoff": 0.24641889722262783}}, "score_mae": 1.5426033902644272, "ranked_probability_score": 0.2054045240641013}, "coverage": {"requested_records": 562, "requested_questions": 856, "evaluated_records": 562, "evaluated_questions": 856, "rejected_records": 0, "truncated_records": 0}}
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  60%|██████    | 187/310 [00:00<00:00, 1868.09it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 2035.42it/s]
+evaluated 50/140
+evaluated 100/140
+{"clean": {"n": 190, "nll": 1.335465653294395, "acc": 0.34210526315789475, "ece": 0.09404267110663399, "brier": 0.7124786961565092, "mean_conf": 0.37756964121655706, "confident_error_rate": 0.0, "coverage_at_0_9": 0.0, "accuracy_at_0_9": null, "coverage_at_5pct_error": 0.021052631578947368, "coverage_at_1pct_error": 0.021052631578947368, "aurc": 0.5666934394092837, "error_rate_at_0_9": null, "confidence_bias": 0.035464378058662316, "top_bins": {"0.9": {"n": 0, "errors": 0, "error_rate": null}, "0.95": {"n": 0, "errors": 0, "error_rate": null}, "0.99": {"n": 0, "errors": 0, "error_rate": null}}, "selective": {"0.5": {"coverage": 0.5, "accuracy": 0.4, "confidence_cutoff": 0.3455315556044247}, "0.8": {"coverage": 0.8, "accuracy": 0.39473684210526316, "confidence_cutoff": 0.2444376276601068}}, "score_mae": 1.292308877708333, "ranked_probability_score": 0.17430298243813172}, "coverage": {"requested_records": 140, "requested_questions": 190, "evaluated_records": 140, "evaluated_questions": 190, "rejected_records": 0, "truncated_records": 0}}
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  59%|█████▊    | 182/310 [00:00<00:00, 1811.28it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1950.98it/s]
+evaluated 50/2520
+evaluated 100/2520
+evaluated 150/2520
+evaluated 200/2520
+evaluated 250/2520
+evaluated 300/2520
+evaluated 350/2520
+evaluated 400/2520
+evaluated 450/2520
+evaluated 500/2520
+evaluated 550/2520
+evaluated 600/2520
+evaluated 650/2520
+evaluated 700/2520
+evaluated 750/2520
+evaluated 800/2520
+evaluated 850/2520
+evaluated 900/2520
+evaluated 950/2520
+evaluated 1000/2520
+evaluated 1050/2520
+evaluated 1100/2520
+evaluated 1150/2520
+evaluated 1200/2520
+evaluated 1250/2520
+evaluated 1300/2520
+evaluated 1350/2520
+evaluated 1400/2520
+evaluated 1450/2520

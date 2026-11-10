@@ -1,0 +1,31 @@
+{
+  "title": "Kev-27B v1 六卡训练与评测",
+  "project": "Kev training and evaluation",
+  "frozen": [
+    "Qwen/Qwen3.8-27B@1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+    "B1-v2 train: 15,401 records; SHA-256 fb86543b3baccb5aff9355065821e8481a083b874521637dc2f3a5cb06faa56a",
+    "Six frozen suite manifests are identical to the earlier 4B/9B evaluation",
+    "Adapter SHA-256 2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa"
+  ],
+  "new_numbers": [
+    "Training complete: 2,567/2,567 steps in 3:59:47.9; rejected/truncated 0/0",
+    "Six-suite clean weighted accuracy: 4,939/5,999 = 82.33%",
+    "Official-v1-aligned pooled hard+devtools+documents: 2,275/2,795 = 81.40% vs official 80.00%",
+    "Transfer-v4: 88.72% vs official v1 89.63% and official v2 88.87%",
+    "Gradient clipping occurred on 2,157/2,567 steps = 84.0%"
+  ],
+  "next_gate": "Before calling the run an exact reproduction, either rerun with official effective batch 8 and a frozen code commit or add a second seed; before reporting calibration, fit temperature on a compliant held-out pool.",
+  "human_notes": "human_notes.md",
+  "checklist": "checklist.md",
+  "prereg": "prereg.txt",
+  "artifacts": [
+    "reviewed_snapshot.json",
+    "../h20_27b_v1_6gpu_20261101/training_config.json",
+    "../h20_27b_v1_6gpu_20261101/training_metrics.json",
+    "../h20_27b_v1_six_test_20261102/summary.json",
+    "../h20_27b_v1_six_test_20261102/evaluation_path_provenance.json"
+  ],
+  "tables": ["results.csv"],
+  "figures": [],
+  "out": "report.html"
+}

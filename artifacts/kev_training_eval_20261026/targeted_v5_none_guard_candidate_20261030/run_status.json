@@ -1,0 +1,93 @@
+{
+  "status": "training_and_evaluation_complete_goal_not_established",
+  "goal_achieved": false,
+  "remote_root": "/C20545/kev-08b-official-repro-20261026",
+  "ssh_session_id": 49090,
+  "epochs": 1,
+  "planned_steps": 938,
+  "qwen3": {
+    "gpu": 3,
+    "run": "runs/qwen3-20261030-targeted-v5-guard",
+    "pipeline_live": false,
+    "status": "complete",
+    "planned_steps": 938,
+    "historical_processes": {
+      "pipeline_pid": 107751,
+      "training_pid": 110102,
+      "last_observed_step": 490
+    },
+    "completed_steps": 938,
+    "training_wall_seconds": 820.0773060321808,
+    "seven_pooled": {
+      "questions": 1000,
+      "contexts": 800,
+      "before_correct": 512,
+      "after_correct": 514,
+      "before_pct": 51.2,
+      "after_pct": 51.4,
+      "delta_pp": 0.2,
+      "repaired": 45,
+      "newly_wrong": 43,
+      "old_wrong": 488,
+      "repair_pct": 9.221311475409836,
+      "paired_context_bootstrap_95pct_pp": [
+        -1.6145307769929365,
+        2.075098814229249
+      ]
+    },
+    "seven_deltas_pp": {
+      "tool_routing": 0.6666666666666666,
+      "temporal": 3.4188034188034186,
+      "probability": -1.2658227848101267,
+      "insufficient": -5.0,
+      "multihop": -1.6,
+      "policy": 0.5,
+      "injection": 3.3333333333333335
+    }
+  },
+  "qwen35": {
+    "gpu": 4,
+    "run": "runs/qwen35-20261030-targeted-v5-guard",
+    "pipeline_live": false,
+    "status": "complete",
+    "planned_steps": 938,
+    "historical_processes": {
+      "pipeline_pid": 107752,
+      "training_pid": 111126,
+      "last_observed_step": 420
+    },
+    "completed_steps": 938,
+    "training_wall_seconds": 907.4489800930023,
+    "seven_pooled": {
+      "questions": 1000,
+      "contexts": 800,
+      "before_correct": 551,
+      "after_correct": 584,
+      "before_pct": 55.1,
+      "after_pct": 58.4,
+      "delta_pp": 3.3,
+      "repaired": 56,
+      "newly_wrong": 23,
+      "old_wrong": 449,
+      "repair_pct": 12.47216035634744,
+      "paired_context_bootstrap_95pct_pp": [
+        1.503006012024048,
+        5.074626865671642
+      ]
+    },
+    "seven_deltas_pp": {
+      "tool_routing": 12.666666666666666,
+      "temporal": 0.8547008547008547,
+      "probability": -0.6329113924050633,
+      "insufficient": 4.0,
+      "multihop": -0.8,
+      "policy": -0.5,
+      "injection": 8.0
+    }
+  },
+  "next": "Both controls are complete and all four pipelines have exited. Integrate the 1500-context next data revision, retaining the original three families and the none-option guard. Do not restart these completed runs.",
+  "previous_live_check_utc": "2026-10-29T22:07:12.570564+00:00",
+  "finalized_at_utc": "2026-10-29T22:18:51.103616+00:00",
+  "comparison_sha256": "6c2e0182f37a4b71fa03151e659b8fc68bb53193e2b839d0239b314675cd4d6b",
+  "all_control_processes_absent_verified_at_utc": "2026-10-29T22:33:22Z"
+}

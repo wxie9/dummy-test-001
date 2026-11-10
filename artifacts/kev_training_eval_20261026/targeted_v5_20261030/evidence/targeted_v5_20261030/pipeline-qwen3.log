@@ -1,0 +1,265 @@
+replay: 6000 of 12576 suite training records mixed with 1500 from /C20545/kev-08b-official-repro-20261026/targeted_v5_20261030/train.jsonl
+{"training_contexts_including_replay": 7500, "training_questions": 9481, "development_contexts": 340, "rejected_development": [], "context": {"max_state": 7552, "max_branch": 8192, "max_packed": 9216}}
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  62%|██████▏   | 191/310 [00:00<00:00, 1904.03it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1999.60it/s]
+evaluated 50/340
+evaluated 100/340
+evaluated 150/340
+evaluated 200/340
+evaluated 250/340
+evaluated 300/340
+{"clean": {"n": 440, "nll": 1.4282082796005562, "acc": 0.34545454545454546, "ece": 0.09173230573713287, "brier": 0.7284152652293846, "mean_conf": 0.36958135885051835, "confident_error_rate": 0.0, "coverage_at_0_9": 0.0, "accuracy_at_0_9": null, "coverage_at_5pct_error": 0.0, "coverage_at_1pct_error": 0.0, "aurc": 0.5430477290698349, "error_rate_at_0_9": null, "confidence_bias": 0.02412681339597289, "top_bins": {"0.9": {"n": 0, "errors": 0, "error_rate": null}, "0.95": {"n": 0, "errors": 0, "error_rate": null}, "0.99": {"n": 0, "errors": 0, "error_rate": null}}, "selective": {"0.5": {"coverage": 0.5, "accuracy": 0.4863636363636364, "confidence_cutoff": 0.3445484327355458}, "0.8": {"coverage": 0.8, "accuracy": 0.3721590909090909, "confidence_cutoff": 0.23104921784850305}}, "score_mae": 1.3716268411700736, "ranked_probability_score": 0.1926378819336283}, "coverage": {"requested_records": 340, "requested_questions": 440, "evaluated_records": 340, "evaluated_questions": 440, "rejected_records": 0, "truncated_records": 0}}
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  70%|███████   | 218/310 [00:00<00:00, 2173.93it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 2209.39it/s]
+delta: warm start from /C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3: 392 adapter tensors and the pointer head loaded
+device=cuda trainable params=10.6M
+replay: 6000 of 12576 suite training records mixed with 1500 from /C20545/kev-08b-official-repro-20261026/targeted_v5_20261030/train.jsonl
+7500 training requests (holdout=[]), questions by type {'choice': 5224, 'score': 1720, 'noul': 2537}
+ep0 step 10/938 loss 0.542 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 20/938 loss 0.635 kl 0.000 anchor 0.000 0.091s/rec
+ep0 step 30/938 loss 0.477 kl 0.000 anchor 0.000 0.095s/rec
+ep0 step 40/938 loss 0.601 kl 0.000 anchor 0.000 0.096s/rec
+ep0 step 50/938 loss 0.533 kl 0.000 anchor 0.000 0.092s/rec
+ep0 step 60/938 loss 0.671 kl 0.000 anchor 0.000 0.090s/rec
+ep0 step 70/938 loss 0.660 kl 0.000 anchor 0.000 0.091s/rec
+ep0 step 80/938 loss 0.564 kl 0.000 anchor 0.000 0.091s/rec
+ep0 step 90/938 loss 0.643 kl 0.000 anchor 0.000 0.091s/rec
+ep0 step 100/938 loss 0.491 kl 0.000 anchor 0.000 0.089s/rec
+ep0 step 110/938 loss 0.541 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 120/938 loss 0.611 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 130/938 loss 0.668 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 140/938 loss 0.578 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 150/938 loss 0.748 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 160/938 loss 0.644 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 170/938 loss 0.489 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 180/938 loss 0.490 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 190/938 loss 0.618 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 200/938 loss 0.453 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 210/938 loss 0.687 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 220/938 loss 0.566 kl 0.000 anchor 0.000 0.089s/rec
+ep0 step 230/938 loss 0.580 kl 0.000 anchor 0.000 0.089s/rec
+ep0 step 240/938 loss 0.740 kl 0.000 anchor 0.000 0.089s/rec
+ep0 step 250/938 loss 0.575 kl 0.000 anchor 0.000 0.089s/rec
+ep0 step 260/938 loss 0.838 kl 0.000 anchor 0.000 0.089s/rec
+ep0 step 270/938 loss 0.560 kl 0.000 anchor 0.000 0.089s/rec
+ep0 step 280/938 loss 0.538 kl 0.000 anchor 0.000 0.089s/rec
+ep0 step 290/938 loss 0.490 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 300/938 loss 0.560 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 310/938 loss 0.563 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 320/938 loss 0.489 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 330/938 loss 0.547 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 340/938 loss 0.589 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 350/938 loss 0.547 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 360/938 loss 0.384 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 370/938 loss 0.413 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 380/938 loss 0.558 kl 0.000 anchor 0.000 0.088s/rec
+ep0 step 390/938 loss 0.583 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 400/938 loss 0.447 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 410/938 loss 0.693 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 420/938 loss 0.714 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 430/938 loss 0.465 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 440/938 loss 0.420 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 450/938 loss 0.501 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 460/938 loss 0.572 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 470/938 loss 0.452 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 480/938 loss 0.557 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 490/938 loss 0.615 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 500/938 loss 0.442 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 510/938 loss 0.490 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 520/938 loss 0.388 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 530/938 loss 0.306 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 540/938 loss 0.710 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 550/938 loss 0.342 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 560/938 loss 0.711 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 570/938 loss 0.415 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 580/938 loss 0.477 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 590/938 loss 0.506 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 600/938 loss 0.521 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 610/938 loss 0.899 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 620/938 loss 0.279 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 630/938 loss 0.537 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 640/938 loss 0.497 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 650/938 loss 0.670 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 660/938 loss 0.587 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 670/938 loss 0.482 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 680/938 loss 0.372 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 690/938 loss 0.612 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 700/938 loss 0.432 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 710/938 loss 0.424 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 720/938 loss 0.547 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 730/938 loss 0.524 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 740/938 loss 0.623 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 750/938 loss 0.380 kl 0.000 anchor 0.000 0.087s/rec
+ep0 step 760/938 loss 0.725 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 770/938 loss 0.452 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 780/938 loss 0.534 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 790/938 loss 0.455 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 800/938 loss 0.339 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 810/938 loss 0.623 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 820/938 loss 0.545 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 830/938 loss 0.687 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 840/938 loss 0.618 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 850/938 loss 0.502 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 860/938 loss 0.557 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 870/938 loss 0.667 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 880/938 loss 0.506 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 890/938 loss 0.319 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 900/938 loss 0.543 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 910/938 loss 0.575 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 920/938 loss 0.729 kl 0.000 anchor 0.000 0.086s/rec
+ep0 step 930/938 loss 0.398 kl 0.000 anchor 0.000 0.086s/rec
+saved /C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v5/stage4
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  60%|██████    | 186/310 [00:00<00:00, 1852.43it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1926.08it/s]
+evaluated 50/340
+evaluated 100/340
+evaluated 150/340
+evaluated 200/340
+evaluated 250/340
+evaluated 300/340
+{"clean": {"n": 440, "nll": 1.3238578603716633, "acc": 0.4318181818181818, "ece": 0.092980672207823, "brier": 0.6840434009320612, "mean_conf": 0.500884068784079, "confident_error_rate": 0.01818181818181818, "coverage_at_0_9": 0.031818181818181815, "accuracy_at_0_9": 0.42857142857142855, "coverage_at_5pct_error": 0.0, "coverage_at_1pct_error": 0.0, "aurc": 0.45297178600903926, "error_rate_at_0_9": 0.5714285714285714, "confidence_bias": 0.06906588696589716, "top_bins": {"0.9": {"n": 14, "errors": 8, "error_rate": 0.5714285714285714}, "0.95": {"n": 9, "errors": 6, "error_rate": 0.6666666666666666}, "0.99": {"n": 0, "errors": 0, "error_rate": null}}, "selective": {"0.5": {"coverage": 0.5, "accuracy": 0.5727272727272728, "confidence_cutoff": 0.4747027623968497}, "0.8": {"coverage": 0.8, "accuracy": 0.4971590909090909, "confidence_cutoff": 0.32979378795284797}}, "score_mae": 1.3291435361265656, "ranked_probability_score": 0.1867793013090872}, "coverage": {"requested_records": 340, "requested_questions": 440, "evaluated_records": 340, "evaluated_questions": 440, "rejected_records": 0, "truncated_records": 0}}
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  49%|████▊     | 151/310 [00:00<00:00, 1507.47it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1694.31it/s]
+evaluated 50/700
+evaluated 100/700
+evaluated 150/700
+evaluated 200/700
+evaluated 250/700
+evaluated 300/700
+evaluated 350/700
+evaluated 400/700
+evaluated 450/700
+evaluated 500/700
+evaluated 550/700
+evaluated 600/700
+evaluated 650/700
+evaluated 700/700
+{
+  "objective": -1.0331522769638235,
+  "clean": {
+    "n": 1088,
+    "nll": 1.0177406769141575,
+    "acc": 0.5542279411764706,
+    "ece": 0.045263052166349904,
+    "brier": 0.5473084773366624,
+    "mean_conf": 0.5883120691161586,
+    "confident_error_rate": 0.011029411764705883,
+    "coverage_at_0_9": 0.11397058823529412,
+    "accuracy_at_0_9": 0.9032258064516129,
+    "coverage_at_5pct_error": 0.022058823529411766,
+    "coverage_at_1pct_error": 0.003676470588235294,
+    "aurc": 0.2576723975133434,
+    "error_rate_at_0_9": 0.0967741935483871,
+    "confidence_bias": 0.03408412793968807,
+    "top_bins": {
+      "0.9": {
+        "n": 124,
+        "errors": 12,
+        "error_rate": 0.0967741935483871
+      },
+      "0.95": {
+        "n": 60,
+        "errors": 5,
+        "error_rate": 0.08333333333333333
+      },
+      "0.99": {
+        "n": 5,
+        "errors": 1,
+        "error_rate": 0.2
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.7463235294117647,
+        "confidence_cutoff": 0.5519064664840698
+      },
+      "0.8": {
+        "coverage": 0.8005514705882353,
+        "accuracy": 0.6119402985074627,
+        "confidence_cutoff": 0.3808938534491222
+      }
+    },
+    "score_mae": 1.012298621558764,
+    "ranked_probability_score": 0.1249097809541651
+  },
+  "coverage": {
+    "requested_records": 700,
+    "requested_questions": 1088,
+    "evaluated_records": 700,
+    "evaluated_questions": 1088,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:  56%|█████▌    | 174/310 [00:00<00:00, 1739.33it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 1934.51it/s]
+evaluated 50/900
+evaluated 100/900
+evaluated 150/900
+evaluated 200/900
+evaluated 250/900
+evaluated 300/900
+evaluated 350/900
+evaluated 400/900
+evaluated 450/900
+evaluated 500/900
+evaluated 550/900
+evaluated 600/900
+evaluated 650/900
+evaluated 700/900
+evaluated 750/900
+evaluated 800/900
+evaluated 850/900
+evaluated 900/900
+{
+  "objective": -0.8233883249861417,
+  "clean": {
+    "n": 1073,
+    "nll": 0.7964568887151822,
+    "acc": 0.6383970177073626,
+    "ece": 0.04811960427270284,
+    "brier": 0.459038769502327,
+    "mean_conf": 0.6719493709967744,
+    "confident_error_rate": 0.023299161230195712,
+    "coverage_at_0_9": 0.25256290773532153,
+    "accuracy_at_0_9": 0.9077490774907749,
+    "coverage_at_5pct_error": 0.19105312208760486,
+    "coverage_at_1pct_error": 0.0195712954333644,
+    "aurc": 0.18357138560608635,
+    "error_rate_at_0_9": 0.09225092250922509,
+    "confidence_bias": 0.03355235328941186,
+    "top_bins": {
+      "0.9": {
+        "n": 271,
+        "errors": 25,
+        "error_rate": 0.09225092250922509
+      },
+      "0.95": {
+        "n": 183,
+        "errors": 7,
+        "error_rate": 0.03825136612021858
+      },
+      "0.99": {
+        "n": 95,
+        "errors": 3,
+        "error_rate": 0.031578947368421054
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5004659832246039,
+        "accuracy": 0.8175046554934823,
+        "confidence_cutoff": 0.6598840460267629
+      },
+      "0.8": {
+        "coverage": 0.8005591798695247,
+        "accuracy": 0.7171129220023282,
+        "confidence_cutoff": 0.4928897316986163
+      }
+    }
+  },
+  "coverage": {
+    "requested_records": 900,
+    "requested_questions": 1073,
+    "evaluated_records": 900,
+    "evaluated_questions": 1073,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}

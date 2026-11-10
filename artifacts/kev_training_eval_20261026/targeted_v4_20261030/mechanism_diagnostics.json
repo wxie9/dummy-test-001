@@ -1,0 +1,370 @@
+{
+  "qwen3": {
+    "probability/independent:any_fail": {
+      "n": 14,
+      "before": 9,
+      "after": 8,
+      "repaired": 0,
+      "newly_wrong": 1
+    },
+    "probability/bayes": {
+      "n": 44,
+      "before": 27,
+      "after": 24,
+      "repaired": 2,
+      "newly_wrong": 5
+    },
+    "long_policy/travel": {
+      "n": 52,
+      "before": 27,
+      "after": 25,
+      "repaired": 0,
+      "newly_wrong": 2
+    },
+    "long_policy/payable=False/outcome": {
+      "n": 65,
+      "before": 28,
+      "after": 33,
+      "repaired": 6,
+      "newly_wrong": 1
+    },
+    "long_policy/payable=False/amount": {
+      "n": 65,
+      "before": 65,
+      "after": 65,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "probability/compare:or": {
+      "n": 11,
+      "before": 6,
+      "after": 6,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "ambiguous/return_window": {
+      "n": 14,
+      "before": 8,
+      "after": 10,
+      "repaired": 2,
+      "newly_wrong": 0
+    },
+    "ambiguous/unknown": {
+      "n": 39,
+      "before": 36,
+      "after": 35,
+      "repaired": 0,
+      "newly_wrong": 1
+    },
+    "ambiguous/tenure": {
+      "n": 16,
+      "before": 12,
+      "after": 12,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "ambiguous/determinate": {
+      "n": 61,
+      "before": 30,
+      "after": 37,
+      "repaired": 7,
+      "newly_wrong": 0
+    },
+    "probability/table:col_given_row": {
+      "n": 12,
+      "before": 6,
+      "after": 5,
+      "repaired": 1,
+      "newly_wrong": 2
+    },
+    "long_policy/device": {
+      "n": 50,
+      "before": 33,
+      "after": 35,
+      "repaired": 3,
+      "newly_wrong": 1
+    },
+    "long_policy/benefits": {
+      "n": 48,
+      "before": 28,
+      "after": 29,
+      "repaired": 1,
+      "newly_wrong": 0
+    },
+    "long_policy/payable=True/outcome": {
+      "n": 35,
+      "before": 8,
+      "after": 7,
+      "repaired": 0,
+      "newly_wrong": 1
+    },
+    "long_policy/payable=True/amount": {
+      "n": 35,
+      "before": 16,
+      "after": 13,
+      "repaired": 0,
+      "newly_wrong": 3
+    },
+    "long_policy/home": {
+      "n": 50,
+      "before": 29,
+      "after": 29,
+      "repaired": 2,
+      "newly_wrong": 2
+    },
+    "ambiguous/warranty": {
+      "n": 16,
+      "before": 14,
+      "after": 14,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "probability/compare:and": {
+      "n": 8,
+      "before": 3,
+      "after": 5,
+      "repaired": 2,
+      "newly_wrong": 0
+    },
+    "probability/ev": {
+      "n": 26,
+      "before": 11,
+      "after": 12,
+      "repaired": 1,
+      "newly_wrong": 0
+    },
+    "ambiguous/price_match": {
+      "n": 14,
+      "before": 10,
+      "after": 10,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "ambiguous/overtime": {
+      "n": 12,
+      "before": 7,
+      "after": 7,
+      "repaired": 1,
+      "newly_wrong": 1
+    },
+    "probability/independent:any": {
+      "n": 18,
+      "before": 17,
+      "after": 16,
+      "repaired": 0,
+      "newly_wrong": 1
+    },
+    "probability/independent:all": {
+      "n": 14,
+      "before": 4,
+      "after": 6,
+      "repaired": 2,
+      "newly_wrong": 0
+    },
+    "ambiguous/approval": {
+      "n": 14,
+      "before": 6,
+      "after": 9,
+      "repaired": 3,
+      "newly_wrong": 0
+    },
+    "ambiguous/shipping": {
+      "n": 14,
+      "before": 9,
+      "after": 10,
+      "repaired": 1,
+      "newly_wrong": 0
+    },
+    "probability/table:row_given_col": {
+      "n": 11,
+      "before": 2,
+      "after": 3,
+      "repaired": 1,
+      "newly_wrong": 0
+    }
+  },
+  "qwen35": {
+    "probability/independent:any_fail": {
+      "n": 14,
+      "before": 6,
+      "after": 5,
+      "repaired": 0,
+      "newly_wrong": 1
+    },
+    "probability/bayes": {
+      "n": 44,
+      "before": 26,
+      "after": 26,
+      "repaired": 2,
+      "newly_wrong": 2
+    },
+    "long_policy/travel": {
+      "n": 52,
+      "before": 31,
+      "after": 31,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "long_policy/payable=False/outcome": {
+      "n": 65,
+      "before": 41,
+      "after": 44,
+      "repaired": 3,
+      "newly_wrong": 0
+    },
+    "long_policy/payable=False/amount": {
+      "n": 65,
+      "before": 65,
+      "after": 65,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "probability/compare:or": {
+      "n": 11,
+      "before": 6,
+      "after": 6,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "ambiguous/return_window": {
+      "n": 14,
+      "before": 8,
+      "after": 8,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "ambiguous/unknown": {
+      "n": 39,
+      "before": 34,
+      "after": 27,
+      "repaired": 0,
+      "newly_wrong": 7
+    },
+    "ambiguous/tenure": {
+      "n": 16,
+      "before": 11,
+      "after": 7,
+      "repaired": 0,
+      "newly_wrong": 4
+    },
+    "ambiguous/determinate": {
+      "n": 61,
+      "before": 35,
+      "after": 38,
+      "repaired": 3,
+      "newly_wrong": 0
+    },
+    "probability/table:col_given_row": {
+      "n": 12,
+      "before": 5,
+      "after": 5,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "long_policy/device": {
+      "n": 50,
+      "before": 35,
+      "after": 37,
+      "repaired": 2,
+      "newly_wrong": 0
+    },
+    "long_policy/benefits": {
+      "n": 48,
+      "before": 30,
+      "after": 30,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "long_policy/payable=True/outcome": {
+      "n": 35,
+      "before": 8,
+      "after": 8,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "long_policy/payable=True/amount": {
+      "n": 35,
+      "before": 17,
+      "after": 18,
+      "repaired": 1,
+      "newly_wrong": 0
+    },
+    "long_policy/home": {
+      "n": 50,
+      "before": 35,
+      "after": 37,
+      "repaired": 2,
+      "newly_wrong": 0
+    },
+    "ambiguous/warranty": {
+      "n": 16,
+      "before": 15,
+      "after": 15,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "probability/compare:and": {
+      "n": 8,
+      "before": 3,
+      "after": 3,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "probability/ev": {
+      "n": 26,
+      "before": 14,
+      "after": 14,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "ambiguous/price_match": {
+      "n": 14,
+      "before": 10,
+      "after": 10,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "ambiguous/overtime": {
+      "n": 12,
+      "before": 6,
+      "after": 6,
+      "repaired": 2,
+      "newly_wrong": 2
+    },
+    "probability/independent:any": {
+      "n": 18,
+      "before": 18,
+      "after": 18,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "probability/independent:all": {
+      "n": 14,
+      "before": 8,
+      "after": 8,
+      "repaired": 0,
+      "newly_wrong": 0
+    },
+    "ambiguous/approval": {
+      "n": 14,
+      "before": 10,
+      "after": 11,
+      "repaired": 1,
+      "newly_wrong": 0
+    },
+    "ambiguous/shipping": {
+      "n": 14,
+      "before": 9,
+      "after": 8,
+      "repaired": 0,
+      "newly_wrong": 1
+    },
+    "probability/table:row_given_col": {
+      "n": 11,
+      "before": 1,
+      "after": 1,
+      "repaired": 0,
+      "newly_wrong": 0
+    }
+  }
+}

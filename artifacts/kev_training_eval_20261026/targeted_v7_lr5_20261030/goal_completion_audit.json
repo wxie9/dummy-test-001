@@ -1,0 +1,31 @@
+{
+  "goal_achieved": false,
+  "execution_checks": {
+    "targeted_contexts_1500": true,
+    "archive_97_index_hashes_verified": true,
+    "both_938_steps_7500_records": true,
+    "both_no_training_rejection_or_truncation": true
+  },
+  "contradicted_requirement": "Both models clearly improve in all seven real benchmark categories",
+  "observed_deltas_pp": {
+    "qwen3": {
+      "tool_routing": -1.3333333333333333,
+      "temporal": 0.8547008547008547,
+      "probability": -4.430379746835443,
+      "insufficient": -6.0,
+      "multihop": -3.2,
+      "policy": -3.0,
+      "injection": 0.6666666666666666
+    },
+    "qwen35": {
+      "tool_routing": 14.0,
+      "temporal": -1.7094017094017093,
+      "probability": -1.8987341772151898,
+      "insufficient": -4.0,
+      "multihop": -3.2,
+      "policy": 0.5,
+      "injection": 6.0
+    }
+  },
+  "next": "Diagnose transfer gaps and residual training acquisition failures before selecting the next intervention."
+}

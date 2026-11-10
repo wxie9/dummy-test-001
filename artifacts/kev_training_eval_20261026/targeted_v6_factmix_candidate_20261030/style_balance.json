@@ -1,0 +1,394 @@
+[
+  {
+    "scenario": "approval",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "original",
+    "count": 4
+  },
+  {
+    "scenario": "approval",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "prose",
+    "count": 4
+  },
+  {
+    "scenario": "approval",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "original",
+    "count": 6
+  },
+  {
+    "scenario": "approval",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "prose",
+    "count": 6
+  },
+  {
+    "scenario": "approval",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "original",
+    "count": 8
+  },
+  {
+    "scenario": "approval",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "prose",
+    "count": 8
+  },
+  {
+    "scenario": "approval",
+    "pair_role": "missing_nondeciding",
+    "answer": "yes",
+    "style": "original",
+    "count": 2
+  },
+  {
+    "scenario": "approval",
+    "pair_role": "missing_nondeciding",
+    "answer": "yes",
+    "style": "prose",
+    "count": 2
+  },
+  {
+    "scenario": "overtime",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "original",
+    "count": 6
+  },
+  {
+    "scenario": "overtime",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "prose",
+    "count": 6
+  },
+  {
+    "scenario": "overtime",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "original",
+    "count": 4
+  },
+  {
+    "scenario": "overtime",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "prose",
+    "count": 4
+  },
+  {
+    "scenario": "overtime",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "original",
+    "count": 8
+  },
+  {
+    "scenario": "overtime",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "prose",
+    "count": 8
+  },
+  {
+    "scenario": "overtime",
+    "pair_role": "missing_nondeciding",
+    "answer": "no",
+    "style": "original",
+    "count": 2
+  },
+  {
+    "scenario": "overtime",
+    "pair_role": "missing_nondeciding",
+    "answer": "no",
+    "style": "prose",
+    "count": 2
+  },
+  {
+    "scenario": "price_match",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "original",
+    "count": 6
+  },
+  {
+    "scenario": "price_match",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "prose",
+    "count": 6
+  },
+  {
+    "scenario": "price_match",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "original",
+    "count": 4
+  },
+  {
+    "scenario": "price_match",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "prose",
+    "count": 4
+  },
+  {
+    "scenario": "price_match",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "original",
+    "count": 8
+  },
+  {
+    "scenario": "price_match",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "prose",
+    "count": 8
+  },
+  {
+    "scenario": "price_match",
+    "pair_role": "missing_nondeciding",
+    "answer": "no",
+    "style": "original",
+    "count": 2
+  },
+  {
+    "scenario": "price_match",
+    "pair_role": "missing_nondeciding",
+    "answer": "no",
+    "style": "prose",
+    "count": 2
+  },
+  {
+    "scenario": "return",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "original",
+    "count": 4
+  },
+  {
+    "scenario": "return",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "prose",
+    "count": 4
+  },
+  {
+    "scenario": "return",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "original",
+    "count": 6
+  },
+  {
+    "scenario": "return",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "prose",
+    "count": 6
+  },
+  {
+    "scenario": "return",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "original",
+    "count": 8
+  },
+  {
+    "scenario": "return",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "prose",
+    "count": 8
+  },
+  {
+    "scenario": "return",
+    "pair_role": "missing_nondeciding",
+    "answer": "yes",
+    "style": "original",
+    "count": 2
+  },
+  {
+    "scenario": "return",
+    "pair_role": "missing_nondeciding",
+    "answer": "yes",
+    "style": "prose",
+    "count": 2
+  },
+  {
+    "scenario": "shipping",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "original",
+    "count": 6
+  },
+  {
+    "scenario": "shipping",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "prose",
+    "count": 6
+  },
+  {
+    "scenario": "shipping",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "original",
+    "count": 4
+  },
+  {
+    "scenario": "shipping",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "prose",
+    "count": 4
+  },
+  {
+    "scenario": "shipping",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "original",
+    "count": 8
+  },
+  {
+    "scenario": "shipping",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "prose",
+    "count": 8
+  },
+  {
+    "scenario": "shipping",
+    "pair_role": "missing_nondeciding",
+    "answer": "no",
+    "style": "original",
+    "count": 2
+  },
+  {
+    "scenario": "shipping",
+    "pair_role": "missing_nondeciding",
+    "answer": "no",
+    "style": "prose",
+    "count": 2
+  },
+  {
+    "scenario": "tenure",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "original",
+    "count": 4
+  },
+  {
+    "scenario": "tenure",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "prose",
+    "count": 4
+  },
+  {
+    "scenario": "tenure",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "original",
+    "count": 6
+  },
+  {
+    "scenario": "tenure",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "prose",
+    "count": 6
+  },
+  {
+    "scenario": "tenure",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "original",
+    "count": 8
+  },
+  {
+    "scenario": "tenure",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "prose",
+    "count": 8
+  },
+  {
+    "scenario": "tenure",
+    "pair_role": "missing_nondeciding",
+    "answer": "yes",
+    "style": "original",
+    "count": 2
+  },
+  {
+    "scenario": "tenure",
+    "pair_role": "missing_nondeciding",
+    "answer": "yes",
+    "style": "prose",
+    "count": 2
+  },
+  {
+    "scenario": "warranty",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "original",
+    "count": 6
+  },
+  {
+    "scenario": "warranty",
+    "pair_role": "complete",
+    "answer": "no",
+    "style": "prose",
+    "count": 6
+  },
+  {
+    "scenario": "warranty",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "original",
+    "count": 4
+  },
+  {
+    "scenario": "warranty",
+    "pair_role": "complete",
+    "answer": "yes",
+    "style": "prose",
+    "count": 4
+  },
+  {
+    "scenario": "warranty",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "original",
+    "count": 8
+  },
+  {
+    "scenario": "warranty",
+    "pair_role": "missing_deciding",
+    "answer": "unknown",
+    "style": "prose",
+    "count": 8
+  },
+  {
+    "scenario": "warranty",
+    "pair_role": "missing_nondeciding",
+    "answer": "no",
+    "style": "original",
+    "count": 2
+  },
+  {
+    "scenario": "warranty",
+    "pair_role": "missing_nondeciding",
+    "answer": "no",
+    "style": "prose",
+    "count": 2
+  }
+]

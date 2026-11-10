@@ -1,0 +1,22 @@
+{
+  "qwen3": {
+    "development": {
+      "questions": 488,
+      "all_row_fields_identical": true
+    },
+    "train-probe": {
+      "questions": 185,
+      "all_row_fields_identical": true
+    }
+  },
+  "qwen35": {
+    "development": {
+      "questions": 488,
+      "all_row_fields_identical": true
+    },
+    "train-probe": {
+      "questions": 185,
+      "all_row_fields_identical": true
+    }
+  }
+}

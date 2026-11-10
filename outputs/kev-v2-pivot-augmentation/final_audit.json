@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "structured": {
+    "path": "outputs/kev-v2-pivot-augmentation/structured.jsonl",
+    "records": 20000,
+    "sha256": "32f7520d0e0b4f3cf1d9c7f4fd93a3ed7972748cc478a4824fad652784b70a75"
+  },
+  "rendered": {
+    "path": "outputs/kev-v2-pivot-augmentation/rendered.jsonl",
+    "records": 20000,
+    "sha256": "9b40813d103571b25063bc16337bad9f2fd16a57122df700e15ca2bdf1daf32f"
+  },
+  "coverage": {
+    "configured_categories": 45,
+    "nonzero_categories": 43,
+    "rendered_categories": 43,
+    "category_counts": {
+      "clause_level3": 325,
+      "clause_outside_condition": 600,
+      "dependency_complex_closure": 775,
+      "dependency_exclusive_boundary": 550,
+      "dependency_missing_item": 700,
+      "dependency_ordinary_boundary": 625,
+      "dependency_runtime": 550,
+      "dependency_self_constraint": 675,
+      "dependency_version_conflict": 550,
+      "facts_four_hop": 325,
+      "facts_inheritance_reasoning": 275,
+      "facts_multitable_subtraction": 300,
+      "facts_two_level_inheritance": 275,
+      "filter_conditional_rule": 400,
+      "filter_converted_minimum": 325,
+      "filter_k_of_n": 400,
+      "ledger_batch_total_error": 575,
+      "ledger_date_error": 450,
+      "ledger_fee_error": 400,
+      "ledger_missing_entry": 600,
+      "log_actual_statement": 750,
+      "log_both_boundaries": 825,
+      "log_off_by_one": 500,
+      "permission_action_change": 450,
+      "permission_level2": 325,
+      "permission_level3": 325,
+      "permission_role_chain": 250,
+      "permission_scope_change": 250,
+      "permission_sealed_resource": 400,
+      "permission_three_level_tree": 300,
+      "policy_exception_handling": 325,
+      "policy_four_exceptions": 325,
+      "record_derived_field": 525,
+      "record_field_scope": 475,
+      "schedule_capacity": 475,
+      "schedule_equipment": 400,
+      "schedule_level3": 275,
+      "state_content_failure": 525,
+      "state_equality_failure": 525,
+      "state_missing_step": 575,
+      "state_quantity_failure": 375,
+      "state_wrong_object": 550,
+      "triage_category_priority": 600
+    },
+    "family_counts": {
+      "answerable_facts": 1175,
+      "clause_change": 925,
+      "dependency_resolution": 4425,
+      "filter_match": 1125,
+      "ledger_reconcile": 2025,
+      "log_count_check": 2075,
+      "permission_inheritance": 2300,
+      "policy_case": 650,
+      "record_rule": 1000,
+      "schedule_conflict": 1150,
+      "state_goal": 2550,
+      "triage_order": 600
+    },
+    "category_count_mismatches": {},
+    "unexpected_categories": []
+  },
+  "quality": {
+    "duplicate_counts": {
+      "structured_ids": 0,
+      "structured_state_hashes": 0,
+      "rendered_ids": 0,
+      "rendered_state_hashes": 0,
+      "rendered_structured_hashes": 0
+    },
+    "structured_validation_failures": 0,
+    "rendered_validation_failures": 0,
+    "cross_layer_semantic_mismatches": 0,
+    "label_position_counts": {
+      "a": 6348,
+      "b": 6293,
+      "c": 6411,
+      "d": 948
+    },
+    "maximum_single_answer_ratio_across_categories": 0.668,
+    "context_characters": {
+      "min": 84,
+      "median": 380.5,
+      "mean": 418.56595,
+      "max": 1201
+    }
+  },
+  "boundaries": [
+    "Independent targeted reconstruction; not official Kev v2 private rows.",
+    "DecisionPivot taxonomy informed allocation, so later DecisionPivot gains are targeted-repair evidence, not independent generalization evidence.",
+    "LLM fidelity review reduces but does not eliminate semantic-rendering risk; human sampling remains required before training."
+  ]
+}

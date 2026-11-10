@@ -1,0 +1,71 @@
+{
+  "version": "targeted-v1-20261028",
+  "partitions": [
+    "train",
+    "development",
+    "test"
+  ],
+  "locked": [
+    "test"
+  ],
+  "families": [
+    "tool_routing",
+    "temporal",
+    "probability",
+    "insufficient",
+    "multihop",
+    "policy",
+    "injection"
+  ],
+  "label_protocol": "programmatic: every gold label is recomputed from _meta.facts; no LLM or human labels are used",
+  "isolation": "test then development then train; split-specific names, organizations, surface templates, and mechanism text; exact rendered-state deduplication across partitions",
+  "known_boundary": "This suite measures controlled rule transfer. It does not replace human-labelled open-world code review, consumer-finance categorisation, or MMLU-style factual knowledge.",
+  "files": {
+    "train.jsonl": {
+      "records": 9200,
+      "sha256": "853e3f2df093c86fb7065c0913184a0ccb8e78de726477d8802589d3e0edfe90",
+      "by_family": {
+        "probability": 1300,
+        "multihop": 1300,
+        "temporal": 1500,
+        "tool_routing": 1600,
+        "injection": 1100,
+        "policy": 1200,
+        "insufficient": 1200
+      },
+      "bytes": 10233098
+    },
+    "development.jsonl": {
+      "records": 1400,
+      "sha256": "7f78ac96b6690f2248604d09dac3e68210a4d74c0f1182ea4806e7040434fc42",
+      "by_family": {
+        "insufficient": 200,
+        "multihop": 200,
+        "probability": 200,
+        "injection": 200,
+        "tool_routing": 200,
+        "temporal": 200,
+        "policy": 200
+      },
+      "bytes": 1569959
+    },
+    "test.jsonl": {
+      "records": 1400,
+      "sha256": "082a0d3b28522d309467c4eea6f33dff4dcbd74c112e43be77bd0d2024125572",
+      "by_family": {
+        "insufficient": 200,
+        "probability": 200,
+        "tool_routing": 200,
+        "temporal": 200,
+        "policy": 200,
+        "injection": 200,
+        "multihop": 200
+      },
+      "bytes": 1543021
+    }
+  },
+  "generator": {
+    "path": "tools/build_targeted_v1.py",
+    "sha256": "3440dc0a30fa627c6375a26b03511ea7f6fb8eb3813b2a84b47840221101a70b"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "epochs": [
+    {
+      "epoch": 0,
+      "source_contexts": 1500,
+      "matching_variants": 2182,
+      "matching_questions": 4122
+    },
+    {
+      "epoch": 1,
+      "source_contexts": 1500,
+      "matching_variants": 2088,
+      "matching_questions": 4028
+    },
+    {
+      "epoch": 2,
+      "source_contexts": 1500,
+      "matching_variants": 2172,
+      "matching_questions": 4112
+    }
+  ],
+  "seed": 101,
+  "hashes": {
+    "/C20545/kev-08b-official-repro-20261026/targeted_v6_20261030/train.jsonl": "58572b2118b10d9505d5bdb027585fab75f4ad7e52a1c5d8d155979459fecea8",
+    "/C20545/kev-08b-official-repro-20261026/targeted_v6_factmix_candidate_20261030/train.jsonl": "2f50313e50370372cf232a998280a4f5bbc26f98dd59ddef2ee8872f870fe243",
+    "/C20545/kev-08b-official-repro-20261026/stages/stage3/kev/data.py": "e77a2fffeb8ee7e05b118893be8e38b8358aef97c3ca2e143cdce208201b92f9"
+  },
+  "scope": "Actual server augmentation: identical question/option ordering, labels, targets, variants and unchanged record order across three epochs. Replay is unchanged. This verifies supervision equality before tokenization, not identical gradients or effectiveness."
+}

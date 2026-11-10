@@ -1,0 +1,67 @@
+{
+  "status": "active_or_attention_required",
+  "goal_achieved": false,
+  "created_at_utc": "2026-10-30T03:05:19.606452+00:00",
+  "base_contexts": 1500,
+  "additional_views": 1020,
+  "replay": 6000,
+  "models": {
+    "qwen3": {
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v9-matched",
+      "gpu": 1,
+      "pipeline_pid": 63811,
+      "status": "full_train_before",
+      "pipeline_live": true,
+      "training_pids": [],
+      "training_live": false,
+      "log_tail": "\"n\": 0, \"errors\": 0, \"error_rate\": null}, \"0.99\": {\"n\": 0, \"errors\": 0, \"error_rate\": null}}, \"selective\": {\"0.5\": {\"coverage\": 0.5, \"accuracy\": 0.4, \"confidence_cutoff\": 0.3455315556044247}, \"0.8\": {\"coverage\": 0.8, \"accuracy\": 0.39473684210526316, \"confidence_cutoff\": 0.2444376276601068}}, \"score_mae\": 1.292308877708333, \"ranked_probability_score\": 0.17430298243813172}, \"coverage\": {\"requested_records\": 140, \"requested_questions\": 190, \"evaluated_records\": 140, \"evaluated_questions\": 190, \"rejected_records\": 0, \"truncated_records\": 0}}\n\nLoading weights:   0%|          | 0/310 [00:00<?, ?it/s]\nLoading weights:  59%|\u2588\u2588\u2588\u2588\u2588\u258a    | 182/310 [00:00<00:00, 1811.28it/s]\nLoading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 310/310 [00:00<00:00, 1950.98it/s]\nevaluated 50/2520\nevaluated 100/2520\nevaluated 150/2520\nevaluated 200/2520\nevaluated 250/2520\nevaluated 300/2520\nevaluated 350/2520\nevaluated 400/2520\nevaluated 450/2520\nevaluated 500/2520\nevaluated 550/2520\nevaluated 600/2520\nevaluated 650/2520\nevaluated 700/2520\nevaluated 750/2520\nevaluated 800/2520\nevaluated 850/2520\nevaluated 900/2520\nevaluated 950/2520\nevaluated 1000/2520\nevaluated 1050/2520\nevaluated 1100/2520\nevaluated 1150/2520\nevaluated 1200/2520\nevaluated 1250/2520\nevaluated 1300/2520\nevaluated 1350/2520\nevaluated 1400/2520\nevaluated 1450/2520\n",
+      "completed_evaluation_coverage": {
+        "development-before": {
+          "requested_records": 562,
+          "requested_questions": 856,
+          "evaluated_records": 562,
+          "evaluated_questions": 856,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-before": {
+          "requested_records": 140,
+          "requested_questions": 190,
+          "evaluated_records": 140,
+          "evaluated_questions": 190,
+          "rejected_records": 0,
+          "truncated_records": 0
+        }
+      }
+    },
+    "qwen35": {
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v9-matched",
+      "gpu": 2,
+      "pipeline_pid": 63812,
+      "status": "full_train_before",
+      "pipeline_live": true,
+      "training_pids": [],
+      "training_live": false,
+      "log_tail": "s\": 0, \"error_rate\": null}, \"0.99\": {\"n\": 0, \"errors\": 0, \"error_rate\": null}}, \"selective\": {\"0.5\": {\"coverage\": 0.5, \"accuracy\": 0.45263157894736844, \"confidence_cutoff\": 0.34317199929827447}, \"0.8\": {\"coverage\": 0.8, \"accuracy\": 0.42105263157894735, \"confidence_cutoff\": 0.2594671354094792}}, \"score_mae\": 1.4491068354297922, \"ranked_probability_score\": 0.18703455183305162}, \"coverage\": {\"requested_records\": 140, \"requested_questions\": 190, \"evaluated_records\": 140, \"evaluated_questions\": 190, \"rejected_records\": 0, \"truncated_records\": 0}}\n\nLoading weights:   0%|          | 0/320 [00:00<?, ?it/s]\nLoading weights:  44%|\u2588\u2588\u2588\u2588\u258d     | 142/320 [00:00<00:00, 1395.69it/s]\nLoading weights: 100%|\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588| 320/320 [00:00<00:00, 1732.62it/s]\n[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.\nevaluated 50/2520\nevaluated 100/2520\nevaluated 150/2520\nevaluated 200/2520\nevaluated 250/2520\nevaluated 300/2520\nevaluated 350/2520\nevaluated 400/2520\nevaluated 450/2520\nevaluated 500/2520\nevaluated 550/2520\nevaluated 600/2520\nevaluated 650/2520\nevaluated 700/2520\nevaluated 750/2520\nevaluated 800/2520\nevaluated 850/2520\nevaluated 900/2520\n",
+      "completed_evaluation_coverage": {
+        "development-before": {
+          "requested_records": 562,
+          "requested_questions": 856,
+          "evaluated_records": 562,
+          "evaluated_questions": 856,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-before": {
+          "requested_records": 140,
+          "requested_questions": 190,
+          "evaluated_records": 140,
+          "evaluated_questions": 190,
+          "rejected_records": 0,
+          "truncated_records": 0
+        }
+      }
+    }
+  },
+  "checked_at_utc": "2026-10-30T03:09:39.907793+00:00"
+}

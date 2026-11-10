@@ -1,0 +1,8 @@
+{
+  "scope": "Synthetic predictions for analysis code verification only; not model evaluation.",
+  "identical_predictions_zero_delta": true,
+  "one_wrong_answer_breaks_whole_pair": true,
+  "matched_siblings_one_bootstrap_cluster": true,
+  "observed_before_diagnostic": "Both original stage3 full-training and development snapshots verified, with complete coverage. No after predictions are present.",
+  "exposure_auditor_v8_regression": "All three epochs of numerical coefficients exactly match existing archived v8 results."
+}

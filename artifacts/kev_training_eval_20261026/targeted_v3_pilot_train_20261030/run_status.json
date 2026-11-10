@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "date": "2026-10-30",
+  "training_and_hard_v1_complete": true,
+  "remote_root": "/C20545/kev-08b-official-repro-20261026",
+  "run_names": [
+    "qwen3-20261030-targeted-v3-pilot",
+    "qwen35-20261030-targeted-v3-pilot"
+  ],
+  "models": {
+    "qwen3": {
+      "n": 1088,
+      "before_correct": 622,
+      "after_correct": 617,
+      "before_pct": 57.169117647058826,
+      "after_pct": 56.70955882352941,
+      "delta_pp": -0.45955882352941174,
+      "repaired": 14,
+      "newly_wrong": 19,
+      "original_errors": 466,
+      "repair_pct_of_original_errors": 3.004291845493562
+    },
+    "qwen35": {
+      "n": 1088,
+      "before_correct": 707,
+      "after_correct": 712,
+      "before_pct": 64.98161764705883,
+      "after_pct": 65.44117647058823,
+      "delta_pp": 0.45955882352941174,
+      "repaired": 10,
+      "newly_wrong": 5,
+      "original_errors": 381,
+      "repair_pct_of_original_errors": 2.6246719160104988
+    }
+  }
+}

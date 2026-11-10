@@ -1,0 +1,63 @@
+{
+  "checked_at_utc": "2026-10-29T22:07:12.570564+00:00",
+  "probability_preflight": {
+    "qwen3": {
+      "train": {
+        "contexts": 350,
+        "questions": 720,
+        "rejected": []
+      },
+      "development": {
+        "contexts": 60,
+        "questions": 124,
+        "rejected": []
+      }
+    },
+    "qwen35": {
+      "train": {
+        "contexts": 350,
+        "questions": 720,
+        "rejected": []
+      },
+      "development": {
+        "contexts": 60,
+        "questions": 124,
+        "rejected": []
+      }
+    }
+  },
+  "runs": {
+    "qwen3-20261030-targeted-v5-3ep": {
+      "pipeline_pid": 100877,
+      "pipeline_live": true,
+      "training_pid": 103165,
+      "status": "training",
+      "last_observed_step": 1910,
+      "planned_steps": 2814
+    },
+    "qwen35-20261030-targeted-v5-3ep": {
+      "pipeline_pid": 100878,
+      "pipeline_live": true,
+      "training_pid": 104246,
+      "status": "training",
+      "last_observed_step": 1650,
+      "planned_steps": 2814
+    },
+    "qwen3-20261030-targeted-v5-guard": {
+      "pipeline_pid": 107751,
+      "pipeline_live": true,
+      "training_pid": 110102,
+      "status": "training",
+      "last_observed_step": 490,
+      "planned_steps": 938
+    },
+    "qwen35-20261030-targeted-v5-guard": {
+      "pipeline_pid": 107752,
+      "pipeline_live": true,
+      "training_pid": 111126,
+      "status": "training",
+      "last_observed_step": 420,
+      "planned_steps": 938
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "aligned_items": 7800,
+    "comparison_bucket_sum": 2253,
+    "family_error_sum": 2253,
+    "family_n_sum": 7800,
+    "level_error_sum": 2253,
+    "level_n_sum": 7800,
+    "prediction_records": 23400,
+    "records_per_model": {
+      "kev_blend": 7800,
+      "startlux_autothink": 7800,
+      "startlux_instant": 7800
+    },
+    "weakness_slice_count": 45,
+    "weakness_slice_n_sum_nonadditive": 4810
+  },
+  "kev_error_comparison_buckets": {
+    "autothink_only_correct": 640,
+    "both_sl_correct": 1310,
+    "instant_only_correct": 203,
+    "neither_sl_correct": 100
+  },
+  "notes": [
+    "Family rows and StartLux comparison buckets are mutually exclusive and additive.",
+    "Metadata subgroups and 45 weakness slices overlap; their counts must not be summed.",
+    "Calibration uses the exported option probabilities, not the derived confidence field."
+  ],
+  "scope": {
+    "items": 7800,
+    "kev_correct": 5547,
+    "kev_errors": 2253,
+    "models": [
+      "kev_blend",
+      "startlux_instant",
+      "startlux_autothink"
+    ],
+    "tasks": 13
+  }
+}

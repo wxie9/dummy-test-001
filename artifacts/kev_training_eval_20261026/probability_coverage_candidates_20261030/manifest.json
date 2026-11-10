@@ -1,0 +1,144 @@
+{
+  "status": "candidate_only_not_in_training",
+  "scope": "350-context replacement component, not additional contexts or a full seven-family corpus. Fixed broad probability strata and five magnitude factors; no benchmark labels used in construction. Development uses the same generators.",
+  "probability_bin_boundaries_pct": [
+    0,
+    10,
+    30,
+    50,
+    70,
+    90,
+    100
+  ],
+  "files": {
+    "train": {
+      "contexts": 350,
+      "questions": 720,
+      "wrong_label_mutations_rejected": 720,
+      "sha256": "87df4be6fc0dad118388c890a9a8fc447698b1aaad8bbb68511b4c9d60aa93e3",
+      "coverage": {
+        "probability_bins": {
+          "any": {
+            "1": 4,
+            "3": 4,
+            "2": 4,
+            "0": 5,
+            "5": 4,
+            "4": 4
+          },
+          "all": {
+            "4": 6,
+            "3": 7,
+            "1": 7,
+            "2": 7,
+            "5": 6,
+            "0": 7
+          },
+          "bayes": {
+            "0": 10,
+            "4": 10,
+            "5": 10,
+            "2": 10,
+            "1": 10,
+            "3": 10
+          },
+          "any_fail": {
+            "2": 8,
+            "4": 8,
+            "0": 9,
+            "3": 8,
+            "1": 9,
+            "5": 8
+          }
+        },
+        "numeric_scale_factors": {
+          "expected_value": {
+            "1": 12,
+            "100": 12,
+            "10000": 12,
+            "1000": 12,
+            "10": 12
+          },
+          "table": {
+            "10000": 15,
+            "100": 15,
+            "1000": 15,
+            "1": 15,
+            "10": 15
+          }
+        },
+        "absolute_payoff_range": [
+          0,
+          6250000
+        ]
+      }
+    },
+    "development": {
+      "contexts": 60,
+      "questions": 124,
+      "wrong_label_mutations_rejected": 124,
+      "sha256": "1495d7c79e05e3e2688aee6c22ba7650a672a68316ff3d30188ad632c026c0a7",
+      "coverage": {
+        "probability_bins": {
+          "any": {
+            "1": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "2": 1,
+            "0": 1
+          },
+          "all": {
+            "0": 2,
+            "1": 2,
+            "3": 1,
+            "2": 1,
+            "4": 1,
+            "5": 1
+          },
+          "any_fail": {
+            "2": 2,
+            "5": 1,
+            "4": 1,
+            "0": 2,
+            "1": 2,
+            "3": 2
+          },
+          "bayes": {
+            "3": 2,
+            "2": 2,
+            "1": 2,
+            "0": 2,
+            "4": 1,
+            "5": 1
+          }
+        },
+        "numeric_scale_factors": {
+          "table": {
+            "1000": 2,
+            "1": 2,
+            "100": 2,
+            "10": 2,
+            "10000": 2
+          },
+          "expected_value": {
+            "100": 2,
+            "10000": 2,
+            "1": 2,
+            "10": 2,
+            "1000": 2
+          }
+        },
+        "absolute_payoff_range": [
+          0,
+          5750000
+        ]
+      }
+    }
+  },
+  "checks": {
+    "exact_state_train_dev_overlap": 0,
+    "exact_state_frozen_test_overlap": 0,
+    "all_visible_numeric_labels_recomputed": true
+  }
+}

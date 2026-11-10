@@ -1,0 +1,19 @@
+{
+  "scope": "v6 original 1 epoch; completed controls separately",
+  "source_root": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v6_20261030",
+  "input_sha256": {
+    "train.jsonl": "58572b2118b10d9505d5bdb027585fab75f4ad7e52a1c5d8d155979459fecea8",
+    "development.jsonl": "5747c5b02565f10688d270d8da5afa384386e9cfc42bf55e2971d2924810fe63",
+    "train_probe.jsonl": "7d26230063115363d34b28fec41cff7db2af5f5dc7b813364aea312bd002c8ac",
+    "launch_qwen3.sh": "0216707d770306f96c8b4f2064c4c1c6cfe2c51e1f0e4f361165b489bfc2d18e",
+    "launch_qwen35.sh": "a0054c1682a6b20e50a933f8f65b21620611d393a64b51a886008e08ef5cf452",
+    "preflight.py": "706dcdb7cbdcbedfb348687cfad08b4b559382a70d9f074f91eafcec3391b334",
+    "evaluate_development.py": "4f4305df67797e2be9143be8cca828c757c83c8a7a460455e7b146a538010ea1"
+  },
+  "loss_points": {
+    "qwen3": 93,
+    "qwen35": 93
+  },
+  "report": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/reports/v6_report_20261030/Kev_v6数据生成与续训实验报告.docx",
+  "no_training_or_evaluation_launched": true
+}

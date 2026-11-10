@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-10-30T02:36:28.049787+00:00",
+  "status": "all_complete",
+  "jobs": {
+    "qwen3-stage3": {
+      "status": "complete",
+      "historical_pipeline_pid": 59826,
+      "pipeline_live": false,
+      "questions": 720,
+      "records": 480,
+      "elapsed_seconds": 86.36995601654053
+    },
+    "qwen3-v8": {
+      "status": "complete",
+      "historical_pipeline_pid": 59827,
+      "pipeline_live": false,
+      "questions": 720,
+      "records": 480,
+      "elapsed_seconds": 86.53479361534119
+    },
+    "qwen35-stage3": {
+      "status": "complete",
+      "historical_pipeline_pid": 59828,
+      "pipeline_live": false,
+      "questions": 720,
+      "records": 480,
+      "elapsed_seconds": 107.15079760551453
+    },
+    "qwen35-v8": {
+      "status": "complete",
+      "historical_pipeline_pid": 59829,
+      "pipeline_live": false,
+      "questions": 720,
+      "records": 480,
+      "elapsed_seconds": 107.0883195400238
+    }
+  },
+  "training_performed": false
+}

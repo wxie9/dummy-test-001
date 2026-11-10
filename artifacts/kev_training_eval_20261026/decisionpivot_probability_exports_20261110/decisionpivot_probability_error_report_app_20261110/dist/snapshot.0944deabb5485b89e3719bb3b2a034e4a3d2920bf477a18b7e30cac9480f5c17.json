@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "surface": "report",
+  "title": "Kev融合版 DecisionPivot 概率错题与错因统计分析",
+  "subtitle": "从逐题概率到1,709道大错，再到可复核的行为机制",
+  "generatedAt": "2026-11-10T00:00:00+08:00",
+  "buildStatus": "complete",
+  "report": {
+    "asOf": "2026-11-10"
+  },
+  "source": {
+    "type": "local-reviewed-artifacts",
+    "files": [
+      "summary.json",
+      "family_large_error_profile.csv",
+      "level_large_error_profile.csv",
+      "binary_direction_large_errors.csv",
+      "large_error_questions.jsonl"
+    ],
+    "note": "全部结果来自既有7,800题评测归档，本报告未重新运行模型。"
+  },
+  "definition": {
+    "large_error": "gold_rank != 2 OR (gold_rank == 2 AND pmax-p_gold > 0.30)",
+    "population": "wrong DecisionPivot items only",
+    "small_error": "gold_rank == 2 AND pmax-p_gold <= 0.30"
+  },
+  "metricDefinitions": {
+    "gold_gap": "pmax - p_gold",
+    "large_error": "仅对错题：gold_rank != 2，或gold_rank == 2且gold_gap > 0.30",
+    "large_error_rate_all": "子组大错题数 / 子组全部题数"
+  },
+  "evidenceFlow": [
+    "按item_id + question_id对齐Kev、StartLux Instant、StartLux AutoThink与原题",
+    "校验选项概率、choice=argmax和7,800题完整覆盖",
+    "计算pmax、p_gold、gold_rank、top1-top2 margin与gold gap",
+    "先做六状态概率边际审计，再按0.30规则重分大错与小错",
+    "用任务族、Level、答案方向和StartLux交叉检查定位行为机制",
+    "把观察、机制解释和训练侧根因分成不同证据等级"
+  ],
+  "caveats": [
+    "没有保存Kev原始CoT，不能把事后解释当成真实思维链。",
+    "0.30是本轮诊断阈值，不是DecisionPivot官方指标。",
+    "45细类和元数据切片相互重叠，不得相加。",
+    "除日志off_by_one生成器错配外，其他错因是行为机制而非已证实的训练因果。"
+  ],
+  "queries": {
+    "overall": {
+      "id": "overall",
+      "label": "总体统计",
+      "columns": [
+        "metric",
+        "value",
+        "note"
+      ],
+      "rows": [
+        {
+          "metric": "评测题数",
+          "value": 7800,
+          "note": "DecisionPivot Core 1.1"
+        },
+        {
+          "metric": "答对",
+          "value": 5547,
+          "note": "71.12%"
+        },
+        {
+          "metric": "答错",
+          "value": 2253,
+          "note": "28.88%"
+        },
+        {
+          "metric": "大错",
+          "value": 1709,
+          "note": "占错题75.85%；占全部21.91%"
+        },
+        {
+          "metric": "小错",
+          "value": 544,
+          "note": "gold第2且概率差不超过0.30"
+        }
+      ],
+      "totals": {
+        "all": 7800,
+        "correct": 5547,
+        "wrong": 2253,
+        "large": 1709
+      }
+    },
+    "threshold-sensitivity": {
+      "id": "threshold-sensitivity",
+      "label": "大错阈值敏感性",
+      "columns": [
+        "threshold",
+        "large_errors",
+        "share_wrong",
+        "share_all"
+      ],
+      "rows": [
+        {
+          "threshold": 0.1,
+          "large_errors": 2057,
+          "share_wrong": 0.913,
+          "share_all": 0.2637
+        },
+        {
+          "threshold": 0.2,
+          "large_errors": 1859,
+          "share_wrong": 0.8251,
+          "share_all": 0.2383
+        },
+        {
+          "threshold": 0.3,
+          "large_errors": 1709,
+          "share_wrong": 0.7585,
+          "share_all": 0.2191
+        },
+        {
+          "threshold": 0.4,
+          "large_errors": 1550,
+          "share_wrong": 0.688,
+          "share_all": 0.1987
+        },
+        {
+          "threshold": 0.5,
+          "large_errors": 1377,
+          "share_wrong": 0.6112,
+          "share_all": 0.1765
+        }
+      ]
+    },
+    "family-large-errors": {
+      "id": "family-large-errors",
+      "label": "任务族大错",
+      "columns": [
+        "task",
+        "n",
+        "errors",
+        "large_errors",
+        "large_error_rate_all",
+        "gold_rank_3plus"
+      ],
+      "rows": [
+        {
+          "task": "triage_order",
+          "n": 600,
+          "errors": 341,
+          "large_errors": 291,
+          "large_error_rate_all": 0.485,
+          "gold_rank_3plus": 225
+        },
+        {
+          "task": "ledger_reconcile",
+          "n": 600,
+          "errors": 271,
+          "large_errors": 206,
+          "large_error_rate_all": 0.3433333333333333,
+          "gold_rank_3plus": 175
+        },
+        {
+          "task": "sched_conflict",
+          "n": 600,
+          "errors": 213,
+          "large_errors": 186,
+          "large_error_rate_all": 0.31,
+          "gold_rank_3plus": 0
+        },
+        {
+          "task": "filter_match",
+          "n": 600,
+          "errors": 230,
+          "large_errors": 177,
+          "large_error_rate_all": 0.295,
+          "gold_rank_3plus": 0
+        },
+        {
+          "task": "dep_resolve",
+          "n": 600,
+          "errors": 185,
+          "large_errors": 161,
+          "large_error_rate_all": 0.2683333333333333,
+          "gold_rank_3plus": 0
+        },
+        {
+          "task": "policy_case",
+          "n": 600,
+          "errors": 170,
+          "large_errors": 133,
+          "large_error_rate_all": 0.22166666666666668,
+          "gold_rank_3plus": 32
+        },
+        {
+          "task": "perm_inherit",
+          "n": 600,
+          "errors": 181,
+          "large_errors": 124,
+          "large_error_rate_all": 0.20666666666666667,
+          "gold_rank_3plus": 0
+        },
+        {
+          "task": "state_goal",
+          "n": 600,
+          "errors": 149,
+          "large_errors": 110,
+          "large_error_rate_all": 0.18333333333333332,
+          "gold_rank_3plus": 0
+        },
+        {
+          "task": "record_rule",
+          "n": 600,
+          "errors": 114,
+          "large_errors": 85,
+          "large_error_rate_all": 0.14166666666666666,
+          "gold_rank_3plus": 56
+        },
+        {
+          "task": "answerable_facts",
+          "n": 600,
+          "errors": 102,
+          "large_errors": 82,
+          "large_error_rate_all": 0.13666666666666666,
+          "gold_rank_3plus": 0
+        },
+        {
+          "task": "log_count_check",
+          "n": 600,
+          "errors": 179,
+          "large_errors": 73,
+          "large_error_rate_all": 0.12166666666666667,
+          "gold_rank_3plus": 0
+        },
+        {
+          "task": "clause_change",
+          "n": 600,
+          "errors": 59,
+          "large_errors": 42,
+          "large_error_rate_all": 0.07,
+          "gold_rank_3plus": 11
+        },
+        {
+          "task": "toolcall_valid",
+          "n": 600,
+          "errors": 59,
+          "large_errors": 39,
+          "large_error_rate_all": 0.065,
+          "gold_rank_3plus": 0
+        }
+      ],
+      "totals": {
+        "large_errors": 1709
+      }
+    },
+    "level-large-errors": {
+      "id": "level-large-errors",
+      "label": "难度层大错",
+      "columns": [
+        "level",
+        "n",
+        "errors",
+        "large_errors",
+        "large_error_rate_all",
+        "share_of_all_large_errors"
+      ],
+      "rows": [
+        {
+          "level": 1,
+          "n": 2600,
+          "errors": 363,
+          "large_errors": 257,
+          "large_error_rate_all": 0.09884615384615385,
+          "share_of_all_large_errors": 0.15038033937975423
+        },
+        {
+          "level": 2,
+          "n": 2600,
+          "errors": 838,
+          "large_errors": 630,
+          "large_error_rate_all": 0.2423076923076923,
+          "share_of_all_large_errors": 0.36863662960795784
+        },
+        {
+          "level": 3,
+          "n": 2600,
+          "errors": 1052,
+          "large_errors": 822,
+          "large_error_rate_all": 0.3161538461538462,
+          "share_of_all_large_errors": 0.4809830310122879
+        }
+      ],
+      "totals": {
+        "large_errors": 1709
+      }
+    },
+    "direction-large-errors": {
+      "id": "direction-large-errors",
+      "label": "二元任务方向偏置",
+      "columns": [
+        "task",
+        "gold",
+        "n",
+        "errors",
+        "large_errors",
+        "large_error_rate_all"
+      ],
+      "rows": [
+        {
+          "task": "answerable_facts",
+          "gold": "yes",
+          "n": 300,
+          "errors": 25,
+          "large_errors": 18,
+          "large_error_rate_all": 0.06
+        },
+        {
+          "task": "answerable_facts",
+          "gold": "no",
+          "n": 300,
+          "errors": 77,
+          "large_errors": 64,
+          "large_error_rate_all": 0.21333333333333335
+        },
+        {
+          "task": "dep_resolve",
+          "gold": "yes",
+          "n": 300,
+          "errors": 130,
+          "large_errors": 120,
+          "large_error_rate_all": 0.4
+        },
+        {
+          "task": "dep_resolve",
+          "gold": "no",
+          "n": 300,
+          "errors": 55,
+          "large_errors": 41,
+          "large_error_rate_all": 0.13666666666666666
+        },
+        {
+          "task": "filter_match",
+          "gold": "yes",
+          "n": 300,
+          "errors": 160,
+          "large_errors": 130,
+          "large_error_rate_all": 0.43333333333333335
+        },
+        {
+          "task": "filter_match",
+          "gold": "no",
+          "n": 300,
+          "errors": 70,
+          "large_errors": 47,
+          "large_error_rate_all": 0.15666666666666668
+        },
+        {
+          "task": "log_count_check",
+          "gold": "yes",
+          "n": 300,
+          "errors": 74,
+          "large_errors": 33,
+          "large_error_rate_all": 0.11
+        },
+        {
+          "task": "log_count_check",
+          "gold": "no",
+          "n": 300,
+          "errors": 105,
+          "large_errors": 40,
+          "large_error_rate_all": 0.13333333333333333
+        },
+        {
+          "task": "perm_inherit",
+          "gold": "yes",
+          "n": 300,
+          "errors": 87,
+          "large_errors": 59,
+          "large_error_rate_all": 0.19666666666666666
+        },
+        {
+          "task": "perm_inherit",
+          "gold": "no",
+          "n": 300,
+          "errors": 94,
+          "large_errors": 65,
+          "large_error_rate_all": 0.21666666666666667
+        },
+        {
+          "task": "sched_conflict",
+          "gold": "yes",
+          "n": 300,
+          "errors": 186,
+          "large_errors": 168,
+          "large_error_rate_all": 0.56
+        },
+        {
+          "task": "sched_conflict",
+          "gold": "no",
+          "n": 300,
+          "errors": 27,
+          "large_errors": 18,
+          "large_error_rate_all": 0.06
+        },
+        {
+          "task": "state_goal",
+          "gold": "yes",
+          "n": 300,
+          "errors": 46,
+          "large_errors": 32,
+          "large_error_rate_all": 0.10666666666666667
+        },
+        {
+          "task": "state_goal",
+          "gold": "no",
+          "n": 300,
+          "errors": 103,
+          "large_errors": 78,
+          "large_error_rate_all": 0.26
+        },
+        {
+          "task": "toolcall_valid",
+          "gold": "yes",
+          "n": 300,
+          "errors": 51,
+          "large_errors": 32,
+          "large_error_rate_all": 0.10666666666666667
+        },
+        {
+          "task": "toolcall_valid",
+          "gold": "no",
+          "n": 300,
+          "errors": 8,
+          "large_errors": 7,
+          "large_error_rate_all": 0.023333333333333334
+        }
+      ]
+    }
+  },
+  "id": "report:063b3653-9f42-4d87-b22c-529805e63ec2"
+}

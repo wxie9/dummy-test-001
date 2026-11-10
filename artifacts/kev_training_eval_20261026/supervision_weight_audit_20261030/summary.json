@@ -1,0 +1,46 @@
+{
+  "real_insufficient": {
+    "qwen3": {
+      "before": {
+        "questions": 100,
+        "predicted_unknown": 56,
+        "known_but_predicted_unknown": 20,
+        "known_correct": 30,
+        "unknown_correct": 36
+      },
+      "after": {
+        "questions": 100,
+        "predicted_unknown": 72,
+        "known_but_predicted_unknown": 34,
+        "known_correct": 23,
+        "unknown_correct": 38
+      }
+    },
+    "qwen35": {
+      "before": {
+        "questions": 100,
+        "predicted_unknown": 49,
+        "known_but_predicted_unknown": 15,
+        "known_correct": 35,
+        "unknown_correct": 34
+      },
+      "after": {
+        "questions": 100,
+        "predicted_unknown": 57,
+        "known_but_predicted_unknown": 19,
+        "known_correct": 32,
+        "unknown_correct": 38
+      }
+    }
+  },
+  "epoch0_exposure": {
+    "v5_guard_insufficient_total": 39.650000000000034,
+    "v6_insufficient_total": 39.99583333333334,
+    "v6_direct_decision_share": 0.7185956870507367,
+    "v6_auxiliary_share": 0.28140431294926327,
+    "dependency_v5_guard": 9.812499999999996,
+    "dependency_v6": 5.166666666666666,
+    "dependency_ratio": 0.5265392781316349
+  },
+  "scope": "Exposure means summed scalar cross-entropy coefficients before optimizer/clipping/learning-rate scaling; not gradient norms or demonstrated causes of accuracy changes."
+}

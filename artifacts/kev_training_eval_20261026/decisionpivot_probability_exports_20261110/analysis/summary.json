@@ -1,0 +1,78 @@
+{
+  "aligned_questions": 7800,
+  "headline": {
+    "kev_blend__vs__startlux_autothink": {
+      "a_only_correct": 174,
+      "accuracy_a": 0.7111538461538461,
+      "accuracy_b": 0.9388461538461539,
+      "b_only_correct": 1950,
+      "both_correct": 5373,
+      "both_wrong_different": 37,
+      "both_wrong_same": 266,
+      "choice_disagree": 2161,
+      "max_tv": 0.9919795123862374,
+      "mean_tv": 0.23960742495456427,
+      "median_tv": 0.1096226600007625,
+      "n": 7800,
+      "n_tv_ge_0_25": 2876,
+      "n_tv_ge_0_50": 1697,
+      "n_tv_ge_0_75": 356,
+      "p90_tv": 0.6767967004997153,
+      "p95_tv": 0.7438776042872406,
+      "pair": "kev_blend__vs__startlux_autothink",
+      "task": "ALL"
+    },
+    "kev_blend__vs__startlux_instant": {
+      "a_only_correct": 332,
+      "accuracy_a": 0.7111538461538461,
+      "accuracy_b": 0.8625641025641025,
+      "b_only_correct": 1513,
+      "both_correct": 5215,
+      "both_wrong_different": 251,
+      "both_wrong_same": 489,
+      "choice_disagree": 2096,
+      "max_tv": 0.9996611576323704,
+      "mean_tv": 0.2625333955792774,
+      "median_tv": 0.1489815308559952,
+      "n": 7800,
+      "n_tv_ge_0_25": 3140,
+      "n_tv_ge_0_50": 1671,
+      "n_tv_ge_0_75": 671,
+      "p90_tv": 0.7191598503589076,
+      "p95_tv": 0.8418293974855762,
+      "pair": "kev_blend__vs__startlux_instant",
+      "task": "ALL"
+    },
+    "startlux_instant__vs__startlux_autothink": {
+      "a_only_correct": 345,
+      "accuracy_a": 0.8625641025641025,
+      "accuracy_b": 0.9388461538461539,
+      "b_only_correct": 940,
+      "both_correct": 6383,
+      "both_wrong_different": 45,
+      "both_wrong_same": 87,
+      "choice_disagree": 1330,
+      "max_tv": 0.9951481596695947,
+      "mean_tv": 0.17992266305453536,
+      "median_tv": 0.07207939263481164,
+      "n": 7800,
+      "n_tv_ge_0_25": 1810,
+      "n_tv_ge_0_50": 1048,
+      "n_tv_ge_0_75": 354,
+      "p90_tv": 0.5986475906785118,
+      "p95_tv": 0.7373331937711151,
+      "pair": "startlux_instant__vs__startlux_autothink",
+      "task": "ALL"
+    }
+  },
+  "metric": {
+    "formula": "0.5 * sum_i abs(p_i - q_i)",
+    "name": "total_variation_distance",
+    "range": [
+      0,
+      1
+    ],
+    "scope": "listed-option probabilities only; StartLux none_probability excluded for fair Kev comparison"
+  },
+  "top_n_per_pair": 100
+}

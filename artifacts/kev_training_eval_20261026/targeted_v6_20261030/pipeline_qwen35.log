@@ -1,0 +1,7 @@
+replay: 6000 of 12576 suite training records mixed with 1500 from /C20545/kev-08b-official-repro-20261026/targeted_v6_20261030/train.jsonl
+{"training_contexts_including_replay": 7500, "training_questions": 10866, "development_contexts": 336, "rejected_development": [], "context": {"max_state": 7552, "max_branch": 8192, "max_packed": 9216}}
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 138/320 [00:00<00:00, 1367.73it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1702.84it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/336
+evaluated 100/336
+evaluated 150/336

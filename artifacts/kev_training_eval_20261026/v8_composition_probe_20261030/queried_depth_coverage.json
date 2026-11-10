@@ -1,0 +1,574 @@
+{
+  "scope": "Post-hoc coverage diagnosis, not evidence that graph depth causes errors. Training hard=True and official soft=True flags are normalized before computing actual queried distance.",
+  "splits": {
+    "train": {
+      "counts": {
+        "1": 20,
+        "none": 24,
+        "4": 6,
+        "2": 9,
+        "3": 10,
+        "5": 1
+      },
+      "contexts": [
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/40",
+          "queried_distance": "1",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/39",
+          "queried_distance": "none",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/0",
+          "queried_distance": "none",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/48",
+          "queried_distance": "none",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/42",
+          "queried_distance": "none",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/65",
+          "queried_distance": "1",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/31",
+          "queried_distance": "1",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/14",
+          "queried_distance": "4",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/3",
+          "queried_distance": "none",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/41",
+          "queried_distance": "2",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/22",
+          "queried_distance": "2",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/2",
+          "queried_distance": "1",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/69",
+          "queried_distance": "none",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/59",
+          "queried_distance": "3",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/58",
+          "queried_distance": "2",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/32",
+          "queried_distance": "3",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/17",
+          "queried_distance": "3",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/15",
+          "queried_distance": "none",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/55",
+          "queried_distance": "2",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/34",
+          "queried_distance": "2",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/37",
+          "queried_distance": "1",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/60",
+          "queried_distance": "none",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/52",
+          "queried_distance": "3",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/9",
+          "queried_distance": "none",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/54",
+          "queried_distance": "none",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/66",
+          "queried_distance": "none",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/19",
+          "queried_distance": "1",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/67",
+          "queried_distance": "3",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/20",
+          "queried_distance": "1",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/50",
+          "queried_distance": "1",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/10",
+          "queried_distance": "2",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/64",
+          "queried_distance": "5",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/29",
+          "queried_distance": "3",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/5",
+          "queried_distance": "1",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/46",
+          "queried_distance": "2",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/21",
+          "queried_distance": "none",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/27",
+          "queried_distance": "none",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/49",
+          "queried_distance": "4",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/11",
+          "queried_distance": "1",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/36",
+          "queried_distance": "none",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/61",
+          "queried_distance": "2",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/43",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/51",
+          "queried_distance": "none",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/8",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/63",
+          "queried_distance": "none",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/13",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/6",
+          "queried_distance": "none",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/35",
+          "queried_distance": "1",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/68",
+          "queried_distance": "2",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/24",
+          "queried_distance": "none",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/57",
+          "queried_distance": "none",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/38",
+          "queried_distance": "3",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/28",
+          "queried_distance": "1",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/23",
+          "queried_distance": "1",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/47",
+          "queried_distance": "3",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/18",
+          "queried_distance": "none",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/45",
+          "queried_distance": "none",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/53",
+          "queried_distance": "3",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/56",
+          "queried_distance": "1",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/33",
+          "queried_distance": "none",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/4",
+          "queried_distance": "4",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/30",
+          "queried_distance": "none",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/1",
+          "queried_distance": "3",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/12",
+          "queried_distance": "none",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/25",
+          "queried_distance": "1",
+          "nominal_chain_hops": 1
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/44",
+          "queried_distance": "1",
+          "nominal_chain_hops": 5
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/62",
+          "queried_distance": "1",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/26",
+          "queried_distance": "1",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/7",
+          "queried_distance": "1",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/train/dependency_candidates/16",
+          "queried_distance": "1",
+          "nominal_chain_hops": 2
+        }
+      ]
+    },
+    "official_diagnostic": {
+      "counts": {
+        "none": 7,
+        "3": 3,
+        "4": 9,
+        "2": 7
+      },
+      "contexts": [
+        {
+          "id": "hard-v1/multi_hop/test/00063",
+          "queried_distance": "none",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00007",
+          "queried_distance": "3",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00023",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00084",
+          "queried_distance": "2",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00012",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00010",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00041",
+          "queried_distance": "none",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00095",
+          "queried_distance": "2",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00090",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00060",
+          "queried_distance": "none",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00069",
+          "queried_distance": "2",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00030",
+          "queried_distance": "2",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00050",
+          "queried_distance": "2",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00018",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00037",
+          "queried_distance": "none",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00099",
+          "queried_distance": "2",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00078",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00021",
+          "queried_distance": "2",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00088",
+          "queried_distance": "none",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00051",
+          "queried_distance": "3",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00031",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00046",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00075",
+          "queried_distance": "3",
+          "nominal_chain_hops": 3
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00073",
+          "queried_distance": "none",
+          "nominal_chain_hops": 2
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00002",
+          "queried_distance": "none",
+          "nominal_chain_hops": 4
+        },
+        {
+          "id": "hard-v1/multi_hop/test/00056",
+          "queried_distance": "4",
+          "nominal_chain_hops": 4
+        }
+      ]
+    }
+  },
+  "model_groups": {
+    "qwen3": {
+      "none": {
+        "questions": 7,
+        "before_correct": 6,
+        "after_correct": 1,
+        "repaired": 0,
+        "newly_wrong": 5
+      },
+      "3": {
+        "questions": 3,
+        "before_correct": 1,
+        "after_correct": 1,
+        "repaired": 0,
+        "newly_wrong": 0
+      },
+      "4": {
+        "questions": 9,
+        "before_correct": 2,
+        "after_correct": 1,
+        "repaired": 0,
+        "newly_wrong": 1
+      },
+      "2": {
+        "questions": 7,
+        "before_correct": 4,
+        "after_correct": 4,
+        "repaired": 0,
+        "newly_wrong": 0
+      }
+    },
+    "qwen35": {
+      "none": {
+        "questions": 7,
+        "before_correct": 2,
+        "after_correct": 0,
+        "repaired": 0,
+        "newly_wrong": 2
+      },
+      "3": {
+        "questions": 3,
+        "before_correct": 2,
+        "after_correct": 2,
+        "repaired": 0,
+        "newly_wrong": 0
+      },
+      "4": {
+        "questions": 9,
+        "before_correct": 8,
+        "after_correct": 8,
+        "repaired": 0,
+        "newly_wrong": 0
+      },
+      "2": {
+        "questions": 7,
+        "before_correct": 5,
+        "after_correct": 5,
+        "repaired": 0,
+        "newly_wrong": 0
+      }
+    }
+  },
+  "source_hashes": {
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v8_steps_20261030/train_original.jsonl": "51bd77f674d62bf9600c91d3dec2b52297e48c686198e2569dacb4f75dbf2845",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v8_steps_20261030/evidence/evals/hard-v1/test.jsonl": "246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v8_steps_20261030/paired-seven.jsonl": "011c80e0089350a50d7944a5e9c145dcd89cc17f75f40534fd0a9e862d6ace41"
+  }
+}

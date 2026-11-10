@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 89/320 [00:00<00:00, 867.84it/s]Loading weights:  81%|████████  | 259/320 [00:00<00:00, 1350.55it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1336.15it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/525
+evaluated 100/525
+evaluated 150/525
+evaluated 200/525
+evaluated 250/525
+evaluated 300/525
+evaluated 350/525
+evaluated 400/525
+evaluated 450/525
+evaluated 500/525
+{"clean": {"n": 1050, "nll": 1.0459895679237599, "acc": 0.5104761904761905, "ece": 0.03145129995926668, "brier": 0.5643342402914426, "mean_conf": 0.5075885719141312, "confident_error_rate": 0.0, "coverage_at_0_9": 0.09714285714285714, "accuracy_at_0_9": 1.0, "coverage_at_5pct_error": 0.15523809523809523, "coverage_at_1pct_error": 0.11523809523809524, "aurc": 0.26821443932107397, "error_rate_at_0_9": 0.0, "confidence_bias": -0.002887618562059324, "top_bins": {"0.9": {"n": 102, "errors": 0, "error_rate": 0.0}, "0.95": {"n": 74, "errors": 0, "error_rate": 0.0}, "0.99": {"n": 59, "errors": 0, "error_rate": 0.0}}, "selective": {"0.5": {"coverage": 0.5, "accuracy": 0.6971428571428572, "confidence_cutoff": 0.4275696097181663}, "0.8": {"coverage": 0.8019047619047619, "accuracy": 0.5617577197149644, "confidence_cutoff": 0.3320686926541941}}}, "coverage": {"requested_records": 525, "requested_questions": 1050, "evaluated_records": 525, "evaluated_questions": 1050, "rejected_records": 0, "truncated_records": 0}}

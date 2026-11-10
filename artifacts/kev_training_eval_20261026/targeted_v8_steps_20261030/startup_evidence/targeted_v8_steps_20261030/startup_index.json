@@ -1,0 +1,88 @@
+{
+  "files": {
+    "runs/qwen3-20261030-targeted-v8-steps/baseline_gate.json": "1ae4730959f5ee16c6171e35bd6e9685c830c939396a9b6333a3a0ae14be507d",
+    "runs/qwen3-20261030-targeted-v8-steps/development-before/report.json": "7fff841d6f028d56258fb4bc431bfda24c09d43709267b4248e9d56598b29c6d",
+    "runs/qwen3-20261030-targeted-v8-steps/development-before/rows.json": "6ac9548f6f08fadb3211203a2af2659fcb00de0b58cdbb7adbf4201c0b48b96e",
+    "runs/qwen3-20261030-targeted-v8-steps/development-steps-before/report.json": "2f5d28b3ec98b46519af98e707da96a68519fd903a30c008d2a3fbbe9e1f9d13",
+    "runs/qwen3-20261030-targeted-v8-steps/development-steps-before/rows.json": "97be41374b91323e83430fcc158fac95863cd814815387f552dee60f93c3ba92",
+    "runs/qwen3-20261030-targeted-v8-steps/preflight.json": "a15b42afce03a0c3b1f2dba61e141882a6290f70c5a169deae86f63343904513",
+    "runs/qwen3-20261030-targeted-v8-steps/train-probe-before/report.json": "01fcc6dc0f16bf0d88bc36a73ea4f327fe5af502ab24db3fa3bbbbdadc5d46ca",
+    "runs/qwen3-20261030-targeted-v8-steps/train-probe-before/rows.json": "ee807093c3c998b4aaef4e9c882f08f76eebd72a7bf1383e79dde182415b3e4a",
+    "runs/qwen35-20261030-targeted-v8-steps/baseline_gate.json": "1ae4730959f5ee16c6171e35bd6e9685c830c939396a9b6333a3a0ae14be507d",
+    "runs/qwen35-20261030-targeted-v8-steps/development-before/report.json": "cb81d23ebad272a99a6b93f7ae4a65fb54db5789687111a227e69ace64149d85",
+    "runs/qwen35-20261030-targeted-v8-steps/development-before/rows.json": "db64aabb46bbd8b1df650640ed549212d046aea49d62b36d17cd72dab98bb5be",
+    "runs/qwen35-20261030-targeted-v8-steps/development-steps-before/report.json": "e11c2a74206f4104fdcf6fa73356f102062055d98e83bd9ff285ce3147ef79e5",
+    "runs/qwen35-20261030-targeted-v8-steps/development-steps-before/rows.json": "85ac1c2eac19f533c75ab3b2fd7bdb60042473561a6a2259f47a8fdd00da769c",
+    "runs/qwen35-20261030-targeted-v8-steps/preflight.json": "a15b42afce03a0c3b1f2dba61e141882a6290f70c5a169deae86f63343904513",
+    "runs/qwen35-20261030-targeted-v8-steps/train-probe-before/report.json": "eca25940ff9afd3c4656dcce559e5eaf8a90b7acb71726015a2eda29ee342a0a",
+    "runs/qwen35-20261030-targeted-v8-steps/train-probe-before/rows.json": "a9cd6ab4b86b64735082df5c212a717a4b040900b3f40c10746aa59fd4406fe5",
+    "targeted_v8_steps_20261030/augmentation_audit.json": "785db5c01376ac08ffd073786753f010880e540a205b5f000e86d4d97b8f20d0",
+    "targeted_v8_steps_20261030/launch.json": "81b169df61494881cfcd8611044a2f46b211379740332248751e3f285c22d264",
+    "targeted_v8_steps_20261030/loss_audit.json": "ffe59d5197a1211fdcde4277d7edd1fb3ebbdc9ee4288ce64eaf692eb5bcea55",
+    "targeted_v8_steps_20261030/manifest.json": "6cce489e07edb640439738ed67f68e5bb86af6ecf5f3286ccf3320354cea5ade",
+    "targeted_v8_steps_20261030/primary_branch_invariance_before.json": "381514b7d854573288c00f322d147f137d231fa9fb49989004aa1298f5018dc4",
+    "targeted_v8_steps_20261030/qwen3-preflight.json": "a15b42afce03a0c3b1f2dba61e141882a6290f70c5a169deae86f63343904513",
+    "targeted_v8_steps_20261030/qwen35-preflight.json": "a15b42afce03a0c3b1f2dba61e141882a6290f70c5a169deae86f63343904513",
+    "targeted_v8_steps_20261030/run_status.json": "67fb13091f1dbdb53c7b8117a7917975f89764c135d815a7c9d156b551e74026",
+    "targeted_v8_steps_20261030/training_process_verification.json": "fec4b3c72527a9369868902d6f7802cb2f6a6cc2174460be8a2bfe9c7678368c"
+  },
+  "training_verified": {
+    "qwen3": {
+      "training_pid": 51656,
+      "lr": "1e-5",
+      "data": "/C20545/kev-08b-official-repro-20261026/targeted_v8_steps_20261030/train.jsonl",
+      "init_from": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3",
+      "epochs": "1",
+      "seed": "101",
+      "replay": "6000"
+    },
+    "qwen35": {
+      "training_pid": 52241,
+      "lr": "1e-5",
+      "data": "/C20545/kev-08b-official-repro-20261026/targeted_v8_steps_20261030/train.jsonl",
+      "init_from": "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3",
+      "epochs": "1",
+      "seed": "101",
+      "replay": "6000"
+    }
+  },
+  "primary_branch_invariance": {
+    "qwen3": {
+      "questions": 488,
+      "same_top_choice": 488,
+      "max_absolute_probability_difference": 3.3892851502015375e-06,
+      "changed": []
+    },
+    "qwen35": {
+      "questions": 488,
+      "same_top_choice": 487,
+      "max_absolute_probability_difference": 0.0006055367586996763,
+      "changed": [
+        {
+          "id": "targeted-v7-20261030/multihop-transfer-20261030/development/ownership_control_and_profit/5",
+          "question": "interest",
+          "keys": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "label": 3,
+          "plain_p": [
+            0.15412687106975384,
+            0.16897899143554335,
+            0.33848014932273707,
+            0.3384139881719658
+          ],
+          "steps_p": [
+            0.1539048128411891,
+            0.1689404870411826,
+            0.3385265818018702,
+            0.33862811831575806
+          ],
+          "max_delta": 0.00022205822856474766
+        }
+      ]
+    }
+  }
+}

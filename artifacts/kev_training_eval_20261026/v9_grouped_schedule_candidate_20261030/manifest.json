@@ -1,0 +1,166 @@
+{
+  "status": "sampler_verified_not_launched",
+  "goal_achieved": false,
+  "data_source": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v9_matched_20261030",
+  "data_sha256": "2932da30f01f37e6443f911399fa6195e99ca8605a5e92c85dcec7ba1896352d",
+  "base_contexts": 1500,
+  "additional_views": 1020,
+  "replay": 6000,
+  "expected_steps": 1065,
+  "original_train_code_sha256": "68428ed43b3e362e52d4650dc5296ab88767061f7998a525715e1b306eeef474",
+  "modified_train_code_sha256": "04ca7b47298e2bb701937a15d3ab3fef31acf949bd66ac4f84eafaecb01f8846",
+  "sampler_sha256": "944a33a5c31a347f2d507dfe69e4b97224de57d719a92d16d846597155757963",
+  "change": "Only training record schedule: matched pairs co-occur within a microbatch. CE, model architecture, original-stage3 initialization and data contents remain fixed. No explicit contrastive loss.",
+  "validation": [
+    {
+      "seed": 0,
+      "epoch": 0,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "65fa37989068bed2b6cbb623223f6d6a24370e930c37caf557b666de23c96719"
+    },
+    {
+      "seed": 0,
+      "epoch": 1,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "013db44cbc7aa91060533a962557912e2d795d7a4c7803c872d932d2dccea824"
+    },
+    {
+      "seed": 0,
+      "epoch": 2,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "1148d4e8c05a61c1adea43958a4cf912eb45532f2f0e084dc678bb39e0997445"
+    },
+    {
+      "seed": 1,
+      "epoch": 0,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "3fe3de187b145a65ce29f40998b1c4e9aff90b9c8a05ceafb6029728cca09661"
+    },
+    {
+      "seed": 1,
+      "epoch": 1,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "701f6053ac70ade6934c987bcb89144c7ee7bc894efcebcefde949c9ceafd0b1"
+    },
+    {
+      "seed": 1,
+      "epoch": 2,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "d528588b0dd9c88bd379dbb5654ac857ef3aa3afbb88d9278530b22f2341e842"
+    },
+    {
+      "seed": 7,
+      "epoch": 0,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "3d1bc66cd522e7cbdc69a1d93d3528d442916c9469409af661ebecd5acf73dbb"
+    },
+    {
+      "seed": 7,
+      "epoch": 1,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "2aff9819b2782015df3a1f049a9b2863cb8d20c09de981a29432ede873e3ffe7"
+    },
+    {
+      "seed": 7,
+      "epoch": 2,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "3ab0a15e1f99ee40f37e17e0fb7a54906f7956e0c99a0fb33365ccd1acb546f8"
+    },
+    {
+      "seed": 42,
+      "epoch": 0,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "387d76e534651e19371a0c5c1d6b101e4b86e6deb97399c48dfcca24fd40d50b"
+    },
+    {
+      "seed": 42,
+      "epoch": 1,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "948282edbd7be3a3d96a47a9474d7be4b94134f36e8561681e3d233850e0d129"
+    },
+    {
+      "seed": 42,
+      "epoch": 2,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "962d0822ea4b2ecdd4a556a44e4fce204970d384f878377335395fbd50b5d0b1"
+    },
+    {
+      "seed": 101,
+      "epoch": 0,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "485ec4c828e38ab3f235bd2042ae3edff313b54db5d9a88a23b17e1560276f3e"
+    },
+    {
+      "seed": 101,
+      "epoch": 1,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "96d96e94220e300c5e2f86cb6c5d3c920266a2abc6f35d51d41e3f673b96bc42"
+    },
+    {
+      "seed": 101,
+      "epoch": 2,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "ed63199800b488db2a3ea44aedd7a954d98d570487186bcb46bf1c75523c9639"
+    },
+    {
+      "seed": 20261030,
+      "epoch": 0,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "3568c3078b6b4c893345a4f283688871bf4ec03668b0f2378ed4c30239bfcb35"
+    },
+    {
+      "seed": 20261030,
+      "epoch": 1,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "7f5cd80a1c00b77c4f3c9a76f0c395b7b2e6570ee2773f93a2230701b8eab15e"
+    },
+    {
+      "seed": 20261030,
+      "epoch": 2,
+      "records": 8520,
+      "matched_pairs_same_microbatch": 1020,
+      "optimizer_steps": 1065,
+      "slot_order_sha256": "3bed4b62c4b0055b8bea480f4f126f3c19e51d45d0b022c07a61a94739757f8f"
+    }
+  ],
+  "limitations": [
+    "Record grouping changes stochastic gradients and per-record augmentation normalization through batch composition. This is not proof that grouping fixes performance.",
+    "Replay slots suffice for schedule verification because shuffling uses positions; actual replay identities and full preflight remain required before launch.",
+    "This is a prepared candidate only; no new model training or results exist.",
+    "The three retained categories are not edited, including ambiguous date wording."
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "name": "kev-v2-custom-public-candidate-115047",
+  "official_equivalence": false,
+  "warning": "Public/self-generated reconstruction; not the private official Kev-v2 training corpus.",
+  "candidate_records": 115047,
+  "records": 114627,
+  "candidate_component_counts": {
+    "kev_corpus": 71047,
+    "pivot_targeted": 20000,
+    "tasksource": 24000
+  },
+  "component_counts": {
+    "kev_corpus": 70627,
+    "pivot_targeted": 20000,
+    "tasksource": 24000
+  },
+  "question_type_counts": {
+    "choice": 104123,
+    "score": 5361,
+    "noul": 15718
+  },
+  "unique_ids": 115047,
+  "unique_content": 114627,
+  "exact_content_duplicates": 420,
+  "drop_exact_duplicates": true,
+  "output": "/data/kev-v2-custom-115047-20261107/train.dedup.jsonl",
+  "output_sha256": "7ed6345da12847d6f620b5dd077a8d50f0fad5cf77827c9dc8881358dc2cd980",
+  "sources": [
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261104/generated/abstention.jsonl",
+      "candidate_records": 3530,
+      "records": 3530,
+      "sha256": "c2d7486413ef9317633fb956c4455b7e708dac61f2de518e338b38d3a20eb694"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261104/generated/intent.jsonl",
+      "candidate_records": 4848,
+      "records": 4848,
+      "sha256": "50c1d6ba9b485ca6cd399e272c87beb3d262f91a67bb472a490ce8c6a58edb90"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261104/generated/long_doc.jsonl",
+      "candidate_records": 5471,
+      "records": 5471,
+      "sha256": "6f35cc2fac6cc6781890e7f617a8ccbc6284478ef5cfef578328a71fedc8493b"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261104/generated/numeric.jsonl",
+      "candidate_records": 3684,
+      "records": 3684,
+      "sha256": "72a9a104299114655b7b1590f3ede8bbd0fcc32678bb2b92b688a124932f8534"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261104/generated/retrieval.jsonl",
+      "candidate_records": 2772,
+      "records": 2772,
+      "sha256": "6e33d46650a33295eaaf46367dd5089ae9e111112a81da47d3e3d4f27839accb"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261104/generated/rubric_judge.jsonl",
+      "candidate_records": 7288,
+      "records": 7288,
+      "sha256": "7e5fcc2a459c3e66d963d61facf496661171efaa6bf28a8243b99ca9d17c31b0"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261104/generated/tool_routing.jsonl",
+      "candidate_records": 5514,
+      "records": 5514,
+      "sha256": "5f70200fa3dc6c682fa64094ab99e1ba721b976af4ce46e2f3f7885729f8132b"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261104/generated/hard_v1_extra.jsonl",
+      "candidate_records": 6000,
+      "records": 6000,
+      "sha256": "c514ba981d0c6172e994a162fd65adfabdec1370a18a49fe359eda93595a45fc"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261102/kev_upstream_exact/b1v2-train.jsonl",
+      "candidate_records": 15401,
+      "records": 14981,
+      "sha256": "fb86543b3baccb5aff9355065821e8481a083b874521637dc2f3a5cb06faa56a"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261102/kev_upstream_exact/devtools-v1-train.jsonl",
+      "candidate_records": 5320,
+      "records": 5320,
+      "sha256": "587682c145cbbc0c8c990e9d649da7b972853a9eaaef71e9b7b0fa18163b962c"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261102/kev_upstream_exact/documents-v1-train.jsonl",
+      "candidate_records": 5219,
+      "records": 5219,
+      "sha256": "2d7e4c4360d642a382d55425d7f34ffa2f46d00ca39a9bae31acaf82b178ee69"
+    },
+    {
+      "component": "kev_corpus",
+      "path": "/data/kev-v2-public-reconstruction-20261102/kev_upstream_exact/hard-v1-train.jsonl",
+      "candidate_records": 6000,
+      "records": 6000,
+      "sha256": "a08ca9c5ba5d365967876d7d88753cf876624be8553df5af3dca8973e4a1aa4d"
+    },
+    {
+      "component": "pivot_targeted",
+      "path": "/data/kev-v2-custom-115047-20261107/build/rendered.jsonl",
+      "candidate_records": 20000,
+      "records": 20000,
+      "sha256": "9b40813d103571b25063bc16337bad9f2fd16a57122df700e15ca2bdf1daf32f"
+    },
+    {
+      "component": "tasksource",
+      "path": "/data/kev-v2-public-reconstruction-20261105/tasksource_pivot_selected/tasksource_pivot_commercial_24k_typed.jsonl",
+      "candidate_records": 24000,
+      "records": 24000,
+      "sha256": "f71e19e14c1aadb4ccc6bec17a92c53a65abe7a3ec9b05638797da56d9757133"
+    }
+  ]
+}

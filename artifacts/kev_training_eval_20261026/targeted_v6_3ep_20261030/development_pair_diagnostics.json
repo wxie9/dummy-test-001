@@ -1,0 +1,1615 @@
+{
+  "models": {
+    "qwen3": {
+      "subquestion": {
+        "policy/order/amount": {
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 0,
+          "after_correct": 3,
+          "before_pct": 0.0,
+          "after_pct": 10.0,
+          "delta_pp": 10.0,
+          "repaired": 3,
+          "newly_wrong": 0,
+          "old_wrong": 30,
+          "repair_pct": 10.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            20.0
+          ]
+        },
+        "policy/order/reason": {
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 7,
+          "after_correct": 11,
+          "before_pct": 23.333333333333332,
+          "after_pct": 36.666666666666664,
+          "delta_pp": 13.333333333333334,
+          "repaired": 4,
+          "newly_wrong": 0,
+          "old_wrong": 23,
+          "repair_pct": 17.391304347826086,
+          "paired_context_bootstrap_95pct_pp": [
+            3.3333333333333335,
+            26.666666666666668
+          ]
+        },
+        "probability/any_fail/bucket": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 4,
+          "before_pct": 40.0,
+          "after_pct": 40.0,
+          "delta_pp": 0.0,
+          "repaired": 0,
+          "newly_wrong": 0,
+          "old_wrong": 6,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "probability/any_fail/probability": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 3,
+          "before_pct": 40.0,
+          "after_pct": 30.0,
+          "delta_pp": -10.0,
+          "repaired": 2,
+          "newly_wrong": 3,
+          "old_wrong": 6,
+          "repair_pct": 33.333333333333336,
+          "paired_context_bootstrap_95pct_pp": [
+            -50.0,
+            30.0
+          ]
+        },
+        "multihop/ownership_control_and_profit/controller": {
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 4,
+          "after_correct": 7,
+          "before_pct": 22.22222222222222,
+          "after_pct": 38.888888888888886,
+          "delta_pp": 16.666666666666668,
+          "repaired": 5,
+          "newly_wrong": 2,
+          "old_wrong": 14,
+          "repair_pct": 35.714285714285715,
+          "paired_context_bootstrap_95pct_pp": [
+            -11.11111111111111,
+            44.44444444444444
+          ]
+        },
+        "multihop/ownership_control_and_profit/interest": {
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 9,
+          "after_correct": 9,
+          "before_pct": 50.0,
+          "after_pct": 50.0,
+          "delta_pp": 0.0,
+          "repaired": 1,
+          "newly_wrong": 1,
+          "old_wrong": 9,
+          "repair_pct": 11.11111111111111,
+          "paired_context_bootstrap_95pct_pp": [
+            -16.666666666666668,
+            16.666666666666668
+          ]
+        },
+        "insufficient/missing_deciding/decision": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 21,
+          "after_correct": 25,
+          "before_pct": 75.0,
+          "after_pct": 89.28571428571429,
+          "delta_pp": 14.285714285714286,
+          "repaired": 5,
+          "newly_wrong": 1,
+          "old_wrong": 7,
+          "repair_pct": 71.42857142857143,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            32.142857142857146
+          ]
+        },
+        "insufficient/missing_deciding/decision_action": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 23,
+          "after_correct": 28,
+          "before_pct": 82.14285714285714,
+          "after_pct": 100.0,
+          "delta_pp": 17.857142857142858,
+          "repaired": 5,
+          "newly_wrong": 0,
+          "old_wrong": 5,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            3.5714285714285716,
+            32.142857142857146
+          ]
+        },
+        "insufficient/missing_deciding/decision_concise": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 13,
+          "after_correct": 26,
+          "before_pct": 46.42857142857143,
+          "after_pct": 92.85714285714286,
+          "delta_pp": 46.42857142857143,
+          "repaired": 13,
+          "newly_wrong": 0,
+          "old_wrong": 15,
+          "repair_pct": 86.66666666666667,
+          "paired_context_bootstrap_95pct_pp": [
+            28.571428571428573,
+            64.28571428571429
+          ]
+        },
+        "insufficient/missing_deciding/evidence_supports_no": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 13,
+          "after_correct": 27,
+          "before_pct": 46.42857142857143,
+          "after_pct": 96.42857142857143,
+          "delta_pp": 50.0,
+          "repaired": 14,
+          "newly_wrong": 0,
+          "old_wrong": 15,
+          "repair_pct": 93.33333333333333,
+          "paired_context_bootstrap_95pct_pp": [
+            32.142857142857146,
+            67.85714285714286
+          ]
+        },
+        "insufficient/missing_deciding/evidence_supports_yes": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 14,
+          "after_correct": 28,
+          "before_pct": 50.0,
+          "after_pct": 100.0,
+          "delta_pp": 50.0,
+          "repaired": 14,
+          "newly_wrong": 0,
+          "old_wrong": 14,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            32.142857142857146,
+            67.85714285714286
+          ]
+        },
+        "policy/multiple_denial/amount": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 10,
+          "after_correct": 10,
+          "before_pct": 100.0,
+          "after_pct": 100.0,
+          "delta_pp": 0.0,
+          "repaired": 0,
+          "newly_wrong": 0,
+          "old_wrong": 0,
+          "repair_pct": null,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "policy/multiple_denial/reason": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 6,
+          "before_pct": 30.0,
+          "after_pct": 60.0,
+          "delta_pp": 30.0,
+          "repaired": 3,
+          "newly_wrong": 0,
+          "old_wrong": 7,
+          "repair_pct": 42.857142857142854,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            60.0
+          ]
+        },
+        "insufficient/complete/decision": {
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 10,
+          "after_correct": 15,
+          "before_pct": 28.571428571428573,
+          "after_pct": 42.857142857142854,
+          "delta_pp": 14.285714285714286,
+          "repaired": 7,
+          "newly_wrong": 2,
+          "old_wrong": 25,
+          "repair_pct": 28.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -2.857142857142857,
+            31.428571428571427
+          ]
+        },
+        "insufficient/complete/decision_action": {
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 13,
+          "after_correct": 14,
+          "before_pct": 37.142857142857146,
+          "after_pct": 40.0,
+          "delta_pp": 2.857142857142857,
+          "repaired": 3,
+          "newly_wrong": 2,
+          "old_wrong": 22,
+          "repair_pct": 13.636363636363637,
+          "paired_context_bootstrap_95pct_pp": [
+            -8.571428571428571,
+            17.142857142857142
+          ]
+        },
+        "insufficient/complete/decision_concise": {
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 15,
+          "after_correct": 19,
+          "before_pct": 42.857142857142854,
+          "after_pct": 54.285714285714285,
+          "delta_pp": 11.428571428571429,
+          "repaired": 6,
+          "newly_wrong": 2,
+          "old_wrong": 20,
+          "repair_pct": 30.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -2.857142857142857,
+            25.714285714285715
+          ]
+        },
+        "insufficient/complete/evidence_supports_no": {
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 15,
+          "after_correct": 24,
+          "before_pct": 42.857142857142854,
+          "after_pct": 68.57142857142857,
+          "delta_pp": 25.714285714285715,
+          "repaired": 17,
+          "newly_wrong": 8,
+          "old_wrong": 20,
+          "repair_pct": 85.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -2.857142857142857,
+            51.42857142857143
+          ]
+        },
+        "insufficient/complete/evidence_supports_yes": {
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 21,
+          "after_correct": 23,
+          "before_pct": 60.0,
+          "after_pct": 65.71428571428571,
+          "delta_pp": 5.714285714285714,
+          "repaired": 7,
+          "newly_wrong": 5,
+          "old_wrong": 14,
+          "repair_pct": 50.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -14.285714285714286,
+            25.714285714285715
+          ]
+        },
+        "policy/boundary/amount": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 9,
+          "after_correct": 10,
+          "before_pct": 45.0,
+          "after_pct": 50.0,
+          "delta_pp": 5.0,
+          "repaired": 3,
+          "newly_wrong": 2,
+          "old_wrong": 11,
+          "repair_pct": 27.272727272727273,
+          "paired_context_bootstrap_95pct_pp": [
+            -15.0,
+            25.0
+          ]
+        },
+        "policy/boundary/reason": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 4,
+          "after_correct": 11,
+          "before_pct": 20.0,
+          "after_pct": 55.0,
+          "delta_pp": 35.0,
+          "repaired": 9,
+          "newly_wrong": 2,
+          "old_wrong": 16,
+          "repair_pct": 56.25,
+          "paired_context_bootstrap_95pct_pp": [
+            5.0,
+            65.0
+          ]
+        },
+        "multihop/rank_escalation/decision": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 1,
+          "after_correct": 2,
+          "before_pct": 10.0,
+          "after_pct": 20.0,
+          "delta_pp": 10.0,
+          "repaired": 1,
+          "newly_wrong": 0,
+          "old_wrong": 9,
+          "repair_pct": 11.11111111111111,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            30.0
+          ]
+        },
+        "multihop/dependency_candidates/decision": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 5,
+          "before_pct": 60.0,
+          "after_pct": 50.0,
+          "delta_pp": -10.0,
+          "repaired": 0,
+          "newly_wrong": 1,
+          "old_wrong": 4,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -30.0,
+            0.0
+          ]
+        },
+        "multihop/dated_roster/contact": {
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 5,
+          "after_correct": 5,
+          "before_pct": 41.666666666666664,
+          "after_pct": 41.666666666666664,
+          "delta_pp": 0.0,
+          "repaired": 1,
+          "newly_wrong": 1,
+          "old_wrong": 7,
+          "repair_pct": 14.285714285714286,
+          "paired_context_bootstrap_95pct_pp": [
+            -25.0,
+            25.0
+          ]
+        },
+        "multihop/dated_roster/group": {
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 6,
+          "after_correct": 10,
+          "before_pct": 50.0,
+          "after_pct": 83.33333333333333,
+          "delta_pp": 33.333333333333336,
+          "repaired": 4,
+          "newly_wrong": 0,
+          "old_wrong": 6,
+          "repair_pct": 66.66666666666667,
+          "paired_context_bootstrap_95pct_pp": [
+            8.333333333333334,
+            58.333333333333336
+          ]
+        },
+        "multihop/exact_supervisor_hops/approver": {
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 0,
+          "before_pct": 16.666666666666668,
+          "after_pct": 0.0,
+          "delta_pp": -16.666666666666668,
+          "repaired": 0,
+          "newly_wrong": 1,
+          "old_wrong": 5,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -50.0,
+            0.0
+          ]
+        },
+        "probability/compare/decision": {
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 3,
+          "after_correct": 1,
+          "before_pct": 50.0,
+          "after_pct": 16.666666666666668,
+          "delta_pp": -33.333333333333336,
+          "repaired": 0,
+          "newly_wrong": 2,
+          "old_wrong": 3,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -66.66666666666667,
+            0.0
+          ]
+        },
+        "insufficient/missing_nondeciding/decision": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 1,
+          "after_correct": 3,
+          "before_pct": 14.285714285714286,
+          "after_pct": 42.857142857142854,
+          "delta_pp": 28.571428571428573,
+          "repaired": 2,
+          "newly_wrong": 0,
+          "old_wrong": 6,
+          "repair_pct": 33.333333333333336,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            57.142857142857146
+          ]
+        },
+        "insufficient/missing_nondeciding/decision_action": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 1,
+          "after_correct": 1,
+          "before_pct": 14.285714285714286,
+          "after_pct": 14.285714285714286,
+          "delta_pp": 0.0,
+          "repaired": 1,
+          "newly_wrong": 1,
+          "old_wrong": 6,
+          "repair_pct": 16.666666666666668,
+          "paired_context_bootstrap_95pct_pp": [
+            -42.857142857142854,
+            42.857142857142854
+          ]
+        },
+        "insufficient/missing_nondeciding/decision_concise": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 2,
+          "after_correct": 3,
+          "before_pct": 28.571428571428573,
+          "after_pct": 42.857142857142854,
+          "delta_pp": 14.285714285714286,
+          "repaired": 2,
+          "newly_wrong": 1,
+          "old_wrong": 5,
+          "repair_pct": 40.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -28.571428571428573,
+            57.142857142857146
+          ]
+        },
+        "insufficient/missing_nondeciding/evidence_supports_no": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 5,
+          "after_correct": 3,
+          "before_pct": 71.42857142857143,
+          "after_pct": 42.857142857142854,
+          "delta_pp": -28.571428571428573,
+          "repaired": 1,
+          "newly_wrong": 3,
+          "old_wrong": 2,
+          "repair_pct": 50.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -71.42857142857143,
+            28.571428571428573
+          ]
+        },
+        "insufficient/missing_nondeciding/evidence_supports_yes": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 3,
+          "after_correct": 5,
+          "before_pct": 42.857142857142854,
+          "after_pct": 71.42857142857143,
+          "delta_pp": 28.571428571428573,
+          "repaired": 3,
+          "newly_wrong": 1,
+          "old_wrong": 4,
+          "repair_pct": 75.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -28.571428571428573,
+            71.42857142857143
+          ]
+        },
+        "probability/expected_value/project": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 6,
+          "before_pct": 40.0,
+          "after_pct": 60.0,
+          "delta_pp": 20.0,
+          "repaired": 2,
+          "newly_wrong": 0,
+          "old_wrong": 6,
+          "repair_pct": 33.333333333333336,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            50.0
+          ]
+        },
+        "probability/expected_value/value": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 0,
+          "after_correct": 5,
+          "before_pct": 0.0,
+          "after_pct": 50.0,
+          "delta_pp": 50.0,
+          "repaired": 5,
+          "newly_wrong": 0,
+          "old_wrong": 10,
+          "repair_pct": 50.0,
+          "paired_context_bootstrap_95pct_pp": [
+            20.0,
+            80.0
+          ]
+        },
+        "probability/bayes/bucket": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 2,
+          "after_correct": 1,
+          "before_pct": 20.0,
+          "after_pct": 10.0,
+          "delta_pp": -10.0,
+          "repaired": 0,
+          "newly_wrong": 1,
+          "old_wrong": 8,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -30.0,
+            0.0
+          ]
+        },
+        "probability/bayes/more_likely": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 6,
+          "before_pct": 60.0,
+          "after_pct": 60.0,
+          "delta_pp": 0.0,
+          "repaired": 0,
+          "newly_wrong": 0,
+          "old_wrong": 4,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "probability/bayes/posterior": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 6,
+          "before_pct": 30.0,
+          "after_pct": 60.0,
+          "delta_pp": 30.0,
+          "repaired": 4,
+          "newly_wrong": 1,
+          "old_wrong": 7,
+          "repair_pct": 57.142857142857146,
+          "paired_context_bootstrap_95pct_pp": [
+            -10.0,
+            70.0
+          ]
+        },
+        "probability/all/bucket": {
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 1,
+          "after_correct": 4,
+          "before_pct": 12.5,
+          "after_pct": 50.0,
+          "delta_pp": 37.5,
+          "repaired": 3,
+          "newly_wrong": 0,
+          "old_wrong": 7,
+          "repair_pct": 42.857142857142854,
+          "paired_context_bootstrap_95pct_pp": [
+            12.5,
+            75.0
+          ]
+        },
+        "probability/all/probability": {
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 2,
+          "after_correct": 3,
+          "before_pct": 25.0,
+          "after_pct": 37.5,
+          "delta_pp": 12.5,
+          "repaired": 1,
+          "newly_wrong": 0,
+          "old_wrong": 6,
+          "repair_pct": 16.666666666666668,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            37.5
+          ]
+        },
+        "probability/table/forward": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 1,
+          "after_correct": 4,
+          "before_pct": 10.0,
+          "after_pct": 40.0,
+          "delta_pp": 30.0,
+          "repaired": 3,
+          "newly_wrong": 0,
+          "old_wrong": 9,
+          "repair_pct": 33.333333333333336,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            60.0
+          ]
+        },
+        "probability/table/reverse": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 4,
+          "before_pct": 30.0,
+          "after_pct": 40.0,
+          "delta_pp": 10.0,
+          "repaired": 1,
+          "newly_wrong": 0,
+          "old_wrong": 7,
+          "repair_pct": 14.285714285714286,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            30.0
+          ]
+        },
+        "probability/any/bucket": {
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 1,
+          "before_pct": 33.333333333333336,
+          "after_pct": 16.666666666666668,
+          "delta_pp": -16.666666666666668,
+          "repaired": 0,
+          "newly_wrong": 1,
+          "old_wrong": 4,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -50.0,
+            0.0
+          ]
+        },
+        "probability/any/probability": {
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 3,
+          "after_correct": 3,
+          "before_pct": 50.0,
+          "after_pct": 50.0,
+          "delta_pp": 0.0,
+          "repaired": 1,
+          "newly_wrong": 1,
+          "old_wrong": 3,
+          "repair_pct": 33.333333333333336,
+          "paired_context_bootstrap_95pct_pp": [
+            -50.0,
+            50.0
+          ]
+        }
+      },
+      "whole_pair": {
+        "policy/order": {
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_pct": 0.0,
+          "after_pct": 0.0,
+          "delta_pp": 0.0,
+          "repaired": 0,
+          "newly_wrong": 0,
+          "old_wrong": 15,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "insufficient/deciding": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 0,
+          "after_correct": 7,
+          "before_pct": 0.0,
+          "after_pct": 25.0,
+          "delta_pp": 25.0,
+          "repaired": 7,
+          "newly_wrong": 0,
+          "old_wrong": 28,
+          "repair_pct": 25.0,
+          "paired_context_bootstrap_95pct_pp": [
+            10.714285714285714,
+            42.857142857142854
+          ]
+        },
+        "policy/multiple_denial": {
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 0,
+          "after_correct": 1,
+          "before_pct": 0.0,
+          "after_pct": 20.0,
+          "delta_pp": 20.0,
+          "repaired": 1,
+          "newly_wrong": 0,
+          "old_wrong": 5,
+          "repair_pct": 20.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            60.0
+          ]
+        },
+        "policy/boundary": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_pct": 0.0,
+          "after_pct": 0.0,
+          "delta_pp": 0.0,
+          "repaired": 0,
+          "newly_wrong": 0,
+          "old_wrong": 10,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "insufficient/nondeciding": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 0,
+          "after_correct": 0,
+          "before_pct": 0.0,
+          "after_pct": 0.0,
+          "delta_pp": 0.0,
+          "repaired": 0,
+          "newly_wrong": 0,
+          "old_wrong": 7,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "qwen35": {
+      "subquestion": {
+        "policy/order/amount": {
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 6,
+          "after_correct": 16,
+          "before_pct": 20.0,
+          "after_pct": 53.333333333333336,
+          "delta_pp": 33.333333333333336,
+          "repaired": 12,
+          "newly_wrong": 2,
+          "old_wrong": 24,
+          "repair_pct": 50.0,
+          "paired_context_bootstrap_95pct_pp": [
+            13.333333333333334,
+            53.333333333333336
+          ]
+        },
+        "policy/order/reason": {
+          "questions": 30,
+          "contexts": 30,
+          "before_correct": 8,
+          "after_correct": 16,
+          "before_pct": 26.666666666666668,
+          "after_pct": 53.333333333333336,
+          "delta_pp": 26.666666666666668,
+          "repaired": 10,
+          "newly_wrong": 2,
+          "old_wrong": 22,
+          "repair_pct": 45.45454545454545,
+          "paired_context_bootstrap_95pct_pp": [
+            6.666666666666667,
+            46.666666666666664
+          ]
+        },
+        "probability/any_fail/bucket": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 2,
+          "after_correct": 5,
+          "before_pct": 20.0,
+          "after_pct": 50.0,
+          "delta_pp": 30.0,
+          "repaired": 3,
+          "newly_wrong": 0,
+          "old_wrong": 8,
+          "repair_pct": 37.5,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            60.0
+          ]
+        },
+        "probability/any_fail/probability": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 3,
+          "after_correct": 3,
+          "before_pct": 30.0,
+          "after_pct": 30.0,
+          "delta_pp": 0.0,
+          "repaired": 1,
+          "newly_wrong": 1,
+          "old_wrong": 7,
+          "repair_pct": 14.285714285714286,
+          "paired_context_bootstrap_95pct_pp": [
+            -30.0,
+            30.0
+          ]
+        },
+        "multihop/ownership_control_and_profit/controller": {
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 7,
+          "after_correct": 13,
+          "before_pct": 38.888888888888886,
+          "after_pct": 72.22222222222223,
+          "delta_pp": 33.333333333333336,
+          "repaired": 7,
+          "newly_wrong": 1,
+          "old_wrong": 11,
+          "repair_pct": 63.63636363636363,
+          "paired_context_bootstrap_95pct_pp": [
+            5.555555555555555,
+            61.111111111111114
+          ]
+        },
+        "multihop/ownership_control_and_profit/interest": {
+          "questions": 18,
+          "contexts": 18,
+          "before_correct": 9,
+          "after_correct": 11,
+          "before_pct": 50.0,
+          "after_pct": 61.111111111111114,
+          "delta_pp": 11.11111111111111,
+          "repaired": 4,
+          "newly_wrong": 2,
+          "old_wrong": 9,
+          "repair_pct": 44.44444444444444,
+          "paired_context_bootstrap_95pct_pp": [
+            -16.666666666666668,
+            33.333333333333336
+          ]
+        },
+        "insufficient/missing_deciding/decision": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 18,
+          "after_correct": 27,
+          "before_pct": 64.28571428571429,
+          "after_pct": 96.42857142857143,
+          "delta_pp": 32.142857142857146,
+          "repaired": 9,
+          "newly_wrong": 0,
+          "old_wrong": 10,
+          "repair_pct": 90.0,
+          "paired_context_bootstrap_95pct_pp": [
+            14.285714285714286,
+            50.0
+          ]
+        },
+        "insufficient/missing_deciding/decision_action": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 16,
+          "after_correct": 28,
+          "before_pct": 57.142857142857146,
+          "after_pct": 100.0,
+          "delta_pp": 42.857142857142854,
+          "repaired": 12,
+          "newly_wrong": 0,
+          "old_wrong": 12,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            25.0,
+            60.714285714285715
+          ]
+        },
+        "insufficient/missing_deciding/decision_concise": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 11,
+          "after_correct": 28,
+          "before_pct": 39.285714285714285,
+          "after_pct": 100.0,
+          "delta_pp": 60.714285714285715,
+          "repaired": 17,
+          "newly_wrong": 0,
+          "old_wrong": 17,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            42.857142857142854,
+            78.57142857142857
+          ]
+        },
+        "insufficient/missing_deciding/evidence_supports_no": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 23,
+          "after_correct": 28,
+          "before_pct": 82.14285714285714,
+          "after_pct": 100.0,
+          "delta_pp": 17.857142857142858,
+          "repaired": 5,
+          "newly_wrong": 0,
+          "old_wrong": 5,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            3.5714285714285716,
+            32.142857142857146
+          ]
+        },
+        "insufficient/missing_deciding/evidence_supports_yes": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 15,
+          "after_correct": 28,
+          "before_pct": 53.57142857142857,
+          "after_pct": 100.0,
+          "delta_pp": 46.42857142857143,
+          "repaired": 13,
+          "newly_wrong": 0,
+          "old_wrong": 13,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            28.571428571428573,
+            64.28571428571429
+          ]
+        },
+        "policy/multiple_denial/amount": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 8,
+          "after_correct": 10,
+          "before_pct": 80.0,
+          "after_pct": 100.0,
+          "delta_pp": 20.0,
+          "repaired": 2,
+          "newly_wrong": 0,
+          "old_wrong": 2,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            50.0
+          ]
+        },
+        "policy/multiple_denial/reason": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 8,
+          "before_pct": 40.0,
+          "after_pct": 80.0,
+          "delta_pp": 40.0,
+          "repaired": 4,
+          "newly_wrong": 0,
+          "old_wrong": 6,
+          "repair_pct": 66.66666666666667,
+          "paired_context_bootstrap_95pct_pp": [
+            10.0,
+            70.0
+          ]
+        },
+        "insufficient/complete/decision": {
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 18,
+          "after_correct": 29,
+          "before_pct": 51.42857142857143,
+          "after_pct": 82.85714285714286,
+          "delta_pp": 31.428571428571427,
+          "repaired": 11,
+          "newly_wrong": 0,
+          "old_wrong": 17,
+          "repair_pct": 64.70588235294117,
+          "paired_context_bootstrap_95pct_pp": [
+            17.142857142857142,
+            45.714285714285715
+          ]
+        },
+        "insufficient/complete/decision_action": {
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 17,
+          "after_correct": 28,
+          "before_pct": 48.57142857142857,
+          "after_pct": 80.0,
+          "delta_pp": 31.428571428571427,
+          "repaired": 11,
+          "newly_wrong": 0,
+          "old_wrong": 18,
+          "repair_pct": 61.111111111111114,
+          "paired_context_bootstrap_95pct_pp": [
+            17.142857142857142,
+            45.714285714285715
+          ]
+        },
+        "insufficient/complete/decision_concise": {
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 18,
+          "after_correct": 30,
+          "before_pct": 51.42857142857143,
+          "after_pct": 85.71428571428571,
+          "delta_pp": 34.285714285714285,
+          "repaired": 12,
+          "newly_wrong": 0,
+          "old_wrong": 17,
+          "repair_pct": 70.58823529411765,
+          "paired_context_bootstrap_95pct_pp": [
+            20.0,
+            48.57142857142857
+          ]
+        },
+        "insufficient/complete/evidence_supports_no": {
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 16,
+          "after_correct": 26,
+          "before_pct": 45.714285714285715,
+          "after_pct": 74.28571428571429,
+          "delta_pp": 28.571428571428573,
+          "repaired": 11,
+          "newly_wrong": 1,
+          "old_wrong": 19,
+          "repair_pct": 57.89473684210526,
+          "paired_context_bootstrap_95pct_pp": [
+            11.428571428571429,
+            45.714285714285715
+          ]
+        },
+        "insufficient/complete/evidence_supports_yes": {
+          "questions": 35,
+          "contexts": 35,
+          "before_correct": 22,
+          "after_correct": 31,
+          "before_pct": 62.857142857142854,
+          "after_pct": 88.57142857142857,
+          "delta_pp": 25.714285714285715,
+          "repaired": 10,
+          "newly_wrong": 1,
+          "old_wrong": 13,
+          "repair_pct": 76.92307692307692,
+          "paired_context_bootstrap_95pct_pp": [
+            11.428571428571429,
+            42.857142857142854
+          ]
+        },
+        "policy/boundary/amount": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 4,
+          "after_correct": 12,
+          "before_pct": 20.0,
+          "after_pct": 60.0,
+          "delta_pp": 40.0,
+          "repaired": 8,
+          "newly_wrong": 0,
+          "old_wrong": 16,
+          "repair_pct": 50.0,
+          "paired_context_bootstrap_95pct_pp": [
+            20.0,
+            60.0
+          ]
+        },
+        "policy/boundary/reason": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 5,
+          "after_correct": 14,
+          "before_pct": 25.0,
+          "after_pct": 70.0,
+          "delta_pp": 45.0,
+          "repaired": 10,
+          "newly_wrong": 1,
+          "old_wrong": 15,
+          "repair_pct": 66.66666666666667,
+          "paired_context_bootstrap_95pct_pp": [
+            20.0,
+            70.0
+          ]
+        },
+        "multihop/rank_escalation/decision": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 5,
+          "before_pct": 40.0,
+          "after_pct": 50.0,
+          "delta_pp": 10.0,
+          "repaired": 1,
+          "newly_wrong": 0,
+          "old_wrong": 6,
+          "repair_pct": 16.666666666666668,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            30.0
+          ]
+        },
+        "multihop/dependency_candidates/decision": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 6,
+          "before_pct": 60.0,
+          "after_pct": 60.0,
+          "delta_pp": 0.0,
+          "repaired": 1,
+          "newly_wrong": 1,
+          "old_wrong": 4,
+          "repair_pct": 25.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -30.0,
+            30.0
+          ]
+        },
+        "multihop/dated_roster/contact": {
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 2,
+          "after_correct": 5,
+          "before_pct": 16.666666666666668,
+          "after_pct": 41.666666666666664,
+          "delta_pp": 25.0,
+          "repaired": 4,
+          "newly_wrong": 1,
+          "old_wrong": 10,
+          "repair_pct": 40.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -8.333333333333334,
+            58.333333333333336
+          ]
+        },
+        "multihop/dated_roster/group": {
+          "questions": 12,
+          "contexts": 12,
+          "before_correct": 11,
+          "after_correct": 12,
+          "before_pct": 91.66666666666667,
+          "after_pct": 100.0,
+          "delta_pp": 8.333333333333334,
+          "repaired": 1,
+          "newly_wrong": 0,
+          "old_wrong": 1,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            25.0
+          ]
+        },
+        "multihop/exact_supervisor_hops/approver": {
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 2,
+          "after_correct": 1,
+          "before_pct": 33.333333333333336,
+          "after_pct": 16.666666666666668,
+          "delta_pp": -16.666666666666668,
+          "repaired": 0,
+          "newly_wrong": 1,
+          "old_wrong": 4,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -50.0,
+            0.0
+          ]
+        },
+        "probability/compare/decision": {
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 5,
+          "after_correct": 2,
+          "before_pct": 83.33333333333333,
+          "after_pct": 33.333333333333336,
+          "delta_pp": -50.0,
+          "repaired": 0,
+          "newly_wrong": 3,
+          "old_wrong": 1,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -83.33333333333333,
+            -16.666666666666668
+          ]
+        },
+        "insufficient/missing_nondeciding/decision": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 4,
+          "after_correct": 4,
+          "before_pct": 57.142857142857146,
+          "after_pct": 57.142857142857146,
+          "delta_pp": 0.0,
+          "repaired": 0,
+          "newly_wrong": 0,
+          "old_wrong": 3,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "insufficient/missing_nondeciding/decision_action": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 4,
+          "after_correct": 5,
+          "before_pct": 57.142857142857146,
+          "after_pct": 71.42857142857143,
+          "delta_pp": 14.285714285714286,
+          "repaired": 1,
+          "newly_wrong": 0,
+          "old_wrong": 3,
+          "repair_pct": 33.333333333333336,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            42.857142857142854
+          ]
+        },
+        "insufficient/missing_nondeciding/decision_concise": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 5,
+          "after_correct": 5,
+          "before_pct": 71.42857142857143,
+          "after_pct": 71.42857142857143,
+          "delta_pp": 0.0,
+          "repaired": 0,
+          "newly_wrong": 0,
+          "old_wrong": 2,
+          "repair_pct": 0.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "insufficient/missing_nondeciding/evidence_supports_no": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 4,
+          "after_correct": 6,
+          "before_pct": 57.142857142857146,
+          "after_pct": 85.71428571428571,
+          "delta_pp": 28.571428571428573,
+          "repaired": 2,
+          "newly_wrong": 0,
+          "old_wrong": 3,
+          "repair_pct": 66.66666666666667,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            71.42857142857143
+          ]
+        },
+        "insufficient/missing_nondeciding/evidence_supports_yes": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 6,
+          "after_correct": 6,
+          "before_pct": 85.71428571428571,
+          "after_pct": 85.71428571428571,
+          "delta_pp": 0.0,
+          "repaired": 1,
+          "newly_wrong": 1,
+          "old_wrong": 1,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -42.857142857142854,
+            42.857142857142854
+          ]
+        },
+        "probability/expected_value/project": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 6,
+          "after_correct": 6,
+          "before_pct": 60.0,
+          "after_pct": 60.0,
+          "delta_pp": 0.0,
+          "repaired": 1,
+          "newly_wrong": 1,
+          "old_wrong": 4,
+          "repair_pct": 25.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -30.0,
+            30.0
+          ]
+        },
+        "probability/expected_value/value": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 0,
+          "after_correct": 5,
+          "before_pct": 0.0,
+          "after_pct": 50.0,
+          "delta_pp": 50.0,
+          "repaired": 5,
+          "newly_wrong": 0,
+          "old_wrong": 10,
+          "repair_pct": 50.0,
+          "paired_context_bootstrap_95pct_pp": [
+            20.0,
+            80.0
+          ]
+        },
+        "probability/bayes/bucket": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 1,
+          "after_correct": 4,
+          "before_pct": 10.0,
+          "after_pct": 40.0,
+          "delta_pp": 30.0,
+          "repaired": 4,
+          "newly_wrong": 1,
+          "old_wrong": 9,
+          "repair_pct": 44.44444444444444,
+          "paired_context_bootstrap_95pct_pp": [
+            -10.0,
+            70.0
+          ]
+        },
+        "probability/bayes/more_likely": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 5,
+          "after_correct": 8,
+          "before_pct": 50.0,
+          "after_pct": 80.0,
+          "delta_pp": 30.0,
+          "repaired": 3,
+          "newly_wrong": 0,
+          "old_wrong": 5,
+          "repair_pct": 60.0,
+          "paired_context_bootstrap_95pct_pp": [
+            10.0,
+            60.0
+          ]
+        },
+        "probability/bayes/posterior": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 4,
+          "after_correct": 6,
+          "before_pct": 40.0,
+          "after_pct": 60.0,
+          "delta_pp": 20.0,
+          "repaired": 3,
+          "newly_wrong": 1,
+          "old_wrong": 6,
+          "repair_pct": 50.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -20.0,
+            60.0
+          ]
+        },
+        "probability/all/bucket": {
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 1,
+          "after_correct": 5,
+          "before_pct": 12.5,
+          "after_pct": 62.5,
+          "delta_pp": 50.0,
+          "repaired": 4,
+          "newly_wrong": 0,
+          "old_wrong": 7,
+          "repair_pct": 57.142857142857146,
+          "paired_context_bootstrap_95pct_pp": [
+            12.5,
+            87.5
+          ]
+        },
+        "probability/all/probability": {
+          "questions": 8,
+          "contexts": 8,
+          "before_correct": 0,
+          "after_correct": 3,
+          "before_pct": 0.0,
+          "after_pct": 37.5,
+          "delta_pp": 37.5,
+          "repaired": 3,
+          "newly_wrong": 0,
+          "old_wrong": 8,
+          "repair_pct": 37.5,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            75.0
+          ]
+        },
+        "probability/table/forward": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 0,
+          "after_correct": 5,
+          "before_pct": 0.0,
+          "after_pct": 50.0,
+          "delta_pp": 50.0,
+          "repaired": 5,
+          "newly_wrong": 0,
+          "old_wrong": 10,
+          "repair_pct": 50.0,
+          "paired_context_bootstrap_95pct_pp": [
+            20.0,
+            80.0
+          ]
+        },
+        "probability/table/reverse": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 1,
+          "after_correct": 3,
+          "before_pct": 10.0,
+          "after_pct": 30.0,
+          "delta_pp": 20.0,
+          "repaired": 3,
+          "newly_wrong": 1,
+          "old_wrong": 9,
+          "repair_pct": 33.333333333333336,
+          "paired_context_bootstrap_95pct_pp": [
+            -20.0,
+            60.0
+          ]
+        },
+        "probability/any/bucket": {
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 1,
+          "after_correct": 3,
+          "before_pct": 16.666666666666668,
+          "after_pct": 50.0,
+          "delta_pp": 33.333333333333336,
+          "repaired": 3,
+          "newly_wrong": 1,
+          "old_wrong": 5,
+          "repair_pct": 60.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -33.333333333333336,
+            83.33333333333333
+          ]
+        },
+        "probability/any/probability": {
+          "questions": 6,
+          "contexts": 6,
+          "before_correct": 3,
+          "after_correct": 4,
+          "before_pct": 50.0,
+          "after_pct": 66.66666666666667,
+          "delta_pp": 16.666666666666668,
+          "repaired": 2,
+          "newly_wrong": 1,
+          "old_wrong": 3,
+          "repair_pct": 66.66666666666667,
+          "paired_context_bootstrap_95pct_pp": [
+            -33.333333333333336,
+            66.66666666666667
+          ]
+        }
+      },
+      "whole_pair": {
+        "policy/order": {
+          "questions": 15,
+          "contexts": 15,
+          "before_correct": 0,
+          "after_correct": 1,
+          "before_pct": 0.0,
+          "after_pct": 6.666666666666667,
+          "delta_pp": 6.666666666666667,
+          "repaired": 1,
+          "newly_wrong": 0,
+          "old_wrong": 15,
+          "repair_pct": 6.666666666666667,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            20.0
+          ]
+        },
+        "insufficient/deciding": {
+          "questions": 28,
+          "contexts": 28,
+          "before_correct": 1,
+          "after_correct": 20,
+          "before_pct": 3.5714285714285716,
+          "after_pct": 71.42857142857143,
+          "delta_pp": 67.85714285714286,
+          "repaired": 19,
+          "newly_wrong": 0,
+          "old_wrong": 27,
+          "repair_pct": 70.37037037037037,
+          "paired_context_bootstrap_95pct_pp": [
+            50.0,
+            85.71428571428571
+          ]
+        },
+        "policy/multiple_denial": {
+          "questions": 5,
+          "contexts": 5,
+          "before_correct": 1,
+          "after_correct": 3,
+          "before_pct": 20.0,
+          "after_pct": 60.0,
+          "delta_pp": 40.0,
+          "repaired": 2,
+          "newly_wrong": 0,
+          "old_wrong": 4,
+          "repair_pct": 50.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            80.0
+          ]
+        },
+        "policy/boundary": {
+          "questions": 10,
+          "contexts": 10,
+          "before_correct": 0,
+          "after_correct": 2,
+          "before_pct": 0.0,
+          "after_pct": 20.0,
+          "delta_pp": 20.0,
+          "repaired": 2,
+          "newly_wrong": 0,
+          "old_wrong": 10,
+          "repair_pct": 20.0,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            50.0
+          ]
+        },
+        "insufficient/nondeciding": {
+          "questions": 7,
+          "contexts": 7,
+          "before_correct": 0,
+          "after_correct": 2,
+          "before_pct": 0.0,
+          "after_pct": 28.571428571428573,
+          "delta_pp": 28.571428571428573,
+          "repaired": 2,
+          "newly_wrong": 0,
+          "old_wrong": 7,
+          "repair_pct": 28.571428571428573,
+          "paired_context_bootstrap_95pct_pp": [
+            0.0,
+            71.42857142857143
+          ]
+        }
+      }
+    }
+  },
+  "scope": "Same-generator development. A whole pair is correct only if every subquestion in both siblings is correct."
+}

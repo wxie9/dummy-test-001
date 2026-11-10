@@ -1,0 +1,92 @@
+{
+  "status": "component_only_not_trained",
+  "planned_train_contexts": 270,
+  "files": {
+    "train": {
+      "contexts": 270,
+      "questions": 420,
+      "subtypes": {
+        "dependency_candidates": 70,
+        "rank_escalation": 25,
+        "ownership_control_and_profit": 90,
+        "dated_roster": 60,
+        "exact_supervisor_hops": 25
+      },
+      "absence_coverage": {
+        "no_absence_record": 158,
+        "future_absence": 161,
+        "past_absence": 161,
+        "start_boundary": 20,
+        "end_boundary": 21,
+        "inside": 19
+      },
+      "layout_by_outcome": {
+        "dependency_candidates/failed_candidate/numbered": 16,
+        "dependency_candidates/none/object": 8,
+        "dated_roster/1/object": 6,
+        "dated_roster/0/numbered": 7,
+        "dependency_candidates/failed_candidate/plain": 16,
+        "dated_roster/2/object": 6,
+        "dated_roster/2/numbered": 7,
+        "dated_roster/0/plain": 7,
+        "dependency_candidates/failed_candidate/object": 14,
+        "dated_roster/2/plain": 7,
+        "dated_roster/0/object": 6,
+        "dated_roster/1/plain": 7,
+        "dependency_candidates/none/numbered": 8,
+        "dependency_candidates/none/plain": 8,
+        "dated_roster/1/numbered": 7
+      },
+      "incorrect_labels_rejected": 1693,
+      "sha256": "dee9b6090ebefbb12370c9d25bfe991330a03654388f5dab8ce0bb03bc02a2be"
+    },
+    "development": {
+      "contexts": 54,
+      "questions": 84,
+      "subtypes": {
+        "dated_roster": 12,
+        "dependency_candidates": 14,
+        "ownership_control_and_profit": 18,
+        "rank_escalation": 5,
+        "exact_supervisor_hops": 5
+      },
+      "absence_coverage": {
+        "no_absence_record": 32,
+        "future_absence": 32,
+        "past_absence": 32,
+        "start_boundary": 5,
+        "end_boundary": 4,
+        "inside": 3
+      },
+      "layout_by_outcome": {
+        "dated_roster/0/plain": 2,
+        "dependency_candidates/failed_candidate/numbered": 3,
+        "dated_roster/1/object": 1,
+        "dependency_candidates/none/numbered": 2,
+        "dated_roster/1/plain": 2,
+        "dependency_candidates/failed_candidate/plain": 4,
+        "dated_roster/0/object": 1,
+        "dated_roster/2/plain": 2,
+        "dependency_candidates/failed_candidate/object": 2,
+        "dependency_candidates/none/plain": 2,
+        "dependency_candidates/none/object": 1,
+        "dated_roster/1/numbered": 1,
+        "dated_roster/2/numbered": 1,
+        "dated_roster/0/numbered": 1,
+        "dated_roster/2/object": 1
+      },
+      "incorrect_labels_rejected": 333,
+      "sha256": "630784f32f39608b56f0058ad4e8ebf95ca76e58707d2a94eea1a889ae13696b"
+    }
+  },
+  "limitations": [
+    "Same-author visible-text checker, no external semantic review.",
+    "Shared generators and inspected official tests do not support blind generalization claims.",
+    "Only the multihop component, not a complete 1500-context corpus."
+  ],
+  "checks": {
+    "visible_label_recomputation": true,
+    "serialized_roundtrip_verified": true,
+    "normalized_state_train_dev_prior_v6_and_frozen_test_overlap": 0
+  }
+}

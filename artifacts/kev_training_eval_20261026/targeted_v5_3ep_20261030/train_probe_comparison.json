@@ -1,0 +1,286 @@
+{
+  "models": {
+    "qwen3": {
+      "overall": {
+        "questions": 175,
+        "contexts": 140,
+        "before_correct": 60,
+        "after_correct": 111,
+        "before_pct": 34.285714285714285,
+        "after_pct": 63.42857142857143,
+        "delta_pp": 29.142857142857142,
+        "repaired": 59,
+        "newly_wrong": 8,
+        "old_wrong": 115,
+        "repair_pct": 51.30434782608695,
+        "paired_context_bootstrap_95pct_pp": [
+          21.142857142857142,
+          37.15846994535519
+        ]
+      },
+      "families": {
+        "injection": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 10,
+          "after_correct": 20,
+          "before_pct": 50.0,
+          "after_pct": 100.0,
+          "delta_pp": 50.0,
+          "repaired": 10,
+          "newly_wrong": 0,
+          "old_wrong": 10,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            25.0,
+            70.0
+          ]
+        },
+        "insufficient": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 9,
+          "after_correct": 13,
+          "before_pct": 45.0,
+          "after_pct": 65.0,
+          "delta_pp": 20.0,
+          "repaired": 5,
+          "newly_wrong": 1,
+          "old_wrong": 11,
+          "repair_pct": 45.45454545454545,
+          "paired_context_bootstrap_95pct_pp": [
+            -5.0,
+            45.0
+          ]
+        },
+        "multihop": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 5,
+          "after_correct": 15,
+          "before_pct": 25.0,
+          "after_pct": 75.0,
+          "delta_pp": 50.0,
+          "repaired": 10,
+          "newly_wrong": 0,
+          "old_wrong": 15,
+          "repair_pct": 66.66666666666667,
+          "paired_context_bootstrap_95pct_pp": [
+            30.0,
+            70.0
+          ]
+        },
+        "policy": {
+          "questions": 40,
+          "contexts": 20,
+          "before_correct": 12,
+          "after_correct": 22,
+          "before_pct": 30.0,
+          "after_pct": 55.0,
+          "delta_pp": 25.0,
+          "repaired": 12,
+          "newly_wrong": 2,
+          "old_wrong": 28,
+          "repair_pct": 42.857142857142854,
+          "paired_context_bootstrap_95pct_pp": [
+            7.5,
+            42.5
+          ]
+        },
+        "probability": {
+          "questions": 35,
+          "contexts": 20,
+          "before_correct": 9,
+          "after_correct": 16,
+          "before_pct": 25.714285714285715,
+          "after_pct": 45.714285714285715,
+          "delta_pp": 20.0,
+          "repaired": 10,
+          "newly_wrong": 3,
+          "old_wrong": 26,
+          "repair_pct": 38.46153846153846,
+          "paired_context_bootstrap_95pct_pp": [
+            3.0303030303030303,
+            36.36363636363637
+          ]
+        },
+        "temporal": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 6,
+          "after_correct": 6,
+          "before_pct": 30.0,
+          "after_pct": 30.0,
+          "delta_pp": 0.0,
+          "repaired": 2,
+          "newly_wrong": 2,
+          "old_wrong": 14,
+          "repair_pct": 14.285714285714286,
+          "paired_context_bootstrap_95pct_pp": [
+            -20.0,
+            20.0
+          ]
+        },
+        "tool_routing": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 9,
+          "after_correct": 19,
+          "before_pct": 45.0,
+          "after_pct": 95.0,
+          "delta_pp": 50.0,
+          "repaired": 10,
+          "newly_wrong": 0,
+          "old_wrong": 11,
+          "repair_pct": 90.9090909090909,
+          "paired_context_bootstrap_95pct_pp": [
+            30.0,
+            70.0
+          ]
+        }
+      }
+    },
+    "qwen35": {
+      "overall": {
+        "questions": 175,
+        "contexts": 140,
+        "before_correct": 65,
+        "after_correct": 127,
+        "before_pct": 37.142857142857146,
+        "after_pct": 72.57142857142857,
+        "delta_pp": 35.42857142857143,
+        "repaired": 68,
+        "newly_wrong": 6,
+        "old_wrong": 110,
+        "repair_pct": 61.81818181818182,
+        "paired_context_bootstrap_95pct_pp": [
+          27.87878787878788,
+          43.258426966292134
+        ]
+      },
+      "families": {
+        "injection": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 10,
+          "after_correct": 20,
+          "before_pct": 50.0,
+          "after_pct": 100.0,
+          "delta_pp": 50.0,
+          "repaired": 10,
+          "newly_wrong": 0,
+          "old_wrong": 10,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            25.0,
+            70.0
+          ]
+        },
+        "insufficient": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 13,
+          "after_correct": 17,
+          "before_pct": 65.0,
+          "after_pct": 85.0,
+          "delta_pp": 20.0,
+          "repaired": 4,
+          "newly_wrong": 0,
+          "old_wrong": 7,
+          "repair_pct": 57.142857142857146,
+          "paired_context_bootstrap_95pct_pp": [
+            5.0,
+            40.0
+          ]
+        },
+        "multihop": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 5,
+          "after_correct": 17,
+          "before_pct": 25.0,
+          "after_pct": 85.0,
+          "delta_pp": 60.0,
+          "repaired": 12,
+          "newly_wrong": 0,
+          "old_wrong": 15,
+          "repair_pct": 80.0,
+          "paired_context_bootstrap_95pct_pp": [
+            40.0,
+            80.0
+          ]
+        },
+        "policy": {
+          "questions": 40,
+          "contexts": 20,
+          "before_correct": 11,
+          "after_correct": 29,
+          "before_pct": 27.5,
+          "after_pct": 72.5,
+          "delta_pp": 45.0,
+          "repaired": 18,
+          "newly_wrong": 0,
+          "old_wrong": 29,
+          "repair_pct": 62.06896551724138,
+          "paired_context_bootstrap_95pct_pp": [
+            32.5,
+            57.5
+          ]
+        },
+        "probability": {
+          "questions": 35,
+          "contexts": 20,
+          "before_correct": 9,
+          "after_correct": 19,
+          "before_pct": 25.714285714285715,
+          "after_pct": 54.285714285714285,
+          "delta_pp": 28.571428571428573,
+          "repaired": 10,
+          "newly_wrong": 0,
+          "old_wrong": 26,
+          "repair_pct": 38.46153846153846,
+          "paired_context_bootstrap_95pct_pp": [
+            13.157894736842104,
+            44.11764705882353
+          ]
+        },
+        "temporal": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 8,
+          "after_correct": 5,
+          "before_pct": 40.0,
+          "after_pct": 25.0,
+          "delta_pp": -15.0,
+          "repaired": 3,
+          "newly_wrong": 6,
+          "old_wrong": 12,
+          "repair_pct": 25.0,
+          "paired_context_bootstrap_95pct_pp": [
+            -45.0,
+            15.0
+          ]
+        },
+        "tool_routing": {
+          "questions": 20,
+          "contexts": 20,
+          "before_correct": 9,
+          "after_correct": 20,
+          "before_pct": 45.0,
+          "after_pct": 100.0,
+          "delta_pp": 55.0,
+          "repaired": 11,
+          "newly_wrong": 0,
+          "old_wrong": 11,
+          "repair_pct": 100.0,
+          "paired_context_bootstrap_95pct_pp": [
+            35.0,
+            75.0
+          ]
+        }
+      }
+    }
+  },
+  "data_sha256": "d0682c40c24390170bc6dfecb380ea3b7e9e458ec94fa978edec3307a99557d6",
+  "scope": "Fixed 20 contexts per family drawn from the training corpus before completion. These are in-sample scores, not generalization results."
+}

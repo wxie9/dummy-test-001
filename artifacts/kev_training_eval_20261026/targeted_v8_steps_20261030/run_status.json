@@ -1,0 +1,250 @@
+{
+  "started_at_utc": "2026-10-30T01:52:23.099119+00:00",
+  "status": "training_and_evaluation_complete_goal_not_established",
+  "models": {
+    "qwen3": {
+      "gpu": 1,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v8-steps",
+      "status": "complete",
+      "pipeline_live": false,
+      "training_live": false,
+      "log_tail": "brier\": 0.45499790460834894,\n    \"mean_conf\": 0.6701211866492679,\n    \"confident_error_rate\": 0.01863932898415657,\n    \"coverage_at_0_9\": 0.23765144454799628,\n    \"accuracy_at_0_9\": 0.9215686274509803,\n    \"coverage_at_5pct_error\": 0.1929170549860205,\n    \"coverage_at_1pct_error\": 0.0195712954333644,\n    \"aurc\": 0.18124447486583906,\n    \"error_rate_at_0_9\": 0.0784313725490196,\n    \"confidence_bias\": 0.03079220249269754,\n    \"top_bins\": {\n      \"0.9\": {\n        \"n\": 255,\n        \"errors\": 20,\n        \"error_rate\": 0.0784313725490196\n      },\n      \"0.95\": {\n        \"n\": 178,\n        \"errors\": 6,\n        \"error_rate\": 0.033707865168539325\n      },\n      \"0.99\": {\n        \"n\": 91,\n        \"errors\": 3,\n        \"error_rate\": 0.03296703296703297\n      }\n    },\n    \"selective\": {\n      \"0.5\": {\n        \"coverage\": 0.5004659832246039,\n        \"accuracy\": 0.8230912476722533,\n        \"confidence_cutoff\": 0.6566980481147766\n      },\n      \"0.8\": {\n        \"coverage\": 0.8005591798695247,\n        \"accuracy\": 0.7159487776484285,\n        \"confidence_cutoff\": 0.5002256482772336\n      }\n    }\n  },\n  \"coverage\": {\n    \"requested_records\": 900,\n    \"requested_questions\": 1073,\n    \"evaluated_records\": 900,\n    \"evaluated_questions\": 1073,\n    \"rejected_records\": 0,\n    \"truncated_records\": 0\n  }\n}\n",
+      "completed_evaluation_coverage": {
+        "development-before": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-before": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-steps-before": {
+          "requested_records": 334,
+          "requested_questions": 732,
+          "evaluated_records": 334,
+          "evaluated_questions": 732,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-after": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-after": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-steps-after": {
+          "requested_records": 334,
+          "requested_questions": 732,
+          "evaluated_records": 334,
+          "evaluated_questions": 732,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "full-train-after": {
+          "requested_records": 1500,
+          "requested_questions": 2320,
+          "evaluated_records": 1500,
+          "evaluated_questions": 2320,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-hard-v1": {
+          "requested_records": 700,
+          "requested_questions": 1088,
+          "evaluated_records": 700,
+          "evaluated_questions": 1088,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-devtools-v1": {
+          "requested_records": 900,
+          "requested_questions": 1073,
+          "evaluated_records": 900,
+          "evaluated_questions": 1073,
+          "rejected_records": 0,
+          "truncated_records": 0
+        }
+      },
+      "last_observed_epoch": 0,
+      "steps_per_epoch": 938,
+      "last_logged_loss": 0.438,
+      "last_logged_seconds_per_record": 0.107,
+      "completed_steps": 938,
+      "training_wall_seconds": 1008.769859790802,
+      "historical_processes": {
+        "pipeline_pid": 47712,
+        "training_pids": [],
+        "last_observed_step": 930
+      },
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 512,
+        "after_correct": 524,
+        "before_pct": 51.2,
+        "after_pct": 52.4,
+        "delta_pp": 1.2,
+        "repaired": 52,
+        "newly_wrong": 40,
+        "old_wrong": 488,
+        "repair_pct": 10.655737704918034,
+        "paired_context_bootstrap_95pct_pp": [
+          -0.7944389275074478,
+          3.0753968253968256
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 2.6666666666666665,
+        "temporal": 1.7094017094017093,
+        "probability": 1.2658227848101267,
+        "insufficient": 0.0,
+        "multihop": -2.4,
+        "policy": -0.5,
+        "injection": 5.333333333333333
+      }
+    },
+    "qwen35": {
+      "gpu": 2,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v8-steps",
+      "status": "complete",
+      "pipeline_live": false,
+      "training_live": false,
+      "log_tail": "brier\": 0.41671184443282744,\n    \"mean_conf\": 0.7824156823898197,\n    \"confident_error_rate\": 0.03075489282385834,\n    \"coverage_at_0_9\": 0.4044734389561976,\n    \"accuracy_at_0_9\": 0.923963133640553,\n    \"coverage_at_5pct_error\": 0.32618825722274,\n    \"coverage_at_1pct_error\": 0.14631873252562907,\n    \"aurc\": 0.12319161824009438,\n    \"error_rate_at_0_9\": 0.07603686635944701,\n    \"confidence_bias\": 0.09462444287444227,\n    \"top_bins\": {\n      \"0.9\": {\n        \"n\": 434,\n        \"errors\": 33,\n        \"error_rate\": 0.07603686635944701\n      },\n      \"0.95\": {\n        \"n\": 345,\n        \"errors\": 16,\n        \"error_rate\": 0.0463768115942029\n      },\n      \"0.99\": {\n        \"n\": 180,\n        \"errors\": 2,\n        \"error_rate\": 0.011111111111111112\n      }\n    },\n    \"selective\": {\n      \"0.5\": {\n        \"coverage\": 0.5004659832246039,\n        \"accuracy\": 0.8845437616387337,\n        \"confidence_cutoff\": 0.8359127169238436\n      },\n      \"0.8\": {\n        \"coverage\": 0.8005591798695247,\n        \"accuracy\": 0.7776484284051223,\n        \"confidence_cutoff\": 0.5852340285410277\n      }\n    }\n  },\n  \"coverage\": {\n    \"requested_records\": 900,\n    \"requested_questions\": 1073,\n    \"evaluated_records\": 900,\n    \"evaluated_questions\": 1073,\n    \"rejected_records\": 0,\n    \"truncated_records\": 0\n  }\n}\n",
+      "completed_evaluation_coverage": {
+        "development-before": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-before": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-steps-before": {
+          "requested_records": 334,
+          "requested_questions": 732,
+          "evaluated_records": 334,
+          "evaluated_questions": 732,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-after": {
+          "requested_records": 334,
+          "requested_questions": 488,
+          "evaluated_records": 334,
+          "evaluated_questions": 488,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "train-probe-after": {
+          "requested_records": 140,
+          "requested_questions": 185,
+          "evaluated_records": 140,
+          "evaluated_questions": 185,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "development-steps-after": {
+          "requested_records": 334,
+          "requested_questions": 732,
+          "evaluated_records": 334,
+          "evaluated_questions": 732,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "full-train-after": {
+          "requested_records": 1500,
+          "requested_questions": 2320,
+          "evaluated_records": 1500,
+          "evaluated_questions": 2320,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-hard-v1": {
+          "requested_records": 700,
+          "requested_questions": 1088,
+          "evaluated_records": 700,
+          "evaluated_questions": 1088,
+          "rejected_records": 0,
+          "truncated_records": 0
+        },
+        "eval-devtools-v1": {
+          "requested_records": 900,
+          "requested_questions": 1073,
+          "evaluated_records": 900,
+          "evaluated_questions": 1073,
+          "rejected_records": 0,
+          "truncated_records": 0
+        }
+      },
+      "last_observed_epoch": 0,
+      "steps_per_epoch": 938,
+      "last_logged_loss": 0.421,
+      "last_logged_seconds_per_record": 0.129,
+      "completed_steps": 938,
+      "training_wall_seconds": 1218.8850510120392,
+      "historical_processes": {
+        "pipeline_pid": 47713,
+        "training_pids": [],
+        "last_observed_step": 930
+      },
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 551,
+        "after_correct": 582,
+        "before_pct": 55.1,
+        "after_pct": 58.2,
+        "delta_pp": 3.1,
+        "repaired": 58,
+        "newly_wrong": 27,
+        "old_wrong": 449,
+        "repair_pct": 12.917594654788418,
+        "paired_context_bootstrap_95pct_pp": [
+          1.3039117352056169,
+          4.918032786885246
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 12.666666666666666,
+        "temporal": -5.128205128205129,
+        "probability": -1.2658227848101267,
+        "insufficient": -3.0,
+        "multihop": -0.8,
+        "policy": 3.0,
+        "injection": 12.0
+      }
+    }
+  },
+  "goal_achieved": false,
+  "data_sha256": "3118273464feb4ef80e9739a840a841a2c5accf162b87cc0d3467ee24855ff98",
+  "previous_live_check_utc": "2026-10-30T02:23:26.715056+00:00",
+  "finalized_at_utc": "2026-10-30T02:24:05.841582+00:00",
+  "next": "Diagnose final-answer composition and dependency closure; preserve all seven categories and original-stage3 initialization. No next training launched.",
+  "comparison_sha256": "931e774ae9b2d77dc9d4b1ee5397de85f1781ff3df5abef3e2e5258de1a4ecf6"
+}

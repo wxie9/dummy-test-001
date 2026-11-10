@@ -1,0 +1,20 @@
+{
+  "qwen3": {
+    "training_pid": 51656,
+    "lr": "1e-5",
+    "data": "/C20545/kev-08b-official-repro-20261026/targeted_v8_steps_20261030/train.jsonl",
+    "init_from": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-06b-20261026/stage3",
+    "epochs": "1",
+    "seed": "101",
+    "replay": "6000"
+  },
+  "qwen35": {
+    "training_pid": 52241,
+    "lr": "1e-5",
+    "data": "/C20545/kev-08b-official-repro-20261026/targeted_v8_steps_20261030/train.jsonl",
+    "init_from": "/C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3",
+    "epochs": "1",
+    "seed": "101",
+    "replay": "6000"
+  }
+}

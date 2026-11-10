@@ -1,0 +1,16 @@
+{
+  "actual_batch_loss_gradient_coefficients": [
+    0.25,
+    0.0833333358168602,
+    0.0833333358168602,
+    0.0833333358168602
+  ],
+  "expected": [
+    0.25,
+    0.08333333333333333,
+    0.08333333333333333,
+    0.08333333333333333
+  ],
+  "ratio": 2.9999999105930355,
+  "scope": "Actual server batch_loss on four identical two-class losses with variant counts 3,1,1,1. This demonstrates weighting, not an accuracy cause."
+}

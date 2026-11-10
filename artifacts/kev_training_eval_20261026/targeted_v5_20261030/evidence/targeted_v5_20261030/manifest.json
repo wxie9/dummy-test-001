@@ -1,0 +1,69 @@
+{
+  "version": "targeted-v5-20261030",
+  "status": "text_checked_tokenization_pending",
+  "files": {
+    "train": {
+      "contexts": 1500,
+      "questions": 2055,
+      "families": {
+        "policy": 300,
+        "tool_routing": 100,
+        "insufficient": 280,
+        "multihop": 270,
+        "probability": 350,
+        "temporal": 100,
+        "injection": 100
+      },
+      "sha256": "50d76359f88eafc75392218a70538adc966640f567de06c0852a492cb80bc463",
+      "insufficient_answers": {
+        "The requirement is not satisfied": 88,
+        "Cannot determine from the information given": 112,
+        "The requirement is satisfied": 80
+      },
+      "policy_positive": 180
+    },
+    "development": {
+      "contexts": 340,
+      "questions": 440,
+      "families": {
+        "tool_routing": 30,
+        "insufficient": 70,
+        "probability": 60,
+        "policy": 60,
+        "multihop": 60,
+        "injection": 30,
+        "temporal": 30
+      },
+      "sha256": "aa31703c3b0987692aed4a75a8ad0fdb5391dd9f31680546a3659b3fe6bbc76c",
+      "insufficient_answers": {
+        "The requirement is satisfied": 20,
+        "The requirement is not satisfied": 22,
+        "Cannot determine from the information given": 28
+      },
+      "policy_positive": 40
+    }
+  },
+  "goal_achieved": false,
+  "replay": 6000,
+  "init": "original pre-targeted stage3",
+  "scope": "Same-author generators and separate visible-text recomputation; matched-pair groups kept within splits. Development shares generators and is not independent generalization evidence.",
+  "checks": {
+    "exact_state_overlap_train_dev": 0,
+    "exact_state_overlap_frozen_tests": 0,
+    "original_three_families_content_unchanged": true,
+    "materialize_all": "passed",
+    "visible_text_recomputed_new_four": "passed"
+  },
+  "training_plan": {
+    "epochs": 1,
+    "seed": 101,
+    "lr": 1e-05,
+    "lora": 16,
+    "batch": 4,
+    "accum": 2,
+    "replay": 6000,
+    "init": "original pre-targeted stage3",
+    "augmentation": "same as v4/v2",
+    "purpose": "data-revision comparison at fixed training settings"
+  }
+}

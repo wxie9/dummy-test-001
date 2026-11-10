@@ -1,0 +1,85 @@
+{
+  "version": "targeted-v2-20261029",
+  "seed": 20261029,
+  "purpose": "source-disjoint probability and long-policy continuation data",
+  "labeling": "deterministic solvers only; labels are recomputed before write",
+  "split_policy": "split-specific vocabulary/templates plus global exact-text hash exclusion",
+  "probability": {
+    "mechanisms": [
+      "bayes",
+      "table",
+      "independent",
+      "expected_value",
+      "compare"
+    ],
+    "forms": [
+      "value",
+      "bucket",
+      "more_likely",
+      "choice"
+    ]
+  },
+  "policy": {
+    "record_questions": [
+      "outcome",
+      "amount"
+    ],
+    "domains": [
+      "lodging",
+      "equipment",
+      "residence",
+      "allowance"
+    ],
+    "state_char_target": [
+      5200,
+      14500
+    ]
+  },
+  "outputs": {
+    "train": {
+      "records": 5400,
+      "questions": 7200,
+      "families": {
+        "policy": 1800,
+        "probability": 3600
+      },
+      "policy_state_chars": {
+        "min": 5224,
+        "median": 10114.0,
+        "mean": 10016.8,
+        "max": 14766
+      },
+      "sha256": "f399ee90b78b44e78bd0518b040922a43a54430b3027815010e116821c7c2021"
+    },
+    "development": {
+      "records": 600,
+      "questions": 800,
+      "families": {
+        "policy": 200,
+        "probability": 400
+      },
+      "policy_state_chars": {
+        "min": 5426,
+        "median": 9522.5,
+        "mean": 9780.5,
+        "max": 14731
+      },
+      "sha256": "28fffcf2b4a1aaca02d82022bc756496b9c74002c143fad9b94bfbd6fcbf46f1"
+    },
+    "test": {
+      "records": 600,
+      "questions": 800,
+      "families": {
+        "policy": 200,
+        "probability": 400
+      },
+      "policy_state_chars": {
+        "min": 5257,
+        "median": 10052.5,
+        "mean": 9960.7,
+        "max": 14640
+      },
+      "sha256": "cab5069bf954260c21b09324cdbec8678a4a838a4babdc5876a89f70ac614426"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "aligned_question_keys": 7800,
+  "models": [
+    "kev_blend",
+    "startlux_instant",
+    "startlux_autothink"
+  ],
+  "notes": [
+    "Kev probabilities/confidence are stored to about four decimal places in the source run.",
+    "StartLux probabilities/confidence retain full JSON floating-point precision.",
+    "StartLux none_probability is separate from probabilities, which are renormalised over listed options.",
+    "Kev DecisionPivot outputs do not contain none_probability; the export stores null/blank.",
+    "confidence is the TypeSafe choice confidence transform of the maximum listed-option probability."
+  ],
+  "output_sha256": {
+    "all_three_option_level.csv": "9dd3137ce3350beda198d0bde034abcc73121c5f89e98a2feed7c8088c7d6b76",
+    "all_three_question_level.csv": "6542bd8b746efbb9ae7a6c740ea7242c63cd5483204f6bd5c9a8d3ff183d0ee4",
+    "all_three_questions.jsonl": "aff65252f9941d5b8d5af00525b47054415ea0bb177bc77ca158cc84c8d544f7",
+    "kev_blend_questions.jsonl": "c63cfa9738005608371af6c2781462fd529a45f4f571197d0c75a287a284a01e",
+    "startlux_autothink_questions.jsonl": "679b84d00bd116717f1718531afbdd48f324a91f1ce2a077c126ed6eccf25973",
+    "startlux_instant_questions.jsonl": "93462c77594b20c3ede1858a210c404545baa78e70381626d5e4afc4fb912b56"
+  },
+  "schema": "decisionpivot-probability-export-v1",
+  "source_directories": {
+    "kev_blend": "artifacts/kev_training_eval_20261026/h20_27b_v2_custom_fullft_20261107/evaluation/decisionpivot_runs/blend-custom114627-w85",
+    "startlux_autothink": "artifacts/kev_training_eval_20261026/decisionpivot_probability_exports_20261110/source/startlux/27b-autothink",
+    "startlux_instant": "artifacts/kev_training_eval_20261026/decisionpivot_probability_exports_20261110/source/startlux/27b-instant"
+  },
+  "source_jsonl_sha256": {
+    "kev_blend": {
+      "answerable_facts.jsonl": "99c3e47dd70d23450279eaf1ab06dd49d9cb841573a76040ff7a61a76e3299f9",
+      "clause_change.jsonl": "aaefed90d8e2f7e23b828cd39170a2be7819fc6c8ba04e8b05ad41d6883db9f3",
+      "dep_resolve.jsonl": "9f618dd37cb9f776e9ecdfb32c0861023dca8b4ebfb015f72fe6c550ad57fafe",
+      "filter_match.jsonl": "8c30c6478c985eb6126577b63a3cc2016655460c9bf1a71c7f330fae15a73f63",
+      "ledger_reconcile.jsonl": "82bd3ae93dabcdbf6480bbaa0957488c828808cf82e4d1a0980d69f92486d7ae",
+      "log_count_check.jsonl": "2e7aa36031a6b9db12273d12e845e19aa9f425c50e32b930959e45b2f91d194a",
+      "perm_inherit.jsonl": "d6e397bf9ca4abcf2ad03edff67c0f81fc13fbf043896534eadf8273531215ed",
+      "policy_case.jsonl": "209589e019ef37d772237dc39fd73e434dd298e2bfb4c4d0023e211eab1c2f44",
+      "record_rule.jsonl": "465bbfda3c2106ee45423a26df832011f9eba69194b91f3d0e845a7f7d8fef40",
+      "sched_conflict.jsonl": "7635b522a594ee261d5985aa898e78e360dab295388553f097e88c833dcfbbbc",
+      "state_goal.jsonl": "b555cf95a6a10ac246cab38e8a07654ebc53f2c3224c25836127f208c40ad719",
+      "toolcall_valid.jsonl": "70da1c2053673d331fde3c3cc85576b3c3f6c1a3394ad00d2be8cfbcd3fba9e5",
+      "triage_order.jsonl": "64b55f869b2dbf88cfa62d6639c4bf3cb6e476de556b2d7bd9e803504c26187a"
+    },
+    "startlux_autothink": {
+      "answerable_facts.jsonl": "bd5b9b99a6cbcaeca4811a73becd2d218ee58e1a1e0c063824897103e4407812",
+      "clause_change.jsonl": "7041170538c3959b5624687c23520abc3ffeb9c09aa33238c4724de8a7ad0a13",
+      "dep_resolve.jsonl": "a64586ac4a548dcaca87854ef812c3d75108c1e756f49ed824c77468fe840afd",
+      "filter_match.jsonl": "03142c540ec19d8cee830a4c8af1388f54814d6aa86b373f1ec228a2bffeabdb",
+      "ledger_reconcile.jsonl": "ef9d18bc63511026d71fe6bf7a34ca3df555dac1723feec58690dac0246707d1",
+      "log_count_check.jsonl": "98156c9c7066e152bc01f19576b6e6e7f0ae87221b97018b7fd5c9f50afcd4c6",
+      "perm_inherit.jsonl": "694f0d546d968611932e59eb384b167e2cf5c19acaed8d5265e94c8cb2dc38e1",
+      "policy_case.jsonl": "0358cd6b96bbddcf99a500bbf8094c855551096d7e6ba247c3fd67ec46cd1fec",
+      "record_rule.jsonl": "7ecf5a83270147c6b5098c79f4f3cf1908ed00a1d0df2ff441da1c779c00f559",
+      "sched_conflict.jsonl": "0c0a6d101f53d4aeb90f2314d95d88d3895572c1dd5cb72703e4bb69d9829d96",
+      "state_goal.jsonl": "180acede1cb20f348d75e6a6054e6e3ffd8169cee7358ebd3807cd3e8edde588",
+      "toolcall_valid.jsonl": "2e56392a84d8264f3b459b23f9049701fd0be0ef5f15a4480d5dd8a8cbab8a2f",
+      "triage_order.jsonl": "05d307d2c75c8a5be512fbbfa7f9265d3410163d76e3e607a1a4f49baa5e6da1"
+    },
+    "startlux_instant": {
+      "answerable_facts.jsonl": "c4a9c5afbfc66245eeb1024c53df6bf1d81b6bc67788393ecff73a98325e63d2",
+      "clause_change.jsonl": "76d1e2f10ab8f00e65498d69f729449cb4feb0b6f6f42d01a90c001292e904db",
+      "dep_resolve.jsonl": "25469a4f2744e90070d9740987ed3028d374a7c5f8eb6912f811b1ccb033e7e8",
+      "filter_match.jsonl": "36f09ea8d4b8d1737295c11bad91e63e94432b361e7c562e063279b76d11996d",
+      "ledger_reconcile.jsonl": "77a9cef6166221d45d091b2cff5d4e2fb93f5e2076e979d117cc95c9b2a5c8b1",
+      "log_count_check.jsonl": "4a2ef89197f987a28649deff9d2019c78e03e284fa4e41a61d81ec976c2c5470",
+      "perm_inherit.jsonl": "6359b400dd0b92159c213c93dce3c548da3a0637db1ecd890eb0c6f5281e9968",
+      "policy_case.jsonl": "f66e9d3604a9d38ce265a6c968f41b0062441f72ec4b7e935d4babdb67d15042",
+      "record_rule.jsonl": "c58e7852825d035b43f236fc3bb8d5e4db39b14e280d550e51c6777aa047b511",
+      "sched_conflict.jsonl": "11ac76e720b734377be8ee8827d615581792958d28b069fc368b8dbb0f99591c",
+      "state_goal.jsonl": "f6a1302e9f69510dcb58e3fb76ef903c79f6c9dc55755ac166c5e70983eeea82",
+      "toolcall_valid.jsonl": "37b2b0ced041b699c5ae3781d451adedeaf8cb4f333e3541c32eb2777ce9132d",
+      "triage_order.jsonl": "6c28390aedbbb7886acad44e5babbea6abdaa59cc97f13231b6456f036cccdfa"
+    }
+  },
+  "validations": {
+    "kev_blend": {
+      "choice_not_argmax": 0,
+      "max_confidence_formula_error": 0.00010000000000021103,
+      "max_probability_sum_error": 0.000300000000000189,
+      "none_probability_present": 0,
+      "option_rows": 24896,
+      "questions": 7800
+    },
+    "startlux_autothink": {
+      "choice_not_argmax": 0,
+      "max_confidence_formula_error": 0.0,
+      "max_probability_sum_error": 2.220446049250313e-16,
+      "none_probability_present": 7800,
+      "option_rows": 24896,
+      "questions": 7800
+    },
+    "startlux_instant": {
+      "choice_not_argmax": 0,
+      "max_confidence_formula_error": 0.0,
+      "max_probability_sum_error": 2.220446049250313e-16,
+      "none_probability_present": 7800,
+      "option_rows": 24896,
+      "questions": 7800
+    }
+  }
+}

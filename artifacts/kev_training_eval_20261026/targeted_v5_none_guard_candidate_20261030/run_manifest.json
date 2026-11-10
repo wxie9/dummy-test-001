@@ -1,0 +1,486 @@
+{
+  "status": "pipelines_launched",
+  "source_sha256": "50d76359f88eafc75392218a70538adc966640f567de06c0852a492cb80bc463",
+  "sha256": "7d2493876883c394f36e6c26389a102d9dab99b187915f0f6eaf283106ac7e52",
+  "contexts": 1500,
+  "questions": 2055,
+  "families": {
+    "policy": 300,
+    "tool_routing": 100,
+    "insufficient": 280,
+    "multihop": 270,
+    "probability": 350,
+    "temporal": 100,
+    "injection": 100
+  },
+  "modified_questions": 90,
+  "changes": [
+    {
+      "id": "targeted-v5-20261030/multihop/train/000985",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000953",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001019",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000960",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000997",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000941",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001016",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001009",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001010",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000956",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000940",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001002",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000977",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000993",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001004",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000974",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000982",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000942",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001015",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000961",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001017",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000975",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000955",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000947",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000946",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000936",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000994",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000986",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001008",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000932",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000959",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000962",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000939",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000998",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000951",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000976",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000944",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000973",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000935",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000999",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000943",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000934",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000996",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001001",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000992",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000968",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000972",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000937",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000949",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000983",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000990",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001013",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000988",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000966",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000954",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001007",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000978",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000957",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000938",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000964",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001011",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000963",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001003",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000971",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000967",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001018",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000970",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000950",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001005",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001014",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000981",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000989",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001000",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001012",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000952",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000948",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000931",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000984",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000965",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000933",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000958",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000995",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/001006",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000945",
+      "question": "decision",
+      "label": "a"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000987",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000969",
+      "question": "decision",
+      "label": "c"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000991",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000980",
+      "question": "decision",
+      "label": "b"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000930",
+      "question": "decision",
+      "label": "d"
+    },
+    {
+      "id": "targeted-v5-20261030/multihop/train/000979",
+      "question": "decision",
+      "label": "b"
+    }
+  ],
+  "all_states_labels_options_and_ids_unchanged": true,
+  "retained_three_original_lines_unchanged": true,
+  "mechanism": "Existing target field with all mass on hard gold; allows only option permutation and excludes none-pair construction.",
+  "limitation": "Changes augmentation and variant counts for 90 multihop questions; not an equal-number-of-variants ablation. Hard-label and target loss equivalence requires zero loss modifiers, as in current runs. No effect claim before evaluation.",
+  "epochs": 1,
+  "seed": 101,
+  "lr": 1e-05,
+  "lora": 16,
+  "replay": 6000,
+  "init": "original pre-targeted stage3",
+  "planned_updates": 938,
+  "run_version": "v5-guard",
+  "reference": "v5 one epoch",
+  "intention": "Single data-augmentation guard ablation; preserve all 1500 original states, labels and options. Not a test of other candidate components.",
+  "success_status": "unproven",
+  "goal_achieved": false,
+  "launched_at_utc": "2026-10-29T21:58:48Z"
+}

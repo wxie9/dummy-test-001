@@ -1,0 +1,84 @@
+{"records": 128, "questions": 154, "rejected": [], "context": {"max_state": 7552, "max_branch": 8192, "max_packed": 9216}, "max_state_tokens": 1243}
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  50%|████▉     | 159/320 [00:00<00:00, 1583.42it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1763.63it/s]
+/C20545/kev-08b-official-repro-20261026/runtime/lib/python3.12/site-packages/peft/utils/save_and_load.py:300: UserWarning: Could not find a config file in Qwen/Qwen3.5-0.8B-Base - will assume that the vocabulary was not modified.
+  warnings.warn(
+delta: warm start from /C20545/kev-08b-official-repro-20261026/runs/replica-20261026/stage3: 372 adapter tensors and the pointer head loaded
+device=cuda trainable params=11.3M
+128 training requests (holdout=[]), questions by type {'choice': 150, 'score': 2, 'noul': 2}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+ep0 step 10/16 loss 1.229 kl 0.000 anchor 0.000 0.143s/rec
+saved /C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v3-pilot/stage4
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights:  31%|███       | 99/320 [00:00<00:00, 958.07it/s]Loading weights:  90%|████████▉ | 287/320 [00:00<00:00, 1475.53it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 1444.04it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/700
+evaluated 100/700
+evaluated 150/700
+evaluated 200/700
+evaluated 250/700
+evaluated 300/700
+evaluated 350/700
+evaluated 400/700
+evaluated 450/700
+evaluated 500/700
+evaluated 550/700
+evaluated 600/700
+evaluated 650/700
+evaluated 700/700
+{
+  "objective": -0.8393084907642976,
+  "clean": {
+    "n": 1088,
+    "nll": 0.8174189407549648,
+    "acc": 0.6544117647058824,
+    "ece": 0.025106734041320432,
+    "brier": 0.4453191047473539,
+    "mean_conf": 0.6781510390169272,
+    "confident_error_rate": 0.021139705882352942,
+    "coverage_at_0_9": 0.28400735294117646,
+    "accuracy_at_0_9": 0.9255663430420712,
+    "coverage_at_5pct_error": 0.20863970588235295,
+    "coverage_at_1pct_error": 0.03952205882352941,
+    "aurc": 0.1582998612895145,
+    "error_rate_at_0_9": 0.0744336569579288,
+    "confidence_bias": 0.023739274311044833,
+    "top_bins": {
+      "0.9": {
+        "n": 309,
+        "errors": 23,
+        "error_rate": 0.0744336569579288
+      },
+      "0.95": {
+        "n": 219,
+        "errors": 11,
+        "error_rate": 0.0502283105022831
+      },
+      "0.99": {
+        "n": 68,
+        "errors": 2,
+        "error_rate": 0.029411764705882353
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.8566176470588235,
+        "confidence_cutoff": 0.6689423484657901
+      },
+      "0.8": {
+        "coverage": 0.8005514705882353,
+        "accuracy": 0.7347876004592423,
+        "confidence_cutoff": 0.44362011056072886
+      }
+    },
+    "score_mae": 0.837295601693913,
+    "ranked_probability_score": 0.109616154384863
+  },
+  "coverage": {
+    "requested_records": 700,
+    "requested_questions": 1088,
+    "evaluated_records": 700,
+    "evaluated_questions": 1088,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}

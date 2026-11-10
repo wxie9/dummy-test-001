@@ -1,0 +1,677 @@
+{
+  "temporal": [
+    {
+      "state": "CASE NOTES: Complaint response deadline\n- Driftwood Furniture must answer every formal complaint within 14 business days of receiving it.\n- Business days are Monday to Friday, excluding the public holidays listed here; the day the complaint is received does not count.\n- Public holidays this year: Remembrance Day (Tuesday 17 December 2024); Midsummer Holiday (Monday 20 January 2025); Company Day (Wednesday 29 January 2025); Heritage Day (Friday 28 February 2025).\n- A complaint was received on Saturday 11 January 2025.",
+      "questions": {
+        "due": {
+          "type": "choice",
+          "instructions": "Compute the due date.",
+          "criteria": {
+            "a": "4 February 2025",
+            "b": "31 January 2025",
+            "c": "25 January 2025",
+            "d": "3 February 2025",
+            "e": "30 January 2025"
+          },
+          "src": "targeted-three-hardmatched-20261031/temporal",
+          "label": "d"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-hardmatched-20261031/temporal/train/00074/view-2",
+        "source": "targeted-three-hardmatched-20261031/temporal",
+        "group_id": "targeted-three-hardmatched-20261031/temporal/train/00074/view-2",
+        "variant": "clean",
+        "split": "train",
+        "template": "temporal_numeric/t4/view-2",
+        "family": "temporal",
+        "subtype": "deadline",
+        "facts": {
+          "kind": "deadline",
+          "received": "2025-01-11",
+          "n": 14,
+          "holidays": [
+            "2024-12-17",
+            "2025-01-20",
+            "2025-01-29",
+            "2025-02-28"
+          ],
+          "options_q": {
+            "due": {
+              "a": "2025-02-04",
+              "b": "2025-01-31",
+              "c": "2025-01-25",
+              "d": "2025-02-03",
+              "e": "2025-01-30"
+            }
+          }
+        },
+        "text_sha256": "2d8fce8a98f30d6207e245d8e16bd2b01d066e846b30c127d6743395d538f961",
+        "state_tokens": 132,
+        "seed_record_id": "hard-v1/temporal_numeric/development/00074",
+        "semantic_case_id": "hard-v1/temporal_numeric/development/00074",
+        "view": 2
+      }
+    },
+    {
+      "state": "CASE FILE: Shift pay check\n1) A warehouse worker clocked in at 18:00 on December 11, 2026 and clocked out at 02:45 the next day.\n2) They took a 60-minute unpaid break.\n3) The hourly rate is $21.00.\n4) Paid time beyond 8 hours in a shift is paid at 1.5 times the hourly rate.",
+      "questions": {
+        "pay": {
+          "type": "choice",
+          "instructions": "Shift pay due:",
+          "criteria": {
+            "a": "$244.13",
+            "b": "$183.75",
+            "c": "$191.63",
+            "d": "$168.00",
+            "e": "$162.75"
+          },
+          "src": "targeted-three-hardmatched-20261031/temporal",
+          "label": "e"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-hardmatched-20261031/temporal/train/00089/view-1",
+        "source": "targeted-three-hardmatched-20261031/temporal",
+        "group_id": "targeted-three-hardmatched-20261031/temporal/train/00089/view-1",
+        "variant": "clean",
+        "split": "train",
+        "template": "temporal_numeric/t4/view-1",
+        "family": "temporal",
+        "subtype": "shift",
+        "overtime": false,
+        "facts": {
+          "kind": "shift",
+          "start": "2026-12-11T18:00",
+          "end": "2026-12-12T02:45",
+          "break_min": 60,
+          "rate_cents": 2100,
+          "ot_after_h": 8,
+          "options_q": {
+            "pay": {
+              "a": 24413,
+              "b": 18375,
+              "c": 19163,
+              "d": 16800,
+              "e": 16275
+            }
+          }
+        },
+        "text_sha256": "fef404a9b0c88a175bf22fc0436f484570f20824245403aefd4615232f49fcd8",
+        "state_tokens": 91,
+        "seed_record_id": "hard-v1/temporal_numeric/development/00089",
+        "semantic_case_id": "hard-v1/temporal_numeric/development/00089",
+        "view": 1
+      }
+    },
+    {
+      "state": "CASE NOTES: Meeting across time zones\n- A call is scheduled for Friday, January 9, 5:45 PM Dubai time.\n- On that date Dubai is on UTC+4 and Denver is on UTC-6.\n- One attendee is in Denver.",
+      "questions": {
+        "local": {
+          "type": "choice",
+          "instructions": "Local start time in Denver:",
+          "criteria": {
+            "a": "Friday, January 9, 7:45 AM",
+            "b": "Saturday, January 10, 7:45 AM",
+            "c": "Friday, January 9, 6:45 AM",
+            "d": "Saturday, January 10, 3:45 AM",
+            "e": "Friday, January 9, 8:45 AM"
+          },
+          "src": "targeted-three-hardmatched-20261031/temporal",
+          "label": "a"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-hardmatched-20261031/temporal/train/00030/view-2",
+        "source": "targeted-three-hardmatched-20261031/temporal",
+        "group_id": "targeted-three-hardmatched-20261031/temporal/train/00030/view-2",
+        "variant": "clean",
+        "split": "train",
+        "template": "temporal_numeric/t4/view-2",
+        "family": "temporal",
+        "subtype": "tz",
+        "facts": {
+          "kind": "tz",
+          "start": "2026-01-09T17:45",
+          "off_a": 4,
+          "off_b": -6,
+          "options_q": {
+            "local": {
+              "a": "2026-01-09T07:45",
+              "b": "2026-01-10T07:45",
+              "c": "2026-01-09T06:45",
+              "d": "2026-01-10T03:45",
+              "e": "2026-01-09T08:45"
+            }
+          }
+        },
+        "text_sha256": "f21eab38c7f93700522af0a831027862c3c24c19633d698055a3156c178dbc65",
+        "state_tokens": 53,
+        "seed_record_id": "hard-v1/temporal_numeric/development/00030",
+        "semantic_case_id": "hard-v1/temporal_numeric/development/00030",
+        "view": 2
+      }
+    }
+  ],
+  "probability": [
+    {
+      "state": "CASE FILE: Alert precision\n1) A spam filter quarantines inbound emails.\n2) Historically, twenty percent of emails are spam.\n3) When one of the emails is spam, the system quarantines it seventy-five percent of the time.\n4) When one of the emails is not spam, the system still quarantines it ten percent of the time.",
+      "questions": {
+        "value": {
+          "type": "choice",
+          "instructions": "Per the figures given, What is the probability that one of the emails that the system has quarantined is actually spam?",
+          "criteria": {
+            "a": "90.0%",
+            "b": "75.0%",
+            "c": "15.0%",
+            "d": "65.2%",
+            "e": "20.0%"
+          },
+          "src": "targeted-three-hardmatched-20261031/probability",
+          "label": "d"
+        },
+        "bucket": {
+          "type": "score",
+          "instructions": "Per the figures given, How likely is it that one of the emails that the system has quarantined is spam?",
+          "criteria": [
+            "Under 10%",
+            "10% to 30%",
+            "30% to 50%",
+            "50% to 70%",
+            "70% to 90%",
+            "Over 90%"
+          ],
+          "src": "targeted-three-hardmatched-20261031/probability",
+          "label": 3
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-hardmatched-20261031/probability/train/00042/view-1",
+        "source": "targeted-three-hardmatched-20261031/probability",
+        "group_id": "targeted-three-hardmatched-20261031/probability/train/00042/view-1",
+        "variant": "clean",
+        "split": "train",
+        "template": "probability/t4/view-1",
+        "family": "probability",
+        "subtype": "bayes",
+        "facts": {
+          "kind": "bayes",
+          "p": {
+            "base": "20/100",
+            "sens": "75/100",
+            "fpr": "10/100"
+          },
+          "options_q": {
+            "value": {
+              "a": 900,
+              "b": 750,
+              "c": 150,
+              "d": 652,
+              "e": 200
+            }
+          },
+          "qid2": "bucket"
+        },
+        "text_sha256": "d76161471d0ff5c6f3221f8e3eec5a87bb1fff54e678bd9be82acce70ac23f74",
+        "state_tokens": 71,
+        "seed_record_id": "hard-v1/probability/development/00042",
+        "semantic_case_id": "hard-v1/probability/development/00042",
+        "view": 1
+      }
+    },
+    {
+      "state": "CASE NOTES: Reliability estimate\n- An order is confirmed if at least one of 2 redundant suppliers can fill it; each supplier's availability is independent of the others.\n- Supplier A is able to fill an order sixty percent of the time.\n- Supplier B is able to fill an order seventy percent of the time.",
+      "questions": {
+        "value": {
+          "type": "choice",
+          "instructions": "Per the figures given, What is the probability that at least one supplier can fill the order?",
+          "criteria": {
+            "a": "88.0%",
+            "b": "42.0%",
+            "c": "60.0%",
+            "d": "12.0%",
+            "e": "58.0%"
+          },
+          "src": "targeted-three-hardmatched-20261031/probability",
+          "label": "a"
+        },
+        "bucket": {
+          "type": "score",
+          "instructions": "Per the figures given, How likely is it that at least one supplier can fill the order?",
+          "criteria": [
+            "Under 10%",
+            "10% to 30%",
+            "30% to 50%",
+            "50% to 70%",
+            "70% to 90%",
+            "Over 90%"
+          ],
+          "src": "targeted-three-hardmatched-20261031/probability",
+          "label": 4
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-hardmatched-20261031/probability/train/00024/view-2",
+        "source": "targeted-three-hardmatched-20261031/probability",
+        "group_id": "targeted-three-hardmatched-20261031/probability/train/00024/view-2",
+        "variant": "clean",
+        "split": "train",
+        "template": "probability/t4/view-2",
+        "family": "probability",
+        "subtype": "independent",
+        "facts": {
+          "kind": "independent",
+          "p": {},
+          "ps": [
+            "60/100",
+            "70/100"
+          ],
+          "ask": "any",
+          "options_q": {
+            "value": {
+              "a": 880,
+              "b": 420,
+              "c": 600,
+              "d": 120,
+              "e": 580
+            }
+          },
+          "qid2": "bucket"
+        },
+        "text_sha256": "2a8c4a51f3315d73cfbf4f74d83139037cc278118636897d66a8093327f6b38b",
+        "state_tokens": 64,
+        "seed_record_id": "hard-v1/probability/development/00024",
+        "semantic_case_id": "hard-v1/probability/development/00024",
+        "view": 2
+      }
+    },
+    {
+      "state": "CASE NOTES: Project funding decision\n- The planning team must fund exactly one of 4 projects and wants the highest expected net value (expected payoff minus up-front cost).\n- Project Atlas costs $40,000 up front and has a sixty percent chance of a gain of $820,000; a forty percent chance of a gain of $780,000.\n- Project Cedar costs $50,000 up front and has a fifty-five percent chance of a gain of $800,000; a forty-five percent chance of a gain of $390,000.\n- Project Fjord costs $100,000 up front and has a fifteen percent chance of a gain of $850,000; a five percent chance of a gain of $460,000; a eighty percent chance of a gain of $370,000.\n- Project Garnet costs $110,000 up front and has a twenty-five percent chance of a gain of $590,000; a sixty percent chance of a gain of $80,000; a fifteen percent chance of a gain of $40,000.",
+      "questions": {
+        "choice": {
+          "type": "choice",
+          "instructions": "Per the figures given, Which project has the highest expected net value?",
+          "criteria": {
+            "project_fjord": null,
+            "project_atlas": null,
+            "project_garnet": null,
+            "project_cedar": null
+          },
+          "src": "targeted-three-hardmatched-20261031/probability",
+          "label": "project_atlas"
+        },
+        "value": {
+          "type": "choice",
+          "instructions": "Per the figures given, What is the expected net value of Project Fjord?",
+          "criteria": {
+            "a": "$750,000",
+            "b": "$346,500",
+            "c": "$446,500",
+            "d": "$460,000",
+            "e": "$246,500"
+          },
+          "src": "targeted-three-hardmatched-20261031/probability",
+          "label": "b"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-hardmatched-20261031/probability/train/00021/view-2",
+        "source": "targeted-three-hardmatched-20261031/probability",
+        "group_id": "targeted-three-hardmatched-20261031/probability/train/00021/view-2",
+        "variant": "clean",
+        "split": "train",
+        "template": "probability/t4/view-2",
+        "family": "probability",
+        "subtype": "ev",
+        "facts": {
+          "kind": "ev",
+          "p": {},
+          "projects": {
+            "Project Atlas": {
+              "outcomes": [
+                [
+                  "60/100",
+                  820000
+                ],
+                [
+                  "40/100",
+                  780000
+                ]
+              ],
+              "cost": 40000
+            },
+            "Project Cedar": {
+              "outcomes": [
+                [
+                  "55/100",
+                  800000
+                ],
+                [
+                  "45/100",
+                  390000
+                ]
+              ],
+              "cost": 50000
+            },
+            "Project Fjord": {
+              "outcomes": [
+                [
+                  "15/100",
+                  850000
+                ],
+                [
+                  "5/100",
+                  460000
+                ],
+                [
+                  "80/100",
+                  370000
+                ]
+              ],
+              "cost": 100000
+            },
+            "Project Garnet": {
+              "outcomes": [
+                [
+                  "25/100",
+                  590000
+                ],
+                [
+                  "60/100",
+                  80000
+                ],
+                [
+                  "15/100",
+                  40000
+                ]
+              ],
+              "cost": 110000
+            }
+          },
+          "asked": "Project Fjord",
+          "options_q": {
+            "choice": {
+              "project_fjord": "project_fjord",
+              "project_atlas": "project_atlas",
+              "project_garnet": "project_garnet",
+              "project_cedar": "project_cedar"
+            },
+            "value": {
+              "a": 750000,
+              "b": 346500,
+              "c": 446500,
+              "d": 460000,
+              "e": 246500
+            }
+          }
+        },
+        "text_sha256": "7a952519de386b41afb4be45f4a5809246eca4e75787198f1ad3abb8158e9d36",
+        "state_tokens": 267,
+        "seed_record_id": "hard-v1/probability/development/00021",
+        "semantic_case_id": "hard-v1/probability/development/00021",
+        "view": 2
+      }
+    }
+  ],
+  "multihop": [
+    {
+      "state": "MEMO\nRe: Group structure\n\nAn entity controls a company if it holds more than 50% of that company's shares, counting shares it holds directly and shares held by companies it controls. Dunmore Ventures owns 38% of Aldermoor Holdings. Ivel Holdings owns 23% of Aldermoor Holdings.\n\nHollis Investments owns 77% of Ivel Holdings. Birchfield Capital owns 39% of Aldermoor Holdings. Juno Capital owns 23% of Ivel Holdings.",
+      "questions": {
+        "controller": {
+          "type": "choice",
+          "instructions": "Name the ultimate controller of Aldermoor Holdings.",
+          "criteria": {
+            "hollis_investments": null,
+            "ivel_holdings": null,
+            "birchfield_capital": null,
+            "dunmore_ventures": null,
+            "no_controller": "No entity controls it"
+          },
+          "src": "targeted-three-hardmatched-20261031/multihop",
+          "label": "no_controller"
+        },
+        "interest": {
+          "type": "choice",
+          "instructions": "What is Hollis Investments's effective economic interest in Aldermoor Holdings (its share of Aldermoor Holdings's profits through all holdings)?",
+          "criteria": {
+            "a": "17.7%",
+            "b": "62.0%",
+            "c": "23.0%",
+            "d": "35.4%",
+            "e": "77.0%"
+          },
+          "src": "targeted-three-hardmatched-20261031/multihop",
+          "label": "a"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-hardmatched-20261031/multihop/train/00049/view-0",
+        "source": "targeted-three-hardmatched-20261031/multihop",
+        "group_id": "targeted-three-hardmatched-20261031/multihop/train/00049/view-0",
+        "variant": "clean",
+        "split": "train",
+        "template": "multi_hop/t4/view-0",
+        "family": "multihop",
+        "subtype": "ownership",
+        "shape": "none",
+        "facts": {
+          "kind": "ownership",
+          "stakes": {
+            "Ivel Holdings": {
+              "Hollis Investments": "77/100",
+              "Juno Capital": "23/100"
+            },
+            "Aldermoor Holdings": {
+              "Ivel Holdings": "23/100",
+              "Dunmore Ventures": "38/100",
+              "Birchfield Capital": "39/100"
+            }
+          },
+          "candidates": [
+            "Hollis Investments",
+            "Dunmore Ventures",
+            "Ivel Holdings",
+            "Birchfield Capital"
+          ],
+          "target": "Aldermoor Holdings",
+          "top": "Hollis Investments",
+          "options_q": {
+            "controller": {
+              "hollis_investments": "hollis_investments",
+              "ivel_holdings": "ivel_holdings",
+              "birchfield_capital": "birchfield_capital",
+              "dunmore_ventures": "dunmore_ventures",
+              "no_controller": "no_controller"
+            },
+            "interest": {
+              "a": 177,
+              "b": 620,
+              "c": 230,
+              "d": 354,
+              "e": 770
+            }
+          }
+        },
+        "text_sha256": "382fd37e8b4686a71b3fa0984592392259181cf77b6fa89349f04b495626d4c5",
+        "state_tokens": 111,
+        "seed_record_id": "hard-v1/multi_hop/development/00049",
+        "semantic_case_id": "hard-v1/multi_hop/development/00049",
+        "view": 0
+      }
+    },
+    {
+      "state": "CASE FILE: Approval routing\n1) Purchase requests of this size must be approved by the requester's manager's manager (the skip-level manager).\n2) Kwame reports to Tariq.\n3) Ravi reports to Rafael.\n4) Aiko reports to Leila.\n5) Kofi reports to Hugo.\n6) Hana reports to Mira.\n7) Mira reports to Ashok.\n8) Diego is a Chief Executive.\n9) Leila is a Vice President.\n10) Kwame is an Engineer.\n11) Mira is a Manager.\n12) Aiko is a Director.\n13) Hana is an Engineer.\n14) Tariq is a Manager.\n15) Hugo is a Manager.\n16) Ashok is a Senior Manager.\n17) Kofi is an Engineer.\n18) Rafael is a Director.\n19) Ravi is a Senior Manager.\n20) Tomas is a Manager.\n21) Priya is an Engineer.\n22) Leila reports to Diego.\n23) Tariq reports to Ashok.\n24) Tomas reports to Ravi.\n25) Priya reports to Tomas.\n26) Rafael reports to Leila.\n27) Hugo reports to Ravi.\n28) Ashok reports to Aiko.\n29) Kwame has submitted a purchase request for $30,500.",
+      "questions": {
+        "approver": {
+          "type": "choice",
+          "instructions": "Which person has to approve the request?",
+          "criteria": {
+            "ashok": null,
+            "diego": null,
+            "tariq": null,
+            "leila": null,
+            "aiko": null
+          },
+          "src": "targeted-three-hardmatched-20261031/multihop",
+          "label": "ashok"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-hardmatched-20261031/multihop/train/00059/view-1",
+        "source": "targeted-three-hardmatched-20261031/multihop",
+        "group_id": "targeted-three-hardmatched-20261031/multihop/train/00059/view-1",
+        "variant": "clean",
+        "split": "train",
+        "template": "multi_hop/t4/view-1",
+        "family": "multihop",
+        "subtype": "org",
+        "rule": "skip",
+        "hops": 5,
+        "facts": {
+          "kind": "org",
+          "reports": {
+            "Leila": "Diego",
+            "Aiko": "Leila",
+            "Rafael": "Leila",
+            "Ashok": "Aiko",
+            "Ravi": "Rafael",
+            "Tariq": "Ashok",
+            "Mira": "Ashok",
+            "Hugo": "Ravi",
+            "Tomas": "Ravi",
+            "Kwame": "Tariq",
+            "Hana": "Mira",
+            "Kofi": "Hugo",
+            "Priya": "Tomas"
+          },
+          "titles": {
+            "Diego": "Chief Executive",
+            "Leila": "Vice President",
+            "Aiko": "Director",
+            "Rafael": "Director",
+            "Ashok": "Senior Manager",
+            "Ravi": "Senior Manager",
+            "Tariq": "Manager",
+            "Mira": "Manager",
+            "Hugo": "Manager",
+            "Tomas": "Manager",
+            "Kwame": "Engineer",
+            "Hana": "Engineer",
+            "Kofi": "Engineer",
+            "Priya": "Engineer"
+          },
+          "requester": "Kwame",
+          "rule": "skip",
+          "min_title": "Senior Manager",
+          "options_q": {
+            "approver": {
+              "ashok": "ashok",
+              "diego": "diego",
+              "tariq": "tariq",
+              "leila": "leila",
+              "aiko": "aiko"
+            }
+          }
+        },
+        "text_sha256": "4ffb55e2fdc19f21acbe54590e0856dec97184f4fb0803e2ca54322c1eb918f6",
+        "state_tokens": 221,
+        "seed_record_id": "hard-v1/multi_hop/development/00059",
+        "semantic_case_id": "hard-v1/multi_hop/development/00059",
+        "view": 1
+      }
+    },
+    {
+      "state": "CASE FILE: Outage: reporting-etl\n1) Outages propagate along hard dependencies: if a service goes down, every service that depends on it, directly or through other hard dependencies, is affected.\n2) Soft dependencies do not propagate outages. fraud-scorer depends on inventory-db. payments-gateway depends on reporting-etl. geo-lookup depends on payments-gateway (soft dependency: it degrades gracefully and keeps working if payments-gateway is down). reporting-etl depends on email-relay. catalog-api depends on pricing-engine. session-cache depends on auth-service. inventory-db depends on pricing-engine. auth-service depends on payments-gateway. reporting-etl is currently down.",
+      "questions": {
+        "affected": {
+          "type": "choice",
+          "instructions": "Which of these will the outage reach?",
+          "criteria": {
+            "geo_lookup": null,
+            "none_affected": "None of these services is affected",
+            "email_relay": null,
+            "catalog_api": null
+          },
+          "src": "targeted-three-hardmatched-20261031/multihop",
+          "label": "none_affected"
+        }
+      },
+      "_meta": {
+        "id": "targeted-three-hardmatched-20261031/multihop/train/00083/view-1",
+        "source": "targeted-three-hardmatched-20261031/multihop",
+        "group_id": "targeted-three-hardmatched-20261031/multihop/train/00083/view-1",
+        "variant": "clean",
+        "split": "train",
+        "template": "multi_hop/t4/view-1",
+        "family": "multihop",
+        "subtype": "deps",
+        "hops": 3,
+        "soft": true,
+        "facts": {
+          "kind": "deps",
+          "edges": [
+            [
+              "payments-gateway",
+              "reporting-etl",
+              false
+            ],
+            [
+              "auth-service",
+              "payments-gateway",
+              false
+            ],
+            [
+              "session-cache",
+              "auth-service",
+              false
+            ],
+            [
+              "reporting-etl",
+              "email-relay",
+              false
+            ],
+            [
+              "inventory-db",
+              "pricing-engine",
+              false
+            ],
+            [
+              "catalog-api",
+              "pricing-engine",
+              false
+            ],
+            [
+              "geo-lookup",
+              "payments-gateway",
+              true
+            ],
+            [
+              "fraud-scorer",
+              "inventory-db",
+              false
+            ]
+          ],
+          "down": "reporting-etl",
+          "candidates": [
+            "email-relay",
+            "catalog-api",
+            "geo-lookup"
+          ],
+          "options_q": {
+            "affected": {
+              "geo_lookup": "geo_lookup",
+              "none_affected": "none_affected",
+              "email_relay": "email_relay",
+              "catalog_api": "catalog_api"
+            }
+          }
+        },
+        "text_sha256": "4c70cc5c5a0173d48a6d867424dcb1070582982c847c40dae844414e74c9ef78",
+        "state_tokens": 143,
+        "seed_record_id": "hard-v1/multi_hop/development/00083",
+        "semantic_case_id": "hard-v1/multi_hop/development/00083",
+        "view": 1
+      }
+    }
+  ]
+}

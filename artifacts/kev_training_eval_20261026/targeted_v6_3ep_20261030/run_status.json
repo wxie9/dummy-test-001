@@ -1,0 +1,124 @@
+{
+  "status": "training_and_evaluation_complete_goal_not_established",
+  "started_at_utc": "2026-10-29T23:05:48.707886+00:00",
+  "models": {
+    "qwen3": {
+      "gpu": 1,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen3-20261030-targeted-v6-3ep",
+      "pipeline_live": false,
+      "status": "complete",
+      "preflight": {
+        "training_contexts_including_replay": 7500,
+        "training_questions": 10866,
+        "development_contexts": 336,
+        "rejected_development": [],
+        "context": {
+          "max_state": 7552,
+          "max_branch": 8192,
+          "max_packed": 9216
+        }
+      },
+      "training_live": false,
+      "historical_processes": {
+        "pipeline_pid": 404,
+        "training_pid": 2691,
+        "last_observed_step": [
+          "2",
+          "2100",
+          "2814",
+          "0.470"
+        ]
+      },
+      "completed_steps": 2814,
+      "training_wall_seconds": 2565.3657791614532,
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 512,
+        "after_correct": 516,
+        "before_pct": 51.2,
+        "after_pct": 51.6,
+        "delta_pp": 0.4,
+        "repaired": 67,
+        "newly_wrong": 63,
+        "old_wrong": 488,
+        "repair_pct": 13.729508196721312,
+        "paired_context_bootstrap_95pct_pp": [
+          -1.8962075848303392,
+          2.6315789473684212
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 0.0,
+        "temporal": 4.273504273504273,
+        "probability": -1.8987341772151898,
+        "insufficient": -2.0,
+        "multihop": -0.8,
+        "policy": 2.0,
+        "injection": 0.6666666666666666
+      }
+    },
+    "qwen35": {
+      "gpu": 2,
+      "run": "/C20545/kev-08b-official-repro-20261026/runs/qwen35-20261030-targeted-v6-3ep",
+      "pipeline_live": false,
+      "status": "complete",
+      "preflight": {
+        "training_contexts_including_replay": 7500,
+        "training_questions": 10866,
+        "development_contexts": 336,
+        "rejected_development": [],
+        "context": {
+          "max_state": 7552,
+          "max_branch": 8192,
+          "max_packed": 9216
+        }
+      },
+      "training_live": false,
+      "historical_processes": {
+        "pipeline_pid": 405,
+        "training_pid": 3772,
+        "last_observed_step": [
+          "1",
+          "1760",
+          "2814",
+          "0.163"
+        ]
+      },
+      "completed_steps": 2814,
+      "training_wall_seconds": 3048.5629065036774,
+      "seven_pooled": {
+        "questions": 1000,
+        "contexts": 800,
+        "before_correct": 551,
+        "after_correct": 582,
+        "before_pct": 55.1,
+        "after_pct": 58.2,
+        "delta_pp": 3.1,
+        "repaired": 65,
+        "newly_wrong": 34,
+        "old_wrong": 449,
+        "repair_pct": 14.476614699331849,
+        "paired_context_bootstrap_95pct_pp": [
+          1.0967098703888336,
+          5.141129032258065
+        ]
+      },
+      "seven_deltas_pp": {
+        "tool_routing": 10.666666666666666,
+        "temporal": 2.5641025641025643,
+        "probability": 0.6329113924050633,
+        "insufficient": 4.0,
+        "multihop": -1.6,
+        "policy": 0.0,
+        "injection": 6.0
+      }
+    }
+  },
+  "next": "Both controls completed and failed all-seven goal. Inspect structural and language coverage gaps, then regenerate the four weak families within 1500 contexts while retaining the other three; never resume targeted stage4.",
+  "goal_achieved": false,
+  "last_goal_turn_classification": "verified_wait: four live training processes and advancing logs; no complete effect evaluation yet",
+  "previous_live_check_utc": "2026-10-29T23:39:07.057118+00:00",
+  "finalized_at_utc": "2026-10-30T00:02:11.159375+00:00",
+  "comparison_sha256": "1aaa5f9446c9b58036a4a05f393efa09698cb063a401bd66b3b7c6725bbd2732"
+}

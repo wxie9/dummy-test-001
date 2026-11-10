@@ -1,0 +1,34 @@
+{
+  "checks": {
+    "family_large_sum": 1709,
+    "fine_categories_are_overlapping": true,
+    "large_plus_small_equals_wrong": true,
+    "level_large_sum": 1709,
+    "representative_cases": 26
+  },
+  "counts": {
+    "all_items": 7800,
+    "large_error_reasons": {
+      "gold_rank_3plus": 499,
+      "rank2_gap_030_050": 332,
+      "rank2_gap_050_070": 288,
+      "rank2_gap_gt_070": 590
+    },
+    "large_errors": 1709,
+    "large_share_of_all": 0.2191025641025641,
+    "large_share_of_wrong": 0.7585441633377719,
+    "small_errors": 544,
+    "startlux_on_large_errors": {
+      "autothink_only_correct": 524,
+      "both_correct": 933,
+      "instant_only_correct": 164,
+      "neither_correct": 88
+    },
+    "wrong_items": 2253
+  },
+  "definition": {
+    "large_error": "gold_rank != 2 OR (gold_rank == 2 AND pmax-p_gold > 0.30)",
+    "population": "wrong DecisionPivot items only",
+    "small_error": "gold_rank == 2 AND pmax-p_gold <= 0.30"
+  }
+}

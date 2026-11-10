@@ -1,0 +1,96 @@
+{
+  "status": "component_only_not_trained",
+  "planned_train_contexts": 300,
+  "files": {
+    "train": {
+      "contexts": 300,
+      "questions": 600,
+      "targets": {
+        "waiting": 30,
+        "intentional": 30,
+        "pay_limit": 40,
+        "pay_sublimit": 40,
+        "pay_loss": 40,
+        "threshold": 30,
+        "flag": 30,
+        "not_purchased": 30,
+        "late": 30
+      },
+      "domains": {
+        "home": 75,
+        "health": 75,
+        "travel": 75,
+        "device": 75
+      },
+      "cover_counts": {
+        "2": 76,
+        "10": 72,
+        "7": 76,
+        "4": 76
+      },
+      "deduct_before_cap": {
+        "False": 150,
+        "True": 150
+      },
+      "text_chars_five_number": [
+        5874,
+        5998,
+        9159,
+        13863,
+        18631
+      ],
+      "incorrect_labels_rejected": 2400,
+      "sha256": "709b696f59220febb970cc86367415079d9d8fdfec141367ec6fe0c28e9d32b6"
+    },
+    "development": {
+      "contexts": 60,
+      "questions": 120,
+      "targets": {
+        "late": 6,
+        "not_purchased": 6,
+        "pay_limit": 8,
+        "flag": 6,
+        "pay_loss": 8,
+        "threshold": 6,
+        "intentional": 6,
+        "pay_sublimit": 8,
+        "waiting": 6
+      },
+      "domains": {
+        "travel": 15,
+        "device": 15,
+        "home": 15,
+        "health": 15
+      },
+      "cover_counts": {
+        "7": 16,
+        "2": 16,
+        "10": 12,
+        "4": 16
+      },
+      "deduct_before_cap": {
+        "False": 31,
+        "True": 29
+      },
+      "text_chars_five_number": [
+        5871,
+        5956,
+        9126,
+        13824,
+        18619
+      ],
+      "incorrect_labels_rejected": 480,
+      "sha256": "916e59ac61773df25d99632a94019ea5a8ce1b795f0256377a9a28e128881ac5"
+    }
+  },
+  "limitations": [
+    "Authored fictional policies, not official benchmark examples.",
+    "Same-author separate visible-text checker is not independent external review.",
+    "Official test coverage informed design; future evaluation is not blind generalization.",
+    "Fresh cases, question options and text coverage change together."
+  ],
+  "checks": {
+    "visible_labels_recomputed_without_latent_facts": true,
+    "normalized_train_development_prior_v6_frozen_test_overlap": 0
+  }
+}

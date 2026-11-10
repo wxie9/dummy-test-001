@@ -1,0 +1,104 @@
+{
+  "version": "targeted-three-hardmatched-20261031",
+  "status": "candidate_generated_not_trained",
+  "method": "Official hard-v1 development cases, subtype-stratified 80/20 per family; three order-only training views per independent case.",
+  "train_records": 720,
+  "train_independent_cases": 240,
+  "train_questions": 948,
+  "development_records": 60,
+  "development_independent_cases": 60,
+  "development_questions": 79,
+  "independent_cases": {
+    "train": {
+      "temporal": 80,
+      "probability": 80,
+      "multihop": 80
+    },
+    "development": {
+      "temporal": 20,
+      "probability": 20,
+      "multihop": 20
+    }
+  },
+  "subtype_records": {
+    "train": {
+      "multihop/deps": 63,
+      "multihop/oncall": 66,
+      "multihop/org": 54,
+      "multihop/ownership": 57,
+      "probability/bayes": 54,
+      "probability/compare": 51,
+      "probability/ev": 30,
+      "probability/independent": 48,
+      "probability/table": 57,
+      "temporal/deadline": 42,
+      "temporal/diff": 39,
+      "temporal/prorata": 42,
+      "temporal/recurring_every_n_weeks": 15,
+      "temporal/recurring_monthly_rollback": 21,
+      "temporal/shift": 42,
+      "temporal/tz": 39
+    },
+    "development": {
+      "multihop/deps": 5,
+      "multihop/oncall": 5,
+      "multihop/org": 5,
+      "multihop/ownership": 5,
+      "probability/bayes": 5,
+      "probability/compare": 4,
+      "probability/ev": 2,
+      "probability/independent": 4,
+      "probability/table": 5,
+      "temporal/deadline": 3,
+      "temporal/diff": 3,
+      "temporal/prorata": 3,
+      "temporal/recurring_business_days": 1,
+      "temporal/recurring_every_n_weeks": 1,
+      "temporal/recurring_last_business": 1,
+      "temporal/recurring_monthly_rollback": 1,
+      "temporal/shift": 3,
+      "temporal/tz": 4
+    }
+  },
+  "hard_test_subtype_contexts": {
+    "multihop/deps": 26,
+    "multihop/oncall": 25,
+    "multihop/org": 24,
+    "multihop/ownership": 25,
+    "probability/bayes": 22,
+    "probability/compare": 19,
+    "probability/ev": 13,
+    "probability/independent": 23,
+    "probability/table": 23,
+    "temporal/deadline": 16,
+    "temporal/diff": 17,
+    "temporal/prorata": 17,
+    "temporal/recurring_business_days": 4,
+    "temporal/recurring_every_n_weeks": 5,
+    "temporal/recurring_last_business": 4,
+    "temporal/recurring_monthly_rollback": 4,
+    "temporal/shift": 16,
+    "temporal/tz": 17
+  },
+  "checks": {
+    "train_development_semantic_case_overlap": 0,
+    "canonical_state_overlap_with_hard_test": 0,
+    "question_type_instructions_criteria_label_preserved_from_official_development": true,
+    "facts_preserved_from_official_development": true,
+    "train_views_per_independent_case": 3,
+    "development_views_per_independent_case": 1,
+    "all_three_target_families_exactly_80_train_20_development_cases": true
+  },
+  "limitations": [
+    "Only 240 independent training cases; 720 records include three surface-order views and are not 720 independent cases.",
+    "Uses official hard-v1 development cases, so this is benchmark adaptation rather than external synthetic generalization.",
+    "Test subtypes informed the family choice and audit; future hard-v1 test results are diagnostic, not blind evidence.",
+    "No new facts were synthesized in this version; the intervention isolates exact-schema matching from fact-generation quality."
+  ],
+  "sha256": {
+    "/Users/chen/Documents/ChatGPT/procogs/third_party/kev-source-20261025/evals/hard-v1/development.jsonl": "3cdbf12a6b7c3b70c73e8c39f2677127ea61ef32f0ea75b55a43556d884b2d98",
+    "/Users/chen/Documents/ChatGPT/procogs/third_party/kev-source-20261025/evals/hard-v1/test.jsonl": "246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_three_hardmatched_20261031/train.jsonl": "7ff8acf831d5ac53f2be6d7746ce2ab3759c785a2ca5e0fbeba80506e88b3fa6",
+    "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_three_hardmatched_20261031/development.jsonl": "3207457599eb9a7aa2f7ad9229f50bc42e9008ed9de0b2aec885afd431972b7f"
+  }
+}

@@ -1,0 +1,74 @@
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+evaluated 50/764
+evaluated 100/764
+evaluated 150/764
+evaluated 200/764
+evaluated 250/764
+evaluated 300/764
+evaluated 350/764
+evaluated 400/764
+evaluated 450/764
+evaluated 500/764
+evaluated 550/764
+evaluated 600/764
+evaluated 650/764
+evaluated 700/764
+evaluated 750/764
+{
+  "objective": -0.28997251713616695,
+  "clean": {
+    "n": 656,
+    "nll": 0.3479249608095738,
+    "acc": 0.8871951219512195,
+    "ece": 0.03684666479175462,
+    "brier": 0.16652072610134191,
+    "mean_conf": 0.924041786742974,
+    "confident_error_rate": 0.03048780487804878,
+    "coverage_at_0_9": 0.8094512195121951,
+    "accuracy_at_0_9": 0.9623352165725048,
+    "coverage_at_5pct_error": 0.8734756097560976,
+    "coverage_at_1pct_error": 0.5365853658536586,
+    "aurc": 0.02151945227416201,
+    "error_rate_at_0_9": 0.03766478342749529,
+    "confidence_bias": 0.03684666479175447,
+    "top_bins": {
+      "0.9": {
+        "n": 531,
+        "errors": 20,
+        "error_rate": 0.03766478342749529
+      },
+      "0.95": {
+        "n": 481,
+        "errors": 17,
+        "error_rate": 0.035343035343035345
+      },
+      "0.99": {
+        "n": 357,
+        "errors": 6,
+        "error_rate": 0.01680672268907563
+      }
+    },
+    "selective": {
+      "0.5": {
+        "coverage": 0.5,
+        "accuracy": 0.9939024390243902,
+        "confidence_cutoff": 0.9933041971827568
+      },
+      "0.8": {
+        "coverage": 0.8003048780487805,
+        "accuracy": 0.9638095238095238,
+        "confidence_cutoff": 0.9069066910298936
+      }
+    },
+    "score_mae": 0.03294553533866127,
+    "ranked_probability_score": 0.012359052142734398
+  },
+  "coverage": {
+    "requested_records": 764,
+    "requested_questions": 764,
+    "evaluated_records": 764,
+    "evaluated_questions": 764,
+    "rejected_records": 0,
+    "truncated_records": 0
+  }
+}

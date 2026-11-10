@@ -1,0 +1,16 @@
+{
+  "status": "prepared_not_evaluated",
+  "contexts": 280,
+  "underlying_cases": 70,
+  "questions": 280,
+  "variants": [
+    "original",
+    "semantic_keys",
+    "action_descriptions",
+    "concise_descriptions"
+  ],
+  "sha256": "0cfa8537bd1574f134b1ff26b233dba1d522f9e5e1ab1128aaad3515efd87ade",
+  "scope": "Within-case option-language intervention on already-used development cases; not a new heldout test and never added to training.",
+  "controls": "State, question, option order and semantic gold are unchanged. Key-only variant changes only keys; wording variants change only descriptions.",
+  "limitations": "Authored paraphrases checked manually and by canonical mapping; no external semantic reviewer. Sensitivity does not alone establish the cause of real-benchmark regressions."
+}

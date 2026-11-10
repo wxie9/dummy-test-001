@@ -1,0 +1,294 @@
+{
+  "scope": "Post-hoc coverage audit of an already-inspected benchmark. Distribution mismatch motivates a broad-coverage candidate but does not prove causality or held-out improvement.",
+  "hashes": {
+    "v5_train": "50d76359f88eafc75392218a70538adc966640f567de06c0852a492cb80bc463",
+    "candidate_train": "87df4be6fc0dad118388c890a9a8fc447698b1aaad8bbb68511b4c9d60aa93e3",
+    "inspected_diagnostic": "246ee92234d33f8e3f10ac6e1542651531b128fd7cc66f3a9964589b77dfa22b"
+  },
+  "coverage": {
+    "v5_train": {
+      "any/success_rate_pct": {
+        "n": 91,
+        "min": 20,
+        "median": 60,
+        "max": 95,
+        "below_30": 11
+      },
+      "any/answer_probability_pct": {
+        "n": 25,
+        "min": 74.0,
+        "median": 96.4,
+        "max": 99.9925,
+        "below_30": 0
+      },
+      "any_fail/success_rate_pct": {
+        "n": 178,
+        "min": 20,
+        "median": 60.0,
+        "max": 95,
+        "below_30": 15
+      },
+      "any_fail/answer_probability_pct": {
+        "n": 50,
+        "min": 14.2625,
+        "median": 85.4125,
+        "max": 99.616,
+        "below_30": 1
+      },
+      "ev/absolute_payoff_dollars": {
+        "n": 477,
+        "min": 0,
+        "median": 275,
+        "max": 625,
+        "below_30": 22
+      },
+      "ev/upfront_cost_dollars": {
+        "n": 171,
+        "min": 10,
+        "median": 50,
+        "max": 120,
+        "below_30": 39
+      },
+      "all/success_rate_pct": {
+        "n": 149,
+        "min": 20,
+        "median": 60,
+        "max": 95,
+        "below_30": 13
+      },
+      "all/answer_probability_pct": {
+        "n": 40,
+        "min": 1.26,
+        "median": 15.98,
+        "max": 63.0,
+        "below_30": 34
+      }
+    },
+    "candidate_train": {
+      "ev/absolute_payoff_dollars": {
+        "n": 493,
+        "min": 0,
+        "median": 22500,
+        "max": 6250000,
+        "below_30": 18
+      },
+      "ev/upfront_cost_dollars": {
+        "n": 179,
+        "min": 10,
+        "median": 7000,
+        "max": 1200000,
+        "below_30": 4
+      },
+      "any/success_rate_pct": {
+        "n": 83,
+        "min": 1,
+        "median": 18,
+        "max": 98,
+        "below_30": 58
+      },
+      "any/answer_probability_pct": {
+        "n": 25,
+        "min": 2.98,
+        "median": 48.52,
+        "max": 99.995968,
+        "below_30": 9
+      },
+      "all/success_rate_pct": {
+        "n": 139,
+        "min": 1,
+        "median": 83,
+        "max": 99,
+        "below_30": 18
+      },
+      "all/answer_probability_pct": {
+        "n": 40,
+        "min": 3.6e-07,
+        "median": 44.643522000000004,
+        "max": 94.128804,
+        "below_30": 14
+      },
+      "any_fail/success_rate_pct": {
+        "n": 166,
+        "min": 1,
+        "median": 85.5,
+        "max": 99,
+        "below_30": 10
+      },
+      "any_fail/answer_probability_pct": {
+        "n": 50,
+        "min": 2.98,
+        "median": 49.3505974,
+        "max": 99.97,
+        "below_30": 18
+      }
+    },
+    "inspected_diagnostic": {
+      "any_fail/success_rate_pct": {
+        "n": 22,
+        "min": 60.0,
+        "median": 95.0,
+        "max": 99.0,
+        "below_30": 0
+      },
+      "any_fail/answer_probability_pct": {
+        "n": 7,
+        "min": 3.97,
+        "median": 21.43,
+        "max": 66.4,
+        "below_30": 4
+      },
+      "ev/absolute_payoff_dollars": {
+        "n": 116,
+        "min": 0,
+        "median": 230000.0,
+        "max": 890000,
+        "below_30": 4
+      },
+      "ev/upfront_cost_dollars": {
+        "n": 45,
+        "min": 0,
+        "median": 80000,
+        "max": 140000,
+        "below_30": 4
+      },
+      "any/success_rate_pct": {
+        "n": 28,
+        "min": 70.0,
+        "median": 85.0,
+        "max": 99.0,
+        "below_30": 0
+      },
+      "any/answer_probability_pct": {
+        "n": 9,
+        "min": 95.0,
+        "median": 99.9775,
+        "max": 99.9928,
+        "below_30": 0
+      },
+      "all/success_rate_pct": {
+        "n": 21,
+        "min": 60.0,
+        "median": 80.0,
+        "max": 95.0,
+        "below_30": 0
+      },
+      "all/answer_probability_pct": {
+        "n": 7,
+        "min": 16.2,
+        "median": 57.6,
+        "max": 73.6,
+        "below_30": 1
+      }
+    }
+  },
+  "v5_independent_subgroups": [
+    {
+      "model": "qwen3",
+      "mechanism": "all",
+      "band": "30to70",
+      "contexts": 4,
+      "questions": 8,
+      "before_correct": 2,
+      "after_correct": 3
+    },
+    {
+      "model": "qwen3",
+      "mechanism": "all",
+      "band": "70plus",
+      "contexts": 2,
+      "questions": 4,
+      "before_correct": 2,
+      "after_correct": 2
+    },
+    {
+      "model": "qwen3",
+      "mechanism": "all",
+      "band": "below30",
+      "contexts": 1,
+      "questions": 2,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "model": "qwen3",
+      "mechanism": "any",
+      "band": "70plus",
+      "contexts": 9,
+      "questions": 18,
+      "before_correct": 17,
+      "after_correct": 17
+    },
+    {
+      "model": "qwen3",
+      "mechanism": "any_fail",
+      "band": "30to70",
+      "contexts": 3,
+      "questions": 6,
+      "before_correct": 5,
+      "after_correct": 3
+    },
+    {
+      "model": "qwen3",
+      "mechanism": "any_fail",
+      "band": "below30",
+      "contexts": 4,
+      "questions": 8,
+      "before_correct": 4,
+      "after_correct": 3
+    },
+    {
+      "model": "qwen35",
+      "mechanism": "all",
+      "band": "30to70",
+      "contexts": 4,
+      "questions": 8,
+      "before_correct": 5,
+      "after_correct": 5
+    },
+    {
+      "model": "qwen35",
+      "mechanism": "all",
+      "band": "70plus",
+      "contexts": 2,
+      "questions": 4,
+      "before_correct": 2,
+      "after_correct": 2
+    },
+    {
+      "model": "qwen35",
+      "mechanism": "all",
+      "band": "below30",
+      "contexts": 1,
+      "questions": 2,
+      "before_correct": 1,
+      "after_correct": 1
+    },
+    {
+      "model": "qwen35",
+      "mechanism": "any",
+      "band": "70plus",
+      "contexts": 9,
+      "questions": 18,
+      "before_correct": 18,
+      "after_correct": 18
+    },
+    {
+      "model": "qwen35",
+      "mechanism": "any_fail",
+      "band": "30to70",
+      "contexts": 3,
+      "questions": 6,
+      "before_correct": 3,
+      "after_correct": 3
+    },
+    {
+      "model": "qwen35",
+      "mechanism": "any_fail",
+      "band": "below30",
+      "contexts": 4,
+      "questions": 8,
+      "before_correct": 3,
+      "after_correct": 4
+    }
+  ]
+}

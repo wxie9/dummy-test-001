@@ -1,0 +1,103 @@
+{
+  "version": "targeted-v6-20261030",
+  "status": "assembled_local_checks_passed_remote_preflight_pending",
+  "goal_achieved": false,
+  "replay_contexts_separate": 6000,
+  "init": "original pre-targeted stage3, never a targeted stage4 checkpoint",
+  "scope": "1500 distinct visible contexts, including correlated matched pairs and revised existing cases. Subquestions and views are not independent examples. Development shares generators; official tests were used for earlier diagnostics, not fresh holdout evidence.",
+  "files": {
+    "train": {
+      "contexts": 1500,
+      "subquestions": 3440,
+      "families": {
+        "tool_routing": 100,
+        "temporal": 100,
+        "probability": 350,
+        "policy": 300,
+        "multihop": 270,
+        "insufficient": 280,
+        "injection": 100
+      },
+      "subquestions_by_family": {
+        "tool_routing": 100,
+        "temporal": 100,
+        "probability": 720,
+        "policy": 600,
+        "multihop": 420,
+        "insufficient": 1400,
+        "injection": 100
+      },
+      "groups": 1210,
+      "wrong_label_mutations_rejected_new_four": 3140,
+      "sha256": "58572b2118b10d9505d5bdb027585fab75f4ad7e52a1c5d8d155979459fecea8"
+    },
+    "development": {
+      "contexts": 336,
+      "subquestions": 770,
+      "families": {
+        "tool_routing": 30,
+        "policy": 60,
+        "probability": 60,
+        "multihop": 56,
+        "insufficient": 70,
+        "injection": 30,
+        "temporal": 30
+      },
+      "subquestions_by_family": {
+        "tool_routing": 30,
+        "policy": 120,
+        "probability": 124,
+        "multihop": 86,
+        "insufficient": 350,
+        "injection": 30,
+        "temporal": 30
+      },
+      "groups": 271,
+      "wrong_label_mutations_rejected_new_four": 680,
+      "sha256": "5747c5b02565f10688d270d8da5afa384386e9cfc42bf55e2971d2924810fe63"
+    }
+  },
+  "sources": {
+    "probability_coverage_candidates_20261030/train.candidate.jsonl": "87df4be6fc0dad118388c890a9a8fc447698b1aaad8bbb68511b4c9d60aa93e3",
+    "insufficient_multiview_candidates_20261030/train.candidate.jsonl": "b208078adda183dff0d74f1e2d9f39244e1af6db3f315315aefc822282311521",
+    "policy_fixed_options_candidates_20261030/train.candidate.jsonl": "32acde6e3d7cd876f461d190737df0a58d5a2d5944a492efe9f78ae1b438542c",
+    "multihop_coverage_candidates_20261030/train.candidate.jsonl": "4f9599840d84b4251fade33bb5c2b4141313d63a0269a713d3eebd7d2fea2abc",
+    "probability_coverage_candidates_20261030/development.candidate.jsonl": "1495d7c79e05e3e2688aee6c22ba7650a672a68316ff3d30188ad632c026c0a7",
+    "insufficient_multiview_candidates_20261030/development.candidate.jsonl": "3b2d381e7907159c2e3a3c565de35d9f0571af5c9ea465c9cc12da15d8b4c13f",
+    "policy_fixed_options_candidates_20261030/development.candidate.jsonl": "5b3e53143140d310223f12d6cc67d458137ecab14c8f23d13e7d14d74ecf94c0",
+    "multihop_coverage_candidates_20261030/development.candidate.jsonl": "cf4201bc373333a6c381e800fa8e90a1f7086257d3ffe0351bdf9c2954f66a6b"
+  },
+  "limitations": [
+    "Retained three families remain unchanged, including previously recorded temporal and tool-routing ambiguities.",
+    "Policy revisions change outcome wording and pair option contents, not the underlying case diversity.",
+    "Multiview questions change supervision density; this is not an equal-question-count ablation.",
+    "Same-author separate visible-text checks are not an external semantic review."
+  ],
+  "checks": {
+    "duplicate_normalized_states": 0,
+    "exact_train_development_overlap": 0,
+    "group_overlap": 0,
+    "exact_frozen_test_state_overlap": 0,
+    "frozen_test_distinct_states": 4923,
+    "retained_three_exact_original_lines": true,
+    "policy_pair_serialized_options_identical": true,
+    "semantic_overlap_not_ruled_out": true
+  },
+  "explicit_none_protected_questions": 45,
+  "training_plan": {
+    "epochs": 1,
+    "seed": 101,
+    "lr": 1e-05,
+    "lora": 16,
+    "batch": 4,
+    "accum": 2,
+    "replay": 6000,
+    "init": "original pre-targeted stage3",
+    "purpose": "fixed-epoch data-revision experiment; not guaranteed gain"
+  },
+  "train_probe": {
+    "contexts": 140,
+    "subquestions": 268,
+    "sha256": "7d26230063115363d34b28fec41cff7db2af5f5dc7b813364aea312bd002c8ac"
+  }
+}

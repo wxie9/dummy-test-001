@@ -1,0 +1,33 @@
+{
+  "alpha": 0.85,
+  "sft": {
+    "path": "/data/kev/runs/h20-27b-v2-custom114627-fullft8-20261107/checkpoint",
+    "weights_sha256": "ea5e8e601700ced6ba138ead9ecf445901db38a1cadbf63e8c6ac30af17ecd52"
+  },
+  "base": "/data/models/Qwen3.8-27B@1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "toward": {
+    "path": "/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101-eval-localbase",
+    "resolved": "/data/kev/runs/h20-27b-v1-b1v2-ddp6-20261101-eval-localbase",
+    "weights_sha256": "2254c36f318d23e83eeb363101b00fa840fd58f7bee7894c962520e1373bddfa",
+    "head_sha256": "dd65b35246999aeaa9529a652fd8ee76c9936b71e4ec3e48c31710b382d8f41a",
+    "kind": "lora",
+    "merge": "fp32: base (as its loader builds it) + peft get_delta_weight, not rounded before the blend",
+    "adapted_tensors": 496
+  },
+  "head": {
+    "kind": "sft",
+    "sft": {
+      "head_sha256": "83d1ed7eea9568e4ab0ce859a75bb48f8f23e36e1fc26e07bec3b735f7a2069a",
+      "temperature": 1.0
+    },
+    "toward": {
+      "head_sha256": "dd65b35246999aeaa9529a652fd8ee76c9936b71e4ec3e48c31710b382d8f41a",
+      "temperature": 1.0
+    }
+  },
+  "checkpoint": "/data/kev/runs/h20-27b-v2-custom114627-v1blend-w85-20261108/checkpoint",
+  "tensors": 850,
+  "weights_sha256": "e1b28c1689dab8adff349c36497c08e330b5952d9dd95469198de6b55e2ba824",
+  "seconds": 103.0,
+  "formula": "fp32(alpha) * fp32(sft) + fp32(1 - alpha) * fp32(toward), rounded once to the SFT dtype"
+}

@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "multihop": {
+      "train_rows": 270,
+      "labels_recomputed_without_stored_facts": 270
+    },
+    "insufficient": {
+      "train_rows": 280,
+      "labels_recomputed_without_stored_facts": 280
+    }
+  },
+  "target_contexts": 1500,
+  "prepared": 1200,
+  "pending_policy": 300,
+  "cross_prepared_components_normalized_state_duplicates": 0,
+  "no_training_launched": true
+}

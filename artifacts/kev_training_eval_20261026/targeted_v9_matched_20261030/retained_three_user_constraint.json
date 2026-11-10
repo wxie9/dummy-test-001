@@ -1,0 +1,16 @@
+{
+  "instruction": "Keep tool_routing, temporal and injection entirely unchanged, including ambiguous through-date wording. Do not revise boundaries, values or labels.",
+  "families": [
+    "injection",
+    "temporal",
+    "tool_routing"
+  ],
+  "retained_training_records": 300,
+  "byte_identical_to": {
+    "targeted_v5_20261030": true,
+    "targeted_v6_20261030": true,
+    "targeted_v7_20261030": true
+  },
+  "comparison_sha256": "8f068330efd2412df921271ac5856f17116e56de3d9e1a434fdab730e3ef5bd3",
+  "current_training_input_sha256": "2932da30f01f37e6443f911399fa6195e99ca8605a5e92c85dcec7ba1896352d"
+}

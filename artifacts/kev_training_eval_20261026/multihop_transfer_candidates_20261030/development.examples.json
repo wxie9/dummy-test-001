@@ -1,0 +1,325 @@
+[
+  {
+    "state": "[1] FAILURE RULE\n[2] A failed hard prerequisite disables its consumer. Apply this rule repeatedly until no further units fail. Soft links never propagate failure. Failure never propagates from a consumer to its prerequisite. All dependencies are listed.\n[3] Dependency: consumer=Yarrow; prerequisite=Umber; kind=hard.\n[4] Beryl requires Indigo through a hard dependency.\n[5] Umber is a hard prerequisite for Quartz.\n[6] Dependency: consumer=Lagoon; prerequisite=Umber; kind=soft.\n[7] Violet requires Lagoon through a hard dependency.\n[8] Zenith is a hard prerequisite for Umber.\n[9] Initial failed unit: Umber. All other units initially function.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "After propagation, which listed candidate has failed?",
+        "criteria": {
+          "a": "Yarrow",
+          "b": "None of the listed candidates",
+          "c": "Violet",
+          "d": "Jasper"
+        },
+        "label": "a",
+        "src": "multihop-transfer-20261030",
+        "target": {
+          "a": 1.0
+        }
+      }
+    },
+    "_meta": {
+      "id": "multihop-transfer-20261030/development/dependency_candidates/5",
+      "source": "multihop-transfer-20261030",
+      "family": "multihop",
+      "split": "development",
+      "group_id": "multihop-transfer-20261030/development/dependency_candidates/5",
+      "subtype": "dependency_candidates",
+      "facts": {
+        "edges": [
+          [
+            "Yarrow",
+            "Umber",
+            true
+          ],
+          [
+            "Beryl",
+            "Indigo",
+            true
+          ],
+          [
+            "Quartz",
+            "Umber",
+            true
+          ],
+          [
+            "Lagoon",
+            "Umber",
+            false
+          ],
+          [
+            "Violet",
+            "Lagoon",
+            true
+          ],
+          [
+            "Umber",
+            "Zenith",
+            true
+          ]
+        ],
+        "initial": "Umber",
+        "chain_hops": 1,
+        "candidates": [
+          "Jasper",
+          "Violet",
+          "Yarrow"
+        ]
+      },
+      "review_zh": "从失败的先决条件沿消费者方向传播，软边阻断。",
+      "text_sha256": "214318ee04e468a17372c062dbc4d466a26cf7a696972849b8888290ec40c03b",
+      "presentation": "numbered"
+    }
+  },
+  {
+    "state": "AUTHORIZATION DIRECTORY\nRanks in increasing authority: Junior Associate, Senior Specialist, Team Leader, Department Principal, Division Head, Chief Executive. A request is routed from its origin upward to the first supervisor with rank Division Head or higher; the origin cannot approve its own request.\nMesa holds rank Division Head.\nBrook holds rank Junior Associate.\nZephyr holds rank Junior Associate.\nWillow has supervisor Zephyr.\nMesa has supervisor Zephyr.\nOpal has supervisor Amber.\nFern holds rank Chief Executive.\nWillow holds rank Junior Associate.\nRidge holds rank Department Principal.\nShore holds rank Chief Executive.\nOpal holds rank Division Head.\nZephyr has supervisor Knoll.\nKnoll has supervisor Opal.\nNexus holds rank Department Principal.\nAmber holds rank Senior Specialist.\nJade holds rank Junior Associate.\nEcho holds rank Chief Executive.\nRidge has supervisor Echo.\nKnoll holds rank Chief Executive.\nRequest origin: Willow.",
+    "questions": {
+      "decision": {
+        "type": "choice",
+        "instructions": "Who must approve this request?",
+        "criteria": {
+          "a": "Knoll",
+          "b": "Opal",
+          "c": "Amber",
+          "d": "Zephyr",
+          "e": "Echo",
+          "f": "Ridge"
+        },
+        "label": "a",
+        "src": "multihop-transfer-20261030"
+      }
+    },
+    "_meta": {
+      "id": "multihop-transfer-20261030/development/rank_escalation/1",
+      "source": "multihop-transfer-20261030",
+      "family": "multihop",
+      "split": "development",
+      "group_id": "multihop-transfer-20261030/development/rank_escalation/1",
+      "subtype": "rank_escalation",
+      "facts": {
+        "path": [
+          "Willow",
+          "Zephyr",
+          "Knoll",
+          "Opal",
+          "Amber"
+        ],
+        "links": [
+          [
+            "Knoll",
+            "Opal"
+          ],
+          [
+            "Zephyr",
+            "Knoll"
+          ],
+          [
+            "Opal",
+            "Amber"
+          ],
+          [
+            "Ridge",
+            "Echo"
+          ],
+          [
+            "Willow",
+            "Zephyr"
+          ],
+          [
+            "Mesa",
+            "Zephyr"
+          ]
+        ],
+        "ranks": {
+          "Willow": 0,
+          "Zephyr": 0,
+          "Knoll": 5,
+          "Opal": 4,
+          "Amber": 1,
+          "Brook": 0,
+          "Nexus": 3,
+          "Fern": 5,
+          "Ridge": 3,
+          "Echo": 5,
+          "Mesa": 4,
+          "Shore": 5,
+          "Jade": 0
+        },
+        "threshold": 4
+      },
+      "review_zh": "根据可见边和条件逐跳求解；不依赖同名节点的位置。",
+      "text_sha256": "6abb733c171867ced85acb89150b737683294f93ac722c010c3836beef7de704",
+      "presentation": "plain"
+    }
+  },
+  {
+    "state": "[1] ROUTING INSTRUCTION\n[2] For this request, start at Zenith and follow exactly 4 supervisor links. The person reached must approve; rank and availability do not alter this rule.\n[3] Quartz has supervisor Coral.\n[4] Onyx has supervisor Violet.\n[5] Beryl has supervisor Umber.\n[6] Zenith has supervisor Delta.\n[7] Umber has supervisor Mallow.\n[8] Mallow has supervisor Quartz.\n[9] Delta has supervisor Umber.",
+    "questions": {
+      "approver": {
+        "type": "choice",
+        "instructions": "Who is the required approver?",
+        "criteria": {
+          "a": "Violet",
+          "b": "Coral",
+          "c": "Mallow",
+          "d": "Delta",
+          "e": "Umber",
+          "f": "Onyx",
+          "g": "Quartz"
+        },
+        "label": "g",
+        "src": "multihop-transfer-20261030"
+      }
+    },
+    "_meta": {
+      "id": "multihop-transfer-20261030/development/exact_supervisor_hops/4",
+      "source": "multihop-transfer-20261030",
+      "family": "multihop",
+      "split": "development",
+      "group_id": "multihop-transfer-20261030/development/exact_supervisor_hops/4",
+      "subtype": "exact_supervisor_hops",
+      "facts": {
+        "start": "Zenith",
+        "edges": [
+          [
+            "Quartz",
+            "Coral"
+          ],
+          [
+            "Onyx",
+            "Violet"
+          ],
+          [
+            "Beryl",
+            "Umber"
+          ],
+          [
+            "Zenith",
+            "Delta"
+          ],
+          [
+            "Umber",
+            "Mallow"
+          ],
+          [
+            "Mallow",
+            "Quartz"
+          ],
+          [
+            "Delta",
+            "Umber"
+          ]
+        ],
+        "steps": 4
+      },
+      "review_zh": "沿主管边走4次，终点Quartz。",
+      "text_sha256": "406c176e3d0d35336a5c55fd6ada70e4dd9be865a9d5fbae5acdf837463c819e",
+      "presentation": "numbered"
+    }
+  },
+  {
+    "state": "DISPATCH POLICY\nRoute the incident to the asset owner. Try the primary contact, then the backup contact, then the duty lead, stopping at the first available person. A person is unavailable exactly on the listed inclusive absence interval and available otherwise. No absence record means available.\nMarble primary contact: Indigo.\nThe owner of Gateway is team Juniper.\nAbsence for Zenith: 2030-08-18 to 2030-08-21, inclusive.\nThe owner of Collector is team Juniper.\nJuniper backup contact: Prairie.\nAbsence for Prairie: 2030-08-09 to 2030-08-12, inclusive.\nThe owner of Scheduler is team Marble.\nMarble duty lead: Zenith.\nAbsence for Indigo: 2030-08-08 to 2030-08-11, inclusive.\nCopper primary contact: Fjord.\nAbsence for Topaz: 2030-08-19 to 2030-08-22, inclusive.\nJuniper primary contact: Topaz.\nThe owner of Indexer is team Copper.\nThe owner of Recorder is team Juniper.\nAbsence for Alder: 2030-08-09 to 2030-08-12, inclusive.\nCopper duty lead: Alder.\nAbsence for Yarrow: 2030-08-18 to 2030-08-21, inclusive.\nCopper backup contact: Yarrow.\nJuniper duty lead: Violet.\nMarble backup contact: Mallow.\nAsset needing help: Collector. Date needing coverage: 2030-08-15.",
+    "questions": {
+      "contact": {
+        "type": "choice",
+        "instructions": "Who receives this incident?",
+        "criteria": {
+          "a": "Violet",
+          "b": "Topaz",
+          "c": "Prairie",
+          "d": "Mallow",
+          "e": "Alder"
+        },
+        "label": "b",
+        "src": "multihop-transfer-20261030"
+      },
+      "group": {
+        "type": "choice",
+        "instructions": "Which team owns the incident asset?",
+        "criteria": {
+          "a": "Juniper",
+          "b": "Copper",
+          "c": "Marble"
+        },
+        "label": "a",
+        "src": "multihop-transfer-20261030"
+      }
+    },
+    "_meta": {
+      "id": "multihop-transfer-20261030/development/dated_roster/0",
+      "source": "multihop-transfer-20261030",
+      "family": "multihop",
+      "split": "development",
+      "group_id": "multihop-transfer-20261030/development/dated_roster/0",
+      "subtype": "dated_roster",
+      "facts": {
+        "desired_contact_position": 0,
+        "absence_coverage": {
+          "no_absence_record": 3,
+          "future_absence": 3,
+          "past_absence": 3
+        }
+      },
+      "review_zh": "先关联资产与团队，再判断各联系人的日期可用性。",
+      "text_sha256": "a4934ed1765d05ad5b528418c81308b61ff41a8a1e10d02dca355c0b5b0ac312",
+      "presentation": "plain"
+    }
+  },
+  {
+    "state": "[1] CORPORATE HOLDINGS REGISTER\n[2] Control and profit share are different. An entity controls an issuer when its own voting shares plus voting shares held by issuers it already controls exceed 50%. Exactly 50% is insufficient. Repeat this rule until no new controlled issuers are found. The ultimate controller is a controller that is not itself controlled by another controller of the target. Profit share instead adds the products of share percentages along all ownership paths. No external agreements confer control. Unlisted shares are dispersed among unrelated investors, each holding less than 5%; they do not act together. Unlisted ownership links do not exist.\n[3] Jasper owns 35.00% of Wren.\n[4] Onyx owns 65.00% of Wren.\n[5] Fjord owns 40.00% of Jasper.",
+    "questions": {
+      "controller": {
+        "type": "choice",
+        "instructions": "Who is the ultimate controller of Wren?",
+        "criteria": {
+          "a": "Fjord",
+          "b": "Rowan",
+          "c": "Onyx",
+          "d": "No ultimate controller",
+          "e": "Jasper"
+        },
+        "label": "c",
+        "src": "multihop-transfer-20261030"
+      },
+      "interest": {
+        "type": "choice",
+        "instructions": "What is Fjord's economic interest in Wren? Round to two decimal places.",
+        "criteria": {
+          "a": "14.00%",
+          "b": "86.00%",
+          "c": "0.00%",
+          "d": "100.00%",
+          "e": "50.00%",
+          "f": "19.00%"
+        },
+        "label": "a",
+        "src": "multihop-transfer-20261030"
+      }
+    },
+    "_meta": {
+      "id": "multihop-transfer-20261030/development/ownership_control_and_profit/14",
+      "source": "multihop-transfer-20261030",
+      "family": "multihop",
+      "split": "development",
+      "group_id": "multihop-transfer-20261030/development/ownership_control_and_profit/14",
+      "subtype": "ownership_control_and_profit",
+      "facts": {
+        "stakes": {
+          "Jasper": {
+            "Fjord": 40
+          },
+          "Wren": {
+            "Jasper": 35,
+            "Onyx": 65
+          }
+        },
+        "target": "Wren",
+        "economic_owner": "Fjord",
+        "shape": "chain"
+      },
+      "review_zh": "控制权闭包结果Onyx；经济收益比例14.00%。",
+      "text_sha256": "93ec6484dc73f2aef042090233dc77395d57ff1912f998d84e97f58af42949c7",
+      "presentation": "numbered"
+    }
+  }
+]

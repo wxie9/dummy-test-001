@@ -1,0 +1,110 @@
+{
+  "train": {
+    "temporal": {
+      "n": 279,
+      "before": 139,
+      "after": 142,
+      "before_pct": 49.82078853046595,
+      "after_pct": 50.89605734767025,
+      "delta_pp": 1.075268817204301,
+      "before_nll": 1.2859333551076244,
+      "after_nll": 1.1346601508740577,
+      "wrong_to_right": 21,
+      "right_to_wrong": 18
+    },
+    "probability": {
+      "n": 372,
+      "before": 201,
+      "after": 213,
+      "before_pct": 54.03225806451613,
+      "after_pct": 57.25806451612903,
+      "delta_pp": 3.225806451612903,
+      "before_nll": 1.057048519072427,
+      "after_nll": 0.8844740690950893,
+      "wrong_to_right": 41,
+      "right_to_wrong": 29
+    },
+    "multihop": {
+      "n": 297,
+      "before": 199,
+      "after": 236,
+      "before_pct": 67.003367003367,
+      "after_pct": 79.46127946127946,
+      "delta_pp": 12.457912457912458,
+      "before_nll": 0.8997132884899471,
+      "after_nll": 0.5240572144089775,
+      "wrong_to_right": 43,
+      "right_to_wrong": 6
+    }
+  },
+  "development": {
+    "temporal": {
+      "n": 23,
+      "before": 12,
+      "after": 13,
+      "before_pct": 52.17391304347826,
+      "after_pct": 56.52173913043478,
+      "delta_pp": 4.3478260869565215,
+      "before_nll": 1.2689693482216649,
+      "after_nll": 1.0637177085028173,
+      "wrong_to_right": 1,
+      "right_to_wrong": 0
+    },
+    "probability": {
+      "n": 31,
+      "before": 13,
+      "after": 13,
+      "before_pct": 41.935483870967744,
+      "after_pct": 41.935483870967744,
+      "delta_pp": 0.0,
+      "before_nll": 1.2444738755425262,
+      "after_nll": 1.2069644916608824,
+      "wrong_to_right": 1,
+      "right_to_wrong": 1
+    },
+    "multihop": {
+      "n": 25,
+      "before": 14,
+      "after": 10,
+      "before_pct": 56.0,
+      "after_pct": 40.0,
+      "delta_pp": -16.0,
+      "before_nll": 0.997987100046501,
+      "after_nll": 0.9880212512683744,
+      "wrong_to_right": 0,
+      "right_to_wrong": 4
+    }
+  },
+  "hard": {
+    "temporal": {
+      "n": 117,
+      "before": 51,
+      "after": 53,
+      "before_pct": 43.58974358974359,
+      "after_pct": 45.2991452991453,
+      "delta_pp": 1.7094017094017093,
+      "wrong_to_right": 4,
+      "right_to_wrong": 2
+    },
+    "probability": {
+      "n": 158,
+      "before": 87,
+      "after": 87,
+      "before_pct": 55.063291139240505,
+      "after_pct": 55.063291139240505,
+      "delta_pp": 0.0,
+      "wrong_to_right": 5,
+      "right_to_wrong": 5
+    },
+    "multihop": {
+      "n": 125,
+      "before": 85,
+      "after": 87,
+      "before_pct": 68.0,
+      "after_pct": 69.6,
+      "delta_pp": 1.6,
+      "wrong_to_right": 5,
+      "right_to_wrong": 3
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "archive": "/Users/chen/Documents/ChatGPT/procogs/artifacts/kev_training_eval_20261026/targeted_v9_matched_20261030/v9-matched-verified-evidence.tar.gz",
+  "sha256": "bfa4bf8433b8dece141c9c04a77dcaadae0ed07ab30c44d5b812795cb47f3b9b",
+  "files": 104,
+  "indexed_files_verified": 103,
+  "checks": {
+    "qwen3-20261030-targeted-v9-matched": {
+      "epochs": 1,
+      "optimizer_steps": 1065,
+      "all_reports_complete_and_aligned": true
+    },
+    "qwen35-20261030-targeted-v9-matched": {
+      "epochs": 1,
+      "optimizer_steps": 1065,
+      "all_reports_complete_and_aligned": true
+    }
+  }
+}
